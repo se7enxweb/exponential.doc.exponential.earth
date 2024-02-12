@@ -608,3 +608,9 @@ div#ezp5disclaimer p
 {
     margin-left: 55px;
 }
+
+/* 2024 Design refresh */
+
+div#header-bg {
+    float: right;
+}
