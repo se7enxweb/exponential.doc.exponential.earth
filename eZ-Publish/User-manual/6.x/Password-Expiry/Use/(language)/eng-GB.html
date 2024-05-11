@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/eZ-Publish/User-manual/5.x/Password-Expiry/Use/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:00:56 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                              
+    <title>Use / Password Expiry / 5.x / User manual / eZ Publish / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="eZ Publish Documentation" />
+                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="eZ Publish" />
+    <link rel="Home" href="../../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://doc.ezpublishlegacy.se7enx.com/eZ-Publish/" title="eZ Publish Platform, CXM &amp; CMS">
+            <img src="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://doc.ezpublishlegacy.se7enx.com/">ezpublish</a> /
+                        <a href="../../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../../eZ-Publish.html">ez publish</a>
+        
+                        /
+                            <a href="../../../../../User-manual.html">user manual</a>
+        
+                        /
+                            <a href="../../../../6.html">6.x</a>
+        
+                        /
+                            <a href="../../../Password-Expiry.html">password expiry</a>
+        
+                        /
+                            use
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../../5.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../General-Links.html" title="">
+	    	    		                    		    <span class="node-name-normal">General Links</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../The-Administration-Interface.html" title="">
+	    	    		                    		    <span class="node-name-normal">The Administration Interface</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../The-Website-Interface.html" title="">
+	    	    		                    		    <span class="node-name-normal">The Website Interface</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../The-Online-Editor.html" title="">
+	    	    		                    		    <span class="node-name-normal">The Online Editor</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Daily-tasks.html" title="">
+	    	    		                    		    <span class="node-name-normal">Daily tasks</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Content-Staging.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content Staging</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Comments-Module.html" title="">
+	    	    		                    		    <span class="node-name-normal">Comments Module</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Open-Document-Format-Import-Export.html" title="">
+	    	    		                    		    <span class="node-name-normal">Open Document Format Import / Export</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Password-Expiry.html" title="">
+	    	    		                    		    <span class="node-name-normal">Password Expiry</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Installation-and-Requirements.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation and Requirements</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Use.html" title="">
+	    	    		                    		    <span class="node-name-normal">Use</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Forgot-Password-Function.html" title="">
+	    	    		                    		    <span class="node-name-normal">Forgot Password Function</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Update-Children-feature.html" title="">
+	    	    		                    		    <span class="node-name-normal">Update Children feature</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Password-about-to-expire-notification.html" title="">
+	    	    		                    		    <span class="node-name-normal">&quot;Password about to expire&quot; notification</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Audit-logs.html" title="">
+	    	    		                    		    <span class="node-name-normal">Audit logs</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Changes-since-previous-versions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Changes since previous versions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Multi-Upload.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multi Upload</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../JavaScript-and-CSS-framework.html" title="">
+	    	    		                    		    <span class="node-name-normal">JavaScript and CSS framework</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Autosave.html" title="">
+	    	    		                    		    <span class="node-name-normal">Autosave</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Image-Editor.html" title="">
+	    	    		                    		    <span class="node-name-normal">Image Editor</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Use</h1>
+</div>
+
+<p>After you have installed the eZ MB Password Expiry Extension, the new datatype &quot;Password Expiration&quot; will be available to be added as an attribute in the User and User Group classes. In order for the extension to function correctly this attribute must be added to your User and User Group classes.</p>
+<div class="object-center">        <img src="../../../../../../var/doc/storage/images/media/images/adding-the-password-expiration-attribute-to-class/134470-1-eng-GB/Adding-the-Password-Expiration-attribute-to-class_doc.jpg" alt="Adding the &quot;Password Expiration&quot; attribute to class." />
+
+
+
+
+
+
+
+
+</div><p>Once added in the class the &quot;Password Expiration&quot; attribute looks like this:</p>
+<div class="object-center">        <img src="../../../../../../var/doc/storage/images/media/images/adding-password-expiration-attribute/134485-1-eng-GB/Adding-Password-Expiration-attribute_doc.jpg" alt="Adding &quot;Password Expiration&quot; attribute." />
+
+
+
+
+
+
+
+
+</div><p>The attribute will add the following field to the Edit User page:</p>
+<div class="object-center">        <img src="../../../../../../var/doc/storage/images/media/images/the-password-expiration-field/134488-1-eng-GB/The-Password-Expiration-field_doc.jpg" alt="The &quot;Password Expiration&quot; field" />
+
+
+
+
+
+
+
+
+</div><p>The values set in the site.ini file are used as the default values when a &quot;Password Expiration&quot; attribute is added. But a script has been provided to prevent all existing users to be forced to change their passwords. This script resets the Password Last Update value of all the users to current time and can be run with the following command:</p><pre class="wordwrap"><span class="line">$ php extension/ezmbpaex/install/scripts/setpasswordlastupdated.php</span>
+</pre><p>&nbsp;When you customize the values in a user group itself, a checkbox will help you to update children nodes with the values of the current group. This allows you to easily customize the password lifetime and validation expiration per group. (See point &quot;Update Children Features&quot;)</p><p>A function is added to control if a user can edit the password expiry data. If you want to allow anyone other than the administrator to be able to update the password expiry data, a new policy with this function should be added to the users role. Through the &quot;Roles and Policies&quot;-link in your Administration Interface (which can be accessed both in the left menu under the &quot;Setup&quot;-tab, as wall as in the left menu &quot;Access control&quot; under the &quot;User Accounts&quot;-tab) you can grant full or limited access to one or all functions (&quot;editpaex&quot; and &quot;password&quot;) of the module Userpaex. When a user or usergroup is created, they will automatically inherit the password expiry permissions of their parent, except if they have &quot;editpaex&quot; permissions set in their own roles. If a user has &quot;editpaex&quot; permission, he will be able to set his own password expiration values, but if these fields are left empty the parent values will be used. When someone changes the password of another user, the Password Last Update Time of this password is set to 0 to force the user to change his password the next time he tries to log in. But in order to be able to force a user to change his password, the password lifetime must be defined. If the Password Life Time is set to 0 the user will never be forced to change his password because the password will never expire.</p><p>After the password for a user has expired, the user cannot log in. He will only be permitted to access the change password view from the Userpaex module in order to change his password. When a user changes his password, the system prevents him from submitting the same password as the one currently set. This is done to ensure that the new password always differs from the former one.</p>
+<div class="object-center">        <img src="../../../../../../var/doc/storage/images/media/images/new-password-must-be-different-from-the-old-one2/134497-1-eng-GB/New-password-must-be-different-from-the-old-one_doc.jpg" alt="New password must be different from the old one." />
+
+
+
+
+
+
+
+
+</div>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Ricardo Correia&nbsp;(18/01/2013 10:21 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Ricardo Correia&nbsp;(18/01/2013 2:24 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="28540" />
+<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/User-manual/5.x/Password-Expiry/Use" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://doc.ezpublishlegacy.se7enx.com/extension/ezdoc/design/doc/images/ez-logo.png" alt="ez-publish" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/ezpublish" title="eZ Publish Platform">the eZ Publish Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@eZPublishInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/eZ-Publish/User-manual/5.x/Password-Expiry/Use/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:00:56 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->
