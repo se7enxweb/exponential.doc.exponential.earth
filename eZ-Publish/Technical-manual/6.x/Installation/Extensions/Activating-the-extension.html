@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/5.x/Installation/Extensions/Activating-the-extension by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:58:20 GMT -->
+<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation/Extensions/Activating-the-extension by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 <script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
 <script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
                                                     
-    <title>Activating the extension / Extensions / Installation / 5.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Activating the extension / Extensions / Installation / 4.6 / Technical manual / eZ Publish / Documentation - Doc</title>
 
     
     
@@ -100,7 +100,7 @@
                             <a href="../../../../Technical-manual.html">technical manual</a>
         
                         /
-                            <a href="../../../6.html">6.x</a>
+                            <a href="../../../6.x.html">6.x</a>
         
                         /
                             <a href="../../Installation.html">installation</a>
@@ -135,7 +135,7 @@
 <div class="template-module">
 <div class="template-object">
 <div id="contentmenu">
-                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../5.html">Table of contents</a></h2></div>
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../4-2.html">Table of contents</a></h2></div>
 <div class="boxcontent">
 
 <map id="contentstructure">
@@ -182,9 +182,10 @@
                     			    	    		</a>
 			           </div>
         
+         
             <ul>
 	    
-                                                    
+<!--                                                    
 	<li 
 					    			class="last"
 		    		    			    	    >
@@ -197,18 +198,18 @@
 	    
 	    			    	    
 	    
-	    		<a class="nodetext" href="../Requirements/Install-notes-for-eZ-Publish-on-RHEL-6.html" title="">
+	    		<a class="nodetext" href="Requirements/Install-notes-for-eZ-Publish-on-RHEL-6.html" title="">
 	    	    		                    		    <span class="node-name-normal">Install notes for eZ Publish on RHEL 6</span>
                     			    	    		</a>
 			           </div>
         
                                     </li>
-            
+     -->       
                                             </ul>
                                         </li>
             
                                 
-                                                    
+        <!--                                            
 	<li 
 					    		    			    	    >
 	    <div>
@@ -220,13 +221,14 @@
 	    
 	    			    	    
 	    
-	    		<a class="nodetext" href="../eZ-Publish-5.html" title="">
+	    		<a class="nodetext" href="eZ-Publish-5.html" title="">
 	    	    		                    		    <span class="node-name-normal">eZ Publish 5.0 known Issues</span>
                     			    	    		</a>
 			           </div>
         
                                     </li>
             
+             -->
                                 
                                                     
 	<li 
@@ -427,6 +429,46 @@
 	    
 	    		<a class="nodetext" href="../Manual-installation/Requirements-for-doing-a-manual-installation.html" title="">
 	    	    		                    		    <span class="node-name-normal">Requirements for doing a manual installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Manual-installation-on-a-Linux-UNIX-based-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on a Linux/UNIX based system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Manual-installation-on-Windows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on Windows</span>
                     			    	    		</a>
 			           </div>
         
@@ -748,7 +790,7 @@
 	    			    	    
 	    
 	    		<a class="nodetext" href="../../Reference.html" title="">
-	    	    		                    		    <span class="node-name-normal">Reference</span>
+	    	    		                                                           </a><a href="../../../4.x/Reference.html"><span class="node-name-normal">Reference</span>
                     			    	    		</a>
 			           </div>
         
@@ -773,7 +815,24 @@
 <h1>Activating the extension</h1>
 </div>
 
-<p>This Documentation can be found on the following link:&nbsp;<a href="https://confluence.ez.no/display/EZP/Activating+the+extension" target="_self">Activating the extension</a></p><p>Please refer to this link to access it.</p>
+<p>Each extension needs to be activated, which means that it is being registered for eZ Publish to be available from within the eZ Publish framework. Every extension can either be activated in the eZ Publish administration interface or in a configuration file. Furthermore, the activation can be done either for the whole eZ Publish installation or for only certain site accesses.</p><p><b>Note:</b> As of the 4.4 release of eZ Publish we have implemented a feature for automatic loading of extensions in the required sequence. Please go to <a href="Extension-load-ordering.html" target="_self">Extension load ordering</a> for more information on how to do this. If you are running on releases prior to 4.4, please continue reading below.</p><a name="eztoc125031_1" id="eztoc125031_1"></a><h2>Administration interface</h2><p>Log in to your eZ Publish administration interface, click on the &quot;Setup&quot; tab, and then click &quot;Extensions&quot; on the left. You will see the list of available extensions with check-boxes. Simply select the ones you need as shown in the screenshot below and click the &quot;Apply changes&quot; button.</p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/media/images/activating_extensions/119235-1-eng-GB/activating_extensions_doc.png" alt="" />
+
+
+
+
+
+
+
+
+</div><p>This will activate the extension for all siteaccesses of your eZ Publish installation.</p><a name="eztoc125031_2" id="eztoc125031_2"></a><h2>Configuration file</h2><p>Alternatively, an extension can be enabled manually in the <a href="../../../4.x/Reference/Configuration-files/site.html" target="_self">site.ini</a> configuration file.</p><a name="eztoc125031_2_1" id="eztoc125031_2_1"></a><h3>Activating for the whole installation</h3><p>To enable the sample extension for all of your site accesses, edit the &quot;site.ini.append.php&quot; file located in the &quot;settings/override&quot; directory of your eZ Publish installation. Add the following line under the &quot;[ExtensionSettings]&quot; <a href="../../Concepts-and-basics/Configuration.html" target="_self">configuration block</a>:</p><pre class="wordwrap"><span class="line">ActiveExtensions[]=ezfoo</span>
+</pre><p>Multiple extensions can be present within the &quot;[ExtensionSettings]&quot; block. You'll have to manually create the file and/or the section if they do not exist.</p><a name="eztoc125031_2_2" id="eztoc125031_2_2"></a><h3>Activating for certain siteaccesses</h3><p>To enable the sample extension for only a single site access called &quot;example&quot;, edit the &quot;site.ini.append.php&quot; file located in the &quot;settings/siteaccess/example&quot; directory of your eZ Publish installation. Add the following line under the &quot;[ExtensionSettings]&quot; configuration block:</p><pre class="wordwrap"><span class="line">ActiveAccessExtensions[]=ezfoo</span>
+</pre><p>Note that the line registering the extension is not called &quot;ActiveExtensions&quot;, but &quot;ActiveAccessExtensions&quot;. You'll have to manually create the file and/or the section if they do not exist.</p><a name="eztoc125031_2_3" id="eztoc125031_2_3"></a><h3>Updating the autoload arrays</h3><p>After updating the configuration file(s), you need to run the &quot;ezpgenerateautoloads.php&quot; script, in order to add the information about all PHP class definitions of this extension to the &quot;autoload/ezp_extension.php&quot; file, otherwise eZ Publish might not be able to execute the PHP code of the newly added extension. The following example shows how to run the script.</p>
+<ol>
+<li><div>Navigate into the eZ Publish directory. </div></li><li><div><p>Run the script using the following shell command:</p><pre class="wordwrap"><span class="line">bin/php/ezpgenerateautoloads.php --extension</span>
+</pre></div></li>
+</ol>
+<p>The script will look for class definitions in the &quot;extensions&quot; directory and update the &quot;autoload/ezp_extension.php&quot; file accordingly.</p>
 
 <div class="break"></div><div class="pageinfo float-break">
 <div class="created">
@@ -782,9 +841,7 @@
 <p><label>Written by:</label>Sandro Groganz&nbsp;(14/09/2010 8:03 am)</p>
 </div>
 <div class="modified">
-<p><label>Last updated by:</label>Ricardo Correia&nbsp;(08/01/2013 11:57 am)</p>
-</div><div class="authors">
-<p><label>Maintainers:</label>Geir Arne Waaler, Andrea Melo, Ricardo Correia</p>
+<p><label>Last updated by:</label>Geir Arne Waaler&nbsp;(24/01/2012 10:40 am)</p>
 </div></div>
 <hr class="hide" />
 
@@ -801,8 +858,8 @@
 
 <form method="post" action="https://doc.ez.no/content/action">
 <input class="button" type="submit" name="NewButton" value="New comment" />
-<input type="hidden" name="NodeID" value="27604" />
-<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/5.x/Installation/Extensions/Activating-the-extension" />
+<input type="hidden" name="NodeID" value="25851" />
+<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/4.6/Installation/Extensions/Activating-the-extension" />
 <input type="hidden" name="ClassID" value="17" />
 </form>
 </div>
@@ -890,7 +947,7 @@
 
 </body>
 
-<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/5.x/Installation/Extensions/Activating-the-extension by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:58:20 GMT -->
+<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation/Extensions/Activating-the-extension by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
 </html>
 
 <!-- th[eZ] 20050804 -->

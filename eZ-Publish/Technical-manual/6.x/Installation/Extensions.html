@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/5.x/Installation/Extensions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:58:20 GMT -->
+<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation/Extensions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 <script type="text/javascript" src="../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
 <script type="text/javascript" src="../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
                                               
-    <title>Extensions / Installation / 5.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Extensions / Installation / 4.6 / Technical manual / eZ Publish / Documentation - Doc</title>
 
     
     
@@ -100,7 +100,7 @@
                             <a href="../../../Technical-manual.html">technical manual</a>
         
                         /
-                            <a href="../../6.html">6.x</a>
+                            <a href="../../6.x.html">6.x</a>
         
                         /
                             <a href="../Installation.html">installation</a>
@@ -132,7 +132,7 @@
 <div class="template-module">
 <div class="template-object">
 <div id="contentmenu">
-                        <div class="attribute-heading"><h2 class="bullet"><a href="../../5.html">Table of contents</a></h2></div>
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../4-2.html">Table of contents</a></h2></div>
 <div class="boxcontent">
 
 <map id="contentstructure">
@@ -160,7 +160,7 @@
                     			    	    		</a>
 			           </div>
         
-            <ul>
+           <ul>
 	    
                                                     
 	<li 
@@ -178,7 +178,7 @@
 	    	    		                    		    <span class="node-name-normal">Requirements</span>
                     			    	    		</a>
 			           </div>
-        
+        <!--
             <ul>
 	    
                                                     
@@ -194,35 +194,16 @@
 	    
 	    			    	    
 	    
-	    		<a class="nodetext" href="Requirements/Install-notes-for-eZ-Publish-on-RHEL-6.html" title="">
+	    		<a class="nodetext" href="Requirements-4.6/Install-notes-for-eZ-Publish-on-RHEL-6.html" title="">
 	    	    		                    		    <span class="node-name-normal">Install notes for eZ Publish on RHEL 6</span>
                     			    	    		</a>
 			           </div>
         
                                     </li>
             
-                                            </ul>
+                                            </ul>            -->
                                         </li>
-            
-                                
-                                                    
-	<li 
-					    		    			    	    >
-	    <div>
-	    
-	    
 
-	    
-	    
-	    
-	    			    	    
-	    
-	    		<a class="nodetext" href="eZ-Publish-5.html" title="">
-	    	    		                    		    <span class="node-name-normal">eZ Publish 5.0 known Issues</span>
-                    			    	    		</a>
-			           </div>
-        
-                                    </li>
             
                                 
                                                     
@@ -424,6 +405,46 @@
 	    
 	    		<a class="nodetext" href="Manual-installation/Requirements-for-doing-a-manual-installation.html" title="">
 	    	    		                    		    <span class="node-name-normal">Requirements for doing a manual installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Manual-installation/Manual-installation-on-a-Linux-UNIX-based-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on a Linux/UNIX based system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Manual-installation/Manual-installation-on-Windows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on Windows</span>
                     			    	    		</a>
 			           </div>
         
@@ -746,7 +767,7 @@
 	    			    	    
 	    
 	    		<a class="nodetext" href="../Reference.html" title="">
-	    	    		                    		    <span class="node-name-normal">Reference</span>
+	    	    		                                                           </a><a href="../../4.x/Reference.html"><span class="node-name-normal">Reference</span>
                     			    	    		</a>
 			           </div>
         
@@ -771,7 +792,11 @@
 <h1>Extensions</h1>
 </div>
 
-<p>This Documentation can be found on the following link:&nbsp;<a href="https://confluence.ez.no/display/EZP/Extensions" target="_self">Extensions</a></p><p>Please refer to this link to access it.</p>
+<p>Extensions are plug-ins to eZ Publish, providing additional custom functionality. Various extensions are available for eZ Publish. All of them require the same basic steps for an installation. This chapter will show how to perform the following:</p>
+<ol>
+<li><div>Extract the compressed archive containing the extension </div></li><li><div>Activate the extension </div></li>
+</ol>
+<p>Some extensions might require further action to make them fully functional, e.g. creating new database tables, adding certain content classes to eZ Publish, etc. Such additional measures are explained in the <a href="../../../../Extensions.html" target="_self">documentation for each extension</a>.</p><p>As outlined before, this section deals with the basic steps only. For demonstration purposes, the installation will be exemplified by an imaginary extension called &quot;ezfoo&quot;.</p>
 
 <div class="break"></div><div class="pageinfo float-break">
 <div class="created">
@@ -780,9 +805,7 @@
 <p><label>Written by:</label>Sandro Groganz&nbsp;(14/09/2010 8:03 am)</p>
 </div>
 <div class="modified">
-<p><label>Last updated by:</label>Ricardo Correia&nbsp;(08/01/2013 11:35 am)</p>
-</div><div class="authors">
-<p><label>Maintainers:</label>Geir Arne Waaler, Ricardo Correia</p>
+<p><label>Last updated by:</label>Geir Arne Waaler&nbsp;(20/01/2012 10:38 am)</p>
 </div></div>
 <hr class="hide" />
 
@@ -799,8 +822,8 @@
 
 <form method="post" action="https://doc.ez.no/content/action">
 <input class="button" type="submit" name="NewButton" value="New comment" />
-<input type="hidden" name="NodeID" value="27602" />
-<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/5.x/Installation/Extensions" />
+<input type="hidden" name="NodeID" value="25849" />
+<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/4.6/Installation/Extensions" />
 <input type="hidden" name="ClassID" value="17" />
 </form>
 </div>
@@ -888,7 +911,7 @@
 
 </body>
 
-<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/5.x/Installation/Extensions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:58:20 GMT -->
+<!-- Mirrored from doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation/Extensions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
 </html>
 
 <!-- th[eZ] 20050804 -->
