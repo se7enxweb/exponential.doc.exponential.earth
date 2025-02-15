@@ -826,6 +826,14 @@
 </pre><p>Note that if MySQL is installed on the same server, the &quot;--host&quot; parameter can be omitted. If the &quot;--port&quot; parameter is omitted, the default port for MySQL traffic will be used (port 3306).</p><p>The MySQL client should display a &quot;mysql&gt;&quot; prompt.</p></div></li><li><div><p>Create a new database:</p><pre class="wordwrap"><span class="line">mysql&gt; CREATE DATABASE &lt;database&gt; CHARACTER SET utf8;</span>
 </pre></div></li><li><div><p>Grant access permissions:</p><pre class="wordwrap"><span class="line">mysql&gt; GRANT ALL ON &lt;database&gt;.* TO &lt;user&gt;@&lt;ezp_host&gt; IDENTIFIED BY '&lt;password&gt;';</span>
 </pre><p>Note that if the specified user account does not exist, it will be created.</p></div></li>
+
+<li><div><p>Grant database installation access permissions (required by the setup wizard):</p></div>
+<div><pre class="wordwrap"><span class="line">mysql&gt; GRANT ALL PRIVILEGES ON mysql.* TO &lt;user&gt;@&lt;ezp_host&gt;;</span></pre>
+<p>.. or use a separate user like root durring the setup wizard database connection configuration to complete a normal installation then replace the database connection information via settings value changes to a less privileged user after successfully completing the setup wizard installation and configuration of eZ Publish. Note: Please remember to remove the additional mysql privileges after completting the setup wizard.</p></p>
+
+<pre class="wordwrap"><span class="line">mysql&gt; REVOKE ALL PRIVILEGES ON mysql.* FROM '&lt;user&gt;'@'&lt;ezp_host&gt;'; FLUSH PRIVILEGES; SHOW GRANTS FOR '&lt;user&gt;'@'&lt;ezp_host&gt;';</span></pre>
+</div></li>
+
 </ol>
 <table class="renderedtable indented-table" cellpadding="2" cellspacing="0">
 
