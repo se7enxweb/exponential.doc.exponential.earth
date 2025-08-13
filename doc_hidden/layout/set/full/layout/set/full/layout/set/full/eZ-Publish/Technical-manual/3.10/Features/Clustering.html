@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:04:28 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:04:28 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>Clustering / Features / 3.10 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Clustering / Features / 3.10 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Clustering</h1>
 </div>
 
- <p>The clustering feature makes it possible to run an eZ Publish site on several web servers. A site that is running on a cluster of servers will have better performance and will be able to handle more traffic. </p> <p>It is possible to store all content related caches, images and binary files in the database. A technique called <a href="http://en.wikipedia.org/wiki/Database_transaction" target="_self">database transaction</a> is used to ensure that all the cluster nodes use the same cache files and have access to the same image and binary files. In other words, when content is updated, changes automatically become available for all the web servers in the cluster. This functionality was significantly improved in 3.10.</p> <p>Note that when clustering is used, it is recommended to run the site in a Virtual Host environment on the different servers.</p>  <a name="eztoc74670_1" id="eztoc74670_1"></a><h2>Changes introduced in 3.10</h2> <p>In eZ Publish versions prior to 3.10, clearing the caches lead to physical removal of the cache files. This operation can be quite time consuming.</p> <p>From 3.10, the system will mark the cache files invalid instead of removing them physically from the database or filesystem. This can be done by either marking each particular cache file expired or setting the global expiry (the latter typically happens when a significant amount of changes is needed, e.g. when clearing all the caches of a specific type). The global expiry is a timestamp that is used as an expiry value for all the caches in the system. If the global expiry is set to a certain date, all cache files that are older than this date will not be used. Note that the system will re-use old/expired cache file entries when re-creating the caches.</p> <p>
+ <p>The clustering feature makes it possible to run an Exponential site on several web servers. A site that is running on a cluster of servers will have better performance and will be able to handle more traffic. </p> <p>It is possible to store all content related caches, images and binary files in the database. A technique called <a href="http://en.wikipedia.org/wiki/Database_transaction" target="_self">database transaction</a> is used to ensure that all the cluster nodes use the same cache files and have access to the same image and binary files. In other words, when content is updated, changes automatically become available for all the web servers in the cluster. This functionality was significantly improved in 3.10.</p> <p>Note that when clustering is used, it is recommended to run the site in a Virtual Host environment on the different servers.</p>  <a name="eztoc74670_1" id="eztoc74670_1"></a><h2>Changes introduced in 3.10</h2> <p>In Exponential versions prior to 3.10, clearing the caches lead to physical removal of the cache files. This operation can be quite time consuming.</p> <p>From 3.10, the system will mark the cache files invalid instead of removing them physically from the database or filesystem. This can be done by either marking each particular cache file expired or setting the global expiry (the latter typically happens when a significant amount of changes is needed, e.g. when clearing all the caches of a specific type). The global expiry is a timestamp that is used as an expiry value for all the caches in the system. If the global expiry is set to a certain date, all cache files that are older than this date will not be used. Note that the system will re-use old/expired cache file entries when re-creating the caches.</p> <p>
 In order to physically remove the cache files from the database, the &quot;bin/php/ezcache.php&quot; script needs to be run with the &quot;--purge&quot; option. The following example shows how to remove the content caches that are more than two days old:<br /></p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-id=content --purge --expiry='-2 days'</span>
 </pre><p>
  <br />
@@ -82,11 +82,11 @@ If you have an extension &quot;myExtension&quot; that includes a cluster file ha
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:04:29 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:04:29 GMT -->
 </html>

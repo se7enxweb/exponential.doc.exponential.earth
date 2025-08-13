@@ -41,7 +41,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p>It is possible to dynamically inject variables in content view templates by listening to the <code><strong>ezpublish.pre_content_view</strong></code> event.</p><p>The event listener method receives an<code> <span>eZ\Publish\Core\MVC\Symfony\Event\PreContentViewEvent</span> </code>object</p><h3>Example</h3><p>The following example will inject <code>foo</code> and <code>osTypes</code> variables in all content view templates.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="language=php" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading1802.png?definition=e2NvZGU6bGFuZ3VhZ2U9cGhwfQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>&lt;?php
+        <p>&nbsp;</p>         <p>It is possible to dynamically inject variables in content view templates by listening to the <code><strong>exponential.pre_content_view</strong></code> event.</p><p>The event listener method receives an<code> <span>eZ\Publish\Core\MVC\Symfony\Event\PreContentViewEvent</span> </code>object</p><h3>Example</h3><p>The following example will inject <code>foo</code> and <code>osTypes</code> variables in all content view templates.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="language=php" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading1802.png?definition=e2NvZGU6bGFuZ3VhZ2U9cGhwfQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>&lt;?php
 
 namespace Acme\DemoBundle\EventListener;
 use eZ\Publish\Core\MVC\Symfony\Event\PreContentViewEvent;
@@ -67,7 +67,7 @@ services:
     ezdemo.pre_content_view_listener:
         class: %ezdemo.pre_content_view_listener.class%
         tags:
-            - {name: kernel.event_listener, event: ezpublish.pre_content_view, method: onPreContentView}
+            - {name: kernel.event_listener, event: exponential.pre_content_view, method: onPreContentView}
 
 </pre></td></tr></table><p> </p><p> </p>
         <p>&nbsp;</p>

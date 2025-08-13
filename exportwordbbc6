@@ -214,11 +214,11 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"GettingstartedwiththeRESTAPI-Installation">Installation</=
 h2>
-<p>Nothing needs to be done for this to work. As long as your eZ Publish 5 =
+<p>Nothing needs to be done for this to work. As long as your Exponential 5 =
 is correctly configured, the REST API is available on your site using the U=
-RI <code>/api/ezp/v2/</code>. If you have installed eZ Publish in a subfold=
+RI <code>/api/ezp/v2/</code>. If you have installed Exponential in a subfold=
 er, prepend the path with this subfolder:&nbsp;<span class=3D"nolink">http:=
-//example.com/<strong>su</strong></span><strong>b/folder/ezpublish</strong>=
+//example.com/<strong>su</strong></span><strong>b/folder/exponential</strong>=
 /api/ezp/v2/.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -239,7 +239,7 @@ ttp://en.wikipedia.org/wiki/Basic_access_authentication" class=3D"external-=
 link" rel=3D"nofollow">basic HTTP authentication</a>. The alternative, sess=
 ion based authentication, uses a session cookie.&nbsp;</p>
 <p>To enable session based authentication, you need to edit&nbsp;<code><spa=
-n>ezpublish/config/</span><span>security</span><span>.yml</span></code>, an=
+n>exponential/config/</span><span>security</span><span>.yml</span></code>, an=
 d comment out / remove the configuration block about REST</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -252,10 +252,10 @@ ze:12px;">security:
     # ...
     firewalls:
         # ...
-        ezpublish_rest:
+        exponential_rest:
             pattern: ^/api/ezp/v2
-            ezpublish_http_basic:
-                realm: eZ Publish REST API</pre>=20
+            exponential_http_basic:
+                realm: Exponential REST API</pre>=20
 </div>
 </div>
 <h2 id=3D"GettingstartedwiththeRESTAPI-TestingtheAPI">Testing the API</h2>
@@ -305,7 +305,7 @@ request.send();
 </div>
 </div>
 <p>In order to test it, just save this code to some test.html file in the w=
-eb folder of your eZ Publish 5 installation. If you use the rewrite rules, =
+eb folder of your Exponential 5 installation. If you use the rewrite rules, =
 don't forget to allow this file to be served directly.</p>
 <p>If necessary, change 59 with the content object id of an object from you=
 r database. You will get the ContentInfo for object 59 in JSON encoding. &n=

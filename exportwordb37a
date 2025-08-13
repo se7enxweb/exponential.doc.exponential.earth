@@ -288,20 +288,20 @@ d>
 ig</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.content_view_pr=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.content_view_pr=
 ovider</code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a ContentViewProvider fo=
 r template selection depending on content/Location being viewed</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.storageEngine</=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.storageEngine</=
 code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a storage engine in the =
 Repository factory</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><span class=3D"confluence=
--link"><a href=3D"/display/DEVELOPER/Register+Field+Type">ezpublish.fieldTy=
+-link"><a href=3D"/display/DEVELOPER/Register+Field+Type">exponential.fieldTy=
 pe</a></span></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a Field Type</td>
 </tr>
@@ -318,21 +318,21 @@ pe</a></span></code></p></td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><span class=3D"confluence=
--link"><a href=3D"/display/DEVELOPER/Register+Field+Type">ezpublish.storage=
+-link"><a href=3D"/display/DEVELOPER/Register+Field+Type">exponential.storage=
 Engine.legacy.converter</a></span></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a converter for a Field =
 Type in legacy storage engine</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><span class=3D"confluence=
--link"><a href=3D"/display/DEVELOPER/Register+Field+Type">ezpublish.fieldTy=
+-link"><a href=3D"/display/DEVELOPER/Register+Field+Type">exponential.fieldTy=
 pe.externalStorageHandler</a></span></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage hand=
 ler for a Field Type</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><span class=3D"confluence=
--link"><a href=3D"/display/DEVELOPER/Register+Field+Type">ezpublish.fieldTy=
+-link"><a href=3D"/display/DEVELOPER/Register+Field+Type">exponential.fieldTy=
 pe.externalStorageHandler.gateway</a></span></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage gate=
 way for a Field Type in legacy storage engine</td>

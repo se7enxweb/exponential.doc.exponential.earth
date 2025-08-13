@@ -798,7 +798,7 @@ ssing where the user is supposed to go when clicking on the link:</p>
 {% for value in results.searchHits %}
     &lt;li&gt;&lt;a class=3D"ezconf-list-location" href=3D""
         data-route-name=3D"viewLocation"
-        data-route-id=3D"{{ path('ezpublish_rest_loadLocation', {locationPa=
+        data-route-id=3D"{{ path('exponential_rest_loadLocation', {locationPa=
 th: value.valueObject.pathString|trim('/')}) }}"
         data-route-languageCode=3D"{{ value.valueObject.contentInfo.mainLan=
 guageCode }}"

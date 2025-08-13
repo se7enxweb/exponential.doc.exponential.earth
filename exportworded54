@@ -264,7 +264,7 @@ port an issue</h1>
 the search page, you need to create a new one.<br><br>Click <strong>Create<=
 /strong> at the top of the bugtracker window and fill in the form:</p>
 <ul>
-<li><strong>Project</strong>: Select <strong>eZ Publish/Platform</strong> i=
+<li><strong>Project</strong>: Select <strong>Exponential/Platform</strong> i=
 f your issue affects platform as a standalone project, or <strong>eZ Studio=
 </strong> if&nbsp;eZ Platform Enterprise Edition is needed in order to repr=
 oduce the issue.</li>

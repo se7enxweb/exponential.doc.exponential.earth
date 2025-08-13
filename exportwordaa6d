@@ -214,12 +214,12 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"GettingstartedwiththeRESTAPI-Installation">Installation</=
 h2>
-<p>Nothing needs to be done here. As long as your eZ Publish 5.1 is correct=
+<p>Nothing needs to be done here. As long as your Exponential 5.1 is correct=
 ly configured, the REST API is available on your site using the URI <code>/=
-api/ezp/v2/</code>. If you have installed eZ Publish in a subfolder, it pre=
+api/ezp/v2/</code>. If you have installed Exponential in a subfolder, it pre=
 pends the path with this subfolder:&nbsp;<a href=3D"http://example.com/su" =
 class=3D"external-link" rel=3D"nofollow">http://example.com/su</a>b/folder/=
-ezpublish/api/ezp/v2/.</p>
+exponential/api/ezp/v2/.</p>
 <h2 id=3D"GettingstartedwiththeRESTAPI-Configuration">Configuration</h2>
 <h3 id=3D"GettingstartedwiththeRESTAPI-Authentication">Authentication</h3>
 <p>As explained in details in the <a href=3D"/display/EZP51/REST+API+Authen=
@@ -230,7 +230,7 @@ ive mode. It requires a login / password to be sent using basic HTTP authen=
 tication. The alternative, session based authentication, uses a session coo=
 kie.&nbsp;</p>
 <p>To enable session based authentication, you need to edit&nbsp;<code><spa=
-n>ezpublish/config/</span><span>security</span><span>.yml</span></code>, an=
+n>exponential/config/</span><span>security</span><span>.yml</span></code>, an=
 d comment out / remove the configuration block about REST</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -243,10 +243,10 @@ ze:12px;">security:
     # ...
     firewalls:
         # ...
-        ezpublish_rest:
+        exponential_rest:
             pattern: ^/api/ezp/v2
-            ezpublish_http_basic:
-                realm: eZ Publish REST API</pre>=20
+            exponential_http_basic:
+                realm: Exponential REST API</pre>=20
 </div>
 </div>
 <h2 id=3D"GettingstartedwiththeRESTAPI-TestingtheAPI">Testing the API</h2>
@@ -296,7 +296,7 @@ request.send();
 </div>
 </div>
 <p>In order to test it, just save this code to some test.html file in the w=
-eb folder of your eZ Publish 5.1 installation. If you use the rewrite rules=
+eb folder of your Exponential 5.1 installation. If you use the rewrite rules=
 , don't forget to allow this file to be served directly.</p>
 <p>If necessary, change 59 with the content object id of an object from you=
 r database. You will get the ContentInfo for object 59 in JSON. &nbsp;</p>

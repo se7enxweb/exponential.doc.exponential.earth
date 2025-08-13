@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Installing eZ Publish on a Linux-UNIX based system</title>
+    <title>Installing Exponential on a Linux-UNIX based system</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Installing eZ Publish on a Linux-UNIX based system</h1>
+    <h1>Installing Exponential on a Linux-UNIX based system</h1>
     <div class=3D"Section1">
         <div class=3D"confluence-information-macro confluence-information-m=
 acro-note">
@@ -245,43 +245,43 @@ div.rbtoc1485856452060 li {margin-left: 0px;padding-left: 0px;}
 /*]]>*/</style></p>
 <div class=3D"toc-macro rbtoc1485856452060">=20
 <ul class=3D"toc-indentation">=20
-<li><span class=3D"TOCOutline">1</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">1</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-SettingupadatabaseYellow5.x">Setting up a database 5.X=
 </a>=20
 <ul class=3D"toc-indentation">=20
-<li><span class=3D"TOCOutline">1.1</span> <a href=3D"#InstallingeZPublishon=
+<li><span class=3D"TOCOutline">1.1</span> <a href=3D"#InstallingExponentialon=
 aLinux-UNIXbasedsystem-MySQL">MySQL</a></li>=20
-<li><span class=3D"TOCOutline">1.2</span> <a href=3D"#InstallingeZPublishon=
+<li><span class=3D"TOCOutline">1.2</span> <a href=3D"#InstallingExponentialon=
 aLinux-UNIXbasedsystem-PostgreSQL">PostgreSQL</a></li>=20
 </ul> </li>=20
-<li><span class=3D"TOCOutline">2</span> <a href=3D"#InstallingeZPublishonaL=
-inux-UNIXbasedsystem-DownloadingeZPublishYellow5.x">Downloading eZ Publish =
+<li><span class=3D"TOCOutline">2</span> <a href=3D"#InstallingExponentialonaL=
+inux-UNIXbasedsystem-DownloadingExponentialYellow5.x">Downloading Exponential =
 5.X</a></li>=20
-<li><span class=3D"TOCOutline">3</span> <a href=3D"#InstallingeZPublishonaL=
-inux-UNIXbasedsystem-UnpackingeZPublishYellow5.x">Unpacking eZ Publish 5.X<=
+<li><span class=3D"TOCOutline">3</span> <a href=3D"#InstallingExponentialonaL=
+inux-UNIXbasedsystem-UnpackingExponentialYellow5.x">Unpacking Exponential 5.X<=
 /a></li>=20
-<li><span class=3D"TOCOutline">4</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">4</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-SettingupfolderpermissionYellow5.x">Setting up folder =
 permission 5.X</a></li>=20
-<li><span class=3D"TOCOutline">5</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">5</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-InstallComposerYellow5.x">Install Composer 5.X</a>=20
 <ul class=3D"toc-indentation">=20
-<li><span class=3D"TOCOutline">5.1</span> <a href=3D"#InstallingeZPublishon=
+<li><span class=3D"TOCOutline">5.1</span> <a href=3D"#InstallingExponentialon=
 aLinux-UNIXbasedsystem-For5.3andhigher:getlatestversionsofpackagesRed>=3D5.=
 3/2014.05">For 5.3 and higher : get latest versions of packages &gt;=3D 5.3=
  / 2014.05</a></li>=20
-<li><span class=3D"TOCOutline">5.2</span> <a href=3D"#InstallingeZPublishon=
+<li><span class=3D"TOCOutline">5.2</span> <a href=3D"#InstallingExponentialon=
 aLinux-UNIXbasedsystem-For5.2:forSymfonyanditsdependenciesGreen5.2">For 5.2=
  : for Symfony and its dependencies 5.2</a></li>=20
 </ul> </li>=20
-<li><span class=3D"TOCOutline">6</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">6</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-Forall5.xversions:InstallZetacomponentsforapurelegacys=
 etupYellow5.x">For all 5.x versions : Install Zetacomponents for a pure leg=
 acy setup 5.X</a></li>=20
-<li><span class=3D"TOCOutline">7</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">7</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-Before5.2:Linkassets<5.2">Before 5.2 : Link assets &lt=
 ; 5.2</a></li>=20
-<li><span class=3D"TOCOutline">8</span> <a href=3D"#InstallingeZPublishonaL=
+<li><span class=3D"TOCOutline">8</span> <a href=3D"#InstallingExponentialonaL=
 inux-UNIXbasedsystem-InitiatingthesetupwizardYellow5.x">Initiating the setu=
 p wizard 5.X</a></li>=20
 </ul>=20
@@ -303,13 +303,13 @@ strong></em></strong></em></strong></em></strong></em>&nbsp;=20
 =3D 5.3 / 2014.05</span></strong></em>
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-SettingupadatabaseYel=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-SettingupadatabaseYel=
 low5.x">Setting up a database<em><strong> <span class=3D"status-macro aui-l=
 ozenge aui-lozenge-current">5.X</span></strong></em></h2>
 <p>A <strong>database must be created</strong> before running the setup wiz=
 ard. The following text explains how to set up a database using either MySQ=
 L or PostgreSQL.</p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-MySQL">MySQL</h3>
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-MySQL">MySQL</h3>
 <ol>
 <li>
 <div>
@@ -402,7 +402,7 @@ abase.</td>
 </tr>
 <tr>
 <td class=3D"confluenceTd">&lt;ezp_host&gt;</td>
-<td class=3D"confluenceTd">The hostname of the server on which eZ Publish w=
+<td class=3D"confluenceTd">The hostname of the server on which Exponential w=
 ill be running. (may be "<code>localhost</code>" if MySQL is installed on t=
 he same server).</td>
 </tr>
@@ -417,7 +417,7 @@ ccess to the database.</td>
 </div></li>
 </ol>
 <p><a name=3D"eztoc131657_1_2" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-PostgreSQL">PostgreSQ=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-PostgreSQL">PostgreSQ=
 L</h3>
 <ol>
 <li>
@@ -543,15 +543,15 @@ g changes might be necessary for these users:
 </div>
 </div></li>
 </ol>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-DownloadingeZPublishY=
-ellow5.x">Downloading eZ Publish <em><strong><span class=3D"status-macro au=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-DownloadingExponentialY=
+ellow5.x">Downloading Exponential <em><strong><span class=3D"status-macro au=
 i-lozenge aui-lozenge-current">5.X</span></strong></em></h2>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-The latest community version of eZ Publish can be downloaded from=20
+The latest community version of Exponential can be downloaded from=20
 <a href=3D"http://share.ez.no/downloads" class=3D"external-link" rel=3D"nof=
 ollow">http://share.ez.no/downloads</a>
 </div>
@@ -559,10 +559,10 @@ ollow">http://share.ez.no/downloads</a>
 <p>Enterprise version is available in your <a href=3D"https://support.ez.no=
 " class=3D"external-link" rel=3D"nofollow">support portal</a> or via partne=
 r portal.</p>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-UnpackingeZPublishYel=
-low5.x">Unpacking eZ Publish <em><strong><span class=3D"status-macro aui-lo=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-UnpackingExponentialYel=
+low5.x">Unpacking Exponential <em><strong><span class=3D"status-macro aui-lo=
 zenge aui-lozenge-current">5.X</span></strong></em></h2>
-<p>Use your favorite tool to unpack the downloaded eZ Publish distribution =
+<p>Use your favorite tool to unpack the downloaded Exponential distribution =
 to a web-served directory (a directory that is reachable using a web browse=
 r), or in case of virtual host mode it can be any folder. <br>The following=
  example shows how to do this using the tar utility (to unpack a tar.gz fil=
@@ -570,7 +570,7 @@ e, assuming that the "tar" and the "gzip" utilities are installed on the sy=
 stem):</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ tar zxvf ezpublish-&lt;version_number&gt;-gpl.tar.gz -C &lt;web_serv=
+<pre>$ tar zxvf exponential-&lt;version_number&gt;-gpl.tar.gz -C &lt;web_serv=
 ed_directory&gt;</pre>=20
 </div>
 </div>
@@ -583,7 +583,7 @@ ed_directory&gt;</pre>=20
 </tr>
 <tr>
 <td class=3D"confluenceTd"><code>&lt;version_number&gt;</code></td>
-<td class=3D"confluenceTd">The version number of eZ Publish that was downlo=
+<td class=3D"confluenceTd">The version number of Exponential that was downlo=
 aded.</td>
 </tr>
 <tr>
@@ -597,12 +597,12 @@ de>www</code>", and located inside a user's home directory).</td>
 </table>
 </div>
 <p>&nbsp;</p>
-<p>The extraction utility will unpack eZ Publish into a sub-directory calle=
-d "<code>ezpublish-&lt;version_number&gt;</code>". Feel free to rename this=
+<p>The extraction utility will unpack Exponential into a sub-directory calle=
+d "<code>exponential-&lt;version_number&gt;</code>". Feel free to rename this=
  directory to something more meaningful, for example "<code>my_site</code>"=
 .</p>
 <p><a name=3D"eztoc131657_4" rel=3D"nofollow"></a></p>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Settingupfolderpermis=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Settingupfolderpermis=
 sionYellow5.x">Setting up folder permission<em><strong> <span class=3D"stat=
 us-macro aui-lozenge aui-lozenge-current">5.X</span></strong></em></h2>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -636,11 +636,11 @@ se shell commands will give proper permission to the web server and command=
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo chmod +a "www-data allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config,sessions} ezpublish_legacy/{design,exten=
+      exponential/{cache,logs,config,sessions} exponential_legacy/{design,exten=
 sion,settings,var} web
     $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config,sessions} ezpublish_legacy/{design,exten=
+      exponential/{cache,logs,config,sessions} exponential_legacy/{design,exten=
 sion,settings,var} web</pre>=20
 </div>
 </div><p><em><strong>5.0, 5.1 and 5.2: <em><strong><span class=3D"status-ma=
@@ -653,11 +653,11 @@ rong></em></p>
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo chmod +a "www-data allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div><p><strong><br></strong></p></li>
@@ -672,10 +672,10 @@ pan></strong></em><br></strong></em></p>
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo setfacl -R -m u:www-data:rwx -m u:www-data:rwx \
-      ezpublish/{cache,logs,config,sessions} ezpublish_legacy/{design,exten=
+      exponential/{cache,logs,config,sessions} exponential_legacy/{design,exten=
 sion,settings,var} web
     $ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx \
-      ezpublish/{cache,logs,config,sessions} ezpublish_legacy/{design,exten=
+      exponential/{cache,logs,config,sessions} exponential_legacy/{design,exten=
 sion,settings,var} web</pre>=20
 </div>
 </div><p><em><strong>5.0, 5.1 and 5.2: <em><strong><em><strong><span class=
@@ -687,10 +687,10 @@ ozenge aui-lozenge-success">5.2</span></strong></em></strong></em></strong>=
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo setfacl -R -m u:www-data:rwx -m u:www-data:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div></li>
@@ -703,11 +703,11 @@ strong>5.3 / 2014.05</strong></em>&nbsp;and higher: <em><strong><span class=
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo chown -R www-data:www-data ezpublish/{cache,logs,config,sessions=
-} ezpublish_legacy/{design,extension,settings,var} web
-    $ sudo find {ezpublish/{cache,logs,config,sessions},ezpublish_legacy/{d=
+    $ sudo chown -R www-data:www-data exponential/{cache,logs,config,sessions=
+} exponential_legacy/{design,extension,settings,var} web
+    $ sudo find {exponential/{cache,logs,config,sessions},exponential_legacy/{d=
 esign,extension,settings,var},web} -type d | xargs sudo chmod -R 775
-    $ sudo find {ezpublish/{cache,logs,config,sessions},ezpublish_legacy/{d=
+    $ sudo find {exponential/{cache,logs,config,sessions},exponential_legacy/{d=
 esign,extension,settings,var},web} -type f | xargs sudo chmod -R 664</pre>=
 =20
 </div>
@@ -719,11 +719,11 @@ ozenge aui-lozenge-success">5.2</span></strong></em></strong></em></strong>=
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo chown -R www-data:www-data ezpublish/{cache,logs,config} ezpubli=
+    $ sudo chown -R www-data:www-data exponential/{cache,logs,config} ezpubli=
 sh_legacy/{design,extension,settings,var} web
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | xargs sudo chmod -R 775
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | xargs sudo chmod -R 664</pre>=20
 </div>
 </div></li>
@@ -736,9 +736,9 @@ and higher: <em><strong><span class=3D"status-macro aui-lozenge aui-lozenge=
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo find {ezpublish/{cache,logs,config,sessions},ezpublish_legacy/{d=
+    $ sudo find {exponential/{cache,logs,config,sessions},exponential_legacy/{d=
 esign,extension,settings,var},web} -type d | xargs sudo chmod -R 777
-    $ sudo find {ezpublish/{cache,logs,config,sessions},ezpublish_legacy/{d=
+    $ sudo find {exponential/{cache,logs,config,sessions},exponential_legacy/{d=
 esign,extension,settings,var},web} -type f | xargs sudo chmod -R 666</pre>=
 =20
 </div>
@@ -750,21 +750,21 @@ ozenge aui-lozenge-success">5.2</span></strong></em></strong></em></strong>=
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | xargs sudo chmod -R 777
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | xargs sudo chmod -R 666</pre>=20
 </div>
 </div></li>
 </ul>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-InstallComposerYellow=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-InstallComposerYellow=
 5.x">Install Composer <em><strong><span class=3D"status-macro aui-lozenge a=
 ui-lozenge-current">5.X</span></strong></em></h2>
 <p>If you use a version control system, take care of versioning the compose=
 r.lock file.</p>
 <p>Install <a href=3D"http://getcomposer.org/" class=3D"external-link" rel=
 =3D"nofollow">Composer</a> by running one of the following command from you=
- eZ Publish root folder :</p>
+ Exponential root folder :</p>
 <p>If you <strong>have curl</strong> installed:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
@@ -778,7 +778,7 @@ r.lock file.</p>
 ler'));"</pre>=20
 </div>
 </div>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-For5.3andhigher:getla=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-For5.3andhigher:getla=
 testversionsofpackagesRed>=3D5.3/2014.05">For 5.3 and higher : get latest v=
 ersions of packages <em><strong><span class=3D"status-macro aui-lozenge aui=
 -lozenge-error">&gt;=3D 5.3 / 2014.05</span></strong></em></h3>
@@ -793,12 +793,12 @@ Learn more on how to keep system further up to date&nbsp;=20
 <a href=3D"/display/EZP/Using+Composer">Using Composer</a>
 </div>
 </div>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-For5.2:forSymfonyandi=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-For5.2:forSymfonyandi=
 tsdependenciesGreen5.2">For 5.2 : for Symfony and its dependencies <em><str=
 ong><em><strong><em><strong><em><strong><span class=3D"status-macro aui-loz=
 enge aui-lozenge-success">5.2</span></strong></em></strong></em></strong></=
 em></strong></em></h3>
-<p>Use composer for Symfony and its dependencies only, not for eZ Publish a=
+<p>Use composer for Symfony and its dependencies only, not for Exponential a=
 nd it's dependencies.<br></p>
 <div class=3D"error">
 Error rendering macro 'excerpt-include' : User 'null' does not have permiss=
@@ -808,16 +808,16 @@ ion to view the page 'glossary:Symfony'.
 <p>&nbsp;</p>
 <div>
 <div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Forall5.xversions:Ins=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Forall5.xversions:Ins=
 tallZetacomponentsforapurelegacysetupYellow5.x">For all 5.x versions : Inst=
 all Zetacomponents for a pure legacy setup <em><strong><span class=3D"statu=
 s-macro aui-lozenge aui-lozenge-current">5.X</span></strong></em></h2>
-<p>As of eZ Publish 5.2, if you plan to use eZ Publish legacy <strong>only,=
-</strong> as standalone (as in pointing apache to ezpublish_legacy folder o=
-r extracting only ezpublish_legacy), then Zetacomponents must be installed =
+<p>As of Exponential 5.2, if you plan to use Exponential legacy <strong>only,=
+</strong> as standalone (as in pointing apache to exponential_legacy folder o=
+r extracting only exponential_legacy), then Zetacomponents must be installed =
 if you don't already have it via PEAR.</p>
 <p>After Composer installation (see above for Composer installation instruc=
-tions) run the following command <strong>from the&nbsp;<em>ezpublish_legacy=
+tions) run the following command <strong>from the&nbsp;<em>exponential_legacy=
 /</em>&nbsp;folder :</strong></p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
@@ -835,7 +835,7 @@ rmation-macro-icon"></span>
 <p>&nbsp;</p>
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Before5.2:Linkassets<=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Before5.2:Linkassets<=
 5.2">Before 5.2 : Link assets <em><strong><em><strong><em><strong><span cla=
 ss=3D"status-macro aui-lozenge">&lt; 5.2</span><em><strong> </strong></em><=
 /strong></em></strong></em></strong></em></h2>
@@ -849,18 +849,18 @@ The download file should already have generated these assets for you as of =
 on Windows, make sure to run these commands.
 </div>
 </div>
-<p>To be able to run eZ Publish 5 correctly, assets need to be exposed in t=
+<p>To be able to run Exponential 5 correctly, assets need to be exposed in t=
 he public "<code>web</code>" folder.</p>
-<p>The following commands will first symlink eZ Publish 5 assets in "Bundle=
+<p>The following commands will first symlink Exponential 5 assets in "Bundle=
 s" and the second will symlink assets (design files like images, scripts an=
-d css, and files in var folder) &nbsp;from eZ Publish Legacy</p>
+d css, and files in var folder) &nbsp;from Exponential Legacy</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>cd /&lt;ezp5-root&gt;
-php ezpublish/console assets:install --relative --symlink web
-php ezpublish/console ezpublish:legacy:assets_install --relative --symlink =
+php exponential/console assets:install --relative --symlink web
+php exponential/console exponential:legacy:assets_install --relative --symlink =
 web
-php ezpublish/console assetic:dump --env=3Dprod web</pre>=20
+php exponential/console assetic:dump --env=3Dprod web</pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -876,7 +876,7 @@ in composer.json if you prefer something else then --relative which is the =
 default.</p>
 <p>Further information about alternative options is&nbsp;available&nbsp;wit=
 h <code>-h</code> on each command, just like it is with the console itself =
-using "<code>php ezpublish/console </code><code style=3D"line-height: 1.428=
+using "<code>php exponential/console </code><code style=3D"line-height: 1.428=
 5715;">-h</code>".</p>
 </div>
 </div>
@@ -886,14 +886,14 @@ ning">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>If you are planning to use APC usercache for eZ Publish Persistence cach=
+<p>If you are planning to use APC usercache for Exponential Persistence cach=
 e, please be sure to check the available notes <a href=3D"https://confluenc=
 e.ez.no/display/EZP/Persistence+cache+configuration#Persistencecacheconfigu=
 ration-APC" class=3D"external-link" rel=3D"nofollow">here</a>, before enter=
 ing the setup wizard chapter.</p>
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Initiatingthesetupwiz=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Initiatingthesetupwiz=
 ardYellow5.x">Initiating the setup wizard <em><strong><span class=3D"status=
 -macro aui-lozenge aui-lozenge-current">5.X</span></strong></em></h2>
 <p>The setup wizard can be started using a web browser immediately after th=

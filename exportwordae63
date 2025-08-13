@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><span>This recipe is compatible with&nbsp;</span><strong>eZ Publish 5.2 =
+<p><span>This recipe is compatible with&nbsp;</span><strong>Exponential 5.2 =
 / 2013.09</strong></p>
 </div>
 </div>
@@ -250,7 +250,7 @@ r</a></li>=20
 013.09</span></p>
 <h2 id=3D"Howtoretrieverootlocation-Description">Description</h2>
 <p>Knowledge of the root location is important since it can be a starting p=
-oint for API queries, or even links to home page, but as eZ Publish can be =
+oint for API queries, or even links to home page, but as Exponential can be =
 used <a href=3D"/display/EZP/Multisite+using+content_root">for multisite de=
 velopment</a>, and as such <strong>root location can vary</strong>.</p>
 <p>By default, root location ID is <code>2</code>, but as it can be easily =
@@ -301,7 +301,7 @@ bal Twig helper</a>.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: html/xml; gutter: false; theme: Eclipse" style=3D"font=
--size:12px;">&lt;a href=3D"{{ path( ezpublish.rootLocation ) }}" title=3D"L=
+-size:12px;">&lt;a href=3D"{{ path( exponential.rootLocation ) }}" title=3D"L=
 ink to homepage"&gt;Home page&lt;/a&gt;</pre>=20
 </div>
 </div>
@@ -309,7 +309,7 @@ ink to homepage"&gt;Home page&lt;/a&gt;</pre>=20
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.2+ / 2013.11+</b>
+<b>Exponential 5.2+ / 2013.11+</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

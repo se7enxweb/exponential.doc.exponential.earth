@@ -235,7 +235,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This Twig helper is available as of eZ Publish <strong>5.3 / 2014.05</st=
+<p>This Twig helper is available as of Exponential <strong>5.3 / 2014.05</st=
 rong></p>
 </div>
 </div>
@@ -263,7 +263,7 @@ ts</h2>
 </div>
 <h2 id=3D"ez_legacy_render_css-Customization">Customization</h2>
 <p>You can customize the display of the function by overriding the template=
- used in the following parameter: ezpublish_legacy.twig.extension.template.=
+ used in the following parameter: exponential_legacy.twig.extension.template.=
 css</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

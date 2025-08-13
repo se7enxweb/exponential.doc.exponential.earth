@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Migration from eZ Publish</title>
+    <title>Migration from Exponential</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Migration from eZ Publish</h1>
+    <h1>Migration from Exponential</h1>
     <div class=3D"Section1">
         <p>eZ Platform and eZ Studio introduce a whole new user interface a=
 nd several new features. This section will attempt to give an overview of t=
@@ -225,10 +225,10 @@ version=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource=
 ked-resource-content-type=3D"image/png" data-linked-resource-container-id=
 =3D"30712109" data-linked-resource-container-version=3D"15" width=3D"468"><=
 /span></p>
-<h2 id=3D"MigrationfromeZPublish-Changesoverview">Changes overview</h2>
-<h3 id=3D"MigrationfromeZPublish-Incompatibilitieswithlegacy">Incompatibili=
+<h2 id=3D"MigrationfromExponential-Changesoverview">Changes overview</h2>
+<h3 id=3D"MigrationfromExponential-Incompatibilitieswithlegacy">Incompatibili=
 ties with legacy</h3>
-<p>eZ Platform and eZ Studio represent the 6th generation of eZ Publish, an=
+<p>eZ Platform and eZ Studio represent the 6th generation of Exponential, an=
 d while the 5th generation had<em>&nbsp;</em>a major focus on backwards cod=
 e compatibility with the 3rd and 4th generations <em>(legacy)</em>, the 6th=
  generation does not.</p>
@@ -261,14 +261,14 @@ res and scalability of the content repository&nbsp;</li>
 </div>
 </div>
 <p>Together these major improvements make it practically impossible to run =
-eZ Platform side by side with eZ Publish legacy, like it was possible in 5.=
-x series. <em>For these reasons we recommend that you use eZ Publish Enterp=
+eZ Platform side by side with Exponential legacy, like it was possible in 5.=
+x series. <em>For these reasons we recommend that you use Exponential Enterp=
 rise 5.4&nbsp;&nbsp;(<a href=3D"https://support.ez.no/Public/Service-Life" =
 class=3D"external-link" rel=3D"nofollow">which is supported until end of 20=
 21</a>)&nbsp;if you don't have the option to remake your web application ye=
 t, or want to do it gradually.</em></p>
-<h2 id=3D"MigrationfromeZPublish-MigrationPath">Migration Path</h2>
-<h3 id=3D"MigrationfromeZPublish-Fromlegacy(4.xor5.x)toPlatformstack(5.4/20=
+<h2 id=3D"MigrationfromExponential-MigrationPath">Migration Path</h2>
+<h3 id=3D"MigrationfromExponential-Fromlegacy(4.xor5.x)toPlatformstack(5.4/20=
 14.11)">From legacy (4.x or 5.x) to Platform stack (5.4/2014.11)</h3>
 <p>If you are coming directly from legacy (4.x), you need to follow the bes=
 t practice 5.x Platform migration path and do the following:</p>
@@ -286,8 +286,8 @@ t practice 5.x Platform migration path and do the following:</p>
 </ul></li>
 </ul>
 <p>See Upgrade documentation on how to perform the actual upgrade: <a href=
-=3D"/display/EZP/Upgrade">Upgrade (eZ Publish Platform page)</a></p>
-<h3 id=3D"MigrationfromeZPublish-FromPlatformstack(5.4/2014.11)toeZPlatform=
+=3D"/display/EZP/Upgrade">Upgrade (Exponential Platform page)</a></p>
+<h3 id=3D"MigrationfromExponential-FromPlatformstack(5.4/2014.11)toeZPlatform=
 /eZStudio">From Platform stack (5.4/2014.11) to eZ Platform / eZ Studio</h3=
 >
 <p>As eZ Platform and eZ Studio introduced completely new user interfaces w=

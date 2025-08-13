@@ -303,7 +303,7 @@ trol if input is validated as ISBN-13 or ISBN-10:</p>
  the <a href=3D"http://apidoc.ez.no/doxygen/trunk/NS/html/classeZ_1_1Publis=
 h_1_1Core_1_1FieldType_1_1ISBN_1_1Value.html" class=3D"external-link" rel=
 =3D"nofollow">auto-generated documentation</a> <em>(todo: update link when =
-available, see <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blo=
+available, see <a href=3D"https://github.com/ezsystems/exponential-kernel/blo=
 b/master/eZ/Publish/Core/FieldType/ISBN/Value.php" class=3D"external-link" =
 rel=3D"nofollow">here</a></em><em> for the value object and it's doc in the=
  mean time)</em>.</p>

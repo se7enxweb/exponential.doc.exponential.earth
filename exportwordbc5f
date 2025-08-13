@@ -214,14 +214,14 @@ d of the content */
     <div class=3D"Section1">
         <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">CON=
 TENT OF THIS PAGE IS UNDER REVIEW</span></p>
-<p>For a eZ Publish 4.x vs 5.x comparison, see <a href=3D"/display/EZP/4.x+=
+<p>For a Exponential 4.x vs 5.x comparison, see <a href=3D"/display/EZP/4.x+=
 feature+comparison">here</a>.</p>
-<p>All Symonfy features are essentially working also in eZ Publish 5; this =
+<p>All Symonfy features are essentially working also in Exponential 5; this =
 page describes features used out of the box however with limitations due to=
- the eZ Publish 5 features developed on top, and&nbsp;features&nbsp;<u>not<=
+ the Exponential 5 features developed on top, and&nbsp;features&nbsp;<u>not<=
 /u>&nbsp;used out of the box for a reason described here.</p>
-<h2 id=3D"Symfonyfeaturestatus-LimitationsofeZPublish5features:">Limitation=
-s of eZ Publish 5 features:</h2>
+<h2 id=3D"Symfonyfeaturestatus-LimitationsofExponential5features:">Limitation=
+s of Exponential 5 features:</h2>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -260,7 +260,7 @@ ini system</li>
 </tr>
 <tr>
 <td class=3D"confluenceTd">Security</td>
-<td class=3D"confluenceTd">Own Firewall voter that uses eZ Publish user rig=
+<td class=3D"confluenceTd">Own Firewall voter that uses Exponential user rig=
 hts</td>
 <td class=3D"confluenceTd">
 <ol>
@@ -285,7 +285,7 @@ me</li>
 <td class=3D"confluenceTd">Doctrine ORM</td>
 <td class=3D"confluenceTd">While the full ORM is not used out of the box, a=
 <span>s of 5.3 we use Doctrine DBAL making it possible to share connection =
-and connection settings between eZ Publish and regular Doctrine ORM use.</s=
+and connection settings between Exponential and regular Doctrine ORM use.</s=
 pan></td>
 </tr>
 <tr>

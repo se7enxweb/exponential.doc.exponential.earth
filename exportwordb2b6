@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Intro for eZ Publish 4.x/3.x developers</title>
+    <title>Intro for Exponential 4.x/3.x developers</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,50 +210,50 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Intro for eZ Publish 4.x/3.x developers</h1>
+    <h1>Intro for Exponential 4.x/3.x developers</h1>
     <div class=3D"Section1">
         <p>This document is not meant to be a comprehensive guide to either=
- Symfony 2 or eZ Publish 5, but to give an overview of how common concepts =
+ Symfony 2 or Exponential 5, but to give an overview of how common concepts =
 and tasks used in older versions translate into the new one.</p>
-<h1 id=3D"IntroforeZPublish4.x/3.xdevelopers-trueflat">
+<h1 id=3D"IntroforExponential4.x/3.xdevelopers-trueflat">
 <div class=3D"toc-macro">
 [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-trueflat"></a> ] [=20
+rExponential4.x/3.xdevelopers-trueflat"></a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Glossary">Glossary</a> ] [=20
+rExponential4.x/3.xdevelopers-Glossary">Glossary</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Newnamesofexistingconcepts:">New names of exist=
+rExponential4.x/3.xdevelopers-Newnamesofexistingconcepts:">New names of exist=
 ing concepts:</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Newconcepts:">New concepts:</a> ] [=20
+rExponential4.x/3.xdevelopers-Newconcepts:">New concepts:</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-ExistingconceptsFAQ">Existing concepts FAQ</a> =
+rExponential4.x/3.xdevelopers-ExistingconceptsFAQ">Existing concepts FAQ</a> =
 ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Settings">Settings</a> ] [=20
+rExponential4.x/3.xdevelopers-Settings">Settings</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Siteaccesses">Siteaccesses</a> ] [=20
+rExponential4.x/3.xdevelopers-Siteaccesses">Siteaccesses</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Urls">Urls</a> ] [=20
+rExponential4.x/3.xdevelopers-Urls">Urls</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Designs">Designs</a> ] [=20
+rExponential4.x/3.xdevelopers-Designs">Designs</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Templates(Twig)">Templates (Twig)</a> ] [=20
+rExponential4.x/3.xdevelopers-Templates(Twig)">Templates (Twig)</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-i18n">i18n</a> ] [=20
+rExponential4.x/3.xdevelopers-i18n">i18n</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-LoadingCSSandjs">Loading CSS and js</a> ] [=20
+rExponential4.x/3.xdevelopers-LoadingCSSandjs">Loading CSS and js</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Caching">Caching</a> ] [=20
+rExponential4.x/3.xdevelopers-Caching">Caching</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Using4-in-5">Using 4-in-5</a> ] [=20
+rExponential4.x/3.xdevelopers-Using4-in-5">Using 4-in-5</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Extensions">Extensions</a> ] [=20
+rExponential4.x/3.xdevelopers-Extensions">Extensions</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Debugging">Debugging</a> ] [=20
+rExponential4.x/3.xdevelopers-Debugging">Debugging</a> ] [=20
 <a href=3D"https://doc.ez.no/pages/viewpage.action?pageId=3D2720567#Introfo=
-reZPublish4.x/3.xdevelopers-Testing">Testing</a> ]
+rExponential4.x/3.xdevelopers-Testing">Testing</a> ]
 </div></h1>
 <p>&nbsp;</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -263,16 +263,16 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>You will find the 4.x documentation in the <a href=3D"https://doc.ez.no/=
-eZ-Publish/" rel=3D"nofollow">legacy part of the documentation</a>.</p>
-<p><a href=3D"https://doc.ez.no/eZ-Publish/" rel=3D"nofollow"><span class=
+Exponential/" rel=3D"nofollow">legacy part of the documentation</a>.</p>
+<p><a href=3D"https://doc.ez.no/Exponential/" rel=3D"nofollow"><span class=
 =3D"confluence-embedded-file-wrapper"><img class=3D"confluence-embedded-ima=
 ge confluence-thumbnail" src=3D"/plugins/servlet/confluence/placeholder/unk=
-nown-attachment?locale=3Den_GB&amp;version=3D2" title=3D"ez-publish-legacy-=
+nown-attachment?locale=3Den_GB&amp;version=3D2" title=3D"exponential-legacy-=
 doc.png"></span></a></p>
 </div>
 </div>
-<h1 id=3D"IntroforeZPublish4.x/3.xdevelopers-Glossary">Glossary</h1>
-<h3 id=3D"IntroforeZPublish4.x/3.xdevelopers-Newnamesofexistingconcepts:">N=
+<h1 id=3D"IntroforExponential4.x/3.xdevelopers-Glossary">Glossary</h1>
+<h3 id=3D"IntroforExponential4.x/3.xdevelopers-Newnamesofexistingconcepts:">N=
 ew names of existing concepts:</h3>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
@@ -329,10 +329,10 @@ tem)</span></p></td>
 </tbody>
 </table>
 </div>
-<p>The reason for&nbsp;renaming&nbsp;some of the concepts in eZ Publish 5.x=
+<p>The reason for&nbsp;renaming&nbsp;some of the concepts in Exponential 5.x=
  was to use terms which might be more familiar to users coming from other C=
 MS and avoid confusion with terms used in OOP programming.</p>
-<h3 id=3D"IntroforeZPublish4.x/3.xdevelopers-Newconcepts:">New concepts:</h=
+<h3 id=3D"IntroforExponential4.x/3.xdevelopers-Newconcepts:">New concepts:</h=
 3>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -373,7 +373,7 @@ ic bootstrap (business logic should be done in services).</p></td>
 <td colspan=3D"1" class=3D"confluenceTd">The <strong>template</strong> that=
  displays the result of the "action", can be either .twig (default) or .php=
 .<br>Note that <strong>Twig is highly recommended</strong> as it has <span>=
-eZ Publish specific </span>helpers.&nbsp;</td>
+Exponential specific </span>helpers.&nbsp;</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><strong>Service</strong></td>
@@ -410,10 +410,10 @@ ublish 5.x kernel.</span></p></td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><strong>Console</strong></td>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish/console</code> is =
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential/console</code> is =
 the starting point of all console commands in Symfony2 (referred to as <cod=
-e>app/console</code> in Symfony2 documentation) and eZ Publish 5.x kernel, =
-use <code>php ezpublish/console -h</code> from the root of your install usi=
+e>app/console</code> in Symfony2 documentation) and Exponential 5.x kernel, =
+use <code>php exponential/console -h</code> from the root of your install usi=
 ng command line to get started.</td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ sets respectively.<br>Front controllers (index.php/index_dev.php) can be mo=
 dified to fit your needs.<em>&nbsp;</em></p></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><strong>ezpublish/</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>exponential/</strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">The application folder (aka <code>=
 app/</code> <a href=3D"http://symfony.com/doc/current/book/page_creation.ht=
 ml#the-application-app-directory" class=3D"external-link" rel=3D"nofollow">=
@@ -433,7 +433,7 @@ in the Symfony documentation</a>). <br>It contains the main Kernel class wh=
 ere you can declare the bundles you want to use. You will also find <code>c=
 ache/</code>, <code>logs/</code> and main <code>config/</code> folders. It =
 can also contain application-level resource files, such as global templates=
- (<code>ezpublish/Resources/</code>).</td>
+ (<code>exponential/Resources/</code>).</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><strong>src/</strong></td>
@@ -445,15 +445,15 @@ m your own bundles)</td>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><strong>vendor/</strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">In this directory stand all your d=
-ependencies (3rd party bundles/libs, eZ Publish codebase, Symfony codebase.=
+ependencies (3rd party bundles/libs, Exponential codebase, Symfony codebase.=
 ..)</td>
 </tr>
 </tbody>
 </table>
 </div>
-<h1 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Existingconc=
+<h1 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Existingconc=
 eptsFAQ">Existing concepts FAQ</h1>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Settings">Se=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Settings">Se=
 ttings</h2>
 <p>&nbsp;</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -470,12 +470,12 @@ tps://doc.ez.no/display/EZP/Configuration</a>
 <ul>
 <li><p><strong>New-style settings:</strong></p>
 <ul>
-<li><p>In a single yml file: <strong>ezpublish.yml</strong> for eZ Publish,=
+<li><p>In a single yml file: <strong>exponential.yml</strong> for Exponential,=
  <strong>config.yml</strong> for other bundles (it is possible to <a href=
 =3D"http://symfony.com/doc/current/book/page_creation.html#application-conf=
 iguration" class=3D"external-link" rel=3D"nofollow">import other files from=
  here</a> as well).<br>Note that it's possible to specialize settings for s=
-pecific environments (e.g. <code>ezpublish_dev.yml</code>, <code>config_dev=
+pecific environments (e.g. <code>exponential_dev.yml</code>, <code>config_dev=
 .yml</code>)&nbsp;</p></li>
 <li><p>3 scopes (<strong>global</strong> =3D=3D <strong>override</strong>; =
 extension scope is gone)</p></li>
@@ -506,7 +506,7 @@ urrent/bundles/SensioGeneratorBundle/commands/generate_bundle.html" class=
 d code will be automatically generated for you.</li>
 </ul></li>
 </ul>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Siteaccesses=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Siteaccesses=
 ">Siteaccesses</h2>
 <ul>
 <li><p>See <a href=3D"http://confluence.ez.no/display/EZP/Siteaccess+Matchi=
@@ -528,7 +528,7 @@ atching</p>
 <ul>
 <li>Possible now to define custom siteaccess matchers.</li>
 </ul>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Urls">Urls</=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Urls">Urls</=
 h2>
 <ul>
 <li><p>More flexible routing system.</p></li>
@@ -545,7 +545,7 @@ h2>
 ing across siteaccess?</p>
 <p style=3D"margin-left: 30.0px;"><strong>A:</strong>&nbsp;Yes, <a href=3D"=
 /display/EZP/Language+Switcher">Language switcher</a></p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Designs">Des=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Designs">Des=
 igns</h2>
 <p><strong>Q:</strong>&nbsp;How is the concept of designs + fallback suppor=
 ted ?</p>
@@ -560,9 +560,9 @@ pl from another one?</p></li>
 e only 1 child =E2=80=93 clearly not powerful enough compared to eZP4, but =
 there seems to be progress in Symfony about improving this.</p></li>
 </ul>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Templates(Tw=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Templates(Tw=
 ig)">Templates (Twig)</h2>
-<p>Twig is a templating engine, used in the templates. eZ Publish Platform =
+<p>Twig is a templating engine, used in the templates. Exponential Platform =
 provides <a href=3D"https://doc.ez.no/display/EZP/Twig+Helper" rel=3D"nofol=
 low">Twig helpers</a> and <a href=3D"https://doc.ez.no/display/EZP/Twig+fun=
 ctions" rel=3D"nofollow">Twig functions</a>. You can also add your own Twig=
@@ -585,22 +585,22 @@ per documentation</a> and <a href=3D"http://symfony.com/doc/current/cookboo=
 k/templating/twig_extension.html" class=3D"external-link" rel=3D"nofollow">=
 Symfony cookbook</a>.</p></li>
 </ul>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-i18n">i18n</=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-i18n">i18n</=
 h2>
 <p>Refer to the <a href=3D"http://symfony.com/doc/current/book/translation.=
 html" class=3D"external-link" rel=3D"nofollow">translation section in Symfo=
 ny documentation</a>.</p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-LoadingCSSan=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-LoadingCSSan=
 djs">Loading CSS and js</h2>
 <p>Best practice is to <a href=3D"http://symfony.com/doc/current/cookbook/a=
 ssetic/index.html" class=3D"external-link" rel=3D"nofollow">use <strong>Ass=
 etic</strong></a>.</p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Caching">Cac=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Caching">Cac=
 hing</h2>
 <p>Content cache is fully <a href=3D"http://symfony.com/doc/current/book/ht=
 tp_cache.html" class=3D"external-link" rel=3D"nofollow">Http cache</a>.</p>
 <p style=3D"margin-left: 30.0px;"><strong>Q:</strong> How to clear caches f=
-or eZ Publish 5? Is there a single action to clear caches for both stacks?<=
+or Exponential 5? Is there a single action to clear caches for both stacks?<=
 /p>
 <p style=3D"margin-left: 30.0px;"><strong>A:</strong> Content (Http) cache =
 is purged at publish time or from admin interface. You can use the <code>ca=
@@ -608,7 +608,7 @@ che:clear</code> command to clear all Symfony cache and in 'dev' environmen=
 t is disabled (see <a href=3D"http://symfony.com/doc/2.0/cookbook/configura=
 tion/environments.html" class=3D"external-link" rel=3D"nofollow">Symfony do=
 c on environments</a>) . No unified command yet.</p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Using4-in-5"=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Using4-in-5"=
 >Using 4-in-5</h2>
 <p style=3D"margin-left: 30.0px;"><strong>Q:</strong> Will it always be pos=
 sible to run the Legacy Stack as a standalone app?<span>&nbsp;</span></p>
@@ -619,12 +619,12 @@ rule needed to access var/storage/images of old stack from within the vhost=
 <p style=3D"margin-left: 30.0px;"><strong>A:</strong> No, this is achieved =
 by <em>symlinking</em>&nbsp;to <code>web/</code> the <code>design/</code>, =
 <code>extension/</code>, <code>share/</code> and <code>var/</code> director=
-ies of the eZ Publish legacy stack (done via <code>ezpublish:legacy:assets_=
+ies of the Exponential legacy stack (done via <code>exponential:legacy:assets_=
 install</code> script).</p>
-<p style=3D"margin-left: 30.0px;">The official name for the eZ Publish 4.x =
-stack included within eZ Publish 5.x is not eZ Publish 4.x but eZ Publish L=
-egacy (+"Stack" in case of eZ Publish+extensions).<br><br></p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Extensions">=
+<p style=3D"margin-left: 30.0px;">The official name for the Exponential 4.x =
+stack included within Exponential 5.x is not Exponential 4.x but Exponential L=
+egacy (+"Stack" in case of Exponential+extensions).<br><br></p>
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Extensions">=
 Extensions</h2>
 <p style=3D"margin-left: 30.0px;"><strong>Q:</strong> Implemented as bundle=
 s?</p>
@@ -644,16 +644,16 @@ r?</p>
 <p style=3D"margin-left: 30.0px;"><strong>A:</strong> Yes.</p>
 <p>&nbsp;</p>
 <p style=3D"margin-left: 30.0px;"><span><strong>Q:</strong> What part of a =
-website to put in <code>ezpublish/</code>, what part to put in <code>src/</=
+website to put in <code>exponential/</code>, what part to put in <code>src/</=
 code>? (equivalent of eZ =E2=80=9Call in extension=E2=80=9D dev </span><spa=
 n>philosophy</span><span>)</span></p>
-<p style=3D"margin-left: 30.0px;"><strong>A:</strong> <code>ezpublish/</cod=
+<p style=3D"margin-left: 30.0px;"><strong>A:</strong> <code>exponential/</cod=
 e> is for global configuration/templates, <code>src/</code> is for site-spe=
 cific developments.</p>
 <ul>
 <li style=3D"list-style-type: none;background-image: none;">
 <ul>
-<li><code>ezpublish_legacy/</code> is at root level because it is considere=
+<li><code>exponential_legacy/</code> is at root level because it is considere=
 d as an application in itself.</li>
 <li><p class=3D"_mce_tagged_br">All current extensions will be renamed with=
  LS suffix (for Legacy Stack) to distinguish them from new implementations.=
@@ -669,7 +669,7 @@ accepted/PSR-0.md" class=3D"external-link" rel=3D"nofollow">PSR-0</a>, with=
 .0/cookbook/bundles/best_practices.html" class=3D"external-link" rel=3D"nof=
 ollow">http://symfony.com/doc/2.0/cookbook/bundles/best_practices.html</a><=
 /p>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Debugging">D=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Debugging">D=
 ebugging</h2>
 <ul>
 <li>The 'dev' environment is without cache.</li>
@@ -682,7 +682,7 @@ nt/book/internals.html</a></p></li>
 <pre>$logger =3D $this-&gt;get('logger');</pre>
 <pre class=3D"western">$logger-&gt;info('We just got the logger');
 $logger-&gt;err('An error occurred');</pre>
-<h2 class=3D"western" id=3D"IntroforeZPublish4.x/3.xdevelopers-Testing">Tes=
+<h2 class=3D"western" id=3D"IntroforExponential4.x/3.xdevelopers-Testing">Tes=
 ting</h2>
 <p>Refer to <a href=3D"http://symfony.com/doc/current/book/testing.html" cl=
 ass=3D"external-link" rel=3D"nofollow">Symfony documentation on testing</a>=

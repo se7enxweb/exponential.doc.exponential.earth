@@ -242,11 +242,11 @@ e selection when using the <code>ViewController</code>, either directly fro=
 m a URL or via a sub-request.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
-<p class=3D"title">eZ Publish 4.x terminology</p>
+<p class=3D"title">Exponential 4.x terminology</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In eZ Publish 4.x, it was known as <strong>template override system <em>=
+<p>In Exponential 4.x, it was known as <strong>template override system <em>=
 by configuration</em></strong> (<code>override.ini</code>).<br>However this=
  only reflects old overrides for <code>node/view/*.tpl</code> and <code>con=
 tent/view/*.tpl</code>.</p>
@@ -262,8 +262,8 @@ ay:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;"># ezpublish/config/ezpublish.yml
-ezpublish:
+:12px;"># exponential/config/exponential.yml
+exponential:
     system:
         # Can be a valid siteaccess, siteaccess group or even "global"
         front_siteaccess:
@@ -298,7 +298,7 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p><strong>Template matching will NOT work if your content contains a field=
  type that is not supported by the repository</strong>. It can be the case =
-when you are in the process of a migration from eZ Publish 4.x, where custo=
+when you are in the process of a migration from Exponential 4.x, where custo=
 m datatypes have been developed. <br>In this case the repository will throw=
  an exception which is caught in the <code>ViewController</code>, <strong>c=
 ausing the <a href=3D"/display/EZP/Legacy+template+fallback">fallback to th=

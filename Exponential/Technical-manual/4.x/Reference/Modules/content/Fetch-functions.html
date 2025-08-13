@@ -1,0 +1,984 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/4.x/Reference/Modules/content/Fetch-functions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 09:10:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                          
+    <title>Fetch functions / content / Modules / Reference / 4.x / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../../4-6.html">4.x</a>
+        
+                        /
+                            <a href="../../../Reference.html">reference</a>
+        
+                        /
+                            <a href="../../Modules.html">modules</a>
+        
+                        /
+                            <a href="../content.html">content</a>
+        
+                        /
+                            fetch functions
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../../4-6.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Database-schema.html" title="">
+	    	    		                    		    <span class="node-name-normal">Database schema</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Database-schema/Deprecated-database-fields.html" title="">
+	    	    		                    		    <span class="node-name-normal">Deprecated database fields</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Datatypes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Datatypes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Content-classes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content classes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Modules.html" title="">
+	    	    		                    		    <span class="node-name-normal">Modules</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Views.html" title="">
+	    	    		                    		    <span class="node-name-normal">Views</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Objects.html" title="">
+	    	    		                    		    <span class="node-name-normal">Objects</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Workflow-events.html" title="">
+	    	    		                    		    <span class="node-name-normal">Workflow events</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-operators.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template operators</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-control-structures.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template control structures</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-override-conditions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template override conditions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-fetch-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template fetch functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-PDF-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template PDF functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Configuration-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Libraries.html" title="">
+	    	    		                    		    <span class="node-name-normal">Libraries</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../XML-tags.html" title="">
+	    	    		                    		    <span class="node-name-normal">XML tags</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Scripts.html" title="">
+	    	    		                    		    <span class="node-name-normal">Scripts</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Fetch functions</h1>
+</div>
+
+ <p> 
+<table class="renderedtable" cellspacing="0" cellpadding="2">
+<tr><th>Name</th><th>Summary</th></tr><tr>
+    <td><a href="Fetch-functions/access.html">access</a></td>
+    <td>Checks if the current user has access to a given function.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/bookmarks.html">bookmarks</a></td>
+    <td>Fetches the bookmarks of the current user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/calendar.html">calendar</a></td>
+    <td>This function fetches the date time list when objects were published.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/can_instantiate_classes.html">can_instantiate_classes</a></td>
+    <td>Checks if the current user is allowed to create nodes.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/can_instantiate_class_list.html">can_instantiate_class_list</a></td>
+    <td>Fetches the classes that the current user can create objects of.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/class.html">class</a></td>
+    <td>Fetches a content class.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/class_attribute.html">class_attribute</a></td>
+    <td>Fetches an attribute of a content class.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/class_attribute_list.html">class_attribute_list</a></td>
+    <td>Fetches the attributes of a class.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/collected_info_collection.html">collected_info_collection</a></td>
+    <td>Fetches an information collection.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/collected_info_count.html">collected_info_count</a></td>
+    <td>Fetches the number of collections that match a certain criteria.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/collected_info_count_list.html">collected_info_count_list</a></td>
+    <td>Fetches the number of times different values were collected.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/contentobject_attributes.html">contentobject_attributes</a></td>
+    <td>Fetches the attributes of an object's version (and translation).</td>
+</tr><tr>
+    <td><a href="Fetch-functions/country_list.html">country_list</a></td>
+    <td> Fetches the list of countries specified in the "country.ini" configuration file.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/draft_count.html">draft_count</a></td>
+    <td>Fetches the number of drafts that belong to the current user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/draft_version_list.html">draft_version_list</a></td>
+    <td>Fetches the drafts that belong to the current user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/keyword.html">keyword</a></td>
+    <td>Fetches nodes that use keywords starting with a given sequence.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/keyword_count.html">keyword_count</a></td>
+    <td>Fetches the number of nodes that use certain keywords. Only nodes that are main locations for content objects are counted.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/list.html">list</a></td>
+    <td>Fetches the children of a node or a collection of nodes.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/list_count.html">list_count</a></td>
+    <td>Fetches the number of children of a node.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/locale.html">locale</a></td>
+    <td>Fetches the current or a specified locale.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/locale_list.html">locale_list</a></td>
+    <td>Fetches the available locales.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/navigation_part.html">navigation_part</a></td>
+    <td>Fetches information about a navigation part.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/navigation_parts.html">navigation_parts</a></td>
+    <td>Fetches all available navigation parts.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/node.html">node</a></td>
+    <td>Fetches a node (identified by either an ID number or a path).</td>
+</tr><tr>
+    <td><a href="Fetch-functions/non_translation_list.html">non_translation_list</a></td>
+    <td>Fetches locales that a version of an object may be translated into.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/object.html">object</a></td>
+    <td>Fetches a content object (specified by an ID number).</td>
+</tr><tr>
+    <td><a href="Fetch-functions/object_by_attribute.html">object_by_attribute</a></td>
+    <td>DEPRECATED</td>
+</tr><tr>
+    <td><a href="Fetch-functions/object_count_by_user_id.html">object_count_by_user_id</a></td>
+    <td>Fetches the number of objects (of a class) created by a user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/pending_count.html">pending_count</a></td>
+    <td>Fetches the number of pending objects for the current user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/pending_list.html">pending_list</a></td>
+    <td>Fetches the pending objects for the current user.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/recent.html">recent</a></td>
+    <td>Fetches nodes where the current user recently published something.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/related_objects.html">related_objects</a></td>
+    <td>Fetches related objects.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/related_objects_count.html">related_objects_count</a></td>
+    <td>Fetches the number of related objects.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/reverse_related_objects.html">reverse_related_objects</a></td>
+    <td>Fetches reverse related objects.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/reverse_related_objects_count.html">reverse_related_objects_count</a></td>
+    <td>Fetches the number of reverse related objects.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/same_classattribute_node.html">same_classattribute_node</a></td>
+    <td>Fetches nodes containing attributes that match a certain value.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/search.html">search</a></td>
+    <td>Fetches nodes containing data that match a certain criteria.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/section_list.html">section_list</a></td>
+    <td>Fetches the available sections.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/tipafriend_top_list.html">tipafriend_top_list</a></td>
+    <td>Fetches the most popular (most tipped) nodes.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/translation_list.html">translation_list</a></td>
+    <td>Fetches the locales that can be used to translate objects.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/trash_count.html">trash_count</a></td>
+    <td>Fetches the number of objects that are in the trash.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/trash_object_list.html">trash_object_list</a></td>
+    <td>Fetches the objects that are in the trash.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/tree.html">tree</a></td>
+    <td>Fetches the children of a node recursively.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/tree_count.html">tree_count</a></td>
+    <td>Fetches the number of children of a node recursively.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/version.html">version</a></td>
+    <td>Fetches a specific version of an object.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/version_count.html">version_count</a></td>
+    <td>Fetches the number of versions of a content object.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/version_list.html">version_list</a></td>
+    <td>Fetches all the versions of a content object.</td>
+</tr><tr>
+    <td><a href="Fetch-functions/view_top_list.html">view_top_list</a></td>
+    <td>Fetches the most popular (most viewed) nodes.</td>
+</tr></table>
+ </p>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(01/03/2005 9:07 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Balazs Halasy&nbsp;(03/03/2005 3:14 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment20276" class="attribute-heading">
+<h2>Help me solution the left_menu</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 11 July 2008 7:58:36 am</p>
+    <p class="author">cindy</p>
+</div>
+
+<div class="attribute-short">
+  I  want to change  this code:<br />
+        {if or(is_unset($module_result.content_info.class_identifier), ne( $module_result.content_info.class_identifier, 'documentation_page' ))}<br />
+   {def $root_node=fetch( 'content', 'node', hash( 'node_id', $module_result.path[$pagerootdepth].node_id ) )<br />
+        $left_menu_items = fetch( 'content', 'list', hash( 'parent_node_id', $root_node.node_id,<br />
+                                                           'sort_by', $root_node.sort_array,<br />
+                                                           'class_filter_type', 'include',<br />
+                                                           'class_filter_array', ezini( 'MenuContentSettings', 'LeftIdentifierList', 'menu.ini' ) ) )<br />
+<br />
+   <br />
+     my target: different  class  display its child  in the left_menu and  the left_menu  not display the   other different class's  child  in  the left_menu .   Thank  you very much ! <br />
+<br />
+<br />
+
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="20276" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/4.x/Reference/Modules/content/Fetch-functions" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment20823" class="attribute-heading">
+<h2>Re: Help me solution the left_menu</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 30 September 2009 12:27:36 pm</p>
+    <p class="author">Gaetano</p>
+</div>
+
+<div class="attribute-short">
+Please post questions to the forum, not to the manual
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="20823" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/4.x/Reference/Modules/content/Fetch-functions" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="17990" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/4.x/Reference/Modules/content/Fetch-functions" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/4.x/Reference/Modules/content/Fetch-functions by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 09:10:24 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

@@ -213,7 +213,7 @@ d of the content */
     <h1>eZ JS Core rewrite rules</h1>
     <div class=3D"Section1">
         <p>These rewrite rules are described in the documentation of the eZ=
- JS Core extension, but since this extension is bundled with eZ Publish and=
+ JS Core extension, but since this extension is bundled with Exponential and=
  plays an important part of the installation process, the eZ JS Core rewrit=
 e rules are described here as well.</p>
 <h3 id=3D"eZJSCorerewriterules-Rewriterulesforlibfolder">Rewrite rules for =
@@ -232,7 +232,7 @@ ts?)/.* - [L]</pre>=20
 <h3 id=3D"eZJSCorerewriterules-Rewriterulesforscript/csspacking">Rewrite ru=
 les for script/css packing</h3>
 <p>eZ JsCore packs javascript/css files together to decrease the number of =
-server requests and reduce file size for faster download. On eZ Publish 4.0=
+server requests and reduce file size for faster download. On Exponential 4.0=
 .x you'll need to make the following changes if you haven't already when in=
 stalling ezoe (Online Editor 5.0).</p>
 <ul>

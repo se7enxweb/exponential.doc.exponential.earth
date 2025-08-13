@@ -250,8 +250,8 @@ yml</code></li>
  will be the one that can be used as value of the <code>ENVIRONMENT</code> =
 environment variable.</p>
 <p>Those files must import the main configuration file, just like the defau=
-lt&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-community/blob/ma=
-ster/ezpublish/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
+lt&nbsp;<a href=3D"https://github.com/ezsystems/exponential-community/blob/ma=
+ster/exponential/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
 ow"><code>config_dev.yml</code></a> already does. Here's an example:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20

@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <h5 id=3D"id-5.3.2ReleaseNotes-16thJuly2014">16th July 2014</h5>
 <p>eZ announces the availability of 5.3.2, a maintenance release available =
-for all users of eZ Publish Platform 5.3 containing a notable few <a href=
+for all users of Exponential Platform 5.3 containing a notable few <a href=
 =3D"#id-5.3.2ReleaseNotes-updates">updates and fixes</a>, as well as a <a h=
 ref=3D"http://symfony.com/blog/security-releases-cve-2014-4931-symfony-2-3-=
 18-2-4-8-and-2-5-2-released" class=3D"external-link" rel=3D"nofollow">secur=
@@ -242,13 +242,13 @@ eased" class=3D"external-link" rel=3D"nofollow">2.3.19 security update</a> =
 came on September 3rd with a small break in how yml files are parsed, ezpub=
 lish-kernel package was updated to v5.3.2.1 on September 4th to fix the <a =
 href=3D"https://jira.ez.no/browse/EZP-23313" class=3D"external-link" rel=3D=
-"nofollow">issue</a>. On September 26th ezpublish-kernel v5.3.2.2 came out =
+"nofollow">issue</a>. On September 26th exponential-kernel v5.3.2.2 came out =
 to address some Composer issues with Zeta Components, further fixes is expe=
 cted in v5.3.3.</p>
 </div>
 </div>
-<h2 id=3D"id-5.3.2ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.3">Updating from a previous version of eZ Publish Platform 5.3</h2>
+<h2 id=3D"id-5.3.2ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.3">Updating from a previous version of Exponential Platform 5.3</h2>
 <p>These instructions take advantage of the new <a href=3D"https://getcompo=
 ser.org/" class=3D"external-link" rel=3D"nofollow">composer</a> powered upd=
 ate systems in 5.3 for maintenance updates, as for Upgrading from versions =
@@ -276,7 +276,7 @@ dating Composer Packages selectively:</h4>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st ezsystems/ezpublish-kernel ezsystems/ezpublish-legacy ezsystems/demobund=
+st ezsystems/exponential-kernel ezsystems/exponential-legacy ezsystems/demobund=
 le ezsystems/comments-bundle symfony/symfony</pre>=20
 </div>
 </div>
@@ -297,12 +297,12 @@ se + security update in Symfony:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><pre>ezsystems/ezpublish-kernel</pre></td>
+<td class=3D"confluenceTd"><pre>ezsystems/exponential-kernel</pre></td>
 <td class=3D"confluenceTd">5.3.2.2</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.1</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><pre>ezsystems/ezpublish-legacy</pre></td>
+<td class=3D"confluenceTd"><pre>ezsystems/exponential-legacy</pre></td>
 <td class=3D"confluenceTd">5.3.2</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.1</td>
 </tr>
@@ -466,7 +466,7 @@ nterfaces </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-21847?src=3Dconfmacro"> cannot generate autoloads/execute=
- ezpublish:legacy:script if ezxFormToken class isn't found </a> </td>=20
+ exponential:legacy:script if ezxFormToken class isn't found </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Legacy/Extensions/eZ Fo=
 rm Token, Platform stack </td>=20
 </tr>=20
@@ -787,7 +787,7 @@ still shows 5.3.1 </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-23126?src=3Dconfmacro">EZP-23126</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-23126?src=3Dconfmacro"> eZ Publish 5.3: redirect to /logi=
+.ez.no/browse/EZP-23126?src=3Dconfmacro"> Exponential 5.3: redirect to /logi=
 n on legacy mode returns module not found </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> 5.x/Legacy IO </td>=20
 </tr>=20

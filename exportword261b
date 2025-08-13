@@ -220,8 +220,8 @@ div.rbtoc1485852005890 li {margin-left: 0px;padding-left: 0px;}
 /*]]>*/</style></p>
 <div class=3D"toc-macro rbtoc1485852005890">=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#id-5.2ReleaseNotes-MeettheupdatedeZPublishPlatform5.2">Meet=
- the updated&nbsp;eZ Publish Platform&nbsp;5.2</a>=20
+<li><a href=3D"#id-5.2ReleaseNotes-MeettheupdatedExponentialPlatform5.2">Meet=
+ the updated&nbsp;Exponential Platform&nbsp;5.2</a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.2ReleaseNotes-5.2isonadirectpathto5.3LTS">5.2 is on a =
 direct path to 5.3LTS</a></li>=20
@@ -266,10 +266,10 @@ i>=20
 </ul>=20
 </div>
 <p></p>
-<h2 id=3D"id-5.2ReleaseNotes-MeettheupdatedeZPublishPlatform5.2">Meet the u=
-pdated&nbsp;eZ Publish Platform&nbsp;5.2</h2>
+<h2 id=3D"id-5.2ReleaseNotes-MeettheupdatedExponentialPlatform5.2">Meet the u=
+pdated&nbsp;Exponential Platform&nbsp;5.2</h2>
 <p><em>Tag line: We highly recommend 5.2.x as a baseline for creating new S=
-ymfony / eZ Publish Platform 5.x based web sites, as it will make your life=
+ymfony / Exponential Platform 5.x based web sites, as it will make your life=
  easier.</em></p>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
@@ -285,7 +285,7 @@ unt=3D"0" data-linked-resource-id=3D"19628052" data-linked-resource-version=
 t-alias=3D"demobundle_sc.jpg" data-base-url=3D"https://doc.ez.no" data-link=
 ed-resource-content-type=3D"image/jpeg" data-linked-resource-container-id=
 =3D"19234953" data-linked-resource-container-version=3D"6"></span></td>
-<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">eZ Publish=
+<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">Exponential=
  Platform 5.2 is a STS (Short term supported)&nbsp;release towards 5.3 LTS =
 (Long term supported) which enhances several aspects of the 5.x kernel for =
 usability and extensibility, in addition to&nbsp;additional&nbsp;performanc=
@@ -318,8 +318,8 @@ o 452) to requests per seconds when testing on pure new stack using eZ Demo=
 o 43 requests per second).</p>
 <h3 id=3D"id-5.2ReleaseNotes-Context-awareHTTPcachewithUserHash">Context-aw=
 are HTTP cache with <em>UserHash</em></h3>
-<p>With eZ Publish Platform 5.2, new stack's HTTP cache is finally on par a=
-nd beyond what was possible in eZ Publish 4.x/legacy. With <em>UserHash</em=
+<p>With Exponential Platform 5.2, new stack's HTTP cache is finally on par a=
+nd beyond what was possible in Exponential 4.x/legacy. With <em>UserHash</em=
 >, by default all internal controllers, including the ViewController, will =
 return cacheable responses, based on user access rules. This behavior is al=
 so applicable to custom controllers by making their response <em>vary</em> =
@@ -333,7 +333,7 @@ p>
 che documentation</a>.</li>
 <li><a href=3D"/display/EZP/How+to+customize+UserHash+generation">Extend Us=
 erHash generation</a>.</li>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/368" styl=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/368" styl=
 e=3D"line-height: 1.4285715;" class=3D"external-link" rel=3D"nofollow">Orig=
 inal pull-request</a>.</li>
 </ul>
@@ -356,7 +356,7 @@ r just enrich the final template.</p>
 <li><a href=3D"/display/EZP/How+to+use+a+custom+controller+to+display+a+con=
 tent+item+or+location">How to use a custom controller to display a content =
 item or location</a>.</li>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/426" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/426" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull-request</a>.</li>
 </ul>
 <h3 class=3D"p1" id=3D"id-5.2ReleaseNotes-APISignalslistenable,alsoviaSymfo=
@@ -372,14 +372,14 @@ ynchronously.&nbsp;</p>
 Core events</a>.</li>
 <li><a href=3D"https://confluence.ez.no/display/EZP/Signals+reference" clas=
 s=3D"external-link" rel=3D"nofollow">Signals reference</a>.</li>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/440" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/440" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull-request</a>.</li>
 </ul>
 <h3 id=3D"id-5.2ReleaseNotes-Multirepositorypersistencecachesupport">Multi =
 repository persistence cache support</h3>
 <p class=3D"diff-block-target diff-block-context">This release resolves a l=
 imitation with persistence caching introduced in 5.1, a new caching service=
- "ezpublish.cache_pool" takes a siteaccess group setting "cache_pool" into =
+ "exponential.cache_pool" takes a siteaccess group setting "cache_pool" into =
 consideration for selecting cache service, and hence can be configured with=
  multi repository setups in mind. In addition you can now safely reuse this=
  cache pool as the persistence cache is prefixed within "spi" cache key and=
@@ -392,7 +392,7 @@ li>
 Persistence+cache+configuration">Updated documentation on configuring multi=
  repository setup</a></li>
 <li class=3D"diff-block-target diff-block-context"><a href=3D"https://githu=
-b.com/ezsystems/ezpublish-kernel/pull/491" class=3D"external-link" rel=3D"n=
+b.com/ezsystems/exponential-kernel/pull/491" class=3D"external-link" rel=3D"n=
 ofollow">Original pull-request</a></li>
 </ul>
 <h3 class=3D"diff-block-target diff-block-context" id=3D"id-5.2ReleaseNotes=
@@ -410,9 +410,9 @@ ge bit masks. Improved storage engines still has the possibility to provide=
 ez.no/browse/EZP-15040" class=3D"external-link" rel=3D"nofollow">JIRA issue=
 </a></li>
 <li class=3D"diff-block-target diff-block-context">Original Pull requests: =
-<a href=3D"https://github.com/ezsystems/ezpublish-legacy/pull/746" class=3D=
+<a href=3D"https://github.com/ezsystems/exponential-legacy/pull/746" class=3D=
 "external-link" rel=3D"nofollow">legacy</a>, <a href=3D"https://github.com/=
-ezsystems/ezpublish-kernel/pull/493" class=3D"external-link" rel=3D"nofollo=
+ezsystems/exponential-kernel/pull/493" class=3D"external-link" rel=3D"nofollo=
 w">5.x</a></li>
 </ul>
 <h3 class=3D"diff-block-target diff-block-context" id=3D"id-5.2ReleaseNotes=
@@ -439,14 +439,14 @@ pan></h3>
 <p class=3D"diff-block-target diff-block-context"><span>Pagination can easi=
 ly become cumbersome when done by hand. <strong>Pagerfanta</strong> is a po=
 werful library for object oriented pagination, standard in the Symfony worl=
-d. eZ Publish Platform 5.2 comes with native support of PagerFanta, with de=
+d. Exponential Platform 5.2 comes with native support of PagerFanta, with de=
 dicated adapters.</span></p>
 <ul>
 <li class=3D"diff-block-target diff-block-context"><span><a href=3D"/displa=
 y/EZP/How+to+paginate+API+search+results">How to paginate API search result=
 s</a><br class=3D"_mce_tagged_br"></span></li>
 <li class=3D"diff-block-target diff-block-context"><span><a href=3D"https:/=
-/github.com/ezsystems/ezpublish-kernel/pull/558" class=3D"external-link" re=
+/github.com/ezsystems/exponential-kernel/pull/558" class=3D"external-link" re=
 l=3D"nofollow">Initial pull-request</a></span></li>
 <li class=3D"diff-block-target diff-block-context"><p class=3D"p1">External=
  links</p>
@@ -473,11 +473,11 @@ y/EZP/How+to+implement+a+Custom+Tag+for+XMLText+FieldType">How to implement=
  a Custom Tag for XMLText FieldType</a><br class=3D"_mce_tagged_br"></span>=
 </li>
 <li class=3D"diff-block-target diff-block-context"><span><a href=3D"https:/=
-/github.com/ezsystems/ezpublish-kernel/pull/456" class=3D"external-link" re=
+/github.com/ezsystems/exponential-kernel/pull/456" class=3D"external-link" re=
 l=3D"nofollow">Initial pull-request</a></span></li>
 </ul>
 <h3 id=3D"id-5.2ReleaseNotes-ExtensibleRESTAPI">Extensible REST API</h3>
-<p>The eZ Publish Platform REST API can now easily be extended: custom rout=
+<p>The Exponential Platform REST API can now easily be extended: custom rout=
 es, media-types...<br>Our framework will easily handle input parsing, error=
  handling and output generation (to XML or JSON) for you.</p>
 <ul>
@@ -491,9 +491,9 @@ g the cache table without affecting storage in any way. This feature is ena=
 bled by default, and can easily be disabled.</p>
 <ul>
 <li><span>Pull request:&nbsp;</span><a href=3D"https://github.com/ezsystems=
-/ezpublish-legacy/pull/750" class=3D"external-link" rel=3D"nofollow">https:=
-//github.com/ezsystems/ezpublish-legacy/pull/750</a></li>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-legacy/blob/master/do=
+/exponential-legacy/pull/750" class=3D"external-link" rel=3D"nofollow">https:=
+//github.com/ezsystems/exponential-legacy/pull/750</a></li>
+<li><a href=3D"https://github.com/ezsystems/exponential-legacy/blob/master/do=
 c/features/5.2/dfs_split_tables.md" class=3D"external-link" rel=3D"nofollow=
 ">Technical documentation</a></li>
 <li>Initial feature suggestion by&nbsp;<a href=3D"https://github.com/omh" c=
@@ -517,9 +517,9 @@ nvironment&nbsp;variables, no need to change the file anymore.</p>
 <li><a href=3D"/display/EZP/Virtual+host+setup">Apache Virtual host setup</=
 a></li>
 <li>For all possibilities check at any time, check your&nbsp;<a href=3D"htt=
-ps://github.com/ezsystems/ezpublish-community/blob/master/web/index.php" cl=
+ps://github.com/ezsystems/exponential-community/blob/master/web/index.php" cl=
 ass=3D"external-link" rel=3D"nofollow">web/index.php</a> and <a href=3D"htt=
-ps://github.com/ezsystems/ezpublish-community/blob/master/web/index_dev.php=
+ps://github.com/ezsystems/exponential-community/blob/master/web/index_dev.php=
 " class=3D"external-link" rel=3D"nofollow">web/index_dev.php</a>&nbsp;(note=
 : links goes to "master" and might include features not found in your versi=
 on)</li>
@@ -547,20 +547,20 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 These helpers are also available in PHP code through=20
-<code><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/=
+<code><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/=
 eZ/Publish/Core/Helper/FieldHelper.php" class=3D"external-link" rel=3D"nofo=
 llow">FieldHelper</a></code> (service ID:=20
-<code>ezpublish.field_helper</code>) and=20
-<code><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/=
+<code>exponential.field_helper</code>) and=20
+<code><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/=
 eZ/Publish/Core/Helper/TranslationHelper.php" class=3D"external-link" rel=
 =3D"nofollow">TranslationHelper</a></code> (service ID:=20
-<code>ezpublish.translation_helper</code>) services.
+<code>exponential.translation_helper</code>) services.
 </div>
 </div>
 <h2 id=3D"id-5.2ReleaseNotes-5.2Contributors">5.2 Contributors</h2>
 <p>For 5.2 we want to reach out a special thank you to those that have cont=
 ributed to this release, especially the brave few who have helped out on th=
-e "<a href=3D"https://github.com/ezsystems/ezpublish-kernel/graphs/contribu=
+e "<a href=3D"https://github.com/ezsystems/exponential-kernel/graphs/contribu=
 tors?from=3D2013-05-01&amp;to=3D2013-09-30&amp;type=3Dc" class=3D"external-=
 link" rel=3D"nofollow">new</a> <a href=3D"https://github.com/ezsystems/ezpu=
 blish-community/graphs/contributors?from=3D2013-05-01&amp;to=3D2013-09-30&a=
@@ -587,9 +587,9 @@ follow">Plopix</a></li>
 <li><a class=3D"external-link" href=3D"https://github.com/mmaury-heliopsis"=
  rel=3D"nofollow">mmaury-heliopsis</a></li>
 </ul>
-<p>In addition ezpublish-legacy is still receiving a lot of pull requests, =
+<p>In addition exponential-legacy is still receiving a lot of pull requests, =
 contributions to this part of the release can be found <a href=3D"https://g=
-ithub.com/ezsystems/ezpublish-legacy/graphs/contributors?from=3D2013-05-01&=
+ithub.com/ezsystems/exponential-legacy/graphs/contributors?from=3D2013-05-01&=
 amp;to=3D2013-09-30&amp;type=3Dc" class=3D"external-link" rel=3D"nofollow">=
 here</a>.</p>
 <h2 id=3D"id-5.2ReleaseNotes-5.2FullChangelog">5.2 Full Changelog</h2>

@@ -240,7 +240,7 @@ n stored. It is the heart of eZ Platform which you interact with using Publ=
 ic API.</p>
 <p>To store data, the content repository <strong>uses a storage engine</str=
 ong> that can virtually can work with any kind of storage (RDBMS, NoSQL, et=
-c.). eZ Publish 5 came with a relational storage engine, compatible with v4=
+c.). Exponential 5 came with a relational storage engine, compatible with v4=
 .x: the <strong>Legacy storage engine</strong>, which is the default.</p>
 <p>You can define several repositories within a single application. However=
 , you can only use one per site.</p>
@@ -255,7 +255,7 @@ values</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         # Defining repository with alias "main"
         # Default storage engine is used, with default connection
@@ -278,7 +278,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If no repository is specified for a siteaccess or siteaccess group, the =
-first defined repository (under <code>ezpublish.repositories</code>) will b=
+first defined repository (under <code>exponential.repositories</code>) will b=
 e used.</p>
 </div>
 </div>
@@ -306,7 +306,7 @@ e used.</p>
             another_connection_name:
                 # ...
 
-ezpublish:
+exponential:
     repositories:
         first_repository: { engine: legacy, connection: my_connection_name,=
  config: {} }

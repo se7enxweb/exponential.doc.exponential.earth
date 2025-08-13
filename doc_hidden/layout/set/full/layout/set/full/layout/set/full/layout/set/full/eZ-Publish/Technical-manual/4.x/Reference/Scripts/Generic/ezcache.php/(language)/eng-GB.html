@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Scripts/Generic/ezcache.php/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:33:09 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Scripts/Generic/ezcache.php/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:33:09 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                           
-    <title>ezcache.php / Generic / Scripts / Reference / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>ezcache.php / Generic / Scripts / Reference / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -41,7 +41,7 @@
 </div>
 
 <h3>Summary</h3>
-Clears the eZ Publish caches.
+Clears the Exponential caches.
 
 <h3>Location</h3>    ./bin/php/ezcache.php<h3>Parameters</h3><p>
 <a href=#allow-root-user>allow-root-user</a><br/>
@@ -105,7 +105,7 @@ Clears the eZ Publish caches.
     <h4>--clear-tag=&lt;cache_tag&gt;[,&lt;cache_tag2&gt;...]</h3>
     <div style="margin-left:35px;">
         
-<p>Expire all caches related to the specified cache tag.</p><p>From eZ Publish 5.3.4 version, multiple tags can be provided as a comma separated list. When combined with the &quot;--purge&quot; parameter, the script will clear the caches instead of expiring them.</p>    </div>
+<p>Expire all caches related to the specified cache tag.</p><p>From Exponential 5.3.4 version, multiple tags can be provided as a comma separated list. When combined with the &quot;--purge&quot; parameter, the script will clear the caches instead of expiring them.</p>    </div>
 
     <a name="colors"></a>
     <h4>-c, --colors</h3>
@@ -159,7 +159,7 @@ Clears the eZ Publish caches.
     <h4>--logfiles</h3>
     <div style="margin-left:35px;">
         
- <p>Generate log files. This parameter must be used together with the debug parameter (&quot;-d&quot; or &quot;--debug&quot;). The log files (for example &quot;warning.log&quot;) will be stored in the &quot;var/log&quot; directory of the eZ Publish installation.</p>    </div>
+ <p>Generate log files. This parameter must be used together with the debug parameter (&quot;-d&quot; or &quot;--debug&quot;). The log files (for example &quot;warning.log&quot;) will be stored in the &quot;var/log&quot; directory of the Exponential installation.</p>    </div>
 
     <a name="no-colors"></a>
     <h4>--no-colors</h3>
@@ -198,8 +198,8 @@ Clears the eZ Publish caches.
  <p>Output verbose / additional information.</p>    </div>
 
 <h3>Description</h3>
-<p>This script makes it possible to clear various eZ Publish caches - that is, either expire the specified caches (default) or physically remove the cache files (requires the &quot;<a href="#purge" target="_self">--purge</a>&quot; parameter).</p><p>To run the script, navigate into the root directory of your eZ Publish installation and use the following shell command:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php [&lt;parameters&gt;]</span>
-</pre><p>Replace &quot;[&lt;parameters&gt;]&quot; with one or more of the script parameters described above. Note that you need to have <a href="http://php.net/manual/en/features.commandline.php" target="_blank">PHP CLI</a> installed in order to run the script from within a system shell.</p><p>Sometimes the script is unable to clear the caches because of restrictive file/directory permission settings. You can check whether the caches have been cleared by inspecting the contents of the various cache subdirectories within the &quot;var&quot; directory (typically &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/&quot; directories).</p><a name="eztoc96940_0_0_1" id="eztoc96940_0_0_1"></a><h4>Selective cache cleanup</h4><p>eZ Publish generates different types of caches. <a name="identifiers_and_tags"></a>
+<p>This script makes it possible to clear various Exponential caches - that is, either expire the specified caches (default) or physically remove the cache files (requires the &quot;<a href="#purge" target="_self">--purge</a>&quot; parameter).</p><p>To run the script, navigate into the root directory of your Exponential installation and use the following shell command:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php [&lt;parameters&gt;]</span>
+</pre><p>Replace &quot;[&lt;parameters&gt;]&quot; with one or more of the script parameters described above. Note that you need to have <a href="http://php.net/manual/en/features.commandline.php" target="_blank">PHP CLI</a> installed in order to run the script from within a system shell.</p><p>Sometimes the script is unable to clear the caches because of restrictive file/directory permission settings. You can check whether the caches have been cleared by inspecting the contents of the various cache subdirectories within the &quot;var&quot; directory (typically &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/&quot; directories).</p><a name="eztoc96940_0_0_1" id="eztoc96940_0_0_1"></a><h4>Selective cache cleanup</h4><p>Exponential generates different types of caches. <a name="identifiers_and_tags"></a>
  While the &quot;<a href="#clear-all" target="_self">--clear-all</a>&quot; parameter gets rid of everything, the &quot;<a href="#clear-id" target="_self">--clear-id</a>&quot; parameter makes it possible to remove only certain types of caches (configuration settings, compiled templates, URL aliases, image variations, etc.). The identifiers of the caches to be removed must be specified as a comma separated list.</p><p>A &quot;cache tag&quot; is assigned to every cache type. The cache tag reveals which group a particular cache belongs to (ini, image, template, content and so on). The &quot;<a href="#clear-tag" target="_self">--clear-tag</a>&quot; parameter makes it possible to clear all caches that belong to a specified group. Note that a cache type (for example, the &quot;Template block cache&quot;) can be assigned to several groups.</p><p>The following table shows the different caches, the corresponding identifiers and cache tags (the group they belong to).</p><table class="renderedtable" cellpadding="2" cellspacing="0">
 
 <tr>
@@ -451,7 +451,7 @@ Clears the eZ Publish caches.
 
 </table>
 <p><a name="clustering"></a>
-</p><a name="eztoc96940_0_0_2" id="eztoc96940_0_0_2"></a><h4>Clustering compatibility</h4><p>The script also works if the caches are stored in the database (typically happens when running eZ Publish in a <a href="../../../../../Features/Clustering.html" target="_self">cluster environment</a>). When the &quot;<a href="#purge" target="_self">--purge</a>&quot; parameter is specified, the cache entries are DELETED from the tables. When it is not specified, the system will only mark the entries as expired either using UPDATE queries or using the expiry values in &quot;expiry.php&quot;.</p><p>Please note that in a cluster environment the <i>ezcache.php</i> script will need to be executed on each cluster node in order to remove the local cache on each one. For this task the usage the of the parameters&nbsp;and&nbsp;<a href="#purge" target="_self">--purge</a>&nbsp;is advised, used together with the clear-* options you desire.</p>
+</p><a name="eztoc96940_0_0_2" id="eztoc96940_0_0_2"></a><h4>Clustering compatibility</h4><p>The script also works if the caches are stored in the database (typically happens when running Exponential in a <a href="../../../../../Features/Clustering.html" target="_self">cluster environment</a>). When the &quot;<a href="#purge" target="_self">--purge</a>&quot; parameter is specified, the cache entries are DELETED from the tables. When it is not specified, the system will only mark the entries as expired either using UPDATE queries or using the expiry values in &quot;expiry.php&quot;.</p><p>Please note that in a cluster environment the <i>ezcache.php</i> script will need to be executed on each cluster node in order to remove the local cache on each one. For this task the usage the of the parameters&nbsp;and&nbsp;<a href="#purge" target="_self">--purge</a>&nbsp;is advised, used together with the clear-* options you desire.</p>
 <h3>Examples</h3>
 <a name="eztoc96941_0_0_1" id="eztoc96941_0_0_1"></a><h4>Example 1</h4><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all</span>
 </pre><p>Expire all caches.</p><a name="eztoc96941_0_0_2" id="eztoc96941_0_0_2"></a><h4>Example 2</h4><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
@@ -475,11 +475,11 @@ Clears the eZ Publish caches.
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Scripts/Generic/ezcache.php/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:33:09 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Scripts/Generic/ezcache.php/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:33:09 GMT -->
 </html>

@@ -866,9 +866,9 @@ use Symfony\Component\Config\Resource\FileResource;</pre></td></tr></tbody></tab
 }</pre></td></tr></tbody></table><p>Next, you need to provide the block configuration in two files. Add this section in the <code>services.yml</code> file in <code>src/AppBundle/Resources/config</code> under the <code>services</code> key:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th>title</th><td>src/AppBundle/Resources/config/services.yml</td></tr></tbody></table></td></tr></tbody><tbody><tr><td class="diff-macro-body"><pre>app.block.random:
     class: AppBundle\Block\RandomBlock
     arguments:
-        - '@ezpublish.api.service.location'
-        - '@ezpublish.api.service.content'
-        - '@ezpublish.api.service.search'
+        - '@exponential.api.service.location'
+        - '@exponential.api.service.content'
+        - '@exponential.api.service.search'
     tags:
         - { name: landing_page_field_type.block_type, alias: random }</pre></td></tr></tbody></table><p>Create a <code>blocks.yml</code> file in the same folder:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th>title</th><td>src/AppBundle/Resources/config/blocks.yml</td></tr><tr><th>linenumbers</th><td>true</td></tr></tbody></table></td></tr></tbody><tbody><tr><td class="diff-macro-body"><pre>blocks:
     random:
@@ -939,7 +939,7 @@ use Symfony\Component\Config\Resource\FileResource;</pre></td></tr></tbody></tab
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

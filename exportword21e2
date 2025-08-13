@@ -213,7 +213,7 @@ d of the content */
     <h1>2. Browsing, finding, viewing</h1>
     <div class=3D"Section1">
         <p>We will start by going through the various ways to find and retr=
-ieve content from eZ Publish using the API. While this will be covered in f=
+ieve content from Exponential using the API. While this will be covered in f=
 urther dedicated documentation, it is necessary to explain a few basic conc=
 epts of the Public API. In the following recipes, you will learn about the =
 general principles of the API as they are introduced in individual recipes.=
@@ -289,7 +289,7 @@ d.php</a>.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: true; theme: Eclipse" style=3D"font-size:=
-12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.rep=
+12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.rep=
 ository' );
 $contentService =3D $repository-&gt;getContentService();
 $contentTypeService =3D $this-&gt;getRepository()-&gt;getContentTypeService=
@@ -334,7 +334,7 @@ ith id $contentId" );
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: true; theme: Eclipse" style=3D"font-size:=
-12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.rep=
+12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.rep=
 ository' );
 $contentService =3D $repository-&gt;getContentService();
 $contentTypeService =3D $this-&gt;getRepository()-&gt;getContentTypeService=
@@ -483,7 +483,7 @@ sCommand.php</a></p>
 <p>In this code, we introduce the <a href=3D"http://apidoc.ez.no/sami/trunk=
 /NS/html/eZ/Publish/API/Repository/LocationService.html" class=3D"external-=
 link" rel=3D"nofollow">LocationService</a>. This service is used to interac=
-t with locations (eZ Publish 4 nodes). We use two methods from this service=
+t with locations (Exponential 4 nodes). We use two methods from this service=
 : <a href=3D"http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Reposito=
 ry/LocationService.html#method_loadLocation" class=3D"external-link" rel=3D=
 "nofollow"><code>loadLocation()</code></a>, and <code><a href=3D"http://api=
@@ -550,7 +550,7 @@ ion use
 </div>
 </div>
 <p><code>LocationService::loadLocationChildren()</code>&nbsp;returns a&nbsp=
-;<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Pu=
+;<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Pu=
 blish/API/Repository/Values/Content/LocationList.php" class=3D"external-lin=
 k" rel=3D"nofollow">LocationList</a>&nbsp;Value Objects that we can iterate=
  over.</p>
@@ -580,7 +580,7 @@ ernal-link" rel=3D"nofollow">ContentInfo</a></code> objects.&nbsp;This Valu=
 e Object mostly provides primitive fields: <code>contentTypeId</code>, <cod=
 e>publishedDate</code> or <code>mainLocationId</code>. But it is also used =
 to request further Content related Value Objects from various services.</p>
-<p>The full example implements an <code>ezpublish:cookbook:view_content_met=
+<p>The full example implements an <code>exponential:cookbook:view_content_met=
 adata</code> command that prints out all the available metadata, given a co=
 ntent ID.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -612,7 +612,7 @@ code>SectionService</code></a>. The concept should be familiar to you now.<=
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $repository \eZ\Publish\API\Repository\Repository */
-$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.repository=
+$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.repository=
 ' );
 $contentService =3D $repository-&gt;getContentService();
 $locationService =3D $repository-&gt;getLocationService();
@@ -893,18 +893,18 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>The full list of criteria can be found on your installation in the follo=
-wing directory&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-kerne=
+wing directory&nbsp;<a href=3D"https://github.com/ezsystems/exponential-kerne=
 l/tree/master/eZ/Publish/API/Repository/Values/Content/Query/Criterion" cla=
-ss=3D"external-link" rel=3D"nofollow">vendor/ezsystems/ezpublish-kernel/eZ/=
+ss=3D"external-link" rel=3D"nofollow">vendor/ezsystems/exponential-kernel/eZ/=
 Publish/API/Repository/Values/Content/Query/Criterion</a>. Additionally you=
  may look at integration tests like <a href=3D"https://github.com/ezsystems=
-/ezpublish-kernel/blob/master/eZ/Publish/API/Repository/Tests/SearchService=
+/exponential-kernel/blob/master/eZ/Publish/API/Repository/Tests/SearchService=
 Test.php" class=3D"external-link" rel=3D"nofollow">vendor/ezsystems/ezpubli=
 sh-kernel/eZ/Publish/API/Repository/Tests/SearchServiceTest.php</a> for mor=
 e details on how these are used.</p>
 <p><span>NB: Be aware that the links point to code in the upcoming version =
 (master) and might not represent the </span><span>criteria</span><span> <sp=
-an><span>in your eZ Publish version.</span></span><br></span></p>
+an><span>in your Exponential version.</span></span><br></span></p>
 </div>
 </div>
 <p>&nbsp;</p>
@@ -1002,8 +1002,8 @@ nd.php</a></p>
 </div>
 </div>
 <p>A search isn't only meant for searching, it also provides the future int=
-erface for what you in eZ Publish 4.x would know as a content "fetch". And =
-as this is totally&nbsp;backend agnostic, in future eZ Publish 5.x versions=
+erface for what you in Exponential 4.x would know as a content "fetch". And =
+as this is totally&nbsp;backend agnostic, in future Exponential 5.x versions=
  this will be powered by either Solr or ElasticSearch meaning it also repla=
 ces&nbsp;"ezfind" fetch functions.</p>
 <p>Following the examples above we now change it a bit to combine several c=
@@ -1052,7 +1052,7 @@ alues (IN operator) instead of as single value (EQ operator).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.0</b>
+<b>Exponential 5.0</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -1072,14 +1072,14 @@ $query-&gt;criterion =3D new Criterion\LogicalAnd(
 $result =3D $searchService-&gt;findContent( $query );</pre>=20
 </div>
 </div>
-<p>Or if your on eZ Publish 5.1+ you can use the new&nbsp;<a href=3D"http:/=
+<p>Or if your on Exponential 5.1+ you can use the new&nbsp;<a href=3D"http:/=
 /apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/Values/Content/Q=
 uery/Criterion/ContentTypeIdentifier.html" class=3D"external-link" rel=3D"n=
 ofollow"><code>ContentTypeIdentifier</code></a>&nbsp;Criterion:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.1+ (2013.01+)</b>
+<b>Exponential 5.1+ (2013.01+)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

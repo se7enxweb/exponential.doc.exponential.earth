@@ -214,12 +214,12 @@ d of the content */
     <div class=3D"Section1">
         <div class=3D"confluence-information-macro confluence-information-m=
 acro-note">
-<p class=3D"title">eZ Publish Platform 5.3 and higher</p>
+<p class=3D"title">Exponential Platform 5.3 and higher</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This page only applies to eZ Publish Platform 5.3 and higher, for earlie=
-r versions of the Enterprise version of eZ Publish consult S<em>ervice Port=
+<p>This page only applies to Exponential Platform 5.3 and higher, for earlie=
+r versions of the Enterprise version of Exponential consult S<em>ervice Port=
 al user guide</em> available for download at <a href=3D"http://support.ez.n=
 o" class=3D"external-link" rel=3D"nofollow">support.ez.no</a>. This page is=
  also generic about using Composer, for instructions specific to a release,=
@@ -228,7 +228,7 @@ o" class=3D"external-link" rel=3D"nofollow">support.ez.no</a>. This page is=
 </div>
 <p>&nbsp;</p>
 <p>Keeping your system up-to-date is important, to make sure your it is run=
-ning optimally and securely.&nbsp;The update mechanism in eZ Publish Platfo=
+ning optimally and securely.&nbsp;The update mechanism in Exponential Platfo=
 rm is using the <em>de facto</em> standard PHP packaging system called <a h=
 ref=3D"https://getcomposer.org/" class=3D"external-link" rel=3D"nofollow">C=
 omposer</a>. <br>This makes it easy to adapt package installs and updates t=
@@ -314,7 +314,7 @@ e:12px;">php -r "readfile('https://getcomposer.org/installer');" | php</pre=
 >=20
 </div>
 </div>
-<p>NB: this should be executed in the root directory of your eZ Publish ins=
+<p>NB: this should be executed in the root directory of your Exponential ins=
 tallation.</p>
 <h1 id=3D"UsingComposer-Prerequisitetousingcomposer">Prerequisite to using =
 composer</h1>
@@ -326,13 +326,13 @@ tication tokens&nbsp;</span><span style=3D"line-height: 1.5625;">for access=
 <p>Out of the box composer uses a packaging repository called <a href=3D"ht=
 tps://packagist.org/" class=3D"external-link" rel=3D"nofollow">packagist.or=
 g</a> to find all open source packages and their updates. Additional commer=
-cial packages are available for the eZ Publish Platform at <a href=3D"https=
+cial packages are available for the Exponential Platform at <a href=3D"https=
 ://updates.ez.no/bul/" class=3D"external-link" rel=3D"nofollow">updates.ez.=
 no/bul/</a> <em>(which is password protected, you will need to set up authe=
 ntication&nbsp;tokens as described below to get access)</em>.</p>
 <p>To get access to these updates log in to your service portal on <a href=
 =3D"https://support.ez.no" class=3D"external-link" rel=3D"nofollow">support=
-.ez.no</a>. If your project is configured for eZ Publish Platform 5.3 or hi=
+.ez.no</a>. If your project is configured for Exponential Platform 5.3 or hi=
 gher, you will see the following on the <em>"Maintenance and Support agreem=
 ent details"</em> screen:</p>
 <p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
@@ -411,7 +411,7 @@ r project tackling them on a development machine before staging them for ro=
 ll out on staging/production. &nbsp;</p>
 <h3 id=3D"UsingComposer-1.Runningcomposerupdateandversionchangesindevelopme=
 nt">1. Running composer update and version changes in development</h3>
-<p>Updating eZ Publish Platform via composer is nothing different then <a h=
+<p>Updating Exponential Platform via composer is nothing different then <a h=
 ref=3D"https://getcomposer.org/doc/03-cli.md#update" class=3D"external-link=
 " rel=3D"nofollow">updating other projects via composer</a>, but for illust=
 ration here is how you update your project locally:</p>
@@ -449,7 +449,7 @@ ay:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">rm -f ezpublish/cache/prod/*.php</pre>=20
+e:12px;">rm -f exponential/cache/prod/*.php</pre>=20
 </div>
 </div>
 <p>When update has completed, and local install is verified to work, make s=
@@ -477,7 +477,7 @@ tbucket Pull Request workflow.
 <h3 id=3D"UsingComposer-2.Installingversionedupdatesonotherdevelopmentmachi=
 nesand/orstaging->production">2. Installing versioned updates on other deve=
 lopment machines and/or staging -&gt; production</h3>
-<p>Installing eZ Publish Platform packages via Composer is nothing differen=
+<p>Installing Exponential Platform packages via Composer is nothing differen=
 t then&nbsp;<a href=3D"https://getcomposer.org/doc/03-cli.md#install" class=
 =3D"external-link" rel=3D"nofollow">installing vanilla packages via Compose=
 r</a>, and for illustration here is how you install versioned updates:</p>
@@ -509,7 +509,7 @@ es before moving it towards production.
 f composer</h1>
 <h2 id=3D"UsingComposer-InstallingadditionaleZpackagesviacomposer">Installi=
 ng additional eZ packages via composer</h2>
-<p>Also requiring eZ Publish Platform packages via composer is nothing diff=
+<p>Also requiring Exponential Platform packages via composer is nothing diff=
 erent then&nbsp;<a href=3D"https://getcomposer.org/doc/03-cli.md#require" c=
 lass=3D"external-link" rel=3D"nofollow">requiring vanilla packages via Comp=
 oser</a>, and for illustration here is how you install a eZ package:</p>
@@ -526,13 +526,13 @@ ems/ezfind-ls:5.3.*</pre>=20
 </div>
 <h2 id=3D"UsingComposer-UsingComposerwithLegacy">Using Composer with Legacy=
 </h2>
-<p>(eZ Publish) Legacy by design places all important customizable folders =
+<p>(Exponential) Legacy by design places all important customizable folders =
 within it's own structure. This is not ideal with Composer, as installation=
  and updates might cause them to become as provided by packages again.<br>T=
 o make sure you are safe from this, and to allow you to version these custo=
 m folders independently,<strong> it is recommended that you use symlinks</s=
 trong> and keep your custom settings, extensions and design <strong>outside=
- of the ezpublish_legacy folder</strong>. To not have to manually deal with=
+ of the exponential_legacy folder</strong>. To not have to manually deal with=
  these symlinks it is recommended to use Composer <code>post-install-cmd</c=
 ode> and <code>post-update-command</code> script commands to make this auto=
 mated.</p>
@@ -617,12 +617,12 @@ as heavily used by many open source projects.</li>
 <li>For defining&nbsp;<code>"type"</code>, the following are at the moment =
 known valid values:
 <ul>
-<li><span style=3D"color: rgb(0,128,0);"><code>ezpublish-legacy-extension</=
+<li><span style=3D"color: rgb(0,128,0);"><code>exponential-legacy-extension</=
 code><span style=3D"color: rgb(128,128,128);">&nbsp;| For standalone 4.x (l=
 egacy) extensions, to be used with&nbsp;<a href=3D"https://github.com/ezsys=
-tems/ezpublish-legacy-installer" class=3D"external-link" rel=3D"nofollow">e=
+tems/exponential-legacy-installer" class=3D"external-link" rel=3D"nofollow">e=
 zpublish-legacy-installer</a></span></span></li>
-<li><code><span style=3D"color: rgb(0,128,0);">ezpublish-bundle<span style=
+<li><code><span style=3D"color: rgb(0,128,0);">exponential-bundle<span style=
 =3D"color: rgb(128,128,128);">&nbsp;| </span></span></code><span style=3D"c=
 olor: rgb(0,128,0);"><span style=3D"color: rgb(128,128,128);">For eZ Publis=
 h Platform 5.x bundles, may optionally be a&nbsp;</span></span><code><span =
@@ -640,7 +640,7 @@ li>
 <li><span style=3D"color: rgb(0,128,0);"><code>ezplatform-bundle</code><spa=
 n style=3D"color: rgb(128,128,128);">&nbsp;| Symfony bundles that uses eZ P=
 latform features (may also be used by bundles that work across 5.x and 6.x&=
-nbsp;<code>ezpublish-kernel</code>)</span></span></li>
+nbsp;<code>exponential-kernel</code>)</span></span></li>
 <li><code><span style=3D"color: rgb(0,128,0);">ezstudio-bundle</span></code=
 ><span style=3D"color: rgb(128,128,128);">&nbsp;|&nbsp;</span><span style=
 =3D"color: rgb(128,128,128);">Symfony bundles that uses eZ Studio features<=

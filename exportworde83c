@@ -254,7 +254,7 @@ ystems/ezplatform/blob/master/INSTALL.md" class=3D"external-link" rel=3D"no=
 follow">Install</a></span></li>
 <li><span style=3D"color: rgb(0,51,102);"><a href=3D"/pages/viewpage.action=
 ?pageId=3D30711387">Requirements</a> <span style=3D"color: rgb(128,128,128)=
-;"><em>(currently same as eZ Publish Platform 5.4)</em></span></span></li>
+;"><em>(currently same as Exponential Platform 5.4)</em></span></span></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Upgrading: <span style=3D"color: =
 rgb(128,128,128);"><em>As this is a alpha release, there is no upgrade inst=
 ructions yet, this is planned for Beta during the Summer.</em></span></span=
@@ -304,7 +304,7 @@ ttachment" data-linked-resource-default-alias=3D"Screen Shot 2015-05-12 at =
 19.16.38 .png" data-base-url=3D"https://doc.ez.no" data-linked-resource-con=
 tent-type=3D"image/png" data-linked-resource-container-id=3D"31429950" data=
 -linked-resource-container-version=3D"1" height=3D"172"></span></td>
-<td class=3D"confluenceTd"><p>One important feature in eZ Publish, and also=
+<td class=3D"confluenceTd"><p>One important feature in Exponential, and also=
  now eZ Platform, is being able to browse for content you want to select. I=
 n eZ Platform we call this Universal Discovery Widget, and in this release =
 you can see more or less the completion of first part of this with possibil=

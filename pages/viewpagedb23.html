@@ -709,13 +709,13 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
 <h1 id="UserGeneratedContent-Introduction">Introduction</h1><h2 id="UserGeneratedContent-ContentEdit">Content Edit</h2><p><span class="status-macro aui-lozenge aui-lozenge-current">V1.2</span></p><p>eZ Platform comes with content edition features via the Symfony stack. They are meant, in addition the PlatformUI's editing capabilities, to allow the implementation of User Generated Content from the frontend.</p><h1 id="UserGeneratedContent-Usage">Usage</h1><h2 id="UserGeneratedContent-Creatingacontentitemwithoutusingadraft">Creating a content item without using a draft</h2><p>As of eZ Platform 1.2, a new <code>/content/edit/nodraft</code> route is available. It will show a Content item creation form for a given Content Type:</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">argument</th><th class="confluenceTh">type</th><th class="confluenceTh">description</th></tr><tr><td class="confluenceTd"><code>contentTypeIdentifier</code></td><td class="confluenceTd"><code>string</code></td><td class="confluenceTd">The identifier of the content type to create. Example: <code>folder</code>, <code>article</code></td></tr><tr><td colspan="1" class="confluenceTd"><code>languageCode</code></td><td colspan="1" class="confluenceTd"><code>string</code></td><td colspan="1" class="confluenceTd">Language code the content item must be created in. Example: <code>eng-GB</code></td></tr><tr><td colspan="1" class="confluenceTd"><code>parentLocationId</code></td><td colspan="1" class="confluenceTd"><code>integer</code></td><td colspan="1" class="confluenceTd">ID of the Location the content item must be created in. Example: <code>2</code></td></tr></tbody></table></div><p>For now a very limited subset of Field Types is supported. These are:</p><ul><li><span class="status-macro aui-lozenge aui-lozenge-current">V1.2</span><code> TextLine</code> and <code>TextBlock</code></li><li><span class="status-macro aui-lozenge aui-lozenge-current">V1.4</span> <code>Selection</code>, <code>Checkbox</code> and <code>User</code></li></ul><p>More will be added in the near future.</p><h2 id="UserGeneratedContent-Registeringnewusers">Registering new users</h2><p><span class="status-macro aui-lozenge aui-lozenge-current">V1.4</span></p><p>You can allow your users to create accounts by employing the <code>/register</code> route. This route leads to a registration form that, when filled in, creates a new User Content item in the repository.</p><h4 id="UserGeneratedContent-UserGroups">User Groups</h4><p>By default, new Users generated in this way are placed in the Guest accounts group. You can select a different default group in the following section of configuration:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         default:
             user_registration:
                 group_id: &lt;userGroupContentId&gt;]]></script>
 </div></div><h4 id="UserGeneratedContent-Registrationformtemplates">Registration form templates</h4><p>You can use custom templates for the registration form and for the registration confirmation page.</p><p>These templates are defined with the following configuration:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         default:
             user_registration:
@@ -739,7 +739,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         Thank you for registering an account. You can now &lt;a href=&quot;{{ path(&#39;login&#39;) }}&quot;&gt;login&lt;/a&gt;.
     &lt;/p&gt;
 {% endblock %}]]></script>
-</div></div><p> </p><h2 id="UserGeneratedContent-RepositoryForms">Repository Forms</h2><ul><li>Repository: <a href="http://github.com/ezsystems/repository-forms" class="external-link" rel="nofollow">http://github.com/ezsystems/repository-forms</a></li><li>Package: <a href="http://packagist.org/packages/ezsystems/repository-forms" class="external-link" rel="nofollow">http://packagist.org/packages/ezsystems/repository-forms</a></li></ul><p>This package provides form-based interaction for the Repository Value objects.</p><p>It is currently used by:</p><ul style="list-style-type: square;"><li><code>ezsystems/platform-ui-bundle</code> for most management interfaces: Sections, Content Types, Roles, Policies, etc.</li><li><code>ezsystems/ezpublish-kernel</code> for user registration, and user generated content</li></ul></div>
+</div></div><p> </p><h2 id="UserGeneratedContent-RepositoryForms">Repository Forms</h2><ul><li>Repository: <a href="http://github.com/ezsystems/repository-forms" class="external-link" rel="nofollow">http://github.com/ezsystems/repository-forms</a></li><li>Package: <a href="http://packagist.org/packages/ezsystems/repository-forms" class="external-link" rel="nofollow">http://packagist.org/packages/ezsystems/repository-forms</a></li></ul><p>This package provides form-based interaction for the Repository Value objects.</p><p>It is currently used by:</p><ul style="list-style-type: square;"><li><code>ezsystems/platform-ui-bundle</code> for most management interfaces: Sections, Content Types, Roles, Policies, etc.</li><li><code>ezsystems/exponential-kernel</code> for user registration, and user generated content</li></ul></div>
 </div>
 <div class="cell aside" data-type="aside">
 <div class="innerCell">
@@ -851,7 +851,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

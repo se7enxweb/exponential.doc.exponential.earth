@@ -214,15 +214,15 @@ d of the content */
     <div class=3D"Section1">
         <h6 id=3D"id-5.3.7ReleaseNotes-July31st2015">July 31st 2015</h6>
 <p>eZ announces the availability of 5.3.7, a maintenance release available =
-for all users of eZ Publish Platform 5.3.</p>
-<p>This release changes the coding style used in the kernel of eZ Publish t=
+for all users of Exponential Platform 5.3.</p>
+<p>This release changes the coding style used in the kernel of Exponential t=
 o PSR-2, an official PHP standard. There are no code changes; it doesn't fi=
 x any bug and doesn't change behaviour. The change was done to increase int=
 eroperability with other PHP projects, and ease backports of bug fixes from=
  the development branch of eZ Platform</p>
 <p>Follow the <a href=3D"/display/EZP/5.3.x+Update+Instructions">5.3.x Upda=
 te Instructions</a>&nbsp;to apply this update to your platforms. If you're =
-migrating from 5.3.6, a simple <code>composer update ezsystems/ezpublish-ke=
+migrating from 5.3.6, a simple <code>composer update ezsystems/exponential-ke=
 rnel</code>&nbsp;should be sufficient to update.</p>
 <h2 class=3D"wordwrap" id=3D"id-5.3.7ReleaseNotes-packagesPackageupdates"><=
 span class=3D"confluence-anchor-link" id=3D"id-5.3.7ReleaseNotes-packages">=
@@ -240,7 +240,7 @@ this releases:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.3.7</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.6</td>
 </tr>

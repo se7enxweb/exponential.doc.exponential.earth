@@ -268,7 +268,7 @@ e commands</a> for some much more relevant info.</p>
 its and misses. Then&nbsp;StashBundle tracking, represented by the <code st=
 yle=3D"line-height: 1.42857;">stash.tracking</code>&nbsp;setting, and persi=
 stence cache logging, represented by the setting <code style=3D"line-height=
-: 1.42857;">parameters.ezpublish.spi.persistence.cache.persistenceLogger.en=
+: 1.42857;">parameters.exponential.spi.persistence.cache.persistenceLogger.en=
 ableCallLogging</code>, can optionally be disabled.</p>
 <p>&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -288,7 +288,7 @@ ck cache keys not values
             registerDoctrineAdapter: false
 
 parameters:
-    ezpublish.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
+    exponential.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
 lse</pre>=20
 </div>
 </div>

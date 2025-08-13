@@ -222,7 +222,7 @@ mo_site/storage</span><span>/images/3/6/4/6/6463-1-eng-GB/kidding.png</span=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -240,7 +240,7 @@ ning">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>URL decorators are an eZ Publish 5 features. If an image field is displa=
+<p>URL decorators are an Exponential 5 features. If an image field is displa=
 yed via a legacy callback or legacy template, no decoration will be applied=
 .</p>
 </div>
@@ -252,13 +252,13 @@ yed via a legacy callback or legacy template, no decoration will be applied=
  optimized nginx to serve images in an optimized way. The example image abo=
 ve could be made available as <code><span>http://static.example.com/</span>=
 <span>images/3/6/4/6/6463-1-eng-GB/kidding.png</span></code>, by setting up=
- a server that uses <code>ezpublish/ezpublish_legacy/var/ezdemo_site/storag=
-e</code>. The eZ Publish configuration would be as follows:</span></span></=
+ a server that uses <code>exponential/exponential_legacy/var/ezdemo_site/storag=
+e</code>. The Exponential configuration would be as follows:</span></span></=
 p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -283,9 +283,9 @@ s expected.</p>
 </div>
 <p><span style=3D"line-height: 1.5;color: rgb(0,98,147);font-size: 20.0px;"=
 >Internals</span></p>
-<h2 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/ezpublish-ker=
+<h2 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/exponential-ker=
 nel/blob/master/doc/specifications/io/io_url_decoration.md#configuration"><=
-a class=3D"external-link" href=3D"https://github.com/ezsystems/ezpublish-ke=
+a class=3D"external-link" href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/blob/master/doc/specifications/io/io_url_decoration.md#configuration" =
 name=3D"user-content-configuration" rel=3D"nofollow"></a></h2>
 <p>Any <code>BinaryFile</code>&nbsp;returned by the public API is prefixed =
@@ -299,7 +299,7 @@ r settings</h3>
 <p>Default value:&nbsp;<span><code>$var_dir$/$storage_dir$</code><br>Exampl=
 e:&nbsp;<code><span>/var/ezdemo_site/storage</span></code></span></p>
 <p><span><span><span>Used to configure the default URL decorator service (<=
-/span><code>ezpublish.core.io.default_url_decorator</code><span>, used by a=
+/span><code>exponential.core.io.default_url_decorator</code><span>, used by a=
 ll binarydata handlers to generate the URI of loaded files. It is always in=
 terpreted as an absolute URI, meaning that unless it contains a scheme (<sp=
 an class=3D"nolink">http://,</span>&nbsp;ftp://),&nbsp;it will be prepended=
@@ -314,24 +314,24 @@ Can not be overridden using semantic configuration.&nbsp;<span>Changing thi=
 s value will break compatibility for the legacy backoffice.</span></span></=
 p>
 <h4 id=3D"BinaryfilesURLhandling-io.root_dir"><code>io.root_dir</code></h4>
-<p><span><span><span>Example:&nbsp;<code><span>%ezpublish_legacy.root_dir%/=
+<p><span><span><span>Example:&nbsp;<code><span>%exponential_legacy.root_dir%/=
 $var_dir$/$storage_dir$</span></code><br>Default value: <code>/var/www/ezpu=
-blish/ezpublish_legacy/var/ezdemo_site/storage</code></span></span></span><=
+blish/exponential_legacy/var/ezdemo_site/storage</code></span></span></span><=
 /p>
 <p><span><span><span>Physical path where binary files are stored on disk. C=
 an not be overridden using semantic configuration. Changing this value will=
  break compatibility for the legacy backoffice.</span></span></span></p>
-<h4 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/ezpublish-ker=
+<h4 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/exponential-ker=
 nel/blob/master/doc/specifications/io/io_url_decoration.md#iourl_prefix"><a=
- class=3D"external-link" href=3D"https://github.com/ezsystems/ezpublish-ker=
+ class=3D"external-link" href=3D"https://github.com/ezsystems/exponential-ker=
 nel/blob/master/doc/specifications/io/io_url_decoration.md#iourl_prefix" na=
 me=3D"user-content-iourl_prefix" rel=3D"nofollow"></a></h4>
 <h3 id=3D"BinaryfilesURLhandling-Services"><a class=3D"external-link" href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/io/io_url_decoration.md#services" name=3D"user-content-services" rel=
 =3D"nofollow"></a>Services</h3>
 <h4 id=3D"BinaryfilesURLhandling-urldecorators"><a class=3D"external-link" =
-href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/speci=
+href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/speci=
 fications/io/io_url_decoration.md#url-decorators" name=3D"user-content-url-=
 decorators" rel=3D"nofollow"></a>url decorators</h4>
 <p>An UrlDecorator decorates and undecorates a given string (url) in some w=
@@ -343,18 +343,18 @@ ePrefix</code>. They both add a prefix to an URL, but <code>AbsolutePrefix<=
 ll be prepended with /.</p>
 <p>Three UrlDecorator services are introduced:</p>
 <ul class=3D"task-list">
-<li><code>ezpublish.core.io.prefix_url_decorator</code> Used by the binaryd=
+<li><code>exponential.core.io.prefix_url_decorator</code> Used by the binaryd=
 ata handlers to decorate all uris sent out by the API. Uses AbsolutePrefix.=
 </li>
-<li><code>ezpublish.core.io.image_fieldtype.legacy_url_decorator</code> Use=
+<li><code>exponential.core.io.image_fieldtype.legacy_url_decorator</code> Use=
 d via the UrlRedecorator (see below) by various legacy elements (Converter,=
  Storage Gateway...) to generate its internal storage format for uris. Uses=
  a Prefix, not an AbsolutePrefix, meaning that no leading / is added.</li>
 </ul>
-<p>In addition, an UrlRedecorator service, <code>ezpublish.core.io.image_fi=
+<p>In addition, an UrlRedecorator service, <code>exponential.core.io.image_fi=
 eldtype.legacy_url_redecorator</code>, uses both decorators abive to conver=
 t URIs between what is used on the new stack, and what format legacy expect=
-s (relative urls from the ezpublish root).</p>
+s (relative urls from the exponential root).</p>
     </div>
 </body>
 </html>

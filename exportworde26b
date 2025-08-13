@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Service tags in eZ Publish 5</title>
+    <title>Service tags in Exponential 5</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,10 +210,10 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Service tags in eZ Publish 5</h1>
+    <h1>Service tags in Exponential 5</h1>
     <div class=3D"Section1">
-        <p>This page lists all DIC tags exposed in eZ Publish 5.</p>
-<h1 id=3D"ServicetagsineZPublish5-Core&amp;API">Core &amp; API</h1>
+        <p>This page lists all DIC tags exposed in Exponential 5.</p>
+<h1 id=3D"ServicetagsinExponential5-Core&amp;API">Core &amp; API</h1>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -233,26 +233,26 @@ d>
 ig</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.content_view_pr=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.content_view_pr=
 ovider</code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a ContentViewProvider fo=
 r template selection depending on content/location being viewed</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.storageEngine</=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.storageEngine</=
 code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a storage engine in the =
 Repository factory</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/EZP51=
-/Register+FieldType">ezpublish.fieldType</a></code></p></td>
+/Register+FieldType">exponential.fieldType</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a Field Type</td>
 </tr>
 </tbody>
 </table>
 </div>
-<h1 id=3D"ServicetagsineZPublish5-Legacy">Legacy</h1>
+<h1 id=3D"ServicetagsinExponential5-Legacy">Legacy</h1>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -262,21 +262,21 @@ Repository factory</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/EZP51=
-/Register+FieldType#RegisterFieldType-Converter">ezpublish.storageEngine.le=
+/Register+FieldType#RegisterFieldType-Converter">exponential.storageEngine.le=
 gacy.converter</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a converter for a field =
 type in legacy storage engine</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/EZP51=
-/Register+FieldType#RegisterFieldType-Externa">ezpublish.fieldType.external=
+/Register+FieldType#RegisterFieldType-Externa">exponential.fieldType.external=
 StorageHandler</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage hand=
 ler for a field type</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/EZP51=
-/Register+FieldType#RegisterFieldType-Gatewaybased">ezpublish.fieldType.ext=
+/Register+FieldType#RegisterFieldType-Gatewaybased">exponential.fieldType.ext=
 ernalStorageHandler.gateway</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage gate=
 way for a field type in legacy storage engine</td>

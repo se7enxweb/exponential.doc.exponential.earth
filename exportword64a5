@@ -213,7 +213,7 @@ d of the content */
     <h1>Extending the REST API</h1>
     <div class=3D"Section1">
         <p>&nbsp;</p>
-<p>The eZ Publish 5 REST API comes with a framework that makes it quite eas=
+<p>The Exponential 5 REST API comes with a framework that makes it quite eas=
 y to extend the API for your own needs.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -264,7 +264,7 @@ ns an object that doesn't already have a converter)</li>
 <li>Optionally, an <code>InputParser</code></li>
 </ul>
 <h3 id=3D"ExtendingtheRESTAPI-Controller">Controller</h3>
-<p>To create a REST controller, you need to extend the <code>ezpublish_rest=
+<p>To create a REST controller, you need to extend the <code>exponential_rest=
 .controller.base</code> service, as well as the <code>eZ\Publish\Core\REST\=
 Server\Controller</code> class.</p>
 <p>Let's create a very simple controller, that has a <code>sayHello()</code=
@@ -302,7 +302,7 @@ ix.</p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">myRestBundle_rest_routes:
     resource: "@MyRestBundle/Resources/config/routing_rest.yml"
-    prefix:   %ezpublish_rest.path_prefix%</pre>=20
+    prefix:   %exponential_rest.path_prefix%</pre>=20
 </div>
 </div>
 <p>Using a distinct file for REST routes allows you to use the prefix for a=
@@ -338,7 +338,7 @@ e from the legacy backend</span>=20
 <!-- The new status lozengens support for JIRA 6.2 or later. Otherwise we u=
 se the icon.--> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-s=
 uccess jira-macro-single-issue-export-pdf">Closed</span> </span> , custom R=
-EST routes must be prefixed with <code>ezpublish_rest_</code>, or they won'=
+EST routes must be prefixed with <code>exponential_rest_</code>, or they won'=
 t be detected correctly.</p>
 </div>
 </div>
@@ -413,10 +413,10 @@ blish_rest.output.value_object_visitor</code>. The tag attribute says which=
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">services:
     myRestBundle.value_object_visitor.hello:
-        parent: ezpublish_rest.output.value_object_visitor.base
+        parent: exponential_rest.output.value_object_visitor.base
         class: My\Bundle\RestBundle\Rest\ValueObjectVisitor\Hello
         tags:
-            - { name: ezpublish_rest.output.value_object_visitor, type: My\=
+            - { name: exponential_rest.output.value_object_visitor, type: My\=
 Bundle\RestBundle\Rest\Values\Hello }</pre>=20
 </div>
 </div>
@@ -459,13 +459,13 @@ class Hello extends ValueObjectVisitor
 </div>
 </div>
 <p>Do not hesitate to look into the built-in ValueObjectVisitors, in&nbsp;<=
-code><a href=3D"https://github.com/ezsystems/ezpublish-kernel/tree/master/e=
+code><a href=3D"https://github.com/ezsystems/exponential-kernel/tree/master/e=
 Z/Publish/Core/REST/Server/Output/ValueObjectVisitor" class=3D"external-lin=
 k" rel=3D"nofollow">eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor</=
 a></code>, for more examples.</p>
 <h3 id=3D"ExtendingtheRESTAPI-Cachehandling">Cache handling</h3>
 <p>The easiest way to handle cache is to re-use the&nbsp;<code><a href=3D"h=
-ttps://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Core/RE=
+ttps://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Core/RE=
 ST/Server/Output/ValueObjectVisitor/CachedValue.php" class=3D"external-link=
 " rel=3D"nofollow">CachedValue</a></code> Value Object. It acts as a proxy,=
  and adds the cache headers, depending on the configuration, for a given ob=
@@ -523,17 +523,17 @@ would send this as XML:</span></p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">services:
     myRestBundle.input_parser.Greetings:
-        parent: ezpublish_rest.input.parser
+        parent: exponential_rest.input.parser
         class: My\Bundle\RestBundle\Rest\InputParser\Greetings
         tags:
-            - { name: ezpublish_rest.input.parser, mediaType: application/v=
+            - { name: exponential_rest.input.parser, mediaType: application/v=
 nd.my.Greetings }
 
 </pre>=20
 </div>
 </div>
 <p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">The mediaType att=
-ribute of the ezpublish_rest.input.parser tag maps our Content Type to the =
+ribute of the exponential_rest.input.parser tag maps our Content Type to the =
 input parser.</span></p>
 <p>Let's implement our parser. It must extend&nbsp;eZ\Publish\Core\REST\Ser=
 ver\Input\Parser, and implement the <code>parse()</code> method. It accepts=
@@ -587,7 +587,7 @@ ady have a ValueObjectVisitor
 :12px;">services:
     myRestBundle.controller.default:
         class: My\Bundle\RestBundle\Rest\Controller\Default
-        parent: ezpublish_rest.controller.base</pre>=20
+        parent: exponential_rest.controller.base</pre>=20
 </div>
 </div>
 <p>Do not hesitate to look into the built-in InputParsers, in <code>eZ/Publ=

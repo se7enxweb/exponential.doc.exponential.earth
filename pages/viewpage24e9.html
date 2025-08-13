@@ -702,7 +702,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         <div id="main-content" class="wiki-content">
                            
         <p>It is possible to dynamically inject variables in content view templates by listening to the <code>
-    <strong>ezpublish.pre_content_view</strong>
+    <strong>exponential.pre_content_view</strong>
   </code> event.</p><p>The event listener method receives an<code> eZ\Publish\Core\MVC\Symfony\Event\PreContentViewEvent </code>object</p><h3 id="Parametersinjectionincontentviews-Example">Example</h3><p>The following example will inject <code>foo</code> and <code>osTypes</code> variables in all content view templates.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[&lt;?php
 
@@ -732,7 +732,7 @@ services:
     ezdemo.pre_content_view_listener:
         class: %ezdemo.pre_content_view_listener.class%
         tags:
-            - {name: kernel.event_listener, event: ezpublish.pre_content_view, method: onPreContentView}
+            - {name: kernel.event_listener, event: exponential.pre_content_view, method: onPreContentView}
 
 ]]></script>
 </div></div><p> </p><h5 id="Parametersinjectionincontentviews-Relatedtopics:">Related topics:</h5><ul><li><a href="../display/TECHDOC/Content%2bview.html">Content view</a></li><li><a href="../display/TECHDOC/Default%2bview%2btemplates.html">Default view templates</a></li></ul>
@@ -840,7 +840,7 @@ services:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

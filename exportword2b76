@@ -630,7 +630,7 @@ ries to follow principles of "Transparent caching", this can shortly be des=
 cribed as a cache which is invisible to the end user and to the admin/edito=
 rs of eZ Platform where content is always returned "fresh". In other words,=
  there should be no need to manually clear the cache like it was frequently=
- the case with eZ Publish 4.x. This is possible thanks to an interface that=
+ the case with Exponential 4.x. This is possible thanks to an interface that=
  follows CRUD <em>(Create Read Update Delete)</em> operations per domain, a=
 nd the fact that the number of other operations capable of affecting a cert=
 ain domain is kept to a minimum.</p>
@@ -672,7 +672,7 @@ abase.</li>
 </ul>
 <p><em>For further details on which calls are cached or not, and where/how =
 to contribute additional caches, check out the <a href=3D"https://github.co=
-m/ezsystems/ezpublish-kernel/tree/master/eZ/Publish/Core/Persistence/Cache"=
+m/ezsystems/exponential-kernel/tree/master/eZ/Publish/Core/Persistence/Cache"=
  class=3D"external-link" rel=3D"nofollow">source</a>.</em></p>
 <h1 id=3D"Repository-Configuration">Configuration</h1>
 <h2 id=3D"Repository-ContentRepositoryConfiguration">Content Repository Con=
@@ -682,7 +682,7 @@ n stored. It is the heart of eZ Platform which you interact with using Publ=
 ic API.</p>
 <p>To store data, the content repository <strong>uses a storage engine</str=
 ong> that can virtually can work with any kind of storage (RDBMS, NoSQL, et=
-c.). eZ Publish 5 came with a relational storage engine, compatible with v4=
+c.). Exponential 5 came with a relational storage engine, compatible with v4=
 .x: the <strong>Legacy storage engine</strong>, which is the default.</p>
 <p>You can define several repositories within a single application. However=
 , you can only use one per site.</p>
@@ -695,7 +695,7 @@ c.). eZ Publish 5 came with a relational storage engine, compatible with v4=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         # Defining repository with alias "main"
         # Default storage engine is used, with default connection
@@ -718,7 +718,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If no repository is specified for a siteaccess or siteaccess group, the =
-first defined repository (under <code>ezpublish.repositories</code>) will b=
+first defined repository (under <code>exponential.repositories</code>) will b=
 e used.</p>
 </div>
 </div>
@@ -746,7 +746,7 @@ e used.</p>
             another_connection_name:
                 # ...
 
-ezpublish:
+exponential:
     repositories:
         first_repository: { engine: legacy, connection: my_connection_name,=
  config: {} }
@@ -831,7 +831,7 @@ ult set to 5. This setting is configured in the following way (typically in=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         default:
             options:
@@ -923,7 +923,7 @@ t activity happens towards the repository.</span></li>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         # "site_group" refers to the group configured in site access
         site_group:
@@ -1490,7 +1490,7 @@ quire the "cache" service in your configuration like so:</p>
 :12px;">    myApp.myService:
         class: %myApp.myService.class%
         arguments:
-            - @ezpublish.cache_pool</pre>=20
+            - @exponential.cache_pool</pre>=20
 </div>
 </div>
 <p>The "cache" service is an instance of the following class:&nbsp;<code>Te=
@@ -1506,7 +1506,7 @@ ia container like so:</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $cacheService \Tedivm\StashBundle\Service\CacheService */
-$cacheService =3D $container-&gt;get('ezpublish.cache_pool');</pre>=20
+$cacheService =3D $container-&gt;get('exponential.cache_pool');</pre>=20
 </div>
 </div>
 <h3 id=3D"Repository-Usingthecacheservice">Using the cache service</h3>
@@ -1546,7 +1546,7 @@ ne in the following way:</p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $cacheService \eZ\Publish\Core\Persistence\Cache\CacheServ=
 iceDecorator */
-$cacheService =3D $container-&gt;get('ezpublish.cache_pool.spi.cache.decora=
+$cacheService =3D $container-&gt;get('exponential.cache_pool.spi.cache.decora=
 tor');
 &nbsp;
 // To clear all cache
@@ -1570,7 +1570,7 @@ o_site/storage</span> <span>/images/3/6/4/6/6463-1-eng-GB/kidding.png</span=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -1602,12 +1602,12 @@ mages in an optimized way. The example image above could be made available =
 as <code> <span> <a href=3D"http://static.example.com/" class=3D"external-l=
 ink" rel=3D"nofollow">http://static.example.com/</a> </span> <span>images/3=
 /6/4/6/6463-1-eng-GB/kidding.png</span> </code>, by setting up a server tha=
-t uses <code>ezpublish/ezpublish_legacy/var/ezdemo_site/storage</code>. The=
+t uses <code>exponential/exponential_legacy/var/ezdemo_site/storage</code>. The=
  eZ Platform configuration would be as follows:</span> </span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -1641,8 +1641,8 @@ h4>
 <p>Default value:&nbsp;<span> <code>$var_dir$/$storage_dir$</code> <br>Exam=
 ple:&nbsp;<code> <span>/var/ezdemo_site/storage</span> </code> </span></p>
 <p><span> <span> <span>Used to configure the default URL decorator service =
-(</span> <code> <a href=3D"http://ezpublish.core.io" class=3D"external-link=
-" rel=3D"nofollow">ezpublish.core.io</a>.default_url_decorator</code> <span=
+(</span> <code> <a href=3D"http://exponential.core.io" class=3D"external-link=
+" rel=3D"nofollow">exponential.core.io</a>.default_url_decorator</code> <span=
 >, used by all binarydata handlers to generate the URI of loaded files. It =
 is always interpreted as an absolute URI, meaning that unless it contains a=
  scheme (<span class=3D"nolink">http://,</span>&nbsp;ftp://),&nbsp;it will =
@@ -1657,15 +1657,15 @@ Cannot be overridden using semantic configuration.&nbsp;<span>Changing this=
  value will break compatibility for the legacy backoffice.</span> </span></=
 p>
 <h5 id=3D"Repository-io.root_dir"><code>io.root_dir</code></h5>
-<p><span> <span> <span>Example:&nbsp;<code> <span>%ezpublish_legacy.root_di=
+<p><span> <span> <span>Example:&nbsp;<code> <span>%exponential_legacy.root_di=
 r%/$var_dir$/$storage_dir$</span> </code> <br>Default value: <code>/var/www=
-/ezpublish/ezpublish_legacy/var/ezdemo_site/storage</code> </span> </span> =
+/exponential/exponential_legacy/var/ezdemo_site/storage</code> </span> </span> =
 </span></p>
 <p><span> <span> <span>Physical path where binary files are stored on disk.=
  Cannot be overridden using semantic configuration. Changing this value wil=
 l break compatibility for the legacy backoffice.</span> </span> </span></p>
 <h4 id=3D"Repository-Services"><a class=3D"external-link" href=3D"https://g=
-ithub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/io_u=
+ithub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/io_u=
 rl_decoration.md#services" name=3D"user-content-services" rel=3D"nofollow">=
 </a>Services</h4>
 <h5 id=3D"Repository-URLdecorators">URL decorators</h5>
@@ -1678,22 +1678,22 @@ code> will ensure that unless the prefix is an external URL, the result wil=
 l be prepended with /.</p>
 <p>Three UrlDecorator services are introduced:</p>
 <ul class=3D"task-list">
-<li><code> <a href=3D"http://ezpublish.core.io" class=3D"external-link" rel=
-=3D"nofollow">ezpublish.core.io</a>.prefix_url_decorator</code> used by the=
+<li><code> <a href=3D"http://exponential.core.io" class=3D"external-link" rel=
+=3D"nofollow">exponential.core.io</a>.prefix_url_decorator</code> used by the=
  binarydata handlers to decorate all uris sent out by the API. Uses Absolut=
 ePrefix.</li>
-<li><code> <a href=3D"http://ezpublish.core.io" class=3D"external-link" rel=
-=3D"nofollow">ezpublish.core.io</a>.image_fieldtype.legacy_url_decorator</c=
+<li><code> <a href=3D"http://exponential.core.io" class=3D"external-link" rel=
+=3D"nofollow">exponential.core.io</a>.image_fieldtype.legacy_url_decorator</c=
 ode> used via the UrlRedecorator (see below) by various legacy elements (Co=
 nverter, Storage Gateway, etc.) to generate its internal storage format for=
  uris. Uses a Prefix, not an AbsolutePrefix, meaning that no leading / is a=
 dded.</li>
 </ul>
 <p>In addition, a UrlRedecorator service, <code> <a href=3D"http://ezpublis=
-h.core.io" class=3D"external-link" rel=3D"nofollow">ezpublish.core.io</a>.i=
+h.core.io" class=3D"external-link" rel=3D"nofollow">exponential.core.io</a>.i=
 mage_fieldtype.legacy_url_redecorator</code>, uses both decorators above to=
  convert URIs between what is used on the new stack, and what format legacy=
- expects (relative urls from the ezpublish root).</p>
+ expects (relative urls from the exponential root).</p>
 <h2 id=3D"Repository-RegeneratingURLAliases">Regenerating URL Aliases</h2>
 <p>The command&nbsp;ezplatform:regenerate:legacy_storage_url_aliases comman=
 d regenerates URL aliases for Locations and migrates existing custom Locati=
@@ -1726,72 +1726,72 @@ es.</p>
 <th class=3D"confluenceTh">Type</th>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.api.service.conten=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.api.service.conten=
 t</code></td>
 <td colspan=3D"1" class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Co=
 ntentService</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.content_type</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.content_type</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\ContentTypeServi=
 ce</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.location</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.location</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\LocationService<=
 /code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.url_alias</code></td=
+<td class=3D"confluenceTd"><code>exponential.api.service.url_alias</code></td=
 >
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\UrlAliasService<=
 /code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.field_type</code></t=
+<td class=3D"confluenceTd"><code>exponential.api.service.field_type</code></t=
 d>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\FieldTypeService=
 </code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.language</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.language</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Language</code><=
 /td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.object_state</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.object_state</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\ObjectState</cod=
 e></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.role</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.role</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Role</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.search</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.search</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Search</code></t=
 d>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.section</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.section</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Section</code></=
 td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.trash</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.trash</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Trash</code></td=
 >
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.url_wildcard</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.url_wildcard</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\UrlWildcard</cod=
 e></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.user</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.user</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\User</code></td>
 </tr>
 </tbody>
@@ -1917,7 +1917,7 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Limitations need to be implemented as&nbsp;<em>limitation types</em>&nbs=
-p;and declared as services identified with&nbsp;<code>ezpublish.limitationT=
+p;and declared as services identified with&nbsp;<code>exponential.limitationT=
 ype</code>&nbsp;tag.&nbsp;Name provided in the hash for each Limitation is =
 the same value set in <code>alias</code> attribute in the service tag.</p>
 </div>
@@ -2022,8 +2022,8 @@ class AcmeFooBundle extends Bundle
 
         // ...
 &nbsp;
-        // Retrieve "ezpublish" container extension.
-        $eZExtension =3D $container-&gt;getExtension('ezpublish');
+        // Retrieve "exponential" container extension.
+        $eZExtension =3D $container-&gt;getExtension('exponential');
         // Add the policy provider.
         $eZExtension-&gt;addPolicyProvider(new MyPolicyProvider());
     }
@@ -2032,51 +2032,51 @@ class AcmeFooBundle extends Bundle
 </div>
 <h3 id=3D"Repository-Corepolicies"><span>Core policies</span></h3>
 <p><span> <span>Policies used internally in repository services are defined=
- in&nbsp;</span> <code> <a href=3D"https://github.com/ezsystems/ezpublish-k=
+ in&nbsp;</span> <code> <a href=3D"https://github.com/ezsystems/exponential-k=
 ernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/config/policies.y=
 ml" class=3D"external-link" rel=3D"nofollow">EzPublishCoreBundle/Resources/=
 config/policies.yml</a> </code> <span>.</span> </span></p>
 <h2 id=3D"Repository-SPIandAPIrepositories">SPI and API repositories</h2>
 <p style=3D"margin-left: 0.0px;">Those repositories are read-only split of =
-<code>ezsystems/ezpublish-kernel</code>, made available to make dependencie=
+<code>ezsystems/exponential-kernel</code>, made available to make dependencie=
 s easier and more lightweight.</p>
 <h3 style=3D"margin-left: 0.0px;" id=3D"Repository-API">API</h3>
-<p style=3D"margin-left: 0.0px;">This package is a split of the eZ Publish =
+<p style=3D"margin-left: 0.0px;">This package is a split of the Exponential =
 5 public API. It includes the <strong>services interfaces</strong> and <str=
 ong>domain objects</strong> from the <code>eZ\Publish\API</code> namespace.=
 <br>It offers a lightweight way to make your project depend on the eZ API a=
-nd Domain objects, without depending on the whole ezpublish-kernel.<br>The =
+nd Domain objects, without depending on the whole exponential-kernel.<br>The =
 repository is read-only, automatically updated from <a href=3D"https://gith=
-ub.com/ezsystems/ezpublish-kernel" class=3D"external-link" rel=3D"nofollow"=
->https://github.com/ezsystems/ezpublish-kernel</a>.</p>
-<p style=3D"margin-left: 0.0px;">Requiring ezpublish-api in your project:</=
+ub.com/ezsystems/exponential-kernel" class=3D"external-link" rel=3D"nofollow"=
+>https://github.com/ezsystems/exponential-kernel</a>.</p>
+<p style=3D"margin-left: 0.0px;">Requiring exponential-api in your project:</=
 p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: js; gutter: false; theme: Eclipse" style=3D"font-size:=
 12px;">"require": {
-    "ezsystems/ezpublish-api": "~5.0"
+    "ezsystems/exponential-api": "~5.0"
 }</pre>=20
 </div>
 </div>
 <h3 style=3D"margin-left: 0.0px;" id=3D"Repository-SPI">SPI</h3>
-<p style=3D"margin-left: 0.0px;">This package is a split of the eZ Publish =
+<p style=3D"margin-left: 0.0px;">This package is a split of the Exponential =
 5 SPI (persistence interfaces).</p>
 <p style=3D"margin-left: 0.0px;">It can be used as a dependency, instead of=
- the whole ezpublish-kernel, by packages implementing <strong>custom eZ Pub=
+ the whole exponential-kernel, by packages implementing <strong>custom eZ Pub=
 lish storage engines</strong>, or by any package that requires <strong>clas=
 ses from the eZ\Publish\SPI namespace</strong>.</p>
 <p style=3D"margin-left: 0.0px;">The repository is read-only, automatically=
- updated from <a href=3D"https://github.com/ezsystems/ezpublish-kernel" cla=
+ updated from <a href=3D"https://github.com/ezsystems/exponential-kernel" cla=
 ss=3D"external-link" rel=3D"nofollow">https://github.com/ezsystems/ezpublis=
 h-kernel</a>.</p>
-<p style=3D"margin-left: 0.0px;">Requiring ezpublish-api in your project:</=
+<p style=3D"margin-left: 0.0px;">Requiring exponential-api in your project:</=
 p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: js; gutter: false; theme: Eclipse" style=3D"font-size:=
 12px;">"require": {
-    "ezsystems/ezpublish-spi": "~5.0"
+    "ezsystems/exponential-spi": "~5.0"
 }</pre>=20
 </div>
 </div>

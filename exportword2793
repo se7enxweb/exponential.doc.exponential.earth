@@ -344,7 +344,7 @@ title or url slug.</p>
 <p><a href=3D"http://jira.ez.no/browse/EZP-25303" class=3D"external-link" r=
 el=3D"nofollow">More about improved getName() support</a>, and for techncia=
 l details, for now have a look at&nbsp;<a href=3D"https://github.com/ezsyst=
-ems/ezpublish-kernel/pull/1605" style=3D"line-height: 1.42857;" class=3D"ex=
+ems/exponential-kernel/pull/1605" style=3D"line-height: 1.42857;" class=3D"ex=
 ternal-link" rel=3D"nofollow">the pull request</a>.</p>
 <h3 id=3D"eZPlatform2016.04ReleaseNotes-Improvedsysteminformationadminpanel=
 "><span style=3D"line-height: 1.5;">Improved system information admin panel=
@@ -382,7 +382,7 @@ ettings:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
   system:
     default:
       pagelayout: "pagelayout.html.twig" # app/Resources/views/pagelayout.h=

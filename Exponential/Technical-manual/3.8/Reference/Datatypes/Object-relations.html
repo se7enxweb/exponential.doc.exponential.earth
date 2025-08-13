@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:46:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Object relations / Datatypes / Reference / 3.8 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../3-3.html">3.8</a>
+        
+                        /
+                            <a href="../../Reference.html">reference</a>
+        
+                        /
+                            <a href="../Datatypes.html">datatypes</a>
+        
+                        /
+                            object relations
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../3-3.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Datatypes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Datatypes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Content-classes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content classes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Modules.html" title="">
+	    	    		                    		    <span class="node-name-normal">Modules</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Views.html" title="">
+	    	    		                    		    <span class="node-name-normal">Views</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Objects.html" title="">
+	    	    		                    		    <span class="node-name-normal">Objects</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Workflow-events.html" title="">
+	    	    		                    		    <span class="node-name-normal">Workflow events</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-operators.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template operators</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-control-structures.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template control structures</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-override-conditions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template override conditions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-fetch-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template fetch functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Template-PDF-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template PDF functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Libraries.html" title="">
+	    	    		                    		    <span class="node-name-normal">Libraries</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../XML-tags.html" title="">
+	    	    		                    		    <span class="node-name-normal">XML tags</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Object relations</h1>
+</div>
+
+<h3>Summary</h3>
+Stores relations to other content objects.
+<h3>Properties</h3>
+<table class="renderedtable" cellspacing="0">
+<tr><th>Name</th><th>Internal name</th><th>Searchable</th><th>Information collector</th></tr>
+<tr>
+    <td>Object relations</td>
+    <td>ezobjectrelationlist</td>
+    <td>Yes.</td>
+    <td>No.</td>
+</tr>
+</table>
+
+<h3>Description</h3>
+ <p>This datatype allows the relation of multiple objects. The following screenshot shows the class attribute edit interface for this datatype.</p> 
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_8/images/reference/datatypes/object_relations_class_attribute_edit_interface/29886-1-eng-GB/object_relations_class_attribute_edit_interface_doc.png" alt="Class attribute edit interface for the &quot;Object relations&quot; datatype." />
+ <p>Class attribute edit interface for the &quot;Object relations&quot; datatype.</p>
+
+
+
+
+
+
+
+</div>    <a name="eztoc24180_0_0_1" id="eztoc24180_0_0_1"></a><h4>Object attribute edit interface</h4> <p>
+The following screenshot shows the object attribute edit interface for this datatype.<br /></p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_8/images/reference/datatypes/object_relations_object_attribute_edit_interface/29889-1-eng-GB/object_relations_object_attribute_edit_interface_doc.png" alt="Object attribute edit interface for the &quot;Object relations&quot; datatype." />
+ <p>Object attribute edit interface for the &quot;Object relations&quot; datatype.</p>
+
+
+
+
+
+
+
+</div><p>&nbsp;</p>   <a name="eztoc24180_0_0_2" id="eztoc24180_0_0_2"></a><h4>Raw output</h4> <p>The &quot;.content&quot; of an <a href="../Objects/ezcontentobjectattribute.html" target="_self">ezcontentobjectattribute</a> object using this datatype returns either FALSE (if there are no relations) or an array of <a href="../Objects/ezcontentobject.html" target="_self">ezcontentobjectattribute</a> objects.</p>   
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(21/02/2005 2:41 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Balazs Halasy&nbsp;(06/05/2005 12:40 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment4644" class="attribute-heading">
+<h2>Use undocumented site.ini setting to make it work like it used to</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 24 November 2005 11:20:10 am</p>
+    <p class="author">Daniel Staver</p>
+</div>
+
+<div class="attribute-short">
+I just spent three hours trying to figure out why this function no longer allows you to upload new objects and edit existing ones after upgrading a large site for a client... Turns out it was changed on purpose and that there's an undocumented site.ini setting to make it work like it used to:<br />
+<br />
+[BackwardCompatibilitySettings]<br />
+AdvancedObjectRelationList=enabled<br />
+
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="4644" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment4645" class="attribute-heading">
+<h2>INI-based limitations for browse selection method</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 18 January 2006 9:24:02 am</p>
+    <p class="author">Kristof Coomans</p>
+</div>
+
+<div class="attribute-short">
+If you choose the selection method &quot;browse&quot;, you can configure which browse type has to be used with an undocumented setting in content.ini:<br />
+<pre class="wordwrap"><span class="line">[ObjectRelationDataTypeSettings]</span>
+<span class="line">ClassAttributeStartNode[]</span>
+<span class="line">ClassAttributeStartNode[]=240;AddRelatedImageToDataType</span>
+</pre><br />
+<br />
+Where 240 is the class attribute id and AddRelatedImageToDataType is the browse type (this type can be configured in browse.ini).<br />
+<br />
+If for a specific class attribute no browse type has been specified, AddRelatedObjectListToDataType is used.<br />
+<br />
+The Object Relation datatype uses the same settings, but the default browse type is AddRelatedObjectToDataType.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="4645" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment4646" class="attribute-heading">
+<h2>Re: INI-based limitations for browse selection method</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Sunday 12 March 2006 10:54:05 am</p>
+    <p class="author">Kristof Coomans</p>
+</div>
+
+<div class="attribute-short">
+See also: <a href="http://ez.no/community/forum/general/selecting_multiple_objects_at_once_for_object_relations" title="http://ez.no/community/forum/general/selecting_multiple_objects_at_once_for_object_relations">http://ez.no/community/forum/gene...objects_at_once_for_object_relations</a>
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="4646" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment4647" class="attribute-heading">
+<h2>minor typo</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 21 April 2006 4:38:32 pm</p>
+    <p class="author">Matthew Carroll</p>
+</div>
+
+<div class="attribute-short">
+The last paragraph should read:<br />
+<br />
+...or an array of ezcontentobject objects.<br />
+<br />
+(The link target is correct.)
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="4647" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment6261" class="attribute-heading">
+<h2>Example code to fill an attribute of this datatype with PHP</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 21 June 2006 6:25:50 pm</p>
+    <p class="author">Kristof Coomans</p>
+</div>
+
+<div class="attribute-short">
+See <a href="http://ez.no/community/forum/developer/add_object_relation_attribute_type_within_a_php_script" title="http://ez.no/community/forum/developer/add_object_relation_attribute_type_within_a_php_script">http://ez.no/community/forum/deve...n_attribute_type_within_a_php_script</a>
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="6261" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment6696" class="attribute-heading">
+<h2>content access didn't word that way</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 11 January 2007 5:33:18 pm</p>
+    <p class="author">Dag Sverre Seljebotn</p>
+</div>
+
+<div class="attribute-short">
+Tried accessing the &quot;.content&quot; of an ezcontentobjectattribute object in a design template, but it wasn't an array of ezcontentobjectattribute objects. Looking in other templates the best I figured out for now is that the following will allow me to iterate of the objects of an ezobjecrelationtlist:<br />
+<br />
+    {foreach $myezattr.content.relation_list as $relation}<br />
+      {def $obj=fetch('content', 'object',<br />
+hash('object_id', $relation.contentobject_id))}<br />
+<br />
+...<br />
+<br />
+      {undef $obj}<br />
+    {/foreach}<br />
+<br />
+Wondering if there's some fundamental thing I haven't understood here though...
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="6696" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="4643" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.8/Reference/Datatypes/Object-relations by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:46:50 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

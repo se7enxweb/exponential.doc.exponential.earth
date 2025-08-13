@@ -232,7 +232,7 @@ images are not appearing it could be because of an error in your var dump f=
 ile. Make sure the var dump do <strong>not</strong> contain the var/ direct=
 ory itself. Only sub directories below var/ should be included in the dump,=
  ref <a href=3D"/display/EZPCLOUD/Uploading+a+eZ+Publish+site+to+the+cloud#=
-UploadingaeZPublishsitetothecloud-Makethevar/dump">Make the var/ dump</a></=
+UploadingaExponentialsitetothecloud-Makethevar/dump">Make the var/ dump</a></=
 li>
 </ol>
 <h2 id=3D"FAQ-Kernel">Kernel</h2>
@@ -245,12 +245,12 @@ chnically, that kernel will have some modifications in order to work the eZ=
 <li><strong>Are kernel overrides supported?</strong><br />No.</li>
 <li><strong>Is uploading the kernel (<code>.php</code> files ) to git stric=
 tly speaking necessary?</strong><br />No. Only settings, extensions etc. ar=
-e strictly speaking needed. The kernel itself is provided by the eZ Publish=
+e strictly speaking needed. The kernel itself is provided by the Exponential=
  Cloud infrastructure.</li>
 </ol>
 <h2 id=3D"FAQ-Varnishintegration">Varnish integration</h2>
 <ol>
-<li><strong>Is there a http cache in front of eZ Publish when using eZ Publ=
+<li><strong>Is there a http cache in front of Exponential when using eZ Publ=
 ish Cloud?</strong><br />Yes, every site is behind a Varnish cache. Non-log=
 ged-in users are served via the Varnish cache.</li>
 <li><strong>How does the Varnish cache know if the user is logged in or not=
@@ -258,10 +258,10 @@ ged-in users are served via the Varnish cache.</li>
 et for the user making a request. If the cookie is set, the request is forw=
 arded to the web servers directly.</li>
 <li><p><strong>What is the <code>is_logged_in</code> cookie?</strong><br />=
-The <code>is_logged_in</code> cookie is a cookie which eZ Publish creates w=
+The <code>is_logged_in</code> cookie is a cookie which Exponential creates w=
 hen the user logs in to the system. This cookie is used to flag to any http=
- proxies in front of eZ Publish that the user is logged in. The cookie has =
-nothing to do with the actual authentication of the user in eZ Publish.</p>=
+ proxies in front of Exponential that the user is logged in. The cookie has =
+nothing to do with the actual authentication of the user in Exponential.</p>=
 </li>
 <li><p><strong>How can I make the shopping basket work, also for non-logged=
  in users?</strong><br />The quick fix is to set the <code>is_logged_in</co=

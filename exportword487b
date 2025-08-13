@@ -880,7 +880,7 @@ ervice.yml configuration</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: text; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish.landing_page.block.tag:
+e:12px;">exponential.landing_page.block.tag:
     class: EzSystems\LandingPageFieldTypeBundle\FieldType\LandingPage\Model=
 \Block\TagBlock
     tags:

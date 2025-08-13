@@ -221,7 +221,7 @@ _site/storage</span><span>/images/3/6/4/6/6463-1-eng-GB/kidding.png</span><=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -251,13 +251,13 @@ ed via a legacy callback or legacy template, no decoration will be applied.=
  optimized nginx to serve images in an optimized way. The example image abo=
 ve could be made available as <code><span>http://static.example.com/</span>=
 <span>images/3/6/4/6/6463-1-eng-GB/kidding.png</span></code>, by setting up=
- a server that uses <code>ezpublish/ezpublish_legacy/var/ezdemo_site/storag=
+ a server that uses <code>exponential/exponential_legacy/var/ezdemo_site/storag=
 e</code>. The eZ Platform configuration would be as follows:</span></span><=
 /p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             io:
@@ -293,7 +293,7 @@ r settings</h3>
 <p>Default value:&nbsp;<span><code>$var_dir$/$storage_dir$</code><br>Exampl=
 e:&nbsp;<code><span>/var/ezdemo_site/storage</span></code></span></p>
 <p><span><span><span>Used to configure the default URL decorator service (<=
-/span><code>ezpublish.core.io.default_url_decorator</code><span>, used by a=
+/span><code>exponential.core.io.default_url_decorator</code><span>, used by a=
 ll binarydata handlers to generate the URI of loaded files. It is always in=
 terpreted as an absolute URI, meaning that unless it contains a scheme (<sp=
 an class=3D"nolink">http://,</span>&nbsp;ftp://),&nbsp;it will be prepended=
@@ -308,20 +308,20 @@ Cannot be overridden using semantic configuration.&nbsp;<span>Changing this=
  value will break compatibility for the legacy backoffice.</span></span></p=
 >
 <h4 id=3D"BinaryfilesURLhandling-io.root_dir"><code>io.root_dir</code></h4>
-<p><span><span><span>Example:&nbsp;<code><span>%ezpublish_legacy.root_dir%/=
+<p><span><span><span>Example:&nbsp;<code><span>%exponential_legacy.root_dir%/=
 $var_dir$/$storage_dir$</span></code><br>Default value: <code>/var/www/ezpu=
-blish/ezpublish_legacy/var/ezdemo_site/storage</code></span></span></span><=
+blish/exponential_legacy/var/ezdemo_site/storage</code></span></span></span><=
 /p>
 <p><span><span><span>Physical path where binary files are stored on disk. C=
 annot be overridden using semantic configuration. Changing this value will =
 break compatibility for the legacy backoffice.</span></span></span></p>
-<h4 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/ezpublish-ker=
+<h4 id=3D"BinaryfilesURLhandling-https://github.com/ezsystems/exponential-ker=
 nel/blob/master/doc/specifications/io/io_url_decoration.md#iourl_prefix"><a=
- class=3D"external-link" href=3D"https://github.com/ezsystems/ezpublish-ker=
+ class=3D"external-link" href=3D"https://github.com/ezsystems/exponential-ker=
 nel/blob/master/doc/specifications/io/io_url_decoration.md#iourl_prefix" na=
 me=3D"user-content-iourl_prefix" rel=3D"nofollow"></a></h4>
 <h3 id=3D"BinaryfilesURLhandling-Services"><a class=3D"external-link" href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/io/io_url_decoration.md#services" name=3D"user-content-services" rel=
 =3D"nofollow"></a>Services</h3>
 <h4 id=3D"BinaryfilesURLhandling-URLdecorators">URL decorators</h4>
@@ -334,19 +334,19 @@ code> will ensure that unless the prefix is an external URL, the result wil=
 l be prepended with /.</p>
 <p>Three UrlDecorator services are introduced:</p>
 <ul class=3D"task-list">
-<li><code>ezpublish.core.io.prefix_url_decorator</code> used by the binaryd=
+<li><code>exponential.core.io.prefix_url_decorator</code> used by the binaryd=
 ata handlers to decorate all uris sent out by the API. Uses AbsolutePrefix.=
 </li>
-<li><code>ezpublish.core.io.image_fieldtype.legacy_url_decorator</code> use=
+<li><code>exponential.core.io.image_fieldtype.legacy_url_decorator</code> use=
 d via the UrlRedecorator (see below) by various legacy elements (Converter,=
  Storage Gateway, etc.) to generate its internal storage format for uris. U=
 ses a Prefix, not an AbsolutePrefix, meaning that no leading / is added.</l=
 i>
 </ul>
-<p>In addition, a UrlRedecorator service, <code>ezpublish.core.io.image_fie=
+<p>In addition, a UrlRedecorator service, <code>exponential.core.io.image_fie=
 ldtype.legacy_url_redecorator</code>, uses both decorators above to convert=
  URIs between what is used on the new stack, and what format legacy expects=
- (relative urls from the ezpublish root).</p>
+ (relative urls from the exponential root).</p>
 <p>&nbsp;</p>
     </div>
 </body>

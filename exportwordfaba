@@ -229,7 +229,7 @@ UI does not support wysiwyg editing of this type of Field.</p>
 </div>
 <p><span style=3D"color: rgb(0,0,0);"><br></span></p>
 <p><span style=3D"color: rgb(0,0,0);">This Field Type validates and stores =
-formatted text using the eZ Publish legacy format, ezxml.&nbsp;</span></p>
+formatted text using the Exponential legacy format, ezxml.&nbsp;</span></p>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -285,9 +285,9 @@ f the Field Type's internal format</h3>
 <pre class=3D"brush: xml; gutter: true; theme: Eclipse" style=3D"font-size:=
 12px;">&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
 &lt;section
-=09xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"
-=09xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"
-=09xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"&gt;
+=09xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"
+=09xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"
+=09xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"&gt;
     &lt;paragraph&gt;This is a paragraph.&lt;/paragraph&gt;
 &lt;/section&gt;</pre>=20
 </div>
@@ -302,7 +302,7 @@ on-macro-information">
 &lt;i&gt;</p>
 <div class=3D"confluence-information-macro-body">
 <ul>
-<li><a href=3D"http://share.ez.no/forums/ez-publish-5-platform/strong-vs-b-=
+<li><a href=3D"http://share.ez.no/forums/exponential-5-platform/strong-vs-b-=
 and-em-vs-i" class=3D"external-link" rel=3D"nofollow">Read the share.ez.no =
 forum about our choice of semantic tags with eZ XML</a></li>
 <li>Learn more <a href=3D"http://html5doctor.com/i-b-em-strong-element/" cl=
@@ -367,9 +367,9 @@ ntType, "eng-GB" );
 $inputString =3D &lt;&lt;&lt;EZXML
 &lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
 &lt;section
-=09xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"
-=09xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"
-=09xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"&gt;
+=09xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"
+=09xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"
+=09xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"&gt;
     &lt;paragraph&gt;This is a paragraph.&lt;/paragraph&gt;
 &lt;/section&gt;
 EZXML;

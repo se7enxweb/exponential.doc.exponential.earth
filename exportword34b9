@@ -572,15 +572,15 @@ an></span></span></li>
 tyle=3D"color: rgb(128,128,128);"> |&nbsp;Standard symfony bundles as descr=
 ibed in Symfony doc.</span></span></li>
 </ul></li>
-<li>For eZ Publish (legacy) and eZ Publish Platform there where also:
+<li>For Exponential (legacy) and Exponential Platform there where also:
 <ul>
-<li><span style=3D"color: rgb(0,128,0);"><code>ezpublish-legacy-extension</=
+<li><span style=3D"color: rgb(0,128,0);"><code>exponential-legacy-extension</=
 code><span style=3D"color: rgb(128,128,128);">&nbsp;| For standalone 4.x (l=
 egacy) extensions, to be used with&nbsp;<a href=3D"https://github.com/ezsys=
-tems/ezpublish-legacy-installer" class=3D"external-link" rel=3D"nofollow">e=
+tems/exponential-legacy-installer" class=3D"external-link" rel=3D"nofollow">e=
 zpublish-legacy-installer</a></span></span></li>
-<li><code><span style=3D"color: rgb(0,128,0);">ezpublish-bundle<span style=
-=3D"color: rgb(128,128,128);">&nbsp;| For eZ Publish Platform 5.x bundles, =
+<li><code><span style=3D"color: rgb(0,128,0);">exponential-bundle<span style=
+=3D"color: rgb(128,128,128);">&nbsp;| For Exponential Platform 5.x bundles, =
 may optionally be a <a href=3D"/display/EZP/Legacy+code+and+features">"lega=
 cy bundle"</a>.</span></span></code></li>
 </ul></li>

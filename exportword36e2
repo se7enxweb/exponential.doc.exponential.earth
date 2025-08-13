@@ -213,7 +213,7 @@ d of the content */
     <h1>Using environments</h1>
     <div class=3D"Section1">
         <p>Environment configuration as provided by Symfony was enhanced as=
- of eZ Publish 5.2 and eZ Publish Community Project 2013.06 to allow specif=
+ of Exponential 5.2 and Exponential Community Project 2013.06 to allow specif=
 ying this in the virtual host configuration.<br>You can configure several e=
 nvironments, from production, development or staging, even if for each one =
 of them you need require using different configurations sets.</p>
@@ -234,23 +234,23 @@ le with proper configuration (described below)
     SetEnv ENVIRONMENT "prod"</pre>=20
 </div>
 </div>
-<h1 id=3D"Usingenvironments-eZPublishConfiguration">eZ Publish Configuratio=
+<h1 id=3D"Usingenvironments-ExponentialConfiguration">Exponential Configuratio=
 n</h1>
 <p>If you want to use a custom environment (something else then "<code>prod=
 </code>" and "<code>dev</code>") the next step is to create the dedicated c=
 onfiguration files for your environment:</p>
 <ul>
-<li><code>ezpublish/config/config_<strong><em>&lt;env_name&gt;</em></strong=
+<li><code>exponential/config/config_<strong><em>&lt;env_name&gt;</em></strong=
 >.yml</code></li>
-<li><code>ezpublish/config/ezpublish_<strong><em>&lt;env_name&gt;</em></str=
+<li><code>exponential/config/exponential_<strong><em>&lt;env_name&gt;</em></str=
 ong>.yml</code></li>
 </ul>
 <p>The name used as <code><strong><em>&lt;env_name&gt;</em></strong></code>=
  will be the one that can be used as value of the <code>ENVIRONMENT</code> =
 environment variable.</p>
 <p>Those files must import the main configuration file, just like the defau=
-lt&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-community/blob/ma=
-ster/ezpublish/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
+lt&nbsp;<a href=3D"https://github.com/ezsystems/exponential-community/blob/ma=
+ster/exponential/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
 ow"><code>config_dev.yml</code></a> already does. Here's an example:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20

@@ -284,12 +284,12 @@ mand.php</a></p>
 </div>
 </div>
 <p>We will now see how to create Content using the Public API. This example=
- will work with the default Folder (ID 1) Content Type from eZ Publish.</p>
+ will work with the default Folder (ID 1) Content Type from Exponential.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $repository \eZ\Publish\API\Repository\Repository */
-$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.repository=
+$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.repository=
 ' );
 $contentService =3D $repository-&gt;getContentService();
 $locationService =3D $repository-&gt;getLocationService();
@@ -623,9 +623,9 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>The XSD for the internal XML representation can be found in the kernel: =
-<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Pub=
+<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Pub=
 lish/Core/FieldType/XmlText/Input/Resources/schemas/ezxml.xsd" class=3D"ext=
-ernal-link" rel=3D"nofollow">https://github.com/ezsystems/ezpublish-kernel/=
+ernal-link" rel=3D"nofollow">https://github.com/ezsystems/exponential-kernel/=
 blob/master/eZ/Publish/Core/FieldType/XmlText/Input/Resources/schemas/ezxml=
 .xsd</a>.</p>
 </div>

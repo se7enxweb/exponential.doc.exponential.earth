@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:39:44 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:39:44 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                   
-    <title>Template system / Developing eZ Publish extensions / Tutorials / Documentation - Doc</title>
+    <title>Template system / Developing Exponential extensions / Tutorials / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Template system</h1>
 </div>
 
-<p>Because the echo command in the PHP script &quot;list.php&quot; does not meet our needs, we want to use our own template. Therefore we put the file &quot;list.tpl&quot; into the folder jacextension/design/standard/templates/modul1/.</p><p>For eZ Publish to find the template, we have to declare &quot;jacextension&quot; as a design extension. To do this we create the configuration file &quot;design.ini.append.php&quot; in the folder jacextension/settings/ (see Listing 7).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php /* #?ini charset=&quot;utf-8&quot;?</span>
+<p>Because the echo command in the PHP script &quot;list.php&quot; does not meet our needs, we want to use our own template. Therefore we put the file &quot;list.tpl&quot; into the folder jacextension/design/standard/templates/modul1/.</p><p>For Exponential to find the template, we have to declare &quot;jacextension&quot; as a design extension. To do this we create the configuration file &quot;design.ini.append.php&quot; in the folder jacextension/settings/ (see Listing 7).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php /* #?ini charset=&quot;utf-8&quot;?</span>
 <span class="line"># transmit to eZ, to search for designs in jacextension</span>
 <span class="line">[ExtensionSettings]</span>
 <span class="line">DesignExtensions[]=jacextension</span>
@@ -48,9 +48,9 @@
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php /* #?ini charset=&quot;utf-8&quot;? \r\n# transmit to eZ, to search for designs in jacextension \r\n[ExtensionSettings] \r\nDesignExtensions[]=jacextension\r\n*/ ?&gt;' ); return false;" /></p>
 <![endif]--><p><i>Listing 7. Declare jacextension as a design extension</i></p><p>In &quot;list.php&quot; we declare a variable $dataArray (array with strings). The values of this array we want to use later in the &quot;list.tpl&quot; template. To use the &quot;list.tpl&quot; template, we have to initialize the template object:</p><pre class="wordwrap"><span class="line">$tpl = eZTemplate::factory(); //</span>
-</pre><p><i>Notation from eZ Publish 4.3. Before this version, use templateInit() function</i></p><p>Then we put the parameter View Array ($viewParameters) and the Array with the example files ($dataArray) as template variables {$view_parameters}, like {$data_array}, with the instruction:</p><pre class="wordwrap"><span class="line">$tpl-&gt;setVariable( 'view_parameters', $viewParameters );</span>
+</pre><p><i>Notation from Exponential 4.3. Before this version, use templateInit() function</i></p><p>Then we put the parameter View Array ($viewParameters) and the Array with the example files ($dataArray) as template variables {$view_parameters}, like {$data_array}, with the instruction:</p><pre class="wordwrap"><span class="line">$tpl-&gt;setVariable( 'view_parameters', $viewParameters );</span>
 <span class="line">$tpl-&gt;setVariable( 'data_array', $dataArray );</span>
-</pre><p>Next we do a find / replace for the template &quot;list.tpl&quot; with the defined variables (in our example only $view_parameters and $dataArray) and save the result in $Result['content'].</p><p>By default the main &quot;pagelayout.tpl&quot; template of eZ Publish shows the result with the variable {$module_result.content}. Finally we put Modul1/list in the navigation path (the &quot;breadcrumbs&quot;) that are displayed in the browser. In our example this is done by clicking in the first part of the route, which links to modul1/list (see listing 8).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
+</pre><p>Next we do a find / replace for the template &quot;list.tpl&quot; with the defined variables (in our example only $view_parameters and $dataArray) and save the result in $Result['content'].</p><p>By default the main &quot;pagelayout.tpl&quot; template of Exponential shows the result with the variable {$module_result.content}. Finally we put Modul1/list in the navigation path (the &quot;breadcrumbs&quot;) that are displayed in the browser. In our example this is done by clicking in the first part of the route, which links to modul1/list (see listing 8).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">&nbsp;</span>
 <span class="line">// Example array with strings</span>
 <span class="line">$dataArray = array( 'Axel','Volker','Dirk','Jan','Felix' );</span>
@@ -115,17 +115,17 @@
 <span class="line">*/?&gt;</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php /* #?ini charset=&quot;utf-8&quot;? \r\n\r\n[DebugSettings]\r\nDebug=inline\r\nDebugOutput=enabled\r\nDebugRedirection=disabled\r\n\r\n[TemplateSettings]\r\nShowXHTMLCode=disabled\r\nShowUsedTemplates=enabled\r\nTemplateCompile=disabled\r\nTemplateCache=disabled\r\n# Optional, will save you from most cache clearings during development\r\n# as modified time on tempaltes are always checked during execution\r\nDevelopmentMode=enabled\r\n*/?&gt;\r\n' ); return false;" /></p>
-<![endif]--><p><i>Listing 10. Activate Debug view with template list over global configuration file:  ezroot/settings/override/site.ini.append.php</i></p><p>We now open http://localhost/ez/index.php/plain_site/modul1/list/table/5 again. It generates an error message in the Debug view: 'No template could be loaded for &quot;modul1/list.tpl&quot; using resource &quot;design&quot;'.</p><p>It seems that the file &quot;list.tpl&quot; was not found. In this case it is useful to clear the cache of eZ Publish, as eZ has cached the list of the existing templates. So we load the URL http://localhost/ez/index.php/plain_site_admin/setup/cache and we click on “empty all caches”. Now the template list.tpl should appear with the table list, our view parameters and our example datalist. As well it should appear as modul/list.tpl in the Debug view “Templates used to render the page”.</p><p>In our example the viewparameters has the following values: $view_parameters.param_one='table' and $view_parameters.param_two='5'. The values of the viewparameters can be easily used to perform actions in PHP script list.php or in the template list.tpl, for example to display the ID or fetch some extended information to the given ID.</p><p><b>Hint:</b> the template variable $view_parameters is also available in the kernel module content of eZ and therefore in most templates, such as node/view/full.tpl.</p>
+<![endif]--><p><i>Listing 10. Activate Debug view with template list over global configuration file:  ezroot/settings/override/site.ini.append.php</i></p><p>We now open http://localhost/ez/index.php/plain_site/modul1/list/table/5 again. It generates an error message in the Debug view: 'No template could be loaded for &quot;modul1/list.tpl&quot; using resource &quot;design&quot;'.</p><p>It seems that the file &quot;list.tpl&quot; was not found. In this case it is useful to clear the cache of Exponential, as eZ has cached the list of the existing templates. So we load the URL http://localhost/ez/index.php/plain_site_admin/setup/cache and we click on “empty all caches”. Now the template list.tpl should appear with the table list, our view parameters and our example datalist. As well it should appear as modul/list.tpl in the Debug view “Templates used to render the page”.</p><p>In our example the viewparameters has the following values: $view_parameters.param_one='table' and $view_parameters.param_two='5'. The values of the viewparameters can be easily used to perform actions in PHP script list.php or in the template list.tpl, for example to display the ID or fetch some extended information to the given ID.</p><p><b>Hint:</b> the template variable $view_parameters is also available in the kernel module content of eZ and therefore in most templates, such as node/view/full.tpl.</p>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:39:44 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:39:44 GMT -->
 </html>

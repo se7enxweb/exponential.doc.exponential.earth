@@ -261,7 +261,7 @@ aces.</p>
 ntent fields helpers</h3>
 <p>Even though the above will work just fine, a couple of helpers will help=
  us get something a bit more flexible. The&nbsp;<a href=3D"https://github.c=
-om/ezsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Res=
+om/ezsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Res=
 ources/views/content_fields.html.twig" style=3D"line-height: 1.4285715;" cl=
 ass=3D"external-link" rel=3D"nofollow">EzPublishCoreBundle::content_fields.=
 html.twig</a> template, where the native Field Type templates are implement=
@@ -300,7 +300,7 @@ mplate</h2>
 <p>As explained in the <a href=3D"https://confluence.ez.no/display/EZP/Fiel=
 dType+template#FieldTypetemplate-Registeringyourtemplate" class=3D"external=
 -link" rel=3D"nofollow">FieldType template documentation</a>, a FieldType t=
-emplate needs to be registered in the eZ Publish semantic configuration. Th=
+emplate needs to be registered in the Exponential semantic configuration. Th=
 e most basic way to do this would be to do so in <code>app/config/ezplatfor=
 m.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -310,7 +310,7 @@ m.yml</code>:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     global:
         field_templates:
             - { template: "EzSystemsTweetFieldTypeBundle:fields:eztweet.htm=
@@ -341,15 +341,15 @@ ExtensionInterface
 {
     public function prepend( ContainerBuilder $container )
     {
-        $config =3D Yaml::parse( __DIR__ . '/../Resources/config/ezpublish_=
+        $config =3D Yaml::parse( __DIR__ . '/../Resources/config/exponential_=
 field_templates.yml' );
-        $container-&gt;prependExtensionConfig( 'ezpublish', $config );
+        $container-&gt;prependExtensionConfig( 'exponential', $config );
     }
 }</pre>=20
 </div>
 </div>
 <p>The last thing to do is move the template mapping from <code>app/config/=
-ezplatform.yml</code>&nbsp;to <code>Resources/config/ezpublish_field_templa=
+ezplatform.yml</code>&nbsp;to <code>Resources/config/exponential_field_templa=
 tes.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -361,8 +361,8 @@ tes.yml</code>:</p>
 .twig"}</pre>=20
 </div>
 </div>
-<p>Notice that the&nbsp;<code>ezpublish</code> yaml block was deleted. This=
- is because we already import our configuration under the <code>ezpublish</=
+<p>Notice that the&nbsp;<code>exponential</code> yaml block was deleted. This=
+ is because we already import our configuration under the <code>exponential</=
 code>&nbsp;namespace in the prepend method.</p>
 <p>You should now be able to display a content item with this Field Type fr=
 om the frontoffice, with a fully functional embed:</p>

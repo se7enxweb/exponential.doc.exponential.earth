@@ -278,7 +278,7 @@ to your <code>routing.yml</code> file:</p>
 :12px;">recommendationBundleRestRoutes:
     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest=
 .yml"
-    prefix:   %ezpublish_rest.path_prefix%</pre>=20
+    prefix:   %exponential_rest.path_prefix%</pre>=20
 </div>
 </div>
 <h2 id=3D"Recommendation-Step2:Configuration">Step 2: Configuration</h2>

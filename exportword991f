@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Installing eZ Publish on Windows</title>
+    <title>Installing Exponential on Windows</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Installing eZ Publish on Windows</h1>
+    <h1>Installing Exponential on Windows</h1>
     <div class=3D"Section1">
         <div class=3D"confluence-information-macro confluence-information-m=
 acro-note">
@@ -234,33 +234,33 @@ div.rbtoc1485856459772 li {margin-left: 0px;padding-left: 0px;}
 /*]]>*/</style></p>
 <div class=3D"toc-macro rbtoc1485856459772">=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonWindows-Settingupadatabase">Setting up=
+<li><a href=3D"#InstallingExponentialonWindows-Settingupadatabase">Setting up=
  a database</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonWindows-MySQL">MySQL</a></li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-PostgreSQL">PostgreSQL</a></li=
+<li><a href=3D"#InstallingExponentialonWindows-MySQL">MySQL</a></li>=20
+<li><a href=3D"#InstallingExponentialonWindows-PostgreSQL">PostgreSQL</a></li=
 >=20
 </ul> </li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-DownloadingeZPublish">Download=
-ing eZ Publish</a></li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-UnpackingeZPublish">Unpacking =
-eZ Publish</a></li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-Linkassets">Link assets</a></l=
+<li><a href=3D"#InstallingExponentialonWindows-DownloadingExponential">Download=
+ing Exponential</a></li>=20
+<li><a href=3D"#InstallingExponentialonWindows-UnpackingExponential">Unpacking =
+Exponential</a></li>=20
+<li><a href=3D"#InstallingExponentialonWindows-Linkassets">Link assets</a></l=
 i>=20
-<li><a href=3D"#InstallingeZPublishonWindows-Virtualhost">Virtual host</a><=
+<li><a href=3D"#InstallingExponentialonWindows-Virtualhost">Virtual host</a><=
 /li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-Initiatingthesetupwizard">Init=
+<li><a href=3D"#InstallingExponentialonWindows-Initiatingthesetupwizard">Init=
 iating the setup wizard</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonWindows-Documentrootexample">Document =
+<li><a href=3D"#InstallingExponentialonWindows-Documentrootexample">Document =
 root example</a></li>=20
-<li><a href=3D"#InstallingeZPublishonWindows-Definingthedesiredenvironment(=
+<li><a href=3D"#InstallingExponentialonWindows-Definingthedesiredenvironment(=
 optional)">Defining the desired environment&nbsp;(optional)</a></li>=20
 </ul> </li>=20
 </ul>=20
 </div>
 <p></p>
-<h2 id=3D"InstallingeZPublishonWindows-Settingupadatabase">Setting up a dat=
+<h2 id=3D"InstallingExponentialonWindows-Settingupadatabase">Setting up a dat=
 abase</h2>
 <p><strong>Known issue with running PHP5.3 on MySQL:</strong> Some Windows =
 users with both IPv4 and IPv6 installed experience problems connecting to t=
@@ -273,7 +273,7 @@ t.</p>
 <p>A database must be created before running the setup wizard. The followin=
 g text explains how to set up a database using either MySQL or PostgreSQL.<=
 /p>
-<h3 id=3D"InstallingeZPublishonWindows-MySQL">MySQL</h3>
+<h3 id=3D"InstallingExponentialonWindows-MySQL">MySQL</h3>
 <ol>
 <li>
 <div>
@@ -365,7 +365,7 @@ abase.</td>
 </tr>
 <tr>
 <td class=3D"confluenceTd">&lt;ezp_host&gt;</td>
-<td class=3D"confluenceTd">The hostname of the server on which eZ Publish w=
+<td class=3D"confluenceTd">The hostname of the server on which Exponential w=
 ill be running. (may be 'localhost' if MySQL is installed on the same serve=
 r).</td>
 </tr>
@@ -379,7 +379,7 @@ der to limit access to the database.</td>
 </div>
 </div></li>
 </ol>
-<h3 id=3D"InstallingeZPublishonWindows-PostgreSQL">PostgreSQL</h3>
+<h3 id=3D"InstallingExponentialonWindows-PostgreSQL">PostgreSQL</h3>
 <ol>
 <li>
 <div>
@@ -498,19 +498,19 @@ crypto.sql</code>".</td>
 </div>
 </div></li>
 </ol>
-<h2 id=3D"InstallingeZPublishonWindows-DownloadingeZPublish">Downloading eZ=
+<h2 id=3D"InstallingExponentialonWindows-DownloadingExponential">Downloading eZ=
  Publish</h2>
-<p>The latest community version of eZ Publish can be downloaded from <a hre=
+<p>The latest community version of Exponential can be downloaded from <a hre=
 f=3D"http://share.ez.no/downloads" class=3D"external-link" rel=3D"nofollow"=
 >http://share.ez.no/downloads</a>.</p>
-<h2 id=3D"InstallingeZPublishonWindows-UnpackingeZPublish">Unpacking eZ Pub=
+<h2 id=3D"InstallingExponentialonWindows-UnpackingExponential">Unpacking eZ Pub=
 lish</h2>
-<p>Use your favorite utility to unpack the downloaded eZ Publish archive to=
+<p>Use your favorite utility to unpack the downloaded Exponential archive to=
  a web-served directory (a directory that is reachable using a web browser)=
-. The extraction utility will unpack eZ Publish into a subdirectory called =
-"ezpublish-5.x.y". Feel free to rename this directory to something more mea=
+. The extraction utility will unpack Exponential into a subdirectory called =
+"exponential-5.x.y". Feel free to rename this directory to something more mea=
 ningful, for example "my_site".</p>
-<h2 id=3D"InstallingeZPublishonWindows-Linkassets">Link assets</h2>
+<h2 id=3D"InstallingExponentialonWindows-Linkassets">Link assets</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
@@ -521,17 +521,17 @@ The download file should already have generated these assets for you as of =
 wnload file, make sure to run these commands.
 </div>
 </div>
-<p>To be able to run eZ Publish 5 correctly, assets need to be exposed in t=
+<p>To be able to run Exponential 5 correctly, assets need to be exposed in t=
 he public 'web' folder.</p>
-<p>The following commands will first symlink eZ Publish 5 assets in "Bundle=
+<p>The following commands will first symlink Exponential 5 assets in "Bundle=
 s" and the second will symlink assets (design files like images, scripts an=
-d css, and files in var folder) &nbsp;from eZ Publish Legacy</p>
+d css, and files in var folder) &nbsp;from Exponential Legacy</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>cd /&lt;ezp5-root&gt;
-php ezpublish/console assets:install --symlink web
-php ezpublish/console ezpublish:legacy:assets_install --symlink web
-php ezpublish/console assetic:dump --env=3Dprod web</pre>=20
+php exponential/console assets:install --symlink web
+php exponential/console exponential:legacy:assets_install --symlink web
+php exponential/console assetic:dump --env=3Dprod web</pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -547,7 +547,7 @@ in composer.json if you prefer composer post-cmd to use something else then=
  --relative.</p>
 <p>Further information about alternative options is&nbsp;available&nbsp;wit=
 h <code>-h</code> on each command, just like it is with the console itself =
-using "<code>php ezpublish/console </code><code>-h</code>".</p>
+using "<code>php exponential/console </code><code>-h</code>".</p>
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -562,11 +562,11 @@ s argument&nbsp;("=E2=80=93symlink"), this will make the command copy the a=
 sset files instead of symlinking them.
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonWindows-Virtualhost">Virtual host</h2>
+<h2 id=3D"InstallingExponentialonWindows-Virtualhost">Virtual host</h2>
 <p>For help on how to set up a virtual host and rewrite rules on IIS, you w=
 ill find some information on the community website (e.g. in <a href=3D"http=
 ://share.ez.no/forums/install-configuration/windows-server-2008-r2-iis7-its=
--rewrite-module-ez-publish-rewrite-rule" class=3D"external-link" rel=3D"nof=
+-rewrite-module-exponential-rewrite-rule" class=3D"external-link" rel=3D"nof=
 ollow">this</a> forum thread).</p>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
 ning">
@@ -581,28 +581,28 @@ external-link" rel=3D"nofollow">here</a>, before entering the setup wizard =
 chapter.</p>
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonWindows-Initiatingthesetupwizard">Initiating=
+<h2 id=3D"InstallingExponentialonWindows-Initiatingthesetupwizard">Initiating=
  the setup wizard</h2>
 <p>The setup wizard can be started using a web browser immediately after th=
 e previous steps (described in this section) are completed. It will be auto=
 matically run the first time someone tries to access/browse the index.php f=
-ile located in the eZ Publish directory. Let's assume that we are using a s=
+ile located in the Exponential directory. Let's assume that we are using a s=
 erver with the hostname "<code>www.example.com</code>" and that after unpac=
-king, the eZ Publish directory was renamed to "<code>my_site</code>".</p>
+king, the Exponential directory was renamed to "<code>my_site</code>".</p>
 <p>You can choose between a&nbsp;<a href=3D"/display/EZP/Virtual+host+setup=
 ">Virtual Host</a>&nbsp;based configuration, or a non Virtual Host configur=
 ation by using an&nbsp;<a href=3D"/display/EZP/htaccess+example">.htaccess<=
 /a> file.</p>
 <p><a name=3D"eztoc131660_5_3" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonWindows-Documentrootexample">Document root e=
+<h3 id=3D"InstallingExponentialonWindows-Documentrootexample">Document root e=
 xample</h3>
-<p>If eZ Publish was unpacked into a directory called "<code>my_site</code>=
+<p>If Exponential was unpacked into a directory called "<code>my_site</code>=
 " under the document root, the setup wizard can be initiated by browsing th=
 e following URL: <code><span class=3D"nolink">http://www.example.com/my_sit=
 e/index.php</span></code>.</p>
 <p>Refer to "<a href=3D"/display/EZP/The+setup+wizard">The setup wizard</a>=
 " section for a detailed description of the web based setup wizard.</p>
-<h3 id=3D"InstallingeZPublishonWindows-Definingthedesiredenvironment(option=
+<h3 id=3D"InstallingExponentialonWindows-Definingthedesiredenvironment(option=
 al)">Defining the desired environment&nbsp;(optional)</h3>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -613,8 +613,8 @@ tion-macro-icon"></span>
 ultiple environments for development purposes.</p>
 </div>
 </div>
-<p>Environment configuration is a new feature introduced as of eZ Publish 5=
-.2 and eZ Publish Community Project 2013.06.<br>You can configure several e=
+<p>Environment configuration is a new feature introduced as of Exponential 5=
+.2 and Exponential Community Project 2013.06.<br>You can configure several e=
 nvironments, from production, development or staging, even if for each one =
 of them you need require using different configurations sets.</p>
 <p>In the&nbsp;<code>VirtualHost</code>&nbsp;example in the&nbsp;<a href=3D=
@@ -637,17 +637,17 @@ le with proper configuration (described below)
 </code>" and "<code>dev</code>") the next step is to create the dedicated c=
 onfiguration files for your environment:</p>
 <ul>
-<li><code>ezpublish/config/config_<strong><em>&lt;env_name&gt;</em></strong=
+<li><code>exponential/config/config_<strong><em>&lt;env_name&gt;</em></strong=
 >.yml</code></li>
-<li><code>ezpublish/config/ezpublish_<strong><em>&lt;env_name&gt;</em></str=
+<li><code>exponential/config/exponential_<strong><em>&lt;env_name&gt;</em></str=
 ong>.yml</code></li>
 </ul>
 <p>The name used as&nbsp;<code><strong><em>&lt;env_name&gt;</em></strong></=
 code>&nbsp;will be the one that can be used as value of the&nbsp;<code>ENVI=
 RONMENT</code>&nbsp;environment variable.</p>
 <p>Those files must import the main configuration file, just like the defau=
-lt&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-community/blob/ma=
-ster/ezpublish/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
+lt&nbsp;<a href=3D"https://github.com/ezsystems/exponential-community/blob/ma=
+ster/exponential/config/config_dev.yml" class=3D"external-link" rel=3D"nofoll=
 ow"><code>config_dev.yml</code></a>&nbsp;already does. Here's an example:</=
 p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">

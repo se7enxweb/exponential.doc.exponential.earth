@@ -268,7 +268,7 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Limitations need to be implemented as&nbsp;<em>limitation types</em>&nbs=
-p;and declared as services identified with&nbsp;<code>ezpublish.limitationT=
+p;and declared as services identified with&nbsp;<code>exponential.limitationT=
 ype</code>&nbsp;tag.&nbsp;Name provided in the hash for each limitation is =
 the same value set in <code>alias</code> attribute in the service tag.</p>
 </div>
@@ -376,8 +376,8 @@ class AcmeFooBundle extends Bundle
 
         // ...
 &nbsp;
-        // Retrieve "ezpublish" container extension.
-        $eZExtension =3D $container-&gt;getExtension('ezpublish');
+        // Retrieve "exponential" container extension.
+        $eZExtension =3D $container-&gt;getExtension('exponential');
         // Add the policy provider.
         $eZExtension-&gt;addPolicyProvider(new MyPolicyProvider());
     }
@@ -387,7 +387,7 @@ class AcmeFooBundle extends Bundle
 <h1 id=3D"Custompolicies-Corepolicies"><span>Core policies</span></h1>
 <p><span style=3D"line-height: 1.42857;"><span>Policies used internally in =
 repository services are defined in&nbsp;</span><code><a href=3D"https://git=
-hub.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundl=
+hub.com/ezsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundl=
 e/Resources/config/policies.yml" class=3D"external-link" rel=3D"nofollow">E=
 zPublishCoreBundle/Resources/config/policies.yml</a></code><span>.</span></=
 span></p>

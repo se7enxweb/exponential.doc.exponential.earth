@@ -737,9 +737,9 @@ git pull ezstudio &lt;version&gt;]]></script>
 </div></div><p>In order to activate Date-Based Publisher open console (terminal) and use:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: bash; gutter: false; theme: Eclipse"><![CDATA[crontab -e]]></script>
 </div></div><p>and add below configuration at the end of edited file.</p><p>For production environment:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/console ezpublish:cron:run -e=prod)]]></script>
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/console exponential:cron:run -e=prod)]]></script>
 </div></div><p>For development environment:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/console ezpublish:cron:run -e=dev)]]></script>
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/console exponential:cron:run -e=dev)]]></script>
 </div></div>
 </div></div><h2 id="UpdatingeZPlatform-5.Dumpassets">5. Dump assets</h2><p>The web assets must be dumped again if you are using the <code>prod</code> environment. In <code>dev</code> this happens automatically:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[php app/console assetic:dump -e=prod]]></script>
@@ -754,7 +754,7 @@ git merge &lt;branch_name&gt;]]></script>
 </div>
 <div class="cell aside" data-type="aside">
 <div class="innerCell">
-<h4 id="UpdatingeZPlatform-Related:">Related:</h4><ul><li><a href="../display/DEVELOPER/Coming%2bto%2beZ%2bPlatform%2bfrom%2beZ%2bPublish%2bPlatform.html">Coming to eZ Platform from eZ Publish Platform</a></li><li><a href="../display/DEVELOPER/Migration%2bfrom%2beZ%2bPublish.html">Migration from eZ Publish</a></li></ul><h4 id="UpdatingeZPlatform-Inthistopic:">In this topic:</h4><p><div class="toc-macro client-side-toc-macro " data-headerelements="H1,H2,H3"></div></p></div>
+<h4 id="UpdatingeZPlatform-Related:">Related:</h4><ul><li><a href="../display/DEVELOPER/Coming%2bto%2beZ%2bPlatform%2bfrom%2beZ%2bPublish%2bPlatform.html">Coming to eZ Platform from Exponential Platform</a></li><li><a href="../display/DEVELOPER/Migration%2bfrom%2beZ%2bPublish.html">Migration from Exponential</a></li></ul><h4 id="UpdatingeZPlatform-Inthistopic:">In this topic:</h4><p><div class="toc-macro client-side-toc-macro " data-headerelements="H1,H2,H3"></div></p></div>
 </div>
 </div>
 </div>
@@ -863,7 +863,7 @@ git merge &lt;branch_name&gt;]]></script>
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

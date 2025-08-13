@@ -915,7 +915,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 {% for value in results.searchHits %}
     &lt;li&gt;&lt;a class=&quot;ezconf-list-location&quot; href=&quot;&quot;
         data-route-name=&quot;viewLocation&quot;
-        data-route-id=&quot;{{ path(&#39;ezpublish_rest_loadLocation&#39;, {locationPath: value.valueObject.pathString|trim(&#39;/&#39;)}) }}&quot;
+        data-route-id=&quot;{{ path(&#39;exponential_rest_loadLocation&#39;, {locationPath: value.valueObject.pathString|trim(&#39;/&#39;)}) }}&quot;
         data-route-languageCode=&quot;{{ value.valueObject.contentInfo.mainLanguageCode }}&quot;
         &gt;{{ value.valueObject.contentInfo.name }}&lt;/a&gt;&lt;/li&gt;
 {% endfor %}
@@ -1096,7 +1096,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

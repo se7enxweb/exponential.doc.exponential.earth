@@ -303,7 +303,7 @@ the translated name for a Content item</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">// Assuming we're in a controller action
-$translationHelper =3D $this-&gt;get( 'ezpublish.translation_helper' );
+$translationHelper =3D $this-&gt;get( 'exponential.translation_helper' );
 &nbsp;
 // From Content
 $translatedContentName =3D $translationHelper-&gt;getTranslatedContentName(=
@@ -319,7 +319,7 @@ uage</h4>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">// Assuming we're in a controller action
-$translatedContentName =3D $this-&gt;get( 'ezpublish.translation_helper' )-=
+$translatedContentName =3D $this-&gt;get( 'exponential.translation_helper' )-=
 &gt;getTranslatedName( $content, 'fre-FR' );</pre>=20
 </div>
 </div>

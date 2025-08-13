@@ -269,7 +269,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>As of eZ Publish Platform 5.3.3 and higher signals are sent after transa=
+<p>As of Exponential Platform 5.3.3 and higher signals are sent after transa=
 ctions are executed making signals transaction safe.</p>
 </div>
 </div>

@@ -434,7 +434,7 @@ only caches on clustered systems </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-20516?src=3Dconfmacro"> ImageMagick filters parameter for=
-mat changed in ezpublish.yml </a> </td>=20
+mat changed in exponential.yml </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Documentation, Platform=
  stack </td>=20
 </tr>=20
@@ -578,7 +578,7 @@ gacy Storage engine </td>=20
 =3D"https://jira.ez.no/browse/EZP-20268?src=3Dconfmacro">EZP-20268</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-20268?src=3Dconfmacro"> Move the eZ Publish 5.0 install d=
+.ez.no/browse/EZP-20268?src=3Dconfmacro"> Move the Exponential 5.0 install d=
 oc to confluence </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Documentation </td>=20
 </tr>=20
@@ -844,7 +844,7 @@ emplate language </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-19608?src=3Dconfmacro"> Wrong documentation while running=
- the installation of eZ Publish </a> </td>=20
+ the installation of Exponential </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Documentation, Install =
 </td>=20
 </tr>=20

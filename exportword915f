@@ -232,7 +232,7 @@ che:clear command</h2>
 <p>Out of the box Symfony provides a command to perform cache clearing. It =
 will delete all file based caches, which mainly consists of Twig template, =
 Symfony container, and Symfony route cache. However as it deletes everythin=
-g in folder <code>ezpublish/cache/&lt;environment&gt;/* </code>this also im=
+g in folder <code>exponential/cache/&lt;environment&gt;/* </code>this also im=
 plies Symfony Proxy being deleted if you use that for Symfony&nbsp;<a href=
 =3D"/display/EZP/HttpCache">HTTPCache</a>&nbsp;<em>(the default single seve=
 r choice)</em> as opposed to Varnish, and eZ&nbsp;<a href=3D"/display/EZP/P=
@@ -241,7 +241,7 @@ ersistence+cache">Persistent Cache</a> unless you use Memcached.&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: RDark" style=3D"font-size:=
-12px;">php ezpublish/console cache:clear -h</pre>=20
+12px;">php exponential/console cache:clear -h</pre>=20
 </div>
 </div>
 <h3 id=3D"Consolecacheclearing-IntegrationwithLegacy">Integration with Lega=
@@ -273,16 +273,16 @@ ere Varnish and/or Memchached is used, the legacy cache clearing command ca=
 n be used to delete content cache both in legacy, and in Platform stack tha=
 nks to ViewCache integration in Legacy Bundle/Bridge.</span></p>
 <p><span style=3D"color: rgb(0,0,0);">For using it make sure you use&nbsp;<=
-/span><code>ezpublish:legacy:script</code>, like this:</p>
+/span><code>exponential:legacy:script</code>, like this:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: RDark" style=3D"font-size:=
-12px;">php ezpublish/console ezpublish:legacy:script --legacy-help bin/php/=
+12px;">php exponential/console exponential:legacy:script --legacy-help bin/php/=
 ezcontentcache.php</pre>=20
 </div>
 </div>
 <p>For example of use, execute help command above, and/or see <a href=3D"ht=
-tps://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/View-caching/Clear=
+tps://doc.ez.no/Exponential/Technical-manual/5.x/Features/View-caching/Clear=
 ing-the-view-cache" rel=3D"nofollow">legacy documentation on clearing ViewC=
 ache</a>.</p>
 <p>&nbsp;</p>

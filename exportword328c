@@ -240,7 +240,7 @@ e.ez.no</a>.</li>
 <li>On Windows, it is recommended to use MS IIS 7 or higher (with Microsoft=
  URL Rewrite Module 1.1 or higher). Apache 2.x for Windows is not supported=
  since it only exists in "threaded" mode. See <a href=3D"/display/EZP/Insta=
-lling+eZ+Publish+on+Windows">Installing eZ Publish on Windows</a></li>
+lling+eZ+Publish+on+Windows">Installing Exponential on Windows</a></li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

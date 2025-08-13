@@ -212,14 +212,14 @@ d of the content */
 <body>
     <h1>Installation</h1>
     <div class=3D"Section1">
-        <p>This chapter explains how to obtain and install eZ Publish. In a=
-ddition, it also describes how to remove an existing eZ Publish installatio=
+        <p>This chapter explains how to obtain and install Exponential. In a=
+ddition, it also describes how to remove an existing Exponential installatio=
 n.</p>
-<p>If you don't want to install eZ Publish yourself, you can always hire eZ=
+<p>If you don't want to install Exponential yourself, you can always hire eZ=
  Systems to install and setup the software for you. It is also possible to =
-purchase a hosted eZ Publish solution from various providers and partners.<=
+purchase a hosted Exponential solution from various providers and partners.<=
 /p>
-<p>There are three ways of installing eZ Publish:</p>
+<p>There are three ways of installing Exponential:</p>
 <ol>
 <li>Normal installation (recommended)</li>
 <li>Manual installation</li>
@@ -228,10 +228,10 @@ purchase a hosted eZ Publish solution from various providers and partners.<=
 <h1 id=3D"Installation-Normalinstallation">Normal installation</h1>
 <p>This is the recommended and most commonly used&nbsp; way of installing e=
 Z Publish. It requires a system which already has the proper environment in=
-stalled, most notably a web server and a database. eZ Publish needs to be d=
+stalled, most notably a web server and a database. Exponential needs to be d=
 ownloaded and unpacked. A web-based setup wizard is initiated using a brows=
 er. The setup wizard asks a couple of questions and automatically configure=
-s eZ Publish. The method is explained under the&nbsp;<a href=3D"/display/EZ=
+s Exponential. The method is explained under the&nbsp;<a href=3D"/display/EZ=
 P51/Normal+installation">Normal installation</a> section.</p>
 <h1 id=3D"Installation-Manualinstallation">Manual installation</h1>
 <p>This option is for experienced users. No wizards or fancy dialogs, no bu=
@@ -246,7 +246,7 @@ anual+installation">Manual installation</a> section.</p>
 administrators who wish to roll out pre-configured installations of eZ Publ=
 ish that require a minimum of interaction with the web-based setup wizard. =
 It requires a system which already has the proper environment installed, mo=
-st notably a web server and a database. eZ Publish needs to be downloaded a=
+st notably a web server and a database. Exponential needs to be downloaded a=
 nd unpacked. Instead of clicking through the setup wizard and manually prov=
 iding configuration parameters, the system is installed based on a group of=
  settings defined in a configuration file. The&nbsp;<a href=3D"/display/EZP=

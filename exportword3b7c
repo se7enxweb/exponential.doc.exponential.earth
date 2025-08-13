@@ -214,8 +214,8 @@ d of the content */
     <div class=3D"Section1">
         <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">5.X=
 </span></p>
-<p>Extensions are plug-ins to eZ Publish, providing additional custom funct=
-ionality. Various extensions are available for eZ Publish. All of them requ=
+<p>Extensions are plug-ins to Exponential, providing additional custom funct=
+ionality. Various extensions are available for Exponential. All of them requ=
 ire the same basic steps for an installation. This chapter will show how to=
  perform the following:</p>
 <ol>

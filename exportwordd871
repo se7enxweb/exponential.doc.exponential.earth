@@ -251,7 +251,7 @@ ting 3rd party parameters</a></li>=20
 <h2 id=3D"Dynamicsettingsinjection-Description">Description</h2>
 <p>Before 5.4, if one wanted to implement a service needing siteaccess-awar=
 e settings (e.g. language settings),<br> they needed to inject the whole <c=
-ode>ConfigResolver</code> (<code>ezpublish.config.resolver</code>) and get =
+ode>ConfigResolver</code> (<code>exponential.config.resolver</code>) and get =
 the needed settings from it.</p>
 <p>This was not very convenient nor explicit.<br> Goal of this feature is t=
 o allow developers to inject these dynamic settings explicitly from their s=
@@ -278,14 +278,14 @@ nofollow">ConfigResolver documentation</a>.
 er</h3>
 <p>This feature also introduces a <em>DynamicSettingParser</em> service tha=
 t can be used for adding support of the dynamic settings syntax.<br> This s=
-ervice has <code>ezpublish.config.dynamic_setting.parser</code> for ID and =
+ervice has <code>exponential.config.dynamic_setting.parser</code> for ID and =
 implements<br><code>eZ\Bundle\EzPublishCoreBundle\DependencyInjection\Confi=
 guration\SiteAccessAware\DynamicSettingParserInterface</code>.</p>
 <h2 id=3D"Dynamicsettingsinjection-Limitations">Limitations</h2>
 <p>A few limitations still remain:</p>
 <ul class=3D"task-list">
 <li><span>It is not possible to use dynamic settings in your semantic confi=
-guration (e.g. <code>config.yml</code> or <code>ezpublish.yml</code>)&nbsp;=
+guration (e.g. <code>config.yml</code> or <code>exponential.yml</code>)&nbsp;=
 <span>as they are meant primarily for parameter injection in services.</spa=
 n></span></li>
 <li>It is not possible to define an array of options having dynamic setting=
@@ -325,7 +325,7 @@ ngs.&lt;siteaccess_name&gt;.languages</code>, <code>ezsettings</code> being=
 services:
     acme_test.my_service:
         class: %acme_test.my_service.class%
-        arguments: [@ezpublish.config.resolver]
+        arguments: [@exponential.config.resolver]
 
 namespace Acme\TestBundle;</pre>=20
 </div>

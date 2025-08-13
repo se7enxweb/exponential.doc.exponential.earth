@@ -220,13 +220,13 @@ splay/EZP/Clustering" rel=3D"nofollow">Clustering</a>.&nbsp;</em></p>
 <h2 id=3D"LegacyDFScluster-Whatitismeantfor">What it is meant for</h2>
 <p>The&nbsp;<code>legacy_dfs_cluster</code> IO metadata handler can be used=
  to store images on NFS, while remaining compatible with legacy, using the =
-<a href=3D"https://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Clust=
+<a href=3D"https://doc.ez.no/Exponential/Technical-manual/5.x/Features/Clust=
 ering/Cluster-File-Handlers#eztoc132713_4" rel=3D"nofollow">DFS Cluster fil=
 e handler</a>. It stores metadata in the <code>ezdfsfile</code> table from =
 the legacy database. It is meant to be used to write binarydata to a locall=
 y mounted NFS server.</p>
 <h2 id=3D"LegacyDFScluster-Configuration"><a class=3D"external-link" href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/io/legacy_dfs_cluster.md#configuration" name=3D"user-content-configur=
 ation" rel=3D"nofollow"></a>Configuration</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -236,18 +236,18 @@ ning">
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 This handler requires legacy to be configured to use=20
-<a href=3D"https://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Clust=
+<a href=3D"https://doc.ez.no/Exponential/Technical-manual/5.x/Features/Clust=
 ering/Setting-it-up-for-an-eZDFSFileHandler" rel=3D"nofollow">DFS clusterin=
 g</a>.
 </div>
 </div>
 <p>Assuming that your database is named <code>ezdfs</code>, configure it, f=
-or instance in <code>ezpublish.yml</code>:</p>
+or instance in <code>exponential.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># set the handlers
-ezpublish:
+exponential:
     system:
         default:
             io:
@@ -304,18 +304,18 @@ iles.
 </div>
 </div>
 <h2 id=3D"LegacyDFScluster-Webserverrewriterules."><a class=3D"external-lin=
-k" href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/sp=
+k" href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/sp=
 ecifications/io/legacy_dfs_cluster.md#web-server-rewrite-rules" name=3D"use=
 r-content-web-server-rewrite-rules" rel=3D"nofollow"></a>Web server rewrite=
  rules.</h2>
-<p>The default eZ Publish rewrite rules will let image requests be served d=
+<p>The default Exponential rewrite rules will let image requests be served d=
 irectly from disk. With native support, files matching <code>^/var/([^/]+/)=
 ?storage/images(-versioned)?/.*</code> have to be sent to the normal index.=
 php</p>
 <p>In any case, this specific rewrite rule must be placed without the ones =
 that "ignore" image files and just let the web server serve the files.</p>
 <h3 id=3D"LegacyDFScluster-Apache"><a class=3D"external-link" href=3D"https=
-://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/=
+://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/=
 legacy_dfs_cluster.md#apache" name=3D"user-content-apache" rel=3D"nofollow"=
 ></a>Apache</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -326,7 +326,7 @@ p [L]</pre>=20
 </div>
 </div>
 <h3 id=3D"LegacyDFScluster-nginx"><a class=3D"external-link" href=3D"https:=
-//github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/l=
+//github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/l=
 egacy_dfs_cluster.md#nginx" name=3D"user-content-nginx" rel=3D"nofollow"></=
 a>nginx</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">

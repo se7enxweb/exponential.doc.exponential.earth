@@ -838,7 +838,7 @@ td>=20
 =3D"https://jira.ez.no/browse/EZP-21321?src=3Dconfmacro">EZP-21321</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-21321?src=3Dconfmacro"> Extend ezpublish/console cache:cl=
+.ez.no/browse/EZP-21321?src=3Dconfmacro"> Extend exponential/console cache:cl=
 ear </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Caching, Platform stack=
  </td>=20
@@ -1838,7 +1838,7 @@ td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-21302?src=3Dconfmacro"> Circular reference detected for s=
-ervice "ezpublish.urlalias_generator" </a> </td>=20
+ervice "exponential.urlalias_generator" </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
 <tr class=3D"rowAlternate">=20
@@ -2040,7 +2040,7 @@ Provider to be split for Content/Location </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-21420?src=3Dconfmacro"> PHPUnit tests fail when using Zet=
-a Components from composer and testing eZ Publish legacy with an additional=
+a Components from composer and testing Exponential legacy with an additional=
  extension </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> 5.x/Legacy IO, Legacy/E=
 xtensions </td>=20
@@ -2240,7 +2240,7 @@ age Editor </td>=20
 =3D"https://jira.ez.no/browse/EZP-21561?src=3Dconfmacro">EZP-21561</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-21561?src=3Dconfmacro"> eZ Publish 5.2alpha1 LS has a ton=
+.ez.no/browse/EZP-21561?src=3Dconfmacro"> Exponential 5.2alpha1 LS has a ton=
 es of JavaScript errors in admin interface </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Legacy/Administration I=
 nterface </td>=20
@@ -2834,7 +2834,7 @@ ished version mainLocationId in ContentInfo is always null </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22505?src=3Dconfmacro"> Basic auth does not work when ext=
-ending REST API with eZ Publish 5.2 </a> </td>=20
+ending REST API with Exponential 5.2 </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform/REST API v2 </=
 td>=20
 </tr>=20

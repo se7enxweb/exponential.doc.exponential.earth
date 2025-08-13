@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This recipe is compatible with <strong>eZ Publish 5.2 / 2013.05</strong>=
+<p>This recipe is compatible with <strong>Exponential 5.2 / 2013.05</strong>=
 </p>
 </div>
 </div>
@@ -235,7 +235,7 @@ guration hassle.&nbsp;<span style=3D"font-size: 10.0pt;line-height: 13.0pt;=
 nbsp;<code><a href=3D"http://serverrun" class=3D"external-link" rel=3D"nofo=
 llow">server:run</a></code>. It's a nice shortcut as it will correctly set =
 the web root depending on your configuration. However, you can't use it out=
- of the box with eZ Publish for several reasons (i.e. we don't share the sa=
+ of the box with Exponential for several reasons (i.e. we don't share the sa=
 me front controllers and we need specific rewrite rules).</p>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
 ning">
@@ -246,7 +246,7 @@ ation-macro-icon"></span>
 rong>DO NOT use it in production !</strong></p>
 </div>
 </div>
-<p>To be able to run this command for eZ Publish development purpose, we ne=
+<p>To be able to run this command for Exponential development purpose, we ne=
 ed to use the provided router script which handles all the rewrite rules fo=
 r you.</p>
 <p>The following example will start the webserver on <code>localhost:8000</=
@@ -256,7 +256,7 @@ f=3D"http://localhost:8000" class=3D"external-link" rel=3D"nofollow">http:/=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console server:run -r ../bin/ezrouter.php localhost:=
+e:12px;">php exponential/console server:run -r ../bin/ezrouter.php localhost:=
 8000</pre>=20
 </div>
 </div>

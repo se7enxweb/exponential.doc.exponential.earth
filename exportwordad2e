@@ -298,7 +298,7 @@ span></p>
 <ul>
 <li><a href=3D"https://jira.ez.no/browse/EZP-26057" class=3D"external-link"=
  rel=3D"nofollow">EZP-26057</a>: Permissions improvement API (<a class=3D"e=
-xternal-link" href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/17=
+xternal-link" href=3D"https://github.com/ezsystems/exponential-kernel/pull/17=
 20" title=3D"EZP-26057: Permissions API" rel=3D"nofollow">#1720</a>)&nbsp;I=
 mplements a service and moves the API for permissions from the repository t=
 o that service</li>

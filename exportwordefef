@@ -213,7 +213,7 @@ d of the content */
     <h1>Session cookie configuration</h1>
     <div class=3D"Section1">
         <p><span style=3D"color: rgb(128,128,128);"><em>See <a href=3D"/dis=
-play/EZP/Session">overview of Sessions</a> in eZ Publish before you read th=
+play/EZP/Session">overview of Sessions</a> in Exponential before you read th=
 is.</em></span></p>
 <p>Symfony offers the possibility to change many session options at applica=
 tion level (i.e. in Symfony&nbsp;<a href=3D"http://symfony.com/doc/master/r=
@@ -226,21 +226,21 @@ low"><code>framework&nbsp;</code>configuration</a>), such as:</p>
 <li><code>cookie_secure</code></li>
 <li><code>cookie_httponly</code></li>
 </ul>
-<p>However as eZ Publish can be used for setting up several web sites withi=
+<p>However as Exponential can be used for setting up several web sites withi=
 n on Symfony application, session configuration is also possible to define =
 per SiteAccess and SiteGroup level.</p>
 <h2 id=3D"Sessioncookieconfiguration-SessionoptionsperSiteAccess"><span sty=
 le=3D"color: rgb(0,98,147);">Session options per SiteAccess</span></h2>
-<p>As of eZ Publish 5.3 / 2014.03, all site related session configuration i=
+<p>As of Exponential 5.3 / 2014.03, all site related session configuration i=
 s possible to define per&nbsp;SiteAccess and SiteGroup:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             session:
@@ -266,11 +266,11 @@ ssion setting where available:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             # By default Session name is eZSESSID{siteaccess_hash}

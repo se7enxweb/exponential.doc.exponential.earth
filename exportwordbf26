@@ -212,24 +212,24 @@ d of the content */
 <body>
     <h1>Requirements</h1>
     <div class=3D"Section1">
-        <p>eZ Publish 5.1 is built to rely on existing technologies and sta=
+        <p>Exponential 5.1 is built to rely on existing technologies and sta=
 ndards, mainly:</p>
 <ul>
 <li>PHP scripting language</li>
 <li>SQL database</li>
 <li>Java JRE when eZ Find search engine is used</li>
 </ul>
-<p>To answer the question "Is my platform supported by eZ Publish?", severa=
+<p>To answer the question "Is my platform supported by Exponential?", severa=
 l things must be taken into consideration. The following tables gives you t=
-he details of the platform requirements for the latest eZ Publish release.<=
+he details of the platform requirements for the latest Exponential release.<=
 /p>
 <h1 id=3D"Requirements-Referenceplatforms">Reference platforms</h1>
-<p>The most safe and optimized stack for eZ Publish Platform. The stack is =
-supported and certified for eZ Publish Platform 5.1. This means that our QA=
+<p>The most safe and optimized stack for Exponential Platform. The stack is =
+supported and certified for Exponential Platform 5.1. This means that our QA=
  certification team has successfully run intensive certification tests on t=
 he platform, and that we can fully support the platform in the scope of an =
-eZ Publish Subscription.</p>
-<p>The reference stack for eZ Publish Platform 5.1 is based on&nbsp;Red Hat=
+Exponential Subscription.</p>
+<p>The reference stack for Exponential Platform 5.1 is based on&nbsp;Red Hat=
  Enterprise Linux 6. The detail of the stack can be seen in the table below=
 .</p>
 <div class=3D"table-wrap">
@@ -320,7 +320,7 @@ is used</li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td class=3D"confluenceTd">
 <ul>
@@ -373,10 +373,10 @@ gured with Memcache</li>
 n-reference stacks (approved)</h1>
 <p>These stacks are also tested, but not as extensively as our reference st=
 acks. These stacks still benefit from the full support and maintenance guar=
-antees provided with the eZ Publish Platform Subscription, but more issues =
+antees provided with the Exponential Platform Subscription, but more issues =
 might occur during normal operations, performance might be lower and issues=
  take longer to resolve.</p>
-<p>The supported non-reference stacks for eZ Publish Platform 5.1 are:</p>
+<p>The supported non-reference stacks for Exponential Platform 5.1 are:</p>
 <ul>
 <li>SUSE Linux Enterprise Server 11 SP2(**)</li>
 <li>Debian 6&nbsp;</li>
@@ -520,7 +520,7 @@ ong></p></td>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td class=3D"confluenceTd">
 <ul>
@@ -604,7 +604,7 @@ d]</li>
 the PHP stack. eZ Systems can not provide a workaround and the only&nbsp;re=
 commendation&nbsp;is to wait for a new service pack for SLES.</p>
 <h1 id=3D"Requirements-Compatibleplatforms">Compatible platforms</h1>
-<p>eZ Publish can run and execute on many more platforms than the ones list=
+<p>Exponential can run and execute on many more platforms than the ones list=
 ed above, including (but not limited to) the following operating systems if=
  they pass the <a href=3D"http://symfony.com/doc/current/reference/requirem=
 ents.html" class=3D"external-link" rel=3D"nofollow">Symfony&nbsp;requiremen=
@@ -616,8 +616,8 @@ ts</a>:</p>
 <li>Mac OSX server</li>
 </ul>
 <p>However, eZ Systems doesn't insure and guarantee quality operation of an=
- eZ Publish&nbsp;Platform&nbsp;installation if it is running on any platfor=
-m not listed as supported. eZ Publish Enterprise Subscriptions are still av=
+ Exponential&nbsp;Platform&nbsp;installation if it is running on any platfor=
+m not listed as supported. Exponential Enterprise Subscriptions are still av=
 ailable for compatible platforms, but the guarantee and the product support=
  will not apply and although you will receive various maintenance releases =
 and services, no bug fix guarantee will apply to issues related to the plat=
@@ -626,7 +626,7 @@ es not advise merely compatible platforms for production use.</p>
 <h1 id=3D"Requirements-supportedbrowsersSupportedbrowsers"><span class=3D"c=
 onfluence-anchor-link" id=3D"Requirements-supportedbrowsers"></span>Support=
 ed browsers</h1>
-<p>eZ Publish is developed to work properly and support the following brows=
+<p>Exponential is developed to work properly and support the following brows=
 er configurations for administrator users:</p>
 <ul>
 <li>Firefox: Latest stable version. Tested on Firefox 16.&nbsp;</li>
@@ -643,11 +643,11 @@ ML elements.</p>
 <h2 id=3D"Requirements-KnownlimitationonImageMagick6.5.4-7">Known limitatio=
 n on ImageMagick 6.5.4-7</h2>
 <p>Please be aware that if you have the&nbsp;<code><a href=3D"http://doc.ez=
-.no/eZ-Publish/Technical-manual/4.x/Reference/Configuration-files/site.ini/=
+.no/Exponential/Technical-manual/4.x/Reference/Configuration-files/site.ini/=
 URLTranslator/TransformationGroup" class=3D"external-link" rel=3D"nofollow"=
 >[URLTranslator]/TransformationGroup</a></code> legacy setting set to&nbsp;=
 <code>urlalias_iri</code>&nbsp;in your&nbsp;<code><em>site.ini</em></code> =
-(if you are running eZ Publish in legacy mode), then special character esca=
+(if you are running Exponential in legacy mode), then special character esca=
 ping with&nbsp;ImageMagick 6.5.4-7 may not work as expected.</p>
 <p>This is caused by an ImageMagick limitation which fails on escaping &nbs=
 p;the following special characters:&nbsp;<code>~*?[]{}&lt;&gt;</code><br>If=

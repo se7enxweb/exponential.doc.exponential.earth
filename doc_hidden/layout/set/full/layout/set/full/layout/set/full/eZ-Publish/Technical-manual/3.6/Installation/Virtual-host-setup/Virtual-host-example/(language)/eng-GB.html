@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Installation/Virtual-host-setup/Virtual-host-example/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:38:13 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Installation/Virtual-host-setup/Virtual-host-example/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:38:13 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Virtual host example / Virtual host setup / Installation / 3.6 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Virtual host example / Virtual host setup / Installation / 3.6 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,11 +40,11 @@
 <h1>Virtual host example</h1>
 </div>
 
- <p>This example demonstrates how to set up a virtual host on the Apache web server for an eZ Publish installation located in &quot;/var/www/example&quot;. Let's say that we want to access eZ Publish by using the following URLs:</p> 
+ <p>This example demonstrates how to set up a virtual host on the Apache web server for an Exponential installation located in &quot;/var/www/example&quot;. Let's say that we want to access Exponential by using the following URLs:</p> 
 <ul>
  <li><div> http://www.example.com (actual website for public access) </div></li> <li><div> http://admin.example.com (administration interface for the webmaster) </div></li> 
 </ul>
- <p>In order to achieve this, we need to set up both eZ Publish and the web server so that they respond correctly to the different requests.</p>  <a name="eztoc443_1" id="eztoc443_1"></a><h2>eZ Publish configuration: siteaccess settings</h2> <p>eZ Publish needs to be configured to use the host access method. This can be done from within the web based setup wizard or by manually editing the global override for the site.ini configuration file: &quot;/settings/override/site.ini.append.php&quot;. A typical configuration would look something like this:</p> <pre class="wordwrap copytoclipboard"><span class="line">...</span>
+ <p>In order to achieve this, we need to set up both Exponential and the web server so that they respond correctly to the different requests.</p>  <a name="eztoc443_1" id="eztoc443_1"></a><h2>Exponential configuration: siteaccess settings</h2> <p>Exponential needs to be configured to use the host access method. This can be done from within the web based setup wizard or by manually editing the global override for the site.ini configuration file: &quot;/settings/override/site.ini.append.php&quot;. A typical configuration would look something like this:</p> <pre class="wordwrap copytoclipboard"><span class="line">...</span>
 <span class="line">[SiteAccessSettings]</span>
 <span class="line">AvailableSiteAccessList[]</span>
 <span class="line">AvailableSiteAccessList[]=example</span>
@@ -56,9 +56,9 @@
 <span class="line">...</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\n...\r\n[SiteAccessSettings]\r\nAvailableSiteAccessList[]\r\nAvailableSiteAccessList[]=example\r\nAvailableSiteAccessList[]=example_admin\r\nMatchOrder=host\r\n\r\nHostMatchMapItems[]=www.example.com;example\r\nHostMatchMapItems[]=admin.example.com;example_admin\r\n...' ); return false;" /></p>
-<![endif]--> <p>This configuration tells eZ Publish that it should use the &quot;example&quot; siteaccess if a request starts with &quot;www.example.com&quot; and &quot;example_admin&quot; if the request starts with &quot;admin.example.com&quot;. For more information about site management in eZ Publish, please refer to the <a href="../../../../Concepts-and-basics/Configuration/Site-management.html" target="_self">&quot;Site management&quot;</a> part of the &quot;Concepts and basics&quot; chapter.</p> <a name="eztoc443_2" id="eztoc443_2"></a><h2>Apache configuration: virtual host settings</h2> <p>Assuming that...</p> 
+<![endif]--> <p>This configuration tells Exponential that it should use the &quot;example&quot; siteaccess if a request starts with &quot;www.example.com&quot; and &quot;example_admin&quot; if the request starts with &quot;admin.example.com&quot;. For more information about site management in Exponential, please refer to the <a href="../../../../Concepts-and-basics/Configuration/Site-management.html" target="_self">&quot;Site management&quot;</a> part of the &quot;Concepts and basics&quot; chapter.</p> <a name="eztoc443_2" id="eztoc443_2"></a><h2>Apache configuration: virtual host settings</h2> <p>Assuming that...</p> 
 <ul>
- <li><div> eZ Publish is located in &quot;/var/www/example&quot; </div></li> <li><div> the server's IP address is 128.39.140.28 </div></li> <li><div> we wish to access eZ Publish using &quot;www.example.com&quot; and &quot;admin.example.com&quot; </div></li> 
+ <li><div> Exponential is located in &quot;/var/www/example&quot; </div></li> <li><div> the server's IP address is 128.39.140.28 </div></li> <li><div> we wish to access Exponential using &quot;www.example.com&quot; and &quot;admin.example.com&quot; </div></li> 
 </ul>
  <p>...the following virtual host configuration needs to be added at the end of &quot;http.conf&quot;:</p> <pre class="wordwrap copytoclipboard"><span class="line">NameVirtualHost 128.39.140.28</span>
 <span class="line">&nbsp;</span>
@@ -109,11 +109,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Installation/Virtual-host-setup/Virtual-host-example/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:38:13 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Installation/Virtual-host-setup/Virtual-host-example/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:38:13 GMT -->
 </html>

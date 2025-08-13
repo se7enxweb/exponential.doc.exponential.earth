@@ -289,7 +289,7 @@ d.php</a>.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: true; theme: Eclipse" style=3D"font-size:=
-12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.rep=
+12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.rep=
 ository' );
 $contentService =3D $repository-&gt;getContentService();
 $contentTypeService =3D $repository-&gt;getContentTypeService();
@@ -333,7 +333,7 @@ ith id $contentId" );
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: true; theme: Eclipse" style=3D"font-size:=
-12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.rep=
+12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.rep=
 ository' );
 $contentService =3D $repository-&gt;getContentService();
 $contentTypeService =3D $repository-&gt;getContentTypeService();
@@ -547,7 +547,7 @@ ion use
 </div>
 </div>
 <p><code>LocationService::loadLocationChildren()</code>&nbsp;returns a&nbsp=
-;<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Pu=
+;<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Pu=
 blish/API/Repository/Values/Content/LocationList.php" class=3D"external-lin=
 k" rel=3D"nofollow">LocationList</a>&nbsp;Value Objects that we can iterate=
  over.</p>
@@ -578,7 +578,7 @@ his Value Object mostly provides primitive fields: <code>contentTypeId</cod=
 e>, <code>publishedDate</code> or <code>mainLocationId</code>. But it is al=
 so used to request further Content-related Value Objects from various servi=
 ces.</p>
-<p>The full example implements an <code>ezpublish:cookbook:view_content_met=
+<p>The full example implements an <code>exponential:cookbook:view_content_met=
 adata</code> command that prints out all the available metadata, given a Co=
 ntent ID.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -610,7 +610,7 @@ ow.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $repository \eZ\Publish\API\Repository\Repository */
-$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.repository=
+$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.repository=
 ' );
 $contentService =3D $repository-&gt;getContentService();
 $locationService =3D $repository-&gt;getLocationService();
@@ -895,12 +895,12 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>The full list of criteria can be found on your installation in the follo=
-wing directory&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-kerne=
+wing directory&nbsp;<a href=3D"https://github.com/ezsystems/exponential-kerne=
 l/tree/master/eZ/Publish/API/Repository/Values/Content/Query/Criterion" cla=
-ss=3D"external-link" rel=3D"nofollow">vendor/ezsystems/ezpublish-kernel/eZ/=
+ss=3D"external-link" rel=3D"nofollow">vendor/ezsystems/exponential-kernel/eZ/=
 Publish/API/Repository/Values/Content/Query/Criterion</a>. Additionally you=
  may look at integration tests like <a href=3D"https://github.com/ezsystems=
-/ezpublish-kernel/blob/master/eZ/Publish/API/Repository/Tests/SearchService=
+/exponential-kernel/blob/master/eZ/Publish/API/Repository/Tests/SearchService=
 Test.php" class=3D"external-link" rel=3D"nofollow">vendor/ezsystems/ezpubli=
 sh-kernel/eZ/Publish/API/Repository/Tests/SearchServiceTest.php</a> for mor=
 e details on how these are used.</p>
@@ -1009,7 +1009,7 @@ nd.php</a></p>
 </div>
 </div>
 <p>A search isn't only meant for searching, it also provides the future int=
-erface for what you in eZ Publish 4.x would know as a content "fetch". And =
+erface for what you in Exponential 4.x would know as a content "fetch". And =
 as this is totally&nbsp;backend agnostic, in future versions this will be p=
 owered by either Solr or ElasticSearch meaning it also replaces&nbsp;"ezfin=
 d" fetch functions.</p>

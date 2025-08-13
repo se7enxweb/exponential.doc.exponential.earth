@@ -213,7 +213,7 @@ d of the content */
     <h1>Parameters injection in content views</h1>
     <div class=3D"Section1">
         <p>It is possible to dynamically inject variables in content view t=
-emplates by listening to the&nbsp;<code> <strong>ezpublish.pre_content_view=
+emplates by listening to the&nbsp;<code> <strong>exponential.pre_content_view=
 </strong> </code>&nbsp;event.</p>
 <p>The event listener method receives an<code>&nbsp;eZ\Publish\Core\MVC\Sym=
 fony\Event\PreContentViewEvent&nbsp;</code>object</p>
@@ -260,7 +260,7 @@ services:
     ezdemo.pre_content_view_listener:
         class: %ezdemo.pre_content_view_listener.class%
         tags:
-            - {name: kernel.event_listener, event: ezpublish.pre_content_vi=
+            - {name: kernel.event_listener, event: exponential.pre_content_vi=
 ew, method: onPreContentView}
 
 </pre>=20

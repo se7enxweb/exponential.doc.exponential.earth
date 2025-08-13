@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Installation/Virtual-host-setup by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:36:30 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Installation/Virtual-host-setup by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:36:30 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>Virtual host setup / Installation / 3.6 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Virtual host setup / Installation / 3.6 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Virtual host setup</h1>
 </div>
 
- <p>This section describes how to set up a virtual host for eZ Publish using the Apache webserver. A virtual host setup is only needed if eZ Publish has been configured to use the host access method, which is the most secure method.</p> <p>By making use of virtual hosts, it is possible to have several sites running on the same server. The sites are usually differentiated by the name they are accessed. Apache will look for a specified set of domains and use different configuration settings based on the domain that is accessed.</p>  <a name="eztoc435_1" id="eztoc435_1"></a><h2>Generic virtual host setup</h2> <p>Virtual hosts are usually defined at the end of &quot;httpd.conf&quot;, which is the main configuration file for Apache. Adding a virtual host for eZ Publish can be done by copying the following lines and replacing the text encapsulated by the square brackets with actual values. Please refer to the next section for a real life example of using virtual hosts.</p> <pre class="wordwrap copytoclipboard"><span class="line">NameVirtualHost [IP_ADDRESS]</span>
+ <p>This section describes how to set up a virtual host for Exponential using the Apache webserver. A virtual host setup is only needed if Exponential has been configured to use the host access method, which is the most secure method.</p> <p>By making use of virtual hosts, it is possible to have several sites running on the same server. The sites are usually differentiated by the name they are accessed. Apache will look for a specified set of domains and use different configuration settings based on the domain that is accessed.</p>  <a name="eztoc435_1" id="eztoc435_1"></a><h2>Generic virtual host setup</h2> <p>Virtual hosts are usually defined at the end of &quot;httpd.conf&quot;, which is the main configuration file for Apache. Adding a virtual host for Exponential can be done by copying the following lines and replacing the text encapsulated by the square brackets with actual values. Please refer to the next section for a real life example of using virtual hosts.</p> <pre class="wordwrap copytoclipboard"><span class="line">NameVirtualHost [IP_ADDRESS]</span>
 <span class="line">&nbsp;</span>
 <span class="line">&lt;VirtualHost [IP_ADDRESS]:[PORT]&gt;</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Directory [PATH_TO_EZPUBLISH]&gt;</span>
@@ -105,7 +105,7 @@
 <tr>
  <td valign="top" style="vertical-align: top">   <p>[PATH_TO_EZPUBLISH]</p> 
   </td>
- <td valign="top" style="vertical-align: top">   <p>Path to the directory that contains eZ Publish. This must be the full path, for example &quot;/var/www/ezpublish-3.6.0&quot;.</p> 
+ <td valign="top" style="vertical-align: top">   <p>Path to the directory that contains Exponential. This must be the full path, for example &quot;/var/www/exponential-3.6.0&quot;.</p> 
   </td>
  
 </tr>
@@ -127,7 +127,7 @@
 </tr>
  
 </table>
- <p>Please note that the &quot;mod_rewrite&quot; module must be enabled in &quot;httpd.conf&quot; in order to use the Rewrite Rules.</p>   <a name="eztoc435_2" id="eztoc435_2"></a><h2>NameVirtualHost</h2> <p>The &quot;NameVirtualHost&quot; setting might already exist in the default configuration. Defining a new one will result in a conflict. If Apache reports errors such as &quot;NameVirtualHost [IP_ADDRESS] has no VirtualHosts&quot; or &quot;Mixing * ports and non-* ports with a NameVirtualHost address is not supported&quot;, try skipping the NameVirtualHost line. For more info about the NameVirtualHost directive, see <a href="http://httpd.apache.org/docs/1.3/mod/core.html#namevirtualhost" target="_blank">http://httpd.apache.org/docs/1.3/mod/core.html#namevirtualhost</a>.</p> <a name="eztoc435_3" id="eztoc435_3"></a><h2>SOAP and WebDAV</h2> <p>If you would like to use the SOAP and/or the WebDAV features of eZ Publish, you'll have to add the following lines in the virtual host configuration:</p> <pre class="wordwrap copytoclipboard"><span class="line">RewriteCond %{HTTP_HOST} ^webdav\..*</span>
+ <p>Please note that the &quot;mod_rewrite&quot; module must be enabled in &quot;httpd.conf&quot; in order to use the Rewrite Rules.</p>   <a name="eztoc435_2" id="eztoc435_2"></a><h2>NameVirtualHost</h2> <p>The &quot;NameVirtualHost&quot; setting might already exist in the default configuration. Defining a new one will result in a conflict. If Apache reports errors such as &quot;NameVirtualHost [IP_ADDRESS] has no VirtualHosts&quot; or &quot;Mixing * ports and non-* ports with a NameVirtualHost address is not supported&quot;, try skipping the NameVirtualHost line. For more info about the NameVirtualHost directive, see <a href="http://httpd.apache.org/docs/1.3/mod/core.html#namevirtualhost" target="_blank">http://httpd.apache.org/docs/1.3/mod/core.html#namevirtualhost</a>.</p> <a name="eztoc435_3" id="eztoc435_3"></a><h2>SOAP and WebDAV</h2> <p>If you would like to use the SOAP and/or the WebDAV features of Exponential, you'll have to add the following lines in the virtual host configuration:</p> <pre class="wordwrap copytoclipboard"><span class="line">RewriteCond %{HTTP_HOST} ^webdav\..*</span>
 <span class="line">RewriteRule ^(.*) /webdav.php [L]</span>
 <span class="line">&nbsp;</span>
 <span class="line">RewriteCond %{HTTP_HOST} ^soap\..*</span>
@@ -143,11 +143,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Installation/Virtual-host-setup by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:36:30 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Installation/Virtual-host-setup by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:36:30 GMT -->
 </html>

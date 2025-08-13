@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Installing eZ Publish on a Linux-UNIX based system</title>
+    <title>Installing Exponential on a Linux-UNIX based system</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Installing eZ Publish on a Linux-UNIX based system</h1>
+    <h1>Installing Exponential on a Linux-UNIX based system</h1>
     <div class=3D"Section1">
         <p>The requirements for doing a normal installation must be met, re=
 ad the "<a href=3D"/display/EZP51/Requirements+for+doing+a+normal+installat=
@@ -224,42 +224,42 @@ div.rbtoc1485866223590 li {margin-left: 0px;padding-left: 0px;}
 /*]]>*/</style></p>
 <div class=3D"toc-macro rbtoc1485866223590">=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Settingupadatab=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Settingupadatab=
 ase">Setting up a database</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-MySQL">MySQL</a=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-MySQL">MySQL</a=
 ></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-PostgreSQL">Pos=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-PostgreSQL">Pos=
 tgreSQL</a></li>=20
 </ul> </li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-DownloadingeZPu=
-blish">Downloading eZ Publish</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-UnpackingeZPubl=
-ish">Unpacking eZ Publish</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Settingupfolder=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-DownloadingeZPu=
+blish">Downloading Exponential</a></li>=20
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-UnpackingeZPubl=
+ish">Unpacking Exponential</a></li>=20
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Settingupfolder=
 permission">Setting up folder permission</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Linkassets">Lin=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Linkassets">Lin=
 k assets</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Initiatingthese=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Initiatingthese=
 tupwizard">Initiating the setup wizard</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Documentrootexa=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Documentrootexa=
 mple">Document root example</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Homedirectoryex=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Homedirectoryex=
 ample">Home directory example</a></li>=20
-<li><a href=3D"#InstallingeZPublishonaLinux-UNIXbasedsystem-Virtualhostexam=
+<li><a href=3D"#InstallingExponentialonaLinux-UNIXbasedsystem-Virtualhostexam=
 ple">Virtual host example</a></li>=20
 </ul> </li>=20
 </ul>=20
 </div>
 <p></p>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Settingupadatabase">S=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Settingupadatabase">S=
 etting up a database</h2>
 <p>A database must be created before running the setup wizard. The followin=
 g text explains how to set up a database using either MySQL or PostgreSQL.<=
 /p>
 <p><a name=3D"eztoc131657_1_1" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-MySQL">MySQL</h3>
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-MySQL">MySQL</h3>
 <ol>
 <li>
 <div>
@@ -353,7 +353,7 @@ abase.</td>
 </tr>
 <tr>
 <td class=3D"confluenceTd">&lt;ezp_host&gt;</td>
-<td class=3D"confluenceTd">The hostname of the server on which eZ Publish w=
+<td class=3D"confluenceTd">The hostname of the server on which Exponential w=
 ill be running. (may be "<code>localhost</code>" if MySQL is installed on t=
 he same server).</td>
 </tr>
@@ -368,7 +368,7 @@ ccess to the database.</td>
 </div></li>
 </ol>
 <p><a name=3D"eztoc131657_1_2" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-PostgreSQL">PostgreSQ=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-PostgreSQL">PostgreSQ=
 L</h3>
 <ol>
 <li>
@@ -494,18 +494,18 @@ g changes might be necessary for these users:
 </div>
 </div></li>
 </ol>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-DownloadingeZPublish"=
->Downloading eZ Publish</h2>
-<p>The latest community version of eZ Publish can be downloaded from <a hre=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-DownloadingExponential"=
+>Downloading Exponential</h2>
+<p>The latest community version of Exponential can be downloaded from <a hre=
 f=3D"http://share.ez.no/download-develop/downloads" class=3D"external-link"=
  rel=3D"nofollow">http://share.ez.no/download-develop/downloads</a>, while =
 enterprise version is available in your <a href=3D"https://support.ez.no" c=
 lass=3D"external-link" rel=3D"nofollow">support portal</a> or via partner p=
 ortal.</p>
 <p><a name=3D"eztoc131657_3" rel=3D"nofollow"></a></p>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-UnpackingeZPublish">U=
-npacking eZ Publish</h2>
-<p>Use your favorite tool to unpack the downloaded eZ Publish distribution =
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-UnpackingExponential">U=
+npacking Exponential</h2>
+<p>Use your favorite tool to unpack the downloaded Exponential distribution =
 to a web-served directory (a directory that is reachable using a web browse=
 r), or in case of virtual host mode it can be any folder. The following exa=
 mple shows how to do this using the tar utility (to unpack a tar.gz file, a=
@@ -513,7 +513,7 @@ ssuming that the "tar" and the "gzip" utilities are installed on the system=
 ):</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ tar zxvf ezpublish-&lt;version_number&gt;-gpl.tar.gz -C &lt;web_serv=
+<pre>$ tar zxvf exponential-&lt;version_number&gt;-gpl.tar.gz -C &lt;web_serv=
 ed_directory&gt;</pre>=20
 </div>
 </div>
@@ -526,7 +526,7 @@ ed_directory&gt;</pre>=20
 </tr>
 <tr>
 <td class=3D"confluenceTd"><code>&lt;version_number&gt;</code></td>
-<td class=3D"confluenceTd">The version number of eZ Publish that was downlo=
+<td class=3D"confluenceTd">The version number of Exponential that was downlo=
 aded.</td>
 </tr>
 <tr>
@@ -540,12 +540,12 @@ de>www</code>", and located inside a user's home directory).</td>
 </table>
 </div>
 <p>&nbsp;</p>
-<p>The extraction utility will unpack eZ Publish into a sub-directory calle=
-d "<code>ezpublish-&lt;version_number&gt;</code>". Feel free to rename this=
+<p>The extraction utility will unpack Exponential into a sub-directory calle=
+d "<code>exponential-&lt;version_number&gt;</code>". Feel free to rename this=
  directory to something more meaningful, for example "<code>my_site</code>"=
 .</p>
 <p><a name=3D"eztoc131657_4" rel=3D"nofollow"></a></p>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Settingupfolderpermis=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Settingupfolderpermis=
 sion">Setting up folder permission</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -577,11 +577,11 @@ se shell commands will give proper permission to the web server and command=
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo chmod +a "www-data allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -593,10 +593,10 @@ all setfacl before using it (as is the case with Ubuntu), like so:</p>
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo setfacl -R -m u:www-data:rwx -m u:www-data:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -606,11 +606,11 @@ erver's user as the owner of the required directories.</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo chown -R www-data:www-data ezpublish/{cache,logs,config} ezpubli=
+    $ sudo chown -R www-data:www-data exponential/{cache,logs,config} ezpubli=
 sh_legacy/{design,extension,settings,var} web
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | sudo xargs chmod -R 775
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | sudo xargs chmod -R 664</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -621,9 +621,9 @@ o do anything.</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | sudo xargs chmod -R 777
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | sudo xargs chmod -R 666</pre>=20
 </div>
 </div></li>
@@ -631,21 +631,21 @@ ension,settings,var},web} -type f | sudo xargs chmod -R 666</pre>=20
 <div>
 <p>&nbsp;</p>
 </div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Linkassets">Link asse=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Linkassets">Link asse=
 ts</h2>
-<p>To be able to run eZ Publish 5 correctly, assets need to be exposed in t=
+<p>To be able to run Exponential 5 correctly, assets need to be exposed in t=
 he public "<code>web</code>" folder.</p>
-<p>The following commands will first symlink eZ Publish 5 assets in "Bundle=
+<p>The following commands will first symlink Exponential 5 assets in "Bundle=
 s" and the second will symlink assets (design files like images, scripts an=
-d css, and files in var folder) &nbsp;from eZ Publish Legacy</p>
+d css, and files in var folder) &nbsp;from Exponential Legacy</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>cd /&lt;ezp5-root&gt;
-php ezpublish/console assets:install --symlink web
-php ezpublish/console ezpublish:legacy:assets_install --symlink web
+php exponential/console assets:install --symlink web
+php exponential/console exponential:legacy:assets_install --symlink web
 
 # For 5.1 / 2013.4 and higher, also:
-php ezpublish/console assetic:dump --env=3Dprod web</pre>=20
+php exponential/console assetic:dump --env=3Dprod web</pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -656,7 +656,7 @@ rmation-macro-icon"></span>
 <p><em><strong>Note</strong>: In both cases </em>"<code>web</code>"<em> is =
 the default folder and can be skipped from the command. Further information=
  about alternative options is&nbsp;available&nbsp;with <code>-h</code> just=
- like it is with</em> "<code>php ezpublish/console -h</code>".</p>
+ like it is with</em> "<code>php exponential/console -h</code>".</p>
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -671,35 +671,35 @@ check the available notes <a href=3D"https://confluence.ez.no/display/EZP51=
 ollow">here</a>, before entering the setup wizard chapter.</p>
 </div>
 </div>
-<h2 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Initiatingthesetupwiz=
+<h2 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Initiatingthesetupwiz=
 ard">Initiating the setup wizard</h2>
 <p>The setup wizard can be started using a web browser immediately after th=
 e previous steps (described in this section) are completed. It will be auto=
 matically run the first time someone tries to access/browse the "<code>/ezs=
 etup</code>" url. Let's assume that we are using a server with the host nam=
-e "<code>www.example.com</code>" and that after unpacking, the eZ Publish d=
+e "<code>www.example.com</code>" and that after unpacking, the Exponential d=
 irectory was renamed to "<code>my_site</code>".</p>
 <p><a name=3D"eztoc131657_6_3" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Documentrootexample">=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Documentrootexample">=
 Document root example</h3>
-<p>If eZ Publish was unpacked into a directory called "<code>my_site</code>=
+<p>If Exponential was unpacked into a directory called "<code>my_site</code>=
 " under the document root, the setup wizard can be initiated by browsing th=
 e following URL: <code><span class=3D"nolink">http://www.example.com/my_sit=
 e/web/index.php/ezsetup</span></code>.</p>
 <p><a name=3D"eztoc131657_6_4" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Homedirectoryexample"=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Homedirectoryexample"=
 >Home directory example</h3>
-<p>If eZ Publish was unpacked to a web-served directory located inside the =
+<p>If Exponential was unpacked to a web-served directory located inside the =
 home directory of a user with the user name "<code>peter</code>", (usually =
 called "<code>public_html</code>", "<code>www</code>", "<code>http</code>",=
  "<code>html</code>" or "<code>web</code>"), the setup wizard can be initia=
 ted by browsing the following URL: <code><span class=3D"nolink">http://www.=
 example.com/~peter/my_site/web/index.php/ezsetup</span></code>.</p>
 <p><a name=3D"eztoc131657_6_5" rel=3D"nofollow"></a></p>
-<h3 id=3D"InstallingeZPublishonaLinux-UNIXbasedsystem-Virtualhostexample">V=
+<h3 id=3D"InstallingExponentialonaLinux-UNIXbasedsystem-Virtualhostexample">V=
 irtual host example</h3>
 <p>If you have setup the host name&nbsp;www.example.com&nbsp;to point to th=
-e web folder of eZ Publish using <a href=3D"/display/EZP51/Virtual+host+set=
+e web folder of Exponential using <a href=3D"/display/EZP51/Virtual+host+set=
 up">rewrite</a> rules, then you should access it at: <code><span class=3D"n=
 olink">http://www.example.com/ezsetup</span></code>.</p>
 <p>Refer to the "<a href=3D"/display/EZP51/The+setup+wizard">The setup wiza=

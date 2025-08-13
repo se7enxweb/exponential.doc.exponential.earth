@@ -251,7 +251,7 @@ undle.
     # MyCustomBundle is the actual bundle name
     - {resource: "@AcmeTestBundle/Resources/config/templates_rules.yml"}
 &nbsp;
-ezpublish:
+exponential:
     # ...</pre>=20
 </div>
 </div>
@@ -265,7 +265,7 @@ dle</b>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># Here I need to reproduce the right configuration tree.
 # It will be merged with the main one
-ezpublish:
+exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -313,7 +313,7 @@ tries that are already defined in the main configuration file, <strong>they=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If you want to import configuration for development use only, you can do=
- so in your <code>ezpublish_dev.yml</code>&nbsp;</p>
+ so in your <code>exponential_dev.yml</code>&nbsp;</p>
 </div>
 </div>
 <h2 id=3D"Importingsettingsfromabundle-Theimplicitway">The implicit way</h2=
@@ -369,11 +369,11 @@ ace
         $configFile =3D __DIR__ . '/../Resources/config/template_rules.yml'=
 ;
         $config =3D Yaml::parse( file_get_contents( $configFile ) );
-        // We explicitly prepend loaded configuration for "ezpublish" names=
+        // We explicitly prepend loaded configuration for "exponential" names=
 pace.
-        // So it will be placed under the "ezpublish" configuration key, li=
-ke in ezpublish.yml.
-        $container-&gt;prependExtensionConfig( 'ezpublish', $config );
+        // So it will be placed under the "exponential" configuration key, li=
+ke in exponential.yml.
+        $container-&gt;prependExtensionConfig( 'exponential', $config );
         $container-&gt;addResource( new FileResource( $configFile ) );
     }
 }
@@ -388,7 +388,7 @@ ke in ezpublish.yml.
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;"># We explicitly prepend config for "ezpublish" namespace in service=
+:12px;"># We explicitly prepend config for "exponential" namespace in service=
  container extension,&nbsp;
 # so no need to repeat it here
 system:

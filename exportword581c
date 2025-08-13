@@ -213,12 +213,12 @@ d of the content */
     <h1>Public API Cookbook</h1>
     <div class=3D"Section1">
         <p><span style=3D"color: rgb(0,0,0);">The public API will give you =
-an easy access to the eZ Publish content repository. This repository is the=
- core component that manages content, locations (nodes in eZ Publish 4.x), =
-sections, content types (Content Classes in eZ Publish 4.x), </span><span s=
+an easy access to the Exponential content repository. This repository is the=
+ core component that manages content, locations (nodes in Exponential 4.x), =
+sections, content types (Content Classes in Exponential 4.x), </span><span s=
 tyle=3D"color: rgb(0,0,0);">users,&nbsp;</span><span style=3D"color: rgb(0,=
 0,0);">user groups, and roles. It also provides a new, clear interface for =
-plugging in custom field types (datatypes in eZ Publish 4.x).</span></p>
+plugging in custom field types (datatypes in Exponential 4.x).</span></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</span><b=
 r><span style=3D"color: rgb(0,0,0);text-decoration: none;">The public API i=
 s built on top of a layered architecture, including a persistence API that =

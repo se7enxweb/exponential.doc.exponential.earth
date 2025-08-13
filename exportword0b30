@@ -215,12 +215,12 @@ d of the content */
         <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">5.X=
 </span></p>
 <p>Each extension needs to be activated, which means that it is being regis=
-tered for eZ Publish to be available from within the eZ Publish framework. =
-Every extension can either be activated in the eZ Publish administration in=
+tered for Exponential to be available from within the Exponential framework. =
+Every extension can either be activated in the Exponential administration in=
 terface or in a configuration file. Furthermore, the activation can be done=
- either for the whole eZ Publish installation or for only certain site acce=
+ either for the whole Exponential installation or for only certain site acce=
 sses.</p>
-<p><strong>Note:</strong> As of the 4.4 release of eZ Publish we have imple=
+<p><strong>Note:</strong> As of the 4.4 release of Exponential we have imple=
 mented a feature for automatic loading of extensions in the required sequen=
 ce. Please go to <a href=3D"/display/EZP/Extension+load+ordering">Extension=
  load ordering</a> for more information on how to do this. If you are runni=
@@ -228,7 +228,7 @@ ng on releases prior to 4.4, please continue reading below.</p>
 <p><a name=3D"eztoc131600_1" rel=3D"nofollow"></a></p>
 <h2 id=3D"Activatingtheextension-Administrationinterface">Administration in=
 terface</h2>
-<p>Log in to your eZ Publish administration interface, click on the "Setup"=
+<p>Log in to your Exponential administration interface, click on the "Setup"=
  tab, and then click "Extensions" on the left. You will see the list of ava=
 ilable extensions with check-boxes. Simply select the ones you need as show=
 n in the screenshot below and click the "Apply changes" button.</p>
@@ -245,12 +245,12 @@ jpg" data-base-url=3D"https://doc.ez.no" data-linked-resource-content-type=
 esource-container-version=3D"9" height=3D"338"></span>
 <p>Extension Activation</p>
 </div>
-<p>This will activate the extension for all siteaccesses of your eZ Publish=
+<p>This will activate the extension for all siteaccesses of your Exponential=
  installation.</p>
 <p><a name=3D"eztoc131600_2" rel=3D"nofollow"></a></p>
 <h2 id=3D"Activatingtheextension-Configurationfile">Configuration file</h2>
 <p>Alternatively, an extension can be enabled manually in the <a href=3D"ht=
-tp://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Configuration-file=
+tp://doc.ez.no/Exponential/Technical-manual/4.x/Reference/Configuration-file=
 s/site.ini" class=3D"external-link" rel=3D"nofollow">site.ini</a> configura=
 tion file.</p>
 <p><a name=3D"eztoc131600_2_1" rel=3D"nofollow"></a></p>
@@ -258,9 +258,9 @@ tion file.</p>
 ing for the whole installation</h3>
 <p>To enable the sample extension for all of your site accesses, edit the "=
 <code>site.ini.append.php</code>" file located in the "<code>&lt;eZ_Publish=
-_root_folder&gt;/ezpublish_legacy/</code><code>settings/override</code>" di=
-rectory of your eZ Publish installation. Add the following line under the "=
-<code>[ExtensionSettings]</code>" <a href=3D"http://doc.ez.no/eZ-Publish/Te=
+_root_folder&gt;/exponential_legacy/</code><code>settings/override</code>" di=
+rectory of your Exponential installation. Add the following line under the "=
+<code>[ExtensionSettings]</code>" <a href=3D"http://doc.ez.no/Exponential/Te=
 chnical-manual/5.x/Concepts-and-basics/Configuration" class=3D"external-lin=
 k" rel=3D"nofollow">configuration block</a>:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
@@ -277,8 +277,8 @@ if they do not exist.</p>
 ng for certain siteaccesses</h3>
 <p>To enable the sample extension for only a single site access called "exa=
 mple", edit the "<code>site.ini.append.php</code>" file located in the "<co=
-de><code>&lt;eZ_Publish_root_folder&gt;/ezpublish_legacy/</code>settings/si=
-teaccess/example</code>" directory of your eZ Publish installation. Add the=
+de><code>&lt;eZ_Publish_root_folder&gt;/exponential_legacy/</code>settings/si=
+teaccess/example</code>" directory of your Exponential installation. Add the=
  following line under the "<code>[ExtensionSettings]</code>" configuration =
 block:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
@@ -296,15 +296,15 @@ toload arrays</h3>
 <p>After updating the configuration file(s), you need to run the "<code>ezp=
 generateautoloads.php</code>" script, in order to add the information about=
  all PHP class definitions of this extension to the "<code>&lt;eZ_Publish_r=
-oot_folder&gt;/ezpublish_legacy/var/</code><code>autoload/ezp_extension.php=
-</code>" file, otherwise eZ Publish might not be able to execute the PHP co=
+oot_folder&gt;/exponential_legacy/var/</code><code>autoload/ezp_extension.php=
+</code>" file, otherwise Exponential might not be able to execute the PHP co=
 de of the newly added extension. The following example shows how to run the=
  script.</p>
 <ol>
 <li>
 <div>
 Navigate into the=20
-<code>ezpublish_legacy/</code> directory.
+<code>exponential_legacy/</code> directory.
 </div></li>
 <li>
 <div>
@@ -317,7 +317,7 @@ Navigate into the=20
 </div></li>
 </ol>
 <p>The script will look for class definitions in the "extensions" directory=
- and update the "<code><code>&lt;eZ_Publish_root_folder&gt;/ezpublish_legac=
+ and update the "<code><code>&lt;eZ_Publish_root_folder&gt;/exponential_legac=
 y/var/</code>autoload/ezp_extension.php</code>" file accordingly.</p>
     </div>
 </body>

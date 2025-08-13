@@ -309,7 +309,7 @@ lower in the hierarchy must be indented in comparison with its parent.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">ezpublish:
+ze:12px;">exponential:
     system:
         default:
             user:
@@ -338,7 +338,7 @@ ze:12px;">ezpublish:
 <div class=3D"panelContent">=20
 <p>This is what individual keys in the configuration mean:</p>
 <ul>
-<li><strong> <code>ezpublish</code> </strong>and <strong> <code>system</cod=
+<li><strong> <code>exponential</code> </strong>and <strong> <code>system</cod=
 e> </strong>are obligatory at the start of any configuration file which def=
 ines views.</li>
 <li><strong> <code>default</code> </strong>defines the siteaccess for which=

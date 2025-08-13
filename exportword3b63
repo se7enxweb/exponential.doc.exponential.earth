@@ -214,10 +214,10 @@ d of the content */
     <div class=3D"Section1">
         <p><span style=3D"color: rgb(51,51,51);">This only applies to insta=
 llations that are configured with DFS clustering.&nbsp;Native support is ad=
-ded in eZ Publish 5.4, and does not use legacy kernel callbacks anymore. As=
+ded in Exponential 5.4, and does not use legacy kernel callbacks anymore. As=
  a consequence, you need to configure DFS on the new stack (no migration of=
  data is required).</span></p>
-<p>Assuming a typical dfs configuration, in&nbsp;<code>ezpublish_legacy/set=
+<p>Assuming a typical dfs configuration, in&nbsp;<code>exponential_legacy/set=
 tings/override/file.ini.append.php</code>, like the following.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -230,7 +230,7 @@ MountPointPath=3D/var/nfs
 DBBackend=3DeZDFSFileHandlerMySQLiBackend
 DBHost=3Dclusterhost
 DBPort=3D3306
-DBName=3Dezpublish_cluster
+DBName=3Dexponential_cluster
 DBUser=3Dclusteruser
 DBPassword=3Dclusterpassword
 MetaDataTableNameCache=3Dezdfsfile_cache</pre>=20
@@ -238,7 +238,7 @@ MetaDataTableNameCache=3Dezdfsfile_cache</pre>=20
 </div>
 <h5 id=3D"UpgradingDFSclusterto5.4-Whereshouldconfigurationbeplaced">Where =
 should configuration be placed</h5>
-<p>Either <code>ezpublish/config/ezpublish.yml</code>, <code><span>ezpublis=
+<p>Either <code>exponential/config/exponential.yml</code>, <code><span>ezpublis=
 h/config/</span>config.yml</code> or any equivalent file that you are using=
 .</p>
 <h5 id=3D"UpgradingDFSclusterto5.4-Clusterdoctrineconnection">Cluster doctr=
@@ -255,7 +255,7 @@ nd it should), you need to create a new doctrine dbal connection.</p>
                driver: pdo_mysql
                host: clusterhost
                port: 3306
-               dbname: ezpublish_cluster
+               dbname: exponential_cluster
                user: clusteruser
                password: clusterpassword
                charset: UTF8</pre>=20
@@ -319,14 +319,14 @@ etadata one:</p>
 <h5 id=3D"UpgradingDFSclusterto5.4-Pre-Finalstep:configuringthemetadataandb=
 inarydatahandlers">Pre-Final step: configuring the metadata and binarydata =
 handlers</h5>
-<p>The last thing to do is set eZ Publish to use the binarydata and metadat=
+<p>The last thing to do is set Exponential to use the binarydata and metadat=
 a handlers we created above, in the siteaccess aware configuration:</p>
 <div>
 <p>&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
    system:
        default:
            io:

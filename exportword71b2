@@ -228,11 +228,11 @@ he installation.</p>
 </div>
 </div>
 <p>This section contains a comprehensive guide through the web-based setup =
-wizard of eZ Publish. The setup wizard is designed to ease the initial conf=
+wizard of Exponential. The setup wizard is designed to ease the initial conf=
 iguration of the system. It can be started using a web browser when the nec=
 essary installation steps (described in the previous sections) are complete=
 d. The setup wizard will automatically start the first time the "index.php"=
- file (located in the root of the eZ Publish directory) is accessed/browsed=
+ file (located in the root of the Exponential directory) is accessed/browsed=
 .</p>
 <p>The setup wizard does not store or modify any data before the final step=
 ; thus, it can be safely restarted by reloading the URL containing only the=
@@ -374,8 +374,8 @@ ainer-id=3D"16286504" data-linked-resource-container-version=3D"8" height=
 <br>
 <sup><em>Setup Wizard Outgoing Email</em></sup>
 </div>
-<p>eZ Publish uses Email to send out miscellaneous notices. This step is us=
-ed to configure how eZ Publish delivers outgoing Email. There are two optio=
+<p>Exponential uses Email to send out miscellaneous notices. This step is us=
+ed to configure how Exponential delivers outgoing Email. There are two optio=
 ns:</p>
 <ul>
 <li>
@@ -419,7 +419,7 @@ ainer-id=3D"16286504" data-linked-resource-container-version=3D"8" height=
 <p>The setup will automatically detect database support that has been made =
 available for the PHP scripting engine. If both MySQL and PostgreSQL are su=
 pported, the database choice dialog will appear. If PHP is setup only to su=
-pport one type of database, eZ Publish will automatically use it and thus t=
+pport one type of database, Exponential will automatically use it and thus t=
 he database choice dialog will not be displayed.</p>
 <p>Note that if the <a href=3D"http://php.net/mysqli" class=3D"external-lin=
 k" rel=3D"nofollow">MySQLi extension</a> is enabled in PHP, the "MySQL Impr=
@@ -449,10 +449,10 @@ ck "Next", if MySQL or MySQL Improved are used, the setup wizard will attem=
 pt to connect to the database. The setup will only continue if it is able t=
 o connect to the specified MySQL server with the specified user name/passwo=
 rd combination. PostgreSQL parameters are tested at a later stage during th=
-e setup wizard. (Note that even if the eZ Publish Extension for Oracle=C2=
+e setup wizard. (Note that even if the Exponential Extension for Oracle=C2=
 =AE Database is installed, the setup wizard will not let you use an Oracle =
 database. The configuration must be done manually as described in the <a hr=
-ef=3D"http://doc.ez.no/Extensions/eZ-Publish-extensions/eZ-Publish-Extensio=
+ef=3D"http://doc.ez.no/Extensions/Exponential-extensions/Exponential-Extensio=
 n-for-Oracle-R-database" class=3D"external-link" rel=3D"nofollow">documenta=
 tion of the database extension</a>.)</p>
 <div class=3D"table-wrap">
@@ -493,14 +493,14 @@ f the languages according to your browser language settings. Use the radio =
 buttons to choose the default language (required), and the check-boxes to c=
 hoose the additional languages (optional). All the selected languages will =
 be added to the system and put on the list of <a href=3D"https://confluence=
-.ez.no/doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Multi-language" c=
+.ez.no/doc.ez.no/Exponential/Technical-manual/5.x/Features/Multi-language" c=
 lass=3D"external-link" rel=3D"nofollow">prioritized languages</a>. You will=
  be able to use any of these languages for creating and translating your co=
 ntent after the setup wizard is finished.</p>
 <p>Note that choosing the default language at this step will determine <a h=
-ref=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Multi-lang=
+ref=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Multi-lang=
 uage" class=3D"external-link" rel=3D"nofollow">default language</a>, <a hre=
-f=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Multi-langua=
+f=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Multi-langua=
 ge/Configuring-your-site-locale" class=3D"external-link" rel=3D"nofollow">s=
 ystem locale</a> and the most prioritized language for your site. If you se=
 lect for example "German" as default language, then both locale and default=
@@ -516,7 +516,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>As of eZ Publish 5.2 the maximum number of languages supported for 64 bi=
+<p>As of Exponential 5.2 the maximum number of languages supported for 64 bi=
 t servers&nbsp;<a href=3D"https://confluence.ez.no/display/EZP/5.2-beta1+Re=
 lease+Notes#id-5.2-beta1ReleaseNotes-Supportformorethan30languages" class=
 =3D"external-link" rel=3D"nofollow">has been improved</a>, allowing up to 6=
@@ -542,7 +542,7 @@ ainer-id=3D"16286504" data-linked-resource-container-version=3D"8" height=
 <sup><em>Setup Wizard Site Selection</em></sup>
 </div>
 <p>This step allows the user to select one of the standard <a href=3D"http:=
-//doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Packages/Package-types=
+//doc.ez.no/Exponential/Technical-manual/5.x/Features/Packages/Package-types=
 " class=3D"external-link" rel=3D"nofollow">site packages</a>. These package=
 s are intended to provide basic examples mostly for the purpose of demonstr=
 ation and learning. However, it is possible to use them as a basic framewor=
@@ -551,13 +551,13 @@ rpose. A demo site usually contains some artwork (images), CSS code, actual=
  content and template files. The plain type should be used when starting fr=
 om scratch.</p>
 <p>The setup wizard automatically fetches the list of available site packag=
-es from <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Feature=
+es from <a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Feature=
 s/Packages#remote_repository" class=3D"external-link" rel=3D"nofollow">remo=
-te</a> and <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Feat=
+te</a> and <a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Feat=
 ures/Packages#internal_repository" class=3D"external-link" rel=3D"nofollow"=
 >internal</a> repositories and asks the user to choose one. The default rem=
-ote repository is <a href=3D"http://packages.ez.no/ezpublish/" class=3D"ext=
-ernal-link" rel=3D"nofollow">http://packages.ez.no/ezpublish/</a> (you can =
+ote repository is <a href=3D"http://packages.ez.no/exponential/" class=3D"ext=
+ernal-link" rel=3D"nofollow">http://packages.ez.no/exponential/</a> (you can =
 browse packages in this repository, to find the ones applicable to the new =
 release).</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -565,15 +565,15 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Note that, as of eZ Publish 5.2, the setup wizard only retrieves the <a =
-href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Front-End=
+<p>Note that, as of Exponential 5.2, the setup wizard only retrieves the <a =
+href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Front-End=
 -Demo-Design" class=3D"external-link" rel=3D"nofollow">Demo Site</a> design=
 .</p>
 </div>
 </div>
 <p>However, the following other design are still available for download in =
-the repository at <a href=3D"http://packages.ez.no/ezpublish/" class=3D"ext=
-ernal-link" rel=3D"nofollow">http://packages.ez.no/ezpublish/</a> for manua=
+the repository at <a href=3D"http://packages.ez.no/exponential/" class=3D"ext=
+ernal-link" rel=3D"nofollow">http://packages.ez.no/exponential/</a> for manua=
 l installation:</p>
 <ul>
 <li>
@@ -582,7 +582,7 @@ Plain site
 </div></li>
 <li>
 <div>
-<a href=3D"http://doc.ez.no/Extensions/eZ-Publish-extensions/Website-Interf=
+<a href=3D"http://doc.ez.no/Extensions/Exponential-extensions/Website-Interf=
 ace" class=3D"external-link" rel=3D"nofollow">Website Interface</a>
 </div></li>
 <li>
@@ -591,7 +591,7 @@ eZ Flow
 </div></li>
 </ul>
 <p><em>Older site packages such as "News site", "Shop site" and "Gallery si=
-te" are currently not available for eZ Publish 4.</em></p>
+te" are currently not available for Exponential 4.</em></p>
 <p>The wizard will automatically download the selected site package and all=
  its dependent packages, import them to the system and display a list of su=
 ccessfully imported packages as shown in the following screenshot. (This st=
@@ -658,7 +658,7 @@ tp://packages.ez.no</a> in your firewall (port 80) or download the packages=
 <h4 id=3D"Thesetupwizard-Outboundconnectionsviaproxy">Outbound connections =
 via proxy</h4>
 <p>If you allow only outbound connections via a proxy server, then you need=
- to configure eZ Publish in the following way:</p>
+ to configure Exponential in the following way:</p>
 <ol>
 <li>
 <div>
@@ -697,7 +697,7 @@ it requires and then upload/import them via the setup wizard. The following=
 <ol>
 <li>
 <div>
-<p>Go to the <a href=3D"http://packages.ez.no/ezpublish/" class=3D"external=
+<p>Go to the <a href=3D"http://packages.ez.no/exponential/" class=3D"external=
 -link" rel=3D"nofollow">packages download page</a>. The "Sites" section of =
 this page contains the list of available site packages including the follow=
 ing information for each of them:</p>
@@ -745,7 +745,7 @@ ally from the remote repository. The following instructions reveal how this=
 <li>
 <div>
 Go to the=20
-<a href=3D"http://packages.ez.no/ezpublish/4.6/4.6.0/" class=3D"external-li=
+<a href=3D"http://packages.ez.no/exponential/4.6/4.6.0/" class=3D"external-li=
 nk" rel=3D"nofollow">packages repository</a>, find the desired site package=
  and download it manually. (A package is downloaded as an "
 <code>.ezpkg</code>" file.)
@@ -758,7 +758,7 @@ Unpack the "
 ges are required (these are listed between the=20
 <code>&lt;dependencies&gt;</code> and=20
 <code>&lt;/dependencies&gt;</code> XML tags as described=20
-<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Packag=
+<a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Packag=
 es/package.xml-format" class=3D"external-link" rel=3D"nofollow">here</a>). =
 Download all the dependent packages that are required.
 </div></li>
@@ -766,16 +766,16 @@ Download all the dependent packages that are required.
 <p><a name=3D"eztoc131522_7_7" rel=3D"nofollow"></a></p>
 <h3 id=3D"Thesetupwizard-Additionalfunctionality">Additional functionality<=
 /h3>
-<p>In eZ Publish 3.7 and earlier versions, the setup wizard included one mo=
+<p>In Exponential 3.7 and earlier versions, the setup wizard included one mo=
 re step called "Site functionality" that allowed to select additional featu=
 res that should be installed. This step is no longer used. Additional funct=
 ionality can be added after the setup wizard is finished by downloading the=
  desired packages from the "Content objects" section of the <a href=3D"http=
-://packages.ez.no/ezpublish/" class=3D"external-link" rel=3D"nofollow">pack=
-ages download page</a>, <a href=3D"http://doc.ez.no/eZ-Publish/Technical-ma=
+://packages.ez.no/exponential/" class=3D"external-link" rel=3D"nofollow">pack=
+ages download page</a>, <a href=3D"http://doc.ez.no/Exponential/Technical-ma=
 nual/5.x/Features/Packages/Importing-packages-to-the-system" class=3D"exter=
 nal-link" rel=3D"nofollow">importing</a> the packages and <a href=3D"http:/=
-/doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Packages/Installing-pac=
+/doc.ez.no/Exponential/Technical-manual/5.x/Features/Packages/Installing-pac=
 kages" class=3D"external-link" rel=3D"nofollow">installing</a> them.</p>
 <p><a name=3D"eztoc131522_8" rel=3D"nofollow"></a></p>
 <h2 id=3D"Thesetupwizard-Accessmethod">Access method</h2>
@@ -794,7 +794,7 @@ ainer-id=3D"16286504" data-linked-resource-container-version=3D"8" height=
 <sup><em>Setup Wizard Siteaccess Configuration</em></sup>
 </div>
 <p>This step allows the configuration of the access method that should be u=
-sed when eZ Publish receives a request. There are three options:</p>
+sed when Exponential receives a request. There are three options:</p>
 <ul>
 <li>
 <div>
@@ -811,14 +811,14 @@ Hostname
 </ul>
 <p><a name=3D"eztoc131522_8_8" rel=3D"nofollow"></a></p>
 <h3 id=3D"Thesetupwizard-URL">URL</h3>
-<p>When the URL access method is used, eZ Publish selects the site that sho=
+<p>When the URL access method is used, Exponential selects the site that sho=
 uld be accessed based on the contents of the URL (in particular the part th=
 at comes right after "<code>index.php</code>"). This is the default and mos=
 t generic option. It doesn't require any additional configuration. Use this=
- setting when installing eZ Publish for the first time.</p>
+ setting when installing Exponential for the first time.</p>
 <p><a name=3D"eztoc131522_8_9" rel=3D"nofollow"></a></p>
 <h3 id=3D"Thesetupwizard-Port">Port</h3>
-<p>When the port access method is used, eZ Publish selects the site that sh=
+<p>When the port access method is used, Exponential selects the site that sh=
 ould be accessed based on a port number that is specified in the URL. The p=
 ort number must be appended to the host name of the web server: "<code><spa=
 n class=3D"nolink"><a href=3D"http://www.example.com:81/index.php" class=3D=
@@ -899,7 +899,7 @@ otects the configuration files from unwanted access. Don't worry about this=
  unless you're setting up a site for public use.</p>
 <p>Note that the administrator's user name (log-in) is set to "admin" by de=
 fault and can not be changed. If you need another user name for site admini=
-strator, you can install eZ Publish, create a new administrator user, log i=
+strator, you can install Exponential, create a new administrator user, log i=
 n as this user and remove the old one.</p>
 <p><a name=3D"eztoc131522_11" rel=3D"nofollow"></a></p>
 <h2 id=3D"Thesetupwizard-Siteregistration">Site registration</h2>
@@ -942,7 +942,7 @@ Company
 </ul>
 <p><em><strong>Note: </strong>First name, last name, email and country are =
 mandatory fields, thus must be filled.&nbsp;</em></p>
-<p>If you are installing eZ Publish for the first time, you should check th=
+<p>If you are installing Exponential for the first time, you should check th=
 e following option: <strong>Is this the first time you are installing eZ Pu=
 blish?</strong></p>
 <p>If you also checks this option: <strong>Is it ok that some simple techni=
@@ -976,7 +976,7 @@ The languages that were chosen
 </ul>
 <p><em><strong>Important Note:</strong> All the information above will be s=
 ent to eZ Systems in an information Email and will be used internally for s=
-tatistics and for improving eZ Publish. No confidential data will be transm=
+tatistics and for improving Exponential. No confidential data will be transm=
 itted and eZ Systems will not misuse or sell these details. </em></p>
 <p><a name=3D"eztoc131522_12" rel=3D"nofollow"></a></p>
 <h2 id=3D"Thesetupwizard-Finished">Finished</h2>
@@ -990,12 +990,12 @@ ta-linked-resource-default-alias=3D"14.png" data-base-url=3D"https://doc.ez=
 .no" data-linked-resource-content-type=3D"image/png" data-linked-resource-c=
 ontainer-id=3D"16286504" data-linked-resource-container-version=3D"8" heigh=
 t=3D"408"></span><br><sup><em>Setup Wizard Finished</em></sup></p>
-<p>The setup wizard has finished. eZ Publish is ready for use. Click on one=
+<p>The setup wizard has finished. Exponential is ready for use. Click on one=
  of the links to access the various interfaces (public site, administration=
  interface, etc.).</p>
 <p>Note that it is possible to restart the installation wizard after its su=
 ccessful finishing by specifying "<code>CheckValidity=3Dtrue</code>" in the=
- "<code>&lt;eZ_Publish_root_path&gt;/ezpublish_legacysettings/override/site=
+ "<code>&lt;eZ_Publish_root_path&gt;/exponential_legacysettings/override/site=
 .ini.append.php</code>" file so that the setup wizard will be initiated whe=
 n trying to access the site.</p>
     </div>

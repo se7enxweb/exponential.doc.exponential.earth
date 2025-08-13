@@ -208,11 +208,11 @@ h1.pagetitle img {
 <body>
     <h1>The cloud administration interface</h1>
     <div class=3D"Section1">
-        <p>The eZ Publish Cloud Service provides an easy to use web interfa=
+        <p>The Exponential Cloud Service provides an easy to use web interfa=
 ce for administrators to manage environments and deployments. It can be acc=
 essed&nbsp;<span>via&nbsp;</span><a class=3D"external-link" href=3D"https:/=
 /admin.cloud.ez.no/" rel=3D"nofollow">https://admin.cloud.ez.no</a><span>. =
-More information about the concepts behind the eZ Publish Cloud Service you=
+More information about the concepts behind the Exponential Cloud Service you=
  can find&nbsp;<a href=3D"/display/EZPCLOUD/Introduction+to+the+eZ+Publish+=
 Cloud">here</a>.</span></p>
 <p>The interface has three mayor views: Administration area, User managemen=
@@ -237,7 +237,7 @@ NS properly. Each environment has a unique domain associated with it. This =
 domain must be used for the&nbsp;<span style=3D"font-size: 10.0pt;line-heig=
 ht: 13.0pt;">CNAME Resource Records in your DN</span><span style=3D"font-si=
 ze: 10.0pt;line-height: 13.0pt;">S for all the site accesses you specify in=
- your eZ Publish configuration.&nbsp;</span></p>
+ your Exponential configuration.&nbsp;</span></p>
 <p><img class=3D"confluence-embedded-image" src=3D"299be5f9b4464511dade7d84=
 9a763bbb" data-image-src=3D"/download/attachments/15761724/admin3.png?versi=
 on=3D1&amp;modificationDate=3D1376465085000&amp;api=3Dv2" width=3D"468" hei=
@@ -315,7 +315,7 @@ t=3D"340" /></p>
  database dump and a tar.gz file with the contents of the var-folder (where=
  your Images and binary data is located). The export files can also be used=
  to create a new deployment or to setup a local development environment wit=
-h the content of the live installation in the eZ Publish Cloud. The export =
+h the content of the live installation in the Exponential Cloud. The export =
 files can be found at the sftp server.</p>
 <p><img class=3D"confluence-embedded-image" height=3D"145" width=3D"468" sr=
 c=3D"f86a40a3b16ffac4c9c5c6409991ec96" data-image-src=3D"/download/attachme=
@@ -354,10 +354,10 @@ nt</li>
 </ol>
 <p>Step 2:</p>
 <ol>
-<li>Select the eZ Publish version you have build your website on&nbsp;<br /=
+<li>Select the Exponential version you have build your website on&nbsp;<br /=
 >
 <ul>
-<li>Select the major version of eZ Publish</li>
+<li>Select the major version of Exponential</li>
 <li>Select the Service Package Level</li>
 <li>Decide whether you rely on the lagacy stack or use the new stack introd=
 uced in 5.0</li>

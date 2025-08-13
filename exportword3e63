@@ -340,9 +340,9 @@ ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>You still need to define your available layouts and blocks in the legacy=
  part to get them available in the admin interface. Please refer to <a href=
-=3D"http://doc.ez.no/Extensions/eZ-Publish-extensions/eZ-Flow/eZ-Flow-2.5/C=
+=3D"http://doc.ez.no/Extensions/Exponential-extensions/eZ-Flow/eZ-Flow-2.5/C=
 onfiguration/Configuring-the-eZ-Flow-block-system" class=3D"external-link" =
-rel=3D"nofollow">eZ Publish legacy documentation</a> to learn how to do so.=
+rel=3D"nofollow">Exponential legacy documentation</a> to learn how to do so.=
 </p>
 </div>
 </div>
@@ -360,7 +360,7 @@ n:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -388,7 +388,7 @@ rmation-macro-icon"></span>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -413,7 +413,7 @@ ell:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -451,7 +451,7 @@ with dedicated matchers.</span></p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             block_view:
@@ -513,7 +513,7 @@ erconfiguration-Matchers" class=3D"external-link" rel=3D"nofollow">see main=
 <td class=3D"confluenceTd"><code>Type</code></td>
 <td class=3D"confluenceTd"><p><span>Matches the unique <strong>block identi=
 fier</strong> defined in the legacy&nbsp;</span><code>block.ini</code><span=
->&nbsp;file (<a href=3D"http://doc.ez.no/Extensions/eZ-Publish-extensions/e=
+>&nbsp;file (<a href=3D"http://doc.ez.no/Extensions/Exponential-extensions/e=
 Z-Flow/eZ-Flow-2.5/Configuration/Configuring-the-eZ-Flow-block-system/Defin=
 ing-the-eZ-Flow-blocks/Defining-block-types" class=3D"external-link" rel=3D=
 "nofollow">see legacy documentation</a>).</span></p><p><span>For example wi=
@@ -633,7 +633,7 @@ rmation-macro-icon"></span>
 <p>You can use a custom controller to display a block.</p>
 <p>However, if you do so, you might need to get access to the <a href=3D"#T=
 hePageFieldType-ThePageServiceobj">PageService</a>. You can get it via the =
-service container with identifier <code>ezpublish.fieldType.ezpage.pageServ=
+service container with identifier <code>exponential.fieldType.ezpage.pageServ=
 ice</code>.</p>
 </div>
 </div>
@@ -865,7 +865,7 @@ age</code> and <code>smax-age</code>)</td>
 <p>As said above,&nbsp;<strong>a block holds your displayable content as bl=
 ock items</strong>&nbsp;which consists of&nbsp;<code>eZ\Publish\Core\FieldT=
 ype\Page\Parts\Item</code>&nbsp;objects. Among&nbsp;<a href=3D"https://gith=
-ub.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Core/FieldType/Pag=
+ub.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Core/FieldType/Pag=
 e/Parts/Item.php" class=3D"external-link" rel=3D"nofollow">the available pr=
 operties</a>, you will find&nbsp;<code>contentId</code>&nbsp;and&nbsp;<code=
 >locationId</code>&nbsp;which reference the content/location you want to di=

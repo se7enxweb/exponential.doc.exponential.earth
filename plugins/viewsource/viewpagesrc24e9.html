@@ -42,7 +42,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
         <p>&nbsp;</p>         <p>It is possible to dynamically inject variables in content view templates by listening to the <code>
-    <strong>ezpublish.pre_content_view</strong>
+    <strong>exponential.pre_content_view</strong>
   </code> event.</p><p>The event listener method receives an<code> eZ\Publish\Core\MVC\Symfony\Event\PreContentViewEvent </code>object</p><h3>Example</h3><p>The following example will inject <code>foo</code> and <code>osTypes</code> variables in all content view templates.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a31f4e69-9357-4c3c-a0aa-ee5c27485bbc" data-macro-parameters="language=php" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading1802.png?definition=e2NvZGU6bGFuZ3VhZ2U9cGhwfQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>&lt;?php
 
 namespace Acme\DemoBundle\EventListener;
@@ -69,7 +69,7 @@ services:
     ezdemo.pre_content_view_listener:
         class: %ezdemo.pre_content_view_listener.class%
         tags:
-            - {name: kernel.event_listener, event: ezpublish.pre_content_view, method: onPreContentView}
+            - {name: kernel.event_listener, event: exponential.pre_content_view, method: onPreContentView}
 
 </pre></td></tr></table><p> </p><h5>Related topics:</h5><ul><li><a class="confluence-link" href="../../display/TECHDOC/Content%2bview.html" data-linked-resource-id="30711198" data-linked-resource-version="6" data-linked-resource-type="page" data-linked-resource-default-alias="Content view" data-base-url="../../index.html">Content view</a></li><li><a class="confluence-link" href="../../display/TECHDOC/Default%2bview%2btemplates.html" data-linked-resource-id="31424859" data-linked-resource-version="3" data-linked-resource-type="page" data-linked-resource-default-alias="Default view templates" data-base-url="../../index.html">Default view templates</a></li></ul>
         <p>&nbsp;</p>

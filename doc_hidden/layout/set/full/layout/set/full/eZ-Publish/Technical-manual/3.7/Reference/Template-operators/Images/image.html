@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.7/Reference/Template-operators/Images/image by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:17:09 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/3.7/Reference/Template-operators/Images/image by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:17:09 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                           
-    <title>image / Images / Template operators / Reference / 3.7 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>image / Images / Template operators / Reference / 3.7 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -118,13 +118,13 @@ An ezimage object.<h3>Description</h3>
 </tr>
  
 </table>
- <p>Please note that the &quot;x&quot; and &quot;xrel&quot; parameters can not be used at the same time. The same goes for the &quot;y&quot; and the &quot;yrel&quot; parameters. When &quot;right&quot; or &quot;bottom&quot; alignment is used, the coordinate system will shift to accommodate the alignment. This is useful for doing alignment and placement since the placement is relative to the current coordinate system. Right alignment will start the axis at the right (0) and go on to the left (width). Bottom alignment will start the axis at the bottom (0) and go on to the top (height).</p>   <a name="eztoc21267_0_0_4" id="eztoc21267_0_0_4"></a><h4>Template</h4> <p>If the operator is called directly, eZ Publish will display the resulting image using the &quot;layer/imageobject.tpl&quot; template located in the &quot;templates&quot; directory of the current design or one of the <a href="../../../Concepts-and-basics/Designs/Design-combinations.html#automatic_fallback" target="_self">fallback designs</a>. It is possible to override this template using the <a href="../../../Templates/The-template-override-system.html" target="_self">template override system</a>.</p>   <h3>Examples</h3>
+ <p>Please note that the &quot;x&quot; and &quot;xrel&quot; parameters can not be used at the same time. The same goes for the &quot;y&quot; and the &quot;yrel&quot; parameters. When &quot;right&quot; or &quot;bottom&quot; alignment is used, the coordinate system will shift to accommodate the alignment. This is useful for doing alignment and placement since the placement is relative to the current coordinate system. Right alignment will start the axis at the right (0) and go on to the left (width). Bottom alignment will start the axis at the bottom (0) and go on to the top (height).</p>   <a name="eztoc21267_0_0_4" id="eztoc21267_0_0_4"></a><h4>Template</h4> <p>If the operator is called directly, Exponential will display the resulting image using the &quot;layer/imageobject.tpl&quot; template located in the &quot;templates&quot; directory of the current design or one of the <a href="../../../Concepts-and-basics/Designs/Design-combinations.html#automatic_fallback" target="_self">fallback designs</a>. It is possible to override this template using the <a href="../../../Templates/The-template-override-system.html" target="_self">template override system</a>.</p>   <h3>Examples</h3>
     <a name="eztoc21268_0_0_1" id="eztoc21268_0_0_1"></a><h4>Example 1</h4> <pre class="wordwrap copytoclipboard"><span class="line">{image( imagefile( 'design/example/images/test1.png' ),</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imagefile( 'design/example/images/test2.png' ),</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'My alternative image text...' )}</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\n{image( imagefile( \'design/example/images/test1.png\' ),\r\n        imagefile( \'design/example/images/test2.png\' ),\r\n        \'My alternative image text...\' )}' ); return false;" /></p>
-<![endif]--> <p>The <a href="imagefile.html" target="_self">&quot;imagefile&quot;</a> operator loads the images from the filesystem and returns them as <a href="../../Objects/ezimagelayer.html" target="_self">&quot;ezimagelayer&quot;</a> objects. The &quot;image&quot; operator takes care of merging the images (layers) together into one single image. When the &quot;image&quot; operator is used directly (as in the example above), eZ Publish will insert the &quot;imageobject.tpl&quot; template (or an override) which in turn takes care of displaying the image. The last parameter is a string, which will be used as the alternative image text for the final image.</p>   <a name="eztoc21268_0_0_2" id="eztoc21268_0_0_2"></a><h4>Example 2</h4> <pre class="wordwrap"><span class="line">{image( &quot;It's A Kind Of Magic&quot;|texttoimage( 'arial' ) )}</span>
+<![endif]--> <p>The <a href="imagefile.html" target="_self">&quot;imagefile&quot;</a> operator loads the images from the filesystem and returns them as <a href="../../Objects/ezimagelayer.html" target="_self">&quot;ezimagelayer&quot;</a> objects. The &quot;image&quot; operator takes care of merging the images (layers) together into one single image. When the &quot;image&quot; operator is used directly (as in the example above), Exponential will insert the &quot;imageobject.tpl&quot; template (or an override) which in turn takes care of displaying the image. The last parameter is a string, which will be used as the alternative image text for the final image.</p>   <a name="eztoc21268_0_0_2" id="eztoc21268_0_0_2"></a><h4>Example 2</h4> <pre class="wordwrap"><span class="line">{image( &quot;It's A Kind Of Magic&quot;|texttoimage( 'arial' ) )}</span>
 </pre> <p>This example will render the string &quot;It's A Kind Of Magic&quot; using a truetype font specified within the &quot;arial&quot; style. The image layer produced by the &quot;texttoimage&quot; operator is wrapped inside an image object and displayed using the &quot;imageobject.tpl&quot; template (or an override).</p>   <a name="eztoc21268_0_0_3" id="eztoc21268_0_0_3"></a><h4>Example 3</h4> <pre class="wordwrap copytoclipboard"><span class="line">{image( &quot;It's A Kind Of Magic&quot;,</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imagefile( 'design/example/images/test1.png' ),</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array( &quot;It's A Kind Of Magic&quot;|texttoimage( 'smartie' ),</span>
@@ -139,11 +139,11 @@ An ezimage object.<h3>Description</h3>
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.7/Reference/Template-operators/Images/image by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:17:09 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/3.7/Reference/Template-operators/Images/image by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:17:09 GMT -->
 </html>

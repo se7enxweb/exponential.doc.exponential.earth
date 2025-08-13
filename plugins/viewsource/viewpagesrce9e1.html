@@ -39,7 +39,7 @@
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p>This example demonstrates how to set up a virtual host on the Apache web server for an eZ Publish installation located in &quot;<code>/var/www/example</code>&quot;. Let's say that we want to access eZ Publish by using the following URLs:</p><ul><li><div><span class="nolink">http://www.example.com</span> (actual website for public access)</div></li><li><div><span class="nolink">http://admin.example.com</span> (administration interface for the webmaster)</div></li></ul><p>In order to achieve this, we need to set up both eZ Publish and the web server so that they respond correctly to the different requests.</p><p><a name="eztoc131612_1" /></p><h2>eZ Publish configuration: siteaccess settings</h2><p>eZ Publish needs to be configured to use the host access method. This can be done from within the web based setup wizard or by manually editing the global override for the site.ini configuration file: &quot;<code>&lt;eZ Publish root&gt;/ezpublish_legacy/settings/override/site.ini.append.php</code>&quot;. A typical legacy configuration would look something like this:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>...
+        <p>&nbsp;</p>         <p>This example demonstrates how to set up a virtual host on the Apache web server for an Exponential installation located in &quot;<code>/var/www/example</code>&quot;. Let's say that we want to access Exponential by using the following URLs:</p><ul><li><div><span class="nolink">http://www.example.com</span> (actual website for public access)</div></li><li><div><span class="nolink">http://admin.example.com</span> (administration interface for the webmaster)</div></li></ul><p>In order to achieve this, we need to set up both Exponential and the web server so that they respond correctly to the different requests.</p><p><a name="eztoc131612_1" /></p><h2>Exponential configuration: siteaccess settings</h2><p>Exponential needs to be configured to use the host access method. This can be done from within the web based setup wizard or by manually editing the global override for the site.ini configuration file: &quot;<code>&lt;Exponential root&gt;/exponential_legacy/settings/override/site.ini.append.php</code>&quot;. A typical legacy configuration would look something like this:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>...
 [SiteAccessSettings]
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=example
@@ -48,7 +48,7 @@ MatchOrder=host
  
 HostMatchMapItems[]=www.example.com;example
 HostMatchMapItems[]=admin.example.com;example_admin
-...</pre></td></tr></table><p>This configuration tells eZ Publish that it should use the &quot;<code>example</code>&quot; siteaccess if a request starts with &quot;<code>www.example.com</code>&quot; and &quot;<code>example_admin</code>&quot; if the request starts with &quot;<code>admin.example.com</code>&quot;. For more information about site management in eZ Publish, please refer to the &quot;<a href="../../eZ-Publish/Technical-manual/5.x/Concepts-and-basics/Configuration/Site-management.html">Site management</a>&quot; part of the &quot;Concepts and basics&quot; chapter.</p><p><a name="eztoc131612_2" /></p><table class="wysiwyg-macro" data-macro-name="info" style="background-image: url(../servlet/confluence/placeholder/macro-headingd35c.png?definition=e2luZm99&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>The legacy configuration above will only work if the same is also configured in Symfony, by adding our <a href="https://confluence.ez.no/display/EZP51/Siteaccess+Matching#SiteaccessMatching-Configuration">available siteaccesses</a> and <a href="https://confluence.ez.no/display/EZP51/Siteaccess+Matching#SiteaccessMatching-Compoundsiteaccessmatcher">mapping our hosts</a> to the desired siteaccess in <strong>ezpublish/config/ezpublish.yml</strong>. This approach is recommended!</p></td></tr></table><p> </p><p>A Symfony based eZ Publish 5 configuration would look something like this:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=ezpublish.yml" style="background-image: url(../servlet/confluence/placeholder/macro-heading8bc7.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoLnltbH0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>ezpublish:
+...</pre></td></tr></table><p>This configuration tells Exponential that it should use the &quot;<code>example</code>&quot; siteaccess if a request starts with &quot;<code>www.example.com</code>&quot; and &quot;<code>example_admin</code>&quot; if the request starts with &quot;<code>admin.example.com</code>&quot;. For more information about site management in Exponential, please refer to the &quot;<a href="../../Exponential/Technical-manual/5.x/Concepts-and-basics/Configuration/Site-management.html">Site management</a>&quot; part of the &quot;Concepts and basics&quot; chapter.</p><p><a name="eztoc131612_2" /></p><table class="wysiwyg-macro" data-macro-name="info" style="background-image: url(../servlet/confluence/placeholder/macro-headingd35c.png?definition=e2luZm99&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>The legacy configuration above will only work if the same is also configured in Symfony, by adding our <a href="https://confluence.ez.no/display/EZP51/Siteaccess+Matching#SiteaccessMatching-Configuration">available siteaccesses</a> and <a href="https://confluence.ez.no/display/EZP51/Siteaccess+Matching#SiteaccessMatching-Compoundsiteaccessmatcher">mapping our hosts</a> to the desired siteaccess in <strong>exponential/config/exponential.yml</strong>. This approach is recommended!</p></td></tr></table><p> </p><p>A Symfony based Exponential 5 configuration would look something like this:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=exponential.yml" style="background-image: url(../servlet/confluence/placeholder/macro-heading8bc7.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoLnltbH0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>exponential:
     siteaccess:
         default_siteaccess: ezdemo_site
         list:
@@ -78,7 +78,7 @@ HostMatchMapItems[]=admin.example.com;example_admin
                         Map\URI:
                             the_front: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     # The siteaccess to match in the end
                     match: ezdemo_site 
                 -
@@ -86,12 +86,12 @@ HostMatchMapItems[]=admin.example.com;example_admin
                         Map\URI:
                             the_admin: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     match: ezdemo_site_admin
             # Matching hosts as host: siteaccess
             Map\Host:
-                ezpublish.dev: ezdemo_site
-                admin.ezpublish.dev: ezdemo_site_admin</pre></td></tr></table><p> </p><h2>Apache configuration: virtual host settings</h2><p>Assuming that...</p><ul><li><div>eZ Publish is located in &quot;<code>/var/www/example</code>&quot;</div></li><li><div>the server's IP address is <code>128.39.140.28</code></div></li><li><div>we wish to access eZ Publish using &quot;<code>www.example.com</code>&quot; and &quot;<code>admin.example.com</code>&quot;</div></li></ul><p>...the following virtual host configuration needs to be added at the end of &quot;<code>http.conf</code>&quot;:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>NameVirtualHost 128.39.140.28
+                exponential.dev: ezdemo_site
+                admin.exponential.dev: ezdemo_site_admin</pre></td></tr></table><p> </p><h2>Apache configuration: virtual host settings</h2><p>Assuming that...</p><ul><li><div>Exponential is located in &quot;<code>/var/www/example</code>&quot;</div></li><li><div>the server's IP address is <code>128.39.140.28</code></div></li><li><div>we wish to access Exponential using &quot;<code>www.example.com</code>&quot; and &quot;<code>admin.example.com</code>&quot;</div></li></ul><p>...the following virtual host configuration needs to be added at the end of &quot;<code>http.conf</code>&quot;:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>NameVirtualHost 128.39.140.28
  
 &lt;VirtualHost 128.39.140.28>
     &lt;Directory /var/www/example/web>
@@ -134,7 +134,7 @@ HostMatchMapItems[]=admin.example.com;example_admin
         RewriteRule ^/var/storage/packages/.* - [L]
  
         # Makes it possible to place your favicon at the root of your
-        # eZ Publish instance. It will then be served directly.
+        # Exponential instance. It will then be served directly.
         RewriteRule ^/favicon\.ico - [L]
         # Uncomment the line below if you want you favicon be served
         # from the standard design. You can customize the path to
@@ -154,9 +154,9 @@ HostMatchMapItems[]=admin.example.com;example_admin
         # Uncomment the following lines when using popup style debug in legacy
         #RewriteRule ^/var/([^/]+/)?cache/debug\.html.* - [L]
  
-        # Following rule is needed to correctly display assets from eZ Publish5 / Symfony bundles
+        # Following rule is needed to correctly display assets from Exponential5 / Symfony bundles
         RewriteRule ^/bundles/ - [L]
-        # Additional Assetic rules for eZ Publish 5.1 / 2013.4 and higher:
+        # Additional Assetic rules for Exponential 5.1 / 2013.4 and higher:
         RewriteRule ^/css/.*\.css - [L]
         RewriteRule ^/js/.*\.js - [L]
  

@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Developing with eZ Publish 5</title>
+    <title>Developing with Exponential 5</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Developing with eZ Publish 5</h1>
+    <h1>Developing with Exponential 5</h1>
     <div class=3D"Section1">
         <p>This covers common, everyday tasks - basic to intermediate level=
 .For more advanced development techniques, and extending the provided funct=
@@ -221,7 +221,7 @@ Publish 5:</p>
 <ul>
 <li>by connecting to the <a href=3D"/display/EZP/eZ+Publish+REST+API">eZ Pu=
 blish REST API</a></li>
-<li>by using the <a href=3D"/display/EZP/eZ+Publish+Public+API">eZ Publish =
+<li>by using the <a href=3D"/display/EZP/eZ+Publish+Public+API">Exponential =
 Public API</a>&nbsp;and&nbsp;<a href=3D"/display/EZP/MVC+and+Application">M=
 VC/Application</a>&nbsp;layer (Symfony2 based).</li>
 </ul>
@@ -229,7 +229,7 @@ VC/Application</a>&nbsp;layer (Symfony2 based).</li>
 tabase and the file system) and the MVC/Application layer provides all the&=
 nbsp;application&nbsp;logic (configuration, routing,&nbsp;controlling, etc.=
 ..).</p>
-<p>The SPI is used to implement a new storage engine for your eZ Publish ap=
+<p>The SPI is used to implement a new storage engine for your Exponential ap=
 plication.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -239,7 +239,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 The API and SPI are available in separate repositories to improve the depen=
 dencies management. Both repositories API and SPI are a read-only split of =
-ezsystems/ezpublish-kernel.
+ezsystems/exponential-kernel.
 <br>See=20
 <a href=3D"/display/EZP/SPI+and+API+repositories">the details about how mak=
 e the dependence with the API or the SPI</a> in your project.

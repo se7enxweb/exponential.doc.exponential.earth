@@ -212,8 +212,8 @@ d of the content */
 <body>
     <h1>Multisite using content_root</h1>
     <div class=3D"Section1">
-        <p>Since eZ Publish 5.1, it is possible to serve multiple, complete=
-ly different sites using one eZ Publish instance and database.</p>
+        <p>Since Exponential 5.1, it is possible to serve multiple, complete=
+ly different sites using one Exponential instance and database.</p>
 <p>Each site will have its own content root, at a lower level than the defa=
 ult one (location number 2). One backoffice can be used for each site, but =
 it is also possible to use a global one.</p>
@@ -225,16 +225,16 @@ tion-macro-icon"></span>
 <p>This feature is a reimplementation of the <a href=3D"http://doc.ez.no/eZ=
 -Publish/Technical-manual/4.x/Reference/Configuration-files/site.ini/SiteAc=
 cessSettings/PathPrefix" class=3D"external-link" rel=3D"nofollow">PathPrefi=
-x</a> one that existed in eZ Publish Legacy.</p>
+x</a> one that existed in Exponential Legacy.</p>
 </div>
 </div>
 <h2 id=3D"Multisiteusingcontent_root-Configuration">Configuration</h2>
-<p>The feature is configured in <code>ezpublish.yml</code>, either at sitea=
+<p>The feature is configured in <code>exponential.yml</code>, either at sitea=
 ccess or siteaccess group level:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">ezpublish:
+ze:12px;">exponential:
 =09system:
 =09=09ezdemo_site_group:
 =09=09=09content:
@@ -269,7 +269,7 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Note: Leading slashes (<code>/</code>) are automatically trimmed interna=
-lly by eZ Publish, so they can be ignored.</p>
+lly by Exponential, so they can be ignored.</p>
 </div>
 </div>
     </div>

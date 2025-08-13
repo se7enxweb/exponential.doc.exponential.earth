@@ -258,11 +258,11 @@ plate selection when using the <code>ViewController</code>, either directly=
  from a URL or via a sub-request.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
-<p class=3D"title">eZ Publish 4.x terminology</p>
+<p class=3D"title">Exponential 4.x terminology</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In eZ Publish 4.x, it was known as <strong>template override system <em>=
+<p>In Exponential 4.x, it was known as <strong>template override system <em>=
 by configuration</em> </strong> (<code>override.ini</code>).<br>However thi=
 s only reflects old overrides for <code>node/view/*.tpl</code> and <code>co=
 ntent/view/*.tpl</code>.</p>
@@ -280,7 +280,7 @@ way:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         # Can be a valid siteaccess, siteaccess group or even "global"
         front_siteaccess:
@@ -315,7 +315,7 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p><strong>Template matching will NOT work if your content contains a Field=
  Type that is not supported by the repository</strong>. It can be the case =
-when you are in the process of a migration from eZ Publish 4.x, where custo=
+when you are in the process of a migration from Exponential 4.x, where custo=
 m datatypes have been developed.</p>
 <p>In this case the repository will throw an exception, which is caught in =
 the <code>ViewController</code>, <span>and <em>if</em> you are using Legacy=
@@ -344,7 +344,7 @@ n></span><span>.</span></p>
 </div>
 <h3 id=3D"ContentRendering-Aboutlocation_view&amp;content_view">About&nbsp;=
 <code>location_view &amp; content_view</code></h3>
-<p>Until eZ Publish Platform 5.4, the main view action was <code>location_v=
+<p>Until Exponential Platform 5.4, the main view action was <code>location_v=
 iew</code>. This is deprecated since eZ Platform 15.12 (1.0). Only&nbsp;<co=
 de>content_view</code> should be used to view content, with a location as a=
 n option.</p>
@@ -594,7 +594,7 @@ when viewing Content with the&nbsp;<code>full</code> view type:</p>
 <p>The controller used to render content by default can also be changed. Th=
 e&nbsp;<code>ezsettings.default.content_view_defaults</code> container para=
 meter contains a hash that defines how content is rendered by default. It c=
-ontains a set of classic <a href=3D"https://github.com/ezsystems/ezpublish-=
+ontains a set of classic <a href=3D"https://github.com/ezsystems/exponential-=
 kernel/blob/v6.0.0/eZ/Bundle/EzPublishCoreBundle/Resources/config/default_s=
 ettings.yml#L21-L33" class=3D"external-link" rel=3D"nofollow">content view =
 rules for the common view types</a>. This hash can be redefined to whatever=
@@ -719,7 +719,7 @@ anipulate the Field Value object itself, or use a custom template.</p>
 <h4 id=3D"ContentRendering-GettingrawFieldvalue">Getting raw Field value</h=
 4>
 <p>Having access to the Content item in the template, you can use <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Co=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Co=
 re/Repository/Values/Content/Content.php" class=3D"external-link" rel=3D"no=
 follow">its public methods</a> to access all the information you need. You =
 can also use the&nbsp;<strong>ez_field_value</strong>&nbsp;helper to get th=
@@ -742,7 +742,7 @@ tifier' ) %}</pre>=20
 <h4 id=3D"ContentRendering-UsingtheFieldType'stemplateblock">Using the Fiel=
 d Type's template block</h4>
 <p>All built-in Field Types come with <a href=3D"https://github.com/ezsyste=
-ms/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/vie=
+ms/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/vie=
 ws/content_fields.html.twig" class=3D"external-link" rel=3D"nofollow">their=
  own Twig template</a>.&nbsp;You can render any Field using this default te=
 mplate using the&nbsp;<code>ez_render_field()</code> helper.</p>
@@ -866,7 +866,7 @@ onfiguration, for example:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             content_view:
@@ -954,7 +954,7 @@ iguration you need to indicate the controller, but no template, for example=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         default:
             content_view:
@@ -1158,7 +1158,7 @@ efine cache rules</strong>, like with every custom controller!</p>
 <p>So don't forget to <strong>set cache rules</strong> and the appropriate =
 <strong><code>X-Location-Id</code> header</strong> in the returned <code>Re=
 sponse</code> object.</p>
-<p><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/=
+<p><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/=
 Publish/Core/MVC/Symfony/Controller/Content/ViewController.php#L76" class=
 =3D"external-link" rel=3D"nofollow">See built-in ViewController</a> for mor=
 e details on this.</p>
@@ -1277,7 +1277,7 @@ onId']),
 "SomethingQueryType.php"</li>
 </ul>
 <p>If the QueryType has dependencies, it can be manually tagged as a servic=
-e using the&nbsp;<code>ezpublish.query_type</code> service tag, but it is n=
+e using the&nbsp;<code>exponential.query_type</code> service tag, but it is n=
 ot required in that case.</p>
 <h4 id=3D"ContentRendering-Thecontent_viewconfiguration">The content_view c=
 onfiguration</h4>
@@ -1290,7 +1290,7 @@ g", and uses the QueryController to fetch the blog posts:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
       system:
             site_group:
                &nbsp;content_view:
@@ -1572,7 +1572,7 @@ lly tagged in the service declaration:</p>
 t-size:12px;">acme.query.latest_content:
     class: AppBundle\Query\LatestContent
     tags:
-        - {name: ezpublish.query_type}</pre>=20
+        - {name: exponential.query_type}</pre>=20
 </div>
 </div>
 <p>The effect is exactly the same than registering by convention.</p>
@@ -1662,7 +1662,7 @@ meters['type']);
 r">Using QueryTypes from PHP code</span></h3>
 </div>
 <p>All QueryTypes are registered in a registry, the QueryType registry.</p>
-<p>It is available from the container as <code>ezpublish.query_type.registr=
+<p>It is available from the container as <code>exponential.query_type.registr=
 y</code></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -1673,11 +1673,11 @@ class MyCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $outp=
 ut)
     {
-        $queryType     =3D $this-&gt;getContainer()-&gt;get('ezpublish.quer=
+        $queryType     =3D $this-&gt;getContainer()-&gt;get('exponential.quer=
 y_type.registry')-&gt;getQueryType('AcmeBundle:LatestContent');
         $query         =3D $queryType-&gt;getQuery(['type' =3D&gt; 'article=
 ']);
-        $searchResults =3D $this-&gt;getContainer()-&gt;get('ezpublish.api.=
+        $searchResults =3D $this-&gt;getContainer()-&gt;get('exponential.api.=
 service.search')-&gt;findContent($query);
         foreach ($searchResults-&gt;searchHits as $searchHit) {
             $output-&gt;writeln($searchHit-&gt;valueObject-&gt;contentInfo-=
@@ -1857,7 +1857,7 @@ her one of the original actions.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         eng_frontend_group:
             block_view:
@@ -1983,7 +1983,7 @@ r\Content</code></p><p><code>eZ\Publish\Core\MVC\Legacy\View\Provider\Locat=
 ion</code></p></td>
 <td class=3D"confluenceTd"><p>Forwards view selection to the legacy kernel =
 by running the old content/view module.<br>Pagelayout used is the one confi=
-gured in <code>ezpublish_legacy.&lt;scope&gt;.view_default_layout</code>.<b=
+gured in <code>exponential_legacy.&lt;scope&gt;.view_default_layout</code>.<b=
 r>For more details about the <code>&lt;scope&gt;</code> please refer to the=
  <a href=3D"https://doc.ez.no/display/DEVELOPER/SiteAccess#SiteAccess-Confi=
 guration" rel=3D"nofollow">scope configuration</a> documentation.</p></td>
@@ -2014,8 +2014,8 @@ your application</li>
 reason</li>
 </ul>
 <p><code>View\Provider</code> objects need to be properly registered in the=
- service container with the <code> <strong>ezpublish.location_view_provider=
-</strong> </code> or&nbsp;<code> <strong>ezpublish.content_view_provider</s=
+ service container with the <code> <strong>exponential.location_view_provider=
+</strong> </code> or&nbsp;<code> <strong>exponential.content_view_provider</s=
 trong> </code>&nbsp;service tag.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -2028,7 +2028,7 @@ services:
     acme.location_view_provider:
         class: %ezdemo.location_view_provider.class%
         tags:
-            - {name: ezpublish.location_view_provider, priority: 30}
+            - {name: exponential.location_view_provider, priority: 30}
 
 </pre>=20
 </div>
@@ -2166,7 +2166,7 @@ ns Reference</a> for detailed information on all available Twig functions.<=
 <h2 id=3D"ContentRendering-Events">Events</h2>
 <h3 id=3D"ContentRendering-Introduction.1">Introduction</h3>
 <p>This page presents the events that are triggered by eZ Platform.</p>
-<h3 id=3D"ContentRendering-eZPublishCore">eZ Publish Core</h3>
+<h3 id=3D"ContentRendering-ExponentialCore">Exponential Core</h3>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -2176,7 +2176,7 @@ ns Reference</a> for detailed information on all available Twig functions.<=
 <th class=3D"confluenceTh">Usage</th>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><strong> <code>ezpublish.siteacces=
+<td colspan=3D"1" class=3D"confluenceTd"><strong> <code>exponential.siteacces=
 s</code> </strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">After the SiteAccess matching has =
 occurred.</td>
@@ -2186,7 +2186,7 @@ ish\Core\MVC\Symfony\Event\PostSiteAccessMatchEvent</code>&nbsp;object.</p>=
 </td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><strong> <code>ezpublish.pre_conte=
+<td colspan=3D"1" class=3D"confluenceTd"><strong> <code>exponential.pre_conte=
 nt_view</code> </strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">Right before a view is rendered fo=
 r a content item, via the content view controller.</td>
@@ -2197,7 +2197,7 @@ pan>Core\</span>MVC\Symfony\Event\PreContentViewEvent </code>object.<p>&nbs=
 p;</p></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code> <strong>ezpublish.api.conte=
+<td colspan=3D"1" class=3D"confluenceTd"><code> <strong>exponential.api.conte=
 ntException</strong> </code></td>
 <td colspan=3D"1" class=3D"confluenceTd">The API throws an exception that c=
 ould not be caught internally (missing field type, internal error...).</td>

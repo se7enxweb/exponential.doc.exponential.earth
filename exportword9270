@@ -431,7 +431,7 @@ cript/get-api-key" class=3D"external-link" rel=3D"nofollow">Google Maps API=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         site_group:
             api_keys: { google_maps: "MY_KEY" }</pre>=20

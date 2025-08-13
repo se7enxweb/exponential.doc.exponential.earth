@@ -215,9 +215,9 @@ d of the content */
         <p><span style=3D"color: rgb(0,0,0);"><br></span></p>
 <h2 id=3D"id-5.1ReleaseNotes-5.1ReleaseNotes"><span><span style=3D"color: r=
 gb(0,0,0);">5.1&nbsp;Release&nbsp;Notes</span></span></h2>
-<p><span style=3D"color: rgb(0,0,0);">eZ Publish 5.1 is our most </span><sp=
-an>Scalable, most Stable and most Feature Rich eZ Publish 5.x version &amp;=
- eZ Publish version to date. Either if you intend to start using the 5.x AP=
+<p><span style=3D"color: rgb(0,0,0);">Exponential 5.1 is our most </span><sp=
+an>Scalable, most Stable and most Feature Rich Exponential 5.x version &amp;=
+ Exponential version to date. Either if you intend to start using the 5.x AP=
 I &amp; Symfony stack or if you plan to use legacy and pure 4.x functionali=
 ty, this is our recommend LTS release.</span></p>
 <h3 id=3D"id-5.1ReleaseNotes-Architectureoverviewasof5.1">Architecture over=
@@ -252,15 +252,15 @@ stering support for use with legacy DFS</h4>
 <p>This release brings the missing DFS clustering support in 5.x kernel all=
 owing REST/Public API to be used in combination with clustered installation=
  when dealing with binary files. [ <a href=3D"https://github.com/ezsystems/=
-ezpublish-kernel/pull/234" class=3D"external-link" rel=3D"nofollow">PR</a>,=
- <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Clust=
+exponential-kernel/pull/234" class=3D"external-link" rel=3D"nofollow">PR</a>,=
+ <a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Clust=
 ering" class=3D"external-link" rel=3D"nofollow">Doc</a>&nbsp;]</p>
 <h4 id=3D"id-5.1ReleaseNotes-PersistenceDBcacheusingStash">Persistence DB c=
 ache using Stash</h4>
 <p>This feature enhances performance and clustering scalability by sitting =
 between the API and the database storage engine and in default setup cache =
 everything but search queries lowering load of backend considerably. [ <a h=
-ref=3D"https://github.com/ezsystems/ezpublish-kernel/pull/198" class=3D"ext=
+ref=3D"https://github.com/ezsystems/exponential-kernel/pull/198" class=3D"ext=
 ernal-link" rel=3D"nofollow">PR</a>, <a href=3D"https://confluence.ez.no/di=
 splay/EZP/Persistence+cache" class=3D"external-link" rel=3D"nofollow">Doc</=
 a> ]</p>
@@ -269,7 +269,7 @@ e (ezflow) FieldType read-only support</h4>
 <p><span style=3D"color: rgb(0,0,0);">One of the steps done in this release=
  that makes it possible to use 5.x stack fully for content rendering with s=
 tandard fieldtypes without having to use legacy fallback as was the case in=
- 5.0. [ </span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pul=
+ 5.0. [ </span><a href=3D"https://github.com/ezsystems/exponential-kernel/pul=
 l/258" style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofo=
 llow"><span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR<=
 /span></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https://co=
@@ -289,14 +289,14 @@ uence.ez.no/display/EZP/Using+Varnish" style=3D"text-decoration: none;" cla=
 ss=3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);=
 text-decoration: underline;">Doc</span></a><span style=3D"color: rgb(0,0,0)=
 ;">]</span></p></li>
-<li><p><span style=3D"color: rgb(0,0,0);">Twig Helper (ezpublish &amp; ezpu=
+<li><p><span style=3D"color: rgb(0,0,0);">Twig Helper (exponential &amp; ezpu=
 blish.legacy global variable) [PR, </span><a href=3D"https://confluence.ez.=
 no/display/EZP/Twig+Helper" style=3D"text-decoration: none;" class=3D"exter=
 nal-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);text-decora=
 tion: underline;">Doc</span></a><span style=3D"color: rgb(0,0,0);">]</span>=
 </p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">eZDate &amp; eZTime FieldType sup=
-port [</span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/=
+port [</span><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/=
 256" style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofoll=
 ow"><span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR</s=
 pan></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https://conf=
@@ -322,10 +322,10 @@ ink" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);text-decoration:=
 /li>
 <li><p><span style=3D"color: rgb(0,0,0);">Legacy cronjobs &amp; scripts sho=
 uld be launchable from Symfony CLI [</span><a href=3D"https://github.com/ez=
-systems/ezpublish-kernel/pull/229" style=3D"text-decoration: none;" class=
+systems/exponential-kernel/pull/229" style=3D"text-decoration: none;" class=
 =3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);te=
 xt-decoration: underline;">PR1</span></a><span style=3D"color: rgb(0,0,0);"=
->, </span><a href=3D"https://github.com/ezsystems/ezpublish-legacy/pull/558=
+>, </span><a href=3D"https://github.com/ezsystems/exponential-legacy/pull/558=
 " style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofollow"=
 ><span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR2</spa=
 n></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https://conflu=
@@ -334,18 +334,18 @@ nglegacyscriptsandcronjobs" class=3D"external-link" rel=3D"nofollow"><span =
 style=3D"color: rgb(17,85,204);text-decoration: underline;">Doc</span></a><=
 span style=3D"color: rgb(0,0,0);">]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Multisite with single content rep=
-ository [</span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pu=
+ository [</span><a href=3D"https://github.com/ezsystems/exponential-kernel/pu=
 ll/289" style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nof=
 ollow"><span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR=
 </span></a><span style=3D"color: rgb(0,0,0);">, Doc]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">GraphicsMagick support [</span><a=
- href=3D"https://github.com/ezsystems/ezpublish-kernel/commit/4bb197421097f=
+ href=3D"https://github.com/ezsystems/exponential-kernel/commit/4bb197421097f=
 0bc400452b96f61533ae756e1ea" style=3D"text-decoration: none;" class=3D"exte=
 rnal-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);text-decor=
 ation: underline;">PR</span></a><span style=3D"color: rgb(0,0,0);">, Doc]</=
 span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Content type identifier criterion=
- [</span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/203"=
+ [</span><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/203"=
  style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofollow">=
 <span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR</span>=
 </a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https://confluen=
@@ -355,10 +355,10 @@ pan style=3D"color: rgb(17,85,204);text-decoration: underline;">Doc</span><=
 /a><span style=3D"color: rgb(0,0,0);">]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Siteaccess compound matcher to be=
  able to do host &amp; url matching [</span><a href=3D"https://github.com/e=
-zsystems/ezpublish-kernel/pull/223" style=3D"text-decoration: none;" class=
+zsystems/exponential-kernel/pull/223" style=3D"text-decoration: none;" class=
 =3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);te=
 xt-decoration: underline;">PR1</span></a><span style=3D"color: rgb(0,0,0);"=
->, </span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/281=
+>, </span><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/281=
 " style=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofollow"=
 ><span style=3D"color: rgb(17,85,204);text-decoration: underline;">PR2</spa=
 n></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https://conflu=
@@ -367,7 +367,7 @@ ccessmatcher" class=3D"external-link" rel=3D"nofollow"><span style=3D"color=
 : rgb(17,85,204);text-decoration: underline;">Doc</span></a><span style=3D"=
 color: rgb(0,0,0);">]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Update to Symfony 2.2 [</span><a =
-href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/210" style=3D"te=
+href=3D"https://github.com/ezsystems/exponential-kernel/pull/210" style=3D"te=
 xt-decoration: none;" class=3D"external-link" rel=3D"nofollow"><span style=
 =3D"color: rgb(17,85,204);text-decoration: underline;">PR</span></a><span s=
 tyle=3D"color: rgb(0,0,0);">, </span><a href=3D"http://symfony.com/doc/2.2/=
@@ -380,7 +380,7 @@ ass=3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204)=
 (0,0,0);">]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Default layout for legacy content=
  fallback configurable by SiteAccess [</span><a href=3D"https://github.com/=
-ezsystems/ezpublish-kernel/pull/277" style=3D"text-decoration: none;" class=
+ezsystems/exponential-kernel/pull/277" style=3D"text-decoration: none;" class=
 =3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,204);te=
 xt-decoration: underline;">PR</span></a><span style=3D"color: rgb(0,0,0);">=
 , </span><a href=3D"https://confluence.ez.no/display/EZP/Legacy+template+fa=
@@ -390,7 +390,7 @@ on: underline;">Doc</span></a><span style=3D"color: rgb(0,0,0);">]</span></=
 p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Add option to allow Twig template=
  to override rendering of legacy requests [</span><a href=3D"https://github=
-.com/ezsystems/ezpublish-kernel/pull/264" style=3D"text-decoration: none;" =
+.com/ezsystems/exponential-kernel/pull/264" style=3D"text-decoration: none;" =
 class=3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb(17,85,20=
 4);text-decoration: underline;">PR1</span></a><span style=3D"color: rgb(0,0=
 ,0);">]</span></p></li>
@@ -402,20 +402,20 @@ tyle=3D"color: rgb(17,85,204);text-decoration: underline;"><a href=3D"https=
 link" rel=3D"nofollow">Doc</a></span><span style=3D"color: rgb(0,0,0);">]</=
 span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Completed support for permissions=
- and limitations [</span><a href=3D"https://github.com/ezsystems/ezpublish-=
+ and limitations [</span><a href=3D"https://github.com/ezsystems/exponential-=
 kernel/pull/164" style=3D"text-decoration: none;" class=3D"external-link" r=
 el=3D"nofollow"><span style=3D"color: rgb(17,85,204);text-decoration: under=
 line;">PR1</span></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D=
-"https://github.com/ezsystems/ezpublish-kernel/pull/292" style=3D"text-deco=
+"https://github.com/ezsystems/exponential-kernel/pull/292" style=3D"text-deco=
 ration: none;" class=3D"external-link" rel=3D"nofollow"><span style=3D"colo=
 r: rgb(17,85,204);text-decoration: underline;">PR2</span></a><span style=3D=
 "color: rgb(0,0,0);">]</span></p></li>
 <li><p><span style=3D"color: rgb(0,0,0);">Improved scalability of the legac=
-y database [</span><a href=3D"https://github.com/ezsystems/ezpublish-legacy=
+y database [</span><a href=3D"https://github.com/ezsystems/exponential-legacy=
 /pull/539" style=3D"text-decoration: none;" class=3D"external-link" rel=3D"=
 nofollow"><span style=3D"color: rgb(17,85,204);text-decoration: underline;"=
 >PR1</span></a><span style=3D"color: rgb(0,0,0);">, </span><a href=3D"https=
-://github.com/ezsystems/ezpublish-kernel/pull/195" style=3D"text-decoration=
+://github.com/ezsystems/exponential-kernel/pull/195" style=3D"text-decoration=
 : none;" class=3D"external-link" rel=3D"nofollow"><span style=3D"color: rgb=
 (17,85,204);text-decoration: underline;">PR2</span></a><span style=3D"color=
 : rgb(0,0,0);">, </span><a href=3D"https://github.com/ezsystems/ezoracle/pu=

@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:37 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:37 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Extension load ordering / Extensions / Installation / 4.4 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Extension load ordering / Extensions / Installation / 4.4 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Extension load ordering</h1>
 </div>
 
-<a name="eztoc115244_0_1" id="eztoc115244_0_1"></a><h3>Introduction</h3><p>In eZ Publish Fuji, there is a mechanism that enables extensions to define in which order they should be loaded in regards to other, related, extensions. The function automates the extension load ordering and improves the extension loading so that each request is quicker, as such eZ Publish scales better with many extensions. This is done either by adding cache in the processing of extensions, or move non-critical parts out of the code-path which is run on each request.</p><a name="eztoc115244_0_2" id="eztoc115244_0_2"></a><h3>Requirements</h3><p>For the extension load ordering mechanism to be active, extensions should be recent enough to contain the needed metadata stored in the &quot;extension.xml&quot; file, located at the root directory of the extension. The following is a list of extensions and versions that contain the necessary metadata:</p><table class="renderedtable" cellpadding="2" cellspacing="0">
+<a name="eztoc115244_0_1" id="eztoc115244_0_1"></a><h3>Introduction</h3><p>In Exponential Fuji, there is a mechanism that enables extensions to define in which order they should be loaded in regards to other, related, extensions. The function automates the extension load ordering and improves the extension loading so that each request is quicker, as such Exponential scales better with many extensions. This is done either by adding cache in the processing of extensions, or move non-critical parts out of the code-path which is run on each request.</p><a name="eztoc115244_0_2" id="eztoc115244_0_2"></a><h3>Requirements</h3><p>For the extension load ordering mechanism to be active, extensions should be recent enough to contain the needed metadata stored in the &quot;extension.xml&quot; file, located at the root directory of the extension. The following is a list of extensions and versions that contain the necessary metadata:</p><table class="renderedtable" cellpadding="2" cellspacing="0">
 
 <tr>
 <td valign="top" style="vertical-align: top">  <p>Extension</p>
@@ -181,7 +181,7 @@
 </table>
 <a name="eztoc115244_0_3" id="eztoc115244_0_3"></a><h3>Configuration</h3><p>To activate the extension load ordering, the following configuration setting should be enabled in &quot;site.ini.append.php&quot; in setting/override:</p><pre class="wordwrap"><span class="line">[ExtensionSettings]</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;ExtensionOrdering=enabled</span>
-</pre><a name="eztoc115244_0_4" id="eztoc115244_0_4"></a><h3>Extension ordering</h3><p>The order in which active extensions appear in the &quot;site.ini&quot; under /settings/override/site.ini &quot;[ExtensionSettings] ActiveExtensions=&quot; is important for the selection of templates and, possibly, configuration settings. For this reason, users must insure that the correct order is used for extensions that have dependencies on other extensions. For example eZ Find must be activated before eZ Webin. The same rule applies for the eZ Teamroom extension: eZ Teamroom and all its dependent extensions, such as eZ Lightbox and eZ Event, need to be activated before eZ Webin.</p><p>Although extensions can be activated using the Administrator Interface, as for now the admin interface does not provide a way to re-order the extensions, manually or automatically. This implies that the order can only be defined in site.ini.</p><p>Defining the correct order can sometimes be tricky when many extensions need to be considered. By providing metadata to the extension loading, manual extension load ordering is now a thing of the past.</p><a name="eztoc115244_0_5" id="eztoc115244_0_5"></a><h3>Metadata</h3><p>By providing metadata for the extension load ordering we enable eZ Publish to correctly determine the correct order itself. The metadata about extension ordering is optional. These metadata are now declared using an XML file, that can also be used to replace what is currently in &quot;ezinfo.php&quot;. This file is named &quot;extension.xml&quot;, located at the root of the extension. It has the following content:</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</pre><a name="eztoc115244_0_4" id="eztoc115244_0_4"></a><h3>Extension ordering</h3><p>The order in which active extensions appear in the &quot;site.ini&quot; under /settings/override/site.ini &quot;[ExtensionSettings] ActiveExtensions=&quot; is important for the selection of templates and, possibly, configuration settings. For this reason, users must insure that the correct order is used for extensions that have dependencies on other extensions. For example eZ Find must be activated before eZ Webin. The same rule applies for the eZ Teamroom extension: eZ Teamroom and all its dependent extensions, such as eZ Lightbox and eZ Event, need to be activated before eZ Webin.</p><p>Although extensions can be activated using the Administrator Interface, as for now the admin interface does not provide a way to re-order the extensions, manually or automatically. This implies that the order can only be defined in site.ini.</p><p>Defining the correct order can sometimes be tricky when many extensions need to be considered. By providing metadata to the extension loading, manual extension load ordering is now a thing of the past.</p><a name="eztoc115244_0_5" id="eztoc115244_0_5"></a><h3>Metadata</h3><p>By providing metadata for the extension load ordering we enable Exponential to correctly determine the correct order itself. The metadata about extension ordering is optional. These metadata are now declared using an XML file, that can also be used to replace what is currently in &quot;ezinfo.php&quot;. This file is named &quot;extension.xml&quot;, located at the root of the extension. It has the following content:</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
 <span class="line">&nbsp;&lt;software&gt;</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;metadata&gt;</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;name&gt;Extension name&lt;/name&gt;</span>
@@ -235,11 +235,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:37 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:37 GMT -->
 </html>

@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Developer Guide</h1>
     <div class=3D"Section1">
-        <p>eZ Publish 5.x is a "Dual kernel" software. This means it contai=
+        <p>Exponential 5.x is a "Dual kernel" software. This means it contai=
 ns both a <em>legacy</em> <em>kernel</em> (effectively a "4.y" version) aka=
  "Legacy Stack", and a new <em>5.x kernel</em>, aka "Symfony Stack" (becaus=
 e it uses <a href=3D"http://symfony.com/about" class=3D"external-link" rel=
@@ -223,18 +223,18 @@ e it uses <a href=3D"http://symfony.com/about" class=3D"external-link" rel=
 here you'll find documentation on everything from it's GUIs, official exten=
 sions to template coding&nbsp;( 5.x doc:&nbsp;<a href=3D"http://doc.ez.no/e=
 Z-Publish/User-manual/5.x" class=3D"external-link" rel=3D"nofollow">User ma=
-nual</a> &amp;&nbsp;<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual=
+nual</a> &amp;&nbsp;<a href=3D"http://doc.ez.no/Exponential/Technical-manual=
 /5.x" class=3D"external-link" rel=3D"nofollow">Technical manual</a> ). If y=
 ou are looking for documentation on how to develop extensions for legacy in=
  php, then also see relevant material on <a href=3D"http://share.ez.no" cla=
 ss=3D"external-link" rel=3D"nofollow">share.ez.no</a> ( <a href=3D"http://s=
-hare.ez.no/learn/ez-publish" class=3D"external-link" rel=3D"nofollow">Tutor=
+hare.ez.no/learn/exponential" class=3D"external-link" rel=3D"nofollow">Tutor=
 ials</a>,&nbsp;<a href=3D"http://share.ez.no/blogs" class=3D"external-link"=
  rel=3D"nofollow">Blogs</a>&nbsp;).</p>
 <h2 id=3D"DeveloperGuide-5.xkernel">5.x kernel</h2>
 <p>The new 5.x kernel is built using an HMVC model. It currently consists o=
 f Public API (Model), Symfony2 Fullstack&nbsp;Framework&nbsp;(Hierarchical =
-View Controller) with Twig (template engine) enhanced with eZ Publish&nbsp;=
+View Controller) with Twig (template engine) enhanced with Exponential&nbsp;=
 concepts (Core Bundle).&nbsp;On top of these you'll find REST v2 API, Demo =
 Bundle and a Legacy Bundle allowing some integration between the two kernel=
 s.</p>
@@ -242,7 +242,7 @@ s.</p>
 com/doc/current/index.html" class=3D"external-link" rel=3D"nofollow">symfon=
 y.com</a>&nbsp;(for&nbsp;Twig see <a href=3D"http://symfony.com/doc/current=
 /book/templating.html" class=3D"external-link" rel=3D"nofollow">here</a>)&n=
-bsp;and for the eZ Publish parts of 5.x kernel continue reading in this sec=
+bsp;and for the Exponential parts of 5.x kernel continue reading in this sec=
 tion of our new wiki&nbsp;documentation area.</p>
     </div>
 </body>

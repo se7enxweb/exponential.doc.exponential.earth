@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/View-caching/Clearing-the-view-cache by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:08:36 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/View-caching/Clearing-the-view-cache by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:08:36 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Clearing the view cache / View caching / Features / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Clearing the view cache / View caching / Features / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -45,7 +45,7 @@
 <table bgcolor="#eeeeee">
 <tr>
     <td>
-    <p>This part of the 4.x documentation is for eZ Publish 4.0, only&nbsp;<i><a href="../../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all eZ Publish 4.x versions as well as eZ Publish 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../../../../../eZ-Publish/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
+    <p>This part of the 4.x documentation is for Exponential 4.0, only&nbsp;<i><a href="../../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all Exponential 4.x versions as well as Exponential 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../../../../../Exponential/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
     </td>
 </tr>
 </table>
@@ -72,16 +72,16 @@
 
 </div> </div></li>
 </ol>
-<p>You can also clear the view cache for the entire subtree (together with the node itself) by selecting the &quot;Delete the view cache from here&quot; item from the pop-up menu.</p><a name="eztoc86274_2" id="eztoc86274_2"></a><h2>Using the script</h2><p>It is possible to clear the view cache for a specific node or subtree using the &quot;ezcontentcache.php&quot; script located in the &quot;bin/php&quot; directory of the eZ Publish installation. The following examples demonstrate how this can be done.</p><a name="eztoc86274_2_1" id="eztoc86274_2_1"></a><h3>Example 1</h3><p>Let's say that node 46 is the company about page (http://www.mysite.com/company/about) and you have made some changes to a custom template that is used for this node. If view caching is enabled, your changes will not be seen until you clear the view cache for node 46:</p>
+<p>You can also clear the view cache for the entire subtree (together with the node itself) by selecting the &quot;Delete the view cache from here&quot; item from the pop-up menu.</p><a name="eztoc86274_2" id="eztoc86274_2"></a><h2>Using the script</h2><p>It is possible to clear the view cache for a specific node or subtree using the &quot;ezcontentcache.php&quot; script located in the &quot;bin/php&quot; directory of the Exponential installation. The following examples demonstrate how this can be done.</p><a name="eztoc86274_2_1" id="eztoc86274_2_1"></a><h3>Example 1</h3><p>Let's say that node 46 is the company about page (http://www.mysite.com/company/about) and you have made some changes to a custom template that is used for this node. If view caching is enabled, your changes will not be seen until you clear the view cache for node 46:</p>
 <ol>
-<li><div> Navigate into the eZ Publish directory. </div></li><li><div> Run the script using the following command: <pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-node=46</span>
+<li><div> Navigate into the Exponential directory. </div></li><li><div> Run the script using the following command: <pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-node=46</span>
 </pre>or<pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-node=/company/about</span>
 </pre></div></li>
 </ol>
 <p>This will clear the view cache for node 46 (and for other locations of the same object, if any), their parent nodes, nodes of objects containing the same keywords, nodes of related and reverse related objects that have relations of the &quot;common&quot; type and nodes of reverse related objects that have relations of the &quot;XML embedded&quot; type. If you need to clear view caches for several nodes, specify their ID numbers (or nice URLs) separated by commas:</p><pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-node=46,59,63</span>
 </pre><p>The script will clear all content caches related to each of the given nodes.</p><a name="eztoc86274_2_2" id="eztoc86274_2_2"></a><h3>Example 2</h3><p>Let's say that node 72 is the company news folder (http://www.mysite.com/company/news) containing a lot of news articles. To clear the view caches for this folder and the nodes below it, do the following:</p>
 <ol>
-<li><div> Navigate into the eZ Publish directory. </div></li><li><div> Run the script using the following command:<pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-subtree=72</span>
+<li><div> Navigate into the Exponential directory. </div></li><li><div> Run the script using the following command:<pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-subtree=72</span>
 </pre>or<pre class="wordwrap"><span class="line">./bin/php/ezcontentcache.php --clear-subtree=/company/news</span>
 </pre></div></li>
 </ol>
@@ -92,11 +92,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/View-caching/Clearing-the-view-cache by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:08:36 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/View-caching/Clearing-the-view-cache by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:08:36 GMT -->
 </html>

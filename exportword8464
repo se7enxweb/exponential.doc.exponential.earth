@@ -218,17 +218,17 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This recipe is compatible with <strong>eZ Publish 5.1 / 2013.05</strong>=
+<p>This recipe is compatible with <strong>Exponential 5.1 / 2013.05</strong>=
 </p>
 </div>
 </div>
 <h1 id=3D"HowtoimplementaCustomTagforXMLTextFieldType-Customtags">Custom ta=
 gs</h1>
-<p>As of eZ Publish 5.2 <strong>XMLText fieldtype</strong> supports a limit=
+<p>As of Exponential 5.2 <strong>XMLText fieldtype</strong> supports a limit=
 ed number of tags in its internal eZXML format to render HTML5. However, it=
  is possible to extend the rendering by implementing <strong>custom tags</s=
 trong>.</p>
-<p>As HTML5 rendering in eZ Publish is done through <a href=3D"http://en.wi=
+<p>As HTML5 rendering in Exponential is done through <a href=3D"http://en.wi=
 kipedia.org/wiki/XSLT" class=3D"external-link" rel=3D"nofollow">XSLT</a>, y=
 ou will need to create an XSL stylesheet to extend the rendering.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -238,7 +238,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>To be able to edit a custom tag from admin interface, you'll still need =
-to <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Da=
+to <a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Reference/Da=
 tatypes/XML-block/Custom-tags" class=3D"external-link" rel=3D"nofollow">reg=
 ister your custom tag in the legacy kernel</a> (at least the configuration =
 part, template not being mandatory for edition).</p>
@@ -263,12 +263,12 @@ tomXSLstylesheet">Register your custom XSL stylesheet</a></li>=20
 <p></p>
 <h2 id=3D"HowtoimplementaCustomTagforXMLTextFieldType-RegisteryourcustomXSL=
 stylesheet">Register your custom XSL stylesheet</h2>
-<p>For eZ Publish 5.1, there's a possible workaround that uses <code>eZXml2=
+<p>For Exponential 5.1, there's a possible workaround that uses <code>eZXml2=
 Html5.xsl</code> as a starting point, and require the following steps:</p>
 <ol>
 <li>Copy the three files <code>eZXml2Html5.xsl</code>, <code>eZXml2Html5_co=
 re.xsl</code> and <code>eZXml2Html5_custom.xsl</code> files from <code>vend=
-or/ezsystems/ezpublish-kernel/eZ/Publish/Core/FieldType/XmlText/Input/Resou=
+or/ezsystems/exponential-kernel/eZ/Publish/Core/FieldType/XmlText/Input/Resou=
 rces/stylesheets/</code> to your bundle</li>
 <li><p>Edit your main file,&nbsp;<code>eZXml2Html5.xsl</code> in our exampl=
 e, to something like the following:</p>
@@ -283,9 +283,9 @@ e, to something like the following:</p>
 =09&lt;xsl:stylesheet=20
 =09=09=09version=3D"1.0"=20
 =09=09=09xmlns:xsl=3D"http://www.w3.org/1999/XSL/Transform"=20
-=09=09=09xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"=20
-=09=09=09xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"=20
-=09=09=09xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"=20
+=09=09=09xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"=20
+=09=09=09xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"=20
+=09=09=09xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"=20
 =09=09=09exclude-result-prefixes=3D"xhtml custom image"&gt;
 
 =09&lt;xsl:import href=3D"eZXml2Html5_core.xsl" /&gt;
@@ -308,9 +308,9 @@ lowing example:</p>
 =09&lt;xsl:stylesheet
         version=3D"1.0"
         xmlns:xsl=3D"http://www.w3.org/1999/XSL/Transform"
-        xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"
-        xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"
-        xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"
+        xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"
+        xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"
+        xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"
         exclude-result-prefixes=3D"xhtml custom image"&gt;
 =20
     &lt;xsl:output method=3D"html" indent=3D"yes" encoding=3D"UTF-8"/&gt;
@@ -337,12 +337,12 @@ te&gt;
 &lt;/xsl:stylesheet&gt;</pre>=20
 </div>
 </div></li>
-<li><p>Add the path where your .xsl files were placed to <code>ezpublish/co=
+<li><p>Add the path where your .xsl files were placed to <code>exponential/co=
 nfig/parameters.yml</code>, for example:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>parameters:
-    ezpublish.fieldType.ezxmltext.converter.html5.resources: %kernel.root_d=
+    exponential.fieldType.ezxmltext.converter.html5.resources: %kernel.root_d=
 ir%/../src/MyBundle/Resources/eZXml2Html5.xsl</pre>=20
 </div>
 </div></li>

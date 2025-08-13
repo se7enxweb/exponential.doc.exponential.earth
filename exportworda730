@@ -272,13 +272,13 @@ ring</a>=20
 </div>
 <p></p>
 <h2 id=3D"Contentview-TheViewController">The ViewController</h2>
-<p>eZ Publish comes with a native controller to display your content, known=
+<p>Exponential comes with a native controller to display your content, known=
  as the <strong><code>ViewController</code></strong>. It is called each tim=
 e you try to reach a content item from its <strong>Url Alias</strong> (<em>=
 human readable,&nbsp;</em><em>translatable</em>&nbsp;URI generated for any =
 content based on URL patterns defined per Content Type) and is able to rend=
 er any content previously edited in the admin interface or via the <a href=
-=3D"/display/EZP/eZ+Publish+Public+API">eZ Publish Public API</a>.</p>
+=3D"/display/EZP/eZ+Publish+Public+API">Exponential Public API</a>.</p>
 <p>It can also be called directly by its direct URI : <code>/content/locati=
 on/&lt;locationId&gt;</code></p>
 <p>A content item can also have different <strong>view types</strong> (full=
@@ -410,7 +410,7 @@ holding all fields.</p>
 anipulate the Field Value object itself or use a template.</p>
 <h4 id=3D"Contentview-GettingrawFieldvalue">Getting raw Field value</h4>
 <p>Having access to the Content object in the template, you can use <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Co=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Co=
 re/Repository/Values/Content/Content.php" class=3D"external-link" rel=3D"no=
 follow">its public methods</a> to access to all the information you need. Y=
 ou can also use&nbsp;<a href=3D"/display/EZP/ez_field_value">ez_field_value=
@@ -432,7 +432,7 @@ tifier' ) %}</pre>=20
 <h4 id=3D"Contentview-UsingtheFieldType'stemplateblock">Using the FieldType=
 's template block</h4>
 <p>All built-in FieldTypes come with <a href=3D"https://github.com/ezsystem=
-s/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/view=
+s/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/view=
 s/content_fields.html.twig" class=3D"external-link" rel=3D"nofollow">a piec=
 e of Twig template code</a> you can take advantage of by calling <code>ez_r=
 ender_field()</code> helper.</p>
@@ -511,7 +511,7 @@ e() reference page</a> for further information.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">// Assuming we're in a controller action
-$translationHelper =3D $this-&gt;get( 'ezpublish.translation_helper' );
+$translationHelper =3D $this-&gt;get( 'exponential.translation_helper' );
 &nbsp;
 // From Content
 $translatedContentName =3D $translationHelper-&gt;getTranslatedContentName(=
@@ -544,7 +544,7 @@ ong>force a locale</strong> in a 2nd argument:</span></p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">// Assuming we're in a controller action
-$translatedContentName =3D $this-&gt;get( 'ezpublish.translation_helper' )-=
+$translatedContentName =3D $this-&gt;get( 'exponential.translation_helper' )-=
 &gt;getTranslatedName( $content, 'fre-FR' );</pre>=20
 </div>
 </div>
@@ -626,7 +626,7 @@ s when accessing a content item through an URLAlias)</li>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.1+ / Symfony 2.2+</b>
+<b>Exponential 5.1+ / Symfony 2.2+</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -705,7 +705,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Available as of eZ Publish 5.1</p>
+<p>Available as of Exponential 5.1</p>
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -741,12 +741,12 @@ w match, much like defining custom controllers for location view or content=
 ck: <code>ez_page:viewBlock</code> and <code>ez_page:viewBlockById</code>, =
 it is possible to specify a controller action with a signature matching eit=
 her one of original actions.</p>
-<p>Example of configuration in <code>ezpublish/config/ezpublish.yml</code>:=
+<p>Example of configuration in <code>exponential/config/exponential.yml</code>:=
 </p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         eng_frontend_group:
             block_view:
@@ -765,7 +765,7 @@ nd use different cache levels:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Using ESI (eZ Publish 5.1+ / Symfony 2.2+)</b>
+<b>Using ESI (Exponential 5.1+ / Symfony 2.2+)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -791,7 +791,7 @@ sp;<a href=3D"http://mnot.github.com/hinclude/" class=3D"external-link" rel=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Asynchronous rendering (eZ Publish 5.1+ / Symfony 2.2+)</b>
+<b>Asynchronous rendering (Exponential 5.1+ / Symfony 2.2+)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

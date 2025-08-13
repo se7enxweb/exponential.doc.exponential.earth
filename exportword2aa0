@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Route references are compatible with&nbsp;<strong>eZ Publish 5.3 / 2014.=
+<p>Route references are compatible with&nbsp;<strong>Exponential 5.3 / 2014.=
 05</strong></p>
 </div>
 </div>
@@ -326,7 +326,7 @@ erenceGenerator</code><span>&nbsp;service:</span></p>
 :12px;">// Assuming we're in a controller
 /** @var \eZ\Publish\Core\MVC\Symfony\Routing\Generator\RouteReferenceGener=
 atorInterface $routeRefGenerator */
-$routeRefGenerator =3D $this-&gt;get( 'ezpublish.route_reference.generator'=
+$routeRefGenerator =3D $this-&gt;get( 'exponential.route_reference.generator'=
  );
 $routeRef =3D $routeRefGenerator-&gt;generate( 'my_route', array( 'some' =
 =3D&gt; 'thing' );
@@ -340,7 +340,7 @@ $link =3D $this-&gt;generateUrl( $routeRef );</pre>=20
 >Extending the RouteReference generation process</span></h2>
 <p>When generating the route reference, the&nbsp;<code>RouteReferenceGenera=
 tor</code>&nbsp;service fires an&nbsp;<code>MVCEvents::ROUTE_REFERENCE_GENE=
-RATION&nbsp;</code>(<em>ezpublish.routing.reference_generation</em>) event.=
+RATION&nbsp;</code>(<em>exponential.routing.reference_generation</em>) event.=
  This event can be listened to in order to modify the final route reference=
  (adding/changing parameters, changing the route name...).</p>
 <p>All listeners receive a&nbsp;<code>eZ\Publish\Core\MVC\Symfony\Event\Rou=
@@ -410,7 +410,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>A&nbsp;<em>real life</em>&nbsp;implementation example can be the <a href=
 =3D"/display/TECHDOC/Language+Switcher">LanguageSwitcher</a> (<code><a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Co=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Co=
 re/MVC/Symfony/EventListener/LanguageSwitchListener.php" class=3D"external-=
 link" rel=3D"nofollow">eZ\Publish\Core\MVC\Symfony\EventListener\LanguageSw=
 itchListener</a></code>).</p>

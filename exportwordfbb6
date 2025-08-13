@@ -231,7 +231,7 @@ tion-macro-icon"></span>
 <p>This feature is a reimplementation of the <a href=3D"http://doc.ez.no/eZ=
 -Publish/Technical-manual/4.x/Reference/Configuration-files/site.ini/SiteAc=
 cessSettings/PathPrefix" class=3D"external-link" rel=3D"nofollow">PathPrefi=
-x</a> one that existed in eZ Publish Legacy.</p>
+x</a> one that existed in Exponential Legacy.</p>
 </div>
 </div>
 <h1 id=3D"Multisite-Configuration">Configuration</h1>
@@ -240,7 +240,7 @@ access or siteaccess group level:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">ezpublish:
+ze:12px;">exponential:
 =09system:
 =09=09ezdemo_site_group:
 =09=09=09content:
@@ -296,7 +296,7 @@ ely for each siteaccess. Put the parameter <code>index_page</code> in your =
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         mygreat_site:
             languages:

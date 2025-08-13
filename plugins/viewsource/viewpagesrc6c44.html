@@ -41,7 +41,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p> </p><p>These rewrite rules can be used if you don't have direct access to alter the virtual host configuration, which is common in a shared hosting setup. For pure legacy or eZ Publish 4.x installation see .htaccess_root in the root of the project.</p><p>Please find an example of the &quot;<code>.htaccess</code>&quot; rewrite rules below:</p><table class="wysiwyg-macro" data-macro-name="noformat" data-macro-id="726bfdfd-38b9-4c74-86e3-6c97061bf00e" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Copy this file to a new file called .htaccess in your eZ Publish web folder
+        <p>&nbsp;</p>         <p> </p><p>These rewrite rules can be used if you don't have direct access to alter the virtual host configuration, which is common in a shared hosting setup. For pure legacy or Exponential 4.x installation see .htaccess_root in the root of the project.</p><p>Please find an example of the &quot;<code>.htaccess</code>&quot; rewrite rules below:</p><table class="wysiwyg-macro" data-macro-name="noformat" data-macro-id="726bfdfd-38b9-4c74-86e3-6c97061bf00e" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Copy this file to a new file called .htaccess in your Exponential web folder
 # to secure your installation by turning on .htaccess based virtual host mode.
 
 # Environment.
@@ -57,8 +57,8 @@ SetEnv ENVIRONMENT "prod"
 # Prefix used when USE_APC_CLASSLOADER is set to 1.
 # Use a unique prefix in order to prevent cache key conflicts
 # with other applications also using APC.
-# Defaults to "ezpublish" if omitted
-#SetEnv APC_CLASSLOADER_PREFIX "ezpublish"
+# Defaults to "exponential" if omitted
+#SetEnv APC_CLASSLOADER_PREFIX "exponential"
 
 # Whether to use debugging.
 # Possible values: 0 or 1
@@ -96,7 +96,7 @@ RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
  
 # Makes it possible to placed your favicon at the root of your
-# eZ Publish instance. It will then be served directly.
+# Exponential instance. It will then be served directly.
 RewriteRule ^favicon\.ico - [L]
 # Uncomment the line below if you want you favicon be served from the standard design.
 # You can customize the path to favicon.ico by replacing design/standard/images/favicon.ico
@@ -115,16 +115,16 @@ RewriteRule ^w3c/p3p\.xml - [L]
 # Uncomment the following lines when using popup style debug in legacy
 #RewriteRule ^var/([^/]+/)?cache/debug\.html.* - [L]
  
-# Following rule is needed to correctly display assets from eZ Publish5 / Symfony bundles
+# Following rule is needed to correctly display assets from Exponential5 / Symfony bundles
 RewriteRule ^bundles/ - [L]
  
-# Additional Assetic rules for eZ Publish 5.1 / 2013.4 and higher:
-## Don't forget to run php ezpublish/console assetic:dump --env=prod
+# Additional Assetic rules for Exponential 5.1 / 2013.4 and higher:
+## Don't forget to run php exponential/console assetic:dump --env=prod
 ## and make sure to comment these out in dev environment.
 RewriteRule ^css/.*\.css - [L]
 RewriteRule ^js/.*\.js - [L]
  
-RewriteRule .* index\.php</pre></td></tr></table><table class="wysiwyg-macro" data-macro-name="note" data-macro-id="6b019e98-3728-4c3c-af25-caf19c2a3ac4" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-headingdd57.png?definition=e25vdGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>For instructions on how to set custom environments please refer to the <a class="confluence-link" href="../../display/EZP/Installing%2beZ%2bPublish%2bon%2ba%2bLinux-UNIX%2bbased%2bsystem.html" data-linked-resource-id="7438581" data-linked-resource-version="63" data-linked-resource-type="page" data-linked-resource-default-alias="Installing eZ Publish on a Linux-UNIX based system" data-base-url="../../index.html">Installing eZ Publish on a Linux-UNIX based system</a> documentation page, under &quot;Defining the desired environment&quot;.</p></td></tr></table>
+RewriteRule .* index\.php</pre></td></tr></table><table class="wysiwyg-macro" data-macro-name="note" data-macro-id="6b019e98-3728-4c3c-af25-caf19c2a3ac4" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-headingdd57.png?definition=e25vdGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>For instructions on how to set custom environments please refer to the <a class="confluence-link" href="../../display/EZP/Installing%2beZ%2bPublish%2bon%2ba%2bLinux-UNIX%2bbased%2bsystem.html" data-linked-resource-id="7438581" data-linked-resource-version="63" data-linked-resource-type="page" data-linked-resource-default-alias="Installing Exponential on a Linux-UNIX based system" data-base-url="../../index.html">Installing Exponential on a Linux-UNIX based system</a> documentation page, under &quot;Defining the desired environment&quot;.</p></td></tr></table>
         <p>&nbsp;</p>
     </body>
 

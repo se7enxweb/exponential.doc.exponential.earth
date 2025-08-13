@@ -259,7 +259,7 @@ n">ezpEvent (Cache clear) integration</a></li>=20
 <p>Several settings are injected to avoid having to duplicate settings acro=
 ss new and old kernel, this is done in&nbsp;eZ\Bundle\EzPublishLegacyBundle=
 \LegacyMapper\Configuration.<br>For mappings below, yml settings prefixed w=
-ith ezpublish are system settings, while the rest are settings you can defi=
+ith exponential are system settings, while the rest are settings you can defi=
 ne pr siteaccess.</p>
 <h3 id=3D"Legacyconfigurationinjection-Databasesettings">Database settings<=
 /h3>
@@ -339,15 +339,15 @@ ngs in your yml files as shown below.</p>
 <th class=3D"confluenceTh">image.ini</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezpublish.image.temporary_dir</td>
+<td class=3D"confluenceTd">exponential.image.temporary_dir</td>
 <td class=3D"confluenceTd">[FileSettings]\TemporaryDir</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezpublish.image.published_images_dir</td>
+<td class=3D"confluenceTd">exponential.image.published_images_dir</td>
 <td class=3D"confluenceTd"><span>[FileSettings]\PublishedImages</span></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezpublish.image.versioned_images_d=
+<td colspan=3D"1" class=3D"confluenceTd">exponential.image.versioned_images_d=
 ir</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>[FileSettings]\VersionedImag=
 es</span></td>
@@ -358,19 +358,19 @@ es</span></td>
 an></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezpublish.image.imagemagick.enable=
+<td colspan=3D"1" class=3D"confluenceTd">exponential.image.imagemagick.enable=
 d</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>[ImageMagick]\IsEnabled</spa=
 n></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezpublish.image.imagemagick.execut=
+<td colspan=3D"1" class=3D"confluenceTd">exponential.image.imagemagick.execut=
 able_path</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>[ImageMagick]\ExecutablePath=
 </span></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezpublish.image.imagemagick.execut=
+<td colspan=3D"1" class=3D"confluenceTd">exponential.image.imagemagick.execut=
 able</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>[ImageMagick]\Executable</sp=
 an></td>
@@ -386,7 +386,7 @@ pan><span>]\PreParameters</span></td>
 pan><span>]\PostParameters</span></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezpublish.image.imagemagick.filter=
+<td colspan=3D"1" class=3D"confluenceTd">exponential.image.imagemagick.filter=
 s</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>[</span><span>ImageMagick</s=
 pan><span>]\Filters</span></td>
@@ -398,7 +398,7 @@ pan><span>]\Filters</span></td>
 <h3 id=3D"Legacyconfigurationinjection-UsingImageMagickfilters">Using Image=
 Magick filters</h3>
 <p>The following block shows a valid ImageMagick filters usage example for =
-<code>ezpublish.yml</code>:</p>
+<code>exponential.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
@@ -406,14 +406,14 @@ Magick filters</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     imagemagick:
         filters:
             geometry/scale: "-geometry {1}x{2}"</pre>=20
 </div>
 </div>
-<p>Since ImageMagick filters usage changed from eZ Publish 4.x versions you=
- can find the list of filters existing by default to use eZ Publish 5.x:</p=
+<p>Since ImageMagick filters usage changed from Exponential 4.x versions you=
+ can find the list of filters existing by default to use Exponential 5.x:</p=
 >
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
@@ -500,7 +500,7 @@ de></p></td>
 </table>
 </div>
 <p>For more details on setting ImageMagick filters on image.ini please refe=
-r to the <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Refere=
+r to the <a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Refere=
 nce/Configuration-files/image.ini/ImageMagick/Filters" class=3D"external-li=
 nk" rel=3D"nofollow">[imagemagick] / filters</a> documentation.</p>
 <h3 id=3D"Legacyconfigurationinjection-Extendinginjectedsettings">Extending=
@@ -534,7 +534,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This feature is only available as of eZ Publish 5.1 (2013.01)</p>
+<p>This feature is only available as of Exponential 5.1 (2013.01)</p>
 </div>
 </div>
 <p>If your config.yml setting have&nbsp;<em>framework.csrf_protection.enabl=
@@ -555,7 +555,7 @@ AX custom code.</p>
 Event (Cache clear) integration</h3>
 <p>A&nbsp;listener&nbsp;is setup for both content/cache and content/cache/a=
 ll to make sure Symfony (Internal proxy or Varnish with custom vcl) HTTP ca=
-che is cleared when cache is cleared in eZ Publish admin interface.&nbsp;</=
+che is cleared when cache is cleared in Exponential admin interface.&nbsp;</=
 p>
 <p>&nbsp;</p>
     </div>

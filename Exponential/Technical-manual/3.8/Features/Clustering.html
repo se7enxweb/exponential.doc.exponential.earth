@@ -1,0 +1,1811 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.8/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:17:43 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                              
+    <title>Clustering / Features / 3.8 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../3-3.html">3.8</a>
+        
+                        /
+                            <a href="../Features.html">features</a>
+        
+                        /
+                            clustering
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../3-3.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Policy-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Policy functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Single-Sign-On-SSO-handlers.html" title="">
+	    	    		                    		    <span class="node-name-normal">Single Sign On (SSO) handlers</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multi-language</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Configuring-your-site-locale.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuring your site locale</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Configuring-the-site-languages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuring the site languages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Managing-the-translation-languages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Managing the translation languages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Multilingual-objects.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multilingual objects</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Working-with-translations.html" title="">
+	    	    		                    		    <span class="node-name-normal">Working with translations</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/The-bit-field-algorithm.html" title="">
+	    	    		                    		    <span class="node-name-normal">The bit-field algorithm</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-language/Language-based-permissions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Language based permissions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Clustering.html" title="">
+	    	    		                    		    <span class="node-name-normal">Clustering</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Clustering/Setting-it-up.html" title="">
+	    	    		                    		    <span class="node-name-normal">Setting it up</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Packages</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Package-types.html" title="">
+	    	    		                    		    <span class="node-name-normal">Package types</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Creating-new-packages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Creating new packages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Exporting-packages-to-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Exporting packages to files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Importing-packages-to-the-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Importing packages to the system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Removing-packages-from-repository.html" title="">
+	    	    		                    		    <span class="node-name-normal">Removing packages from repository</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Installing-packages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installing packages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Uninstalling-packages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Uninstalling packages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/package.html" title="">
+	    	    		                    		    <span class="node-name-normal">package.xml format</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Packages/Custom-install-scripts.html" title="">
+	    	    		                    		    <span class="node-name-normal">Custom install scripts</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Cronjobs.html" title="">
+	    	    		                    		    <span class="node-name-normal">Cronjobs</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Cronjobs/The-cronjob-scripts.html" title="">
+	    	    		                    		    <span class="node-name-normal">The cronjob scripts</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Cronjobs/Configuring-cronjobs.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuring cronjobs</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Cronjobs/Running-cronjobs.html" title="">
+	    	    		                    		    <span class="node-name-normal">Running cronjobs</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Advanced-redirection-after-login.html" title="">
+	    	    		                    		    <span class="node-name-normal">Advanced redirection after login</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">VAT charging system</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Assigning-VAT-types-to-products.html" title="">
+	    	    		                    		    <span class="node-name-normal">Assigning VAT types to products</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Three-approaches-to-VAT-charging.html" title="">
+	    	    		                    		    <span class="node-name-normal">Three approaches to VAT charging</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Product-category.html" title="">
+	    	    		                    		    <span class="node-name-normal">Product category</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/User-country.html" title="">
+	    	    		                    		    <span class="node-name-normal">User country</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Displaying-VATs-on-the-actual-site.html" title="">
+	    	    		                    		    <span class="node-name-normal">Displaying VATs on the actual site</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Managing-VAT-types.html" title="">
+	    	    		                    		    <span class="node-name-normal">Managing VAT types</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Managing-product-categories.html" title="">
+	    	    		                    		    <span class="node-name-normal">Managing product categories</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Managing-VAT-rules.html" title="">
+	    	    		                    		    <span class="node-name-normal">Managing VAT rules</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/VAT-settings.html" title="">
+	    	    		                    		    <span class="node-name-normal">VAT settings</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="VAT-charging-system/Creating-new-VAT-handlers.html" title="">
+	    	    		                    		    <span class="node-name-normal">Creating new VAT handlers</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Improved-shipping-handling.html" title="">
+	    	    		                    		    <span class="node-name-normal">Improved shipping handling</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multi-currency</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Custom-prices-and-auto-prices.html" title="">
+	    	    		                    		    <span class="node-name-normal">Custom prices and auto prices</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Rounding-auto-prices.html" title="">
+	    	    		                    		    <span class="node-name-normal">Rounding auto prices</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Currency-rates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Currency rates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Creating-a-new-currency.html" title="">
+	    	    		                    		    <span class="node-name-normal">Creating a new currency</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Editing-a-currency.html" title="">
+	    	    		                    		    <span class="node-name-normal">Editing a currency</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Removing-a-currency.html" title="">
+	    	    		                    		    <span class="node-name-normal">Removing a currency</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Preferred-currency.html" title="">
+	    	    		                    		    <span class="node-name-normal">Preferred currency</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Multi-price-products.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multi-price products</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Products-overview.html" title="">
+	    	    		                    		    <span class="node-name-normal">Products overview</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Exchange-rates-update-handlers.html" title="">
+	    	    		                    		    <span class="node-name-normal">Exchange rates update handlers</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multi-currency/Upgrading-your-webshop.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading your webshop</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="View-caching.html" title="">
+	    	    		                    		    <span class="node-name-normal">View caching</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="View-caching/Configuring-the-view-cache.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuring the view cache</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="View-caching/Clearing-the-view-cache.html" title="">
+	    	    		                    		    <span class="node-name-normal">Clearing the view cache</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="View-caching/Smart-view-cache-cleaning.html" title="">
+	    	    		                    		    <span class="node-name-normal">Smart view cache cleaning</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="View-caching/Pre-generation-of-view-cache.html" title="">
+	    	    		                    		    <span class="node-name-normal">Pre-generation of view cache</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications.html" title="">
+	    	    		                    		    <span class="node-name-normal">Notifications</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Using-the-admin-interface.html" title="">
+	    	    		                    		    <span class="node-name-normal">Using the admin interface</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Using-an-actual-site.html" title="">
+	    	    		                    		    <span class="node-name-normal">Using an actual site</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Adding-a-Keep-me-updated-button.html" title="">
+	    	    		                    		    <span class="node-name-normal">Adding a &quot;Keep me updated&quot; button</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Customizing-the-E-mails.html" title="">
+	    	    		                    		    <span class="node-name-normal">Customizing the E-mails</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Granting-access-to-notifications.html" title="">
+	    	    		                    		    <span class="node-name-normal">Granting access to notifications</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Notification-events.html" title="">
+	    	    		                    		    <span class="node-name-normal">Notification events</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Notification-handlers.html" title="">
+	    	    		                    		    <span class="node-name-normal">Notification handlers</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Notifications/Frequently-Asked-Questions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Frequently Asked Questions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Search-engine.html" title="">
+	    	    		                    		    <span class="node-name-normal">Search engine</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="WebDAV.html" title="">
+	    	    		                    		    <span class="node-name-normal">WebDAV</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="WebDAV/Setting-it-up.html" title="">
+	    	    		                    		    <span class="node-name-normal">Setting it up</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Clustering</h1>
+</div>
+
+ <p>The clustering feature makes it possible to run an eZ publish site on several web servers. A site that is running on a cluster of servers will have better performance and will be able to handle more traffic. Please note that this feature was significantly improved in 3.8.</p> <p>Versions prior to eZ publish 3.8 could be run in a <a href="http://ez.no/community/articles/clustering_ez_publish" target="_self">clustered environment</a>, but these configurations were subject to occasional <a href="http://en.wikipedia.org/wiki/Race_conditions" target="_self">race conditions</a> when files were updated or removed. Since all cache files and images were stored locally on separate filesystems (one for each web server), the files had to be synchronized using &quot;rsync&quot; or similar tools.</p> <p>From 3.8, it is possible to store all content related caches, images and binary files in the database. A technique called <a href="http://en.wikipedia.org/wiki/Database_transaction" target="_self">database transaction</a> is used to ensure that all the cluster nodes use the same cache files and have access to the same image and binary files. In other words, when content is updated, changes will automatically become available for all the web servers in the cluster. This solves the caching and synchronization issues related to earlier versions running in a clustered environment. In addition, it makes it easier to do backups and migrate the solution to other platforms.</p> <p>Please note that when clustering is used, it is recommended to run the site in a Virtual Host environment on the different servers.</p>  <a name="eztoc32525_1" id="eztoc32525_1"></a><h2>How it works</h2> <p>Data that must be synchronized between the different servers is stored using the database:</p> 
+<ul>
+ <li><div> Binary files </div></li> <li><div> Image and image alias files </div></li> <li><div> Caches related to content:
+<ul>
+ <li><div> Content view cache </div></li> <li><div> Template block cache </div></li> <li><div> Expiry cache </div></li> <li><div> URL alias cache </div></li> <li><div> RSS cache </div></li> <li><div> User info cache </div></li> <li><div> Class identifier cache </div></li> <li><div> Sort key cache </div></li> 
+</ul>
+  </div></li> 
+</ul>
+ <p>Other files are stored using the filesystem, including (but not limited to):</p> 
+<ul>
+ <li><div> INI files </div></li> <li><div> Template files </div></li> <li><div> Compiled templates </div></li> <li><div> PHP files </div></li> <li><div> Log files </div></li> <li><div> Caches that are not related to content:
+<ul>
+ <li><div> Global INI cache </div></li> <li><div> INI cache </div></li> <li><div> Codepage cache </div></li> <li><div> Character transformation cache </div></li> <li><div> Template cache </div></li> <li><div> Template override cache </div></li> 
+</ul>
+  </div></li> 
+</ul>
+  <a name="eztoc32525_1_1" id="eztoc32525_1_1"></a><h3>Content view cache</h3> <p>When eZ publish is displaying a page (a content node), it will execute the &quot;view&quot; view of the &quot;content&quot; module and include the output in the pagelayout. If the output is <a href="View-caching.html" target="_self">cached</a>, the cache file(s) will be read and served. If not, the system will fetch the content stored in the <a href="../Concepts-and-basics/Content-management/The-content-object.html" target="_self">eZ publish object database</a>, render the necessary templates, generate a web page and store the resulting XHTML on the filesystem before serving it. As previously mentioned, these files can now (from 3.8) be stored in the database and thus the files (along with changes) are easily and immediately available to all servers in the cluster.</p>   <a name="eztoc32525_1_2" id="eztoc32525_1_2"></a><h3>Images and image aliases</h3> <p>The approach described above is also used when it comes to images and image aliases (<a href="../Reference/Datatypes/Image.html#variation" target="_self">image variations</a>). However, the solution is a bit more complicated because until now (3.8), images have been served directly by Apache. Since the web server isn't able to communicate with the database, the images need to be served using a PHP script called &quot;index_image.php&quot;. This is true for all content images, but not for images that are related to design. Please note that you'll need to add new rewrite rules in order to instruct Apache to use &quot;index_image.php&quot; when serving images.</p>    <a name="eztoc32525_2" id="eztoc32525_2"></a><h2>Cluster file handlers</h2> <p>A new cluster file handler mechanism was added in 3.8. It makes it possible to store, retrieve, rename, delete, etc. files using the database. The cluster file handlers are located in the &quot;kernel/classes/clusterfilehandlers&quot; directory of the eZ publish installation. The following cluster file handlers are known to the system by default:</p> 
+<ul>
+ <li><div> ezfs (eZFSFileHandler) </div></li> <li><div> ezdb (eZDBFileHandler) </div></li> 
+</ul>
+  <a name="eztoc32525_2_3" id="eztoc32525_2_3"></a><h3>eZFSFileHandler</h3> <p>This handler makes it possible to use the filesystem when dealing with files.</p> <p> <a name="ezdb"></a>
+ </p>   <a name="eztoc32525_2_4" id="eztoc32525_2_4"></a><h3>eZDBFileHandler</h3> <p>This handler makes it possible to use the database when dealing with files (in a cluster environment, this would typically be images, uploaded binary files and content-related caches, etc.). It is split into different back-ends that are compatible with the supported database engines (MySQL, PostgreSQL, Oracle, etc).</p>   <a name="eztoc32525_2_5" id="eztoc32525_2_5"></a><h3>Custom handlers</h3> <p>It is possible to extend the system by implementing your own handlers and/or back-ends. This should be done using the extension system (and not by modifying the original eZ publish kernel files).</p> <p>The &quot;ExtensionDirectories[]&quot; array located under the &quot;[ClusteringSettings]&quot; block of the &quot;file.ini&quot; configuration file specifies the extension directories where eZ publish should search for additional cluster file handlers. By default, eZ publish will search in the &quot;clusterfilehandlers&quot; subdirectory inside your extension.</p>  <a name="eztoc32525_2_5_1" id="eztoc32525_2_5_1"></a><h4>Example</h4> <p>
+If you have an extension &quot;myExtension&quot; that includes a cluster file handler &quot;cfh&quot;, you should add the following lines under the &quot;[ClusteringSettings]&quot; block in your &quot;file.ini.append.php&quot; file:<br /></p><pre class="wordwrap"><span class="line">FileHandler=cfh</span>
+<span class="line">ExtensionDirectories[]=myExtension</span>
+</pre><p>&nbsp;</p> <p>These settings will instruct eZ publish to use your custom cluster file handler located in &quot;extension/myExtension/clusterfilehandlers/cfhfilehandler.php&quot;.</p>   
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Svitlana Shatokhina&nbsp;(10/08/2006 9:27 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(16/03/2007 10:40 am)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Svitlana Shatokhina, Balazs Halasy</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="6357" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.8/Features/Clustering" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.8/Features/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 06:17:43 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

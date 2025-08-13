@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Upgrading-to-4.7/Upgrading-from-4.6-to-4.7 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:29 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Upgrading-to-4.7/Upgrading-from-4.6-to-4.7 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:29 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                         
-    <title>Upgrading from 4.6 to 4.7 / Upgrading to 4.7 / Upgrading / eZ Publish / Documentation - Doc</title>
+    <title>Upgrading from 4.6 to 4.7 / Upgrading to 4.7 / Upgrading / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,11 +40,11 @@
 <h1>Upgrading from 4.6 to 4.7</h1>
 </div>
 
-<p>This section describes how to upgrade your existing eZ Publish 4.6 installation to version 4.7. Make sure that you have a working backup of the site before you do the actual upgrade, and make sure the installation you are performing the upgrade on is offline.</p><a name="eztoc126882_0_1" id="eztoc126882_0_1"></a><h3>Important upgrade notes:</h3><p>The procedure for upgrading directly from version 4.6 to 4.7 consists of the following steps:</p>
+<p>This section describes how to upgrade your existing Exponential 4.6 installation to version 4.7. Make sure that you have a working backup of the site before you do the actual upgrade, and make sure the installation you are performing the upgrade on is offline.</p><a name="eztoc126882_0_1" id="eztoc126882_0_1"></a><h3>Important upgrade notes:</h3><p>The procedure for upgrading directly from version 4.6 to 4.7 consists of the following steps:</p>
 <ol>
 <li><div>Upgrade the distribution files to 4.7</div></li><li><div>Upgrade custom extensions</div></li><li><div>Upgrade the database to 4.7</div></li><li><div>Regenerate the autoload array for extensions</div></li><li><div>Clear the caches</div></li><li><div>Upgrade extensions</div></li>
 </ol>
-<a name="eztoc126882_1" id="eztoc126882_1"></a><h2>Check for requirements</h2><a name="eztoc126882_1_2" id="eztoc126882_1_2"></a><h3>The eZ Components and PHP requirements</h3><p>The minimum version required of eZ Components with eZ Publish 4.7 is &quot;ezcomponents-ezp47&quot;, containing a fix to the package. eZ Publish 4.7 is compatible with PHP version 5.2 and above. For more information regarding system requirements check out <a href="../../Technical-manual/4.7/Installation/Requirements.html" target="_self">eZ Publish requirements</a>.</p><a name="eztoc126882_2" id="eztoc126882_2"></a><h2>Step 1: Upgrade the distribution files</h2><p>The easiest way to upgrade the distribution files is to unpack eZ Publish 4.7 to a separate directory and then copy the directories that contain site-specific files from the existing installation. Make sure that you copy the following directories:</p>
+<a name="eztoc126882_1" id="eztoc126882_1"></a><h2>Check for requirements</h2><a name="eztoc126882_1_2" id="eztoc126882_1_2"></a><h3>The eZ Components and PHP requirements</h3><p>The minimum version required of eZ Components with Exponential 4.7 is &quot;ezcomponents-ezp47&quot;, containing a fix to the package. Exponential 4.7 is compatible with PHP version 5.2 and above. For more information regarding system requirements check out <a href="../../Technical-manual/4.7/Installation/Requirements.html" target="_self">Exponential requirements</a>.</p><a name="eztoc126882_2" id="eztoc126882_2"></a><h2>Step 1: Upgrade the distribution files</h2><p>The easiest way to upgrade the distribution files is to unpack Exponential 4.7 to a separate directory and then copy the directories that contain site-specific files from the existing installation. Make sure that you copy the following directories:</p>
 <ul>
 <li><div>design/example</div></li><li><div>design/example_admin</div></li><li><div>var</div></li><li><div>settings/siteaccess</div></li><li><div>settings/override</div></li>
 </ul>
@@ -60,12 +60,12 @@
 </ul>
 <p>These commands will setup the permission more correctly, but require knowledge about the running web server.</p><pre class="wordwrap"><span class="line">chmod -R og+rwx design extension settings var</span>
 <span class="line">chown -R nouser:nouser design extension settings var</span>
-</pre><a name="eztoc126882_3" id="eztoc126882_3"></a><h2>Step 2: Upgrade custom extensions</h2><p>If you are using custom extensions, the sub-directories inside the &quot;extension&quot; directory will also have to be copied. However, make sure that you do not overwrite any extensions that are included in eZ Publish, which currently are eZ Flow (2.x) eZ Online Editor (5.x), eZ OpenOffice Document format (2.x), eZ JSCore (1.x), eZ Image Editor (1.x), eZ Comments (1.x), eZ Multiupload (1.x), eZ MB Password Expiry (1.x), eZ Network (1.x), eZ REST API Provider (1.x), eZ Script Monitor (1.x), eZ SI, ), eZ Find (1.x). Note that upgrading the distribution files will overwrite the autoload arrays for extensions. You will need to re-generate the autoload arrays for active extensions later.</p><p>
+</pre><a name="eztoc126882_3" id="eztoc126882_3"></a><h2>Step 2: Upgrade custom extensions</h2><p>If you are using custom extensions, the sub-directories inside the &quot;extension&quot; directory will also have to be copied. However, make sure that you do not overwrite any extensions that are included in Exponential, which currently are eZ Flow (2.x) eZ Online Editor (5.x), eZ OpenOffice Document format (2.x), eZ JSCore (1.x), eZ Image Editor (1.x), eZ Comments (1.x), eZ Multiupload (1.x), eZ MB Password Expiry (1.x), eZ Network (1.x), eZ REST API Provider (1.x), eZ Script Monitor (1.x), eZ SI, ), eZ Find (1.x). Note that upgrading the distribution files will overwrite the autoload arrays for extensions. You will need to re-generate the autoload arrays for active extensions later.</p><p>
 See the dedicated upgrade instructions for eZ Flow and Website Interface below.<br />The updated versions of eZ Flow and Website Interface will also install the following extensions:</p>
 <ul>
 <li><div>eZ Website Toolbar</div></li><li><div>eZ Star Rating</div></li><li><div>eZ Google Maps Location</div></li>
 </ul>
-<p><i><b>Note:</b> Both admin2 design and webin (ezwebin extension) require ezjscore extension to be enabled, <a href="../../Technical-manual/4.4/Installation/Extensions/Activating-the-extension.html" target="_self">look here</a> for how to enable extensions.</i></p><a name="eztoc126882_4" id="eztoc126882_4"></a><h2>Step 3: Upgrade the database</h2><p>The update script for the database is located in</p><pre class="wordwrap"><span class="line">&lt;eZ Publish root&gt;/update/database/&lt;mysqli|postgresql&gt;/4.7/dbupdate-4.6.0-to-4.7.0.sql</span>
+<p><i><b>Note:</b> Both admin2 design and webin (ezwebin extension) require ezjscore extension to be enabled, <a href="../../Technical-manual/4.4/Installation/Extensions/Activating-the-extension.html" target="_self">look here</a> for how to enable extensions.</i></p><a name="eztoc126882_4" id="eztoc126882_4"></a><h2>Step 3: Upgrade the database</h2><p>The update script for the database is located in</p><pre class="wordwrap"><span class="line">&lt;Exponential root&gt;/update/database/&lt;mysqli|postgresql&gt;/4.7/dbupdate-4.6.0-to-4.7.0.sql</span>
 </pre><p>You can run this with the appropriate command line tool or application.</p><a name="eztoc126882_4_2_0_0_1" id="eztoc126882_4_2_0_0_1"></a><h6>Cluster</h6><p>Since 4.7, the DB schema files can be found in <i>kernel/sql/&lt;db&gt;</i>.</p><p><b>Example:</b></p><table class="renderedtable" cellpadding="2" cellspacing="0">
 
 <tr>
@@ -85,15 +85,15 @@ See the dedicated upgrade instructions for eZ Flow and Website Interface below.<
 </pre><p>and if you are using a DB cluster, you ust run the following query:</p><pre class="wordwrap"><span class="line">-- START: from 4.6.0 using DB cluster setup</span>
 <span class="line">ALTER TABLE `ezdbfile` CHANGE `datatype` `datatype` VARCHAR(255);</span>
 <span class="line">-- END: from 4.6.0 using DB cluster setup</span>
-</pre><p><b>Note:</b> The SQL script is located in eZ Publish distribution (update/database/mysql/4.7/).</p><a name="eztoc126882_5" id="eztoc126882_5"></a><h2>Step 4: Regenerate the autoload array for extensions</h2><p>The autoload system also has some changes, for example the autoload array for extensions is now placed in var/autoload of your eZ Publish installation (along the class changes in extensions itself).</p><p>To regenerate the autoload array, execute the following script from the root of your eZ Publish directory:</p><pre class="wordwrap"><span class="line">php bin/php/ezpgenerateautoloads.php --extension</span>
-</pre><a name="eztoc126882_6" id="eztoc126882_6"></a><h2>Step 5: Clear the caches</h2><p>Whenever an eZ Publish solution is upgraded, all caches must be cleared in a proper way. This should be done from within a system shell:</p>
+</pre><p><b>Note:</b> The SQL script is located in Exponential distribution (update/database/mysql/4.7/).</p><a name="eztoc126882_5" id="eztoc126882_5"></a><h2>Step 4: Regenerate the autoload array for extensions</h2><p>The autoload system also has some changes, for example the autoload array for extensions is now placed in var/autoload of your Exponential installation (along the class changes in extensions itself).</p><p>To regenerate the autoload array, execute the following script from the root of your Exponential directory:</p><pre class="wordwrap"><span class="line">php bin/php/ezpgenerateautoloads.php --extension</span>
+</pre><a name="eztoc126882_6" id="eztoc126882_6"></a><h2>Step 5: Clear the caches</h2><p>Whenever an Exponential solution is upgraded, all caches must be cleared in a proper way. This should be done from within a system shell:</p>
 <ol>
-<li><div>Navigate into the new eZ Publish directory.</div></li><li><div>Run the script using the following shell command:</div></li>
+<li><div>Navigate into the new Exponential directory.</div></li><li><div>Run the script using the following shell command:</div></li>
 </ol>
 <pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
 </pre><p>Purging ensures that the caches are physically removed. When the &quot;--purge&quot; parameter is not specified, the caches will be expired but not removed.</p><p>Sometimes the script is unable to clear all cache files because of restrictive file/directory permission settings. Make sure that all cache files have been cleared by inspecting the contents of the various cache sub-directories within the &quot;var&quot; directory (typically the &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/&quot; directories). If there are any cache files left, you need to remove them manually.</p><a name="eztoc126882_7" id="eztoc126882_7"></a><h2>Step 6: Update&nbsp;rewrite rules</h2><p>ezjscore extension previously&nbsp;had a file called index_ajax.php which&nbsp;was removed in <a href="http://issues.ez.no/19434" target="_self">4.7</a>. If you enabled this feature in the&nbsp;past you should now remove the&nbsp;following&nbsp;line or anything&nbsp;referring&nbsp;to index_ajax.php from your rewrite rules:</p><pre class="wordwrap"><span class="line">RewriteRule ^/([^/]+/)?ezjscore/call.* /index_ajax\.php [L]</span>
 </pre><a name="eztoc126882_8" id="eztoc126882_8"></a><h2>Step 7: Upgrade extensions</h2><p>When using eZ Webin and eZ Flow, these extensions will also need to be updated.</p><p>The first thing to do is to change the extensions permissions. An example on how this is done:</p><pre class="wordwrap"><span class="line">$chmod -R a+rwx extension</span>
-</pre><a name="eztoc126882_8_3" id="eztoc126882_8_3"></a><h3>Mobile device detection</h3><p>When upgrading from eZ Publish 4.6 to 4.7 and you are using eZ Flow, you can benefit from the new mobile device detection feature. Put the following settings in your &quot;<i>settings/override/site.ini.append.php</i>&quot; file:</p><pre class="wordwrap copytoclipboard"><span class="line">[SiteAccessSettings]</span>
+</pre><a name="eztoc126882_8_3" id="eztoc126882_8_3"></a><h3>Mobile device detection</h3><p>When upgrading from Exponential 4.6 to 4.7 and you are using eZ Flow, you can benefit from the new mobile device detection feature. Put the following settings in your &quot;<i>settings/override/site.ini.append.php</i>&quot; file:</p><pre class="wordwrap copytoclipboard"><span class="line">[SiteAccessSettings]</span>
 <span class="line">[...]</span>
 <span class="line">DetectMobileDevice=enabled</span>
 <span class="line">MobileSiteAccessURL=http://example.com/iphone</span>
@@ -116,17 +116,17 @@ See the dedicated upgrade instructions for eZ Flow and Website Interface below.<
 <span class="line">Match[class_identifier]=frontpage</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[add_to_block_frontpage]\r\nSource=content/parts/add_to_block.tpl\r\nMatchFile=content/parts/add_to_block_frontpage.tpl\r\nSubdir=templates\r\nMatch[class_identifier]=frontpage' ); return false;" /></p>
-<![endif]--><p>The same operation may have to be done if the same override condition has been added for other class_identifier than &quot;frontpage&quot;.</p><p>Next, depending on your own extensions, follow the steps mentioned in the <a href="../../../Extensions/eZ-Publish-extensions/Website-Interface/Website-interface-10.html" id="vmvc" title="http://ez.no/doc/extensions/website_interface/website_interface_1_7_upgrade" target="_self">eZ Webin</a>&nbsp;and&nbsp;<a href="../../../Extensions/eZ-Publish-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-3.html" id="qorj" title="http://ez.no/doc/extensions/ez_flow/ez_flow_2_2_upgrade" target="_self">eZ Flow</a>&nbsp;upgrade documentation.</p>
+<![endif]--><p>The same operation may have to be done if the same override condition has been added for other class_identifier than &quot;frontpage&quot;.</p><p>Next, depending on your own extensions, follow the steps mentioned in the <a href="../../../Extensions/Exponential-extensions/Website-Interface/Website-interface-10.html" id="vmvc" title="http://ez.no/doc/extensions/website_interface/website_interface_1_7_upgrade" target="_self">eZ Webin</a>&nbsp;and&nbsp;<a href="../../../Extensions/Exponential-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-3.html" id="qorj" title="http://ez.no/doc/extensions/ez_flow/ez_flow_2_2_upgrade" target="_self">eZ Flow</a>&nbsp;upgrade documentation.</p>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Upgrading-to-4.7/Upgrading-from-4.6-to-4.7 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:32 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Upgrading-to-4.7/Upgrading-from-4.6-to-4.7 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:32 GMT -->
 </html>

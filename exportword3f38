@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>How to create a new design using Bundle Inheritance</h1>
     <div class=3D"Section1">
-        <p>eZ Publish being built using the Symfony 2 framework, it is poss=
+        <p>Exponential being built using the Symfony 2 framework, it is poss=
 ible to benefit from most of its stock feature such as Bundle Inheritance. =
 You should check out the <a href=3D"http://symfony.com/doc/current/cookbook=
 /bundles/override.html" class=3D"external-link" rel=3D"nofollow">related sy=
@@ -224,11 +224,11 @@ template&nbsp; from the DemoBundle.
 <h2 id=3D"HowtocreateanewdesignusingBundleInheritance-Creatingabundle">Crea=
 ting a bundle</h2>
 <p>Create a new bundle to host your design using the dedicated command (fro=
-m your ezpublish installation):</p>
+m your exponential installation):</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console generate:bundle</pre>=20
+e:12px;">php exponential/console generate:bundle</pre>=20
 </div>
 </div>
 <h2 id=3D"HowtocreateanewdesignusingBundleInheritance-Configuringbundletoin=

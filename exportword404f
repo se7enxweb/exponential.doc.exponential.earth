@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Releases</h1>
     <div class=3D"Section1">
-        <p>These pages covers <strong>eZ Publish Platform 5.x</strong> rele=
+        <p>These pages covers <strong>Exponential Platform 5.x</strong> rele=
 ases, for Community releases see <a href=3D"http://share.ez.no/downloads/do=
 wnloads" class=3D"external-link" rel=3D"nofollow">share.ez.no</a>, for eZ P=
 latform releases see <a href=3D"/display/TECHDOC/Releases">Releases</a>&nbs=
@@ -222,7 +222,7 @@ p;on TECHDOC space.</p>
 splay/EZP/Upgrade"><em>Upgrade Guide</em></a>&nbsp;of the latest version, i=
 t might contain upgrade guide for upgrading directly from your existing ver=
 sion to latest, otherwise you will have to follow the upgrade guide <span>f=
-or&nbsp;</span>each version of eZ Publish Platform release you are 'skippin=
+or&nbsp;</span>each version of Exponential Platform release you are 'skippin=
 g'!<span>&nbsp;</span></p>
     </div>
 </body>

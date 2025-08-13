@@ -235,7 +235,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><a href=3D"https://github.com/docb22/ez-publish-cookbook/tree/master/EzS=
+<p><a href=3D"https://github.com/docb22/exponential-cookbook/tree/master/EzS=
 ystems/CookBookBundle/Command/AssignContentToSectionCommand.php" class=3D"e=
 xternal-link" rel=3D"nofollow">https://github.com/ezsystems/CookbookBundle/=
 tree/master/Command/AssignContentToSectionCommand.php</a></p>
@@ -442,7 +442,7 @@ runk/NS/html/eZ/Publish/API/Repository/ContentTypeService.html#method_newFi=
 eldDefinitionCreateStruct" class=3D"external-link" rel=3D"nofollow"><code>C=
 ontentTypeService::newFieldDefinitionCreateStruct()</code></a>. This method=
  expects the FieldDefinition identifier and its type as arguments. The iden=
-tifiers match the ones from eZ Publish 4 (<code>ezstring</code> for TextLin=
+tifiers match the ones from Exponential 4 (<code>ezstring</code> for TextLin=
 e, etc).</p>
 <p>Each field's properties are set using the create struct's properties:</p=
 >

@@ -250,7 +250,7 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This documentation page is compatible with&nbsp;<strong>eZ Publish 5.3 /=
+<p>This documentation page is compatible with&nbsp;<strong>Exponential 5.3 /=
  2014.01</strong></p>
 <p><span>Prior to these versions, authentication was made through legacy st=
 ack only, using the venerable&nbsp;</span><code>user/login</code><span>&nbs=
@@ -320,17 +320,17 @@ ccount" /&gt;
 {% endblock %}</pre>=20
 </div>
 </div>
-<p><span><span>The layout used by default is&nbsp;</span><code>%ezpublish.c=
+<p><span><span>The layout used by default is&nbsp;</span><code>%exponential.c=
 ontent_view.viewbase_layout%</code><span>&nbsp;(empty layout) but can be co=
 nfigured easily as well as the login template:</span></span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             user:
@@ -351,18 +351,18 @@ EzPublishCoreBundle+Configuration#EzPublishCoreBundleConfiguration-EzPublis=
 hCoreBundleConfiguration-Defaultpage"><code>default_page</code>&nbsp;settin=
 g</a>.</p>
 <h3 id=3D"Authentication-Configuration">Configuration</h3>
-<p><span>To use Symfony authentication with eZ Publish, the configuration g=
+<p><span>To use Symfony authentication with Exponential, the configuration g=
 oes as follows:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/security.yml</b>
+<b>exponential/config/security.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             form_login:
@@ -373,13 +373,13 @@ oes as follows:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/routing.yml</b>
+<b>exponential/config/routing.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">login:
     path:   /login
-    defaults:  { _controller: ezpublish.security.controller:loginAction }
+    defaults:  { _controller: exponential.security.controller:loginAction }
 login_check:
     path:   /login_check
 logout:
@@ -404,7 +404,7 @@ dard login form documentation</a>.</p>
 </div>
 <p>&nbsp;</p>
 <h3 id=3D"Authentication-Accesscontrol">Access control</h3>
-<p>See the <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Conc=
+<p>See the <a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Conc=
 epts-and-basics/Access-control" class=3D"external-link" rel=3D"nofollow">do=
 cumentation on access control</a></p>
 <h3 id=3D"Authentication-Rememberme">Remember me</h3>
@@ -454,7 +454,7 @@ tivated.</li>
 <h2 id=3D"Authentication-AuthenticationwithLegacySSOHandlers">Authenticatio=
 n with Legacy SSO Handlers</h2>
 <p>To be able to use your legacy SSO (Single Sign-on) handlers, use the fol=
-lowing config in your <code>ezpublish/config/security.yml</code>:</p>
+lowing config in your <code>exponential/config/security.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
@@ -464,12 +464,12 @@ lowing config in your <code>ezpublish/config/security.yml</code>:</p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             # Adding the following entry will activate the use of old SSO h=
 andlers.
-            ezpublish_legacy_sso: ~ </pre>=20
+            exponential_legacy_sso: ~ </pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-tip=
@@ -478,7 +478,7 @@ andlers.
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 If you need to
-<a href=3D"http://share.ez.no/learn/ez-publish/using-a-sso-in-ez-publish" c=
+<a href=3D"http://share.ez.no/learn/exponential/using-a-sso-in-exponential" c=
 lass=3D"external-link" rel=3D"nofollow"> create your legacy SSO Handler, pl=
 ease read this entry</a>
 </div>
@@ -494,10 +494,10 @@ rmation-macro-icon"></span>
 </div>
 </div>
 <ul>
-<li>In&nbsp;<code>ezpublish/config/security.yml</code>, you must remove&nbs=
-p;<code>ezpublish: true</code>&nbsp;from&nbsp;<code>ezpublish_front</code>&=
+<li>In&nbsp;<code>exponential/config/security.yml</code>, you must remove&nbs=
+p;<code>exponential: true</code>&nbsp;from&nbsp;<code>exponential_front</code>&=
 nbsp;firewall.</li>
-<li>In&nbsp;<code>ezpublish/config/routing.yml</code>, you must add&nbsp;<c=
+<li>In&nbsp;<code>exponential/config/routing.yml</code>, you must add&nbsp;<c=
 ode>login</code>,&nbsp;<code>login_check</code>&nbsp;and&nbsp;<code>logout<=
 /code>&nbsp;routes (see above in [Configuration][])</li>
 <li>In your templates, change your links pointing to&nbsp;<code>/user/login=

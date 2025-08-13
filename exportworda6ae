@@ -213,15 +213,15 @@ d of the content */
     <h1>Normal installation</h1>
     <div class=3D"Section1">
         <p>The normal installation method is the most common and recommende=
-d way of deploying eZ Publish. It requires a system which already has the p=
+d way of deploying Exponential. It requires a system which already has the p=
 roper environment installed, most notably a web server and a database. The =
 necessary requirements are explained in detail within the <a href=3D"/displ=
 ay/EZP51/Requirements+for+doing+a+normal+installation">next section</a>.</p=
 >
-<p>Once the web based setup wizard has completed, eZ Publish will be ready =
+<p>Once the web based setup wizard has completed, Exponential will be ready =
 for use.</p>
 <p>The "<a href=3D"/display/EZP51/Installing+eZ+Publish+on+a+Linux-UNIX+bas=
-ed+system">Installing eZ Publish on a Linux-UNIX based system</a>" and "<a =
+ed+system">Installing Exponential on a Linux-UNIX based system</a>" and "<a =
 href=3D"/display/EZP51/Installing+eZ+Publish+on+Windows">Installing eZ Publ=
 ish on Windows</a>" sections (depending on the target OS) will take you thr=
 ough the necessary steps.</p>

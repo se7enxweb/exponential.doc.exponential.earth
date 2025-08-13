@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Legacy code and features</h1>
     <div class=3D"Section1">
-        <p>eZ Publish 5 has a strong focus on backwards compatibility and t=
+        <p>Exponential 5 has a strong focus on backwards compatibility and t=
 hus lets you reuse code you might have written for 4.x, including templates=
  and modules.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -222,7 +222,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Read&nbsp;<a href=3D"/pages/viewpage.action?pageId=3D12125336">Intro for=
- eZ Publish 4.x/3.x developers</a> to have an overview of common concepts a=
+ Exponential 4.x/3.x developers</a> to have an overview of common concepts a=
 nd terminology changes.</p>
 </div>
 </div>
@@ -252,8 +252,8 @@ e</a></li>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#Legacycodeandfeatures-Routingfallback&amp;sub-requests">Rou=
 ting fallback &amp; sub-requests</a></li>=20
-<li><a href=3D"#Legacycodeandfeatures-UsingeZPublish5andSymfonyfeaturesinLe=
-gacy">Using eZ Publish 5 and Symfony features in Legacy</a></li>=20
+<li><a href=3D"#Legacycodeandfeatures-UsingExponential5andSymfonyfeaturesinLe=
+gacy">Using Exponential 5 and Symfony features in Legacy</a></li>=20
 <li><a href=3D"#Legacycodeandfeatures-Runninglegacyscriptsandcronjobs">Runn=
 ing legacy scripts and cronjobs</a></li>=20
 </ul> </li>=20
@@ -261,7 +261,7 @@ ing legacy scripts and cronjobs</a></li>=20
 </div>
 <p></p>
 <h2 id=3D"Legacycodeandfeatures-LegacyMode">Legacy Mode</h2>
-<p>Legacy mode is a specific configuration mode where eZ Publish's behavior=
+<p>Legacy mode is a specific configuration mode where Exponential's behavior=
  is the closest to v4.x. It might be used in some very specific use cases, =
 such as&nbsp;<strong>running the admin interface</strong>.</p>
 <h3 id=3D"Legacycodeandfeatures-Whatitdoes">What it does</h3>
@@ -286,7 +286,7 @@ rmation-macro-icon"></span>
 </strong> as it prevents all the performance goodness (e.g. Http Cache) to =
 work.<br>Always keep in mind that, <strong>not running in legacy mode, if a=
  content still doesn't&nbsp;have a corresponding Twig template/controller, =
-<a href=3D"/display/EZP51/Legacy+template+fallback">eZ Publish will always =
+<a href=3D"/display/EZP51/Legacy+template+fallback">Exponential will always =
 fallback to the legacy kernel, looking for a legacy template</a></strong>.<=
 /p>
 </div>
@@ -310,15 +310,15 @@ re>=20
 </div>
 </div>
 <p>Or if you want to&nbsp;<strong>include a legacy template by its path</st=
-rong>, relative to&nbsp;<code>ezpublish_legacy</code>&nbsp;folder:</p>
+rong>, relative to&nbsp;<code>exponential_legacy</code>&nbsp;folder:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.1+</b>
+<b>Exponential 5.1+</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">{# Following code will include ezpublish_legacyextension/my_legacy_=
+:12px;">{# Following code will include exponential_legacyextension/my_legacy_=
 extension/design/standard/templates/my_old_template.tpl, exposing $someVar =
 variable in it #}
 {% include "file:extension/my_legacy_extension/design/standard/templates/my=
@@ -339,7 +339,7 @@ sed, exposing all public properties and getters. You can define your own co=
 nverter by implementing <a href=3D"https://github.com/ezsystems/ezp-next/bl=
 ob/master/eZ/Publish/Core/MVC/Legacy/Templating/Converter/ObjectConverter.p=
 hp" class=3D"external-link" rel=3D"nofollow">the appropriate interface</a> =
-and declare it as a service with the&nbsp;<code><strong>ezpublish_legacy.te=
+and declare it as a service with the&nbsp;<code><strong>exponential_legacy.te=
 mplating.converter</strong></code> tag.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -354,7 +354,7 @@ code>eZContentObjectTreeNode</code> objects</a> (re-fetched).&nbsp;</p>
 </div>
 </div>
 <h2 id=3D"Legacycodeandfeatures-Runninglegacycode">Running legacy code</h2>
-<p>eZ Publish 5 still relies on the legacy kernel (from 4.x) and runs it wh=
+<p>Exponential 5 still relies on the legacy kernel (from 4.x) and runs it wh=
 en needed <strong>inside an isolated PHP closure</strong>, making it <stron=
 g>sandboxed</strong>.&nbsp;<span style=3D"font-size: 10.0pt;line-height: 13=
 .0pt;">This is available for your use as well making it possible to run som=
@@ -429,9 +429,9 @@ te fetch function
 <h2 id=3D"Legacycodeandfeatures-Legacymodules">Legacy modules</h2>
 <h3 id=3D"Legacycodeandfeatures-Routingfallback&amp;sub-requests">Routing f=
 allback &amp; sub-requests</h3>
-<p>Any route that is not declared in eZ Publish 5 in an included&nbsp;<code=
+<p>Any route that is not declared in Exponential 5 in an included&nbsp;<code=
 >routing.yml</code>&nbsp;and that is not a valid&nbsp;<em>UrlAlias</em>&nbs=
-p;<strong>will automatically fallback to eZ Publish legacy</strong> (includ=
+p;<strong>will automatically fallback to Exponential legacy</strong> (includ=
 ing admin interface).</p>
 <p><strong>This allows all your old modules to work as before</strong>,&nbs=
 p;out-of-the-box (including kernel modules), and also allows you to reuse t=
@@ -448,8 +448,8 @@ emap/2'} ) ) }}</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
-<h3 id=3D"Legacycodeandfeatures-UsingeZPublish5andSymfonyfeaturesinLegacy">=
-Using eZ Publish 5 and Symfony features in Legacy</h3>
+<h3 id=3D"Legacycodeandfeatures-UsingExponential5andSymfonyfeaturesinLegacy">=
+Using Exponential 5 and Symfony features in Legacy</h3>
 <p>If for some reason you need to develop a legacy module and access to eZ =
 Publish 5 / Symfony features (i.e. when developing an extension for admin i=
 nterface), you'll be happy to know that you actually have access to all ser=
@@ -468,10 +468,10 @@ ogger.</p>
 $container =3D ezpKernel::instance()-&gt;getServiceContainer();
 
 /** @var $repository \eZ\Publish\API\Repository\Repository */
-$repository =3D $container-&gt;get( 'ezpublish.api.repository' );
+$repository =3D $container-&gt;get( 'exponential.api.repository' );
 /** @var $logger \Symfony\Component\HttpKernel\Log\LoggerInterface|\Psr\Log=
 \LoggerInterface */
-// PSR LoggerInterface is used in eZ Publish 5.1 / Symfony 2.2
+// PSR LoggerInterface is used in Exponential 5.1 / Symfony 2.2
 $logger =3D $container-&gt;get( 'logger' );</pre>=20
 </div>
 </div>
@@ -492,7 +492,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Note: This feature has been introduced in eZ Publish 5.1.</p>
+<p>Note: This feature has been introduced in Exponential 5.1.</p>
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -510,15 +510,15 @@ t way.</p>
 </div>
 <p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">Legacy scripts ca=
 n be executed form the Symfony CLI, by using the </span><code style=3D"font=
--size: 10.0pt;line-height: 13.0pt;">ezpublish:legacy:script</code><span sty=
+-size: 10.0pt;line-height: 13.0pt;">exponential:legacy:script</code><span sty=
 le=3D"font-size: 10.0pt;line-height: 13.0pt;"> command, specifying the path=
  to the script as argument.</span></p>
-<p>The command will need to be executed from eZ Publish's 5 root, and the p=
-ath to the desired script must exist in the <code>ezpublish_legacy</code> f=
+<p>The command will need to be executed from Exponential's 5 root, and the p=
+ath to the desired script must exist in the <code>exponential_legacy</code> f=
 older.<br>Here's a usage example:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>php ezpublish/console ezpublish:legacy:script bin/php/ezpgenerateautol=
+<pre>php exponential/console exponential:legacy:script bin/php/ezpgenerateautol=
 oads.php</pre>=20
 </div>
 </div>
@@ -537,7 +537,7 @@ path to the script for this to work.</p>
 <p><br>Here's an example:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>php ezpublish/console ezpublish:legacy:script --legacy-help bin/php/ez=
+<pre>php exponential/console exponential:legacy:script --legacy-help bin/php/ez=
 pgenerateautoloads.php</pre>=20
 </div>
 </div>
@@ -547,7 +547,7 @@ ects the name of the cronjob to run as a parameter.<br>This is how you can =
 run cronjobs from the Symfony CLI:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>php ezpublish/console ezpublish:legacy:script runcronjobs.php frequent=
+<pre>php exponential/console exponential:legacy:script runcronjobs.php frequent=
 </pre>=20
 </div>
 </div>
@@ -555,7 +555,7 @@ run cronjobs from the Symfony CLI:</p>
 use the long name, such as <code>--siteaccess</code> or <code>--debug</code=
 > to avoid conflicts between script and CLI options.<br>For more details re=
 garding legacy cronjobs execution please refer to the&nbsp;<a href=3D"http:=
-//doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Cronjobs/Running-cronj=
+//doc.ez.no/Exponential/Technical-manual/5.x/Features/Cronjobs/Running-cronj=
 obs" class=3D"external-link" rel=3D"nofollow">Running cronjobs</a> chapter =
 existing in doc.ez.no.</p>
 <p>&nbsp;</p>

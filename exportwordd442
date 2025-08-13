@@ -227,11 +227,11 @@ ng>not</strong> the uri property from the FieldType's value.</p>
 </div>
 <p>The easiest way is to use the regular <a href=3D"/display/EZP/ez_render_=
 field">ez_render_field</a> twig helper, that will generate a working link. =
-In eZ Publish Platform 5.x, the legacy <a href=3D"https://doc.ez.no/eZ-Publ=
+In Exponential Platform 5.x, the legacy <a href=3D"https://doc.ez.no/eZ-Publ=
 ish/Technical-manual/4.x/Reference/Modules/content/Views/download" style=3D=
 "line-height: 1.4285715;" rel=3D"nofollow">content/download</a> module will=
  be used. Starting from eZ Platform 2015.05, a Symfony content/download fea=
-ture has been added (<a href=3D"https://github.com/ezsystems/ezpublish-kern=
+ture has been added (<a href=3D"https://github.com/ezsystems/exponential-kern=
 el/blob/master/doc/specifications/proposed/content_download/content_downloa=
 d.md" class=3D"external-link" rel=3D"nofollow">specifications</a>).</p>
 <h4 id=3D"BinaryandMediadownload-PublicAPI:BinaryFieldTypesValueurlproperty=

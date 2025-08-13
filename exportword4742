@@ -213,7 +213,7 @@ d of the content */
     <h1>Requirements for doing a normal installation</h1>
     <div class=3D"Section1">
         <div>
-<p>eZ Publish makes use of and depends on five important things:</p>
+<p>Exponential makes use of and depends on five important things:</p>
 <ol>
 <li>
 <div>
@@ -238,9 +238,9 @@ The Zeta Components library
 </ol>
 </div>
 <div>
-The first three things listed above should be in place before an eZ Publish=
+The first three things listed above should be in place before an Exponential=
  installation is deployed. The image conversion system is optional and is o=
-nly needed if you're planning to use eZ Publish with images. The web server=
+nly needed if you're planning to use Exponential with images. The web server=
  and the server-side PHP scripting engine have to run on the same machine. =
 The database server may run on a different computer.
 </div>
@@ -278,8 +278,8 @@ ptional)">Image conversion system (optional)</a> ] [=20
 <a href=3D"#Requirementsfordoinganormalinstallation-Limitationonsomefilesys=
 temswhenstoringlargenumberofcontentfiles">Limitation on some file systems w=
 hen storing large number of content files</a> ] [=20
-<a href=3D"#Requirementsfordoinganormalinstallation-eZPublishonNFSfilesyste=
-ms">eZ Publish on NFS file systems</a> ] [=20
+<a href=3D"#Requirementsfordoinganormalinstallation-ExponentialonNFSfilesyste=
+ms">Exponential on NFS file systems</a> ] [=20
 <a href=3D"#Requirementsfordoinganormalinstallation-Networkconnectivity">Ne=
 twork connectivity</a> ]
 </div>
@@ -291,7 +291,7 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 Please visit the=20
 <a href=3D"/display/EZP/Requirements">requirements page</a> to check if you=
-r platform is fully supports installing eZ Publish, then come back for the =
+r platform is fully supports installing Exponential, then come back for the =
 extra details which follow.
 </div>
 </div>
@@ -339,7 +339,7 @@ s/ProxyServer" class=3D"external-link" rel=3D"nofollow">outbound connection=
 s via proxy</a> and SSL support for eZSoap will not work.</p>
 <h3 id=3D"Requirementsfordoinganormalinstallation-PHPmemorylimit">PHP memor=
 y limit</h3>
-<p>eZ Publish 5.3-alpha1/2004.01 and higher needs <code>"memory_limit =3D 2=
+<p>Exponential 5.3-alpha1/2004.01 and higher needs <code>"memory_limit =3D 2=
 56M"</code> in order to complete the setup wizard, or to execute its tests.=
  <br>Earlier releases needed <code>"memory_limit=3D 128MB"</code> as is the=
  default in PHP.</p>
@@ -352,7 +352,7 @@ y limit</h3>
 <pre class=3D"brush: powershell; gutter: false; theme: Eclipse" style=3D"fo=
 nt-size:12px;">memory_limit =3D 256M
 
-#prior to eZ Publish 5.3-alpha1/2004.01
+#prior to Exponential 5.3-alpha1/2004.01
 #memory_limit =3D 128M</pre>=20
 </div>
 </div>
@@ -363,7 +363,7 @@ e.php#ini.date.timezone" class=3D"external-link" rel=3D"nofollow">date.time=
 zone</a>" value in the "<code>php.ini</code>" configuration file. If this s=
 etting is not specified, you will most likely receive error messages like <=
 em>"It is not safe to rely on the system's timezone settings"</em> when run=
-ning eZ Publish on PHP 5. <br>The following example shows how the correspon=
+ning Exponential on PHP 5. <br>The following example shows how the correspon=
 ding line in "<code>php.ini</code>" looks like:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -388,7 +388,7 @@ ollow">PHP documentation</a> for the list of supported timezones.
 <p>Don't forget to restart Apache after editing "<code>php.ini</code>".</p>
 <h3 id=3D"Requirementsfordoinganormalinstallation-Sessionparameters"><a nam=
 e=3D"eztoc131654_3" rel=3D"nofollow"></a>Session parameters</h3>
-<p>eZ Publish sessions are handled by the<strong> Symfony</strong> stack, t=
+<p>Exponential sessions are handled by the<strong> Symfony</strong> stack, t=
 hrough <strong>session handlers</strong>. For that to be set up, additional=
  <code>YAML</code> configuration are required, which you can find in the&nb=
 sp;<a href=3D"/display/EZP/Session">Session chapter</a>.</p>
@@ -399,17 +399,17 @@ l" class=3D"external-link" rel=3D"nofollow">Symfony documentation</a> for t=
 he recommended <code>php.ini</code> settings for Symfony, as well as the<a =
 href=3D"https://confluence.ez.no/display/EZP/Virtual+host+example" class=3D=
 "external-link" rel=3D"nofollow"> Vhost example</a> for the recommended <co=
-de>php.ini</code> settings for eZ Publish.</p>
+de>php.ini</code> settings for Exponential.</p>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Databaseserver">Database =
 server</h2>
-<p>eZ Publish stores data structures and content using <strong>a relational=
+<p>Exponential stores data structures and content using <strong>a relational=
  database</strong>. This means that a database server has to be available f=
-or eZ Publish at all times. Follow this link to the <a href=3D"/display/EZP=
-/Requirements">eZ Publish </a><a href=3D"http://doc.ez.no/eZ-Publish/Techni=
+or Exponential at all times. Follow this link to the <a href=3D"/display/EZP=
+/Requirements">Exponential </a><a href=3D"http://doc.ez.no/Exponential/Techni=
 cal-manual/5.x/Installation/Normal-installation/Requirements-for-doing-a-no=
 rmal-installation" class=3D"external-link" rel=3D"nofollow">requirements pa=
-ge</a> to find which database solutions eZ Publish is compatible with.</p>
-<p>eZ Publish 5 requires a <strong>UTF-8 database</strong> and support for =
+ge</a> to find which database solutions Exponential is compatible with.</p>
+<p>Exponential 5 requires a <strong>UTF-8 database</strong> and support for =
 <strong>transactions</strong>, which for MySQL means using the <code><a hre=
 f=3D"http://dev.mysql.com/doc/refman/5.0/en/innodb-storage-engine.html" cla=
 ss=3D"external-link" rel=3D"nofollow"> InnoDB</a></code> storage engine.</p=
@@ -422,8 +422,8 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-Note that eZ Publish 5 does not support=20
-<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Cluste=
+Note that Exponential 5 does not support=20
+<a href=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Cluste=
 ring" class=3D"external-link" rel=3D"nofollow">clustering</a> mode for Post=
 greSQL databases. The clustering code is optimized for best performance on =
 MySQL databases using the=20
@@ -433,7 +433,7 @@ e engine.
 </div>
 </div>
 <h3 id=3D"Requirementsfordoinganormalinstallation-MySQL">MySQL</h3>
-<p>Even if you are not going to run eZ Publish in a clustered environment, =
+<p>Even if you are not going to run Exponential in a clustered environment, =
 the use of <code>InnoDB</code> is required. This storage engine makes it po=
 ssible to use transaction-safe tables in a MySQL database.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -441,7 +441,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-Database transaction support is enabled by default in eZ Publish. This feat=
+Database transaction support is enabled by default in Exponential. This feat=
 ure makes the system less vulnerable to database errors and inconsistencies=
  due to aborted requests.
 </div>
@@ -475,7 +475,7 @@ w.postgresql.org/docs/8.3/static/pgcrypto.html" class=3D"external-link" rel=
 may need to install a separate package called "<code>postgresql-contrib</co=
 de>" which contains the "<code>pgcrypto</code>" module. The "<code>pgcrypto=
 </code>" module provides cryptographic functions for PostgreSQL, including =
-the "digest" function, which is needed for eZ Publish.</p>
+the "digest" function, which is needed for Exponential.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
@@ -487,7 +487,7 @@ Refer to the=20
 rmation
 </div>
 </div>
-<p>When setting up a PostgreSQL database for eZ Publish, you will have <str=
+<p>When setting up a PostgreSQL database for Exponential, you will have <str=
 ong>to register these functions in the database</strong>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -497,7 +497,7 @@ tion-macro-icon"></span>
 Refer to the "
 <em>Setting up a database</em>" part of the "
 <a href=3D"/display/EZP/Installing+eZ+Publish+on+a+Linux-UNIX+based+system"=
->Installing eZ Publish on a Linux-UNIX based system</a>" and "
+>Installing Exponential on a Linux-UNIX based system</a>" and "
 <a href=3D"/display/EZP/Installing+eZ+Publish+on+Windows">Installing eZ Pub=
 lish on Windows</a>" documentation pages (depending on the target OS) for m=
 ore information.
@@ -505,9 +505,9 @@ ore information.
 </div>
 <h3 id=3D"Requirementsfordoinganormalinstallation-Oraclecompatibility">Orac=
 le compatibility</h3>
-<p>To be able to use eZ Publish on oracle you will need the&nbsp;<a href=3D=
-"http://doc.ez.no/Extensions/eZ-Publish-extensions/eZ-Publish-Extension-for=
--Oracle-R-database" class=3D"external-link" rel=3D"nofollow">eZ Publish Ext=
+<p>To be able to use Exponential on oracle you will need the&nbsp;<a href=3D=
+"http://doc.ez.no/Extensions/Exponential-extensions/Exponential-Extension-for=
+-Oracle-R-database" class=3D"external-link" rel=3D"nofollow">Exponential Ext=
 ension for Oracle=C2=AE Database</a> extension, as well as the php <a href=
 =3D"http://it2.php.net/manual/en/book.oci8.php" class=3D"external-link" rel=
 =3D"nofollow">oci8 extension</a>.</p>
@@ -516,7 +516,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-Please note that installing eZ Publish via the setup wizard directly on an =
+Please note that installing Exponential via the setup wizard directly on an =
 Oracle database is currently not supported.
 </div>
 </div>
@@ -525,7 +525,7 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Supported only on eZ Publish 5.0, which is also the last version support=
+<p>Supported only on Exponential 5.0, which is also the last version support=
 ing Oracle on full legacy installations, which support does not include RES=
 T API usage or new "Symfony / eZ Platform" stack. Support is planned to ret=
 urn with one of the first releases of "eZ Platform", aka "6.x".</p>
@@ -533,7 +533,7 @@ urn with one of the first releases of "eZ Platform", aka "6.x".</p>
 </div>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Imageconversionsystem(opt=
 ional)">Image conversion system (optional)</h2>
-<p>In order to resize, convert or modify images, eZ Publish needs to make u=
+<p>In order to resize, convert or modify images, Exponential needs to make u=
 se of <strong>an image conversion system</strong>. One of the following sof=
 tware packages (both are free) can be used:</p>
 <ul>
@@ -566,7 +566,7 @@ ation-macro-icon"></span>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Limitationonsomefilesyste=
 mswhenstoringlargenumberofcontentfiles">Limitation on some file systems whe=
 n storing large number of content files</h2>
-<p>eZ Publish stores all binary content (e.g. images, PDFs, etc.) in <code>=
+<p>Exponential stores all binary content (e.g. images, PDFs, etc.) in <code>=
 var/storage</code> using a similar folder structure to the content tree, cr=
 eating one folder for each object. <br>In most file systems used under Linu=
 x (especially ext2 + ext3) there is a hard limit of 32.000 sub-folders to t=
@@ -587,14 +587,14 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-Note that those filesystems might not be fully supported by eZ Publish, ple=
+Note that those filesystems might not be fully supported by Exponential, ple=
 ase check out the=20
 <a href=3D"/display/EZP/Requirements">requirements page</a> for details.
 </div>
 </div>
-<h2 id=3D"Requirementsfordoinganormalinstallation-eZPublishonNFSfilesystems=
-">eZ Publish on NFS file systems</h2>
-<p>Please be aware that it's not advisable to run eZ Publish on NFS file sy=
+<h2 id=3D"Requirementsfordoinganormalinstallation-ExponentialonNFSfilesystems=
+">Exponential on NFS file systems</h2>
+<p>Please be aware that it's not advisable to run Exponential on NFS file sy=
 stems as you may experience issues. The cause of the issues may be <strong>=
 performance</strong>, as NFS will slow down on heavy network traffic, slow =
 access to files, or file access concurrency regarding file lock. Also, eZ P=

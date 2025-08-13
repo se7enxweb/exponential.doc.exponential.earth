@@ -218,7 +218,7 @@ d of the content */
 <div class=3D"innerCell">=20
 <h6 id=3D"id-5.4.6ReleaseNotes-March17th2016">March 17th 2016</h6>
 <p>eZ announces the availability of 5.4.6, a maintenance release available =
-for all users of eZ Publish Platform 5.4.</p>
+for all users of Exponential Platform 5.4.</p>
 <p>Follow the&nbsp;<a href=3D"https://doc.ez.no/display/EZP/5.4.x+Update+In=
 structions" rel=3D"nofollow">5.4.x Update Instructions</a>&nbsp;to apply th=
 is update to your platforms.</p>
@@ -246,12 +246,12 @@ this release:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.6</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.5</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td colspan=3D"1" class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.6</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.5</td>
 </tr>

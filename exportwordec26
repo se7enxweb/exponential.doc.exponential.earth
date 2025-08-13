@@ -208,7 +208,7 @@ h1.pagetitle img {
 <body>
     <h1>Twig</h1>
     <div class=3D"Section1">
-        Twig is a templating engine, used in the templates. eZ Publish Plat=
+        Twig is a templating engine, used in the templates. Exponential Plat=
 form provides=20
 <a href=3D"/display/EZP/Twig+Helper">Twig helpers</a> and=20
 <a href=3D"/display/EZP/Twig+functions">Twig functions</a>. You can also ad=

@@ -733,21 +733,21 @@ WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery
     
 <div id="page-diffs" class="wiki-content">
             <div class="contentLayout2 diff-block-target"><div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar"><div class="cell normal" data-type="normal"><div class="innerCell"><p><span class="diff-html-changed" id="changed-diff-0">This Field Type is used as fallback and for testing purposes.</span></p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh"><span class="diff-html-changed">Name</span></th><th class="confluenceTh"><span class="diff-html-changed">Internal name</span></th><th class="confluenceTh"><span class="diff-html-changed">Expected input type</span></th></tr><tr><td class="confluenceTd"><code><span class="diff-html-changed">Null</span></code></td><td class="confluenceTd"><code><span class="diff-html-changed">variable</span></code></td><td class="confluenceTd"><code><span class="diff-html-changed">mixed</span></code></td></tr></tbody></table></div><h2 id="NullFieldType-Description"><span class="diff-html-changed">Description</span></h2><p><span class="diff-html-changed">As integration with Legacy Stack requires that all Field Types are also also handled on 5.x stack side, Null Field Type is provided as a dummy for legacy Field Types that are not really implemented on 5.x side.</span></p><table class="diff-macro diff-html-changed"><thead><tr><th class="diff-macro-title"><span class="diff-html-changed"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/images/icons/macrobrowser/dropdown/note.png);"> </span>Note</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><p><span class="diff-html-changed">Null Field Type will accept anything provided as a value, but will not store anything to the database, nor will it read any data from the database.</span></p></td></tr></tbody></table><p><span class="diff-html-changed">This Field Type does not have its own fixed internal name. Its identifier is instead configured as needed by passing it as an argument to the constructor.</span></p><p><span class="diff-html-changed">Following example shows how Null Field Type is used to configure dummy implementations for </span><code><span class="diff-html-changed">ezcomcomments</span></code><span class="diff-html-changed"> and </span><code><span class="diff-html-changed">ezpaex</span></code><span class="diff-html-changed"> legacy datatypes:</span></p><table class="diff-macro diff-html-changed"><thead><tr><th class="diff-macro-title"><span class="diff-html-changed"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</span></th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th><span class="diff-html-changed">language</span></th><td><span class="diff-html-changed">none</span></td></tr><tr><th><span class="diff-html-changed">title</span></th><td><span class="diff-html-changed">Null Fieldtype example configuration</span></td></tr></tbody></table></td></tr></tbody><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-changed">parameters:
-    ezpublish.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
+    exponential.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
 
 services:
-    ezpublish.fieldType.ezcomcomments:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+    exponential.fieldType.ezcomcomments:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ "ezcomcomments" ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezcomcomments}
-    ezpublish.fieldType.ezpaex:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+            - {name: exponential.fieldType, alias: ezcomcomments}
+    exponential.fieldType.ezpaex:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ "ezpaex" ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezpaex}</span></pre></td></tr></tbody></table></div></div><div class="cell aside" data-type="aside"><div class="innerCell"><p><span class="diff-html-added" id="added-diff-0"> </span></p></div></div></div></div>
+            - {name: exponential.fieldType, alias: ezpaex}</span></pre></td></tr></tbody></table></div></div><div class="cell aside" data-type="aside"><div class="innerCell"><p><span class="diff-html-added" id="added-diff-0"> </span></p></div></div></div></div>
 </div>
     
     
@@ -792,7 +792,7 @@ services:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

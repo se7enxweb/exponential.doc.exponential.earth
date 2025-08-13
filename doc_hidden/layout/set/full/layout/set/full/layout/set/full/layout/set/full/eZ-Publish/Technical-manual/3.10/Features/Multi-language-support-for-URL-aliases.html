@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Multi-language-support-for-URL-aliases by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:05:02 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Multi-language-support-for-URL-aliases by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:05:02 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>Multi-language support for URL aliases / Features / 3.10 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Multi-language support for URL aliases / Features / 3.10 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Multi-language support for URL aliases</h1>
 </div>
 
- <p>In eZ Publish 3.10, a new feature that makes it possible to use multilingual <a href="../Concepts-and-basics/URL-translation.html#virtual_url" target="_self">virtual URLs</a> (also known as nice URLs or URL aliases) has been introduced. This feature allows URL aliases to exist in several <a href="Multi-language.html#translation_languages" target="_self">translation languages</a>. <a name="auto"></a>
+ <p>In Exponential 3.10, a new feature that makes it possible to use multilingual <a href="../Concepts-and-basics/URL-translation.html#virtual_url" target="_self">virtual URLs</a> (also known as nice URLs or URL aliases) has been introduced. This feature allows URL aliases to exist in several <a href="Multi-language.html#translation_languages" target="_self">translation languages</a>. <a name="auto"></a>
  </p>  <a name="eztoc83720_1" id="eztoc83720_1"></a><h2>Auto-generated aliases</h2> <p>From 3.10, the <a href="../Concepts-and-basics/URL-translation.html#automated_virtual_url_generation" target="_self">automated virtual URL generation</a> mechanism allows URL aliases to exist in several languages, depending on which languages the actual objects exist in. In other words, the URL aliases for nodes are now created in accordance with the existing translations of the objects encapsulated by the nodes. When a new translation is added to an object, the system will automatically generate a new set of URL aliases (based on the translations) for the node(s) that encapsulate that object.</p> <p>A new field &quot;<a href="../Concepts-and-basics/Content-management/The-content-class.html#url_alias_name_pattern" target="_self">URL alias name pattern</a>&quot; has been added to the class edit interface. It controls how the virtual URLs of the nodes will be generated when the objects (instances of the classes) are created.</p> <p>It is not possible to create, edit or remove auto-generated aliases using the administration interface. They are updated automatically when objects are changed. The only way to change an auto-generated alias is to edit the object itself in the corresponding language. <a name="history"></a>
  </p>   <a name="eztoc83720_2" id="eztoc83720_2"></a><h2>URL history entries</h2> <p>When the name of an object is changed, the system will take care of changing the auto-generated URL aliases for the associated nodes. In addition, an internal redirection will be created, which will make sure that the old URL still works. In other words, instead of deleting the old URL alias from the database, the system will convert it into a <i>URL history entry</i>. The old virtual URL will continue to redirect until a new node is created that uses the same URL. In this case, the old virtual URL will be deleted.</p> <p>Note that the internal redirection mechanism is intentionally hidden from the user. You cannot view or manage URL history entries using the administration interface.</p>  <a name="eztoc83720_2_1" id="eztoc83720_2_1"></a><h3>Example</h3> <p>Let's say that a folder called &quot;Computers&quot; contains an article called &quot;Monitors&quot;, which can be accessed at &quot;http://www.example.com/Computers/Monitors&quot;. If you rename the folder to &quot;Hardware&quot;, the new URLs for accessing the folder and the article will be &quot;http://www.example.com/Hardware&quot; and &quot;http://www.example.com/Hardware/Monitors&quot;. If someone tries to use one of the old URLs, the system will automatically redirect the user to the corresponding new URL. If you then rename the article into &quot;LCD&quot;, the following three URLs will redirect the user to &quot;http://www.example.com/Hardware/LCD&quot;:</p>
 <ul>
@@ -112,7 +112,7 @@
 <tr>
  <td valign="top" style="vertical-align: top">   <p>urlalias_compat </p> 
   </td>
- <td valign="top" style="vertical-align: top">   <p>This method supports lowercase Latin letters from &quot;a&quot; to &quot;z&quot;, digits and underscores in URLs. It provides the same behavior as in eZ Publish 3.9.x and earlier versions. Capital characters are not preserved.</p> 
+ <td valign="top" style="vertical-align: top">   <p>This method supports lowercase Latin letters from &quot;a&quot; to &quot;z&quot;, digits and underscores in URLs. It provides the same behavior as in Exponential 3.9.x and earlier versions. Capital characters are not preserved.</p> 
   </td>
  
 </tr>
@@ -136,7 +136,7 @@
 </table>
  <p>
  <a name="url_encoding"></a>
- <br />If you use the &quot;urlalias_iri&quot; type of transformation for URL aliases, be aware of the fact that some web browsers use <a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank">percent encoding</a> for Unicode characters in the URLs. For example, if a visitor enters a URL like &quot;http://www.example.no/Ostehøvel&quot; in the address bar of a browser, it might be automatically converted to &quot;http://www.example.no/Osteh%C3%B8vel&quot;. However, this won't prevent eZ Publish from serving the requested web page. Users of Mozilla Firefox can disable this behavior by typing <a href="http://www.mozilla.org/support/firefox/edit#aboutconfig" target="_blank">about:config</a> in the browser's address bar to edit the &quot;<a href="http://kb.mozillazine.org/Network.standard-url.escape-utf8" target="_blank">network.standard-url.escape-utf8</a>&quot; preference. </p> <p>Refer to the following example to learn how the multilingual URL alias feature actually works. </p>  <a name="eztoc83720_6_5" id="eztoc83720_6_5"></a><h3>Example</h3> <p>Let's say that we have the following site structure: </p> 
+ <br />If you use the &quot;urlalias_iri&quot; type of transformation for URL aliases, be aware of the fact that some web browsers use <a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank">percent encoding</a> for Unicode characters in the URLs. For example, if a visitor enters a URL like &quot;http://www.example.no/Ostehøvel&quot; in the address bar of a browser, it might be automatically converted to &quot;http://www.example.no/Osteh%C3%B8vel&quot;. However, this won't prevent Exponential from serving the requested web page. Users of Mozilla Firefox can disable this behavior by typing <a href="http://www.mozilla.org/support/firefox/edit#aboutconfig" target="_blank">about:config</a> in the browser's address bar to edit the &quot;<a href="http://kb.mozillazine.org/Network.standard-url.escape-utf8" target="_blank">network.standard-url.escape-utf8</a>&quot; preference. </p> <p>Refer to the following example to learn how the multilingual URL alias feature actually works. </p>  <a name="eztoc83720_6_5" id="eztoc83720_6_5"></a><h3>Example</h3> <p>Let's say that we have the following site structure: </p> 
 <ul>
  <li><div> Company (node ID: 10)
 <ul>
@@ -207,11 +207,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Multi-language-support-for-URL-aliases by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:05:03 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Multi-language-support-for-URL-aliases by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:05:03 GMT -->
 </html>

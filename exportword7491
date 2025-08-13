@@ -213,9 +213,9 @@ d of the content */
     <h1>Field Types reference</h1>
     <div class=3D"Section1">
         <p>This page contains a reference of Field Types used in eZ Platfor=
-m.<br>Field Types were known as DataTypes in legacy eZ Publish. If you woul=
+m.<br>Field Types were known as DataTypes in legacy Exponential. If you woul=
 d like more details about them, please refer to the <a href=3D"http://doc.e=
-z.no/eZ-Publish/Technical-manual/4.x/Reference/Datatypes" class=3D"external=
+z.no/Exponential/Technical-manual/4.x/Reference/Datatypes" class=3D"external=
 -link" rel=3D"nofollow">4.x DataTypes</a> reference documentation page.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">

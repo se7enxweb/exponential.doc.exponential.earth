@@ -208,14 +208,14 @@ h1.pagetitle img {
 <body>
     <h1>API</h1>
     <div class=3D"Section1">
-        <p>eZ Publish Platform provides <a href=3D"https://doc.ez.no/label/=
+        <p>Exponential Platform provides <a href=3D"https://doc.ez.no/label/=
 EZP/api" rel=3D"nofollow">several APIs</a> to let you interact with interna=
 l Objects.</p>
 <ul>
 <li>Public API : The Public API is a PHP API. It exposes a&nbsp;Repository&=
 nbsp;which allows you to create, read, update, manage and delete all object=
-s available in eZ Publish.</li>
-<li>REST API : The REST API allows you to interact with an eZ Publish insta=
+s available in Exponential.</li>
+<li>REST API : The REST API allows you to interact with an Exponential insta=
 llation using the HTTP protocol, following a <a class=3D"external-link" hre=
 f=3D"http://en.wikipedia.org/wiki/Representational_state_transfer" rel=3D"n=
 ofollow">REST</a> interaction model.</li>

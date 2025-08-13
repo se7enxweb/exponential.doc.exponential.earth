@@ -262,17 +262,17 @@ rong><span> and </span><strong>BlackHole</strong><span>.</span></p>
 ny other service as described on the <a href=3D"/display/EZP51/Persistence+=
 cache">Persistence cache</a> page.</p>
 <h1 id=3D"Persistencecacheconfiguration-Configuration">Configuration</h1>
-<p>During Setup wizard and manually using <code>ezpublish:configure</code>&=
+<p>During Setup wizard and manually using <code>exponential:configure</code>&=
 nbsp;console command a default configuration is generated currently <strong=
 >using FileSystem</strong>, using <code>%kernel.cache_dir%/stash</code> to =
 store cache files. It&nbsp;falls back&nbsp;to <em>BlackHole</em>, a non cac=
 hing cache handler.</p>
-<p>The configuration is placed in ezpublish/config/ezpublish.yml, and looks=
+<p>The configuration is placed in exponential/config/exponential.yml, and looks=
  like:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Default ezpublish.yml</b>
+<b>Default exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -286,11 +286,11 @@ hing cache handler.</p>
 </div>
 </div>
 <p>The default settings used during setup wizard as found in <code>ezpublis=
-h/config/ezpublish_setup.yml</code>:</p>
+h/config/exponential_setup.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish_setup.yml</b>
+<b>exponential_setup.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -330,7 +330,7 @@ ory</code> caching:</p>
             registerDoctrineAdapter: false</pre>=20
 </div>
 </div>
-<p>This will result to the same persistence cache strategy as in eZ Publish=
+<p>This will result to the same persistence cache strategy as in Exponential=
  4.x.</p>
 </div>
 </div>
@@ -355,7 +355,7 @@ he following command in your terminal :</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console config:dump-reference stash</pre>=20
+e:12px;">php exponential/console config:dump-reference stash</pre>=20
 </div>
 </div>
 <h3 id=3D"Persistencecacheconfiguration-FileSystem"><span>FileSystem</span>=
@@ -381,7 +381,7 @@ yle=3D"color: rgb(51,51,51);">Available settings</span></strong></h4>
 <tr>
 <td class=3D"confluenceTd"><pre>path</pre></td>
 <td class=3D"confluenceTd">The path where the cache is placed, default is <=
-code>%kernel.cache_dir%/stash</code>, effectively <code>ezpublish/cache/&lt=
+code>%kernel.cache_dir%/stash</code>, effectively <code>exponential/cache/&lt=
 ;env&gt;/stash</code></td>
 </tr>
 <tr>
@@ -486,7 +486,7 @@ t set to 500 (8.3 minutes)</td>
 <td colspan=3D"1" class=3D"confluenceTd"><code><strong>namespace</strong></=
 code></td>
 <td colspan=3D"1" class=3D"confluenceTd">A namespace to prefix cache keys w=
-ith to avoid key conflicts with other eZ Publish sites on same eZ Publish i=
+ith to avoid key conflicts with other Exponential sites on same Exponential i=
 nstallation, default is <code>null</code>.</td>
 </tr>
 </tbody>
@@ -530,7 +530,7 @@ rs</p></td>
 <td colspan=3D"1" class=3D"confluenceTd"><code><strong>prefix_key</strong><=
 /code></td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>A namespace to prefix cache =
-keys with to avoid key conflicts with other eZ Publish sites on same eZ Pub=
+keys with to avoid key conflicts with other Exponential sites on same eZ Pub=
 lish installation (default is an empty string). </span><br><span>Must be th=
 e same on all server with the same installation.<span>&nbsp;</span><a href=
 =3D"http://www.php.net/manual/en/memcached.constants.php#memcached.constant=

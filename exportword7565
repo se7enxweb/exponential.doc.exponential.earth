@@ -227,7 +227,7 @@ div.rbtoc1485866310291 li {margin-left: 0px;padding-left: 0px;}
 </div>
 <p></p>
 <h1 id=3D"Loggingconfiguration-Introduction">Introduction</h1>
-<p>eZ Publish 5.1 includes a logging mechanism for debugging purposes in de=
+<p>Exponential 5.1 includes a logging mechanism for debugging purposes in de=
 velopment environments, which monitors <a class=3D"external-link" href=3D"h=
 ttp://stash.tedivm.com/" rel=3D"nofollow">Stash</a>, introduced in <a class=
 =3D"external-link" href=3D"https://github.com/tedivm/TedivmStashBundle" rel=
@@ -239,15 +239,15 @@ avoid excessive memory usage on production environments.</p>
 <h1 id=3D"Loggingconfiguration-Usageexample">Usage example</h1>
 <p>StashBundle logging, represented by the <code>stash.logging</code> setti=
 ng, and persistence cache logging, represented by the setting <code>paramet=
-ers.ezpublish.spi.persistence.cache.persistenceLogger.enableCallLogging</co=
+ers.exponential.spi.persistence.cache.persistenceLogger.enableCallLogging</co=
 de>, and are both enabled by default on development environments.<br>Both s=
 ettings expect a boolean value (<code>true</code> or <code>false</code>), s=
 o, if you desire to turn off the logging mechanism you can use the followin=
-g configuration in <code>ezpublish_dev.yml</code>:<br><br></p>
+g configuration in <code>exponential_dev.yml</code>:<br><br></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish_dev.yml</b>
+<b>exponential_dev.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -261,7 +261,7 @@ g configuration in <code>ezpublish_dev.yml</code>:<br><br></p>
             registerDoctrineAdapter: false
 
 parameters:
-    ezpublish.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
+    exponential.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
 lse</pre>=20
 </div>
 </div>

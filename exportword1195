@@ -253,7 +253,7 @@ in on Symfony application, session configuration is also possible to define=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             session:
@@ -283,7 +283,7 @@ ssion setting where available:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             # By default Session name is eZSESSID{siteaccess_hash}

@@ -1,0 +1,1163 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:35:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Installing an eZ publish bundle on a Linux based system / Bundled installation / Installation / 3.9 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../3-2.html">3.9</a>
+        
+                        /
+                            <a href="../../Installation.html">installation</a>
+        
+                        /
+                            <a href="../Bundled-installation.html">bundled installation</a>
+        
+                        /
+                            installing an exponential bu...
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../3-2.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Normal-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Normal installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Normal-installation/Requirements-for-doing-a-normal-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Requirements for doing a normal installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Normal-installation/Installing-eZ-publish-on-a-Linux-UNIX-based-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installing eZ publish on a Linux/UNIX based system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Normal-installation/Installing-eZ-publish-on-Windows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installing eZ publish on Windows</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Bundled-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Bundled installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Requirements-for-doing-a-bundled-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Requirements for doing a bundled installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Installing-an-eZ-publish-bundle-on-a-Linux-based-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installing an eZ publish bundle on a Linux based system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Installing-an-eZ-publish-bundle-on-Windows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installing an eZ publish bundle on Windows</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Requirements-for-doing-a-manual-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Requirements for doing a manual installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Manual-installation-on-a-Linux-UNIX-based-system.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on a Linux/UNIX based system</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Manual-installation-on-Windows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual installation on Windows</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Manual-installation/Manual-configuration-of-eZ-publish.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual configuration of eZ publish</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Automated-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Automated installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Automated-installation/Requirements-for-doing-an-automated-installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Requirements for doing an automated installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Automated-installation/Automated-installation-of-eZ-publish.html" title="">
+	    	    		                    		    <span class="node-name-normal">Automated installation of eZ publish</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../The-setup-wizard.html" title="">
+	    	    		                    		    <span class="node-name-normal">The setup wizard</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Virtual-host-setup.html" title="">
+	    	    		                    		    <span class="node-name-normal">Virtual host setup</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Virtual-host-setup/Virtual-host-example.html" title="">
+	    	    		                    		    <span class="node-name-normal">Virtual host example</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Removing-Exponential.html" title="">
+	    	    		                    		    <span class="node-name-normal">Removing Exponential</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Removing-Exponential/Removing-an-Exponential-bundle.html" title="">
+	    	    		                    		    <span class="node-name-normal">Removing an Exponential bundle</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Extensions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Extensions</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Extensions/Extracting-the-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Extracting the files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Extensions/Activating-the-extension.html" title="">
+	    	    		                    		    <span class="node-name-normal">Activating the extension</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Troubleshooting.html" title="">
+	    	    		                    		    <span class="node-name-normal">Troubleshooting</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Installing an eZ publish bundle on a Linux based system</h1>
+</div>
+
+ <p>This section describes how to deploy an eZ publish bundle on a Linux based system:</p>
+<ol>
+ <li><div> Download the latest Linux compatible eZ publish bundle from <a href="http://share.ez.no/download-develop/downloads" target="_blank">http://ez.no/download/ez_publish</a>. Look for &quot;exponential-x.y.z-Linux-STABLE.i386.tar.gz&quot; where &quot;x.y.z&quot; is the version number, for example &quot;3.8.0&quot;. </div></li> <li><div> Unpack the bundle:<pre class="wordwrap"><span class="line">$ tar zxvf exponential-x.y.z-Linux-STABLE.i386.tar.gz</span>
+</pre>  </div></li> <li><div> Become the root user:<pre class="wordwrap"><span class="line">$ su -</span>
+</pre>  </div></li> <li><div> <p>Start the installation script:</p><pre class="wordwrap"><span class="line"># cd exponential-x.y.z-Linux-STABLE.i386</span>
+<span class="line"># ./install.sh</span>
+</pre>The following text explains the various dialog screens of the installation script.</div></li> 
+</ol>
+  <a name="eztoc63199_1" id="eztoc63199_1"></a><h2>Main menu</h2> 
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install1.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install1/387-3-eng-GB/install1_doc.png" alt="Linux installer - step 1" /></a>
+ <p>Step 1: Main menu</p>
+
+
+
+
+
+
+
+</div> <p>Select the &quot;Install eZ publish 3&quot; option and hit enter.</p>  <a name="eztoc63199_1_1" id="eztoc63199_1_1"></a><h3>Previous installations</h3> <p>The installation script will automatically detect a previously installed bundle by checking a lock file. A previous installation must be removed. Use the &quot;Uninstall eZ publish 3&quot; option from the main menu, the installer will automatically remove the previous bundle. If a previous version was removed manually then the lock file may still be present. Remove the lock file manually by deleting the &quot;/var/state/exponential/exponential.lock&quot; file.</p>    <a name="eztoc63199_2" id="eztoc63199_2"></a><h2>Confirmation</h2> <p>&nbsp;</p>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install2.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install2/390-3-eng-GB/install2_doc.png" alt="Linux installer - step 2" /></a>
+ <p>Step 2: Confirmation</p>
+
+
+
+
+
+
+
+</div><p>
+ <br />A dialog will ask for a final confirmation. Choose &quot;Yes&quot;. The installation script will then attempt to install all the software included in the bundle. Everything will be put in the &quot;/opt/exponential&quot; directory (except the lock file, which will be located at &quot;/var/state/exponential/&quot;).</p> <a name="eztoc63199_3" id="eztoc63199_3"></a><h2>File extraction</h2> <p>&nbsp;</p>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install3.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install3/393-3-eng-GB/install3_doc.png" alt="Linux installer - step 3" /></a>
+ <p>Step 3: File extraction</p>
+
+
+
+
+
+
+
+</div><p>
+ <br />The installation script will extract the files included in the bundle. This may take some time (a minute or two).</p> <a name="eztoc63199_4" id="eztoc63199_4"></a><h2>Network interface</h2> <p>&nbsp;</p>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install4.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install4/396-3-eng-GB/install4_doc.png" alt="Linux installer - step 4" /></a>
+ <p>Step 4: Network interface</p>
+
+
+
+
+
+
+
+</div><p>
+ <br />A dialog will ask for the name of the primary network interface (most likely the Ethernet controller). The primary network interface is usually called &quot;eth0&quot;. In case of doubt: bring up a shell and use the &quot;ifconfig&quot; command to figure out the name of the interface. It is possible to use the local loopback interface if no physical network interface is present. The name of the local loopback interface is &quot;lo&quot;.</p> <a name="eztoc63199_5" id="eztoc63199_5"></a><h2>Web server port</h2> <p>&nbsp;</p>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install5.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install5/399-3-eng-GB/install5_doc.png" alt="Linux installer - step 5" /></a>
+ <p>Step 5: Web server port</p>
+
+
+
+
+
+
+
+</div><p>
+ <br />The installation script will ask for a TCP port number. The bundled web server (Apache) will communicate with the rest of the world through this port. The port must not be used by any other service running on the system. The default port for HTTP traffic is 80. If a web server is already using this port, then another port must be chosen (for example 8085).</p> <a name="eztoc63199_6" id="eztoc63199_6"></a><h2>Finish</h2> <p>&nbsp;</p>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.9/Images/Installation/Bundled-installation/Linux/install6.html" target="_self"><img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/3_9/images/installation/bundled_installation/linux/install6/402-3-eng-GB/install6_doc.png" alt="Linux installer - step 6" /></a>
+ <p>Step 6: Summary</p>
+
+
+
+
+
+
+
+</div><p>
+ <br />The final dialog will display information about the installation and how the eZ publish system can be reached using a web browser. The address will be something like &quot;http://localhost&quot; or &quot;http://localhost:XXXX&quot; where &quot;XXXX&quot; is the actual port number.</p> <p>The web based setup wizard has to be run after the installation is finished (it will automatically start the first time the site is browsed). You should be able to follow the instructions on the screen. Refer to <a href="../The-setup-wizard.html" target="_self">&quot;The setup wizard&quot;</a> section for a complete step-by-step guide.</p> 
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(13/01/2005 12:57 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(18/05/2006 8:32 am)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Balazs Halasy, Svitlana Shatokhina</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment12848" class="attribute-heading">
+<h2>Installation Problem; Apache Relocation Error:</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Sunday 24 September 2006 6:17:52 pm</p>
+    <p class="author">Michael Gross</p>
+</div>
+
+<div class="attribute-short">
+Followed the instructions above for the eZ publish 3.8 Linux installer and I got a &quot;connection refused&quot; error when trying to  reach the eZ publish site on localhost or from another workstation. I'm using an old Red Hat 9 workstation.<br />
+<br />
+I checked the System Monitor and neither Apache nor MySQL were running. I don't know a whole lot about Linux but was poking around the eZ installed files and bumped into th eZ_apache.log. Here's it's content:<br />
+<br />
+/opt/exponential/apache_1.3.33/bin/httpd: relocation error: /opt/exponential/apache_1.3.33/bin/httpd: symbol _sys_siglist, version GLIBC_2.3.3 not defined in file libc.so.6 with link time reference<br />
+/opt/exponential/apache_1.3.33/bin/apachectl start: httpd could not be started<br />
+<br />
+What caused this error and how do I correct it should I need to reinstall? 
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="12848" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment12849" class="attribute-heading">
+<h2>install.sh fails to run if there's a newer dialog installation</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Tuesday 30 January 2007 4:45:24 pm</p>
+    <p class="author">Chris Green</p>
+</div>
+
+<div class="attribute-short">
+I had all sorts of fun and games when I tried to install using the bundle and install.sh.<br />
+<br />
+When I ran install.sh it just failed silently with no output at all and no diagnostics. After a bit of investigation I found out that it was because I have a newer version of 'dialog' installed on my system (Slackware 11) and that has a version of /etc/dialogrc that the exponential version of dialog can't understand.<br />
+<br />
+I think you need to give dialog a parameter so it uses your version of dialogrc, not the default at /etc/dialogrc.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="12849" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment15095" class="attribute-heading">
+<h2>Error</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 29 June 2007 12:49:48 pm</p>
+    <p class="author">Dennis</p>
+</div>
+
+<div class="attribute-short">
+Hi, I installed the Linux Bundle of Version 3.9.2, 3.9.1 and 3.8 on Suse 9.3 and 10.2. In all cases the Apache doesn´ t start:<br />
+/opt/exponential/apache_1.3.33/bin/httpd: error while loading shared libraries: libdb.so.2: cannot open shared object file: No such file or directory<br />
+/opt/exponential/apache_1.3.33/bin/apachectl start: httpd could not be started<br />
+<br />
+Can anyone help me?
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="15095" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment17223" class="attribute-heading">
+<h2>Re: Error</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Monday 16 July 2007 11:14:00 am</p>
+    <p class="author">Bogomil Shopov</p>
+</div>
+
+<div class="attribute-short">
+Are you with Gnome? You should install gnome-libs too.<br />
+<br />
+Thanks<br />
+Bogo
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="17223" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment17230" class="attribute-heading">
+<h2>Re: Error</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 25 July 2007 2:20:08 pm</p>
+    <p class="author">Avasol</p>
+</div>
+
+<div class="attribute-short">
+I had the same problem with Ubuntu, but fixed it by installing rpm libdb1-compat.<br />
+That will provide libd.so.2.  (Which is really outdated).<br />
+
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="17230" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="12847" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/3.9/Installation/Bundled-installation/Installing-an-eZ-publish-bundle-on-a-Linux-based-system by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:35:48 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

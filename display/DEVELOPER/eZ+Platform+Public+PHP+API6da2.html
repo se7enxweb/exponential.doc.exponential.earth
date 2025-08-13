@@ -709,7 +709,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="innerCell">
 <p>The PHP API is also commonly referred to as the &quot;<em>Public API</em>&quot;. Currently it exposes a Repository which allows you to create, read, update, manage and delete all objects available in eZ Platform, first and foremost content, but also related objects like Sections, Locations, Content Types, Content Type groups, languages and so on.</p><h3 id="eZPlatformPublicPHPAPI-eZPlatformAPIRepository">eZ Platform API Repository</h3><p>This entity is the entry point to everything you will do with the Public API.</p><p>It will allow you to create, retrieve, update and delete all the eZ Platform objects, as well as Content Types, Sections, Content states. It is always obtained through the service container.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Obtaining the eZ Platform Repository via the service container</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[/** @var $repository \eZ\Publish\API\Repository\Repository
-$repository = $container-&gt;get( &#39;ezpublish.api.repository&#39; );]]></script>
+$repository = $container-&gt;get( &#39;exponential.api.repository&#39; );]]></script>
 </div></div><p> By itself, the repository doesn't do much. It allows three types of operations: user authentication (getting / changing the current user), issuing transactions, and obtaining services. </p><div class="confluence-information-macro confluence-information-macro-tip"><p class="title">Inline objects documentation</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Pay attention to the inline phpdoc block in this code stub. It tells your IDE that <code>$repository</code> is an instance of  <code>
         <a href="http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/Repository.html" class="external-link" rel="nofollow">\eZ\Publish\API\Repository\Repository</a>
       </code>. If your IDE supports this feature, you will get code completion on the <code>$repository</code> object. This helper is a huge time saver when it comes to learning about the eZ Platform API.</p></div></div><h3 id="eZPlatformPublicPHPAPI-Theservicecontainer">The service container</h3><p>The above code snippet implies that the <a href="http://symfony.com/doc/2.0/book/service_container.html" class="external-link" rel="nofollow">service container</a> is available in the context you are writing your code in.</p><p>In controllers, this generally is done by extending the Symfony <code>
@@ -851,7 +851,7 @@ $repository = $container-&gt;get( &#39;ezpublish.api.repository&#39; );]]></scri
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

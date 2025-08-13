@@ -234,7 +234,7 @@ eared as well (at least if an ESI is not used).</p>
 <h3 id=3D"HTTPCache-Themechanism">The mechanism</h3>
 <p><strong>Smart HTTP cache clearing</strong> is an event-based mechanism. =
 Whenever a content item needs its cache cleared, the cache purger service s=
-ends an <code>ezpublish.cache_clear.content</code> event (also identified b=
+ends an <code>exponential.cache_clear.content</code> event (also identified b=
 y <code>eZ\Publish\Core\MVC\Symfony\MVCEvents::CACHE_CLEAR_CONTENT</code> c=
 onstant) and passes an <code>eZ\Publish\Core\MVC\Symfony\Event\ContentCache=
 ClearEvent</code> event object. This object contains the ContentInfo object=
@@ -250,7 +250,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 The event is dispatched with a dedicated event dispatcher,=20
-<code>ezpublish.http_cache.event_dispatcher</code>.
+<code>exponential.http_cache.event_dispatcher</code>.
 </div>
 </div>
 <h3 id=3D"HTTPCache-Defaultbehavior">Default behavior</h3>
@@ -267,7 +267,7 @@ elatedLocationsListener</code>)</li>
 <h3 id=3D"HTTPCache-Implementingacustomlistener">Implementing a custom list=
 ener</h3>
 <p>By design, smart HTTP cache clearing is extensible. One can easily imple=
-ment an event listener/subscriber to the <code>ezpublish.cache_clear.conten=
+ment an event listener/subscriber to the <code>exponential.cache_clear.conten=
 t</code> event and add Locations to the cache clear list.</p>
 <h4 id=3D"HTTPCache-Example">Example</h4>
 <p>Here's a very simple custom listener example, adding an arbitrary Locati=
@@ -280,8 +280,8 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 Cache clear listener services=20
 <strong>must</strong> be tagged as=20
-<code>ezpublish.http_cache.event_subscriber</code> or=20
-<code>ezpublish.http_cache.event_listener</code>.
+<code>exponential.http_cache.event_subscriber</code> or=20
+<code>exponential.http_cache.event_listener</code>.
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -339,9 +339,9 @@ e\EventListener\ArbitraryLocationsListener
 services:
     acme.cache_clear.arbitrary_locations_listener:
         class: %acme.cache_clear.arbitrary_locations_listener.class%
-        arguments: [@ezpublish.api.service.location]
+        arguments: [@exponential.api.service.location]
         tags:
-            - { name: ezpublish.http_cache.event_subscriber }
+            - { name: exponential.http_cache.event_subscriber }
 
 </pre>=20
 </div>
@@ -384,7 +384,7 @@ onfiguration</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             content:
@@ -463,7 +463,7 @@ ny Proxy cache Store.&nbsp;Cache purge will thus be synchronous, meaning no=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         purge_type: local</pre>=20
 </div>
@@ -481,7 +481,7 @@ ymfony kernel-request/console cycle <em>(during terminate event)</em>.&nbsp=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         purge_type: http
 
@@ -510,7 +510,7 @@ vice also used internally for cache clearing on content updates:</p>
 :12px;">// Purging cache based on content id, this will trigger cache clear=
  of all locations found by Smart HttpCache clear
 // typically self, parent, related, ..
-$container-&gt;get('ezpublish.http_cache.purger')-&gt;purgeForContent(55);<=
+$container-&gt;get('exponential.http_cache.purger')-&gt;purgeForContent(55);<=
 /pre>=20
 </div>
 </div>
@@ -582,7 +582,7 @@ urther on according to <a href=3D"http://foshttpcache.readthedocs.org/en/la=
 test/varnish-configuration.html" class=3D"external-link" rel=3D"nofollow">F=
 OSHttpCache documentation</a> in order to use features supported by it.</p>
 </blockquote>
-<h3 id=3D"HTTPCache-ConfigureeZPublish">Configure eZ Publish</h3>
+<h3 id=3D"HTTPCache-ConfigureExponential">Configure Exponential</h3>
 <h4 id=3D"HTTPCache-UpdateyourVirtualHost">Update your Virtual Host</h4>
 <p>Somehow we need to tell php process that we are behind a Varnish proxy a=
 nd not the built in Symfony Http Proxy. If you use fastcgi/fpm you can pass=
@@ -633,7 +633,7 @@ d specify url Varnish can be reached on:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         purge_type: http
 &nbsp;
@@ -1271,7 +1271,7 @@ a></li>=20
 <li><a href=3D"#HTTPCache-Prerequisites">Prerequisites</a></li>=20
 <li><a href=3D"#HTTPCache-RecommendedVCLbasefiles">Recommended VCL base fil=
 es</a></li>=20
-<li><a href=3D"#HTTPCache-ConfigureeZPublish">Configure eZ Publish</a></li>=
+<li><a href=3D"#HTTPCache-ConfigureExponential">Configure Exponential</a></li>=
 =20
 <li><a href=3D"#HTTPCache-UpdateYMLconfiguration">Update YML configuration<=
 /a></li>=20

@@ -217,7 +217,7 @@ d of the content */
 bar">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<p>The Recommendation Bundle extends the functionality of eZ Publish with a=
+<p>The Recommendation Bundle extends the functionality of Exponential with a=
  recommendation engine, powered by <a href=3D"https://yoochoose.com/" class=
 =3D"external-link" rel=3D"nofollow">YOOCHOOSE</a>. It allows you to track t=
 he way visitors use your website and suggests recommended content to them b=
@@ -243,7 +243,7 @@ fony bundle.</p>
 <li>PHP 5.4.4<em> or higher PHP 5.x version</em></li>
 <li>Symfony 2.7<em> or higher Symfony<em>&nbsp;2.x version</em> </em> <em> =
 <br> </em></li>
-<li>eZ Publish Platform 5.4.5 or above
+<li>Exponential Platform 5.4.5 or above
 <ul>
 <li>With the REST API configured to use sessions and publicly open to the Y=
 OOCHOOSE servers</li>
@@ -254,7 +254,7 @@ OOCHOOSE servers</li>
 egacy, and does not require it.</p>
 <h2 id=3D"RecommendationBundle-Step1:Installation">Step 1: Installation</h2=
 >
-<p><strong>1.</strong> Run the following from your eZ Publish installation =
+<p><strong>1.</strong> Run the following from your Exponential installation =
 root <em>(here with most recent 1.x release)</em>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -263,7 +263,7 @@ root <em>(here with most recent 1.x release)</em>:</p>
 composer update --prefer-dist</pre>=20
 </div>
 </div>
-<p><strong>2.</strong> Enable the bundle in <code>ezpublish/EzPublishKernel=
+<p><strong>2.</strong> Enable the bundle in <code>exponential/EzPublishKernel=
 .php</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -282,7 +282,7 @@ to your <code>routing.yml</code> file:</p>
 :12px;">recommendationBundleRestRoutes:
     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest=
 .yml"
-    prefix:   %ezpublish_rest.path_prefix%</pre>=20
+    prefix:   %exponential_rest.path_prefix%</pre>=20
 </div>
 </div>
 <h2 id=3D"RecommendationBundle-Step2:Configuration">Step 2: Configuration</=
@@ -400,7 +400,7 @@ mmendation Bundle</h1>
 s must be done in collaboration with YOOCHOOSE.</p>
 <h2 id=3D"RecommendationBundle-Indexing">Indexing</h2>
 <p><strong>Public</strong> content is automatically indexed. When necessary=
-, eZ Publish will notify YOOCHOOSE of changes to content. Initial import is=
+, Exponential will notify YOOCHOOSE of changes to content. Initial import is=
  to be managed with your YOOCHOOSE sales representative. Note that your ser=
 ver's REST API will need to be open to the YOOCHOOSE servers for indexing t=
 o be possible.</p>

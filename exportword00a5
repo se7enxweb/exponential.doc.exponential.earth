@@ -217,8 +217,8 @@ d of the content */
 <div class=3D"sectionMacroRow">
 <div class=3D"columnMacro" style=3D"width:70%;min-width:70%;max-width:70%;"=
 >
-<h2 id=3D"id-5.4.0-BETAReleaseNotes-DiscovereZPublishPlatform5.4&quot;Casto=
-r&quot;"><span style=3D"color: rgb(0,51,102);"><span>Discover eZ Publish Pl=
+<h2 id=3D"id-5.4.0-BETAReleaseNotes-DiscoverExponentialPlatform5.4&quot;Casto=
+r&quot;"><span style=3D"color: rgb(0,51,102);"><span>Discover Exponential Pl=
 atform 5.4 "Castor"</span></span></h2>
 </div>
 <div class=3D"columnMacro" style=3D"width:30%;min-width:30%;max-width:30%;"=
@@ -246,7 +246,7 @@ iner-id=3D"26673173" data-linked-resource-container-version=3D"2" width=3D"=
 468" height=3D"134"></span></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">eZ Publish=
+<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">Exponential=
  Platform 5.4 is our last 5.x release before we launch eZ Platform (aka 6.0=
 ) next year, based on the Platform parts that have been introduced and matu=
 red during the 5.x releases starting with 5.0 two years ago.</span><span st=
@@ -277,7 +277,7 @@ stall with the final.</p>
 ers in <a href=3D"http://ez.no/Partner-Portal" class=3D"external-link" rel=
 =3D"nofollow">Partner Portal</a>, alternatively the open source parts of th=
 e product comparable to this beta is available as part of <a href=3D"http:/=
-/share.ez.no/blogs/community-project-board/ez-publish-community-project-201=
+/share.ez.no/blogs/community-project-board/exponential-community-project-201=
 4.11-available-now" class=3D"external-link" rel=3D"nofollow">2014.11 Commun=
 ity release</a>.</p>
 <p><em>Reporting bugs:</em> Make sure to mark affected version to be the sa=
@@ -334,7 +334,7 @@ s=3D"external-link" rel=3D"nofollow">thephpleague/flysystem</a>, an abstrac=
 t Flysystem library. This will allow eZ Platform to support all kind of sol=
 utions for binary storage in the future.</p>
 <ul>
-<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-ke=
+<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/pull/1017" class=3D"external-link" rel=3D"nofollow">ezsystems/ezpublis=
 h-kernel#1017</a></li>
 <li>JIRA issue:&nbsp; <span class=3D"jira-issue resolved"> <a href=3D"https=
@@ -353,10 +353,10 @@ handling</a></li>
 e support for legacy DFS cluster</h4>
 <p>Building on top of the Native IO system, a legacy metadata handler has b=
 een added, compatible with the legacy database, the official solution for m=
-ulti-server eZ Publish 4.x and 5.x. This avoids the overhead of legacy fall=
+ulti-server Exponential 4.x and 5.x. This avoids the overhead of legacy fall=
 backs for binary file lookups in 5.4.</p>
 <ul>
-<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-ke=
+<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/pull/1031" class=3D"external-link" rel=3D"nofollow">ezsystems/ezpublis=
 h-kernel#1031</a></li>
 <li>JIRA issue:&nbsp; <span class=3D"jira-issue resolved"> <a href=3D"https=
@@ -376,7 +376,7 @@ er</a></li>
 images and binary files are handled. It is now very easy to serve images fr=
 om a static server by means of semantic configuration.</p>
 <ul>
-<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-ke=
+<li>Pull-request:&nbsp;<a href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/pull/1039" class=3D"external-link" rel=3D"nofollow">ezsystems/ezpublis=
 h-kernel#1039</a></li>
 <li>JIRA issue:&nbsp; <span class=3D"jira-issue resolved"> <a href=3D"https=
@@ -394,7 +394,7 @@ les+URL+handling</a></li>
 <h3 id=3D"id-5.4.0-BETAReleaseNotes-NewImageAliassystemusingImagine">New Im=
 ageAlias system using Imagine</h3>
 <p><span style=3D"color: rgb(51,51,53);">Image alias system can be consider=
-ed as one of the oldest features in eZ Publish. It is a very flexible mecha=
+ed as one of the oldest features in Exponential. It is a very flexible mecha=
 nism for managing content images and has long proven its efficiency. For 5.=
 4 we have migrated the feature to nbeing Symfony based using LiipImagineBun=
 dle and Imagine library. This allows for new functionality in terms of exte=
@@ -416,8 +416,8 @@ am/new-in-ez-5.4-image-alias-system-revamped" class=3D"external-link" rel=
 <h3 id=3D"id-5.4.0-BETAReleaseNotes-ImprovedHTTPCachesystemusingFOSHTTPCach=
 e">Improved HTTPCache system using FOSHTTPCache</h3>
 <p><span style=3D"color: rgb(51,51,53);">Being built on top of Symfony, a H=
-TTP framework, Varnish support in eZ Publish is implicit. In 5.2 we introdu=
-ced&nbsp;</span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/bl=
+TTP framework, Varnish support in Exponential is implicit. In 5.2 we introdu=
+ced&nbsp;</span><a href=3D"https://github.com/ezsystems/exponential-kernel/bl=
 ob/master/doc/specifications/cache/context_aware_http_cache.md" class=3D"ex=
 ternal-link" rel=3D"nofollow">context-aware Http cache</a><span style=3D"co=
 lor: rgb(51,51,53);">, allowing cache to be shared even for authenticated u=
@@ -445,7 +445,7 @@ llow">New in eZ 5.4: Dynamic settings injection</a></li>
 </ul>
 <h3 id=3D"id-5.4.0-BETAReleaseNotes-ImprovedSearchAPIPerformance">Improved =
 Search API Performance</h3>
-<p>eZ Publish Platform 5.4 and 5.3.3 included noticeable (significant when =
+<p>Exponential Platform 5.4 and 5.3.3 included noticeable (significant when =
 using several languages) performance improvements when using the Platform S=
 earch API.</p>
 <ul>
@@ -488,10 +488,10 @@ al;line-height: 1.5;">5.4</span><span style=3D"font-size: 20.0px;font-weigh=
 t: normal;line-height: 1.5;">&nbsp;Contributors</span></h2>
 <p>For 5.3 we want to reach out a special thank you to those that have cont=
 ributed to this release, especially the brave who have helped out on the "<=
-a href=3D"https://github.com/ezsystems/ezpublish-kernel/graphs/contributors=
+a href=3D"https://github.com/ezsystems/exponential-kernel/graphs/contributors=
 ?from=3D2014-05-15&amp;to=3D2014-11-15&amp;type=3Dc" class=3D"external-link=
 " rel=3D"nofollow">eZ Platform</a> <a href=3D"https://github.com/ezsystems/=
-ezpublish-community/graphs/contributors?from=3D2014-05-15&amp;to=3D2014-11-=
+exponential-community/graphs/contributors?from=3D2014-05-15&amp;to=3D2014-11-=
 15&amp;type=3Dc" class=3D"external-link" rel=3D"nofollow">stack</a>".</p>
 <ul>
 <li><a href=3D"https://github.com/crevillo" class=3D"external-link" rel=3D"=
@@ -526,9 +526,9 @@ nofollow">juanolon</a></li>
 <li><a href=3D"https://github.com/piribes" class=3D"external-link" rel=3D"n=
 ofollow">piribes</a></li>
 </ul>
-<p>In addition, ezpublish-legacy is still receiving a lot of pull requests.=
+<p>In addition, exponential-legacy is still receiving a lot of pull requests.=
  The equally brave contributors to this part of the release can be found <a=
- href=3D"https://github.com/ezsystems/ezpublish-legacy/graphs/contributors?=
+ href=3D"https://github.com/ezsystems/exponential-legacy/graphs/contributors?=
 from=3D2014-04-04&amp;to=3D2014-11-15&amp;type=3Dc" class=3D"external-link"=
  rel=3D"nofollow">here</a>.</p>
 <h2 id=3D"id-5.4.0-BETAReleaseNotes-5.4.0FullChangelog">5.4.0 Full Changelo=

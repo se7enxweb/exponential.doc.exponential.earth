@@ -248,11 +248,11 @@ plate selection when using the <code>ViewController</code>, either directly=
  from a URL or via a sub-request.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
-<p class=3D"title">eZ Publish 4.x terminology</p>
+<p class=3D"title">Exponential 4.x terminology</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In eZ Publish 4.x, it was known as <strong>template override system <em>=
+<p>In Exponential 4.x, it was known as <strong>template override system <em>=
 by configuration</em></strong> (<code>override.ini</code>).<br>However this=
  only reflects old overrides for <code>node/view/*.tpl</code> and <code>con=
 tent/view/*.tpl</code>.</p>
@@ -267,7 +267,7 @@ an> section</span>. This configuration is a hash built in the following way=
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># app/config/ezplatform.yml
-ezpublish:
+exponential:
     system:
         # Can be a valid siteaccess, siteaccess group or even "global"
         front_siteaccess:
@@ -302,7 +302,7 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p><strong>Template matching will NOT work if your content contains a Field=
  Type that is not supported by the repository</strong>. It can be the case =
-when you are in the process of a migration from eZ Publish 4.x, where custo=
+when you are in the process of a migration from Exponential 4.x, where custo=
 m datatypes have been developed. <br>In this case the repository will throw=
  an exception which is caught in the <code>ViewController</code>, <strong>c=
 ausing a </strong><a href=3D"/display/EZP/Legacy+template+fallback"><strong=
@@ -328,7 +328,7 @@ oller+to+display+a+content+item+or+location">use your own custom controller=
 </div>
 <h2 id=3D"Viewproviderconfiguration-Aboutlocation_view&amp;content_view">Ab=
 out&nbsp;<code>location_view &amp; content_view</code></h2>
-<p>Until eZ Publish Platform 5.4, the main view action was <code>location_v=
+<p>Until Exponential Platform 5.4, the main view action was <code>location_v=
 iew</code>. This is deprecated since eZ Platform 15.12 (1.0). Only&nbsp;<co=
 de>content_view</code> should be used to view content, with a location as a=
 n option.</p>

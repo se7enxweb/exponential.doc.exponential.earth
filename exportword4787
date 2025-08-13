@@ -269,10 +269,10 @@ n.</p>
 s=3D"icon icon-page" title=3D"Page">Page:</span> <a href=3D"/display/glossa=
 ry/API">API</a> <br />=20
 <div class=3D"smalltext" style=3D"margin: 0 0 0 36px">
-eZ Publish Platform provides several APIs to let you interact with internal=
+Exponential Platform provides several APIs to let you interact with internal=
  Objects. Public API : The Public API is a PHP API. It exposes a&nbsp;Repos=
 itory&nbsp;which allows you to create, read, update, manage and delete all =
-objects available in eZ Publish. REST AP
+objects available in Exponential. REST AP
 </div> </td>=20
 </tr>
 <tr valign=3D"top">=20
@@ -313,7 +313,7 @@ ry/Fieldtype">Fieldtype</a> <br />=20
 <div class=3D"smalltext" style=3D"margin: 0 0 0 36px">
 A FieldType is the smallest possible entity of storage. It determines how a=
  specific type of information should be validated, stored, retrieved and fo=
-rmatted. eZ Publish comes with a collection of fundamental datatypes that c=
+rmatted. Exponential comes with a collection of fundamental datatypes that c=
 an be used to build powerful a
 </div> </td>=20
 <td><h4 style=3D"margin-top: 0px"><a name=3D"index-G"></a>G</h4> </td>=20
@@ -364,7 +364,7 @@ ax in order to focus on the roles of components, the constraints upon their=
 s=3D"icon icon-page" title=3D"Page">Page:</span> <a href=3D"/display/glossa=
 ry/Siteaccess">Siteaccess</a> <br />=20
 <div class=3D"smalltext" style=3D"margin: 0 0 0 36px">
-A single eZ Publish installation is capable of hosting multiple sites by ma=
+A single Exponential installation is capable of hosting multiple sites by ma=
 king use of something called the siteaccess system. A collection of configu=
 ration settings is called a siteaccess. When a siteaccess is in use, the de=
 fault configuration settings w
@@ -374,7 +374,7 @@ fault configuration settings w
 Symfony is a set of reusable PHP components...and a PHP framework for web p=
 rojects. Symfony is the PHP framework under the platform to make developers=
  lives easier. See the architecture documentation to understand the role of=
- Symfony in eZ Publish Platfor
+ Symfony in Exponential Platfor
 </div> </td>=20
 </tr>
 <tr valign=3D"top">=20
@@ -382,7 +382,7 @@ rojects. Symfony is the PHP framework under the platform to make developers=
 s=3D"icon icon-page" title=3D"Page">Page:</span> <a href=3D"/display/glossa=
 ry/Twig">Twig</a> <br />=20
 <div class=3D"smalltext" style=3D"margin: 0 0 0 36px">
-Twig is a templating engine, used in the templates. eZ Publish Platform pro=
+Twig is a templating engine, used in the templates. Exponential Platform pro=
 vides Twig helpers and Twig functions. You can also add your own Twig helpe=
 rs and functions.See Twig homepage for more information on Twig.
 </div> </td>=20

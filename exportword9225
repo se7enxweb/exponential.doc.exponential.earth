@@ -220,7 +220,7 @@ bundle.</span>&nbsp;</h2>
 tructure for our FieldType. To make it easier to move around the code, we w=
 ill mimic to some extent the structure that is used in the kernel.&nbsp;</s=
 pan><span style=3D"color: rgb(0,0,0);">Native FieldTypes are located inside=
- <code>ezpublish-kernel</code> (in <code>vendor/ezsystems</code>), in the <=
+ <code>exponential-kernel</code> (in <code>vendor/ezsystems</code>), in the <=
 /span><code><span style=3D"color: rgb(0,0,0);">eZ/Publish/Core/FieldType</s=
 pan></code><span style=3D"color: rgb(0,0,0);"> folder. Each FieldType has i=
 ts own subfolder: </span><code><span style=3D"color: rgb(0,0,0);">TextLine<=

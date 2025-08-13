@@ -215,7 +215,7 @@ d of the content */
         <h6 id=3D"id-5.4.1ReleaseNotes-January16th2015">January 16th 2015</=
 h6>
 <p>eZ announces the availability of 5.4.1, a maintenance release available =
-for all users of eZ Publish Platform 5.4 containing a notable few <a href=
+for all users of Exponential Platform 5.4 containing a notable few <a href=
 =3D"#id-5.4.1ReleaseNotes-updates">updates and fixes</a>, most notably the =
 update to Symfony 2.6.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -241,7 +241,7 @@ div.rbtoc1485851297164 li {margin-left: 0px;padding-left: 0px;}
 <em>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.4.1ReleaseNotes-UpdatingfromapreviousversionofeZPublis=
-hPlatform5.4">Updating from a previous version of eZ Publish Platform 5.4</=
+hPlatform5.4">Updating from a previous version of Exponential Platform 5.4</=
 a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.4.1ReleaseNotes-1.UpdatetoSymfony2.6">1. Update to Sym=
@@ -257,8 +257,8 @@ pdates and fixes in this release</a></li>=20
 </div>
 <em><br></em>
 <p></p>
-<h2 id=3D"id-5.4.1ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.4">Updating from a previous version of eZ Publish Platform 5.4</h2>
+<h2 id=3D"id-5.4.1ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.4">Updating from a previous version of Exponential Platform 5.4</h2>
 <p>These instructions take advantage of&nbsp;<a href=3D"https://getcomposer=
 .org/" class=3D"external-link" rel=3D"nofollow">Composer</a>&nbsp;for maint=
 enance updates, so&nbsp;<span>make sure you familiarize yourself with the <=
@@ -300,8 +300,8 @@ dating Composer Packages selectively</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st ezsystems/ezpublish-kernel ezsystems/demobundle ezsystems/ezdemo-ls-exte=
-nsion ezsystems/ezpublish-legacy symfony/symfony</pre>=20
+st ezsystems/exponential-kernel ezsystems/demobundle ezsystems/ezdemo-ls-exte=
+nsion ezsystems/exponential-legacy symfony/symfony</pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-tip=
@@ -332,12 +332,12 @@ ses:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.1</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.0</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">5.4.1</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.0</td>
 </tr>

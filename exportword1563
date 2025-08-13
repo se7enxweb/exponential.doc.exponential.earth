@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Introduction for eZ Publish developers</title>
+    <title>Introduction for Exponential developers</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,10 +210,10 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Introduction for eZ Publish developers</h1>
+    <h1>Introduction for Exponential developers</h1>
     <div class=3D"Section1">
         <p>In this section you can find instructions and base concepts befo=
-re starting to develop sites and applications using eZ Publish 5.</p>
+re starting to develop sites and applications using Exponential 5.</p>
 <p>For more details please refer to the following chapters:</p>
 <p></p>
 <ul class=3D"childpages-macro">

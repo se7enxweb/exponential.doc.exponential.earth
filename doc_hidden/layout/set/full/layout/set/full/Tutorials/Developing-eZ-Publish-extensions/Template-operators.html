@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-operators by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:54:59 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-operators by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:54:59 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                   
-    <title>Template operators / Developing eZ Publish extensions / Tutorials / Documentation - Doc</title>
+    <title>Template operators / Developing Exponential extensions / Tutorials / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Template operators</h1>
 </div>
 
-<p>Another way to access functions in your extensions is to use template operators. While eZ Publish contains many template operators, we will define a new template operator called &quot;result_type&quot; with a $result_type parameter.</p><p>We will use the parameter to control the amount of data that is shown in our database table. The template command {jac('list')} shows an array of data and {jac('count')} shows the amount of data. We will use the same functions as in the template fetch example: fetch('modul1', 'list' , ...) and fetch( 'modul1', 'count', ... )</p><p>The definition of the existing template operators in the jacextension is done in the file extension/jacextension/autoloads/ eztemplateautoload.php (see Listing 18). The template operator’s actions are defined in a custom PHP class (in our case, in JACOperator of the file extension/jacextension/autoloads/ jacoperator.php) (see Listing 19).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;</span>
+<p>Another way to access functions in your extensions is to use template operators. While Exponential contains many template operators, we will define a new template operator called &quot;result_type&quot; with a $result_type parameter.</p><p>We will use the parameter to control the amount of data that is shown in our database table. The template command {jac('list')} shows an array of data and {jac('count')} shows the amount of data. We will use the same functions as in the template fetch example: fetch('modul1', 'list' , ...) and fetch( 'modul1', 'count', ... )</p><p>The definition of the existing template operators in the jacextension is done in the file extension/jacextension/autoloads/ eztemplateautoload.php (see Listing 18). The template operator’s actions are defined in a custom PHP class (in our case, in JACOperator of the file extension/jacextension/autoloads/ jacoperator.php) (see Listing 19).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;</span>
 <span class="line">&nbsp;</span>
 <span class="line">// Which operators will load automatically?</span>
 <span class="line">$eZTemplateOperatorArray = array();</span>
@@ -112,7 +112,7 @@
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php\r\n/** \r\n * Operator: jac(\'list\') and jac(\'count\') &lt;br&gt; \r\n * Count: {jac(\'count\')} &lt;br&gt; \r\n * Liste: {jac(\'list\')|attribute(show)} \r\n */ \r\nclass JACOperator\r\n{ \r\n    public $Operators;\r\n\r\n    public function __construct( $name = \'jac\' )\r\n    { \r\n        $this-&gt;Operators = array( $name ); \r\n    }\r\n\r\n    /** \r\n     * Returns the template operators.\r\n     * @return array\r\n     */ \r\n    function operatorList()\r\n    { \r\n        return $this-&gt;Operators; \r\n    }\r\n \r\n    /**\r\n     * Returns true to tell the template engine that the parameter list \r\n     * exists per operator type. \r\n     */ \r\n    public function namedParameterPerOperator() \r\n    { \r\n        return true; \r\n    }\r\n\r\n    /**\r\n     * @see eZTemplateOperator::namedParameterList \r\n     **/ \r\n    public function namedParameterList() \r\n    { \r\n        return array( \'jac\' =&gt; array( \'result_type\' =&gt; array( \'type\' =&gt; \'string\',\r\n                                                     \'required\' =&gt; true, \r\n                                                     \'default\' =&gt; \'list\' ))\r\n                      ); \r\n    }\r\n\r\n    /**\r\n     * Depending of the parameters that have been transmitted, fetch objects JACExtensionData \r\n     * {jac(\'list)} or count data {jac(\'count\')} \r\n     */ \r\n     public function modify( $tpl, $operatorName, $operatorParameters,  $rootNamespace, $currentNamespace, &amp;$operatorValue, $namedParameters  )\r\n    { \r\n        $result_type = $namedParameters[\'result_type\']; \r\n        if( $result_type == \'list\') \r\n            $operatorValue = JACExtensionData::fetchList(true); \r\n        else if( $result_type == \'count\') \r\n            $operatorValue = JACExtensionData::getListCount(); \r\n    } \r\n} \r\n?&gt;\r\n' ); return false;" /></p>
 <![endif]--><p>
-<i>Listing 19. extension/jacextension/autoloads/jacoperator.php</i><br />And of course, do not forget to regenerate the autoloads :).</p><p>To tell eZ Publish that jacextension contains template operators, we have to define it in the eZ Publish configuration file extension/jacextension/settings/site.ini.append.php with ExtensionAutoloadPath[]=jacextension (see Listing 20).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php /* #?ini charset=&quot;utf-8&quot;?</span>
+<i>Listing 19. extension/jacextension/autoloads/jacoperator.php</i><br />And of course, do not forget to regenerate the autoloads :).</p><p>To tell Exponential that jacextension contains template operators, we have to define it in the Exponential configuration file extension/jacextension/settings/site.ini.append.php with ExtensionAutoloadPath[]=jacextension (see Listing 20).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php /* #?ini charset=&quot;utf-8&quot;?</span>
 <span class="line">...</span>
 <span class="line"># search for template operators in jaceextension</span>
 <span class="line">[TemplateSettings]</span>
@@ -138,11 +138,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-operators by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:54:59 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-operators by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:54:59 GMT -->
 </html>

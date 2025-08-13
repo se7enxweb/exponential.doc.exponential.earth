@@ -718,16 +718,16 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 </div></div><p>This is where our bundle tells Symfony that when parameters are loaded, <code>services.yml</code> should be loaded from <code>Resources/config/</code> (defined above). Either replace the line, or add a new one with:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[$loader-&gt;load(&#39;fieldtypes.yml&#39;);]]></script>
 </div></div></div></div><p> </p><p>Like most API components, Field Types use the <a href="http://symfony.com/doc/current/components/dependency_injection/tags.html" class="external-link" rel="nofollow">Symfony 2 service tag mechanism</a>.</p><p>The principle is quite simple: a service can be assigned one or several tags, with specific parameters. When the dependency injection container is compiled into a PHP file, tags are read by <code>CompilerPass</code> implementations that add extra handling for tagged services. Each service tagged as <code>
-      ezpublish.fieldType</code> is added to a <a href="http://martinfowler.com/eaaCatalog/registry.html" style="line-height: 1.4285715;" class="external-link" rel="nofollow"> registry </a> using the alias argument as its unique identifier (<code>ezstring</code>, <code>ezxmltext</code>, etc.).  Each Field Type must also inherit from the abstract ezpublish.fieldType service. This ensures that the initialization steps shared by all Field Types are executed.</p><p>Here is the service definition for our Tweet type:</p><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Resources/config/services.yml</b></div><div class="codeContent panelContent pdl">
+      exponential.fieldType</code> is added to a <a href="http://martinfowler.com/eaaCatalog/registry.html" style="line-height: 1.4285715;" class="external-link" rel="nofollow"> registry </a> using the alias argument as its unique identifier (<code>ezstring</code>, <code>ezxmltext</code>, etc.).  Each Field Type must also inherit from the abstract exponential.fieldType service. This ensures that the initialization steps shared by all Field Types are executed.</p><p>Here is the service definition for our Tweet type:</p><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Resources/config/services.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[parameters:
     ezsystems.tweetfieldtypebundle.fieldType.eztweet.class: EzSystems\TweetFieldTypeBundle\eZ\Publish\FieldType\Tweet\Type
  
 services:
     ezsystems.tweetfieldtypebundle.fieldType.eztweet:
-        parent: ezpublish.fieldType
+        parent: exponential.fieldType
         class: %ezsystems.tweetfieldtypebundle.fieldType.eztweet.class%
         tags:
-            - {name: ezpublish.fieldType, alias: eztweet}
+            - {name: exponential.fieldType, alias: eztweet}
 ]]></script>
 </div></div><p><br /> We take care of namespacing our Field Type with our vendor and bundle name to limit the risk of naming conflicts.</p></div>
 </div>
@@ -879,7 +879,7 @@ services:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

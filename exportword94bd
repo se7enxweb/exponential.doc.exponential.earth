@@ -219,7 +219,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Field Type identifier: <code>ezimage</code><br>Validators: File size<br>=
 Value object: <code>\eZ\Publish\Core\FieldType\Image\Value</code><span><br>=
-Associated Services: <code><span>ezpublish.fieldType.ezimage.variation_serv=
+Associated Services: <code><span>exponential.fieldType.ezimage.variation_serv=
 ice</span></code></span></p>
 </div>
 </div>
@@ -577,7 +577,7 @@ tiny.png&lt;/uri&gt;
 <h3 id=3D"TheImageFieldType-FromPHPcode">From PHP code</h3>
 <h4 id=3D"TheImageFieldType-Gettinganimagevariation">Getting an image varia=
 tion</h4>
-<p>The variation service, <code>ezpublish.fieldType.ezimage.variation_servi=
+<p>The variation service, <code>exponential.fieldType.ezimage.variation_servi=
 ce</code>, can be used to generate/get variations for a Field. It expects a=
  VersionInfo, the Image Field and the variation name, as a string (<code>la=
 rge</code>, <code>medium</code>, etc.)</p>

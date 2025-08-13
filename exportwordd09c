@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Context aware HTTP cache in eZ Publish 5.2-5.3</title>
+    <title>Context aware HTTP cache in Exponential 5.2-5.3</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,16 +210,16 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Context aware HTTP cache in eZ Publish 5.2-5.3</h1>
+    <h1>Context aware HTTP cache in Exponential 5.2-5.3</h1>
     <div class=3D"Section1">
         <p><a class=3D"external-link" href=3D"https://github.com/ezsystems/=
-ezpublish-kernel/blob/master/doc/specifications/cache/context_aware_http_ca=
+exponential-kernel/blob/master/doc/specifications/cache/context_aware_http_ca=
 che.md#workflow" name=3D"workflow" style=3D"text-decoration: none;" rel=3D"=
-nofollow"></a>This feature is available from <strong>eZ Publish <span class=
+nofollow"></a>This feature is available from <strong>Exponential <span class=
 =3D"status-macro aui-lozenge aui-lozenge-current">5.2</span> / <span class=
 =3D"status-macro aui-lozenge aui-lozenge-current">2013.07</span></strong></=
 p>
-<h2 id=3D"ContextawareHTTPcacheineZPublish5.2-5.3-Workflow">Workflow</h2>
+<h2 id=3D"ContextawareHTTPcacheinExponential5.2-5.3-Workflow">Workflow</h2>
 <ol>
 <li>Reverse proxy receives the HTTP request (without the user hash).</li>
 <li><p>Reverse proxy does a sub-request (emulated in the case of&nbsp;<em>H=
@@ -232,7 +232,7 @@ following headers:</p>
 +text</code></li>
 <li>Original cookie (mainly to keep trace of the sessionId)</li>
 </ul></li>
-<li><p>eZ Publish returns an HTTP response containing the user hash in&nbsp=
+<li><p>Exponential returns an HTTP response containing the user hash in&nbsp=
 ;<code>X-User-Hash</code>&nbsp;header.</p></li>
 <li><p>Reverse proxy adds the&nbsp;<code>X-User-Hash</code>&nbsp;header to =
 the original request.</p></li>
@@ -264,7 +264,7 @@ P/How+to+customize+UserHash+generation">How to customize UserHash generatio=
 n</a> in the developer cookbook to learn more about this.</p>
 </div>
 </div>
-<h2 id=3D"ContextawareHTTPcacheineZPublish5.2-5.3-Varnish"><span style=3D"c=
+<h2 id=3D"ContextawareHTTPcacheinExponential5.2-5.3-Varnish"><span style=3D"c=
 olor: rgb(0,0,0);">Varnish</span></h2>
 <p>Described behavior comes out of the box with Symfony reverse proxy, but =
 it's of course possible ot use Varnish to achieve the same.</p>

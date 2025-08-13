@@ -227,7 +227,7 @@ eared as well (at least if an ESI is not used).</p>
 <h2 id=3D"SmartHTTPcacheclearing-Themechanism">The mechanism</h2>
 <p><strong>Smart HTTP cache clearing</strong> is an event-based mechanism. =
 Whenever a content item needs its cache cleared, the cache purger service s=
-ends an <code>ezpublish.cache_clear.content</code> event (also identified b=
+ends an <code>exponential.cache_clear.content</code> event (also identified b=
 y <code>eZ\Publish\Core\MVC\Symfony\MVCEvents::CACHE_CLEAR_CONTENT</code> c=
 onstant) and passes an <code>eZ\Publish\Core\MVC\Symfony\Event\ContentCache=
 ClearEvent</code> event object. This object contains the ContentInfo object=
@@ -243,7 +243,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 The event is dispatched with a dedicated event dispatcher,=20
-<code>ezpublish.http_cache.event_dispatcher</code>.
+<code>exponential.http_cache.event_dispatcher</code>.
 </div>
 </div>
 <h2 id=3D"SmartHTTPcacheclearing-Defaultbehavior">Default behavior</h2>
@@ -260,7 +260,7 @@ elatedLocationsListener</code>)</li>
 <h2 id=3D"SmartHTTPcacheclearing-Implementingacustomlistener">Implementing =
 a custom listener</h2>
 <p>By design, smart HTTP cache clearing is extensible. One can easily imple=
-ment an event listener/subscriber to the <code>ezpublish.cache_clear.conten=
+ment an event listener/subscriber to the <code>exponential.cache_clear.conten=
 t</code> event and add Locations to the cache clear list.</p>
 <h3 id=3D"SmartHTTPcacheclearing-Example">Example</h3>
 <p>Here's a very simple custom listener example, adding an arbitrary Locati=
@@ -273,8 +273,8 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 Cache clear listener services=20
 <strong>must</strong> be tagged as=20
-<code>ezpublish.http_cache.event_subscriber</code> or=20
-<code>ezpublish.http_cache.event_listener</code>.
+<code>exponential.http_cache.event_subscriber</code> or=20
+<code>exponential.http_cache.event_listener</code>.
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -332,9 +332,9 @@ e\EventListener\ArbitraryLocationsListener
 services:
     acme.cache_clear.arbitrary_locations_listener:
         class: %acme.cache_clear.arbitrary_locations_listener.class%
-        arguments: [@ezpublish.api.service.location]
+        arguments: [@exponential.api.service.location]
         tags:
-            - { name: ezpublish.http_cache.event_subscriber }
+            - { name: exponential.http_cache.event_subscriber }
 
 </pre>=20
 </div>

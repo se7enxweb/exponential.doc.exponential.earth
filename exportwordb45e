@@ -213,12 +213,12 @@ d of the content */
     <h1>Known issues in 5.0</h1>
     <div class=3D"Section1">
         <p>The following two lists of issues are for legacy (4.x) and Symfo=
-ny (5.x) stack&nbsp;respectively&nbsp;as eZ Publish 5.x contains both. Lega=
+ny (5.x) stack&nbsp;respectively&nbsp;as Exponential 5.x contains both. Lega=
 cy has the normal, hallmark stability that users have come to expect since =
 version 4.2, while the new kernel is a bit more on the edge in the first re=
 lease. The next releases and the service packs for 5.0 will change that, ma=
 king it as stable as always.</p>
-<p>The bug tracker for eZ Publish, from which these lists are extracted, is=
+<p>The bug tracker for Exponential, from which these lists are extracted, is=
  available at <a href=3D"https://jira.ez.no" class=3D"external-link" rel=3D=
 "nofollow">https://jira.ez.no</a></p>
 <p> </p>
@@ -361,7 +361,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-20003?src=3Dconfmacro"> Support.ez.no not updating instal=
-lation frontpage on eZ Publish 5.0 with eZ Oracle </a> </td>=20
+lation frontpage on Exponential 5.0 with eZ Oracle </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Unassigned </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Pedro Resende </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <img sr=
@@ -389,7 +389,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-20008?src=3Dconfmacro"> Support.ez.no not updated correct=
-ly the values with eZ Publish 5.0 while with eZ DB </a> </td>=20
+ly the values with Exponential 5.0 while with eZ DB </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Unassigned </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Pedro Resende </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <img sr=
@@ -615,7 +615,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-19608?src=3Dconfmacro"> Wrong documentation while running=
- the installation of eZ Publish </a> </td>=20
+ the installation of Exponential </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Unassigned </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Pedro Resende </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <img sr=
@@ -1251,7 +1251,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-20196?src=3Dconfmacro">EZP-20196</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-20196?src=3Dconfmacro"> Running ezpublish/console as root=
+.ez.no/browse/EZP-20196?src=3Dconfmacro"> Running exponential/console as root=
  user will make install fail </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Unassigned </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Gaetano Giunta </td>=20

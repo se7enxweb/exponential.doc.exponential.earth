@@ -231,17 +231,17 @@ rmation-macro-icon"></span>
 reload the homepage. The cache will be regenerated.</span></p>
 </div>
 </div>
-<p>Then open it and look for <code>ezpublish.api.role.policy_map</code>, it=
+<p>Then open it and look for <code>exponential.api.role.policy_map</code>, it=
  will look like this:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.api.role.policy_map entry in the app/cache/dev/appDevDebugProj=
+<b>exponential.api.role.policy_map entry in the app/cache/dev/appDevDebugProj=
 ectContainer.xml file</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: xml; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">    &lt;parameter key=3D"ezpublish.api.role.policy_map" type=3D"col=
+:12px;">    &lt;parameter key=3D"exponential.api.role.policy_map" type=3D"col=
 lection"&gt;
         &lt;parameter key=3D"content" type=3D"collection"&gt;=09=09=09
         &lt;parameter key=3D"read" type=3D"collection"&gt;

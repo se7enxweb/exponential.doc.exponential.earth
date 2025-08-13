@@ -292,7 +292,7 @@ checks against the repository and thus stays&nbsp;<em>under the hood</em>.<=
 <h3 id=3D"Howtoauthenticateauserwithmultipleuserproviders-Customizingtheuse=
 rclass">Customizing the user class</h3>
 <p>It is possible to customize the user class used by extending&nbsp;<code>=
-ezpublish.security.login_listener</code>&nbsp;service, which defaults to&nb=
+exponential.security.login_listener</code>&nbsp;service, which defaults to&nb=
 sp;<code>eZ\Publish\Core\MVC\Symfony\Security\EventListener\SecurityListene=
 r</code>.</p>
 <p>You can override&nbsp;<code>getUser()</code>&nbsp;to return whatever use=
@@ -311,12 +311,12 @@ span></p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">security:
     providers:
-        # Chaining in_memory and ezpublish user providers
+        # Chaining in_memory and exponential user providers
         chain_provider:
             chain:
-                providers: [in_memory, ezpublish]
-        ezpublish:
-            id: ezpublish.security.user_provider
+                providers: [in_memory, exponential]
+        exponential:
+            id: exponential.security.user_provider
         in_memory:
             memory:
                 users:
@@ -345,7 +345,7 @@ er\InteractiveLoginListener
 services:
     acme_test.interactive_event_listener:
         class: %acme_test.interactive_event_listener.class%
-        arguments: [@ezpublish.api.service.user]
+        arguments: [@exponential.api.service.user]
         tags:
             - { name: kernel.event_subscriber }&nbsp;</pre>=20
 </div>

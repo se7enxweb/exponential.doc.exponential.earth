@@ -220,7 +220,7 @@ he tweet's content.</span></p>
 ow to actually&nbsp;<em>store</em> this.</span></p>
 <h3 id=3D"ImplementingtheLegacyStorageEngineConverter-Aboutconverters">Abou=
 t converters</h3>
-<p><span style=3D"color: rgb(0,0,0);">Unlike eZ Publish Legacy, eZ Publish =
+<p><span style=3D"color: rgb(0,0,0);">Unlike Exponential Legacy, Exponential =
 5 supports (by design) multiple storage engines</span><span style=3D"color:=
  rgb(0,0,0);">. The main, and almost only one right now is the Legacy Stora=
 ge Engine, based on the legacy database, with a new implementation.&nbsp;</=
@@ -429,7 +429,7 @@ n></span></h3>
 <p><span><span style=3D"color: rgb(0,0,0);">Just like a Type, a Legacy Conv=
 erter needs to be registered and tagged in the service container.</span></s=
 pan></p>
-<p><span><span style=3D"color: rgb(0,0,0);">The tag is&nbsp;<code>ezpublish=
+<p><span><span style=3D"color: rgb(0,0,0);">The tag is&nbsp;<code>exponential=
 .storageEngine.legacy.converter</code>, and it requires an&nbsp;<code>alias=
 </code> attribute to be set to the FieldType identifier (<code>eztweet</cod=
 e>). Let's add this block to&nbsp;<span style=3D"color: rgb(0,0,0);"><code>=
@@ -447,7 +447,7 @@ Resources/config/services.yml</code>:</span></span></span></p>
         class: EzSystems\TweetFieldTypeBundle\eZ\Publish\FieldType\Tweet\Le=
 gacyConverter
         tags:
-            - {name: ezpublish.storageEngine.legacy.converter, alias: eztwe=
+            - {name: exponential.storageEngine.legacy.converter, alias: eztwe=
 et}</pre>=20
 </div>
 </div>

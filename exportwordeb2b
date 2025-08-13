@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <p>In this chapter, we will see two ways of customizing eZ Platform=
 : command line scripts (for import scripts, for instance), and custom contr=
-ollers, the eZ Platform equivalent of eZ Publish 4.x custom modules.</p>
+ollers, the eZ Platform equivalent of Exponential 4.x custom modules.</p>
 <p><style type=3D"text/css">/*<![CDATA[*/
 div.rbtoc1485851656975 {padding: 0px;}
 div.rbtoc1485851656975 ul {list-style: disc;margin-left: 0px;}
@@ -336,7 +336,7 @@ ze:12px;">The bundle can be generated anywhere. The suggested default direc=
 tory uses the standard conventions.
 
 
-Target directory [/path/to/ezpublish5/src]:</pre>=20
+Target directory [/path/to/exponential5/src]:</pre>=20
 </div>
 </div>
 <p>Next, you need to choose the generated configuration's format, out of YA=
@@ -383,7 +383,7 @@ irmation. Hit Enter to confirm.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
 ze:12px;">You are going to generate a "EzSystems\Bundle\CookbookBundle\EzSy=
-stemsCookbookBundle" bundle in "/path/to/ezpublish5/src/" using the "yml" f=
+stemsCookbookBundle" bundle in "/path/to/exponential5/src/" using the "yml" f=
 ormat.
 
 Do you confirm generation [yes]? yes</pre>=20
@@ -425,7 +425,7 @@ tarted using&nbsp;<code>php app/console &lt;command&gt;</code>. You can get=
  the complete list of existing command line scripts by executing&nbsp;<code=
 >php app/console list</code>&nbsp;from the eZ Platform root.</p>
 <p>In this chapter, we will create a new command, identified as&nbsp;<code>=
-ezpublish:cookbook:hello</code>, that takes an optional name argument, and =
+exponential:cookbook:hello</code>, that takes an optional name argument, and =
 greets that name. To do so, we need one thing: a class with a name ending w=
 ith "Command" that extends&nbsp;<code>Symfony\Component\Console\Command\Com=
 mand</code>. Note that in our case, we use&nbsp;<code>ContainerAwareCommand=
@@ -494,7 +494,7 @@ igure()</code>&nbsp;method.</p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">protected function configure()
 {
-    $this-&gt;setName( 'ezpublish:cookbook:hello' );
+    $this-&gt;setName( 'exponential:cookbook:hello' );
     $this-&gt;setDefinition(
         array(
             new InputArgument( 'name', InputArgument::OPTIONAL, 'An argumen=
@@ -506,14 +506,14 @@ t' )
 </div>
 </div>
 <p>First, we use <code>setName()</code> to set our command's name to "<code=
->ezpublish:cookbook:hello</code>". We then use&nbsp;<code>setDefinition()</=
+>exponential:cookbook:hello</code>". We then use&nbsp;<code>setDefinition()</=
 code>&nbsp;to add an argument, named&nbsp;<code>name</code>, to our command=
 .</p>
 <p>You can read more about argument definitions and further options in the&=
 nbsp;<a href=3D"http://symfony.com/doc/2.0/components/console/introduction.=
 html" class=3D"external-link" rel=3D"nofollow">Symfony 2 Console documentat=
 ion</a>.&nbsp;Once this is done, if you run&nbsp;<code>php app/console list=
-</code>, you should see&nbsp;<code>ezpublish:cookbook:hello</code>&nbsp;lis=
+</code>, you should see&nbsp;<code>exponential:cookbook:hello</code>&nbsp;lis=
 ted in the available commands. If you run it, it will however still do noth=
 ing.</p>
 <p>Let's just add something very simple to our <code>execute()</code> metho=
@@ -546,7 +546,7 @@ $output )
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">$ php app/console ezpublish:cookbook:hello world
+e:12px;">$ php app/console exponential:cookbook:hello world
 Hello world</pre>=20
 </div>
 </div>

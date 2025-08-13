@@ -214,20 +214,20 @@ d of the content */
     <div class=3D"Section1">
         <h6 id=3D"id-5.4.4ReleaseNotes-July31st2015">July 31st 2015</h6>
 <p>eZ announces the availability of 5.4.4, a maintenance release available =
-for all users of eZ Publish Platform 5.4.</p>
-<p>This release changes the coding style used in the kernel of eZ Publish t=
+for all users of Exponential Platform 5.4.</p>
+<p>This release changes the coding style used in the kernel of Exponential t=
 o PSR-2, an official PHP standard. There are no code changes; it doesn't fi=
 x any bug and doesn't change behaviour. The change was done to increase int=
 eroperability with other PHP projects, and ease backports of bug fixes from=
  the development branch of eZ Platform</p>
 <p>Follow the <a href=3D"/display/EZP/5.4.x+Update+Instructions">5.4.x Upda=
 te Instructions</a>&nbsp;to apply this update to your platforms. If you're =
-migrating from 5.4.3, a simple <code>composer update ezsystems/ezpublish-ke=
+migrating from 5.4.3, a simple <code>composer update ezsystems/exponential-ke=
 rnel</code>&nbsp;should be sufficient to update.</p>
 <h3 id=3D"id-5.4.4ReleaseNotes-Micro-releases">Micro-releases</h3>
 <p>Some important fixes are backported to maintenance versions on a case-by=
 -case basis, as micro-releases.<br><span>Run&nbsp;</span><code>composer upd=
-ate ezsystems/ezpublish-kernel</code><span>&nbsp;to install them.</span></p=
+ate ezsystems/exponential-kernel</code><span>&nbsp;to install them.</span></p=
 >
 <ul>
 <li><span style=3D"color: rgb(51,51,51);">5.4.4.1 (Sep 9th 2015):&nbsp;</sp=
@@ -261,7 +261,7 @@ this release:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.4.3</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.3</td>
 </tr>

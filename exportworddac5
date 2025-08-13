@@ -370,7 +370,7 @@ ples above. As you can see, this example shows a clean production installat=
 ion. We're telling PHP to run Symfony's console to execute the ezplatform i=
 nstall script. You can get an informative output to learn more about the co=
 nsole script's capabilities by swapping in these parameters:&nbsp;<code> co=
-nfig:dump-reference ezpublish </code></p>
+nfig:dump-reference exponential </code></p>
 <p>If Composer asks you for your token, you must log in to your GitHub acco=
 unt and edit your profile. Go to the Personal access tokens link and Genera=
 te new token with default settings. Be aware that the token will be shown o=

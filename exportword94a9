@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Manual configuration of eZ Publish</title>
+    <title>Manual configuration of Exponential</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,17 +210,17 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Manual configuration of eZ Publish</h1>
+    <h1>Manual configuration of Exponential</h1>
     <div class=3D"Section1">
-        <p>This section describes how to manually configure eZ Publish inst=
+        <p>This section describes how to manually configure Exponential inst=
 ead of using the setup wizard to do all the work. Keep in mind that the man=
 ual installation method is for expert users only. It should only be used by=
  people who know what they are doing. The following steps will work on both=
  Linux/UNIX and Windows environments.</p>
 <p><a name=3D"eztoc131639_1" rel=3D"nofollow"></a></p>
-<h2 id=3D"ManualconfigurationofeZPublish-Databaseinitialization">Database i=
+<h2 id=3D"ManualconfigurationofExponential-Databaseinitialization">Database i=
 nitialization</h2>
-<p>A clean eZ Publish database is created using two very important SQL scri=
+<p>A clean Exponential database is created using two very important SQL scri=
 pts: "<code>kernel_schema</code>" and "<code>cleandata</code>" (note that a=
 n empty database should be created before launching these scripts). The fir=
 st of them initializes the necessary database structure and the second one =
@@ -228,22 +228,22 @@ imports the pre-defined data to the database. While the "<code>kernel_schem=
 a</code>" script differs for each database engine, the "<code>cleandata</co=
 de>" script is the same for all solutions.</p>
 <p><a name=3D"eztoc131639_1_1" rel=3D"nofollow"></a></p>
-<h3 id=3D"ManualconfigurationofeZPublish-MySQL">MySQL</h3>
+<h3 id=3D"ManualconfigurationofExponential-MySQL">MySQL</h3>
 <p>Use the following command to run the MySQL specific "<code>kernel_schema=
 </code>" script:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ mysql -u USERNAME -pPASSWORD DATABASE &lt; PATH/ezpublish_legacy/ker=
+<pre>$ mysql -u USERNAME -pPASSWORD DATABASE &lt; PATH/exponential_legacy/ker=
 nel/sql/mysql/kernel_schema.sql</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
-<p>In eZ Publish 4.0.1 and later versions, the script will use the InnoDB s=
+<p>In Exponential 4.0.1 and later versions, the script will use the InnoDB s=
 torage engine when creating new tables. This storage engine is recommended =
-(and will be required in the future) for running eZ Publish on a MySQL data=
+(and will be required in the future) for running Exponential on a MySQL data=
 base. Contact your database administrator if you are unsure about whether I=
 nnoDB is available on your server.</p>
-<p>In eZ Publish 4.0.0, the <code>CREATE TABLE</code> statements in the "<c=
+<p>In Exponential 4.0.0, the <code>CREATE TABLE</code> statements in the "<c=
 ode>kernel_schema</code>" script do not specify which storage engine to use=
  (no <code>ENGINE</code> or <code>TYPE</code> option), and thus the default=
  storage engine will be used. Normally, it is <code>MyISAM</code>. Because =
@@ -267,7 +267,7 @@ y for each table:</p>
 ript:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ mysql -u USERNAME -pPASSWORD DATABASE &lt; PATH/ezpublish_legacy/ker=
+<pre>$ mysql -u USERNAME -pPASSWORD DATABASE &lt; PATH/exponential_legacy/ker=
 nel/sql/common/cleandata.sql</pre>=20
 </div>
 </div>
@@ -298,7 +298,7 @@ Z Publish installation, for example "/opt/ezp".</p></td>
 </table>
 </div>
 <p><a name=3D"eztoc131639_2" rel=3D"nofollow"></a></p>
-<h2 id=3D"ManualconfigurationofeZPublish-Filepermissions">File permissions<=
+<h2 id=3D"ManualconfigurationofExponential-Filepermissions">File permissions<=
 /h2>
 <p>Windows users can skip this part.</p>
 <p>Several cache, log and config folders must be writable both by the web s=
@@ -311,15 +311,15 @@ se shell commands will give proper permission to the web server and command=
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-   &nbsp;$ rm -rf ezpublish/cache/*
-    $ rm -rf ezpublish/logs/*
+   &nbsp;$ rm -rf exponential/cache/*
+    $ rm -rf exponential/logs/*
     $ sudo chmod +a "www-data allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,direct=
 ory_inherit" \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -331,10 +331,10 @@ all setfacl before using it (as is the case with Ubuntu), like so:</p>
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
     $ sudo setfacl -R -m u:www-data:rwx -m u:www-data:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web
     $ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx \
-      ezpublish/{cache,logs,config} ezpublish_legacy/{design,extension,sett=
+      exponential/{cache,logs,config} exponential_legacy/{design,extension,sett=
 ings,var} web</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -344,11 +344,11 @@ erver's user as the owner of the required directories.</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo chown -R www-data:www-data ezpublish/{cache,logs,config} ezpubli=
+    $ sudo chown -R www-data:www-data exponential/{cache,logs,config} ezpubli=
 sh_legacy/{design,extension,settings,var} web
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | sudo xargs chmod -R 775
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | sudo xargs chmod -R 664</pre>=20
 </div>
 </div><p><br><br></p></li>
@@ -359,27 +359,27 @@ o do anything.</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>    $ cd /&lt;ezp5-root&gt;/
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type d | sudo xargs chmod -R 777
-    $ sudo find {ezpublish/{cache,logs,config},ezpublish_legacy/{design,ext=
+    $ sudo find {exponential/{cache,logs,config},exponential_legacy/{design,ext=
 ension,settings,var},web} -type f | sudo xargs chmod -R 666</pre>=20
 </div>
 </div></li>
 </ul>
-<h2 id=3D"ManualconfigurationofeZPublish-Linkassets">Link assets</h2>
-<p>To be able to run eZ Publish 5 correctly, assets need to be exposed in t=
+<h2 id=3D"ManualconfigurationofExponential-Linkassets">Link assets</h2>
+<p>To be able to run Exponential 5 correctly, assets need to be exposed in t=
 he public "<code>web</code>" folder.</p>
-<p>The following commands will first symlink eZ Publish 5 assets in "Bundle=
+<p>The following commands will first symlink Exponential 5 assets in "Bundle=
 s" and the second will symlink assets (design files like images, scripts an=
-d css, and files in var folder) &nbsp;from eZ Publish Legacy</p>
+d css, and files in var folder) &nbsp;from Exponential Legacy</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>cd /&lt;ezp5-root&gt;
-php ezpublish/console assets:install --symlink web
-php ezpublish/console ezpublish:legacy:assets_install --symlink web
+php exponential/console assets:install --symlink web
+php exponential/console exponential:legacy:assets_install --symlink web
 
 # For 5.1 / 2013.4 and higher, also:
-php ezpublish/console assetic:dump --env=3Dprod web</pre>=20
+php exponential/console assetic:dump --env=3Dprod web</pre>=20
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
@@ -390,7 +390,7 @@ rmation-macro-icon"></span>
 <p><em><strong>Note</strong>: In both cases </em>"<code>web</code>"<em> is =
 the default folder and can be skipped from the command. Further information=
  about alternative options is&nbsp;available&nbsp;with <code>-h</code> just=
- like it is with</em> "<code>php ezpublish/console -h</code>".</p>
+ like it is with</em> "<code>php exponential/console -h</code>".</p>
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -405,13 +405,13 @@ check the available notes <a href=3D"https://confluence.ez.no/display/EZP51=
 ollow">here</a>, before entering the setup wizard chapter.</p>
 </div>
 </div>
-<h2 id=3D"ManualconfigurationofeZPublish-ConfiguringeZPublish">Configuring =
-eZ Publish</h2>
+<h2 id=3D"ManualconfigurationofExponential-ConfiguringExponential">Configuring =
+Exponential</h2>
 <p>The "<code>site.ini.append.php</code>" configuration file located in the=
- "<code>ezpublish_legacy/settings/override</code>" directory of your eZ Pub=
-lish installation must be changed, or else eZ Publish will not function pro=
+ "<code>exponential_legacy/settings/override</code>" directory of your eZ Pub=
+lish installation must be changed, or else Exponential will not function pro=
 perly. This file is the global override for the <a href=3D"http://doc.ez.no=
-/eZ-Publish/Technical-manual/4.x/Reference/Configuration-files/site.ini" cl=
+/Exponential/Technical-manual/4.x/Reference/Configuration-files/site.ini" cl=
 ass=3D"external-link" rel=3D"nofollow">site.ini</a> configuration file. The=
 re are a lot of things that need to be configured (database, mail transport=
  system, var directory, etc.). The following text shows a generic example o=
@@ -471,7 +471,7 @@ TextTranslation=3Ddisabled
 <p>&nbsp;</p>
 <p>In the example above the "<code>AvailableSiteAccessList[]</code>" array =
 located in the "<code>[SiteAccessSettings]</code>" section of this file det=
-ermines the available <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manu=
+ermines the available <a href=3D"http://doc.ez.no/Exponential/Technical-manu=
 al/4.x/Concepts-and-basics/Configuration/Site-management" class=3D"external=
 -link" rel=3D"nofollow">siteaccesses</a> called "<code>example</code>" and =
 "<code>example_admin</code>". The "<code>CheckValidity</code>" setting loca=
@@ -480,21 +480,21 @@ will be initiated when trying to access the site.</p>
 <p>In addition, two siteaccess configurations must be created, a public sit=
 eaccess ("<code>example</code>") and an administration siteaccess ("<code>e=
 xample_admin</code>"). The following sub-directories have to be created in =
-the root of your eZ Publish installation:</p>
+the root of your Exponential installation:</p>
 <ul>
 <li>
 <div>
-<code>ezpublish_legacy/settings/siteaccess/example</code>
+<code>exponential_legacy/settings/siteaccess/example</code>
 </div></li>
 <li>
 <div>
-<code>ezpublish_legacy/settings/siteaccess/example_admin</code>
+<code>exponential_legacy/settings/siteaccess/example_admin</code>
 </div></li>
 </ul>
 <p>Both siteaccesses must have a file called "<code>site.ini.append.php</co=
 de>".</p>
 <p><a name=3D"eztoc131639_3_1_1" rel=3D"nofollow"></a></p>
-<h4 id=3D"ManualconfigurationofeZPublish-Thepublicsiteaccess">The public si=
+<h4 id=3D"ManualconfigurationofExponential-Thepublicsiteaccess">The public si=
 teaccess</h4>
 <p>The following text shows a generic solution for the "<code>example</code=
 >" siteaccess:</p>
@@ -537,7 +537,7 @@ ShowUntranslatedObjects=3Ddisabled
 </div>
 </div>
 <p><a name=3D"eztoc131639_3_1_2" rel=3D"nofollow"></a></p>
-<h4 id=3D"ManualconfigurationofeZPublish-Theadminsiteaccess">The admin site=
+<h4 id=3D"ManualconfigurationofExponential-Theadminsiteaccess">The admin site=
 access</h4>
 <p>The following text shows a generic solution for the "<code>example_admin=
 </code>" siteaccess:</p>
@@ -582,23 +582,23 @@ ShowUntranslatedObjects=3Denabled
 </div>
 <p>&nbsp;</p>
 <p>Note that database settings, mail settings, regional and other settings =
-defined in "<code>ezpublish_legacy/settings/override/site.ini.append.php</c=
+defined in "<code>exponential_legacy/settings/override/site.ini.append.php</c=
 ode>" will be used for each siteaccess regardless of what is specified in t=
 he siteaccess settings. In the example above, the "<code>Database=3Dmy_data=
 base</code>" is specified under the "<code>[DatabaseSettings]</code>" secti=
 on of this file so this database will be used for both "<code>example</code=
 >" and "<code>example_admin</code>" siteaccesses. Refer to the "<a href=3D"=
-http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Concepts-and-basics/Config=
+http://doc.ez.no/Exponential/Technical-manual/4.x/Concepts-and-basics/Config=
 uration/Site-management" class=3D"external-link" rel=3D"nofollow">Site mana=
-gement</a>" and "<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.=
+gement</a>" and "<a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.=
 x/Concepts-and-basics/Configuration" class=3D"external-link" rel=3D"nofollo=
 w">Configuration</a>" sections of the "Concepts and basics" chapter for mor=
 e information.</p>
 <p><a name=3D"eztoc131639_4" rel=3D"nofollow"></a></p>
-<h2 id=3D"ManualconfigurationofeZPublish-Activatebaseextensions">Activate b=
+<h2 id=3D"ManualconfigurationofExponential-Activatebaseextensions">Activate b=
 ase extensions</h2>
-<p>There are some legacy extensions that need to be active, as eZ Publish d=
-epends on them. This is usually done in the&nbsp;<code>ezpublish_legacy/</c=
+<p>There are some legacy extensions that need to be active, as Exponential d=
+epends on them. This is usually done in the&nbsp;<code>exponential_legacy/</c=
 ode><code>settings/override/site.ini.append.php</code> settings file. <br>H=
 ere's an example of the extensions that you should activate:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
@@ -612,9 +612,9 @@ ActiveExtensions[]=3Dezie</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
-<h2 id=3D"ManualconfigurationofeZPublish-Languages">Languages</h2>
+<h2 id=3D"ManualconfigurationofExponential-Languages">Languages</h2>
 <p>Available languages and their priorities can be controlled per siteacces=
-s using the "<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Re=
+s using the "<a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Re=
 ference/Configuration-files/site.ini/RegionalSettings/SiteLanguageList" cla=
 ss=3D"external-link" rel=3D"nofollow">SiteLanguageList</a>" configuration s=
 etting located under the "<code>[RegionalSettings]</code>" section of the s=
@@ -623,7 +623,7 @@ pecified, the system will use the old "<code><a href=3D"http://doc.ez.no/eZ=
 -Publish/Technical-manual/4.x/Reference/Configuration-files/site.ini/Region=
 alSettings/ContentObjectLocale" class=3D"external-link" rel=3D"nofollow">Co=
 ntentObjectLocale</a></code>" setting and thus only the default language wi=
-ll be shown. Refer to the "<a href=3D"http://doc.ez.no/eZ-Publish/Technical=
+ll be shown. Refer to the "<a href=3D"http://doc.ez.no/Exponential/Technical=
 -manual/4.x/Features/Multi-language/Configuring-the-site-languages/" class=
 =3D"external-link" rel=3D"nofollow">Configuring the site languages</a>" sec=
 tion for more information and examples.</p>
@@ -633,16 +633,16 @@ the "Setup - Languages" part of the administration interface (<code><span c=
 lass=3D"nolink">http://admin.example.com</span></code> in the example above=
 ).</p>
 <p><a name=3D"eztoc131639_6" rel=3D"nofollow"></a></p>
-<h2 id=3D"ManualconfigurationofeZPublish-Dynamictreemenu">Dynamic tree menu=
+<h2 id=3D"ManualconfigurationofExponential-Dynamictreemenu">Dynamic tree menu=
 </h2>
 <p>If you have a large site with many nodes, it is strongly recommended to =
-enable the "<a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Ref=
+enable the "<a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Ref=
 erence/Configuration-files/contentstructuremenu.ini/TreeMenu/Dynamic" class=
 =3D"external-link" rel=3D"nofollow">Dynamic</a>" switch for your administra=
 tion siteaccess. This will make the left tree menu in the administration in=
 terface work much faster and decrease the usage of network bandwidth.</p>
 <p><a name=3D"eztoc131639_7" rel=3D"nofollow"></a></p>
-<h2 id=3D"ManualconfigurationofeZPublish-Administrator'slog-inandpassword">=
+<h2 id=3D"ManualconfigurationofExponential-Administrator'slog-inandpassword">=
 Administrator's log-in and password</h2>
 <p>The following user name and password are set by the "<code>cleandata.sql=
 </code>" script and can be used for logging in to the administration interf=
@@ -664,40 +664,40 @@ Note that if you need another user name for site administrator, you can cre=
 ate a new administrator user, log in as this user and remove the old one.</=
 p>
 <p>&nbsp;</p>
-<h2 id=3D"ManualconfigurationofeZPublish-GenerateeZPublishautoloads">Genera=
-te eZ Publish autoloads</h2>
+<h2 id=3D"ManualconfigurationofExponential-GenerateExponentialautoloads">Genera=
+te Exponential autoloads</h2>
 <p>The autoloads can be generated by running the <code>ezpgenerateautoloads=
 .php</code> as shown in the example below:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>   cd /&lt;ezpublish-5-root-dir&gt;/ezpublish_legacy/
+<pre>   cd /&lt;exponential-5-root-dir&gt;/exponential_legacy/
    php bin/php/ezpgenerateautoloads.php</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
-<h2 id=3D"ManualconfigurationofeZPublish-GenerateeZPublish.ymlconfiguration=
-">Generate eZ Publish .yml configuration</h2>
+<h2 id=3D"ManualconfigurationofExponential-GenerateExponential.ymlconfiguration=
+">Generate Exponential .yml configuration</h2>
 <p>To generate yml configuration for the new Symfony stack a console comman=
 d has been provided to cover single site setups.</p>
 <p>Perform the following command where <code>&lt;group&gt;</code> represent=
 s the siteaccess group name which will be created for your configurations i=
-n <code>ezpublish.yml</code>, for instance package name like "<code>ezdemo_=
+n <code>exponential.yml</code>, for instance package name like "<code>ezdemo_=
 site</code>", "<code>ezwebin_site</code>" or "<code>ezflow_site</code>". An=
 d <code>&lt;admin_siteaccess&gt;</code> represents your admin siteaccess, f=
 or instance, "<code>ezdemo_site_admin</code>":</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>   cd /&lt;ezpublish-5-root-dir&gt;/
-   php ezpublish/console ezpublish:configure --env=3Dprod &lt;group&gt; &lt=
+<pre>   cd /&lt;exponential-5-root-dir&gt;/
+   php exponential/console exponential:configure --env=3Dprod &lt;group&gt; &lt=
 ;admin_siteaccess&gt;</pre>=20
 </div>
 </div>
 <p>If you instead would like to manually create your yml config, do the fol=
 lowing:</p>
 <ul>
-<li>Copy <code>ezpublish/config/ezpublish.yml.example</code> to <code>ezpub=
-lish/config/ezpublish_prod.yml</code></li>
-<li>Edit <code>ezpublish/config/ezpublish_prod.yml</code></li>
+<li>Copy <code>exponential/config/exponential.yml.example</code> to <code>ezpub=
+lish/config/exponential_prod.yml</code></li>
+<li>Edit <code>exponential/config/exponential_prod.yml</code></li>
 </ul>
     </div>
 </body>

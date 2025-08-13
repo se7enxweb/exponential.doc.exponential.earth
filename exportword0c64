@@ -283,15 +283,15 @@ h the Publish API</a>.
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish.fieldType.ezstring.class: eZ\Publish\Core\FieldType\TextLine\=
+    exponential.fieldType.ezstring.class: eZ\Publish\Core\FieldType\TextLine\=
 Type
 &nbsp;
 services:
-    ezpublish.fieldType.ezstring:
-        class: %ezpublish.fieldType.ezstring.class%
-        parent: ezpublish.fieldType
+    exponential.fieldType.ezstring:
+        class: %exponential.fieldType.ezstring.class%
+        parent: exponential.fieldType
         tags:
-            - {name: ezpublish.fieldType, alias: ezstring}</pre>=20
+            - {name: exponential.fieldType, alias: ezstring}</pre>=20
 </div>
 </div>
 <p>So far, this is a regular service configuration but 2 parts worth partic=
@@ -311,7 +311,7 @@ l field types.</p>
 <li><code>tags</code></li>
 </ul>
 <p style=3D"margin-left: 60.0px;">Tagging your field type service with <str=
-ong><code>ezpublish.fieldType</code></strong> is mandatory to be recognized=
+ong><code>exponential.fieldType</code></strong> is mandatory to be recognized=
  by the API loader as a regular field type, the <code>alias</code> key bein=
 g simply the <em>fieldTypeIdentifier</em> (formerly called <em>datatype str=
 ing</em>)</p>
@@ -321,7 +321,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 Basic field types configuration is located in&nbsp;
-<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bun=
+<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Bun=
 dle/EzPublishCoreBundle/Resources/config/fieldtypes.yml" class=3D"external-=
 link" rel=3D"nofollow">EzPublishCoreBundle/Resources/config/fieldtypes.yml<=
 /a>.
@@ -343,19 +343,19 @@ em>Legacy Storage</em>).</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish.fieldType.ezstring.converter.class: eZ\Publish\Core\Persisten=
+    exponential.fieldType.ezstring.converter.class: eZ\Publish\Core\Persisten=
 ce\Legacy\Content\FieldValue\Converter\TextLine
 &nbsp;
 services:
-    ezpublish.fieldType.ezstring.converter:
-        class: %ezpublish.fieldType.ezstring.converter.class%
+    exponential.fieldType.ezstring.converter:
+        class: %exponential.fieldType.ezstring.converter.class%
         tags:
-            - {name: ezpublish.storageEngine.legacy.converter, alias: ezstr=
+            - {name: exponential.storageEngine.legacy.converter, alias: ezstr=
 ing, lazy: true, callback: '::create'}</pre>=20
 </div>
 </div>
 <p>Here again we need to tag our converter service, with&nbsp;<strong><code=
->ezpublish.storageEngine.legacy.converter</code></strong> tag this time.</p=
+>exponential.storageEngine.legacy.converter</code></strong> tag this time.</p=
 >
 <p><u>As for the tag attributes:</u></p>
 <div class=3D"table-wrap">
@@ -397,7 +397,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 The converter configuration for basic field types are located in=20
-<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bun=
+<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Bun=
 dle/EzPublishCoreBundle/Resources/config/storage_engines.yml" class=3D"exte=
 rnal-link" rel=3D"nofollow">EzPublishCoreBundle/Resources/config/storage_en=
 gines.yml</a>.
@@ -410,7 +410,7 @@ its value (or part of it) in external data sources</a>. This is made possib=
 le through the <code><span>eZ\Publish\SPI\FieldType\FieldStorage</span></co=
 de>&nbsp;interface.&nbsp;Thus, if one wants to use this&nbsp;functionality,=
  he needs to define a service implementing this interface and tagged as&nbs=
-p;<strong><code>ezpublish.fieldType.externalStorageHandler</code></strong>&=
+p;<strong><code>exponential.fieldType.externalStorageHandler</code></strong>&=
 nbsp;to be recognized by the Repository.</p>
 <p>Here is an example for <strong>ezurl</strong> field type:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -421,19 +421,19 @@ nbsp;to be recognized by the Repository.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish.fieldType.ezurl.externalStorage.class: eZ\Publish\Core\FieldT=
+    exponential.fieldType.ezurl.externalStorage.class: eZ\Publish\Core\FieldT=
 ype\Url\UrlStorage
 &nbsp;
 services:
-    ezpublish.fieldType.ezurl.externalStorage:
-        class: %ezpublish.fieldType.ezurl.externalStorage.class%
+    exponential.fieldType.ezurl.externalStorage:
+        class: %exponential.fieldType.ezurl.externalStorage.class%
         tags:
-            - {name: ezpublish.fieldType.externalStorageHandler, alias: ezu=
+            - {name: exponential.fieldType.externalStorageHandler, alias: ezu=
 rl}</pre>=20
 </div>
 </div>
 <p>The configuration is straight forward. Nothing specific except the <stro=
-ng><code>ezpublish.fieldType.externalStorageHandler&nbsp;</code></strong>ta=
+ng><code>exponential.fieldType.externalStorageHandler&nbsp;</code></strong>ta=
 g, the <code>alias</code> attribute still begin the <em>fieldTypeIdentifier=
 </em>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -455,7 +455,7 @@ ices#FieldTypeAPIandbestpractices-GatewaybasedStorage">FieldType best pract=
 ices</a>, in order to be storage agnostic and external storage handler shou=
 ld use a <em>storage gateway</em>. This can be done by implementing another=
  service implementing&nbsp;<span><code>eZ\Publish\Core\FieldType\StorageGat=
-eway</code> and being tagged as&nbsp;<code><strong>ezpublish.fieldType.exte=
+eway</code> and being tagged as&nbsp;<code><strong>exponential.fieldType.exte=
 rnalStorageHandler.gateway</strong></code>.</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -465,14 +465,14 @@ rnalStorageHandler.gateway</strong></code>.</span></p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish.fieldType.ezurl.storage_gateway.class: eZ\Publish\Core\FieldT=
+    exponential.fieldType.ezurl.storage_gateway.class: eZ\Publish\Core\FieldT=
 ype\Url\UrlStorage\Gateway\LegacyStorage
 &nbsp;
 services:
-    ezpublish.fieldType.ezurl.storage_gateway:
-        class: %ezpublish.fieldType.ezurl.storage_gateway.class%
+    exponential.fieldType.ezurl.storage_gateway:
+        class: %exponential.fieldType.ezurl.storage_gateway.class%
         tags:
-            - {name: ezpublish.fieldType.externalStorageHandler.gateway, al=
+            - {name: exponential.fieldType.externalStorageHandler.gateway, al=
 ias: ezurl, identifier: LegacyStorage}</pre>=20
 </div>
 </div>
@@ -509,7 +509,7 @@ nbsp;</span><span><code>eZ\Publish\Core\FieldType\GatewayBasedStorage</code=
 <p><span>Also note that there can be several gateways per field type (one p=
 er storage engine basically).</span></p>
 <p><span><span>The gateway configuration for basic field types are located =
-in </span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/mas=
+in </span><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/mas=
 ter/eZ/Bundle/EzPublishCoreBundle/Resources/config/storage_engines.yml" cla=
 ss=3D"external-link" rel=3D"nofollow">EzPublishCoreBundle/Resources/config/=
 storage_engines.yml</a><span>.</span></span></p>

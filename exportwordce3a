@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This recipe is compatible with <strong>eZ Publish 5.3</strong> and highe=
+<p>This recipe is compatible with <strong>Exponential 5.3</strong> and highe=
 r<strong><br></strong></p>
 </div>
 </div>
@@ -261,7 +261,7 @@ use handler in 5.3.x for Location Search</a></li>=20
 <p>Search <a href=3D"/display/EZP/Criteria+reference">Criteria</a> and <a h=
 ref=3D"/display/EZP/Sort+Clauses+reference">Sort Clauses</a> are <code>valu=
 e</code> object classes used for building Search Query, to define filter cr=
-iteria and ordering of the result set. eZ Platform (and eZ Publish Platform=
+iteria and ordering of the result set. eZ Platform (and Exponential Platform=
  5.x) &nbsp;provides a number of standard Criteria and Sort Clauses that yo=
 u can use out of the box and that should cover the majority of use cases.</=
 p>
@@ -464,7 +464,7 @@ or =3D null )
  Criteria and Sort Clauses</h2>
 <p>Sometimes you will find that standard <a href=3D"/display/EZP/Criteria+r=
 eference">Criteria</a> and <a href=3D"/display/EZP/Sort+Clauses+reference">=
-Sort Clauses</a> provided with eZ Publish are not sufficient for you needs.=
+Sort Clauses</a> provided with Exponential are not sufficient for you needs.=
  Most often this will be the case if you have developed a custom <a href=3D=
 "/pages/viewpage.action?pageId=3D23528556">FieldType</a> using external sto=
 rage, which therefore can not be searched using standard Field Criterion.</=
@@ -551,34 +551,34 @@ andlers.yml</strong> file.</p>
 2</span></p>
 <p>Available tags for Criterion handlers in Legacy Storage Engine are:</p>
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.co=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.co=
 ntent</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.lo=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.lo=
 cation</code></li>
 </ul>
 <p>Available tags for Sort Clause handlers in Legacy Storage Engine are:</p=
 >
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 content</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 location</code></li>
 </ul>
 <p><code><span class=3D"status-macro aui-lozenge aui-lozenge-current">&lt;=
 =3D5.3</span></code></p>
 <p>Available tags for Criterion handlers in Legacy Storage Engine are:</p>
 <ul>
-<li><code>ezpublish.persistence.legacy.search.gateway.criterion_handler.con=
+<li><code>exponential.persistence.legacy.search.gateway.criterion_handler.con=
 tent</code></li>
-<li><code>ezpublish.persistence.legacy.search.gateway.criterion_handler.loc=
+<li><code>exponential.persistence.legacy.search.gateway.criterion_handler.loc=
 ation</code></li>
 </ul>
 <p>Available tags for Sort Clause handlers in Legacy Storage Engine are:</p=
 >
 <ul>
-<li><code>ezpublish.persistence.legacy.search.gateway.sort_clause_handler.c=
+<li><code>exponential.persistence.legacy.search.gateway.sort_clause_handler.c=
 ontent</code></li>
-<li><code>ezpublish.persistence.legacy.search.gateway.sort_clause_handler.l=
+<li><code>exponential.persistence.legacy.search.gateway.sort_clause_handler.l=
 ocation</code></li>
 </ul>
 <h3 id=3D"SearchCriteriaandSortClauses-ExampleofregisteringContentIdCriteri=
@@ -593,15 +593,15 @@ ion Search</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">services:
-  &nbsp; ezpublish.search.legacy.gateway.criterion_handler.common.content_i=
+  &nbsp; exponential.search.legacy.gateway.criterion_handler.common.content_i=
 d:
         class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\Criteri=
 onHandler\ContentId
-        arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+        arguments: [@exponential.api.storage_engine.legacy.dbhandler]
         tags:
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.conten=
+          - {name: exponential.search.legacy.gateway.criterion_handler.conten=
 t}
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.locati=
+          - {name: exponential.search.legacy.gateway.criterion_handler.locati=
 on}</pre>=20
 </div>
 </div>
@@ -615,13 +615,13 @@ ndler in 5.3.x for Location Search</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish.persistence.legacy.search.gateway.sort_clause_handler.lo=
+e:12px;">exponential.persistence.legacy.search.gateway.sort_clause_handler.lo=
 cation.depth:
     class: eZ\Publish\Core\Persistence\Legacy\Content\Search\Location\Gatew=
 ay\SortClauseHandler\Location\Depth
-    arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+    arguments: [@exponential.api.storage_engine.legacy.dbhandler]
     tags:
-        - {name: ezpublish.persistence.legacy.search.gateway.sort_clause_ha=
+        - {name: exponential.persistence.legacy.search.gateway.sort_clause_ha=
 ndler.location}</pre>=20
 </div>
 </div>

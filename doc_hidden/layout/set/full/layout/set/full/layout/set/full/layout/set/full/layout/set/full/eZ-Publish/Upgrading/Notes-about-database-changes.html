@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Notes-about-database-changes by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:08:53 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Notes-about-database-changes by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:08:53 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                   
-    <title>Notes about database changes / Upgrading / eZ Publish / Documentation - Doc</title>
+    <title>Notes about database changes / Upgrading / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,10 +40,10 @@
 <h1>Notes about database changes</h1>
 </div>
 
- <p>This section explains which database upgrade scripts can be skipped when upgrading an eZ Publish database to a newer version. In addition, it provides an overview of the database schema changes within stable release branches of eZ Publish. <a name="skip_db_upgrades"></a>
- </p>  <a name="eztoc97855_1" id="eztoc97855_1"></a><h2>Version-focused database upgrade scripts</h2> <p>When upgrading an eZ Publish database from version X to version Y, you have to run a set of the database upgrade scripts following the <a href="Releases.html#upgrade_path" target="_self">official upgrade path</a>. This basically means that you need to run one database upgrade script for each stable release between X and Y. However, it often happens that a &quot;.sql&quot; file of the script only contains one or two lines with something like this:</p> <pre class="wordwrap"><span class="line">UPDATE ezsite_data SET value='Z' WHERE name='ezpublish-version';</span>
-<span class="line">UPDATE ezsite_data SET value='N' WHERE name='ezpublish-release';</span>
-</pre> <p>In this case, a database upgrade script is called &quot;version-focused&quot;, since it does not do anything except update the current version number, which is stored internally in the system. When upgrading an eZ Publish database, you can skip all version-focused scripts for intermediary versions, as shown in the example below.</p>  <a name="eztoc97855_1_1" id="eztoc97855_1_1"></a><h3>Example</h3> <p>In order to upgrade an eZ Publish database from version 3.6.0 to 3.8.10, you should run eleven database upgrade scripts:</p> 
+ <p>This section explains which database upgrade scripts can be skipped when upgrading an Exponential database to a newer version. In addition, it provides an overview of the database schema changes within stable release branches of Exponential. <a name="skip_db_upgrades"></a>
+ </p>  <a name="eztoc97855_1" id="eztoc97855_1"></a><h2>Version-focused database upgrade scripts</h2> <p>When upgrading an Exponential database from version X to version Y, you have to run a set of the database upgrade scripts following the <a href="Releases.html#upgrade_path" target="_self">official upgrade path</a>. This basically means that you need to run one database upgrade script for each stable release between X and Y. However, it often happens that a &quot;.sql&quot; file of the script only contains one or two lines with something like this:</p> <pre class="wordwrap"><span class="line">UPDATE ezsite_data SET value='Z' WHERE name='exponential-version';</span>
+<span class="line">UPDATE ezsite_data SET value='N' WHERE name='exponential-release';</span>
+</pre> <p>In this case, a database upgrade script is called &quot;version-focused&quot;, since it does not do anything except update the current version number, which is stored internally in the system. When upgrading an Exponential database, you can skip all version-focused scripts for intermediary versions, as shown in the example below.</p>  <a name="eztoc97855_1_1" id="eztoc97855_1_1"></a><h3>Example</h3> <p>In order to upgrade an Exponential database from version 3.6.0 to 3.8.10, you should run eleven database upgrade scripts:</p> 
 <ul>
  <li><div> dbupdate-3.6.0-to-3.8.0.sql </div></li> <li><div> dbupdate-3.8.0-to-3.8.1.sql </div></li> <li><div> dbupdate-3.8.1-to-3.8.2.sql </div></li> <li><div> dbupdate-3.8.2-to-3.8.3.sql </div></li> <li><div> ... </div></li> <li><div> dbupdate-3.8.9-to-3.8.10.sql </div></li> 
 </ul>
@@ -52,7 +52,7 @@
  <li><div> dbupdate-3.6.0-to-3.8.0.sql </div></li> <li><div> dbupdate-3.8.0-to-3.8.1.sql </div></li> <li><div> dbupdate-3.8.4-to-3.8.5.sql </div></li> <li><div> dbupdate-3.8.9-to-3.8.10.sql </div></li> 
 </ul>
  <p>Running these four scripts is equivalent to running all the eleven scripts mentioned above. <a name="db_schema_changes"></a>
- </p>    <a name="eztoc97855_2" id="eztoc97855_2"></a><h2>Database schema changes</h2> <p>If a database upgrade script is not version-focused (contains more than two lines), this usually means that the database structure was changed since the previous release. This is very typical for the first stable release in a branch, since there are usually some database schema changes as compared to the previous branch.</p> <p>Within stable release branches, database schemas are generally not changed. In other words, once the first stable release in a branch is out, the database schema should remain unchanged. However, exceptions are made for changes that are needed for important bugs and enhancements. When the next stable release in the current branch is out, the change will be present in the database upgrade script for it. In addition, such a bug fix also gets included in the next / upcoming branch for which there are no stable releases yet; the fix will be present in the database upgrade script for the first stable release in this branch (these are mentioned as 3.x.0 versions in the table below). </p> <p>The following table provides an overview of the database changes within stable release branches of eZ Publish, starting from version 3.6.</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ </p>    <a name="eztoc97855_2" id="eztoc97855_2"></a><h2>Database schema changes</h2> <p>If a database upgrade script is not version-focused (contains more than two lines), this usually means that the database structure was changed since the previous release. This is very typical for the first stable release in a branch, since there are usually some database schema changes as compared to the previous branch.</p> <p>Within stable release branches, database schemas are generally not changed. In other words, once the first stable release in a branch is out, the database schema should remain unchanged. However, exceptions are made for changes that are needed for important bugs and enhancements. When the next stable release in the current branch is out, the change will be present in the database upgrade script for it. In addition, such a bug fix also gets included in the next / upcoming branch for which there are no stable releases yet; the fix will be present in the database upgrade script for the first stable release in this branch (these are mentioned as 3.x.0 versions in the table below). </p> <p>The following table provides an overview of the database changes within stable release branches of Exponential, starting from version 3.6.</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
  
 <tr>
  <th >   <p>Database changes</p> 
@@ -119,11 +119,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Notes-about-database-changes by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:08:53 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Notes-about-database-changes by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 06:08:53 GMT -->
 </html>

@@ -226,7 +226,7 @@ ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>ElasticSearch exists only as a technology preview, we welcome people to =
 try it and help make it better. The latest version is only available in "de=
-v-master" version of eZ Platform, and not in any version of eZ Publish Plat=
+v-master" version of eZ Platform, and not in any version of Exponential Plat=
 form 5.x.</p>
 <p>Given it is experimental, it is currently not professionally supported</=
 p>
@@ -257,7 +257,7 @@ Bundle</h3>
     connections:
         es_connection_name:
             server: http://localhost:9200
-            index_name: ezpublish
+            index_name: exponential
             document_type_name:
                 content: content
                 location: location</pre>=20
@@ -265,10 +265,10 @@ Bundle</h3>
 </div>
 <p class=3D"syntaxhighlighter nogutter  php">&nbsp;</p>
 <p>For further information on the ElasticSearch integration in eZ Platform,=
- find the default&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-ke=
+ find the default&nbsp;<a href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/blob/master/eZ/Publish/Core/Search/Elasticsearch/Content/Resources/ela=
 sticsearch.yml" class=3D"external-link" rel=3D"nofollow">configuration</a>&=
-nbsp;and&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-kernel/tree=
+nbsp;and&nbsp;<a href=3D"https://github.com/ezsystems/exponential-kernel/tree=
 /master/eZ/Publish/Core/Search/Elasticsearch/Content/Resources/mappings" cl=
 ass=3D"external-link" rel=3D"nofollow">mappings</a>&nbsp;for Content and Lo=
 cation type documents <em>(Note: Content/Location modeling will most likely=
@@ -290,7 +290,7 @@ code>elasticsearch</code>:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         main:
             storage:

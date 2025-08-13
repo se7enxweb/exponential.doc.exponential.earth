@@ -705,11 +705,11 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
           FunctionList</code> out of the box)</td></tr><tr><td class="highlight-grey confluenceTd" data-highlight-colour="grey">Value Class</td><td class="confluenceTd"><code>eZ\Publish\API\Repository\Values\User\Limitation\BlockingLimitation</code></td></tr><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Type Class</td><td colspan="1" class="confluenceTd"><code>eZ\Publish\Core\Limitation\BlockingLimitationType</code></td></tr><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Criterion used</td><td colspan="1" class="confluenceTd">MatchNone</td></tr><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Role Limitation</td><td colspan="1" class="confluenceTd">no</td></tr></tbody></table></div><h6 id="BlockingLimitation-Possiblevalues">Possible values</h6><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Value</td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">UI value</td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey">Description</td></tr><tr><td class="confluenceTd"><code>&lt;mixed&gt;</code></td><td class="confluenceTd"><code>&lt;mixed&gt;</code></td><td class="confluenceTd"><p>This is a generic Limitation which does not validate the values provided to it. Make sure to validate the values passed to this limitation in your own logic.</p></td></tr></tbody></table></div><h6 id="BlockingLimitation-Configuration">Configuration</h6><p>As this is a generic Limitation, you can configure your custom Limitations to use it, out of the box FunctionList uses it in the following way:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[    # FunctionList is a ezjscore limitations, it only applies to ezjscore policies not used by
     # API/platform stack so configuring to use &quot;blocking&quot; limitation to avoid LimitationNotFoundException
-    ezpublish.api.role.limitation_type.function_list:
-        class: %ezpublish.api.role.limitation_type.blocking.class%
+    exponential.api.role.limitation_type.function_list:
+        class: %exponential.api.role.limitation_type.blocking.class%
         arguments: [&#39;FunctionList&#39;]
         tags:
-            - {name: ezpublish.limitationType, alias: FunctionList}]]></script>
+            - {name: exponential.limitationType, alias: FunctionList}]]></script>
 </div></div>
 
                 
@@ -815,7 +815,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

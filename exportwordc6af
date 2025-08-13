@@ -242,7 +242,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Template blocks for built-in FieldTypes <a href=3D"https://github.com/ez=
-systems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resource=
+systems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resource=
 s/views/content_fields.html.twig" class=3D"external-link" rel=3D"nofollow">=
 reside in EzPublishCoreBundle</a>.</p>
 </div>
@@ -297,7 +297,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 Some FieldTypes might expect specific entries under the=20
 <code><strong>parameters</strong></code> key, like=20
-<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bun=
+<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Bun=
 dle/EzPublishCoreBundle/Resources/views/content_fields.html.twig#L279" clas=
 s=3D"external-link" rel=3D"nofollow">ezgmaplocation</a>.
 </div>
@@ -346,11 +346,11 @@ e by&nbsp;<code>ez_render_field()</code>.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             field_templates:
@@ -368,7 +368,7 @@ e by&nbsp;<code>ez_render_field()</code>.</p>
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>You can define these rules in a dedicated file instead of <code>ezpublis=
-h/config/ezpublish.yml</code>.<span style=3D"color: rgb(51,51,51);">&nbsp;<=
+h/config/exponential.yml</code>.<span style=3D"color: rgb(51,51,51);">&nbsp;<=
 /span><a href=3D"https://confluence.ez.no/display/EZP51/import+settings+fro=
 m+a+bundle" class=3D"external-link" rel=3D"nofollow"><span style=3D"color: =
 rgb(51,51,51);">&nbsp;</span>Read the cookbook recipe to learn more about i=

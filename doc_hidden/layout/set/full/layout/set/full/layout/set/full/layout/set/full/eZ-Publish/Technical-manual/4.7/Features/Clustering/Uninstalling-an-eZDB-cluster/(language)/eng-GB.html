@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.7/Features/Clustering/Uninstalling-an-eZDB-cluster/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:07:40 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.7/Features/Clustering/Uninstalling-an-eZDB-cluster/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:07:40 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Uninstalling an eZDB cluster / Clustering / Features / 4.7 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Uninstalling an eZDB cluster / Clustering / Features / 4.7 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -59,9 +59,9 @@
     </td>
 </tr>
 </table>
-</div><a name="eztoc136169_1" id="eztoc136169_1"></a><h2>Removing an&nbsp;eZDB cluster</h2><a name="eztoc136169_1_1" id="eztoc136169_1_1"></a><h3>1. Clear the cache</h3><p>Before starting it's better to clear the eZ Publish's cache, by running the following command from&nbsp;your&nbsp;eZ Publish root&nbsp;folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all</span>
-</pre><a name="eztoc136169_1_2" id="eztoc136169_1_2"></a><h3>2. Unclusterize your eZDB cluster</h3><p>Run the following shell command&nbsp;from your&nbsp;eZ Publish root&nbsp;folder:</p><pre class="wordwrap"><span class="line">php bin/php/clusterize.php -u</span>
-</pre><p>This will move cluster cache and binaries from the cluster path to the original locations.</p><a name="eztoc136169_1_3" id="eztoc136169_1_3"></a><h3>3. Remove the images serving script</h3><p>Remove the&nbsp;<i>config.cluster.php</i>&nbsp;file, which has been created while setting up the cluster environment. For that, you can use the following command from your&nbsp;eZ Publish root&nbsp;folder:</p><pre class="wordwrap"><span class="line">rm config.cluster.php</span>
+</div><a name="eztoc136169_1" id="eztoc136169_1"></a><h2>Removing an&nbsp;eZDB cluster</h2><a name="eztoc136169_1_1" id="eztoc136169_1_1"></a><h3>1. Clear the cache</h3><p>Before starting it's better to clear the Exponential's cache, by running the following command from&nbsp;your&nbsp;Exponential root&nbsp;folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all</span>
+</pre><a name="eztoc136169_1_2" id="eztoc136169_1_2"></a><h3>2. Unclusterize your eZDB cluster</h3><p>Run the following shell command&nbsp;from your&nbsp;Exponential root&nbsp;folder:</p><pre class="wordwrap"><span class="line">php bin/php/clusterize.php -u</span>
+</pre><p>This will move cluster cache and binaries from the cluster path to the original locations.</p><a name="eztoc136169_1_3" id="eztoc136169_1_3"></a><h3>3. Remove the images serving script</h3><p>Remove the&nbsp;<i>config.cluster.php</i>&nbsp;file, which has been created while setting up the cluster environment. For that, you can use the following command from your&nbsp;Exponential root&nbsp;folder:</p><pre class="wordwrap"><span class="line">rm config.cluster.php</span>
 </pre><a name="eztoc136169_1_4" id="eztoc136169_1_4"></a><h3>4. Remove the cluster database table</h3><p>On MySQL the database table can be removed by executing the following shell command:</p><pre class="wordwrap"><span class="line">mysqladmin -u &lt;user&gt; -p&lt;password&gt; drop ezdbfile</span>
 <span class="line">mysqladmin -u &lt;user&gt; -p&lt;password&gt; drop ezdbfile_data</span>
 </pre><p>Note: On Oracle the same&nbsp;<i>ezdbfile</i>&nbsp; and&nbsp;<i>ezdbfile_data</i>&nbsp;tables need to be removed.</p><a name="eztoc136169_1_5" id="eztoc136169_1_5"></a><h3>5. Remove the Clustering Setting from your&nbsp;file.ini.append.php:</h3><p>Simply edit your file.ini.append.php file and remove the&nbsp;<i>ClusteringSettings</i>&nbsp;block completelly. You can see an example below:</p><pre class="wordwrap copytoclipboard"><span class="line">[ClusteringSettings]</span>
@@ -92,11 +92,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.7/Features/Clustering/Uninstalling-an-eZDB-cluster/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:07:40 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.7/Features/Clustering/Uninstalling-an-eZDB-cluster/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:07:40 GMT -->
 </html>

@@ -245,12 +245,12 @@ t controller</a>=20
 </div>
 <p></p>
 <h2 id=3D"Contentview-TheViewController">The ViewController</h2>
-<p>eZ Publish comes with a native controller to display your content, known=
+<p>Exponential comes with a native controller to display your content, known=
  as the <strong><code>ViewController</code></strong>. It is called each tim=
 e you try to reach a content from its <strong>Url Alias</strong> (<em>good =
 looking</em> URI generated for any content) and is able to render any conte=
 nt previously edited in the admin interface or via the <a href=3D"/display/=
-EZP51/eZ+Publish+Public+API">eZ Publish Public API</a>.</p>
+EZP51/eZ+Publish+Public+API">Exponential Public API</a>.</p>
 <p>It can also be called directly by its direct URI : <code>/content/locati=
 on/&lt;locationId&gt;</code></p>
 <p>A content can also have different <strong>view types</strong> (full page=
@@ -427,7 +427,7 @@ s when accessing a content through an URLAlias)</li>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>eZ Publish 5.1+ / Symfony 2.2+</b>
+<b>Exponential 5.1+ / Symfony 2.2+</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -506,7 +506,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Available as of eZ Publish 5.1</p>
+<p>Available as of Exponential 5.1</p>
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -538,7 +538,7 @@ nd use different cache levels:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Using ESI (eZ Publish 5.1+ / Symfony 2.2+)</b>
+<b>Using ESI (Exponential 5.1+ / Symfony 2.2+)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -556,7 +556,7 @@ sp;<a href=3D"http://mnot.github.com/hinclude/" class=3D"external-link" rel=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Asynchronous rendering (eZ Publish 5.1+ / Symfony 2.2+)</b>
+<b>Asynchronous rendering (Exponential 5.1+ / Symfony 2.2+)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

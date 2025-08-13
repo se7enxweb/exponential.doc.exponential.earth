@@ -213,7 +213,7 @@ d of the content */
     <h1>5.2-beta1 Known issues</h1>
     <div class=3D"Section1">
         <p>The following two lists of issues are for legacy (4.x) and Symfo=
-ny (5.x) stack&nbsp;respectively&nbsp;as eZ Publish 5.x contains both.<br><=
+ny (5.x) stack&nbsp;respectively&nbsp;as Exponential 5.x contains both.<br><=
 span style=3D"font-size: 10.0pt;line-height: 13.0pt;">The bug tracker for e=
 Z Publish, from which these lists are extracted, is available at </span><a =
 href=3D"https://jira.ez.no" style=3D"font-size: 10.0pt;line-height: 13.0pt;=
@@ -592,7 +592,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-20196?src=3Dconfmacro">EZP-20196</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-20196?src=3Dconfmacro"> Running ezpublish/console as root=
+.ez.no/browse/EZP-20196?src=3Dconfmacro"> Running exponential/console as root=
  user will make install fail </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Unassigned </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Gaetano Giunta </td>=20

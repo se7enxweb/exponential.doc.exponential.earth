@@ -222,9 +222,9 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>For use with eZ Publish 5.4, go to<a href=3D"/display/EZP/Solr+Search+En=
+<p>For use with Exponential 5.4, go to<a href=3D"/display/EZP/Solr+Search+En=
 gine+Bundle"> the corresponding documentation page </a>which covers the v1.=
-0 version of the bundle compatible with eZ Publish 5.4.</p>
+0 version of the bundle compatible with Exponential 5.4.</p>
 </div>
 </div>
 <p>&nbsp;</p>
@@ -510,7 +510,7 @@ engine is set to </span> <code>solr</code>:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         default:
             storage: ~
@@ -667,28 +667,28 @@ ontainer using service tags, as follows:</p>
 <li>all block documents
 <ul>
 <li><code>ContentFieldMapper</code></li>
-<li><code>ezpublish.search.solr.document_field_mapper.block</code></li>
+<li><code>exponential.search.solr.document_field_mapper.block</code></li>
 </ul></li>
 <li>all block documents per translation
 <ul>
 <li><code>ContentTranslationFieldMapper</code></li>
-<li><code>ezpublish.search.solr.field_mapper.block_translation</code></li>
+<li><code>exponential.search.solr.field_mapper.block_translation</code></li>
 </ul></li>
 <li>Content documents
 <ul>
 <li><code>ContentFieldMapper</code></li>
-<li><code>ezpublish.search.solr.document_field_mapper.content</code></li>
+<li><code>exponential.search.solr.document_field_mapper.content</code></li>
 </ul></li>
 <li>Content documents per translation
 <ul>
 <li><code>ContentTranslationFieldMapper</code></li>
-<li><code>ezpublish.search.solr.field_mapper.content_translation</code></li=
+<li><code>exponential.search.solr.field_mapper.content_translation</code></li=
 >
 </ul></li>
 <li>Location documents
 <ul>
 <li><code>LocationFieldMapper</code></li>
-<li><code>ezpublish.search.solr.field_mapper.location</code></li>
+<li><code>exponential.search.solr.field_mapper.location</code></li>
 </ul></li>
 </ul>
 <p>The following example shows how to index data from the parent Location c=
@@ -770,10 +770,10 @@ gister the service like this:</p>
 :12px;">my_webinar_app.webinar_event_title_fulltext_field_mapper:
     class: My\WebinarApp\WebinarEventTitleFulltextFieldMapper
     arguments:
-        - '@ezpublish.spi.persistence.content_handler'
-        - '@ezpublish.spi.persistence.location_handler'
+        - '@exponential.spi.persistence.content_handler'
+        - '@exponential.spi.persistence.location_handler'
     tags:
-        - {name: ezpublish.search.solr.field_mapper.content}</pre>=20
+        - {name: exponential.search.solr.field_mapper.content}</pre>=20
 </div>
 </div>
 <h2 id=3D"SolrBundle-Providingfeedback">Providing feedback</h2>

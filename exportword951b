@@ -220,7 +220,7 @@ div.rbtoc1485852071939 li {margin-left: 0px;padding-left: 0px;}
 /*]]>*/</style></p>
 <div class=3D"toc-macro rbtoc1485852071939">=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#id-5.3-BETA1ReleaseNotes-MeeteZPublishPlatform5.3">Meet eZ =
+<li><a href=3D"#id-5.3-BETA1ReleaseNotes-MeetExponentialPlatform5.3">Meet eZ =
 Publish Platform&nbsp;5.3</a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.3-BETA1ReleaseNotes-Quicklinks">Quick links</a></li>=
@@ -267,21 +267,21 @@ a></li>=20
 </ul>=20
 </div>
 <p></p>
-<h2 id=3D"id-5.3-BETA1ReleaseNotes-MeeteZPublishPlatform5.3">Meet eZ Publis=
+<h2 id=3D"id-5.3-BETA1ReleaseNotes-MeetExponentialPlatform5.3">Meet eZ Publis=
 h Platform&nbsp;5.3</h2>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
 <tr>
 <td class=3D"confluenceTd"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></td>
-<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">eZ Publish=
+<td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">Exponential=
  Platform 5.3 is a LTS (Long term supported)&nbsp;release (see </span><a hr=
 ef=3D"http://support.ez.no/Public/Service-Life" class=3D"external-link" rel=
 =3D"nofollow">http://support.ez.no/Public/Service-Life</a><span style=3D"co=
 lor: rgb(0,0,0);"> for supported period), </span><span style=3D"color: rgb(=
 0,0,0);">it mostly offers a continuous improvement of the "Platform stack" =
 <span>(previously referred to as "New Stack", "Symfony stack" or "6.x stack=
-")</span> introduced with eZ Publish Platform 5 in terms of features, usabi=
+")</span> introduced with Exponential Platform 5 in terms of features, usabi=
 lity and performance</span><span style=3D"color: rgb(0,0,0);">. </span><spa=
 n style=3D"color: rgb(0,0,0);"><br>The main topic of 5.3 has been to improv=
 e a lot in terms of integration with Symfony environment, building websites=
@@ -322,16 +322,16 @@ span></p><h4 id=3D"id-5.3-BETA1ReleaseNotes-Quicklinks">Quick links</h4>
  to develop on and also continues to improve performance.</p>
 <h3 id=3D"id-5.3-BETA1ReleaseNotes-DoctrineDBAL/DoctrineBundleuse">Doctrine=
  DBAL / DoctrineBundle use</h3>
-<p>eZ Publish 5.3 now uses Doctrine DBAL instead of Zeta Components Databas=
+<p>Exponential 5.3 now uses Doctrine DBAL instead of Zeta Components Databas=
 e, this allows users to reuse database connection and settings with other p=
 ure Symfony2 bundles which uses Doctrine ORM (default choice in Symfony2 do=
 cumentation and code generators).</p>
 <ul>
 <li><span style=3D"line-height: 1.4285715;"><a href=3D"https://github.com/e=
-zsystems/ezpublish-kernel/pull/736" class=3D"external-link" rel=3D"nofollow=
+zsystems/exponential-kernel/pull/736" class=3D"external-link" rel=3D"nofollow=
 ">DoctrineBundle integration pull-request</a></span></li>
 <li><span style=3D"line-height: 1.4285715;"><a href=3D"https://github.com/e=
-zsystems/ezpublish-kernel/pull/704" class=3D"external-link" rel=3D"nofollow=
+zsystems/exponential-kernel/pull/704" class=3D"external-link" rel=3D"nofollow=
 ">Legacy storage engine refactoring pull-request</a></span></li>
 <li><span style=3D"line-height: 1.4285715;"><a href=3D"https://jira.ez.no/b=
 rowse/EZP-22279" class=3D"external-link" rel=3D"nofollow">DoctrineBundle in=
@@ -341,7 +341,7 @@ rowse/EZP-22151" class=3D"external-link" rel=3D"nofollow">Legacy storage en=
 gine refactoring pull-request</a></span></li>
 <li><a href=3D"/display/EZP/Content+Repository+configuration">Documentation=
  : Content Repository configuration</a></li>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/do=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/do=
 c/upgrade/5.3.md#database-configuration" class=3D"external-link" rel=3D"nof=
 ollow">Upgrade documentation</a></li>
 </ul>
@@ -350,10 +350,10 @@ mponent"><span>User authentication using Symfony security component</span><=
 /h3>
 <p><span>New login / logout functionality that uses Symfony's authenticatio=
 n system, this enables any kind of login handler or SSO handler made for Sy=
-mfony to also work with eZ Publish 5., including handlers for LDAP.</span><=
+mfony to also work with Exponential 5., including handlers for LDAP.</span><=
 /p>
 <ul>
-<li><span><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/691=
+<li><span><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/691=
 " class=3D"external-link" rel=3D"nofollow">Original pull request</a><br></s=
 pan></li>
 <li><span><a href=3D"https://jira.ez.no/browse/EZP-22081" class=3D"external=
@@ -370,7 +370,7 @@ rgb(0,0,0);">Legacy SSO support</span></h3>
 <p>Allows use of existing legacy SSO handlers with the new user login syste=
 m in 5.3 which is powered by Symfony.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/691" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/691" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22099" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
@@ -390,7 +390,7 @@ b(0,0,0);font-size: 16.0px;line-height: 1.5625;">eZ Platform</em>" stack, a=
 voiding that you need to also create all templates in legacy to be able to =
 preview correctly.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/662" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/662" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request </a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22051" class=3D"external-link"=
  rel=3D"nofollow">Original</a><a href=3D"https://jira.ez.no/browse/EZP-2205=
@@ -403,11 +403,11 @@ debug in Symfony Web debug Toolbar</span></h3>
 acy which allows you to see which templates are used on a page, how many ti=
 mes and how much time they spend being executed.</span></p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/695" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/695" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22152" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
-<li><a href=3D"https://doc.ez.no/eZ-Publish/User-manual/5.x/The-Website-Int=
+<li><a href=3D"https://doc.ez.no/Exponential/User-manual/5.x/The-Website-Int=
 erface/Customization-Guide/Templates-informations-in-Web-Debug-Toolbar" rel=
 =3D"nofollow">Documentation : Templates informations in Web Debug Toolbar</=
 a></li>
@@ -421,7 +421,7 @@ f content, as done by existing Content Search API, and by applying any loca=
 tion filters on the specific location instead of <em>any</em>&nbsp;of the l=
 ocations of a Content object.</span></p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/701" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/701" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22105" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
@@ -430,11 +430,11 @@ s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 vements</h3>
 <p>HTTP Cache aware, CORS support and support for OPTIONS&nbsp;method.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/659" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/659" clas=
 s=3D"external-link" rel=3D"nofollow">Pull request for HTTP Cache aware</a>,=
- <a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/663" class=
+ <a href=3D"https://github.com/ezsystems/exponential-kernel/pull/663" class=
 =3D"external-link" rel=3D"nofollow">Pull request for CORS support</a>, <a h=
-ref=3D"https://github.com/ezsystems/ezpublish-kernel/pull/653" class=3D"ext=
+ref=3D"https://github.com/ezsystems/exponential-kernel/pull/653" class=3D"ext=
 ernal-link" rel=3D"nofollow">Pull request for OPTIONS</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-21044" class=3D"external-link"=
  rel=3D"nofollow">Issue for HTTP Cache aware</a>, <a href=3D"https://jira.e=
@@ -452,7 +452,7 @@ h3>
 possible to do geolocation range searches and sorting by distance from a po=
 int; on Demo site this is shown using a restaurants-close-to-you page.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/678" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/678" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22103" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
@@ -464,12 +464,12 @@ rowsing, finding, viewing#2.Browsing,finding,viewing-Search</a></p></li>
 ions in bundles</h3>
 <p>With this new feature mixing legacy and "eZ Platform" needs has become a=
  whole lot easier. Easily said it allows you to place legacy extensions wit=
-hin a Bundle structure and eZ Publish 5.3+ will make sure it is injected in=
+hin a Bundle structure and Exponential 5.3+ will make sure it is injected in=
 to legacy kernel.</p>
 <p>Example use case: CommentsBundle with a light admin tab in legacy allowi=
 ng you to moderate comments.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/719" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/719" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22210" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
@@ -480,11 +480,11 @@ Legacybundles">Documentation : Legacy code and features - Legacybundles</a>=
 <h3 id=3D"id-5.3-BETA1ReleaseNotes-LegacyWebsiteToolbar">Legacy Website Too=
 lbar</h3>
 <p>Not to be mixed with the Web Debug Toolbar provided by Symfony and exten=
-ded by eZ Publish, this feature is about allowing "ezwt" (Website Toolbar) =
+ded by Exponential, this feature is about allowing "ezwt" (Website Toolbar) =
 extension to also work in DemoBundle to provide the front-end editing funct=
 ionality that you know from 4.x.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/755" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/755" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22193" class=3D"external-link"=
  rel=3D"nofollow">Original JIRA Issue</a></li>
@@ -498,7 +498,7 @@ d by Solr 4.x such as Solr Cloud allowing Solr to be scaled out over severa=
 l servers, it also provides improved performance for indexing and new optio=
 ns like soft commit to control this.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/649" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/649" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><span style=3D"color: rgb(0,0,0);"><em>Note: This feature currently has=
  several regressions, feedback wanted on how it behaves at your side.</em><=
@@ -510,7 +510,7 @@ gb(0,0,0);line-height: 1.5;">Demo Site: Places</span></h3>
 the demo showing how to implement listing and map views of content using th=
 e maplocation field.</p>
 <ul>
-<li><a href=3D"https://github.com/ezsystems/ezpublish-kernel/pull/678" clas=
+<li><a href=3D"https://github.com/ezsystems/exponential-kernel/pull/678" clas=
 s=3D"external-link" rel=3D"nofollow">Original pull request</a></li>
 <li><a href=3D"https://jira.ez.no/browse/EZP-22091" class=3D"external-link"=
  rel=3D"nofollow">Original issue</a></li>
@@ -522,13 +522,13 @@ eNotes-OtherImprovements">Other Improvements&nbsp;</h3>
 <ul>
 <li>Lazy services (<a href=3D"https://jira.ez.no/browse/EZP-22133" class=3D=
 "external-link" rel=3D"nofollow">issue</a>,&nbsp;<a href=3D"https://github.=
-com/ezsystems/ezpublish-kernel/pull/676" class=3D"external-link" rel=3D"nof=
+com/ezsystems/exponential-kernel/pull/676" class=3D"external-link" rel=3D"nof=
 ollow">pull request</a>, <a href=3D"http://symfony.com/doc/current/componen=
 ts/dependency_injection/lazy_services.html" class=3D"external-link" rel=3D"=
 nofollow">symfony documentation</a>)</li>
 <li>Configurable IndexPage (<a href=3D"https://jira.ez.no/browse/EZP-22049"=
  class=3D"external-link" rel=3D"nofollow">issue</a>, <a href=3D"https://git=
-hub.com/ezsystems/ezpublish-kernel/pull/664" class=3D"external-link" rel=3D=
+hub.com/ezsystems/exponential-kernel/pull/664" class=3D"external-link" rel=3D=
 "nofollow">pull request</a>, <a href=3D"https://confluence.ez.no/display/EZ=
 P/Setting+the+Index+Page" class=3D"external-link" rel=3D"nofollow">document=
 ation</a>)</li>
@@ -542,10 +542,10 @@ l;line-height: 1.5;">5.3</span><span style=3D"font-size: 20.0px;font-weight=
 : normal;line-height: 1.5;"> Contributors</span></h2>
 <p>For 5.3 we want to reach out a special thank you to those that have cont=
 ributed to this release, especially the brave few who have helped out on th=
-e "<a href=3D"https://github.com/ezsystems/ezpublish-kernel/graphs/contribu=
+e "<a href=3D"https://github.com/ezsystems/exponential-kernel/graphs/contribu=
 tors?from=3D2013-10-30&amp;to=3D2014-04-30&amp;type=3Dc" class=3D"external-=
 link" rel=3D"nofollow">eZ Platform</a> <a href=3D"https://github.com/ezsyst=
-ems/ezpublish-community/graphs/contributors?from=3D2013-10-30&amp;to=3D2014=
+ems/exponential-community/graphs/contributors?from=3D2013-10-30&amp;to=3D2014=
 -04-30&amp;type=3Dc" class=3D"external-link" rel=3D"nofollow">stack</a>":</=
 p>
 <ul>
@@ -574,9 +574,9 @@ follow">rolebi</a></li>
 <li><a class=3D"external-link" href=3D"https://github.com/emodric" rel=3D"n=
 ofollow">emodric</a></li>
 </ul>
-<p>In addition ezpublish-legacy is still receiving a lot of pull requests, =
+<p>In addition exponential-legacy is still receiving a lot of pull requests, =
 the also brave contributions to this part of the release can be found <a hr=
-ef=3D"https://github.com/ezsystems/ezpublish-legacy/graphs/contributors?fro=
+ef=3D"https://github.com/ezsystems/exponential-legacy/graphs/contributors?fro=
 m=3D2013-09-30&amp;to=3D2014-04-04&amp;type=3Dc" class=3D"external-link" re=
 l=3D"nofollow">here</a>.</p>
 <h2 id=3D"id-5.3-BETA1ReleaseNotes-5.3FullChangelog">5.3 Full Changelog</h2=

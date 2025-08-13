@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/5.x/Features/Cronjobs/Configuring-cronjobs by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:01:24 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Configuring cronjobs / Cronjobs / Features / 5.x / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../5.html">5.x</a>
+        
+                        /
+                            <a href="../../Features.html">features</a>
+        
+                        /
+                            <a href="../Cronjobs.html">cronjobs</a>
+        
+                        /
+                            configuring cronjobs
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../5.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Configuring cronjobs</h1>
+</div>
+
+<p>You can configure which cronjob that will be enabled (can be executed by the &quot;runcronjobs.php&quot; script) from within an override for the &quot;settings/cronjob.ini&quot; configuration file. The following list reveals which settings that can be specified in the &quot;[CronjobSettings]&quot; section of this file.</p>
+<ul>
+<li><div> The <a href="../../../4.x/Reference/Configuration-files/cronjob.ini/CronjobSettings/ScriptDirectories.html" target="_self">ScriptDirectories</a> configuration array specifies the directories where Exponential will search for built-in cronjob scripts (the &quot;cronjobs&quot; directory is used by default). </div></li><li><div> The <a href="../../../4.x/Reference/Configuration-files/cronjob.ini/CronjobSettings/ExtensionDirectories.html" target="_self">ExtensionDirectories</a> directive specifies the extension directories where Exponential will search for additional/custom cronjob scripts. By default, Exponential will search in the &quot;cronjobs&quot; sub-directory inside your extension(s). </div></li><li><div> The <a href="../../../4.x/Reference/Configuration-files/cronjob.ini/CronjobSettings/Scripts.html" target="_self">Scripts</a> array contains a list of cronjob scripts that will be run when the main &quot;runcronjobs.php&quot; script is executed without specifying the <a href="../../../4.x/Features/Cronjobs/Running-cronjobs.html#group_of_tasks" target="_self">&quot;group_of_tasks&quot; option</a>. The tasks specified in this configuration array is called the <i>main set of cronjobs</i>. </div></li>
+</ul>
+<a name="eztoc132578_1" id="eztoc132578_1"></a><h2>Cronjob parts</h2><p>Some cronjobs must be executed more frequently than others. It is possible to configure <i>additional sets of cronjobs</i> by adding specific sections (cronjob parts) to an override for &quot;cronjob.ini&quot;.</p><p>The next examples demonstrate how the cronjobs can be configured.</p><a name="eztoc132578_1_1" id="eztoc132578_1_1"></a><h3>Example 1 (default settings)</h3><p>The following settings are specified in the &quot;[CronjobSettings]&quot; section of &quot;cronjob.ini&quot; by default:</p><pre class="wordwrap copytoclipboard"><span class="line">[CronjobSettings]</span>
+<span class="line">ScriptDirectories[]=cronjobs</span>
+<span class="line">Scripts[]=unpublish.php</span>
+<span class="line">Scripts[]=rssimport.php</span>
+<span class="line">Scripts[]=indexcontent.php</span>
+<span class="line">Scripts[]=hide.php</span>
+<span class="line">Scripts[]=subtreeexpirycleanup.php</span>
+<span class="line">Scripts[]=internal_drafts_cleanup.php</span>
+<span class="line">ExtensionDirectories[]</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[CronjobSettings]\r\nScriptDirectories[]=cronjobs\r\nScripts[]=unpublish.php\r\nScripts[]=rssimport.php\r\nScripts[]=indexcontent.php\r\nScripts[]=hide.php\r\nScripts[]=subtreeexpirycleanup.php\r\nScripts[]=internal_drafts_cleanup.php\r\nExtensionDirectories[]' ); return false;" /></p>
+<![endif]--><p>This means that the main set of cronjobs contains the following six tasks:</p>
+<ul>
+<li><div> unpublish.php </div></li><li><div> rssimport.php </div></li><li><div> indexcontent.php </div></li><li><div> hide.php </div></li><li><div> subtreeexpirycleanup.php </div></li><li><div> internal_drafts_cleanup.php </div></li>
+</ul>
+<p>These scripts will be run each time the &quot;runcronjobs.php&quot; script is executed without the &quot;group_of_tasks&quot; option. The system will expect these scripts to be located in the &quot;cronjobs&quot; directory.</p><p>The following configuration blocks (cronjob parts) located in the &quot;settings/cronjob.ini&quot; configuration file specify two additional sets of cronjobs called &quot;infrequent&quot; and &quot;frequent&quot;:</p><pre class="wordwrap copytoclipboard"><span class="line">[CronjobPart-infrequent]</span>
+<span class="line">Scripts[]=basket_cleanup.php</span>
+<span class="line">Scripts[]=linkcheck.php</span>
+<span class="line">&nbsp;</span>
+<span class="line">[CronjobPart-frequent]</span>
+<span class="line">Scripts[]=notification.php</span>
+<span class="line">Scripts[]=workflow.php</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[CronjobPart-infrequent]\r\nScripts[]=basket_cleanup.php\r\nScripts[]=linkcheck.php\r\n\r\n[CronjobPart-frequent]\r\nScripts[]=notification.php\r\nScripts[]=workflow.php' ); return false;" /></p>
+<![endif]--><p>The settings located in the &quot;[CronjobPart-infrequent]&quot; section instruct the system to run the &quot;basket_cleanup.php&quot; and &quot;linkcheck.php&quot; scripts when the &quot;runcronjobs.php&quot; script is executed in the following way:</p><pre class="wordwrap"><span class="line">php runcronjobs.php infrequent</span>
+</pre><p>The &quot;frequent&quot; set of tasks only includes the notification and work-flow cronjobs. These scripts will be run when the &quot;runcronjobs.php&quot; script is executed in the following way:</p><pre class="wordwrap"><span class="line">php runcronjobs.php frequent</span>
+</pre><p>With this configuration, it is possible to run each set of cronjobs separately, e.g.:</p>
+<ul>
+<li><div> Workflow.php and notification.php - every 15 minutes. </div></li><li><div> The basket cleanup and link check cronjobs - once a week. </div></li><li><div> The main set of cronjobs - once a day. </div></li>
+</ul>
+<a name="eztoc132578_1_2" id="eztoc132578_1_2"></a><h3>Example 2</h3><p>If you wish to run the &quot;old_drafts_cleanup.php&quot; cronjob once a month, you can add the following settings to the &quot;cronjob.ini.append.php&quot; file located in the &quot;settings/siteaccess/example&quot; directory (replace &quot;example&quot; by the actual name of the siteaccess):</p><pre class="wordwrap"><span class="line">[CronjobPart-monthly]</span>
+<span class="line">Scripts[]=old_drafts_cleanup.php</span>
+</pre><p>The settings located in the &quot;[CronjobPart-monthly]&quot; section will instruct the system to run the &quot;old_drafts_cleanup.php&quot; cronjob script when the &quot;runcronjobs.php&quot; script is executed in the following way:</p><pre class="wordwrap"><span class="line">php runcronjobs.php monthly -s example</span>
+</pre><a name="eztoc132578_1_3" id="eztoc132578_1_3"></a><h3>Example 3</h3><p>It is possible to extend the system by creating custom cronjob scripts. For example, if you have an extension &quot;nExt&quot; that includes a cronjob script &quot;myjob.php&quot;, you'll need to put the following lines into an override for the &quot;cronjob.ini&quot; configuration file:</p><pre class="wordwrap"><span class="line">[CronjobSettings]</span>
+<span class="line">ExtensionDirectories[]=nExt</span>
+<span class="line">Scripts[]=myjob.php</span>
+</pre><p>or</p><pre class="wordwrap"><span class="line">[CronjobSettings]</span>
+<span class="line">ScriptDirectories[]=extension/nExt/cronjobs</span>
+<span class="line">Scripts[]=myjob.php</span>
+</pre><p>These settings will make Exponential expect the additional cronjob script to be located at &quot;extension/nExt/cronjobs/myjob.php&quot;. This script will be added to the main set of cronjobs and thus it will be run each time the &quot;runcronjobs.php&quot; script is executed without the &quot;group_of_tasks&quot; option.</p>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Svitlana Shatokhina&nbsp;(14/09/2010 12:13 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Geir Arne Waaler&nbsp;(24/09/2010 2:32 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="27928" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/5.x/Features/Cronjobs/Configuring-cronjobs" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/5.x/Features/Cronjobs/Configuring-cronjobs by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 23:01:24 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

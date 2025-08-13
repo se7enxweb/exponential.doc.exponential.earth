@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Using Varnish with eZ Publish 5.2-5.3</title>
+    <title>Using Varnish with Exponential 5.2-5.3</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Using Varnish with eZ Publish 5.2-5.3</h1>
+    <h1>Using Varnish with Exponential 5.2-5.3</h1>
     <div class=3D"Section1">
         <div class=3D"confluence-information-macro confluence-information-m=
 acro-note">
@@ -222,7 +222,7 @@ rmation-macro-icon"></span>
 / <span class=3D"status-macro aui-lozenge">2013.07</span></p>
 </div>
 </div>
-<h2 id=3D"UsingVarnishwitheZPublish5.2-5.3-ConfigureVarnish">Configure Varn=
+<h2 id=3D"UsingVarnishwithExponential5.2-5.3-ConfigureVarnish">Configure Varn=
 ish</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -253,16 +253,16 @@ TP+cache">Context aware HTTP cache</a>.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish5.vcl</b>
+<b>exponential5.vcl</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: perl; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;"># Varnish 3.x - eZ Publish 5.2/5.3 - Complete VCL
+e:12px;"># Varnish 3.x - Exponential 5.2/5.3 - Complete VCL
 &nbsp;
 import curl;
 &nbsp;
-# Our Backend - We assume that eZ Publish Web server listen on port 80
-backend ezpublish {
+# Our Backend - We assume that Exponential Web server listen on port 80
+backend exponential {
     .host =3D "127.0.0.1";
     .port =3D "80";
 }
@@ -280,7 +280,7 @@ acl purgers {
 sub vcl_recv {
 =20
     # Set the backend
-    set req.backend =3D ezpublish;
+    set req.backend =3D exponential;
 =20
     # Advertise Symfony for ESI support
     set req.http.Surrogate-Capability =3D "abc=3DESI/1.0";
@@ -417,13 +417,13 @@ ous hash
 </div>
 </div>
 <p>You can of course add additional rules if you need.</p>
-<h2 id=3D"UsingVarnishwitheZPublish5.2-5.3-ConfigureeZPublish">Configure eZ=
+<h2 id=3D"UsingVarnishwithExponential5.2-5.3-ConfigureExponential">Configure eZ=
  Publish</h2>
-<h3 id=3D"UsingVarnishwitheZPublish5.2-5.3-UpdateyourVirtualHost">Update yo=
+<h3 id=3D"UsingVarnishwithExponential5.2-5.3-UpdateyourVirtualHost">Update yo=
 ur Virtual Host</h3>
 <div class=3D"confluence-information-macro confluence-information-macro-tip=
 ">
-<p class=3D"title">New in eZ Publish 5.2 / 2013.07</p>
+<p class=3D"title">New in Exponential 5.2 / 2013.07</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-approve confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
@@ -437,7 +437,7 @@ an>) uses the built-in reverse proxy, </span><code>EzPublishCache, which ex=
 tends SymfonyHTTPCache</code><span>. In order to use Varnish, you need to d=
 eactivate it and configure Varnish to be a trusted proxy so ESI continues t=
 o work.</span></p>
-<h4 id=3D"UsingVarnishwitheZPublish5.2-5.3-Onapache:"><span>On apache:<br><=
+<h4 id=3D"UsingVarnishwithExponential5.2-5.3-Onapache:"><span>On apache:<br><=
 /span></h4>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -457,7 +457,7 @@ ze:12px;">&lt;VirthualHost *:80&gt;
 &lt;/VirtualHost&gt;</pre>=20
 </div>
 </div>
-<h4 id=3D"UsingVarnishwitheZPublish5.2-5.3-Onnginx:">On nginx:</h4>
+<h4 id=3D"UsingVarnishwithExponential5.2-5.3-Onnginx:">On nginx:</h4>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
@@ -469,16 +469,16 @@ ze:12px;">&lt;VirthualHost *:80&gt;
 fastcgi_param TRUSTED_PROXIES "193.22.44.22"</pre>=20
 </div>
 </div>
-<h3 id=3D"UsingVarnishwitheZPublish5.2-5.3-UpdateYMLconfiguration">Update Y=
+<h3 id=3D"UsingVarnishwithExponential5.2-5.3-UpdateYMLconfiguration">Update Y=
 ML configuration</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         # Before 5.4: Use "multiple_http" method for purging content
         # As of 5.4 only use "http"

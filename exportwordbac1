@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Cross-Origin HTTP requests</h1>
     <div class=3D"Section1">
-        <p>eZ Publish ships with&nbsp;<a href=3D"https://github.com/nelmio/=
+        <p>Exponential ships with&nbsp;<a href=3D"https://github.com/nelmio/=
 NelmioCorsBundle" class=3D"external-link" rel=3D"nofollow">NelmioCorsBundle=
 </a>, a Symfony open-source bundle that provides support for <a href=3D"htt=
 p://www.w3.org/TR/cors/" class=3D"external-link" rel=3D"nofollow">CORS (Cro=
@@ -252,7 +252,7 @@ dd this host to the <code>nelmio_cors.default.allow_origin</code> configura=
 tion array in <code>config.yml</code>. As an example, in order to allow req=
 uests from&nbsp;<a href=3D"http://example.com," class=3D"external-link" rel=
 =3D"nofollow">http://example.com,</a>&nbsp;one would add those lines to <co=
-de>ezpublish/config/config.yml</code>:</p>
+de>exponential/config/config.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

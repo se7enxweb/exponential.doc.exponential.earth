@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Concepts-and-basics/Content-management/The-content-node-tree by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:31 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Concepts-and-basics/Content-management/The-content-node-tree by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:31 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>The content node tree / Content management / Concepts and basics / 3.6 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>The content node tree / Content management / Concepts and basics / 3.6 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -80,17 +80,17 @@
 
 
 
-</div>  <a name="eztoc851_1_1" id="eztoc851_1_1"></a><h3>Pitfall</h3> <p>A very common mistake when planning the structure of a site is thinking of multiple locations as shortcuts/links on a filesystem. Unfortunately, this is not how the node tree works. When a new location is added to an object, eZ Publish will not go through and create replica of the node structure below the object's original location. For example, if a folder containing several subfolders with articles, images, etc. is assigned a secondary location, the subfolders with articles, images, etc. will not be automatically available below the new location of the folder.</p>    <a name="eztoc851_2" id="eztoc851_2"></a><h2>Additional notes</h2> <p>Only published objects appear in the tree. A newly created object (status set to draft) does not get a node assignment until the object is published for the first time. An object is considered to be deleted (status set to archived) when all nodes referencing that object are removed from the tree. A deleted object will appear in the system trash. It is important to understand that the trash in eZ Publish is a flat structure. This is different from what people are used to from the trash implementation in modern operating systems. When an object is to be recovered/undeleted, it must be manually placed in the tree since the deleted object doesn't contain any information about its previous location. For example, if a folder containing some news articles is deleted, both the folder and the articles will appear on the same level within the trash. Recovering the folder itself will not bring back the articles since the links between the folder and the articles got lost when the nodes were deleted.</p> 
+</div>  <a name="eztoc851_1_1" id="eztoc851_1_1"></a><h3>Pitfall</h3> <p>A very common mistake when planning the structure of a site is thinking of multiple locations as shortcuts/links on a filesystem. Unfortunately, this is not how the node tree works. When a new location is added to an object, Exponential will not go through and create replica of the node structure below the object's original location. For example, if a folder containing several subfolders with articles, images, etc. is assigned a secondary location, the subfolders with articles, images, etc. will not be automatically available below the new location of the folder.</p>    <a name="eztoc851_2" id="eztoc851_2"></a><h2>Additional notes</h2> <p>Only published objects appear in the tree. A newly created object (status set to draft) does not get a node assignment until the object is published for the first time. An object is considered to be deleted (status set to archived) when all nodes referencing that object are removed from the tree. A deleted object will appear in the system trash. It is important to understand that the trash in Exponential is a flat structure. This is different from what people are used to from the trash implementation in modern operating systems. When an object is to be recovered/undeleted, it must be manually placed in the tree since the deleted object doesn't contain any information about its previous location. For example, if a folder containing some news articles is deleted, both the folder and the articles will appear on the same level within the trash. Recovering the folder itself will not bring back the articles since the links between the folder and the articles got lost when the nodes were deleted.</p> 
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.6/Concepts-and-basics/Content-management/The-content-node-tree by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:31 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/3.6/Concepts-and-basics/Content-management/The-content-node-tree by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:31 GMT -->
 </html>

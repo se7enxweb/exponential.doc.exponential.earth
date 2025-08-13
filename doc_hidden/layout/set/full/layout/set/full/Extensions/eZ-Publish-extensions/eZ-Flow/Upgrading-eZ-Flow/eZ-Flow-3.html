@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-2.5-upgrade by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-2.5-upgrade by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>eZ Flow 2.5 upgrade / Upgrading eZ Flow / eZ Flow / eZ Publish extensions / Extensions / Documentation - Doc</title>
+    <title>eZ Flow 2.5 upgrade / Upgrading eZ Flow / eZ Flow / Exponential extensions / Extensions / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -41,7 +41,7 @@
 </div>
 
 <a name="eztoc126876_0_1" id="eztoc126876_0_1"></a><h3>Back-up</h3><p>Before starting the eZ Flow upgrading process make sure that you have a working backup of the existing website state including database, extensions, INI settings, etc. During the upgrade process the existing eZ Flow extension will be removed and replaced with a new version.</p><a name="eztoc126876_0_2" id="eztoc126876_0_2"></a><h3>Packages</h3><p>
-Download following packages from <a href="http://packages.ez.no/ezpublish/4.7/4.7.0" target="_self">http://packages.ez.no/ezpublish/4.7/4.7.0</a>:<br />
+Download following packages from <a href="http://packages.ez.no/exponential/4.7/4.7.0" target="_self">http://packages.ez.no/exponential/4.7/4.7.0</a>:<br />
 &nbsp;&quot;ezflow_extension.ezpkg&quot;<br />
 &nbsp;&quot;ezwebin_extension.ezpkg&quot;<br />
 &nbsp;&quot;ezstarrating_extension.ezpkg&quot;<br />
@@ -71,7 +71,7 @@ From the Repository drop-down box choose eZ-system then click the &quot;Change r
 <span class="line">[¦]</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[ExtensionSettings]\r\n[...]\r\nActiveExtensions[]=ezjscore\r\nActiveExtensions[]=ezstarrating\r\nActiveExtensions[]=ezgmaplocation\r\nActiveExtensions[]=ezflow\r\nActiveExtensions[]=ezwt\r\nActiveExtensions[]=ezwebin\r\n[¦]' ); return false;" /></p>
-<![endif]--><a name="eztoc126876_0_3" id="eztoc126876_0_3"></a><h3>Autoload update</h3><p>Next the autoload array needs to be updated for the new extensions. In order to do so, execute the following command from eZ Publish root folder:</p><pre class="wordwrap"><span class="line">$ php bin/php/ezpgenerateautoloads.php -e -p</span>
+<![endif]--><a name="eztoc126876_0_3" id="eztoc126876_0_3"></a><h3>Autoload update</h3><p>Next the autoload array needs to be updated for the new extensions. In order to do so, execute the following command from Exponential root folder:</p><pre class="wordwrap"><span class="line">$ php bin/php/ezpgenerateautoloads.php -e -p</span>
 </pre><a name="eztoc126876_0_4" id="eztoc126876_0_4"></a><h3>Content classes</h3><p>eZ Flow 2.5 does not provide any new content classes.</p><a name="eztoc126876_0_5" id="eztoc126876_0_5"></a><h3>Database changes</h3><p><b>Note:</b> The database changes below for eZ Flow, eZ GMAP Location and eZ StarRating are only related to Postgre SQL setups.</p><p><b>For eZ Flow (for Postgre SQL only):</b></p><pre class="wordwrap copytoclipboard"><span class="line">ALTER TABLE ezm_block ALTER COLUMN id TYPE character(32);</span>
 <span class="line">ALTER TABLE ezm_block ALTER COLUMN zone_id TYPE character(32);</span>
 <span class="line">ALTER TABLE ezm_block ALTER COLUMN overflow_id TYPE character(32);</span>
@@ -93,8 +93,8 @@ From the Repository drop-down box choose eZ-system then click the &quot;Change r
 </pre><p><b>For eZ StarRating </b><b>(for Postgre SQL only)</b><b>:</b></p><pre class="wordwrap"><span class="line">ALTER INDEX ezsr_data_user_id_session_key RENAME TO user_id_session_key;</span>
 <span class="line">ALTER INDEX ezsr_data_contentobject_id_contentobject_attribute_id</span>
 <span class="line">RENAME TO contentobject_id_contentobject_attribute_id;</span>
-</pre><pre class="wordwrap"><span class="line">UPDATE ezsite_data SET value='4.7.0rc1' WHERE name='ezpublish-version';</span>
-<span class="line">UPDATE ezsite_data SET value='1' WHERE name='ezpublish-release';</span>
+</pre><pre class="wordwrap"><span class="line">UPDATE ezsite_data SET value='4.7.0rc1' WHERE name='exponential-version';</span>
+<span class="line">UPDATE ezsite_data SET value='1' WHERE name='exponential-release';</span>
 </pre><pre class="wordwrap"><span class="line">ALTER TABLE ONLY ezpending_actions</span>
 <span class="line">&nbsp;&nbsp;ADD CONSTRAINT ezpending_actions_pkey PRIMARY KEY (id);</span>
 </pre><pre class="wordwrap"><span class="line">UPDATE eztrigger SET name = 'pre_updatemainassignment', function_name = 'updatemainassignment'</span>
@@ -122,18 +122,18 @@ From the Repository drop-down box choose eZ-system then click the &quot;Change r
 <span class="line">JavaScriptList[]=insertmedia.js</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[StylesheetSettings]\r\nSiteCSS=var/storage/packages/eZ-systems/ezflow_design/files/default/file/site-colors.css\r\nClassesCSS=var/storage/packages/eZ-systems/ezflow_design/files/default/file/classes-colors.css\r\nCSSFileList[]\r\n[JavaScriptSettings]\r\nJavaScriptList[]=insertmedia.js' ); return false;" /></p>
-<![endif]--><p><b>Note:</b> The settings above have not changed from 4.6, so unless you upgrade from 4.4, you don't need to change these settings. Check them, however. Better safe than sorry!</p><a name="eztoc126876_0_7" id="eztoc126876_0_7"></a><h3>Clear Cache</h3><p>Once the upgrade script is done, you need to clear the cache by executing following command from eZ Publish root folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
+<![endif]--><p><b>Note:</b> The settings above have not changed from 4.6, so unless you upgrade from 4.4, you don't need to change these settings. Check them, however. Better safe than sorry!</p><a name="eztoc126876_0_7" id="eztoc126876_0_7"></a><h3>Clear Cache</h3><p>Once the upgrade script is done, you need to clear the cache by executing following command from Exponential root folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
 </pre>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-2.5-upgrade by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-2.5-upgrade by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
 </html>

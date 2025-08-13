@@ -237,10 +237,10 @@ pdates and fixes in this release</a></li>=20
 </div>
 <p></p>
 <p>eZ announces the availability of 5.3.8, a maintenance release available =
-for all users of eZ Publish Platform 5.3.</p>
+for all users of Exponential Platform 5.3.</p>
 <p>Follow the <a href=3D"/display/EZP/5.3.x+Update+Instructions">5.3.x Upda=
 te Instructions</a>&nbsp;to apply this update to your platforms. If you're =
-migrating from 5.3.6, a simple <code>composer update ezsystems/ezpublish-ke=
+migrating from 5.3.6, a simple <code>composer update ezsystems/exponential-ke=
 rnel</code>&nbsp;should be sufficient to update.</p>
 <h2 class=3D"wordwrap" id=3D"id-5.3.8ReleaseNotes-packagesPackageupdates"><=
 span class=3D"confluence-anchor-link" id=3D"id-5.3.8ReleaseNotes-packages">=
@@ -260,12 +260,12 @@ this releases:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.3.8</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.7</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td colspan=3D"1" class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.8</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.7</td>
 </tr>

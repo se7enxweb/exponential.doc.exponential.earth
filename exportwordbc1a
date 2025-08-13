@@ -286,7 +286,7 @@ efault_layouts.yml</strong> file with the following structure below:</p>
 <div class=3D"columnLayout two-equal" data-layout=3D"two-equal">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<p>In eZ Publish (legacy) you could configure a layout in the&nbsp;(<span c=
+<p>In Exponential (legacy) you could configure a layout in the&nbsp;(<span c=
 lass=3D"repo-root js-repo-root" style=3D"color: rgb(118,118,118);"> <span> =
 <a href=3D"https://github.com/ezsystems/DemoBundle" class=3D"external-link"=
  rel=3D"nofollow"> <span>DemoBundle</span> </a> </span> </span> <span class=
@@ -549,7 +549,7 @@ iguring Blocks</h2>
 <div class=3D"innerCell">=20
 <div class=3D"panel" style=3D"border-width: 1px;">
 <div class=3D"panelContent">=20
-<p class=3D"final-path">In eZ Publish/Platform you could configure blocks i=
+<p class=3D"final-path">In Exponential/Platform you could configure blocks i=
 n the FieldType (<span class=3D"repo-root js-repo-root" style=3D"color: rgb=
 (118,118,118);"> <span> <a href=3D"https://github.com/ezsystems/DemoBundle"=
  class=3D"external-link" rel=3D"nofollow">DemoBundle</a> </span> </span> <s=

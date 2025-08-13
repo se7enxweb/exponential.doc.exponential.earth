@@ -327,10 +327,10 @@ php -d memory_limit=3D-1 composer.phar remove --no-update --no-plugins bite=
 xpert/composer-authstore-plugin
 
 
-# Then install newer version of ezpublish-legacy-installer that works on Co=
+# Then install newer version of exponential-legacy-installer that works on Co=
 mposer 1.1 (will warn about the outdated versions you have from before)
 php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-dist --no-s=
-cripts ezsystems/ezpublish-legacy-installer
+cripts ezsystems/exponential-legacy-installer
 
 # Then make sure composer is updated to latests
 php -d memory_limit=3D-1 composer.phar selfupdate&nbsp;</pre>=20
@@ -361,7 +361,7 @@ nerator zetacomponents/signal-slot zetacomponents/system-information</pre>=
 </div>
 <p>After doing this, verify that content of <code>composer.json</code> does=
  not contain any entries for <code>zetacomponents/</code> unless you have y=
-our own dependencies on them. <code>ezpublish-kernel</code> and <code>ezpub=
+our own dependencies on them. <code>exponential-kernel</code> and <code>ezpub=
 lish-legacy</code> now always requires the specific versions of the Zeta Co=
 mponents we use internally.</p>
 <h3 id=3D"id-5.3.xUpdateInstructions-UpdateyourNginxconfiguration">Update y=
@@ -369,9 +369,9 @@ our Nginx configuration</h3>
 <p>If you're using Nginx as your webserver instead of Apache, then make sur=
 e to update&nbsp;<a href=3D"https://doc.ez.no/display/EZP/Nginx" rel=3D"nof=
 ollow">Nginx vhost configuration</a>, changes since 5.3.0:&nbsp;<a href=3D"=
-https://github.com/ezsystems/ezpublish-community/commit/d157a4ecb3ddf7a3825=
+https://github.com/ezsystems/exponential-community/commit/d157a4ecb3ddf7a3825=
 19fbb43ce311335cd8185" class=3D"external-link" rel=3D"nofollow">5.3.1</a>,&=
-nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-community/commit/db5=
+nbsp;<a href=3D"https://github.com/ezsystems/exponential-community/commit/db5=
 e0d4af62112e423cac6930f0549364438f756" class=3D"external-link" rel=3D"nofol=
 low">5.3.3&nbsp;</a></p>
 <h2 id=3D"id-5.3.xUpdateInstructions-From5.3.3andlower">From 5.3.3 and lowe=
@@ -389,7 +389,7 @@ with composer</span>=20
 se the icon.--> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-s=
 uccess jira-macro-single-issue-export-pdf">Closed</span> </span> &nbsp;comp=
 oser.json should be edited to take full advantage of the improvement, see t=
-he <a href=3D"https://github.com/ezsystems/ezpublish-community/commit/ca781=
+he <a href=3D"https://github.com/ezsystems/exponential-community/commit/ca781=
 83990c12d3f2f32c3e59f0b253a09e1f8dd" class=3D"external-link" rel=3D"nofollo=
 w">following commit</a> for patch.</p>
 <h2 id=3D"id-5.3.xUpdateInstructions-From5.3.4andlower">From 5.3.4 and lowe=
@@ -408,12 +408,12 @@ hat/mink-selenium-driver </pre>=20
 <h3 id=3D"id-5.3.xUpdateInstructions-Recommended:Enablephp-opensslextension=
 ">Recommended: Enable php-openssl extension</h3>
 <div class=3D"element">
-This release fixes a vulnerability in the eZ Publish password recovery func=
+This release fixes a vulnerability in the Exponential password recovery func=
 tion. You need to have the PHP OpenSSL extension (ext-openssl) installed to=
  take full advantage of the improved security, but even without it security=
  is improved. See&nbsp;
 <a href=3D"http://share.ez.no/community-project/security-advisories/ezsa-20=
-15-001-potential-vulnerability-in-ez-publish-password-recovery" style=3D"li=
+15-001-potential-vulnerability-in-exponential-password-recovery" style=3D"li=
 ne-height: 1.4285715;" class=3D"external-link" rel=3D"nofollow">Security Ad=
 visory</a> for further information.
 </div>
@@ -436,9 +436,9 @@ ates:</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;"># First delete the Symfony container cache to avoid error, on Wind=
-ows use something like: DEL /F /Q /S ezpublish/cache/*/*ProjectContainer.ph=
+ows use something like: DEL /F /Q /S exponential/cache/*/*ProjectContainer.ph=
 p
-rm ezpublish/cache/*/*ProjectContainer.php
+rm exponential/cache/*/*ProjectContainer.php
 
 # Now update all packages (will warn about outdated bitexpert/composer-auth=
 store-plugin package first time you do this before that plugn is removed)
@@ -455,7 +455,7 @@ rmation-macro-icon"></span>
 <p>Legacy extensions autoload must be regenerated when new classes are adde=
 d. To make sure to avoid any issues always run this command after composer =
 update:</p>
-<p><code>php ezpublish/console ezpublish:legacy:script bin/php/ezpgeneratea=
+<p><code>php exponential/console exponential:legacy:script bin/php/ezpgeneratea=
 utoloads.php --extension</code></p>
 </div>
 </div>
@@ -469,11 +469,11 @@ om 5.3.2 and lower</h2>
 <h3 id=3D"id-5.3.xUpdateInstructions-Updatethedatabase">Update the database=
 </h3>
 <p>Import to your database the changes provided in:</p>
-<pre class=3D"wordwrap"><span class=3D"line">/&lt;ezp5-root&gt;/ezpublish_l=
+<pre class=3D"wordwrap"><span class=3D"line">/&lt;ezp5-root&gt;/exponential_l=
 egacy/update/database/&lt;mysql|postgresql&gt;/5.3/dbupdate-5.3.2-to-5.3.3.=
 sql</span></pre>
 <p>And if you use Cluster (DFS) the following:</p>
-<pre class=3D"wordwrap">/&lt;ezp5-root&gt;/ezpublish_legacy/update/database=
+<pre class=3D"wordwrap">/&lt;ezp5-root&gt;/exponential_legacy/update/database=
 /mysql/5.3/dbupdate-cluster-5.3.2-to-5.3.3.sql</pre>
 <h2 id=3D"id-5.3.xUpdateInstructions-Updatingfrom5.3.4andlower">Updating fr=
 om 5.3.4 and lower</h2>

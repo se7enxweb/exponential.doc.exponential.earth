@@ -713,7 +713,7 @@ composer update --prefer-dist</pre></td></tr></tbody></table><p><strong>2.</stro
     new EzSystems\RecommendationBundle\EzSystemsRecommendationBundle()
 );</pre></td></tr></tbody></table><p><strong>3.</strong> Import additional routing by adding following lines to your <code>routing.yml</code> file:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th>language</th><td>php</td></tr></tbody></table></td></tr></tbody><tbody><tr><td class="diff-macro-body"><pre>recommendationBundleRestRoutes:
     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
-    prefix:   %ezpublish_rest.path_prefix%</pre></td></tr></tbody></table><h2 id="Recommendation-Step2:Configuration">Step 2: Configuration</h2><p>The bundle's configuration is siteaccess aware. This is an example of settings <em>(config.yml)</em>:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-body"><pre>ez_recommendation:
+    prefix:   %exponential_rest.path_prefix%</pre></td></tr></tbody></table><h2 id="Recommendation-Step2:Configuration">Step 2: Configuration</h2><p>The bundle's configuration is siteaccess aware. This is an example of settings <em>(config.yml)</em>:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-body"><pre>ez_recommendation:
     system:
         default:
             yoochoose:
@@ -809,7 +809,7 @@ composer update --prefer-dist</pre></td></tr></tbody></table><p><strong>2.</stro
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -262,21 +262,21 @@ y datatypes:</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
 ze:12px;">parameters:
-    ezpublish.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
+    exponential.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
 
 services:
-    ezpublish.fieldType.ezcomcomments:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+    exponential.fieldType.ezcomcomments:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ "ezcomcomments" ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezcomcomments}
-    ezpublish.fieldType.ezpaex:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+            - {name: exponential.fieldType, alias: ezcomcomments}
+    exponential.fieldType.ezpaex:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ "ezpaex" ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezpaex}</pre>=20
+            - {name: exponential.fieldType, alias: ezpaex}</pre>=20
 </div>
 </div>
 </div>=20

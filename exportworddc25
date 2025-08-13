@@ -248,9 +248,9 @@ Do not create the directory with the plural naming "extensions" - this is a=
 tory and copy the archive on a Linux/UNIX system:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>mkdir &lt;eZ_Publish_root_folder&gt;/ezpublish_legacy/extension/
+<pre>mkdir &lt;eZ_Publish_root_folder&gt;/exponential_legacy/extension/
 cp /home/myuser/download/ezfoo-extension-1.0.tar.gz &lt;eZ_Publish_root_fol=
-der&gt;/ezpublish_legacy/extension/</pre>=20
+der&gt;/exponential_legacy/extension/</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>

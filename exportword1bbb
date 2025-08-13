@@ -213,10 +213,10 @@ d of the content */
     <h1>FieldTypes</h1>
     <div class=3D"Section1">
         <p>This page contains <code>FieldTypes</code> reference introduced =
-with eZ Publish 5.x.<br><code>FiledTypes</code> were known as <code>DataTyp=
-es</code> in eZ Publish 4.x, and are still used eZ Publish 5.x Legacy. If y=
+with Exponential 5.x.<br><code>FiledTypes</code> were known as <code>DataTyp=
+es</code> in Exponential 4.x, and are still used Exponential 5.x Legacy. If y=
 ou would like more details please refer to the <a href=3D"http://doc.ez.no/=
-eZ-Publish/Technical-manual/4.x/Reference/Datatypes" class=3D"external-link=
+Exponential/Technical-manual/4.x/Reference/Datatypes" class=3D"external-link=
 " rel=3D"nofollow">4.x DataTypes</a> reference documentation page.</p>
 <p>You can get more details about the FieldTypes in the following list:</p>
 <p>&nbsp;</p>

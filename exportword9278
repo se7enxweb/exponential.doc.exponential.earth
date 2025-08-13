@@ -236,20 +236,20 @@ d>
 ig</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.content_view_pr=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.content_view_pr=
 ovider</code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a ContentViewProvider fo=
 r template selection depending on content/Location being viewed</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><p><code>ezpublish.storageEngine</=
+<td colspan=3D"1" class=3D"confluenceTd"><p><code>exponential.storageEngine</=
 code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a storage engine in the =
 Repository factory</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/TECHD=
-OC/Register+FieldType">ezpublish.fieldType</a></code></p></td>
+OC/Register+FieldType">exponential.fieldType</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a Field Type</td>
 </tr>
 </tbody>
@@ -265,21 +265,21 @@ OC/Register+FieldType">ezpublish.fieldType</a></code></p></td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/TECHD=
-OC/Register+FieldType#RegisterFieldType-Converter">ezpublish.storageEngine.=
+OC/Register+FieldType#RegisterFieldType-Converter">exponential.storageEngine.=
 legacy.converter</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers a converter for a Field =
 Type in legacy storage engine</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/TECHD=
-OC/Register+FieldType#RegisterFieldType-Externa">ezpublish.fieldType.extern=
+OC/Register+FieldType#RegisterFieldType-Externa">exponential.fieldType.extern=
 alStorageHandler</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage hand=
 ler for a Field Type</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd"><p><code><a href=3D"/display/TECHD=
-OC/Register+FieldType#RegisterFieldType-Gatewaybased">ezpublish.fieldType.e=
+OC/Register+FieldType#RegisterFieldType-Gatewaybased">exponential.fieldType.e=
 xternalStorageHandler.gateway</a></code></p></td>
 <td colspan=3D"1" class=3D"confluenceTd">Registers an external storage gate=
 way for a Field Type in legacy storage engine</td>

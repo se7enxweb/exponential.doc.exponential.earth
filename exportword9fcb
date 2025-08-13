@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Removing eZ Publish</title>
+    <title>Removing Exponential</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,16 +210,16 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Removing eZ Publish</h1>
+    <h1>Removing Exponential</h1>
     <div class=3D"Section1">
         <p>&nbsp;</p>
-<p>This section describes how to completely remove an eZ Publish installati=
+<p>This section describes how to completely remove an Exponential installati=
 on from a system.</p>
-<p>Removing eZ Publish is done in four steps:</p>
+<p>Removing Exponential is done in four steps:</p>
 <ol>
 <li>
 <div>
-Deleting the eZ Publish directory
+Deleting the Exponential directory
 </div></li>
 <li>
 <div>
@@ -236,13 +236,13 @@ Removing the cronjobs (optional)
 <li>Removing the NFS shares and cluster database (for clustered installatio=
 ns only)</li>
 </ol>
-<p>WARNING! By following these steps, you will remove both eZ Publish and a=
+<p>WARNING! By following these steps, you will remove both Exponential and a=
 ll the data/content that you have put into the system. Everything will be l=
 ost, unless there are backups available somewhere.</p>
-<h2 id=3D"RemovingeZPublish-DeletingtheeZPublishdirectory">Deleting the eZ =
+<h2 id=3D"RemovingExponential-DeletingtheExponentialdirectory">Deleting the eZ =
 Publish directory</h2>
-<p>Remove the eZ Publish directory using your favorite tool.</p>
-<h3 id=3D"RemovingeZPublish-Linux/UNIX">Linux/UNIX</h3>
+<p>Remove the Exponential directory using your favorite tool.</p>
+<h3 id=3D"RemovingExponential-Linux/UNIX">Linux/UNIX</h3>
 <p>On Linux/UNIX systems, the removal would most likely be carried out usin=
 g the "<code>rm</code>" command:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
@@ -255,11 +255,11 @@ g the "<code>rm</code>" command:</p>
 this is the case, it will prevent a regular user from removing all eZ Publi=
 sh files. You'll probably have to gain root access to solve this problem.</=
 p>
-<h3 id=3D"RemovingeZPublish-Windows">Windows</h3>
-<p>Windows users may simply delete the eZ Publish directory using the "Expl=
+<h3 id=3D"RemovingExponential-Windows">Windows</h3>
+<p>Windows users may simply delete the Exponential directory using the "Expl=
 orer".</p>
-<h2 id=3D"RemovingeZPublish-Removingthedatabase">Removing the database</h2>
-<h3 id=3D"RemovingeZPublish-MySQL">MySQL</h3>
+<h2 id=3D"RemovingExponential-Removingthedatabase">Removing the database</h2>
+<h3 id=3D"RemovingExponential-MySQL">MySQL</h3>
 <ol>
 <li>
 <div>
@@ -276,7 +276,7 @@ ql&gt;" prompt.</p>
 <li>
 <div>
 <p>Delete/remove the database using the drop command followed by the name o=
-f the database used by eZ Publish:</p>
+f the database used by Exponential:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
 <pre>mysql&gt; drop database &lt;database-name&gt;;</pre>=20
@@ -284,7 +284,7 @@ f the database used by eZ Publish:</p>
 </div>
 </div></li>
 </ol>
-<h3 id=3D"RemovingeZPublish-PostgreSQL">PostgreSQL</h3>
+<h3 id=3D"RemovingExponential-PostgreSQL">PostgreSQL</h3>
 <ol>
 <li>
 <div>
@@ -297,24 +297,24 @@ l:</p>
 </div>
 </div></li>
 </ol>
-<h2 id=3D"RemovingeZPublish-ReconfiguringApache(optional)">Reconfiguring Ap=
+<h2 id=3D"RemovingExponential-ReconfiguringApache(optional)">Reconfiguring Ap=
 ache (optional)</h2>
 <p>If a virtual host setup was used, it is likely that the Apache configura=
-tion files contain eZ Publish specific settings. These settings will not be=
+tion files contain Exponential specific settings. These settings will not be=
  needed anymore and thus they can be removed. Open the "<code>httpd.conf</c=
 ode>" file using a text editor, scroll down to the bottom and remove the eZ=
  Publish specific virtual host settings. Remember to restart Apache after a=
 ltering the configuration file.</p>
-<h2 id=3D"RemovingeZPublish-Removingthecronjobs(optional)">Removing the cro=
+<h2 id=3D"RemovingExponential-Removingthecronjobs(optional)">Removing the cro=
 njobs (optional)</h2>
-<p>If cron was configured to run eZ Publish specific jobs, then these will =
+<p>If cron was configured to run Exponential specific jobs, then these will =
 have to be removed. You may have to edit a global cron file (under "<code>/=
 etc/cron*</code>") or use the "<code>crontab</code>" command with the <code=
 >-e</code> (edit) parameter to edit a user's private cron file. Remove the =
-eZ Publish specific entries.</p>
-<p>Windows users should remove any eZ Publish specific tasks from the speci=
+Exponential specific entries.</p>
+<p>Windows users should remove any Exponential specific tasks from the speci=
 fic scheduling system they used, e.g. "windows scheduled tasks" (note that =
-eZ Publish does not install any scheduled task automatically on its own)</p=
+Exponential does not install any scheduled task automatically on its own)</p=
 >
     </div>
 </body>

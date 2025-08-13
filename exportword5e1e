@@ -542,7 +542,7 @@ n (error, response) {
 <h3 id=3D"UsingtheJavaScriptRESTAPIClient-SearchingforContentorLocation">Se=
 arching for Content or Location</h3>
 <p>Searching for Content or Location can be done with <a href=3D"https://gi=
-thub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/rest/RES=
+thub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/rest/RES=
 T-API-V2.rst#views" class=3D"external-link" rel=3D"nofollow">REST views</a>=
 . REST views can be configured with <a href=3D"/display/TECHDOC/Criteria+re=
 ference">the search engine criteria</a> to match some Content items or Loca=

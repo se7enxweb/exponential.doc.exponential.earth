@@ -247,7 +247,7 @@ a href=3D"https://github.com/ezsystems/ezplatform/blob/v15.05/INSTALL.md" c=
 lass=3D"external-link" rel=3D"nofollow"></a></li>
 <li><span style=3D"color: rgb(0,51,102);"><a href=3D"/pages/viewpage.action=
 ?pageId=3D30711387">Requirements</a>&nbsp;<span style=3D"color: rgb(128,128=
-,128);"><em>(currently same as eZ Publish Platform 5.4)</em></span></span><=
+,128);"><em>(currently same as Exponential Platform 5.4)</em></span></span><=
 /li>
 <li><p><span style=3D"color: rgb(0,0,0);">Upgrading:&nbsp;<span style=3D"co=
 lor: rgb(128,128,128);"><em>As this is a alpha release, there is no upgrade=
@@ -406,20 +406,20 @@ application console. It can either clear all variations, or variations of a=
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># Clear all variations of the large and gallery aliases/filters
-php ezpublish/console liip:imagine:cache:remove --filters=3Dlarge --filters=
+php exponential/console liip:imagine:cache:remove --filters=3Dlarge --filters=
 =3Dgallery -v</pre>=20
 </div>
 </div>
 <p>Note that this change comes with a modification of the variations storag=
 e path. This change will be transparent from a user's perspective, but you =
 may want to purge the existing variations. To do this, you need to <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/cc3f25fa25393e404f5a=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/cc3f25fa25393e404f5a=
 f2806176fa07835721ef/eZ/Bundle/EzPublishCoreBundle/Resources/config/image.y=
 ml#L200" class=3D"external-link" rel=3D"nofollow">switch to the legacy hand=
-ler</a> by redeclaring the&nbsp;<code>ezpublish.image_alias.variation_purge=
-r</code> service to&nbsp;<code>ezpublish.image_alias.variation_purger.legac=
+ler</a> by redeclaring the&nbsp;<code>exponential.image_alias.variation_purge=
+r</code> service to&nbsp;<code>exponential.image_alias.variation_purger.legac=
 y_storage_image_file</code>.</p>
-<p>More info:&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-kernel=
+<p>More info:&nbsp;<a href=3D"https://github.com/ezsystems/exponential-kernel=
 /blob/v6.0.0-alpha3/doc/specifications/image/variation_purging.md" class=3D=
 "external-link" rel=3D"nofollow">Technical specifications</a>,&nbsp;<a href=
 =3D"http://jira.ez.no/browse/EZP-23367" class=3D"external-link" rel=3D"nofo=
@@ -453,7 +453,7 @@ ly checked during download, and HTTP resume is supported. The&nbsp;<a href=
 ference API</a>, provides facilities to generate the right path from templa=
 tes, and a valid URI is exposed over REST.</span></p>
 <p>More info:&nbsp;<a href=3D"/display/TECHDOC/Binary+and+Media+download">D=
-ocumentation</a>, <a href=3D"https://github.com/ezsystems/ezpublish-kernel/=
+ocumentation</a>, <a href=3D"https://github.com/ezsystems/exponential-kernel/=
 blob/master/doc/specifications/proposed/content_download/content_download.m=
 d" class=3D"external-link" rel=3D"nofollow">Specificaftions</a>,&nbsp;<a hr=
 ef=3D"https://jira.ez.no/browse/EZP-23550" class=3D"external-link" rel=3D"n=

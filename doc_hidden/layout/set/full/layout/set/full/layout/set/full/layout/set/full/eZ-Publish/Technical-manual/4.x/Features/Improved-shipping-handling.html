@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/Improved-shipping-handling by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:04:27 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/Improved-shipping-handling by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:04:27 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>Improved shipping handling / Features / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Improved shipping handling / Features / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -45,11 +45,11 @@
 <table bgcolor="#eeeeee">
 <tr>
     <td>
-    <p>This part of the 4.x documentation is for eZ Publish 4.0, only&nbsp;<i><a href="../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all eZ Publish 4.x versions as well as eZ Publish 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../../../../eZ-Publish/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
+    <p>This part of the 4.x documentation is for Exponential 4.0, only&nbsp;<i><a href="../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all Exponential 4.x versions as well as Exponential 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../../../../Exponential/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
     </td>
 </tr>
 </table>
-</div><p>eZ Publish makes it possible to define custom shipping options for your webshop (e.g. the cost of shipping may depend on the product properties). This could be done by implementing a <i>shipping handler</i> i.e. PHP class providing a mechanism that keeps shipping information for a product collection (basket or order) and calculates the cost of shipping for it. eZ Publish does not include any built-in shipping handlers so you will need to extend the system by creating your own shipping handler in order to add shipping options for your webshop. Using two or more shipping handlers at the same time is not supported (within one siteaccess). The shipping handler to use must be specified in the &quot;Handler&quot; INI setting described in the &quot;<a href="#ini_settings" target="_self">INI settings</a>&quot; subsection.</p><p>When a user is viewing a product page, no shipping cost will be displayed and included into product price. After adding some products to the basket the system will calculate their shipping cost that will be shown under the list of items and included into order total. A shipping handler returns not only shipping cost but also shipping options summary and a link to the shipping management interface where shipping options can be modified. This information will be displayed in the basket together with the shipping cost. The system will also show shipping cost and shipping options summary when asking a user to confirm his/her order and in the order view interface for site administrators. <a name="ini_settings"></a>
+</div><p>Exponential makes it possible to define custom shipping options for your webshop (e.g. the cost of shipping may depend on the product properties). This could be done by implementing a <i>shipping handler</i> i.e. PHP class providing a mechanism that keeps shipping information for a product collection (basket or order) and calculates the cost of shipping for it. Exponential does not include any built-in shipping handlers so you will need to extend the system by creating your own shipping handler in order to add shipping options for your webshop. Using two or more shipping handlers at the same time is not supported (within one siteaccess). The shipping handler to use must be specified in the &quot;Handler&quot; INI setting described in the &quot;<a href="#ini_settings" target="_self">INI settings</a>&quot; subsection.</p><p>When a user is viewing a product page, no shipping cost will be displayed and included into product price. After adding some products to the basket the system will calculate their shipping cost that will be shown under the list of items and included into order total. A shipping handler returns not only shipping cost but also shipping options summary and a link to the shipping management interface where shipping options can be modified. This information will be displayed in the basket together with the shipping cost. The system will also show shipping cost and shipping options summary when asking a user to confirm his/her order and in the order view interface for site administrators. <a name="ini_settings"></a>
 </p><a name="eztoc86175_1" id="eztoc86175_1"></a><h2>INI settings</h2><p>The &quot;[ShippingSettings]&quot; section of the &quot;settings/shop.ini&quot; configuration file defines the shipping handler that will be used for calculating the cost of shipping for your products. Under this section, the following settings can be specified:</p>
 <ul>
 <li><div>&nbsp;The &quot;Handler&quot; setting specifies the shipping handler that will be used. </div></li><li><div>&nbsp;The &quot;RepositoryDirectories[]&quot; array specifies the directories where eZ publish will search for built-in shipping handlers. </div></li><li><div>&nbsp;The &quot;ExtensionDirectories[]&quot; array specifies the extension directories where eZ publish will search for additional shipping handlers. By default eZ publish will search in the &quot;shippinghandlers&quot; subdirectory inside your extension. </div></li>
@@ -57,13 +57,13 @@
 <a name="eztoc86175_1_1" id="eztoc86175_1_1"></a><h3>Example 1</h3><p>The following lines can be specified under the &quot;[ShippingSettings]&quot; section of the &quot;shop.ini&quot; configuration file:</p><pre class="wordwrap"><span class="line">[ShippingSettings]</span>
 <span class="line">Handler=ezcustom</span>
 <span class="line">RepositoryDirectories[]=kernel/classes/shippinghandlers</span>
-</pre><p>These settings will instruct eZ Publish to use the shipping handler located at &quot;kernel/classes/shippinghandlers/ezcustomshippinghandler.php&quot;.</p><a name="eztoc86175_1_2" id="eztoc86175_1_2"></a><h3>Example 2</h3><p>If you have an extension &quot;myextension&quot; that includes a shipping handler &quot;mycost&quot;, you can put the following lines into an override for the &quot;shop.ini&quot; configuration file:</p><pre class="wordwrap"><span class="line">[ShippingSettings]</span>
+</pre><p>These settings will instruct Exponential to use the shipping handler located at &quot;kernel/classes/shippinghandlers/ezcustomshippinghandler.php&quot;.</p><a name="eztoc86175_1_2" id="eztoc86175_1_2"></a><h3>Example 2</h3><p>If you have an extension &quot;myextension&quot; that includes a shipping handler &quot;mycost&quot;, you can put the following lines into an override for the &quot;shop.ini&quot; configuration file:</p><pre class="wordwrap"><span class="line">[ShippingSettings]</span>
 <span class="line">Handler=mycost</span>
 <span class="line">ExtensionDirectories[]=myextension</span>
 </pre><p>or</p><pre class="wordwrap"><span class="line">[ShippingSettings]</span>
 <span class="line">Handler=mycost</span>
 <span class="line">RepositoryDirectories[]=extension/myextension/shippinghandlers</span>
-</pre><p>These settings will instruct eZ Publish to use the VAT handler located at &quot;extension/myextension/shippinghandlers/mycostshippinghandler.php&quot;.</p><a name="eztoc86175_2" id="eztoc86175_2"></a><h2>Creating new shipping handlers</h2><p>This section reveals some helpful tips for those developers who want to create a new shipping handler (only for people who are familiar with PHP). Please note that it is not recommended to modify the eZ Publish kernel and thus you should implement it as an extension.</p><a name="eztoc86175_2_3" id="eztoc86175_2_3"></a><h3>Implementation details</h3><p>A shipping handler is a file that contains a class implementing the following methods:</p><pre class="wordwrap copytoclipboard"><span class="line">/**</span>
+</pre><p>These settings will instruct Exponential to use the VAT handler located at &quot;extension/myextension/shippinghandlers/mycostshippinghandler.php&quot;.</p><a name="eztoc86175_2" id="eztoc86175_2"></a><h2>Creating new shipping handlers</h2><p>This section reveals some helpful tips for those developers who want to create a new shipping handler (only for people who are familiar with PHP). Please note that it is not recommended to modify the Exponential kernel and thus you should implement it as an extension.</p><a name="eztoc86175_2_3" id="eztoc86175_2_3"></a><h3>Implementation details</h3><p>A shipping handler is a file that contains a class implementing the following methods:</p><pre class="wordwrap copytoclipboard"><span class="line">/**</span>
 <span class="line">* Invoked to get shipping information for given product collection.</span>
 <span class="line">* \public</span>
 <span class="line">* \static</span>
@@ -131,7 +131,7 @@
 <p>The next subsection explains how you can implement your own shipping handler.</p><a name="eztoc86175_2_4" id="eztoc86175_2_4"></a><h3>Creating your own handler</h3><p>The following text describes the implementation of a trivial shipping handler for demonstration purposes.</p>
 <ol>
 <li><div>
-&nbsp;Create the following subdirectories in the &quot;extension&quot; directory of your eZ Publish installation: <br />&nbsp;
+&nbsp;Create the following subdirectories in the &quot;extension&quot; directory of your Exponential installation: <br />&nbsp;
 <ul>
 <li><div>&nbsp;myextension </div></li><li><div>&nbsp;myextension/settings </div></li><li><div>&nbsp;myextension/shippinghandlers </div></li>
 </ul>
@@ -161,7 +161,7 @@
 <![endif]--></div></li><li><div>&nbsp;Create a file called &quot;shop.ini.append.php&quot; in the &quot;myextension/settings&quot; directory and add the following lines into it:<pre class="wordwrap"><span class="line">[ShippingSettings]</span>
 <span class="line">Handler=mycost</span>
 <span class="line">ExtensionDirectories[]=myextension</span>
-</pre></div></li><li><div>&nbsp;To activate your extension in eZ Publish, log in to your eZ Publish administration interface, click on the &quot;Setup&quot; tab, and then click &quot;Extensions&quot; on the left. You will see the list of available extensions. Select the &quot;myextension&quot; item and click the &quot;Apply changes&quot; button. </div></li>
+</pre></div></li><li><div>&nbsp;To activate your extension in Exponential, log in to your Exponential administration interface, click on the &quot;Setup&quot; tab, and then click &quot;Extensions&quot; on the left. You will see the list of available extensions. Select the &quot;myextension&quot; item and click the &quot;Apply changes&quot; button. </div></li>
 </ol>
 <p>This will make the system add the fixed cost of shipping to any set of products being purchased from your site.</p><p>If you need more complicated shipping options, you can try to use the advanced example from <a href="http://ez.no/community/contribs/examples/sample_shipping_handler" target="_self">http://ez.no/community/contribs/examples/sample_shipping_handler</a> or develop your own shipping handler.</p>
 
@@ -169,11 +169,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/Improved-shipping-handling by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:04:27 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/Improved-shipping-handling by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 03:04:27 GMT -->
 </html>

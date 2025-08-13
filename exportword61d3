@@ -215,7 +215,7 @@ d of the content */
         <h6 id=3D"id-5.3.4ReleaseNotes-January5th2015">January 5th 2015</h6=
 >
 <p>eZ announces the availability of 5.3.4, a maintenance release available =
-for all users of eZ Publish Platform 5.3 containing a notable few <a href=
+for all users of Exponential Platform 5.3 containing a notable few <a href=
 =3D"#id-5.3.4ReleaseNotes-updates">updates and fixes</a>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -240,7 +240,7 @@ div.rbtoc1485852121448 li {margin-left: 0px;padding-left: 0px;}
 <em>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.3.4ReleaseNotes-UpdatingfromapreviousversionofeZPublis=
-hPlatform5.3">Updating from a previous version of eZ Publish Platform 5.3</=
+hPlatform5.3">Updating from a previous version of Exponential Platform 5.3</=
 a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.3.4ReleaseNotes-1.Patchyourcomposer.jsonfile">1.&nbsp;=
@@ -259,8 +259,8 @@ pdates and fixes in this release</a></li>=20
 </div>
 <em><br></em>
 <p></p>
-<h2 id=3D"id-5.3.4ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.3">Updating from a previous version of eZ Publish Platform 5.3</h2>
+<h2 id=3D"id-5.3.4ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.3">Updating from a previous version of Exponential Platform 5.3</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
@@ -319,19 +319,19 @@ installRequirementsFile",
 nstallLegacyBundlesExtensions"
          ]
 @@ -85,7 +85,9 @@
-         "symfony-app-dir": "ezpublish",
+         "symfony-app-dir": "exponential",
          "symfony-web-dir": "web",
-         "ezpublish-legacy-dir": "ezpublish_legacy",
+         "exponential-legacy-dir": "exponential_legacy",
 -        "_symfony-assets-install_comment_": "One of 'symlink', 'relative' =
 (symlinks) or 'hard'",
-+        "___ezpublish-asset-dump-env": "To set environment used by dumpAss=
++        "___exponential-asset-dump-env": "To set environment used by dumpAss=
 ets script, like 'prod', or 'none' to skip",
-+        "ezpublish-asset-dump-env": "",
++        "exponential-asset-dump-env": "",
 +        "___symfony-assets-install": "One of 'symlink', 'relative' (symlin=
 ks) or 'hard'",
          "symfony-assets-install": "relative",
          "incenteev-parameters": {
-             "file": "ezpublish/config/parameters.yml"</pre>=20
+             "file": "exponential/config/parameters.yml"</pre>=20
 </div>
 </div>
 <h3 id=3D"id-5.3.4ReleaseNotes-2.UpdatingComposerPackagesselectively">2. Up=
@@ -342,7 +342,7 @@ dating Composer Packages selectively</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st ezsystems/ezpublish-kernel ezsystems/demobundle ezsystems/ezpublish-lega=
+st ezsystems/exponential-kernel ezsystems/demobundle ezsystems/exponential-lega=
 cy symfony/symfony</pre>=20
 </div>
 </div>
@@ -368,7 +368,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Note: We are committed to continue supporting php-memcache for use with =
-RHEL/CentOS 6.x on eZ Publish 5.3.x for some more sub releases, but highly =
+RHEL/CentOS 6.x on Exponential 5.3.x for some more sub releases, but highly =
 recommend you start to plan migration to php-memcache<u><span style=3D"colo=
 r: rgb(0,51,102);">d</span></u><span style=3D"color: rgb(0,51,102);">&nbsp;=
 as it solves several issues identified with php-memcache; <em>no locking fo=
@@ -428,12 +428,12 @@ ses:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.3.4</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.3</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">5.3.4</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.3</td>
 </tr>

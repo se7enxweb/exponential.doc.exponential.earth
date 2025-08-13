@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <p>This chapter contains information related to the upgrade of an e=
 Z Publish solution.</p>
-<p>If eZ Publish is used correctly, then upgrades should be very easy. This=
+<p>If Exponential is used correctly, then upgrades should be very easy. This=
  means that if you have not tampered with the kernel files, changed the dat=
 abase, the default settings and/or templates, everything should be okay. If=
  you have, then you should know what you are doing.</p>
@@ -246,18 +246,18 @@ m 5.1 to 5.3</a></li>
 </ul></li>
 <li><a href=3D"/display/EZP/Upgrading+from+5.1+to+5.2">Upgrading from 5.1 t=
 o 5.2</a></li>
-<li><a href=3D"http://doc.ez.no/eZ-Publish/Upgrading/Upgrading-to-5.1/Upgra=
+<li><a href=3D"http://doc.ez.no/Exponential/Upgrading/Upgrading-to-5.1/Upgra=
 ding-from-5.0-to-5.1" style=3D"line-height: 1.4285715;" class=3D"external-l=
 ink" rel=3D"nofollow">Upgrading from 5.0 to 5.1</a>
 <ul class=3D"childpages-macro">
-<li><a href=3D"http://doc.ez.no/eZ-Publish/Upgrading/Direct-upgrading/Direc=
+<li><a href=3D"http://doc.ez.no/Exponential/Upgrading/Direct-upgrading/Direc=
 t-upgrading-to-5.1-from-4.7" style=3D"line-height: 1.4285715;" class=3D"ext=
 ernal-link" rel=3D"nofollow">Direct upgrading from 4.7 to 5.1</a></li>
 </ul></li>
-<li><a href=3D"http://doc.ez.no/eZ-Publish/Upgrading/Upgrading-to-5.0/Upgra=
+<li><a href=3D"http://doc.ez.no/Exponential/Upgrading/Upgrading-to-5.0/Upgra=
 ding-from-4.7-to-5.0" style=3D"line-height: 1.4285715;" class=3D"external-l=
 ink" rel=3D"nofollow">Upgrading from 4.7 to 5.0</a></li>
-<li><a class=3D"external-link" href=3D"http://doc.ez.no/eZ-Publish/Upgradin=
+<li><a class=3D"external-link" href=3D"http://doc.ez.no/Exponential/Upgradin=
 g" rel=3D"nofollow" style=3D"line-height: 1.4285715;">Upgrading from older =
 releases</a></li>
 </ul>

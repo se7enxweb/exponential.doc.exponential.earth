@@ -221,7 +221,7 @@ ries</h2>
 <p>To send a GET request to the REST API Countries list, you have to provid=
 e the Content Type header <code>application/vnd.ez.api.CountriesList+xml</c=
 ode>.<br>Note that cache request headers can be added but those aren't full=
-y implemented yet in eZ Publish 5.0.</p>
+y implemented yet in Exponential 5.0.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">

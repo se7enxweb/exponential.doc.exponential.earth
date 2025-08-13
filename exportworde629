@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <h1 id=3D"Events-Introduction">Introduction</h1>
 <p>This page presents the events that are triggered by eZ Platform.</p>
-<h1 id=3D"Events-eZPublishCore">eZ Publish Core</h1>
+<h1 id=3D"Events-ExponentialCore">Exponential Core</h1>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">
 <tbody>
@@ -224,7 +224,7 @@ d of the content */
 <th class=3D"confluenceTh">Usage</th>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><strong><code>ezpublish.siteaccess=
+<td colspan=3D"1" class=3D"confluenceTd"><strong><code>exponential.siteaccess=
 </code></strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">After the SiteAccess matching has =
 occurred.</td>
@@ -234,7 +234,7 @@ ish\Core\MVC\Symfony\Event\PostSiteAccessMatchEvent</code>&nbsp;object.</p>=
 </td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><strong><code>ezpublish.pre_conten=
+<td colspan=3D"1" class=3D"confluenceTd"><strong><code>exponential.pre_conten=
 t_view</code></strong></td>
 <td colspan=3D"1" class=3D"confluenceTd">Right before a view is rendered fo=
 r a content item, via the content view controller.</td>
@@ -245,7 +245,7 @@ pan>Core\</span>MVC\Symfony\Event\PreContentViewEvent </code>object.<p>&nbs=
 p;</p></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code><strong>ezpublish.api.conten=
+<td colspan=3D"1" class=3D"confluenceTd"><code><strong>exponential.api.conten=
 tException</strong></code></td>
 <td colspan=3D"1" class=3D"confluenceTd">The API throws an exception that c=
 ould not be caught internally (missing field type, internal error...).</td>

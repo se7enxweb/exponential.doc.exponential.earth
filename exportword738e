@@ -222,7 +222,7 @@ wing command-line script:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php app/console config:dump-reference ezpublish</pre>=20
+e:12px;">php app/console config:dump-reference exponential</pre>=20
 </div>
 </div>
 </div>
@@ -239,7 +239,7 @@ y to configure it by siteaccess.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         ezdemo_site:
             default_page: "/Getting-Started"

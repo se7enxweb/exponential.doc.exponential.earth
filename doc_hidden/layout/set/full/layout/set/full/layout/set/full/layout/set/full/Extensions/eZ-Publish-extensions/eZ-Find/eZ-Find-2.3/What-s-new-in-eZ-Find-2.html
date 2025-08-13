@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-2.3/What-s-new-in-eZ-Find-2.3 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:17:56 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-2.3/What-s-new-in-eZ-Find-2.3 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:17:56 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>What's new in eZ Find 2.3 / eZ Find 2.3 / eZ Find / eZ Publish extensions / Extensions / Documentation - Doc</title>
+    <title>What's new in eZ Find 2.3 / eZ Find 2.3 / eZ Find / Exponential extensions / Extensions / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -52,7 +52,7 @@
 <span class="line">&nbsp;CustomMap[eztext]=ezfSolrDocumentFieldXML</span>
 </pre></div></li><li><div>&nbsp;Also new since eZ Find 2.3 is the auto-complete function. While entering text into the search field (both in the User Interface as in the Admin Interface), users and editors can select the word they want from the suggestions provided by the search engine. Therefore users do not need to complete typing the search words themselves. The settings related to this function are located in ezfind.ini's block [AutoCompleteSettings]. For more detailed information please visit the use page <a href="Use/Basic-Search/Basic-search/Autocomplete-Search.html" target="_blank">Autocomplete search.</a> </div></li>
 </ul>
-<p>For more information regarding the settings of eZ find visit the <a href="../../../../../full.html" target="_self">configuration settings of eZ Find</a> page.</p><a name="eztoc110149_2" id="eztoc110149_2"></a><h2>Load Priority</h2><p>From eZ Publish 4.4 (Fuji) onwards, the load order feature will enable extensions to define in which order they must be loaded in regards to other extensions, this was previously done by manually placing the extensions in the right order under &quot;[ExtensionSettings] ActiveAccessExtensions[]=&quot; in &quot;site.ini&quot;. This enhancement has been implemented in eZ Find 2.3 by adding the load order to the file &quot;extension.xml&quot; located here:</p><pre class="wordwrap"><span class="line">(root of eZ Publish installation)/extension/ezfind/extension.xml</span>
+<p>For more information regarding the settings of eZ find visit the <a href="../../../../../full.html" target="_self">configuration settings of eZ Find</a> page.</p><a name="eztoc110149_2" id="eztoc110149_2"></a><h2>Load Priority</h2><p>From Exponential 4.4 (Fuji) onwards, the load order feature will enable extensions to define in which order they must be loaded in regards to other extensions, this was previously done by manually placing the extensions in the right order under &quot;[ExtensionSettings] ActiveAccessExtensions[]=&quot; in &quot;site.ini&quot;. This enhancement has been implemented in eZ Find 2.3 by adding the load order to the file &quot;extension.xml&quot; located here:</p><pre class="wordwrap"><span class="line">(root of Exponential installation)/extension/ezfind/extension.xml</span>
 </pre><p>This file contains:</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
 <span class="line">&nbsp;&lt;software&gt;</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;metadata&gt;</span>
@@ -101,27 +101,27 @@
 <ul>
 <li><div>&nbsp;<b>uses:</b> indicates that the referenced extension is used by this extension. Will be considered as an 'after' entry in the loading.php scheme. </div></li><li><div>&nbsp;<b>requires:</b> indicates that the referenced extension is required by this extension. Will be considered as an 'after' entry in the loading.php scheme. </div></li><li><div>&nbsp;<b>extends:</b> indicates that the referenced extension is overloaded by this extension. Will be considered as a 'before' entry in the loading.php scheme. </div></li>
 </ul>
-<p><b>Note:</b> 'uses' and 'requires' currently have the same effect, but their behavior will change when real dependencies checking is developed in the future.</p><p>This means eZ Find will now automatically be loaded after ezjscore, but before ezwebin and ezflow.</p><p>For more information regarding the load order please visit the documentation regarding <a href="../../../../eZ-Publish/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering.html" target="_self">extension load ordering</a>.</p><a name="eztoc110149_3" id="eztoc110149_3"></a><h2>Added Features</h2>
+<p><b>Note:</b> 'uses' and 'requires' currently have the same effect, but their behavior will change when real dependencies checking is developed in the future.</p><p>This means eZ Find will now automatically be loaded after ezjscore, but before ezwebin and ezflow.</p><p>For more information regarding the load order please visit the documentation regarding <a href="../../../../Exponential/Technical-manual/4.4/Installation/Extensions/Extension-load-ordering.html" target="_self">extension load ordering</a>.</p><a name="eztoc110149_3" id="eztoc110149_3"></a><h2>Added Features</h2>
 <ul>
-<li><div><p>&nbsp;A commit utility script &quot;ezsolrcommit.php&quot; was added. It is located here:</p><pre class="wordwrap"><span class="line">(root eZ Publish &nbsp;installation)/extension/ezfind/bin/php/ezsolrcommit.php</span>
+<li><div><p>&nbsp;A commit utility script &quot;ezsolrcommit.php&quot; was added. It is located here:</p><pre class="wordwrap"><span class="line">(root Exponential &nbsp;installation)/extension/ezfind/bin/php/ezsolrcommit.php</span>
 </pre></div></li>
 </ul>
 
 <ul>
 <li><div>&nbsp;An initial skeleton for serializing attributes into the Solr back-end was added. </div></li>
 </ul>
-<a name="eztoc110149_4" id="eztoc110149_4"></a><h2>Bug fixes</h2><p>For information regarding the bugs fixed for this version please read the change logs included in your eZ Find 2.3 installation, located here:</p><pre class="wordwrap"><span class="line">(root eZ Publish installation)/extensions/ezfind/doc/2.3/changelogs</span>
+<a name="eztoc110149_4" id="eztoc110149_4"></a><h2>Bug fixes</h2><p>For information regarding the bugs fixed for this version please read the change logs included in your eZ Find 2.3 installation, located here:</p><pre class="wordwrap"><span class="line">(root Exponential installation)/extensions/ezfind/doc/2.3/changelogs</span>
 </pre>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-2.3/What-s-new-in-eZ-Find-2.3 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:17:56 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-2.3/What-s-new-in-eZ-Find-2.3 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:17:56 GMT -->
 </html>

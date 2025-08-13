@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/Advanced-redirection-after-login by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:03:47 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/Advanced-redirection-after-login by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:03:47 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                               
-    <title>Advanced redirection after login / Features / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Advanced redirection after login / Features / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -45,11 +45,11 @@
 <table bgcolor="#eeeeee">
 <tr>
     <td>
-    <p>This part of the 4.x documentation is for eZ Publish 4.0, only&nbsp;<i><a href="../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all eZ Publish 4.x versions as well as eZ Publish 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../eZ-Publish/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
+    <p>This part of the 4.x documentation is for Exponential 4.0, only&nbsp;<i><a href="../Reference.html" target="_self">reference section</a></i>&nbsp;is common for all Exponential 4.x versions as well as Exponential 5.x &quot;LegacyStack&quot;, please&nbsp;<a href="../../../../../../../../../../../../../../Exponential/Technical-manual.html" target="_self">select</a>&nbsp;the version you are using for the most up to date documentation!</p>
     </td>
 </tr>
 </table>
-</div><p>In eZ Publish 3.8 you can configure where to redirect a user when he/she logs in to the system. To enable this possibility for users, do the following:</p>
+</div><p>In Exponential 3.8 you can configure where to redirect a user when he/she logs in to the system. To enable this possibility for users, do the following:</p>
 <ol>
 <li><div> Add an attribute of the &quot;<a href="../Reference/Datatypes/Text-line.html" target="_self">Text line</a>&quot; datatype to your user class. If you have several user classes and wish to enable advanced redirection for all of them then you should add this attribute to each of your user classes (make sure you enter the same attribute identifier for all of them). </div></li><li><div><p>Specify the identifier of the newly added attribute in the &quot;LoginRedirectionUriAttribute&quot; setting located in the &quot;[UserSettings]&quot; section of the &quot;settings/siteaccess/example/site.ini.append.php&quot; configuration file (replace &quot;example&quot; with the actual name of your siteaccess) like this:</p><pre class="wordwrap"><span class="line">LoginRedirectionUriAttribute[key]=attribute_id</span>
 </pre><table class="renderedtable" cellpadding="2" cellspacing="0">
@@ -77,7 +77,7 @@
 <ol>
 <li><div>
  Access the &quot;Setup&quot; tab in the administration interface, click &quot;Classes&quot; on the left and select the &quot;Users&quot; class group. You should see the list of classes assigned to this group. Find your user class there and click the &quot;Edit&quot; button located in the same line of the list. You will be taken to the class edit interface. Select the &quot;Text line&quot; datatype from the drop-down list located in the bottom, click the &quot;Add attribute&quot; button and edit the newly added attribute as shown below. Click &quot;OK&quot; to save your changes.<br /> 
-<div class="object-center linked">            <a href="../../../../layout/set/full/eZ-Publish/Technical-manual/4.x/Images/Features/Advanced-redirection/textline_class_attribute1.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/features/advanced_redirection/textline_class_attribute1/31255-1-eng-GB/textline_class_attribute1_doc.png" alt="A fragment of the class edit interface." /></a>
+<div class="object-center linked">            <a href="../../../../layout/set/full/Exponential/Technical-manual/4.x/Images/Features/Advanced-redirection/textline_class_attribute1.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/features/advanced_redirection/textline_class_attribute1/31255-1-eng-GB/textline_class_attribute1_doc.png" alt="A fragment of the class edit interface." /></a>
  <p>A fragment of the class edit interface.</p>
 
 
@@ -128,7 +128,7 @@
 </div> </div></li>
 </ol>
 <a name="eztoc86172_3" id="eztoc86172_3"></a><h2>Important notes</h2><p>If a user is a member of several groups (a child of several &quot;User group&quot; nodes), the system will use the redirection URI that is specified for the &quot;main&quot; group (main parent node). The following screenshot shows the user view interface for the user John that belongs to both &quot;Guest accounts&quot; and &quot;Editors&quot; user groups. The &quot;Locations&quot; list located under user preview allows to view and manage locations for the user object that is currently being viewed. The main location is displayed in a bold type (&quot;Users / Guest accounts / John Doe&quot; in our example).</p>
-<div class="object-center linked">            <a href="../../../../layout/set/full/eZ-Publish/Technical-manual/4.x/Images/Features/Advanced-redirection/user_in_two_groups.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/features/advanced_redirection/user_in_two_groups/31267-1-eng-GB/user_in_two_groups_doc.png" alt="A fragment of the object view interface for the user with two locations." /></a>
+<div class="object-center linked">            <a href="../../../../layout/set/full/Exponential/Technical-manual/4.x/Images/Features/Advanced-redirection/user_in_two_groups.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/features/advanced_redirection/user_in_two_groups/31267-1-eng-GB/user_in_two_groups_doc.png" alt="A fragment of the object view interface for the user with two locations." /></a>
  <p>A fragment of the object view interface for the user with two locations.</p>
 
 
@@ -143,11 +143,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Features/Advanced-redirection-after-login by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:03:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Features/Advanced-redirection-after-login by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:03:48 GMT -->
 </html>

@@ -421,7 +421,7 @@ lding all Fields.</p>
 anipulate the Field Value object itself, or use a custom template.</p>
 <h4 id=3D"Contentview-GettingrawFieldvalue">Getting raw Field value</h4>
 <p>Having access to the Content item in the template, you can use <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Co=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Co=
 re/Repository/Values/Content/Content.php" class=3D"external-link" rel=3D"no=
 follow">its public methods</a> to access all the information you need. You =
 can also use the&nbsp;<a href=3D"/display/TECHDOC/ez_field_value">ez_field_=
@@ -444,7 +444,7 @@ tifier' ) %}</pre>=20
 <h4 id=3D"Contentview-UsingtheFieldType'stemplateblock">Using the Field Typ=
 e's template block</h4>
 <p>All built-in Field Types come with <a href=3D"https://github.com/ezsyste=
-ms/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/vie=
+ms/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/vie=
 ws/content_fields.html.twig" class=3D"external-link" rel=3D"nofollow">their=
  own Twig template</a>.&nbsp;You can render any Field using this default te=
 mplate using the&nbsp;<code>ez_render_field()</code> helper.</p>
@@ -695,7 +695,7 @@ her one of the original actions.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         eng_frontend_group:
             block_view:

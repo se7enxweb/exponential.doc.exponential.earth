@@ -284,7 +284,7 @@ customcontrollers">Matching custom controllers</h2>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             location_view:
@@ -401,7 +401,7 @@ define cache rules</strong></u>, like for every custom controller !</p>
 <p>So don't forget to <strong>set cache rules</strong> and the appropriate&=
 nbsp;<strong> <code>X-Location-Id</code>&nbsp;header</strong> in the return=
 ed&nbsp;<code>Response</code>&nbsp;object.</p>
-<p><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/=
+<p><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/=
 Publish/Core/MVC/Symfony/Controller/Content/ViewController.php#L76" class=
 =3D"external-link" rel=3D"nofollow">See built-in ViewController</a>&nbsp;fo=
 r more details on this.</p>
@@ -447,7 +447,7 @@ wed content and other parameters are indeed passed in <code>$params</code>.=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         ezdemo_frontend_group:
             location_view:
@@ -526,7 +526,7 @@ andle a location.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         ezdemo_frontend_group:
             location_view:

@@ -268,11 +268,11 @@ e that this is enabled by default.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">        ezpublish_rest:
+:12px;">        exponential_rest:
             pattern: ^/api/ezp/v2
             stateless: true
-            ezpublish_http_basic:
-                realm: eZ Publish REST API</pre>=20
+            exponential_http_basic:
+                realm: Exponential REST API</pre>=20
 </div>
 </div>
 <p>Basic authentication requires the username and password to be sent&nbsp;=

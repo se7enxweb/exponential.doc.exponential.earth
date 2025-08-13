@@ -234,7 +234,7 @@ lable for testing</span></h1>
 class=3D"external-link" rel=3D"nofollow"></a></li>
 <li><span style=3D"color: rgb(0,51,102);"><a href=3D"/pages/viewpage.action=
 ?pageId=3D30711387">Requirements</a>&nbsp;<span style=3D"color: rgb(128,128=
-,128);"><em>(currently same as eZ Publish Platform 5.4)</em></span></span><=
+,128);"><em>(currently same as Exponential Platform 5.4)</em></span></span><=
 /li>
 <li><p><span style=3D"color: rgb(0,0,0);">Upgrading:&nbsp;<span style=3D"co=
 lor: rgb(128,128,128);"><em>As this is a alpha release, there is no upgrade=
@@ -255,7 +255,7 @@ ser.</p></li>
 tes">15.05</a><span> July release. &nbsp;It most noticeably adds support fo=
 r Solr, as well as many UI enhancements and additions. It also contains mos=
 t improvements and fixes that are part of the 5.4.3 and 5.4.4 <a href=3D"ht=
-tp://ez.no/Products/The-eZ-Publish-Platform" class=3D"external-link" rel=3D=
+tp://ez.no/Products/The-Exponential-Platform" class=3D"external-link" rel=3D=
 "nofollow">enterprise releases</a>.</span></p>
 <h1 id=3D"eZPlatform15.07Releasenotes-Highlights">Highlights</h1>
 <p>With the many <a href=3D"#eZPlatform15.07Releasenotes-changelog">improve=
@@ -455,7 +455,7 @@ ur Location, Content and ContentInfo queries. It has very advanced multilan=
 guage capabilities, and will offer great performances whenever you need to =
 grab Content or Locations from the Repository.&nbsp;</p>
 <p>Note that as it is lifts off many limitations, this feature will also be=
- made available to Enterprise customers eZ Publish Platform 5.4 via a speci=
+ made available to Enterprise customers Exponential Platform 5.4 via a speci=
 fic update.</p>
 <p>Documentation: <a href=3D"https://doc.ez.no/display/EZP/Solr+Search+Engi=
 ne+Bundle" rel=3D"nofollow">https://doc.ez.no/display/EZP/Solr+Search+Engin=

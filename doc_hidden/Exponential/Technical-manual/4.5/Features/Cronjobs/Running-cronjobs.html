@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:04:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Running cronjobs / Cronjobs / Features / 4.5 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../4-3.html">4.5</a>
+        
+                        /
+                            <a href="../../Features.html">features</a>
+        
+                        /
+                            <a href="../Cronjobs.html">cronjobs</a>
+        
+                        /
+                            running cronjobs
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../4-3.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Running cronjobs</h1>
+</div>
+
+<p>The &quot;runcronjobs.php&quot; script located in the root of the Exponential directory takes care of processing your cronjobs in the background. This script should be executed periodically. The most common practice is to instruct the operating system (or some application) to automatically run the script at regular intervals. On UNIX/Linux systems, this can be done by making use of &quot;cron&quot;. On Windows, the script can be run by the &quot;Scheduled Tasks&quot; service. The following text describe how this script can be executed.</p><a name="eztoc122654_1" id="eztoc122654_1"></a><h2>Running cronjobs from the shell</h2><p>It is possible to execute the &quot;runcronjobs.php&quot; script manually from within a system shell:</p>
+<ol>
+<li><div>&nbsp;Navigate into the Exponential directory. </div></li><li><div><p>&nbsp;Run the script (replace &quot;example&quot; with the actual name of the siteaccess):</p><pre class="wordwrap"><span class="line">php runcronjobs.php -s example group_of_tasks</span>
+</pre></div></li>
+</ol>
+<p>
+&nbsp;<br />&nbsp;The &quot;group_of_tasks&quot; option indicates that only scripts listed in the &quot;[CronjobPart-group_of_tasks]&quot; section of the &quot;cronjob.ini&quot; configuration file (or its override) will be executed. This parameter is optional. If omitted, the list of scripts will be taken from the &quot;[CronjobSettings]&quot; section of the &quot;cronjob.ini&quot; configuration file. (Please refer to the &quot;<a href="Configuring-cronjobs.html" target="_self">Configuring cronjobs</a>&quot; section for more information.)</p><p>The &quot;-s example&quot; indicates which siteaccess configuration the script should use. If you do not specify a siteaccess when running the script, then the <a href="../../../4.x/Reference/Configuration-files/site.ini/SiteSettings/DefaultAccess.html" target="_self">default siteaccess</a> will be used.</p><a name="eztoc122654_1_1" id="eztoc122654_1_1"></a><h3>Debugging</h3><p>It is also possible to use the &quot;-d&quot; parameter that instructs the script to display the debug output at the end of execution, e.g.:</p><pre class="wordwrap"><span class="line">php runcronjobs.php -d -s example group_of_tasks</span>
+</pre><p>You can use this parameter with the &quot;all&quot; option to get more detailed information:</p><pre class="wordwrap"><span class="line">php runcronjobs.php -dall -s example group_of_tasks</span>
+</pre><p>The following options are also available: &quot;accumulator&quot;, &quot;debug&quot;, &quot;error&quot;, &quot;include&quot;, &quot;notice&quot;, &quot;timing&quot;, &quot;warning&quot;. Please note when provided, they must be separated using commas. The instructions given in the following example will tell the script to display debug notices and produce a list of includes:</p><pre class="wordwrap"><span class="line">php runcronjobs.php -dinclude,notice -s example group_of_tasks</span>
+</pre><p>The script will not make any changes to log files by default (the ones located in the &quot;var/log&quot; directory of your Exponential installation). If you need this functionality, you'll have to run the script using both &quot;-d&quot; and &quot;--logfiles&quot; parameters:</p><pre class="wordwrap"><span class="line">php runcronjobs.php -d -s example --logfiles group_of_tasks</span>
+</pre><p>It can also be displayed debug output including the SQL queries executed, by using the &quot;--sql&quot; parameter as shown in the following example:</p><pre class="wordwrap"><span class="line">php runcronjobs.php -d --sql -s example group_of_tasks</span>
+</pre><p>Please note that the &quot;--sql&quot; parameter still depends on &quot;-d&quot; and both need to be used simultaneously in order to have SQL debug output. Without the use of the &quot;-d&quot; parameter no output will be displayed at all.</p><a name="eztoc122654_2" id="eztoc122654_2"></a><h2>Cronjobs on UNIX/Linux</h2><p>&quot;Cron&quot; is the name of a utility that allows the automatic execution of tasks in the background. It is typically used for periodic system administration and maintenance tasks (for example, creating a weekly backup). A program often referred to as the &quot;cron daemon&quot; is running silently in the background, spending its time waiting and executing cronjobs. A &quot;cronjob&quot; is a script or a command that is run at specified intervals by the daemon. The cronjobs must be set up in a <a href="http://en.wikipedia.org/wiki/Crontab" target="_self">crontab</a>. A crontab is a text file that contains information about the intervals and the tasks that should be executed. The crontab files are not intended to be edited directly. The following table reveals which shell commands that can be used for maintaining crontabs:</p><table class="renderedtable" cellpadding="2" cellspacing="0">
+
+<tr>
+<th >  <p>Shell command</p>
+  </th><th >  <p>Description</p>
+  </th>
+</tr>
+
+<tr>
+<td width="60%" valign="top" style="vertical-align: top">  <pre class="wordwrap"><span class="line">crontab /var/www/exponential/exponential.cron</span>
+</pre>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>Install a new crontab from the &quot;exponential.cron&quot; file (replace &quot;/var/www/exponential&quot; by the actual path to your Exponential directory).</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="60%" valign="top" style="vertical-align: top">  <pre class="wordwrap"><span class="line">crontab -l</span>
+</pre>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>Display the current crontab.</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="60%" valign="top" style="vertical-align: top">  <pre class="wordwrap"><span class="line">crontab -e</span>
+</pre>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>Edit the current crontab. The modified crontab will be installed automatically.</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="60%" valign="top" style="vertical-align: top">  <pre class="wordwrap"><span class="line">crontab -r</span>
+</pre>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>Remove the current crontab.</p>
+  </td>
+
+</tr>
+
+</table>
+<p>The following example shows how a cronjob for Exponential can be set up in the crontab. It assumes that Exponential is located in &quot;/var/www/exponential/&quot;, that the PHP command line interface program is located at &quot;/usr/local/bin/php&quot; and that the name of the target siteaccess is &quot;example&quot;.</p><pre class="wordwrap copytoclipboard"><span class="line"># The path to the Exponential directory.</span>
+<span class="line">EZPUBLISH=/var/www/exponential</span>
+<span class="line">&nbsp;</span>
+<span class="line"># Location of the PHP command line interface binary.</span>
+<span class="line">PHPCLI=/usr/local/bin/php</span>
+<span class="line">&nbsp;</span>
+<span class="line"># Instruct cron to run the main set of cronjobs</span>
+<span class="line"># at 6:35am every day</span>
+<span class="line">35 6 * * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php -q -s example 2&gt;&amp;1</span>
+<span class="line">&nbsp;</span>
+<span class="line"># Instruct cron to run the &quot;infrequent&quot; set of cronjobs</span>
+<span class="line"># at 5:20am every Monday</span>
+<span class="line">20 5 * * 1 cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php infrequent -q -s example 2&gt;&amp;1</span>
+<span class="line">&nbsp;</span>
+<span class="line"># Instruct cron to run the &quot;frequent&quot; set of cronjobs</span>
+<span class="line"># every 15 minutes</span>
+<span class="line">0,15,30,45 * * * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php frequent -q -s example 2&gt;&amp;1</span>
+<span class="line">&nbsp;</span>
+<span class="line"># Instruct cron to run the &quot;monthly&quot; set of cronjobs</span>
+<span class="line"># at 4:10am the first day of every month</span>
+<span class="line">10 4 1 * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php monthly -q -s example 2&gt;&amp;1</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '# The path to the Exponential directory.\r\nEZPUBLISH=/var/www/exponential\r\n\r\n# Location of the PHP command line interface binary.\r\nPHPCLI=/usr/local/bin/php\r\n\r\n# Instruct cron to run the main set of cronjobs\r\n# at 6:35am every day\r\n35 6 * * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php -q -s example 2&gt;&amp;1\r\n\r\n# Instruct cron to run the &quot;infrequent&quot; set of cronjobs\r\n# at 5:20am every Monday\r\n20 5 * * 1 cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php infrequent -q -s example 2&gt;&amp;1\r\n\r\n# Instruct cron to run the &quot;frequent&quot; set of cronjobs\r\n# every 15 minutes\r\n0,15,30,45 * * * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php frequent -q -s example 2&gt;&amp;1\r\n\r\n# Instruct cron to run the &quot;monthly&quot; set of cronjobs\r\n# at 4:10am the first day of every month\r\n10 4 1 * * cd $EZPUBLISH &amp;&amp; $PHPCLI runcronjobs.php monthly -q -s example 2&gt;&amp;1' ); return false;" /></p>
+<![endif]--><p>When added to the crontab, the cron daemon will run the &quot;runcronjobs.php&quot; script using the PHP command line interface binary at the specified time. With this configuration, the main set of cronjobs will be run at 6:35am every day. This means that all the scripts listed in the &quot;[CronjobSettings]&quot; section of the &quot;cronjob.ini&quot; configuration file (or its override) will be executed once a day.</p><p>The &quot;infrequent&quot; set of cronjobs will be run at 5:20am every Monday, i.e. the scripts listed in the &quot;[CronjobPart-infrequent]&quot; section of &quot;cronjob.ini&quot; (or its override) will be executed once a week.</p><p>The &quot;frequent&quot; set of cronjobs will be run every 15 minutes. Only the scripts that are listed in the &quot;[CronjobPart-frequent]&quot; section of &quot;cronjob.ini&quot; (or its override) will be executed.</p><p>The &quot;monthly&quot; set of cronjobs will be run at 4:10am the first day of every month, i.e. the script(s) listed in the &quot;[CronjobPart-monthly]&quot; section of &quot;cronjob.ini&quot; (or its override) will be executed once a week.</p><p>The &quot;-q&quot; parameter instructs the script to run in quiet/silent mode (suppressing unnecessary output). The &quot;-s example&quot; indicates which siteaccess configuration the script should use. The &quot;2&gt;&amp;1&quot; notation instructs the system to combine standard output and error messages into one stream.</p><a name="eztoc122654_3" id="eztoc122654_3"></a><h2>Scheduled tasks on Windows</h2><p>Unlike UNIX/Linux systems, Windows does not provide access to cron. Instead, Windows has its own solution called &quot;Scheduled Tasks&quot;. A scheduled task can be set up by selecting &quot;Scheduled Tasks&quot; from the Control Panel. This will bring up a wizard that asks what should be executed, when and so on. It should be configured to run a batch (.bat) file at regular intervals. The batch file should navigate into the Exponential directory and run the &quot;runcronjobs.php&quot; script.</p>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Svitlana Shatokhina&nbsp;(14/09/2010 12:14 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Ricardo Correia&nbsp;(04/07/2013 11:03 am)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Svitlana Shatokhina, Balazs Halasy, Ester Heylen, Geir Arne Waaler, Ricardo Correia</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25127" class="attribute-heading">
+<h2>Parameter order with cronjobPart is executed</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 29 June 2007 11:45:02 am</p>
+    <p class="author">Bartek Modzelewski</p>
+</div>
+
+<div class="attribute-short">
+There is a mistake in doc (or bug in runcronjobs.php). Instead of:<br />
+<br />
+<pre class="wordwrap"><span class="line">php runcronjobs.php group_of_tasks -s example</span>
+</pre><br />
+<br />
+should be:<br />
+<br />
+<pre class="wordwrap"><span class="line">php runcronjobs.php -s example group_of_tasks</span>
+</pre><br />
+<br />
+otherwise specified siteaccess will not be respected - eZp will use default one.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25127" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25128" class="attribute-heading">
+<h2>Re: Parameter order with cronjobPart is executed</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 29 June 2007 12:28:37 pm</p>
+    <p class="author">Svitlana Shatokhina</p>
+</div>
+
+<div class="attribute-short">
+Thank you. This is now reported here: <a href="http://issues.ez.no/11054" title="http://issues.ez.no/11054">http://issues.ez.no/11054</a>
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25128" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25129" class="attribute-heading">
+<h2>crontab -e exponential.cron removes old cronjobs</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 04 June 2008 6:51:06 am</p>
+    <p class="author">Andi</p>
+</div>
+
+<div class="attribute-short">
+You should check if there are any cronjobs already insalled using crontab -e because crontab -e exponential.cron removes old crontab settings. To be on the save side use crontab -e and copy &amp; paste the code from exponential.cron.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25129" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25130" class="attribute-heading">
+<h2>Unnecessary output from cron</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Monday 27 October 2008 12:37:39 pm</p>
+    <p class="author">Lutz Donnerhacke</p>
+</div>
+
+<div class="attribute-short">
+runcronjobs.php -q frequent ... does produce no output as expected<br />
+runcronjobs.php frequent -q ... does produce output, because the option comes too late<br />
+
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25130" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25131" class="attribute-heading">
+<h2>Re: Unnecessary output from cron</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Monday 27 October 2008 2:01:55 pm</p>
+    <p class="author">Svitlana Shatokhina</p>
+</div>
+
+<div class="attribute-short">
+Hi, could you please file an issue on <a href="http://issues.ez.no/" title="http://issues.ez.no">http://issues.ez.no</a> ? Thank you!
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25131" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25132" class="attribute-heading">
+<h2>How can I list cron jobs for all the users at once?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 19 December 2008 11:44:54 am</p>
+    <p class="author">Gilbert</p>
+</div>
+
+<div class="attribute-short">
+I have a system hosting over 3000 users, and I was wondering how I can scan through them all for any active cron job.<br />
+<br />
+Share with me...Thanks guys!
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25132" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25133" class="attribute-heading">
+<h2>Cronjobs</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Saturday 30 January 2010 9:35:20 pm</p>
+    <p class="author">adbox</p>
+</div>
+
+<div class="attribute-short">
+I use a free service to manage my cronjobs. <a href="http://www.cronwatch.com/" title="http://www.cronwatch.com">http://www.cronwatch.com</a>
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25133" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment25134" class="attribute-heading">
+<h2>Another way to pass the parameters</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Wednesday 28 July 2010 4:40:33 pm</p>
+    <p class="author">Javier Magán</p>
+</div>
+
+<div class="attribute-short">
+Hello.<br />
+<br />
+Is it possible to pass the prarameters to the runcronjobs.php script as ...mysite.com/runcronjobs.php?parameter1=xx&amp;parameter2=yy<br />
+<br />
+Aparently, my ISP only suports this format for configuring cronjobs (no ssh access).<br />
+<br />
+If posible, how should this one be?:<br />
+<br />
+php runcronjobs.php -s site_admin sendmail<br />
+<br />
+Thank
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25134" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="25126" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/4.5/Features/Cronjobs/Running-cronjobs by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:04:36 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

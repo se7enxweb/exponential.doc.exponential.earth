@@ -1160,7 +1160,7 @@ ataRows));
 :12px;">    app_bundle.handle_submission:
         class: "AppBundle\SignalSlot\HandleSubmission"
         tags:
-            - { name: ezpublish.api.slot, signal: '\EzSystems\FormBuilder\C=
+            - { name: exponential.api.slot, signal: '\EzSystems\FormBuilder\C=
 ore\SignalSlot\Signal\FormSubmit' }
 &nbsp;</pre>=20
 </div>

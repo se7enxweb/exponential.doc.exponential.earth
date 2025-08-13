@@ -302,7 +302,7 @@ erties.</p>
 ing">IO Handler</a><span>&nbsp;that is being used. With the native, default=
  handlers (FileSystem and Legacy), the ID is the file path, relative to the=
  binary file storage root dir (<code>var/&lt;vardir&gt;/storage/original</c=
-ode> by default). <strong>This attribute has been introduced in eZ Publish =
+ode> by default). <strong>This attribute has been introduced in Exponential =
 5.2.</strong></span></td>
 <td colspan=3D"1" class=3D"confluenceTd">application/63cd472dd7819da7b75e8e=
 2fee507c68.pdf</td>
@@ -313,7 +313,7 @@ ode> by default). <strong>This attribute has been introduced in eZ Publish =
 <td colspan=3D"1" class=3D"confluenceTd">The human readable file name, as e=
 xposed to the outside. Used when sending the file for download in order to =
 name the file.</td>
-<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_ezpublish5 lig=
+<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_exponential5 lig=
 ht.pdf</td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ ht.pdf</td>
 <td colspan=3D"1" class=3D"confluenceTd">string</td>
 <td colspan=3D"1" class=3D"confluenceTd"><p>The binary file's HTTP uri. If =
 the URI doesn't include a host or protocol, it applies to the request domai=
-n. <strong>This attribute has been introduced in eZ Publish 5.2.</strong></=
+n. <strong>This attribute has been introduced in Exponential 5.2.</strong></=
 p><p><strong>The URI is not publicly readable, and must NOT be used to link=
  to the file for download. </strong>Use <code>ez_render_field</code> to gen=
 erate a valid link to the download controller.</p><p><span class=3D"status-=
@@ -355,7 +355,7 @@ oaded</td>
 <td colspan=3D"1" class=3D"confluenceTd"><code>path</code></td>
 <td colspan=3D"1" class=3D"confluenceTd">string</td>
 <td colspan=3D"1" class=3D"confluenceTd"><p><strong>*deprecated*<br></stron=
-g>&nbsp;Renamed to <code>id</code> starting from eZ Publish 5.2. Can still =
+g>&nbsp;Renamed to <code>id</code> starting from Exponential 5.2. Can still =
 be used, but it is recommended not to use it anymore as it will be removed.=
 </p></td>
 <td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>

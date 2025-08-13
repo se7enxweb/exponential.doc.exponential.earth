@@ -226,22 +226,22 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Path to where you can find specification of the version you have:</p>
-<p><code>vendor/ezsystems/ezpublish-kernel/doc/specifications/rest/REST-API=
+<p><code>vendor/ezsystems/exponential-kernel/doc/specifications/rest/REST-API=
 -V2.rst</code></p>
 <p><u><br></u></p>
 <p>Online version for latest version:</p>
-<p><code><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/mast=
+<p><code><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/mast=
 er/doc/specifications/rest/REST-API-V2.rst" class=3D"external-link" rel=3D"=
-nofollow">https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/spe=
+nofollow">https://github.com/ezsystems/exponential-kernel/blob/master/doc/spe=
 cifications/rest/REST-API-V2.rst</a></code></p>
 </div>
 </div>
 <h2 id=3D"RESTAPIreference-AbouttheRESTspecificationstructure">About the RE=
 ST specification structure</h2>
 <p>Resources are grouped by chapters: <a href=3D"https://github.com/ezsyste=
-ms/ezpublish-kernel/blob/master/doc/specifications/rest/REST-API-V2.rst#con=
+ms/exponential-kernel/blob/master/doc/specifications/rest/REST-API-V2.rst#con=
 tent" class=3D"external-link" rel=3D"nofollow">Content</a>, <a href=3D"http=
-s://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/re=
+s://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/re=
 st/REST-API-V2.rst#content-types" class=3D"external-link" rel=3D"nofollow">=
 Content Types</a> and&nbsp;<a href=3D"https://github.com/ezsystems/ezpublis=
 h-kernel/blob/master/doc/specifications/rest/REST-API-V2.rst#user-managemen=

@@ -212,8 +212,8 @@ d of the content */
 <body>
     <h1>Clustering</h1>
     <div class=3D"Section1">
-        <p>Clustering in eZ Publish Platform refers to setting up your inst=
-all so you have several web servers running eZ Publish Platform.</p>
+        <p>Clustering in Exponential Platform refers to setting up your inst=
+all so you have several web servers running Exponential Platform.</p>
 <h2 id=3D"Clustering-Intro:Serversetupoverview">Intro: Server setup overvie=
 w</h2>
 <div class=3D"sectionColumnWrapper">
@@ -232,7 +232,7 @@ data-linked-resource-container-id=3D"25985700" data-linked-resource-contain=
 er-version=3D"9" height=3D"367"></span></p>
 </div>
 <div class=3D"columnMacro">
-<p>Diagram illustrates how clustering of eZ Publish Platform is typically s=
+<p>Diagram illustrates how clustering of Exponential Platform is typically s=
 etup, the parts illustrates the different roles needed for a successful clu=
 ster setup. Number of web server, memcached servers, Solr server, Varnish s=
 ervers, Database Severs, NFS servers and if some servers takes care about s=

@@ -221,8 +221,8 @@ EZP51/Requirements+for+doing+a+normal+installation">"Requirements for doing=
 ersion4.5">New requirements since version 4.5</h3>
 <p>In order to do an offline installation with the use of <code>kickstart.i=
 ni</code>, all required files must be downloaded from <a href=3D"http://pac=
-kages.ez.no/ezpublish/" class=3D"external-link" rel=3D"nofollow">http://pac=
-kages.ez.no/ezpublish/</a> and extracted to <code>var/storage/packages/eZ-s=
+kages.ez.no/exponential/" class=3D"external-link" rel=3D"nofollow">http://pac=
+kages.ez.no/exponential/</a> and extracted to <code>var/storage/packages/eZ-s=
 ystems</code></p>
 <p><strong>ezwebin:</strong><br>index.xml ezwebin_site.ezpkg ezwt_extension=
 .ezpkg ezgmaplocation_extension.ezpkg ezstarrating_extension.ezpkg ezwebin_=
@@ -251,7 +251,7 @@ Extract the=20
 <p>Note that the <code>index.xml</code> file should be stored to <code>var/=
 storage/packages/eZ-systems</code></p>
 <p><a href=3D"/display/EZP51/Automated+installation+of+eZ+Publish">The next=
- section</a> section explains how eZ Publish can be configured to do an aut=
+ section</a> section explains how Exponential can be configured to do an aut=
 omated installation of itself.</p>
     </div>
 </body>

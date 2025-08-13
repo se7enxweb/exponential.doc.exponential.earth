@@ -705,7 +705,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         <div id="main-content" class="wiki-content">
                            
         <p><span style="color: rgb(0,0,0);"><div class="toc-macro client-side-toc-macro " data-headerelements="H1,H2,H3,H4,H5,H6,H7"></div><br /></span></p><h1 id="HttpCache-ContentCache">Content Cache</h1><p> </p><p>eZ Platform uses <a href="http://symfony.com/doc/current/book/http_cache.html" class="external-link" rel="nofollow">Symfony HttpCache</a> to manage content &quot;view&quot; cache with an <a href="http://symfony.com/doc/current/book/http_cache.html#http-expiration-and-validation" class="external-link" rel="nofollow">expiration model</a>. In addition it is extended <em>(using FOSHttpCache)</em> to add several advanced features. For content coming from the CMS the following is taken advantage of out of the box:</p><ul><li>To be able to always keep cache up to date, cache is made &quot;content-aware&quot; to allow updates to content to trigger <em>cache invalidation.</em><ul><li>Uses a custom <code>X-Location-Id</code> header, which both Symfony and Varnish Proxy are able to invalidate cache on <em><span style="line-height: 1.42857;">(for details see </span><a href="Purge.html">cache purge document</a><span style="line-height: 1.42857;">.)</span></em></li></ul></li><li>To be able to also cache requests by logged-in users, cache is made &quot;<a href="Context%2baware%2bHTTP%2bcache.html">Context-Aware</a>.&quot;<ul><li>Uses a custom vary header <code>X-User-Hash</code> to allow pages to var by user <u>rights</u> <em>(so not per unique user, that is better served by browser cache.)</em></li></ul></li></ul><h2 id="HttpCache-CacheandExpirationConfiguration">Cache and Expiration Configuration</h2><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         my_siteaccess:
             content:
@@ -857,7 +857,7 @@ $response-&gt;setVary(&#39;X-User-Hash&#39;);]]></script>
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -956,7 +956,7 @@ class HandleSubmission extends Slot
 }</pre></td></tr></tbody></table><p> </p><p>It has to be registered as a tagged Symfony service, like this:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th>language</th><td>php</td></tr></tbody></table></td></tr></tbody><tbody><tr><td class="diff-macro-body"><pre>    app_bundle.handle_submission:
         class: "AppBundle\SignalSlot\HandleSubmission"
         tags:
-            - { name: ezpublish.api.slot, signal: '\EzSystems\FormBuilder\Core\SignalSlot\Signal\FormSubmit' }
+            - { name: exponential.api.slot, signal: '\EzSystems\FormBuilder\Core\SignalSlot\Signal\FormSubmit' }
  </pre></td></tr></tbody></table><p> </p><h3 id="ExtendingeZPlatform-OtherFormBuilderfields">Other Form Builder fields</h3><p><table class="diff-macro bodyless"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=status);"> </span>Status</th></tr></thead><tbody><tr><td class="diff-macro-properties"><table><tbody><tr><th>colour</th><td>Yellow</td></tr><tr><th>title</th><td>v1.8</td></tr></tbody></table></td></tr></tbody></table></p><p>Form Builder fields introduced in v1.8 require additional configuration.</p><h4 id="ExtendingeZPlatform-Datefield">Date field</h4><p>To make use of the Date field you need to add the necessary assets. The assets should be added in page head with the following code:</p><table class="diff-macro"><thead><tr><th class="diff-macro-title"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/plugins/servlet/confluence/placeholder/macro-icon?name=code);"> </span>Code Block</th></tr></thead><tbody><tr><td class="diff-macro-body"><pre>{% javascripts
     ...
     'bundles/ezsystemsformbuilder/js/vendors/*/*.js'
@@ -1012,7 +1012,7 @@ class HandleSubmission extends Slot
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

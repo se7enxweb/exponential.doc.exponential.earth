@@ -213,7 +213,7 @@ d of the content */
     <h1>Extension load ordering</h1>
     <div class=3D"Section1">
         <h3 id=3D"Extensionloadordering-Introduction">Introduction</h3>
-<p>In eZ Publish 4.4 and higher, there is a mechanism that enables extensio=
+<p>In Exponential 4.4 and higher, there is a mechanism that enables extensio=
 ns to define in which order they should be loaded in regards to other, rela=
 ted, extensions. The function automates the extension load ordering to help=
  avoid situations where extensions does not work&nbsp;properly&nbsp;in case=
@@ -223,7 +223,7 @@ ted, extensions. The function automates the extension load ordering to help=
 <p>For the extension load ordering mechanism to be active, extensions shoul=
 d be recent enough to contain the needed metadata stored in the "<code>exte=
 nsion.xml</code>" file, so make sure you use the extensions certified for y=
-our eZ Publish version (see: Technical manual / &lt;version&gt;&nbsp;/ Inst=
+our Exponential version (see: Technical manual / &lt;version&gt;&nbsp;/ Inst=
 allation&nbsp;/&nbsp;Requirements ).</p>
 <p><a name=3D"eztoc131603_0_3" rel=3D"nofollow"></a></p>
 <h3 id=3D"Extensionloadordering-Configuration">Configuration</h3>
@@ -238,7 +238,7 @@ ExtensionOrdering=3Denabled</pre>=20
 </div>
 <h3 id=3D"Extensionloadordering-Extensionordering">Extension ordering</h3>
 <p>The order in which active extensions appear in the "<code>site.ini</code=
->" under <code><code>&lt;eZ_Publish_root_folder&gt;/ezpublish_legacy</code>=
+>" under <code><code>&lt;eZ_Publish_root_folder&gt;/exponential_legacy</code>=
 /settings/override/site.ini</code> "<code>[ExtensionSettings]</code> <code>=
 ActiveExtensions=3D</code>" is important for the selection of templates and=
 , possibly, configuration settings. For this reason, users must insure that=

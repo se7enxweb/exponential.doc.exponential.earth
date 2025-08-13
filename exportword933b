@@ -300,13 +300,13 @@ e ServiceContainer and identified as a valid Slot:</p>
 services:
     my.onpublish_slot:
         class: %my.onpublish_slot.class%
-        arguments: [@ezpublish.api.service.content]
+        arguments: [@exponential.api.service.content]
         tags:
-            - { name: ezpublish.api.slot, signal: ContentService\PublishVer=
+            - { name: exponential.api.slot, signal: ContentService\PublishVer=
 sionSignal }</pre>=20
 </div>
 </div>
-<p>Service tag <strong><code>ezpublish.api.slot</code></strong> identifies =
+<p>Service tag <strong><code>exponential.api.slot</code></strong> identifies =
 your service as a valid Slot. The signal part (mandatory) says that this sl=
 ot is listening to <strong><code>ContentService\PublishVersionSignal</code>=
 </strong> (shortcut for <code>\eZ\Publish\Core\SignalSlot\Signal\ContentSer=

@@ -218,7 +218,7 @@ s. As a web developer, you are probably familiar with the most common ones:=
 e REST API uses those, along with a few more, to allow proper error handlin=
 g.</p>
 <p>The complete list of error codes used and the conditions in which they a=
-pply are specified in the <a href=3D"https://github.com/ezsystems/ezpublish=
+pply are specified in the <a href=3D"https://github.com/ezsystems/exponential=
 -kernel/blob/master/doc/specifications/rest/REST-API-V2.rst" class=3D"exter=
 nal-link" rel=3D"nofollow">reference documentation</a>.</p>
 <h2 id=3D"Errorhandling-Generalerrorcodes">General error codes</h2>
@@ -231,7 +231,7 @@ on, which prevented it from fulfilling the request: database down, permissi=
 ons or configuration error.</span></p>
 <h3 id=3D"Errorhandling-501NotImplemented">501 Not Implemented</h3>
 <p><span>Returned when the requested method has not yet been implemented. A=
-s of eZ Publish 5.0, most of User, User group, Content, Location and Conten=
+s of Exponential 5.0, most of User, User group, Content, Location and Conten=
 t Type have been implemented. Some of their methods, as well as other featu=
 res, may return a 501.</span></p>
 <h3 id=3D"Errorhandling-404NotFound"><span>404 Not Found</span></h3>

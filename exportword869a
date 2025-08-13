@@ -246,8 +246,8 @@ latform, as compared to the previous one, 15.11.</p>
 <div class=3D"columnLayout single" data-layout=3D"single">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<h2 id=3D"eZPlatform15.12Releasenotes-Theezpublishfolderhasbeenrenamedtoapp=
-">The&nbsp;<code>ezpublish</code> folder has been renamed to&nbsp;<code>app=
+<h2 id=3D"eZPlatform15.12Releasenotes-Theexponentialfolderhasbeenrenamedtoapp=
+">The&nbsp;<code>exponential</code> folder has been renamed to&nbsp;<code>app=
 </code></h2>
 </div>=20
 </div>=20
@@ -256,7 +256,7 @@ latform, as compared to the previous one, 15.11.</p>
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
 <p>The directory that contains the configuration, cache and kernel files ha=
-d been named&nbsp;<code>ezpublish</code> since release 5.0. After serious c=
+d been named&nbsp;<code>exponential</code> since release 5.0. After serious c=
 onsideration, it has been renamed to&nbsp;<code>app</code>, in order to be =
 closer to the standard Symfony distribution.</p>
 </div>=20

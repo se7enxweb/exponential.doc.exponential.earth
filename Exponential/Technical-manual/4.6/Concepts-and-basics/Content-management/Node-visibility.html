@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Node visibility / Content management / Concepts and basics / 4.6 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../4-2.html">4.6</a>
+        
+                        /
+                            <a href="../../Concepts-and-basics.html">concepts and basics</a>
+        
+                        /
+                            <a href="../Content-management.html">content management</a>
+        
+                        /
+                            node visibility
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../4-2.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../The-internal-structure-of-Exponential.html" title="">
+	    	    		                    		    <span class="node-name-normal">The internal structure of Exponential</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../The-internal-structure-of-Exponential/Directory-structure.html" title="">
+	    	    		                    		    <span class="node-name-normal">Directory structure</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Content-and-design.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content and design</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Content-and-design/Storage.html" title="">
+	    	    		                    		    <span class="node-name-normal">Storage</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Content-management.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content management</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Datatypes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Datatypes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="The-content-class.html" title="">
+	    	    		                    		    <span class="node-name-normal">The content class</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Class-attributes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Class attributes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="The-content-object.html" title="">
+	    	    		                    		    <span class="node-name-normal">The content object</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Multiple-languages.html" title="">
+	    	    		                    		    <span class="node-name-normal">Multiple languages</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="The-content-node.html" title="">
+	    	    		                    		    <span class="node-name-normal">The content node</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="The-content-node-tree.html" title="">
+	    	    		                    		    <span class="node-name-normal">The content node tree</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Top-level-nodes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Top level nodes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Node-visibility.html" title="">
+	    	    		                    		    <span class="node-name-normal">Node visibility</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Object-relations.html" title="">
+	    	    		                    		    <span class="node-name-normal">Object relations</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Sections.html" title="">
+	    	    		                    		    <span class="node-name-normal">Sections</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="URL-storage.html" title="">
+	    	    		                    		    <span class="node-name-normal">URL storage</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Information-collection.html" title="">
+	    	    		                    		    <span class="node-name-normal">Information collection</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration/Site-management.html" title="">
+	    	    		                    		    <span class="node-name-normal">Site management</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration/Extension-siteaccess-settings.html" title="">
+	    	    		                    		    <span class="node-name-normal">Extension siteaccess settings</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration/Access-methods.html" title="">
+	    	    		                    		    <span class="node-name-normal">Access methods</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Modules-and-views.html" title="">
+	    	    		                    		    <span class="node-name-normal">Modules and views</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../URL-translation.html" title="">
+	    	    		                    		    <span class="node-name-normal">URL translation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Designs.html" title="">
+	    	    		                    		    <span class="node-name-normal">Designs</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Designs/Design-combinations.html" title="">
+	    	    		                    		    <span class="node-name-normal">Design combinations</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Access-control.html" title="">
+	    	    		                    		    <span class="node-name-normal">Access control</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Workflows.html" title="">
+	    	    		                    		    <span class="node-name-normal">Workflows</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Webshop.html" title="">
+	    	    		                    		    <span class="node-name-normal">Webshop</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Reference.html" title="">
+	    	    		                                                           </a><a href="../../../4.x/Reference.html"><span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Node visibility</h1>
+</div>
+
+<p>Since publishing means adding an object (by the way of a node) to the content tree, un-publishing would imply the removal of the object from the tree. Once an object is published, it can not be unpublished because Exponential does not provide such a feature. Instead, the system provides a hiding mechanism which can be used to change the visibility of nodes. The hide feature makes it possible to prevent the system from displaying the contents of published objects. This is achieved by denying access to the nodes. A single node or a subtree of nodes can be hidden either by a user or by the system. A node can have one of the following visibility statuses:</p>
+<ul>
+<li><div> Visible </div></li><li><div> Hidden </div></li><li><div> Hidden by superior </div></li>
+</ul>
+<p>All nodes are visible by default and thus the objects they reference can be accessed. A user can hide or un-hide a node using the administration interface. Once a node is hidden, all its descendants will automatically be marked &quot;Hidden by superior&quot; and thus the descendants will also become hidden. A node can not become visible if its parent is hidden.</p><p>A hidden node will not be available unless the &quot;ShowHiddenNodes&quot; directive within the &quot;[SiteAccessSettings]&quot; block of a configuration override for &quot;site.ini&quot; is set to true. The most common way to use this setting is to disallow all but the administration interface to show hidden nodes.</p><a name="eztoc125274_1" id="eztoc125274_1"></a><h2>Implementation</h2><p>Each node has two flags: &quot;H&quot; and &quot;X&quot;. While &quot;H&quot; means &quot;hidden&quot;, &quot;X&quot; means &quot;invisible&quot;. The hidden flag reveals whether the node has been hidden by a user or not. A raised invisibility flag means that the node is invisible either because it was hidden by a user or by the system. Together, the flags represent the three visibility statuses that were described above:</p><table class="renderedtable" cellpadding="2" cellspacing="0">
+
+<tr>
+<th >  <p>H</p>
+  </th><th >  <p>X</p>
+  </th><th >  <p>Status</p>
+  </th>
+</tr>
+
+<tr>
+<td valign="top" style="vertical-align: top">  <p>-</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>-</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>The node is visible.</p>
+  </td>
+
+</tr>
+
+<tr>
+<td valign="top" style="vertical-align: top">  <p>1</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>1</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>The node is invisible. It was hidden by a user.</p>
+  </td>
+
+</tr>
+
+<tr>
+<td valign="top" style="vertical-align: top">  <p>-</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>1</p>
+  </td>
+<td valign="top" style="vertical-align: top">  <p>The node is invisible. It was hidden by the system because its ancestor is hidden/invisible.</p>
+  </td>
+
+</tr>
+
+</table>
+<p>If a user tries to hide an already invisible node then the node's hidden flag will be set in addition to the invisible flag. If a node is hidden and its parent becomes visible, the node will remain hidden while the descendants will remain invisible. The following illustrations show how the node hiding algorithm works.</p><a name="eztoc125274_1_1" id="eztoc125274_1_1"></a><h3>Case 1: Hiding a visible node</h3><p>
+The following illustration shows what happens when a visible node is hidden by a user. The node will be marked hidden. Underlying nodes will be marked invisible (hidden by superior). The visibility status of underlying nodes already marked hidden or invisible will not be changed.<br /></p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/concepts_and_basics/node_visibility_1/4605-1-eng-GB/node_visibility_1_doc.png" alt="Hiding a visible node" />
+ <p>Hiding a visible node</p>
+
+
+
+
+
+
+
+</div><a name="eztoc125274_1_2" id="eztoc125274_1_2"></a><h3>Case 2: Hiding an invisible node</h3><p>
+The following illustration shows what happens when an invisible node (hidden by superior) is explicitly hidden by a user. The node will be marked as hidden. Since the underlying nodes are already either hidden or invisible, their visibility status will not be changed.<br /></p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/concepts_and_basics/node_visibility_2/4608-1-eng-GB/node_visibility_2_doc.png" alt="Hiding an invisible node" />
+ <p>Hiding an invisible node</p>
+
+
+
+
+
+
+
+</div><a name="eztoc125274_1_3" id="eztoc125274_1_3"></a><h3>Case 3: Un-hiding a node with a visible ancestor</h3><p>
+The following illustration shows what happens when a user un-hides a node that has a visible ancestor. Underlying invisible nodes will become visible. An underlying node that was explicitly hidden by a user will remain hidden (and its children will be remain invisible).<br /></p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/concepts_and_basics/node_visibility_3/4611-2-eng-GB/node_visibility_3_doc.png" alt="Unhiding a node with a visible ancestor" />
+ <p>Unhiding a node with a visible ancestor</p>
+
+
+
+
+
+
+
+</div><a name="eztoc125274_1_4" id="eztoc125274_1_4"></a><h3>Case 4: Un-hiding a node with an invisible ancestor</h3><p>
+The following illustration shows what happens when a user un-hides a node that has an invisible ancestor. Since the target node is un-hided in a subtree that is currently invisible (because a node further up in the hierarchy has been explicitly hidden), the node will not become visible. Instead, it will be marked as invisible and will become visible when the hidden superior node is un-hided.<br /></p>
+<div class="object-center">        <img src="../../../../../var/doc/storage/images/ez_publish/technical_manual/4_0/images/concepts_and_basics/node_visibility_4/4614-1-eng-GB/node_visibility_4_doc.png" alt="Unhiding a node with an invisible ancestor" />
+ <p>Unhiding a node with an invisible ancestor</p>
+
+
+
+
+
+
+
+</div>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(14/09/2010 10:56 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Geir Arne Waaler&nbsp;(28/09/2010 8:45 am)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment25933" class="attribute-heading">
+<h2>Visibility of nodes related to hidden nodes</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Tuesday 18 November 2008 11:35:38 am</p>
+    <p class="author">Jostein Knudsen</p>
+</div>
+
+<div class="attribute-short">
+When you hide a node, you are not hiding its related nodes.<br />
+<br />
+Example:<br />
+If you have embedded (related) an image in an article, and you hide the article, the image is still available to whoever knows the direct URL, for instance by searching for its description.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25933" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment25934" class="attribute-heading">
+<h2>setting visibility in the Admin Interface</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Friday 04 September 2009 6:00:27 pm</p>
+    <p class="author">Kent Rauch</p>
+</div>
+
+<div class="attribute-short">
+The article states that users can set nodes to &quot;hidden&quot; but doesn't say how to do it. I'm looking all over in the Admin Interface and I can find no way to set visibility. I tried using &quot;remove&quot; and that made it go away permanently (as far as I can tell).<br />
+<br />
+Cookbook-style, please? Thanks.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25934" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+
+<div id="comment25935" class="attribute-heading">
+<h2>Re: setting visibility in the Admin Interface</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Monday 08 February 2010 12:38:05 pm</p>
+    <p class="author">Yannick Peignard</p>
+</div>
+
+<div class="attribute-short">
+Hi,<br />
+<br />
+in the left menu of the admin interface, if you click (not a right click) on the name of an object, a new menu appears. Then, you have access to other functions for the menu. Il the advance option, you can hide an object.
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="25935" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="25932" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Technical-manual/4.6/Concepts-and-basics/Content-management/Node-visibility by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:28:10 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

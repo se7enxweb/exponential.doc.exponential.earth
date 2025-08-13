@@ -222,7 +222,7 @@ wing command-line script:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console config:dump-reference ezpublish</pre>=20
+e:12px;">php exponential/console config:dump-reference exponential</pre>=20
 </div>
 </div>
 </div>

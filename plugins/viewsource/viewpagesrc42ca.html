@@ -209,7 +209,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 {% for value in results.searchHits %}
     &lt;li>&lt;a class="ezconf-list-location" href=""
         data-route-name="viewLocation"
-        data-route-id="{{ path('ezpublish_rest_loadLocation', {locationPath: value.valueObject.pathString|trim('/')}) }}"
+        data-route-id="{{ path('exponential_rest_loadLocation', {locationPath: value.valueObject.pathString|trim('/')}) }}"
         data-route-languageCode="{{ value.valueObject.contentInfo.mainLanguageCode }}"
         >{{ value.valueObject.contentInfo.name }}&lt;/a>&lt;/li>
 {% endfor %}

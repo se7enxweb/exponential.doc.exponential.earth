@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Install notes for eZ Publish on RHEL 6</title>
+    <title>Install notes for Exponential on RHEL 6</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,9 +210,9 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Install notes for eZ Publish on RHEL 6</h1>
+    <h1>Install notes for Exponential on RHEL 6</h1>
     <div class=3D"Section1">
-        <h2 id=3D"InstallnotesforeZPublishonRHEL6-RequiredRPMs">Required RP=
+        <h2 id=3D"InstallnotesforExponentialonRHEL6-RequiredRPMs">Required RP=
 Ms</h2>
 <p>&nbsp;</p>
 <div class=3D"table-wrap">
@@ -264,7 +264,7 @@ ional rpm channel</p></td>
 </tbody>
 </table>
 </div>
-<h2 id=3D"InstallnotesforeZPublishonRHEL6-RHEL6andCentOS6:EPEL">RHEL 6 and =
+<h2 id=3D"InstallnotesforExponentialonRHEL6-RHEL6andCentOS6:EPEL">RHEL 6 and =
 CentOS 6: EPEL</h2>
 <p>Some of the listed rpms are only available through EPEL. Extra Packages =
 for Enterprise Linux (EPEL) is a Fedora Special Interest Group that creates=
@@ -284,9 +284,9 @@ rpm</pre>=20
 specific rpm installs with the yum option "<code>--enablerepo=3Depel</code>=
 ". To disable it, set "<code>enabled=3D0</code>" in "<code>/etc/yum.repos.d=
 /epel.repo</code>".</p>
-<h2 id=3D"InstallnotesforeZPublishonRHEL6-RedHatNetwork">Red Hat Network</h=
+<h2 id=3D"InstallnotesforExponentialonRHEL6-RedHatNetwork">Red Hat Network</h=
 2>
-<h3 id=3D"InstallnotesforeZPublishonRHEL6-RHEL6.1:TheCertificate-basedRHN">=
+<h3 id=3D"InstallnotesforExponentialonRHEL6-RHEL6.1:TheCertificate-basedRHN">=
 RHEL 6.1: The Certificate-based RHN</h3>
 <p>If upgrading from RHEL 6 to RHEL 6.1, you would like to use the new subs=
 cription system:<br>For a first-time certificate-based RHN registration:</p=
@@ -331,7 +331,7 @@ pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
-<h3 id=3D"InstallnotesforeZPublishonRHEL6-RHEL6.0:TheclassicRHN">RHEL 6.0: =
+<h3 id=3D"InstallnotesforExponentialonRHEL6-RHEL6.0:TheclassicRHN">RHEL 6.0: =
 The classic RHN</h3>
 <ul>
 <li>Log into Red Hat Network</li>

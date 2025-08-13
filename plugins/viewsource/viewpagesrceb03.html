@@ -41,7 +41,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p>eZ Publish sessions are handled by the Symfony stack, through session handlers. As en example, in order to store your session data in a database, you may use the <a href="http://symfony.com/doc/2.2/cookbook/configuration/pdo_session_storage.html">PdoSessionHandler</a>:</p><table class="wysiwyg-macro" data-macro-name="noformat" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>framework:
+        <p>&nbsp;</p>         <p>Exponential sessions are handled by the Symfony stack, through session handlers. As en example, in order to store your session data in a database, you may use the <a href="http://symfony.com/doc/2.2/cookbook/configuration/pdo_session_storage.html">PdoSessionHandler</a>:</p><table class="wysiwyg-macro" data-macro-name="noformat" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>framework:
     session:
         # ...
         handler_id:     session.handler.pdo
@@ -64,7 +64,7 @@ services:
     session.handler.pdo:
         class:     Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
         arguments: ["@pdo", "%pdo.db_options%"]
-</pre></td></tr></table><p>For more information on this and other included handlers, or information on developing your own, please check the <a href="http://symfony.com/doc/current/components/http_foundation/session_configuration.html">online Symfony documentation</a>.</p><p>To configure sessions in your eZ Publish 5 setup, look to the documentation of Symfony <a class="external-link" href="http://symfony.com/doc/master/components/http_foundation/index.html" rel="nofollow">HTTP Fundation component</a>.</p>
+</pre></td></tr></table><p>For more information on this and other included handlers, or information on developing your own, please check the <a href="http://symfony.com/doc/current/components/http_foundation/session_configuration.html">online Symfony documentation</a>.</p><p>To configure sessions in your Exponential 5 setup, look to the documentation of Symfony <a class="external-link" href="http://symfony.com/doc/master/components/http_foundation/index.html" rel="nofollow">HTTP Fundation component</a>.</p>
         <p>&nbsp;</p>
     </body>
 

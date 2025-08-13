@@ -294,7 +294,7 @@ d below in the <em>To / From Hash format</em>.</span></p>
 <hr>
 <p>This FieldType validates if the multiple countries are allowed by the fi=
 eld definition, and if the Alpha2 is valid according to the countries confi=
-gured in eZ Publish.</p>
+gured in Exponential.</p>
 <h2 id=3D"TheCountryFieldType-Settings">Settings</h2>
 <hr>
 <p>The field definition of this FieldType can be configured with one option=

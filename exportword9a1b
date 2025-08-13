@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <h5 id=3D"id-5.3.1ReleaseNotes-3rdJune2014">3rd June 2014</h5>
 <p>eZ announces the availability of 5.3.1, our first maintenance release av=
-ailable for all users of eZ Publish Platform 5.3 containing a notable few <=
+ailable for all users of Exponential Platform 5.3 containing a notable few <=
 a href=3D"#id-5.3.1ReleaseNotes-updates">updates and fixes</a>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -241,8 +241,8 @@ pdate command shown below and version the updated composer.lock should solv=
 e the problem.</p>
 </div>
 </div>
-<h2 id=3D"id-5.3.1ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.3">Updating from a previous version of eZ Publish Platform 5.3</h2>
+<h2 id=3D"id-5.3.1ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.3">Updating from a previous version of Exponential Platform 5.3</h2>
 <p>These instructions take advantage of the new&nbsp;<a href=3D"https://get=
 composer.org/" class=3D"external-link" rel=3D"nofollow">composer</a> powere=
 d update systems in 5.3 for maintenance updates, as for Upgrading from vers=
@@ -267,7 +267,7 @@ bsp;Updating Composer Packages selectively:</h4>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st ezsystems/ezpublish-kernel ezsystems/ezpublish-legacy ezsystems/ngsymfon=
+st ezsystems/exponential-kernel ezsystems/exponential-legacy ezsystems/ngsymfon=
 ytools-bundle</pre>=20
 </div>
 </div>
@@ -290,11 +290,11 @@ se:</p>
 <th class=3D"confluenceTh">version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><pre>ezsystems/ezpublish-kernel</pre></td>
+<td class=3D"confluenceTd"><pre>ezsystems/exponential-kernel</pre></td>
 <td class=3D"confluenceTd">5.3.1</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><pre>ezsystems/ezpublish-legacy</pre></td>
+<td class=3D"confluenceTd"><pre>ezsystems/exponential-legacy</pre></td>
 <td class=3D"confluenceTd">5.3.1</td>
 </tr>
 <tr>

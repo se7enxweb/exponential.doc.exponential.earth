@@ -217,7 +217,7 @@ ntionsandbestpractices">Internal FieldType conventions and best practices</=
 h1>
 <p>FieldType-&gt;$settingsSchema and FieldType-&gt;$allowedValidators are i=
 ntentionally left free-form, to give broadest freedom to FieldType develope=
-rs. However, for internal FieldTypes (aka those delivered with eZ Publish),=
+rs. However, for internal FieldTypes (aka those delivered with Exponential),=
  a common standard should be established as best practice. The purpose of t=
 his page is to collect and unify this standard.</p>
 <h2 id=3D"Settingsschemaandallowedvalidators-Settingsschema">Settings schem=

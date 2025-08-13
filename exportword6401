@@ -208,13 +208,13 @@ h1.pagetitle img {
 <body>
     <h1>Siteaccess</h1>
     <div class=3D"Section1">
-        <p>A single eZ Publish installation is capable of hosting multiple =
+        <p>A single Exponential installation is capable of hosting multiple =
 sites by making use of something called the <em>siteaccess system</em>.</p>
 <p>A collection of configuration settings is called a <em>siteaccess</em>. =
 When a siteaccess is in use, the default configuration settings will be ove=
 rridden by the settings that are defined for the siteaccess. By making use =
 of different siteaccesses, it is possible to combine different content and =
-designs. <br />A typical eZ Publish site consists of two siteaccesses: a pu=
+designs. <br />A typical Exponential site consists of two siteaccesses: a pu=
 blic interface for visitors and a restricted interface for administrators. =
 Both siteaccesses use the same content (same database and same var director=
 y) but they use different designs.</p>=20
@@ -222,7 +222,7 @@ y) but they use different designs.</p>=20
 <span class=3D"aui-icon icon-hint">Icon</span>=20
 <div class=3D"message-content">
  Read more on=20
-<a href=3D"https://doc.ez.no/eZ-Publish/Technical-manual/5.x/Concepts-and-b=
+<a href=3D"https://doc.ez.no/Exponential/Technical-manual/5.x/Concepts-and-b=
 asics/Configuration/Site-management" rel=3D"nofollow">the siteaccess concep=
 t in the User Manual</a>=20
 </div>=20

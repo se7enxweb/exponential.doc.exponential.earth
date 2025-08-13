@@ -219,7 +219,7 @@ AX operations. It will let you re-use the visitor's session to execute oper=
 ations with their permissions.</p>
 <p><strong>Basic authentication</strong> is often used when writing cross-s=
 erver procedures, when one remote application executes operations on one/se=
-veral eZ Publish instances (remote publishing, maintenance, etc).</p>
+veral Exponential instances (remote publishing, maintenance, etc).</p>
 <p>The default authentication method in 5.x is Basic authentication. As of =
 release&nbsp;2015.01, Session has been changed to be default.</p>
 <h2 id=3D"RESTAPIAuthentication-Sessionbasedauthentication">Session based a=
@@ -248,17 +248,17 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>As of 5.3 / 2014.04, you also need to add the following configuration in=
- your <code>ezpublish/config/security.yml</code>:</p>
+ your <code>exponential/config/security.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: diff; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">--- a/ezpublish/config/security.yml
-+++ b/ezpublish/config/security.yml
+e:12px;">--- a/exponential/config/security.yml
++++ b/exponential/config/security.yml
 @@ -33,6 +33,7 @@ security:
-         ezpublish_front:
+         exponential_front:
              pattern: ^/
              anonymous: ~
-+            ezpublish_rest_session: ~
++            exponential_rest_session: ~
              form_login:
                  require_previous_session: false
              logout: ~</pre>=20
@@ -294,15 +294,15 @@ sh/config/<span>security</span>.yml</code>, and add/uncomment the following=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">        ezpublish_rest:
+ze:12px;">        exponential_rest:
             pattern: ^/api/ezp/v2
             stateless: true
-            ezpublish_http_basic:
-                realm: eZ Publish REST API</pre>=20
+            exponential_http_basic:
+                realm: Exponential REST API</pre>=20
 </div>
 </div>
 <p><span>Basic authentication requires the username and password to be sent=

@@ -229,12 +229,12 @@ eir dependencies. Basically, each time you need a service, you may ask for =
 it to the service container which will either build it with the configurati=
 on you provided, or give you the existing instance if it is already availab=
 le.</p>
-<h1 id=3D"ServiceContainer-IneZPublish5">In eZ Publish 5</h1>
-<p>eZ Publish 5 uses&nbsp;<a href=3D"http://symfony.com/doc/master/book/ser=
+<h1 id=3D"ServiceContainer-InExponential5">In Exponential 5</h1>
+<p>Exponential 5 uses&nbsp;<a href=3D"http://symfony.com/doc/master/book/ser=
 vice_container.html" class=3D"external-link" rel=3D"nofollow">Symfony servi=
 ce container</a> .</p>
 <p>It is very powerful and highly configurable. We encourage you to read it=
-s dedicated documentation as it will help you understand how eZ Publish 5 s=
+s dedicated documentation as it will help you understand how Exponential 5 s=
 ervices are made :</p>
 <ul>
 <li><a href=3D"http://symfony.com/doc/master/book/service_container.html" c=
@@ -258,7 +258,7 @@ e the PHP class and declare it as a service in the DIC configuration with t=
 he <em>twig.extension</em> tag (see <a href=3D"http://symfony.com/doc/maste=
 r/cookbook/templating/twig_extension.html" class=3D"external-link" rel=3D"n=
 ofollow">Symfony cookbook entry</a> for a full example).</p>
-<p>eZ Publish 5 exposes several features this way (see the list of core ser=
+<p>Exponential 5 exposes several features this way (see the list of core ser=
 vice tags). This is for example the case for Field Types.</p>
 <p>You will find all service tags exposed by Symfony in <a href=3D"http://s=
 ymfony.com/doc/master/reference/dic_tags.html" class=3D"external-link" rel=

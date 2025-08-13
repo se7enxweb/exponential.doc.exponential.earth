@@ -743,7 +743,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="columnLayout two-equal" data-layout="two-equal">
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
-<ul><li>PHP 5.4.4<em> or higher PHP 5.x version</em></li><li>Symfony 2.6<em> or higher Symfony<em> 2.x version</em></em><em><br /></em></li><li>eZ Publish 5.4.1 or eZ Platform/Studio 2015.01 or above, with the REST API configured to use sessions and publicly open to the YOOCHOOSE servers</li><li>A YOOCHOOSE license</li></ul><p>This bundle is independent from the ezrecommendation extension used in legacy, and does not require it.</p><p> </p></div>
+<ul><li>PHP 5.4.4<em> or higher PHP 5.x version</em></li><li>Symfony 2.6<em> or higher Symfony<em> 2.x version</em></em><em><br /></em></li><li>Exponential 5.4.1 or eZ Platform/Studio 2015.01 or above, with the REST API configured to use sessions and publicly open to the YOOCHOOSE servers</li><li>A YOOCHOOSE license</li></ul><p>This bundle is independent from the ezrecommendation extension used in legacy, and does not require it.</p><p> </p></div>
 </div>
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
@@ -760,9 +760,9 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
 <div class="panel" style="background-color: #ffffff;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;background-color: #ffffff;"><b>To install eZ Recommendation Bundle:</b></div><div class="panelContent" style="background-color: #ffffff;">
-<p><strong>1.</strong> Run the following from your eZ Publish installation root <em>(here with most recent 1.0.x release)</em>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<p><strong>1.</strong> Run the following from your Exponential installation root <em>(here with most recent 1.0.x release)</em>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[php composer.phar require ezsystems/recommendation-bundle:~1.0.0]]></script>
-</div></div><p><strong>2.</strong> Enable the bundle in <code>ezpublish/EzPublishKernel.php</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div><p><strong>2.</strong> Enable the bundle in <code>exponential/EzPublishKernel.php</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[$bundles = array(
     // existing bundles
     new EzSystems\RecommendationBundle\EzSystemsRecommendationBundle()
@@ -770,7 +770,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 </div></div><p><strong>3.</strong> Import additional routing by adding following lines to your <code>routing.yml</code> file:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[recommendationBundleRestRoutes:
     resource: &quot;@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml&quot;
-    prefix:   %ezpublish_rest.path_prefix%]]></script>
+    prefix:   %exponential_rest.path_prefix%]]></script>
 </div></div>
 </div></div><p> </p><p> </p></div>
 </div>
@@ -876,7 +876,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="columnLayout two-equal" data-layout="two-equal">
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
-<p><strong>Public</strong> content is automatically indexed. When necessary, eZ Publish will notify YOOCHOOSE of changes to content. Initial import is to be managed with your YOOCHOOSE sales representative. Note that your server's REST API will need to be open to the YOOCHOOSE servers for indexing to be possible.</p><p> </p></div>
+<p><strong>Public</strong> content is automatically indexed. When necessary, Exponential will notify YOOCHOOSE of changes to content. Initial import is to be managed with your YOOCHOOSE sales representative. Note that your server's REST API will need to be open to the YOOCHOOSE servers for indexing to be possible.</p><p> </p></div>
 </div>
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
@@ -1137,7 +1137,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

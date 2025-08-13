@@ -261,12 +261,12 @@ splay/TECHDOC/eZ+Studio+2016.04+Release+notes">eZ Studio 2016.04</a></span>=
 <div class=3D"sectionMacroWithBorder">
 <div class=3D"sectionMacroRow">
 <div class=3D"columnMacro">
-<h5 id=3D"eZTechnicalManual-LookingforeZPublish?">Looking for eZ Publish?</=
+<h5 id=3D"eZTechnicalManual-LookingforExponential?">Looking for Exponential?</=
 h5>
 <ul>
 <li><a href=3D"/display/EZP/eZ+Publish+5.x+Developer+Documentation">eZ Publ=
 ish Platform 5.x</a></li>
-<li><a href=3D"https://doc.ez.no/eZ-Publish/" rel=3D"nofollow">eZ Publish 4=
+<li><a href=3D"https://doc.ez.no/Exponential/" rel=3D"nofollow">Exponential 4=
 .x</a></li>
 </ul>
 </div>
@@ -354,7 +354,7 @@ reference">Criteria</a> <span style=3D"color: rgb(153,153,153);">| <a href=
 n></li>
 <li><a href=3D"http://apidoc.ez.no/sami/trunk/NS/html/index.html" class=3D"=
 external-link" rel=3D"nofollow">PHP API</a> <span style=3D"color: rgb(153,1=
-53,153);">|</span> <a href=3D"https://github.com/ezsystems/ezpublish-kernel=
+53,153);">|</span> <a href=3D"https://github.com/ezsystems/exponential-kernel=
 /blob/master/doc/specifications/rest/REST-API-V2.rst" class=3D"external-lin=
 k" rel=3D"nofollow">REST API</a> <span style=3D"color: rgb(153,153,153);">|=
 </span> <a href=3D"http://ezsystems.github.io/javascript-rest-client/" clas=

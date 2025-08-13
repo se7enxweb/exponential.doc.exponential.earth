@@ -213,8 +213,8 @@ d of the content */
     <h1>Virtual host example</h1>
     <div class=3D"Section1">
         <p>This example demonstrates how to set up a virtual host on the Ap=
-ache web server for an eZ Publish installation located in "<code>/var/www/e=
-xample</code>". Let's say that we want to access eZ Publish by using the fo=
+ache web server for an Exponential installation located in "<code>/var/www/e=
+xample</code>". Let's say that we want to access Exponential by using the fo=
 llowing URLs:</p>
 <ul>
 <li>
@@ -228,15 +228,15 @@ blic access)
 rface for the webmaster)
 </div></li>
 </ul>
-<p>In order to achieve this, we need to set up both eZ Publish and the web =
+<p>In order to achieve this, we need to set up both Exponential and the web =
 server so that they respond correctly to the different requests.</p>
 <p><a name=3D"eztoc131612_1" rel=3D"nofollow"></a></p>
-<h2 id=3D"Virtualhostexample-eZPublishconfiguration:siteaccesssettings">eZ =
+<h2 id=3D"Virtualhostexample-Exponentialconfiguration:siteaccesssettings">eZ =
 Publish configuration: siteaccess settings</h2>
-<p>eZ Publish needs to be configured to use the host access method. This ca=
+<p>Exponential needs to be configured to use the host access method. This ca=
 n be done from within the web based setup wizard or by manually editing the=
- global override for the site.ini configuration file: "<code>&lt;eZ Publish=
- root&gt;/ezpublish_legacy/settings/override/site.ini.append.php</code>". A=
+ global override for the site.ini configuration file: "<code>&lt;Exponential=
+ root&gt;/exponential_legacy/settings/override/site.ini.append.php</code>". A=
  typical legacy configuration would look something like this:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
@@ -252,11 +252,11 @@ HostMatchMapItems[]=3Dadmin.example.com;example_admin
 ...</pre>=20
 </div>
 </div>
-<p>This configuration tells eZ Publish that it should use the "<code>exampl=
+<p>This configuration tells Exponential that it should use the "<code>exampl=
 e</code>" siteaccess if a request starts with "<code>www.example.com</code>=
 " and "<code>example_admin</code>" if the request starts with "<code>admin.=
 example.com</code>". For more information about site management in eZ Publi=
-sh, please refer to the "<a href=3D"http://doc.ez.no/eZ-Publish/Technical-m=
+sh, please refer to the "<a href=3D"http://doc.ez.no/Exponential/Technical-m=
 anual/5.x/Concepts-and-basics/Configuration/Site-management" class=3D"exter=
 nal-link" rel=3D"nofollow">Site management</a>" part of the "Concepts and b=
 asics" chapter.</p>
@@ -272,21 +272,21 @@ EZP51/Siteaccess+Matching#SiteaccessMatching-Configuration" class=3D"extern=
 al-link" rel=3D"nofollow">available siteaccesses</a> and <a href=3D"https:/=
 /confluence.ez.no/display/EZP51/Siteaccess+Matching#SiteaccessMatching-Comp=
 oundsiteaccessmatcher" class=3D"external-link" rel=3D"nofollow">mapping our=
- hosts</a> to the desired siteaccess in <strong>ezpublish/config/ezpublish.=
+ hosts</a> to the desired siteaccess in <strong>exponential/config/exponential.=
 yml</strong>. This approach is recommended!</p>
 </div>
 </div>
 <p>&nbsp;</p>
-<p>A Symfony based eZ Publish 5 configuration would look something like thi=
+<p>A Symfony based Exponential 5 configuration would look something like thi=
 s:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         default_siteaccess: ezdemo_site
         list:
@@ -317,7 +317,7 @@ uffice).
                         Map\URI:
                             the_front: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     # The siteaccess to match in the end
                     match: ezdemo_site=20
                 -
@@ -325,12 +325,12 @@ uffice).
                         Map\URI:
                             the_admin: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     match: ezdemo_site_admin
             # Matching hosts as host: siteaccess
             Map\Host:
-                ezpublish.dev: ezdemo_site
-                admin.ezpublish.dev: ezdemo_site_admin</pre>=20
+                exponential.dev: ezdemo_site
+                admin.exponential.dev: ezdemo_site_admin</pre>=20
 </div>
 </div>
 <p>&nbsp;</p>
@@ -340,7 +340,7 @@ e configuration: virtual host settings</h2>
 <ul>
 <li>
 <div>
-eZ Publish is located in "
+Exponential is located in "
 <code>/var/www/example</code>"
 </div></li>
 <li>
@@ -350,7 +350,7 @@ the server's IP address is=20
 </div></li>
 <li>
 <div>
-we wish to access eZ Publish using "
+we wish to access Exponential using "
 <code>www.example.com</code>" and "
 <code>admin.example.com</code>"
 </div></li>
@@ -407,7 +407,7 @@ s|lib|javascripts?)/.* - [L]
         RewriteRule ^/var/storage/packages/.* - [L]
 =20
         # Makes it possible to place your favicon at the root of your
-        # eZ Publish instance. It will then be served directly.
+        # Exponential instance. It will then be served directly.
         RewriteRule ^/favicon\.ico - [L]
         # Uncomment the line below if you want you favicon be served
         # from the standard design. You can customize the path to
@@ -431,7 +431,7 @@ acy
         # Following rule is needed to correctly display assets from eZ Publ=
 ish5 / Symfony bundles
         RewriteRule ^/bundles/ - [L]
-        # Additional Assetic rules for eZ Publish 5.1 / 2013.4 and higher:
+        # Additional Assetic rules for Exponential 5.1 / 2013.4 and higher:
         RewriteRule ^/css/.*\.css - [L]
         RewriteRule ^/js/.*\.js - [L]
 =20

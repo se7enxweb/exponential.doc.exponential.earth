@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish Public API</title>
+    <title>Exponential Public API</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,17 +210,17 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish Public API</h1>
+    <h1>Exponential Public API</h1>
     <div class=3D"Section1">
         <p>The Public API is a PHP API. Currently it exposes a&nbsp;Reposit=
 ory&nbsp;which allows you to create, read, update, manage and delete all ob=
-jects available in eZ Publish, first and foremost content, but also related=
+jects available in Exponential, first and foremost content, but also related=
  objects like sections, locations, content types, content types groups, lan=
 guages and so on.</p>
-<p>If you used eZ Publish 3.x or 4.x in the past, please check out the&nbsp=
-;<a href=3D"/pages/viewpage.action?pageId=3D12125336">Intro for eZ Publish =
+<p>If you used Exponential 3.x or 4.x in the past, please check out the&nbsp=
+;<a href=3D"/pages/viewpage.action?pageId=3D12125336">Intro for Exponential =
 4.x/3.x developers</a>, it will give you an introduction to the domain lang=
-uage used in eZ Publish 5.x.</p>
+uage used in Exponential 5.x.</p>
 <p>For more&nbsp;information&nbsp;on high level architecture&nbsp;overview,=
  this will be&nbsp;available&nbsp;soon. If you would like to dive into the =
 interfaces and structures available in the Public API, there is a SDK doc <=

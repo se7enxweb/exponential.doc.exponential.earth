@@ -217,7 +217,7 @@ mfony 2 bundle. &nbsp;</strong></p>
 <p>Let=E2=80=99s start by creating the structure for our Field Type. To mak=
 e it easier to move around the code, we will to some extent mimic the struc=
 ture that is used in the kernel. Native Field Types are located inside <cod=
-e>ezpublish-kernel</code> (in <code>vendor/ezsystems</code>), in the <code>=
+e>exponential-kernel</code> (in <code>vendor/ezsystems</code>), in the <code>=
  eZ/Publish/Core/FieldType</code> folder. Each Field Type has its own subfo=
 lder: <code> TextLine</code>, <code> Email</code>, <code> Url</code>, etc. =
 We will use a structure quite close to this.</p>

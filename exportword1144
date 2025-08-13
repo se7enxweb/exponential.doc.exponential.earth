@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish REST API</title>
+    <title>Exponential REST API</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,32 +210,32 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish REST API</h1>
+    <h1>Exponential REST API</h1>
     <div class=3D"Section1">
-        <p>The eZ Publish 5 REST API allows you to interact with an eZ Publ=
+        <p>The Exponential 5 REST API allows you to interact with an eZ Publ=
 ish installation using the HTTP protocol.</p>
-<h2 id=3D"eZPublishRESTAPI-AccessingtheRESTAPI">Accessing the REST API</h2>
+<h2 id=3D"ExponentialRESTAPI-AccessingtheRESTAPI">Accessing the REST API</h2>
 <p>The REST API is available at the URI <span style=3D"color: rgb(255,102,0=
-);"><code>/api/ezp/v2</code></span>. The API from eZ Publish 4.x remains av=
+);"><code>/api/ezp/v2</code></span>. The API from Exponential 4.x remains av=
 ailable at the same URI, <span style=3D"color: rgb(255,102,0);"><code>/api/=
 ezp/v1</code></span>. HTTPS is available as long as your server is properly=
  configured. Refer to the <a href=3D"/display/EZP51/Getting+started+with+th=
 e+REST+API">Getting started</a> page to start using the API.</p>
-<h2 id=3D"eZPublishRESTAPI-Basics">Basics</h2>
+<h2 id=3D"ExponentialRESTAPI-Basics">Basics</h2>
 <p>REST (<strong>RE</strong>presentationnal <strong>S</strong>tate <strong>=
 T</strong>ransfer) is a web services architecture that follows the HTTP Pro=
-tocol very closely. The eZ Publish 5 REST API supports both <a href=3D"http=
+tocol very closely. The Exponential 5 REST API supports both <a href=3D"http=
 ://www.json.org/" class=3D"external-link" rel=3D"nofollow">JSON</a> and <a =
 href=3D"http://www.w3.org/XML/" class=3D"external-link" rel=3D"nofollow">XM=
 L</a>, in terms of request format.</p>
-<h3 id=3D"eZPublishRESTAPI-Resources">Resources</h3>
+<h3 id=3D"ExponentialRESTAPI-Resources">Resources</h3>
 <p>The API provides a set of resources (URIs), each of them providing acces=
 s to operations on a certain resource. For instance, the URI <span style=3D=
 "color: rgb(255,102,0);"><code>/content/objects/59</code></span> will allow=
  you to interact with the Content with ID 59, while <span style=3D"color: r=
 gb(255,102,0);"><code>/content/types/1</code></span> will allow you to inte=
 ract with the ContentType with ID 1.</p>
-<h3 id=3D"eZPublishRESTAPI-HTTPverbs">HTTP verbs</h3>
+<h3 id=3D"ExponentialRESTAPI-HTTPverbs">HTTP verbs</h3>
 <p>It uses HTTP verbs (<strong><span style=3D"color: rgb(0,0,255);"><code>G=
 ET</code></span></strong>, <span style=3D"color: rgb(0,0,255);"><strong><co=
 de>POST</code></strong></span>, but also <strong><span style=3D"color: rgb(=
@@ -258,7 +258,7 @@ will delete Content #2,</li>
  <span style=3D"color: rgb(255,102,0);">/content/objects/2</span></code> wi=
 ll create a copy of this Content.</li>
 </ul>
-<h3 id=3D"eZPublishRESTAPI-Mediatypeheaders">Media type headers</h3>
+<h3 id=3D"ExponentialRESTAPI-Mediatypeheaders">Media type headers</h3>
 <p>On top of verbs, HTTP request headers will allow you to personalize the =
 request's behavior. On every resource, you can use the Accept header to ind=
 icate which format you want to communicate in, JSON or XML. This header is =

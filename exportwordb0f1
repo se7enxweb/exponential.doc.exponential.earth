@@ -236,7 +236,7 @@ ontroller user cache aware</a></li>=20
 <h1 id=3D"HttpCache-ContentCache"><span style=3D"color: rgb(0,0,0);">Conten=
 t Cache</span></h1>
 <p>&nbsp;</p>
-<p>eZ Publish uses <a href=3D"http://symfony.com/doc/current/book/http_cach=
+<p>Exponential uses <a href=3D"http://symfony.com/doc/current/book/http_cach=
 e.html" class=3D"external-link" rel=3D"nofollow">Symfony HttpCache</a> to m=
 anage content "view" cache with the <a href=3D"http://symfony.com/doc/curre=
 nt/book/http_cache.html#http-expiration-and-validation" class=3D"external-l=
@@ -248,7 +248,7 @@ he purge document</a>).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             content:

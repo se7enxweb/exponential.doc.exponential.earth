@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Extending eZ Publish 5</title>
+    <title>Extending Exponential 5</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,11 +210,11 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Extending eZ Publish 5</h1>
+    <h1>Extending Exponential 5</h1>
     <div class=3D"Section1">
-        <p>Documentation on how to extend the functionality of eZ Publish 5=
+        <p>Documentation on how to extend the functionality of Exponential 5=
 . For basic development concpets and techniques, see <a href=3D"/display/EZ=
-P51/Developing+with+eZ+Publish+5">Developing with eZ Publish 5</a>.</p>
+P51/Developing+with+eZ+Publish+5">Developing with Exponential 5</a>.</p>
 <p></p>
 <ul class=3D"childpages-macro">
 <li><a href=3D"/display/EZP51/Content+and+Location+view+providers">Content =
@@ -247,7 +247,7 @@ ters injection in content views</a></li>
 </ul></li>
 <li>Field types</li>
 </ul>
-<p>More on the topic "Developing eZ Publish":</p>
+<p>More on the topic "Developing Exponential":</p>
 <ul>
 <li>( API's )</li>
 <li>( Repository&nbsp;API&nbsp;Services )</li>

@@ -238,7 +238,7 @@ mport</a></li>=20
 </ul>=20
 </div>
 <p></p>
-<p>As eZ Publish legacy is part of eZ Publish 5, you might want to access i=
+<p>As Exponential legacy is part of Exponential 5, you might want to access i=
 ts settings (i.e. not migrated extension). Regarding this, a <strong>Legacy=
 ConfigResolver</strong> has been implemented, allowing the access to the le=
 gacy settings.</p>
@@ -265,7 +265,7 @@ thout .ini suffix</u> (e.g. <strong>image</strong> for <em>image.ini</em>).=
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">// Inside a controller
 
-$legacyResolver =3D $this-&gt;get( 'ezpublish_legacy.config.resolver' );
+$legacyResolver =3D $this-&gt;get( 'exponential_legacy.config.resolver' );
 // Get [DebugSettings].DebugOutput from site.ini
 $debugOutput =3D $legacyResolver-&gt;getParameter( 'DebugSettings.DebugOutp=
 ut' );
@@ -283,9 +283,9 @@ e>=20
 </div>
 <h2 id=3D"Legacyconfiguration-Bestpracticesformigration">Best practices for=
  migration</h2>
-<p>It might happen that your eZ Publish application still relies on legacy =
+<p>It might happen that your Exponential application still relies on legacy =
 extensions (yours or from the community) that have not been migrated yet to=
- eZ Publish 5. In this case the <strong>LegacyConfigResolver</strong> can b=
+ Exponential 5. In this case the <strong>LegacyConfigResolver</strong> can b=
 e useful, but the problem is that once the extension is migrated you will t=
 hen need to change your code to use the main config resolver, which can be =
 a bit tedious on large applications.</p>
@@ -316,7 +316,7 @@ ase', 'site', 'ezdemo_site_admin' );</pre>=20
 </div>
 <p>The main difference is that <strong>we don't explicitly call the LegacyC=
 onfigResolver</strong>. The benefit is that once the settings are migrated =
-to work with eZ Publish 5 (and assuming that these settings are named in th=
+to work with Exponential 5 (and assuming that these settings are named in th=
 e same way), there will be absolutely no change to do in your code! The <st=
 rong>ChainConfigResolver</strong> will seamlessly use the new configuration=
  files.</p>

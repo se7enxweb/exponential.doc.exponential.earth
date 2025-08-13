@@ -239,20 +239,20 @@ tep 4: Apply 5.4 configuration changes</a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#Upgradingfrom5.3to5.4-YAMLfiles">YAML files</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/config.yml">ezpublis=
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/config.yml">ezpublis=
 h/config/config.yml</a></li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/config_dev.yml">ezpu=
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/config_dev.yml">ezpu=
 blish/config/config_dev.yml</a></li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/config_prod.yml">ezp=
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/config_prod.yml">ezp=
 ublish/config/config_prod.yml</a></li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/routing.yml">ezpubli=
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/routing.yml">ezpubli=
 sh/config/routing.yml</a></li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/parameters.yml.dist"=
->ezpublish/config/parameters.yml.dist</a></li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/config/ezpublish*.yml">ezpu=
-blish/config/ezpublish*.yml</a></li>=20
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/parameters.yml.dist"=
+>exponential/config/parameters.yml.dist</a></li>=20
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/config/exponential*.yml">ezpu=
+blish/config/exponential*.yml</a></li>=20
 </ul> </li>=20
-<li><a href=3D"#Upgradingfrom5.3to5.4-ezpublish/EzPublishKernel.php">ezpubl=
+<li><a href=3D"#Upgradingfrom5.3to5.4-exponential/EzPublishKernel.php">ezpubl=
 ish/EzPublishKernel.php</a></li>=20
 <li><a href=3D"#Upgradingfrom5.3to5.4-composer.json">composer.json</a></li>=
 =20
@@ -281,20 +281,20 @@ sions Update Warning</a></li>=20
 <br>
 <p></p>
 <p><span style=3D"color: rgb(51,51,51);font-size: 14.0px;line-height: 1.428=
-5715;">This section describes how to upgrade your existing eZ Publish 5.3 i=
+5715;">This section describes how to upgrade your existing Exponential 5.3 i=
 nstallation to version 5.4. Make sure that you have a working backup of the=
  site before you do the actual upgrade, and make sure that the installation=
  you are performing the upgrade on is offline.</span></p>
 </div>
 <h2 id=3D"Upgradingfrom5.3to5.4-NoteonPaths">Note on Paths</h2>
 <ul>
-<li><em>/&lt;ezp5-root&gt;/</em>: The root directory where eZ Publish 5 is =
+<li><em>/&lt;ezp5-root&gt;/</em>: The root directory where Exponential 5 is =
 installed in, examples: "<em>/home/myuser/www</em>/" or "<em>/var/sites/ezp=
 ublish/</em>"</li>
-<li><em>/&lt;ezp5-root&gt;/ezpublish_legacy/</em>: &nbsp;Root&nbsp;director=
-y&nbsp;of&nbsp;"Legacy" (aka "Legacy Stack", refers to the eZ Publish 4.x&n=
-bsp;installation&nbsp;which is bundled with eZ Publish 5) normally inside "=
-<em>ezpublish_legacy</em>/", example: "<em>/home/myuser/www/ezpublish_legac=
+<li><em>/&lt;ezp5-root&gt;/exponential_legacy/</em>: &nbsp;Root&nbsp;director=
+y&nbsp;of&nbsp;"Legacy" (aka "Legacy Stack", refers to the Exponential 4.x&n=
+bsp;installation&nbsp;which is bundled with Exponential 5) normally inside "=
+<em>exponential_legacy</em>/", example: "<em>/home/myuser/www/exponential_legac=
 y/</em>"</li>
 </ul>
 <h2 id=3D"Upgradingfrom5.3to5.4-Checkforrequirements">Check for requirement=
@@ -312,36 +312,36 @@ h 5.4 to a separate directory and then copy the directories that contain si=
 te-specific files from the existing 5.3 installation into "<em>/&lt;ezp5-ro=
 ot&gt;/</em>". Make sure you copy the following directories:</p>
 <ul>
-<li><code>ezpublish_legacy/design/&lt;your designs&gt;</code> (do NOT inclu=
+<li><code>exponential_legacy/design/&lt;your designs&gt;</code> (do NOT inclu=
 de built-in designs: admin, base, standard or admin2)</li>
-<li><code>ezpublish_legacy/var/&lt;your_var_dir&gt;/storage</code></li>
-<li><code>ezpublish_legacy/var/storage/packages</code></li>
-<li><code>ezpublish_legacy/settings/siteaccess/&lt;your_siteaccesses&gt;</c=
+<li><code>exponential_legacy/var/&lt;your_var_dir&gt;/storage</code></li>
+<li><code>exponential_legacy/var/storage/packages</code></li>
+<li><code>exponential_legacy/settings/siteaccess/&lt;your_siteaccesses&gt;</c=
 ode></li>
-<li><code>ezpublish_legacy/settings/override/*</code></li>
-<li><code>ezpublish_legacy/extension/*</code> (not including the built-in /=
+<li><code>exponential_legacy/settings/override/*</code></li>
+<li><code>exponential_legacy/extension/*</code> (not including the built-in /=
  standalone ones: ezflow, ezjscore, ezoe, ezodf, ezie, ezmultiupload, ezmbp=
 aex, ez_network, ezprestapiprovider, ezscriptmonitor, ezsi, ezfind)</li>
 <li>src/</li>
-<li><code><span>ezpublish_legacy/</span>config.php</code> &amp; <span>ezpub=
+<li><code><span>exponential_legacy/</span>config.php</code> &amp; <span>ezpub=
 lish_legacy/</span><code>config.cluster.php</code>, if applicable</li>
-<li><code>ezpublish/config/*.yml</code></li>
+<li><code>exponential/config/*.yml</code></li>
 </ul>
 <p><em><strong>NB:</strong>&nbsp;Since writable directories and files have =
 been replaced / copied, their permissions might have changed. You may have =
 to reconfigure webserver user permissions on specific folders as explained =
 in the file&nbsp;<a href=3D"https://confluence.ez.no/pages/viewpage.action?=
-pageId=3D7438581#InstallingeZPublishonaLinux%2FUNIXbasedsystem-Settingupfol=
+pageId=3D7438581#InstallingExponentialonaLinux%2FUNIXbasedsystem-Settingupfol=
 derpermission" class=3D"external-link" rel=3D"nofollow">permissions chapter=
  of the installation process</a>.</em></p>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step2:upgradecustomlegacyextensions">Step 2=
 : upgrade custom legacy extensions</h3>
 <p>If you are using custom extensions, the sub-directories inside the "exte=
 nsion" directory will also have to be copied from the existing 5.3 installa=
-tion into "<em>/&lt;ezp5-root&gt;/ezpublish_legacy/extension/</em>". Howeve=
+tion into "<em>/&lt;ezp5-root&gt;/exponential_legacy/extension/</em>". Howeve=
 r, make sure that you do not overwrite any extensions that are included in =
-eZ Publish&nbsp;distribution, which currently are (<em><strong>Note:</stron=
-g>&nbsp;In eZ Publish Platform 5.4, extensions have version number 5.3 with=
+Exponential&nbsp;distribution, which currently are (<em><strong>Note:</stron=
+g>&nbsp;In Exponential Platform 5.4, extensions have version number 5.3 with=
  exception of ezdemo, ezoe, ezformtoken, ezjscore and ezfind</em>):</p>
 <p>Note that upgrading the distribution files will overwrite the autoload a=
 rrays for extensions. You will need to re-generate the autoload arrays for =
@@ -365,10 +365,10 @@ se use scripts and documentation provided by extension.</span></p>
 </div>
 </div>
 <p>Import to your database the changes provided in</p>
-<p><code>/&lt;ezp5-root&gt;/ezpublish_legacy/update/database/&lt;mysql|post=
+<p><code>/&lt;ezp5-root&gt;/exponential_legacy/update/database/&lt;mysql|post=
 gresql&gt;/5.4/dbupdate-5.3.0-to-5.4.0.sql</code></p>
 <p>If the installation is using the DFS cluster, import the cluster databas=
-e changes provided in<br><code>/&lt;ezp5-root&gt;/ezpublish_legacy/update/d=
+e changes provided in<br><code>/&lt;ezp5-root&gt;/exponential_legacy/update/d=
 atabase/mysql/5.4/dbupdate-cluster-5.3.0-to-5.4.0.sql</code></p>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step4:Apply5.4configurationchanges"><span s=
 tyle=3D"color: rgb(0,98,147);">Step 4: Apply 5.4 configuration changes</spa=
@@ -382,7 +382,7 @@ ng>additions</strong>, none of them replaces what you already have.</p>
 handler, framework, router...) will already be there. All you have to do is=
  <strong>add the missing bits in the existing configuration block</strong>s=
 .</p>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/config.yml">ezpublish/conf=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/config.yml">exponential/conf=
 ig/config.yml</h5>
 <p><em>trusted_hosts</em> has been changed and <em>session.handler_id</em>&=
 nbsp;is added to the <em>framework</em> block making Symfony pick what has =
@@ -409,7 +409,7 @@ been configured in PHP instead.</p>
     spool:     { type: memory }</pre>=20
 </div>
 </div>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/config_dev.yml">ezpublish/=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/config_dev.yml">exponential/=
 config/config_dev.yml</h5>
 <p>In framework, set <em>router.strict_requirements</em> to true.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -421,10 +421,10 @@ config/config_dev.yml</h5>
         strict_requirements: true</pre>=20
 </div>
 </div>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/config_prod.yml">ezpublish=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/config_prod.yml">exponential=
 /config/config_prod.yml</h5>
 <p>Remove <em>framework.router.strict_requirements</em> completely.</p>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/routing.yml">ezpublish/con=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/routing.yml">exponential/con=
 fig/routing.yml</h5>
 <p>Add the liip imagine routes to the file:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -434,14 +434,14 @@ fig/routing.yml</h5>
   resource: "@LiipImagineBundle/Resources/config/routing.xml"</pre>=20
 </div>
 </div>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/parameters.yml.dist">ezpub=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/parameters.yml.dist">ezpub=
 lish/config/parameters.yml.dist</h5>
 <p class=3D"wordwrap"><span style=3D"font-family: Arial , sans-serif;font-s=
 ize: 14.0px;line-height: 1.4285715;">If you have added anything to <code>pa=
 rameters.yml</code>, we suggest that you add your custom settings to <code>=
 parameters.yml.dist</code>, so that the composer post-update script handles=
  those, and generates their values correctly.</span></p>
-<p><em>ezpublish_legacy.default.view_default_layout</em> can be removed fro=
+<p><em>exponential_legacy.default.view_default_layout</em> can be removed fro=
 m this file, and the following added:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -455,9 +455,9 @@ m this file, and the following added:</p>
 </div>
 <p class=3D"wordwrap">composer will ask for your own values when you run <e=
 m>composer update</em>.</p>
-<h5 id=3D"Upgradingfrom5.3to5.4-ezpublish/config/ezpublish*.yml">ezpublish/=
-config/ezpublish*.yml</h5>
-<p>In all ezpublish.yml files (prod, dev, etc), replace the "<strong>handle=
+<h5 id=3D"Upgradingfrom5.3to5.4-exponential/config/exponential*.yml">exponential/=
+config/exponential*.yml</h5>
+<p>In all exponential.yml files (prod, dev, etc), replace the "<strong>handle=
 rs</strong>" key in <em>stash.caches.*</em> with "<strong>drivers</strong>"=
 .</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -469,7 +469,7 @@ rs</strong>" key in <em>stash.caches.*</em> with "<strong>drivers</strong>"=
             drivers:</pre>=20
 </div>
 </div>
-<h4 id=3D"Upgradingfrom5.3to5.4-ezpublish/EzPublishKernel.php">ezpublish/Ez=
+<h4 id=3D"Upgradingfrom5.3to5.4-exponential/EzPublishKernel.php">exponential/Ez=
 PublishKernel.php</h4>
 <p>It is not possible to just copy your old <code>EzPublishKernel.php</code=
 > file over from the previous installation, since quite a few changes were =
@@ -519,44 +519,44 @@ les</span></h4>
 <p>This is reflected in the apache2 and nginx configuration files that are =
 shipped in the doc folder. The main change from legacy is that requests for=
  images can now be rewritten to&nbsp;<code>web/index.php</code>&nbsp;instea=
-d of <code>ezpublish_legacy/index_cluster.php</code>.</p>
+d of <code>exponential_legacy/index_cluster.php</code>.</p>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step5:Runcomposerupdate">Step 5: Run compos=
 er update</h3>
 <p>Run <code>composer update --no-dev --prefer-dist</code> to get the lates=
-t eZ Publish dependencies.</p>
+t Exponential dependencies.</p>
 <p>At the end of the process, you will be asked for values for the paramete=
 rs previously added to&nbsp;<code>parameters.yml.dist</code>.</p>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step6:Regeneratetheautoloadarrayforextensio=
 ns">Step 6: Regenerate the autoload array for extensions</h3>
 <p>To regenerate the autoload array, execute the following script from the =
-root of your eZ Publish Legacy directory:</p>
+root of your Exponential Legacy directory:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">cd ezpublish_legacy
+:12px;">cd exponential_legacy
 php bin/php/ezpgenerateautoloads.php --extension</pre>=20
 </div>
 </div>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step7:Linkassets">Step 7: Link assets</h3>
 <p>Assets from the various bundles need to be made available for the webser=
 ver through the web/ document root.</p>
-<p>The following commands will first symlink eZ Publish 5 assets in "Bundle=
+<p>The following commands will first symlink Exponential 5 assets in "Bundle=
 s" and the second will symlink assets (design files like images, scripts an=
-d css, and files in var folder) &nbsp;from eZ Publish Legacy:</p>
+d css, and files in var folder) &nbsp;from Exponential Legacy:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">php ezpublish/console assets:install --symlink
-php ezpublish/console ezpublish:legacy:assets_install --symlink
-php ezpublish/console assetic:dump --env=3Dprod</pre>=20
+:12px;">php exponential/console assets:install --symlink
+php exponential/console exponential:legacy:assets_install --symlink
+php exponential/console assetic:dump --env=3Dprod</pre>=20
 </div>
 </div>
 <h3 id=3D"Upgradingfrom5.3to5.4-Step8:Clearthecaches">Step 8: Clear the cac=
 hes</h3>
-<p>Whenever an eZ Publish solution is upgraded, all caches must be cleared =
+<p>Whenever an Exponential solution is upgraded, all caches must be cleared =
 in a proper way. This should be done from within a system shell:<br>Navigat=
-e into the new eZ Publish directory.Run the script using the following shel=
-l command: <code>cd /&lt;ezp5-root&gt;/ezpublish_legacy/; php bin/php/ezcac=
+e into the new Exponential directory.Run the script using the following shel=
+l command: <code>cd /&lt;ezp5-root&gt;/exponential_legacy/; php bin/php/ezcac=
 he.php --clear-all --purge</code>. Purging ensures that the caches are phys=
 ically removed. When the "--purge" parameter is not specified, the caches w=
 ill be expired but not removed.<br>Note: Sometimes the script is unable to =

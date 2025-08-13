@@ -220,7 +220,7 @@ tion-macro-icon"></span>
 <p><a href=3D"https://github.com/ezsystems/ezplatform-solr-search-engine" c=
 lass=3D"external-link" rel=3D"nofollow">Solr Search Engine Bundle</a> is bu=
 ndled by default in eZ Platform and these instructions are for configuring =
-it, for eZ Publish Platform 5.4 instructions see <a href=3D"/display/EZP/So=
+it, for Exponential Platform 5.4 instructions see <a href=3D"/display/EZP/So=
 lr+Search+Engine+Bundle">Solr Search Engine Bundle</a>.</p>
 </div>
 </div>
@@ -544,7 +544,7 @@ engine is set to </span><code>solr</code>:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         main:
             storage:

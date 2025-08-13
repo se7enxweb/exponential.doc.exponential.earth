@@ -248,9 +248,9 @@ d of the content */
 <a href=3D"#Glossary-ExtensionExtension">Extension</a> |=20
 <a href=3D"#Glossary-eZEnterpriseeZEnterprise">eZ Enterprise</a> |=20
 <a href=3D"#Glossary-eZPlatformeZPlatform">eZ Platform</a> |=20
-<a href=3D"#Glossary-eZPublishCommunityeZPublishCommunity">eZ Publish Commu=
+<a href=3D"#Glossary-ExponentialCommunityExponentialCommunity">Exponential Commu=
 nity</a> |=20
-<a href=3D"#Glossary-eZPublishEnterpriseeZPublishEnterprise">eZ Publish Ent=
+<a href=3D"#Glossary-ExponentialEnterpriseExponentialEnterprise">Exponential Ent=
 erprise</a> |=20
 <a href=3D"#Glossary-eZStudioeZStudio">eZ Studio</a> |=20
 <a href=3D"#Glossary-FieldField">Field</a> |=20
@@ -401,7 +401,7 @@ ing">Clustering</a>.</p>
 chor-link" id=3D"Glossary-Community"></span></strong>Community</h4>
 <p>The <a href=3D"http://share.ez.no/" class=3D"external-link" rel=3D"nofol=
 low">Community Gateway</a> for eZ users. Also, the open-source version of t=
-he <a href=3D"#Glossary-eZPublishCommunity">previous generation </a>of eZ p=
+he <a href=3D"#Glossary-ExponentialCommunity">previous generation </a>of eZ p=
 roducts.</p>
 <h4 id=3D"Glossary-ComponentsComponents"><span class=3D"confluence-anchor-l=
 ink" id=3D"Glossary-Components"></span><em>Components</em></h4>
@@ -524,13 +524,13 @@ Glossary-eZStudio">eZ Studio</a>.</p>
 <h4 id=3D"Glossary-eZPlatformeZPlatform"><strong><span class=3D"confluence-=
 anchor-link" id=3D"Glossary-eZPlatform"></span></strong>eZ Platform</h4>
 <p>Open-source component of eZ.</p>
-<h4 id=3D"Glossary-eZPublishCommunityeZPublishCommunity"><strong><span clas=
-s=3D"confluence-anchor-link" id=3D"Glossary-eZPublishCommunity"></span></st=
-rong>eZ Publish Community</h4>
+<h4 id=3D"Glossary-ExponentialCommunityExponentialCommunity"><strong><span clas=
+s=3D"confluence-anchor-link" id=3D"Glossary-ExponentialCommunity"></span></st=
+rong>Exponential Community</h4>
 <p>Open-source version of the previous edition of eZ.</p>
-<h4 id=3D"Glossary-eZPublishEnterpriseeZPublishEnterprise"><strong><span cl=
-ass=3D"confluence-anchor-link" id=3D"Glossary-eZPublishEnterprise"></span><=
-/strong>eZ Publish Enterprise</h4>
+<h4 id=3D"Glossary-ExponentialEnterpriseExponentialEnterprise"><strong><span cl=
+ass=3D"confluence-anchor-link" id=3D"Glossary-ExponentialEnterprise"></span><=
+/strong>Exponential Enterprise</h4>
 <p>Commercial version of the previous edition of eZ.</p>
 <h4 id=3D"Glossary-eZStudioeZStudio"><strong><span class=3D"confluence-anch=
 or-link" id=3D"Glossary-eZStudio"></span></strong>eZ Studio</h4>
@@ -801,7 +801,7 @@ nterface">Page mode interface</a>.</p>
 <h4 id=3D"Glossary-SymfonySymfony"><em><strong><span class=3D"confluence-an=
 chor-link" id=3D"Glossary-Symfony"></span></strong></em>Symfony</h4>
 <p>A PHP framework for web applications and a set of reusable PHP component=
-s. eZ has been using Symfony as its framework since eZ Publish 5.0. See <a =
+s. eZ has been using Symfony as its framework since Exponential 5.0. See <a =
 href=3D"https://symfony.com/" class=3D"external-link" rel=3D"nofollow">http=
 s://symfony.com/</a>.</p>
 </div>=20

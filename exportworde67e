@@ -226,7 +226,7 @@ on, which prevented it from fulfilling the request: database down, permissi=
 ons or configuration error.</span></p>
 <h3 id=3D"Errorhandling-501NotImplemented">501 Not Implemented</h3>
 <p><span>Returned when the requested method has not yet been implemented. A=
-s of eZ Publish 5.0, most of user, group, content, location and content typ=
+s of Exponential 5.0, most of user, group, content, location and content typ=
 e have been implemented. Some of their methods, as well as other features, =
 may return a 501.</span></p>
 <h3 id=3D"Errorhandling-404NotFound"><span>404 Not Found</span></h3>

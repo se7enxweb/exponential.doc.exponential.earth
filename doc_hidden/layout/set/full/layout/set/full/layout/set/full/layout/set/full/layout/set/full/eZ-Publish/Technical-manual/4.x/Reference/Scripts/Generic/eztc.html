@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Scripts/Generic/eztc.php by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:54:47 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Scripts/Generic/eztc.php by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:54:47 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                           
-    <title>eztc.php / Generic / Scripts / Reference / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>eztc.php / Generic / Scripts / Reference / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -41,7 +41,7 @@
 </div>
 
 <h3>Summary</h3>
-Compiles the eZ Publish caches.
+Compiles the Exponential caches.
 
 <h3>Location</h3>    ./bin/php/eztc.php<h3>Parameters</h3><p>
 <a href=#access-path>access-path</a><br/>
@@ -119,7 +119,7 @@ Compiles the eZ Publish caches.
     <h4>--full-url</h3>
     <div style="margin-left:35px;">
         
-<p>Makes sure generated urls have http:// in them (i.e. global), used mainly by sites that include the eZ Publish HTML (e.g payment gateways).</p>    </div>
+<p>Makes sure generated urls have http:// in them (i.e. global), used mainly by sites that include the Exponential HTML (e.g payment gateways).</p>    </div>
 
     <a name="help"></a>
     <h4>-h, --help</h3>
@@ -137,7 +137,7 @@ Compiles the eZ Publish caches.
     <h4>--logfiles</h3>
     <div style="margin-left:35px;">
         
- <p>Generate log files. This parameter must be used together with the debug parameter (&quot;-d&quot; or &quot;--debug&quot;). The log files (for example &quot;warning.log&quot;) will be stored in the &quot;var/log&quot; directory of the eZ Publish installation.</p>    </div>
+ <p>Generate log files. This parameter must be used together with the debug parameter (&quot;-d&quot; or &quot;--debug&quot;). The log files (for example &quot;warning.log&quot;) will be stored in the &quot;var/log&quot; directory of the Exponential installation.</p>    </div>
 
     <a name="no-colors"></a>
     <h4>--no-colors</h3>
@@ -183,7 +183,7 @@ Compiles the eZ Publish caches.
 
 <h3>Description</h3>
 <p>
-This script compiles the eZ Publish templates, generating template caches for all views of a given siteaccess.<br />If no siteaccess is specified (using the <a href="eztc.php/siteaccess.html" target="_self">-s, --siteaccess</a> parameter) the default one will be used.</p><p>To run the script, navigate into the root directory of your eZ Publish installation and use the following shell command:</p><pre class="wordwrap"><span class="line">php bin/php/eztc.php [&lt;parameters&gt;]</span>
+This script compiles the Exponential templates, generating template caches for all views of a given siteaccess.<br />If no siteaccess is specified (using the <a href="eztc.php/siteaccess.html" target="_self">-s, --siteaccess</a> parameter) the default one will be used.</p><p>To run the script, navigate into the root directory of your Exponential installation and use the following shell command:</p><pre class="wordwrap"><span class="line">php bin/php/eztc.php [&lt;parameters&gt;]</span>
 </pre><p>Replace &quot;[&lt;parameters&gt;]&quot; with one or more of the script parameters described above. Note that you need to have&nbsp;<a href="http://php.net/manual/en/features.commandline.php" target="_blank">PHP CLI</a>&nbsp;installed in order to run the script from within a system shell.</p><p>Sometimes the script is unable to compile the templates (generate template cache) because of restrictive file/directory permission settings. You can check whether the templates have been compiled by inspecting the contents of the various cache sub-directories within the &quot;var&quot; directory (typically &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/template/compiled&quot; directories).</p><a name="eztoc135191_0_0_1" id="eztoc135191_0_0_1"></a><h4>Template compile on clustered environments</h4><p>
 The script also works for compiling templates on multiple node installations, and for that the script must be executed on each server node, which will generate local template cache for each one.<br />The both usage applies both for&nbsp;clustered and non-clustered environments.&nbsp;</p>
 <h3>Examples</h3>
@@ -195,11 +195,11 @@ The script also works for compiling templates on multiple node installations, an
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Scripts/Generic/eztc.php by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:54:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Scripts/Generic/eztc.php by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:54:48 GMT -->
 </html>

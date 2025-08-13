@@ -236,7 +236,7 @@ ems</a>=20
 <li><a href=3D"#Requirements5.4-Approvedstacks">Approved stacks</a></li>=20
 </ul> </li>=20
 <li><a href=3D"#Requirements5.4-Communitystacks-TechnicallysupportedbyeZPub=
-lishPlatform">Community stacks -&nbsp;Technically supported by eZ Publish P=
+lishPlatform">Community stacks -&nbsp;Technically supported by Exponential P=
 latform</a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#Requirements5.4-Compatibleplatforms">Compatible platforms</=
@@ -248,7 +248,7 @@ ed browsers</a></li>=20
 </ul>=20
 </div></h1>
 <h1 id=3D"Requirements5.4-ServerRequirements">Server Requirements</h1>
-<p><span>eZ Publish software is built to rely on existing technologies and =
+<p><span>Exponential software is built to rely on existing technologies and =
 standards, mainly:</span></p>
 <ul>
 <li style=3D"margin-left: 12.0px;"><p><span>PHP scripting language: <span><=
@@ -266,27 +266,27 @@ K) when Solr is used (for use with eZ Find search engine)</span></p></li>
  more details, please consult documentation for in-depth information.</span=
 ></p>
 <p><span style=3D"color: rgb(79,79,79);">To answer the question "Is my plat=
-form supported by eZ Publish", several things must be taken into considerat=
+form supported by Exponential", several things must be taken into considerat=
 ion to determining whether a platform is supported or not, and how. The fol=
 lowing tables gives you the details of the platform requirements for the la=
-test eZ Publish release.</span></p>
+test Exponential release.</span></p>
 <h2 id=3D"Requirements5.4-Enterprisestacks-ProfessionallySupportedbyeZSyste=
 ms">Enterprise stacks -&nbsp;<em>Professionally Supported&nbsp;by eZ System=
 s</em></h2>
-<p><span style=3D"color: rgb(0,0,0);">While eZ Publish Platform can support=
+<p><span style=3D"color: rgb(0,0,0);">While Exponential Platform can support=
  a lot of&nbsp;technologies&nbsp;technically via it's use of third-party li=
 braries, a subset of these are&nbsp;chosen&nbsp;to be professionally suppor=
 ted by eZ Systems, meaning eZ takes responsibility&nbsp;on these third part=
 y libraries together with their communities to make sure they work well wit=
-h eZ Publish Platform within the scope of what is documented to be supporte=
+h Exponential Platform within the scope of what is documented to be supporte=
 d below.</span></p>
 <h3 id=3D"Requirements5.4-ReferenceStack">Reference Stack</h3>
-<p>The most safe stack for eZ Publish Platform<span style=3D"color: rgb(79,=
-79,79);">. The stack is supported and certified for eZ Publish Platform 5. =
+<p>The most safe stack for Exponential Platform<span style=3D"color: rgb(79,=
+79,79);">. The stack is supported and certified for Exponential Platform 5. =
 This means that our QA certification team has successfully run intensive ce=
 rtification tests on the platform, and that we can fully support the platfo=
-rm in the scope of an eZ Publish Subscription.</span></p>
-<p><span style=3D"color: rgb(79,79,79);">The reference stack for eZ Publish=
+rm in the scope of an Exponential Subscription.</span></p>
+<p><span style=3D"color: rgb(79,79,79);">The reference stack for Exponential=
  Platform 5 is based on&nbsp;<span>Red Hat Enterprise Linux (RHEL) and Cent=
 OS. The detail of the stack can be seen in the table below.</span></span></=
 p>
@@ -407,7 +407,7 @@ span> packages, needed for ezodf)</span></li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td class=3D"confluenceTd">
 <ul>
@@ -454,7 +454,7 @@ an style=3D"color: rgb(128,128,128);">*</span></li>
 <li style=3D"text-align: left;margin-left: 0.25em;">eZ REST API Provider LS=
  5.3.0<span style=3D"color: rgb(128,128,128);">*</span></li>
 </ul><p style=3D"text-align: left;"><sup><sub>\<span style=3D"color: rgb(12=
-8,128,128);">*</span> eZ Publish Platform 5.4 is supported in parallel with=
+8,128,128);">*</span> Exponential Platform 5.4 is supported in parallel with=
  5.3, reusing all extensions that have not changed since 5.3.</sub></sup></=
 p></td>
 </tr>
@@ -484,13 +484,13 @@ hed</li>
 <p><span style=3D"color: rgb(79,79,79);"><span style=3D"color: rgb(79,79,79=
 );">These stacks are also tested, however not as extensively as our referen=
 ce stack</span><span>.</span>&nbsp;These stacks still benefit from the full=
- support and maintenance guarantees provided with the eZ Publish Platform S=
+ support and maintenance guarantees provided with the Exponential Platform S=
 ubscription, but more issues <em>might</em> occur during normal operations =
 and issues might in some cases take longer to resolve. However approved sta=
 cks with newer versions of MySQL and PHP will typically give you better per=
 formance than the standard reference platform.</span></p>
 <p><span style=3D"color: rgb(79,79,79);">The supported non-reference stacks=
- for eZ Publish Platform 5 are:</span></p>
+ for Exponential Platform 5 are:</span></p>
 <ul>
 <li><strong>Debian</strong></li>
 <li><strong>Ubuntu</strong></li>
@@ -686,7 +686,7 @@ li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td colspan=3D"2" class=3D"confluenceTd">
 <ul>
@@ -718,18 +718,18 @@ figured with Memcached</li>
 </table>
 </div>
 <p>*: to ease developer and administrator life, the latest stable version o=
-f the Symfony framework is bundled with the eZ Publish release.<br>eZ suppo=
-rt eZ Publish only when used with the latest maintenance version of Symfony=
+f the Symfony framework is bundled with the Exponential release.<br>eZ suppo=
+rt Exponential only when used with the latest maintenance version of Symfony=
  within the version specified above, new maintenance versions are announced=
  by&nbsp;<a class=3D"external-link" href=3D"http://symfony.com/blog/categor=
 y/releases" rel=3D"nofollow">Symfony</a>&nbsp;and provided via composer. Sy=
-mfony is not supported directly by eZ within eZ Publish Enterprise Subscrip=
+mfony is not supported directly by eZ within Exponential Enterprise Subscrip=
 tions, however contact your eZ Systems representative for alternatives.</p>
-<h2 id=3D"Requirements5.4-Communitystacks-TechnicallysupportedbyeZPublishPl=
-atform">Community stacks -&nbsp;<em>Technically supported by eZ Publish Pla=
+<h2 id=3D"Requirements5.4-Communitystacks-TechnicallysupportedbyExponentialPl=
+atform">Community stacks -&nbsp;<em>Technically supported by Exponential Pla=
 tform</em></h2>
 <p><span style=3D"color: rgb(79,79,79);">&nbsp;</span><span style=3D"color:=
- rgb(79,79,79);">eZ Publish <em>(and especially the future eZ Platform)</em=
+ rgb(79,79,79);">Exponential <em>(and especially the future eZ Platform)</em=
 > can </span>theoretically<span style=3D"color: rgb(79,79,79);"> run and ex=
 ecute on many more platforms than the ones listed as Enterprise Stacks, inc=
 luding (but not limited to) the operating systems listing below if they pas=
@@ -744,12 +744,12 @@ nce/configuration.html#driver" style=3D"line-height: 1.4285715;" class=3D"e=
 xternal-link" rel=3D"nofollow">Doctrine DBAL</a>, and using a binary file s=
 torage solution supported by <a href=3D"https://github.com/thephpleague/fly=
 system#adapters" style=3D"line-height: 1.4285715;" class=3D"external-link" =
-rel=3D"nofollow">FlySystem</a>&nbsp;(however eZ Publish 5.x is limited by l=
+rel=3D"nofollow">FlySystem</a>&nbsp;(however Exponential 5.x is limited by l=
 egacy cluster system here, so nfs is only choice is practice for cluster se=
 tup).</p>
 <p><strong>Note: eZ Systems doesn't insure or guarantee quality operation o=
-f an eZ Publish Platform installation if it is running on a platform not li=
-sted as&nbsp;professionally&nbsp;supported.</strong>&nbsp;eZ Publish Enterp=
+f an Exponential Platform installation if it is running on a platform not li=
+sted as&nbsp;professionally&nbsp;supported.</strong>&nbsp;Exponential Enterp=
 rise Subscriptions are still available for compatible platforms, but the gu=
 arantee and the product support will not apply and although you will receiv=
 e various maintenance releases and services, no bug fix guarantee will appl=
@@ -773,7 +773,7 @@ sp;</span></li>
 <h1 id=3D"Requirements5.4-supportedbrowsersSupportedbrowsers"><span class=
 =3D"confluence-anchor-link" id=3D"Requirements5.4-supportedbrowsers"></span=
 >Supported browsers</h1>
-<p><span style=3D"color: rgb(79,79,79);">eZ Publish is developed to work pr=
+<p><span style=3D"color: rgb(79,79,79);">Exponential is developed to work pr=
 operly and support the following browser configurations for administrator u=
 sers:</span></p>
 <ul>
@@ -801,7 +801,7 @@ class=3D"ph">makes every effort to test and support the most recent version=
  of browsers that uses automated update system, however issues with Online =
 Editor (TinyMCE) introduced as part of new browsers can in extreme cases me=
 an we can not support a certain feature on the browser as we are not in a s=
-ituation where we can upgrade TinyMCE within eZ Publish 5.x.&nbsp;</span></=
+ituation where we can upgrade TinyMCE within Exponential 5.x.&nbsp;</span></=
 sup></sub></span><br><br>Please note that the user interface will display a=
 nd behave optimally in any browser that supports HTML 5, CSS 3 and ECMAScri=
 pt 5. If these technologies are not supported the system will gracefully ap=

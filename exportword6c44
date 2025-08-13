@@ -215,13 +215,13 @@ d of the content */
         <p>&nbsp;</p>
 <p>These rewrite rules can be used if you don't have direct access to alter=
  the virtual host configuration, which is common in a shared hosting setup.=
- For pure legacy or eZ Publish 4.x installation see&nbsp;.htaccess_root in =
+ For pure legacy or Exponential 4.x installation see&nbsp;.htaccess_root in =
 the root of the project.</p>
 <p>Please find an example of the "<code>.htaccess</code>" rewrite rules bel=
 ow:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre># Copy this file to a new file called .htaccess in your eZ Publish web=
+<pre># Copy this file to a new file called .htaccess in your Exponential web=
  folder
 # to secure your installation by turning on .htaccess based virtual host mo=
 de.
@@ -240,8 +240,8 @@ SetEnv ENVIRONMENT "prod"
 # Prefix used when USE_APC_CLASSLOADER is set to 1.
 # Use a unique prefix in order to prevent cache key conflicts
 # with other applications also using APC.
-# Defaults to "ezpublish" if omitted
-#SetEnv APC_CLASSLOADER_PREFIX "ezpublish"
+# Defaults to "exponential" if omitted
+#SetEnv APC_CLASSLOADER_PREFIX "exponential"
 
 # Whether to use debugging.
 # Possible values: 0 or 1
@@ -282,7 +282,7 @@ RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
 &nbsp;
 # Makes it possible to placed your favicon at the root of your
-# eZ Publish instance. It will then be served directly.
+# Exponential instance. It will then be served directly.
 RewriteRule ^favicon\.ico - [L]
 # Uncomment the line below if you want you favicon be served from the stand=
 ard design.
@@ -304,12 +304,12 @@ RewriteRule ^w3c/p3p\.xml - [L]
 # Uncomment the following lines when using popup style debug in legacy
 #RewriteRule ^var/([^/]+/)?cache/debug\.html.* - [L]
 &nbsp;
-# Following rule is needed to correctly display assets from eZ Publish5 / S=
+# Following rule is needed to correctly display assets from Exponential5 / S=
 ymfony bundles
 RewriteRule ^bundles/ - [L]
 =20
-# Additional Assetic rules for eZ Publish 5.1 / 2013.4 and higher:
-## Don't forget to run php ezpublish/console assetic:dump --env=3Dprod
+# Additional Assetic rules for Exponential 5.1 / 2013.4 and higher:
+## Don't forget to run php exponential/console assetic:dump --env=3Dprod
 ## and make sure to comment these out in dev environment.
 RewriteRule ^css/.*\.css - [L]
 RewriteRule ^js/.*\.js - [L]
@@ -324,7 +324,7 @@ rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>For instructions on how to set custom environments please refer to the&n=
 bsp;<a href=3D"/display/EZP/Installing+eZ+Publish+on+a+Linux-UNIX+based+sys=
-tem">Installing eZ Publish on a Linux-UNIX based system</a> documentation p=
+tem">Installing Exponential on a Linux-UNIX based system</a> documentation p=
 age, under "Defining the desired environment".</p>
 </div>
 </div>

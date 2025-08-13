@@ -4,7 +4,7 @@
 <!-- Mirrored from doc.ez.no/pages/diffpagesbyversion.action?pageId=16286206&originalVersion=1&revisedVersion=8 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 13:45:26 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <title>Page Comparison - eZ Cloud extension (v.1 vs v.8) - eZ Publish Cloud - eZ Documentation</title>
+    <title>Page Comparison - eZ Cloud extension (v.1 vs v.8) - Exponential Cloud - eZ Documentation</title>
 
         
 
@@ -128,10 +128,10 @@
             <meta name="ajs-page-id" content="16286206">
             <meta name="ajs-content-type" content="page">
             <meta name="ajs-page-title" content="eZ Cloud extension">
-            <meta name="ajs-parent-page-title" content="eZ Publish Cloud">
+            <meta name="ajs-parent-page-title" content="Exponential Cloud">
             <meta name="ajs-parent-page-id" content="15761718">
             <meta name="ajs-space-key" content="EZPCLOUD">
-            <meta name="ajs-space-name" content="eZ Publish Cloud">
+            <meta name="ajs-space-name" content="Exponential Cloud">
             <meta name="ajs-from-page-title" content="">
             <meta name="ajs-can-remove-page" content="false">
             <meta name="ajs-context-path" content="">
@@ -244,28 +244,28 @@
                                             <li>
     
             
-<a  id="space-pages-link" href="https://doc.ez.no/pages/listpages.action?key=EZPCLOUD" class="    "      title="Browse pages in the eZ Publish Cloud space" >
+<a  id="space-pages-link" href="https://doc.ez.no/pages/listpages.action?key=EZPCLOUD" class="    "      title="Browse pages in the Exponential Cloud space" >
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://doc.ez.no/pages/viewrecentblogposts.action?key=EZPCLOUD" class="    "      title="Browse blogs in the eZ Publish Cloud space" >
+<a  id="space-blogposts-link" href="https://doc.ez.no/pages/viewrecentblogposts.action?key=EZPCLOUD" class="    "      title="Browse blogs in the Exponential Cloud space" >
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://doc.ez.no/labels/listlabels-heatmap.action?key=EZPCLOUD" class="    "      title="Browse labels in the eZ Publish Cloud space" >
+<a  id="space-labels-link" href="https://doc.ez.no/labels/listlabels-heatmap.action?key=EZPCLOUD" class="    "      title="Browse labels in the Exponential Cloud space" >
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://doc.ez.no/spaces/viewspacesummary.action?key=EZPCLOUD" class="    "      title="Browse additional space functions in the eZ Publish Cloud space" >
+<a  id="space-advanced-link" href="https://doc.ez.no/spaces/viewspacesummary.action?key=EZPCLOUD" class="    "      title="Browse additional space functions in the Exponential Cloud space" >
         Space Operations
 </a>
 </li>
@@ -546,7 +546,7 @@
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
         
-                            <div class="space-logo " data-key="EZPCLOUD" data-name="eZ Publish Cloud" data-entity-type="confluence.space">
+                            <div class="space-logo " data-key="EZPCLOUD" data-name="Exponential Cloud" data-entity-type="confluence.space">
             <a><img class="logo space custom" src="https://doc.ez.no/download/attachments/15761717/EZPCLOUD?version=1&amp;modificationDate=1384250370000&amp;api=v2" alt=""></a>
         </div>            
                             <div id="breadcrumb-section">
@@ -559,13 +559,13 @@
         <li class="first" >
                 
 
-                    <span class=""><a href="https://doc.ez.no/display/EZPCLOUD">eZ Publish Cloud</a></span>
+                    <span class=""><a href="https://doc.ez.no/display/EZPCLOUD">Exponential Cloud</a></span>
                             
                 
         <li>
                 
 
-                    <span class=""><a href="https://doc.ez.no/display/EZPCLOUD/eZ+Publish+Cloud">eZ Publish Cloud</a></span>
+                    <span class=""><a href="https://doc.ez.no/display/EZPCLOUD/eZ+Publish+Cloud">Exponential Cloud</a></span>
                             
                 
         <li>
@@ -741,7 +741,7 @@ CustomConfigFile=ezcloud_solr_config.tar.gz
 # ForceSettings[]=site.ini|TemplateSettings|TemplateCache|disabled
 #
 ForceSettings[]
-</span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><strong><span class="diff-html-added">This block should be used with caution and needs to be pre-approved by eZ Cloud team before applying them.</span></strong></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">This block allows the override of any setting in eZ Publish (even settings we modify on deployment like cache enforcement). You need to have a good reason to need to set settings in this manner.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">Note that all settings will be written to </span><code><span class="diff-html-added">settings/override/&lt;file&gt;[.append.php]</span></code></p><p class="diff-block-target diff-block-context"><span class="diff-html-added"> </span></p><h1 id="eZCloudextension-Cronjobs" class="diff-block-target diff-block-context"><span class="diff-html-added">Cronjobs</span></h1><p class="diff-block-target diff-block-context"><span class="diff-html-added">Cronjobs in eZ Cloud are preset to run on 5 different cronjob parts, prefixed with "</span><code><span class="diff-html-added">ezc_</span></code><span class="diff-html-added">".</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">Here are the dates for the different parts:</span></p><ul class="diff-block-target diff-block-context"><li><span class="diff-html-added">frequent: Every 5 minutes</span></li><li><span class="diff-html-added">hourly: Random minute every hour</span></li><li><span class="diff-html-added">nightly: Random minute between 03:00 and 03:59 (UTC+3) every night</span></li><li><span class="diff-html-added">daily: Random minute between 13:00 and 13:59 (UTC+3) every day</span></li><li><span class="diff-html-added">weekly: Random minute between 02:00 and 02:59 (UTC+3) every week at Saturday</span></li></ul><p class="diff-block-target diff-block-context"><span class="diff-html-added">The random minute is because the servers are in a shared environment to prevent multiple cronjobs spawning at the same time.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">You find the parts defined in </span><code><span class="diff-html-added">extension/ezcloud/settings/cronjob.ini.append.php</span></code><span class="diff-html-added">.</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">[CronjobSettings]
+</span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><strong><span class="diff-html-added">This block should be used with caution and needs to be pre-approved by eZ Cloud team before applying them.</span></strong></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">This block allows the override of any setting in Exponential (even settings we modify on deployment like cache enforcement). You need to have a good reason to need to set settings in this manner.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">Note that all settings will be written to </span><code><span class="diff-html-added">settings/override/&lt;file&gt;[.append.php]</span></code></p><p class="diff-block-target diff-block-context"><span class="diff-html-added"> </span></p><h1 id="eZCloudextension-Cronjobs" class="diff-block-target diff-block-context"><span class="diff-html-added">Cronjobs</span></h1><p class="diff-block-target diff-block-context"><span class="diff-html-added">Cronjobs in eZ Cloud are preset to run on 5 different cronjob parts, prefixed with "</span><code><span class="diff-html-added">ezc_</span></code><span class="diff-html-added">".</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">Here are the dates for the different parts:</span></p><ul class="diff-block-target diff-block-context"><li><span class="diff-html-added">frequent: Every 5 minutes</span></li><li><span class="diff-html-added">hourly: Random minute every hour</span></li><li><span class="diff-html-added">nightly: Random minute between 03:00 and 03:59 (UTC+3) every night</span></li><li><span class="diff-html-added">daily: Random minute between 13:00 and 13:59 (UTC+3) every day</span></li><li><span class="diff-html-added">weekly: Random minute between 02:00 and 02:59 (UTC+3) every week at Saturday</span></li></ul><p class="diff-block-target diff-block-context"><span class="diff-html-added">The random minute is because the servers are in a shared environment to prevent multiple cronjobs spawning at the same time.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">You find the parts defined in </span><code><span class="diff-html-added">extension/ezcloud/settings/cronjob.ini.append.php</span></code><span class="diff-html-added">.</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">[CronjobSettings]
 ExtensionDirectories[]=ezcloud
 
 [CronjobPart-ezc_frequent]
@@ -754,7 +754,7 @@ ExtensionDirectories[]=ezcloud
 
 [CronjobPart-ezc_weekly]
 
-</span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><span class="diff-html-added">This file functions like the normal </span><code><span class="diff-html-added">cronjobs.ini</span></code><span class="diff-html-added"> provided by eZ Publish.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added"> </span></p><h1 id="eZCloudextension-Apacheconfiguration" class="diff-block-target diff-block-context"><span class="diff-html-added">Apache configuration</span></h1><p class="diff-block-target diff-block-context"><span class="diff-html-added">We also allow to add custom </span><code><span class="diff-html-added">RewriteRule</span></code><span class="diff-html-added"> and </span><code><span class="diff-html-added">RewriteCond</span></code><span class="diff-html-added"> as well as custom mimetypes</span></p><h5 id="eZCloudextension-Customrewrites" class="diff-block-target diff-block-context"><span class="diff-html-added">Custom rewrites</span></h5><p class="diff-block-target diff-block-context"><span class="diff-html-added">There is a file in the extension located </span><code><span class="diff-html-added">extension/ezcloud/conf/httpd/custom-rewrites.conf</span></code></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">All rewrite entries in this file are prepended to the top of our rewrite section in the Apache configuration to make sure your custom rewrites will always trigger.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">In this file you will find a commented example on how to add rewrites. You can copy paste the custom rewrites you need from your local apache config into this file. Note that all rewrites must start with the forward slash regardless of what your local version may look like, example:</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">If you have a working rewrite that looks like this:</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">RewriteRule ^my_custom_file.txt - [L]
+</span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><span class="diff-html-added">This file functions like the normal </span><code><span class="diff-html-added">cronjobs.ini</span></code><span class="diff-html-added"> provided by Exponential.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added"> </span></p><h1 id="eZCloudextension-Apacheconfiguration" class="diff-block-target diff-block-context"><span class="diff-html-added">Apache configuration</span></h1><p class="diff-block-target diff-block-context"><span class="diff-html-added">We also allow to add custom </span><code><span class="diff-html-added">RewriteRule</span></code><span class="diff-html-added"> and </span><code><span class="diff-html-added">RewriteCond</span></code><span class="diff-html-added"> as well as custom mimetypes</span></p><h5 id="eZCloudextension-Customrewrites" class="diff-block-target diff-block-context"><span class="diff-html-added">Custom rewrites</span></h5><p class="diff-block-target diff-block-context"><span class="diff-html-added">There is a file in the extension located </span><code><span class="diff-html-added">extension/ezcloud/conf/httpd/custom-rewrites.conf</span></code></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">All rewrite entries in this file are prepended to the top of our rewrite section in the Apache configuration to make sure your custom rewrites will always trigger.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">In this file you will find a commented example on how to add rewrites. You can copy paste the custom rewrites you need from your local apache config into this file. Note that all rewrites must start with the forward slash regardless of what your local version may look like, example:</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">If you have a working rewrite that looks like this:</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">RewriteRule ^my_custom_file.txt - [L]
 </span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><span class="diff-html-added">it needs to be rewritten to look like this</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">RewriteRule ^/my_custom_file.txt - [L]
 </span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><span class="diff-html-added">This is because we run </span><code><span class="diff-html-added">httpd</span></code><span class="diff-html-added"> on RHEL and this is the syntax that it requires for rewrites due to how we have setup eZ Cloud.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added"> </span></p><h5 id="eZCloudextension-Custommime-types" class="diff-block-target diff-block-context"><span class="diff-html-added">Custom mime-types</span></h5><p class="diff-block-target diff-block-context"><span class="diff-html-added">There is a file in the extension located </span><code><span class="diff-html-added">extension/ezcloud/conf/httpd/custom-mime-types.conf</span></code><br /><span class="diff-html-added">In this file you can add </span><code><span class="diff-html-added">AddType</span></code><span class="diff-html-added"> entries.</span></p><p class="diff-block-target diff-block-context"><span class="diff-html-added">Example:</span></p><table class="diff-macro diff-html-added diff-block-target diff-block-context"><thead><tr><th class="diff-macro-title"><span class="diff-html-added"><span class="icon macro-placeholder-icon" style="background-image: url(https://doc.ez.no/s/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/_/images/icons/macrobrowser/dropdown/noformat.png);"> </span>No Format</span></th></tr></thead><tbody><tr><td class="diff-macro-body"><pre><span class="diff-html-added">AddType application/x-font-woff .woff
 </span></pre></td></tr></tbody></table><p class="diff-block-target diff-block-context"><span class="diff-html-added">This would add support of </span><code><span class="diff-html-added">.woff</span></code><span class="diff-html-added"> files to be of type </span><code><span class="diff-html-added">application/x-font-woff</span></code><span class="diff-html-added"> in eZ Cloud Apache configuration.</span></p>
@@ -796,7 +796,7 @@ ExtensionDirectories[]=ezcloud
     <section class="footer-body">
 
                                                 <p class="license license-opensource">
-                  Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                  Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                         
     

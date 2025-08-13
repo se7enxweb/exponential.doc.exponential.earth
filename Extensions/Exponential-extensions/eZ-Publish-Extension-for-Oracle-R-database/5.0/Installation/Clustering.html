@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Extensions/Exponential-extensions/Exponential-Extension-for-Oracle-R-database/5.0/Installation/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:25:23 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Clustering / Installation / 5.0 / Exponential Extension for Oracle® database / Exponential extensions / Extensions / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Extensions.html">extensions</a>
+        
+                        /
+                            <a href="../../../../Exponential-extensions.html">exponential extensions</a>
+        
+                        /
+                            <a href="../../../Exponential-Extension-for-Oracle-R-database.html">exponential extension for or...</a>
+        
+                        /
+                            <a href="../../5.html">5.0</a>
+        
+                        /
+                            <a href="../Installation.html">installation</a>
+        
+                        /
+                            clustering
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../Exponential-Extension-for-Oracle-R-database.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../5.html" title="">
+	    	    		                    		    <span class="node-name-normal">5.0</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Concepts-and-Basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and Basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Requirements.html" title="">
+	    	    		                    		    <span class="node-name-normal">Requirements</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Automated-Initialization.html" title="">
+	    	    		                    		    <span class="node-name-normal">Automated Initialization</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Manual-Initialization.html" title="">
+	    	    		                    		    <span class="node-name-normal">Manual Initialization</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Configuring-Exponential.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuring Exponential</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Clustering.html" title="">
+	    	    		                    		    <span class="node-name-normal">Clustering</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Upgrading.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Oracle-Specific-Notes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Oracle Specific Notes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../2.html" title="">
+	    	    		                    		    <span class="node-name-normal">2.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../1.html" title="">
+	    	    		                    		    <span class="node-name-normal">1.8</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../1-2.html" title="">
+	    	    		                    		    <span class="node-name-normal">1.5</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../1-3.html" title="">
+	    	    		                    		    <span class="node-name-normal">1.4</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Clustering</h1>
+</div>
+
+<p>You can configure Exponential to store images, binary files and content-related caches in an Oracle database. This is typically useful if you want to run a site on a cluster of servers (refer to the &quot;<a href="../../../../../Exponential/Technical-manual/5.x/Features/Clustering.html" target="_self">Clustering</a>&quot; section in the &quot;Features&quot; chapter of the Exponential Technical Manual for more information).</p><p>The following instructions explain how this can be done, assuming that you already have an Exponential site running on an Oracle database. The procedure consists of the following steps:</p>
+<ol>
+<li><div>&nbsp;Clearing the caches (optional) </div></li><li><div>&nbsp;Modifying the &quot;file.ini&quot; settings 
+<ol>
+<li><div>DB Cluster</div></li><li><div>DFS Cluster</div></li>
+</ol>
+</div></li><li><div>&nbsp;Creating a new script for serving images 
+<ol>
+<li><div>DB Cluster</div></li><li><div>DFS Cluster</div></li>
+</ol>
+</div></li><li><div>&nbsp;Creating new database structures </div></li><li><div>&nbsp;Importing files to the database </div></li><li><div>&nbsp;Compiling the templates (optional) </div></li><li><div>&nbsp;Updating the Apache configuration </div></li><li><div>&nbsp;Restarting Apache and testing the site </div></li><li><div>&nbsp;Removing the imported files from the filesystem </div></li>
+</ol>
+<p>These steps are very similar to the ones that are used when configuring Exponential to use clustering on a MySQL database, with a few differences in the first four steps, as described below.</p><a name="eztoc133260_1" id="eztoc133260_1"></a><h2>1. Clearing the caches (optional)</h2><p>It is recommended (but not required) to clear all Exponential caches before enabling the clustering functionality. This can be done by running the &quot;bin/php/ezcache.php&quot; script as shown below:</p><pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
+</pre><p>After running the script, make sure that all cache files have been cleared by inspecting the contents of the various cache subdirectories within the &quot;var&quot; directory (typically the &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/&quot; directories). If there are any cache files left, remove them manually.</p><a name="eztoc133260_2" id="eztoc133260_2"></a><h2>2. Modifying the &quot;file.ini&quot; settings</h2><a name="eztoc133260_2_1" id="eztoc133260_2_1"></a><h3>2.1. DB Cluster</h3><p>Add the following lines to an override for the &quot;file.ini&quot; configuration file (&quot;settings/override/file.ini.append.php&quot; or &quot;settings/siteaccess/ezwebin_site/file.ini.append.php&quot; where &quot;ezwebin_site&quot; is the name of your siteaccess):</p><pre class="wordwrap copytoclipboard"><span class="line">[ClusteringSettings]</span>
+<span class="line">FileHandler=eZDBFileHandler</span>
+<span class="line">DBBackend=eZDBFileHandlerOracleBackend</span>
+<span class="line">DBHost=</span>
+<span class="line">DBPort=</span>
+<span class="line">DBSocket=</span>
+<span class="line">DBName=ORCL</span>
+<span class="line">DBUser=scott</span>
+<span class="line">DBPassword=tiger</span>
+<span class="line">DBChunkSize=65535</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[ClusteringSettings]\r\nFileHandler=eZDBFileHandler\r\nDBBackend=eZDBFileHandlerOracleBackend\r\nDBHost=\r\nDBPort=\r\nDBSocket=\r\nDBName=ORCL\r\nDBUser=scott\r\nDBPassword=tiger\r\nDBChunkSize=65535\r\n' ); return false;" /></p>
+<![endif]--><p>Replace &quot;ORCL&quot;, &quot;scott&quot; and &quot;tiger&quot; with the actual data:</p>
+<ul>
+<li><div>&nbsp;Name of the Oracle instance (usually a simple name specified in your &quot;tnsnames.ora&quot; file) </div></li><li><div>&nbsp;User name </div></li><li><div>&nbsp;Password </div></li>
+</ul>
+<p>In most cases these values will be the same as the &quot;Database&quot;, &quot;User&quot; and &quot;Password&quot; settings specified in the [DatabaseSettings] block of your &quot;site.ini.append.php&quot; configuration file.</p><p>The &quot;DBHost&quot;, &quot;DBPort&quot; and &quot;DBSocket&quot; settings can be left empty, since they are not used when running Exponential on an Oracle database.</p><p>Setting the &quot;FileHandler&quot; configuration directive to &quot;eZDBFileHandler&quot; will instruct Exponential to use the specified database for storing images, binary files and content-related caches. The &quot;DBBackend&quot; setting specifies the back-end to be used by the <a href="../../../../../Exponential/Technical-manual/5.x/Features/Clustering.html#ezdb" target="_self">&quot;ezdb&quot; file handler</a>. The settings above will instruct Exponential to use the back-end located in &quot;extension/ezoracle/clusterfilehandlers/dbbackends/oracle.php&quot;.</p><p>The &quot;DBChunkSize&quot; setting determines the size of the blocks (in bytes) into which files are split when they are fetched from the database.</p><a name="eztoc133260_2_2" id="eztoc133260_2_2"></a><h3>2.2. DFS Cluster&nbsp;</h3><pre class="wordwrap"><span class="line">[ClusteringSettings]</span>
+<span class="line">FileHandler=eZDFSFileHandler</span>
+</pre><pre class="wordwrap copytoclipboard"><span class="line">[eZDFSClusteringSettings]</span>
+<span class="line">MountPointPath=/media/nfs</span>
+<span class="line">DBBackend=eZDFSFileHandlerOracleBackend</span>
+<span class="line">DBHost=</span>
+<span class="line">DBPort=</span>
+<span class="line">DBSocket=</span>
+<span class="line">DBName=ORCL</span>
+<span class="line">DBUser=scott</span>
+<span class="line">DBPassword=tiger</span>
+<span class="line">DBConnectRetries=3</span>
+<span class="line">DBExecuteRetries=20</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[eZDFSClusteringSettings]\r\nMountPointPath=/media/nfs\r\nDBBackend=eZDFSFileHandlerOracleBackend\r\nDBHost=\r\nDBPort=\r\nDBSocket=\r\nDBName=ORCL\r\nDBUser=scott\r\nDBPassword=tiger\r\nDBConnectRetries=3\r\nDBExecuteRetries=20\r\n' ); return false;" /></p>
+<![endif]--><p>Replace &quot;ORCL&quot;, &quot;scott&quot; and &quot;tiger&quot; with the actual data.</p><p><b>Note:</b> Folder indicated in <i>MountPointPath</i> shouldn't contain anything but files handled by Exponential cluster, since files within this folder are maintained by cluster maintenance scripts, and can be potentially removed.&nbsp;If you need to store files here (i.e. custom cache files), be sure to use <i>eZClusterFileHandler</i> in your own PHP code.</p><a name="eztoc133260_3" id="eztoc133260_3"></a><h2>3. Creating a new script for serving images</h2><p>On a clustered installation, files from the var folder that are read through HTTP will be served by PHP. Your web-server (e.g Apache) will be instructed to use a specific PHP script, &quot;index_cluster.php&quot;, for serving those files. From version 4.7, this file is common to all clustered installations.</p><p>In order to maximize performances, this script doesn't use the fully blown INI configuration system. Dedicated settings must be provided using either config.php, or config.cluster.php, at the root of your Exponential setup. Both files will lead to the same behaviour, but config.cluster.php is only included when serving requests through index_cluster.php, not index.php. The list of possible settings can be found in the config.php-RECOMMENDED file shipped with the release. The easiest way is to copy the relevant settings from this file to your own config.php.</p><a name="eztoc133260_3_3" id="eztoc133260_3_3"></a><h3>3.1. DB Cluster</h3><p>A typical config.php for a DB Oracle cluster would look like this:</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
+<span class="line">define( 'CLUSTER_STORAGE_BACKEND', 'dboracle );</span>
+<span class="line">define( 'CLUSTER_STORAGE_HOST', '' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_PORT', '' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_USER', 'scott' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_PASS', 'tiger' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_DB', 'ORCL' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_CHARSET', 'utf8' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_GATEWAY_PATH', 'extension/ezoracle/clusterfilehandlers/gateways/db.php' );</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php \r\ndefine( \'CLUSTER_STORAGE_BACKEND\', \'dboracle ); \r\ndefine( \'CLUSTER_STORAGE_HOST\', \'\' ); \r\ndefine( \'CLUSTER_STORAGE_PORT\', \'\' ); \r\ndefine( \'CLUSTER_STORAGE_USER\', \'scott\' ); \r\ndefine( \'CLUSTER_STORAGE_PASS\', \'tiger\' ); \r\ndefine( \'CLUSTER_STORAGE_DB\', \'ORCL\' ); \r\ndefine( \'CLUSTER_STORAGE_CHARSET\', \'utf8\' ); \r\ndefine( \'CLUSTER_STORAGE_GATEWAY_PATH\', \'extension/ezoracle/clusterfilehandlers/gateways/db.php\' );' ); return false;" /></p>
+<![endif]--><a name="eztoc133260_3_4" id="eztoc133260_3_4"></a><h3>3.2. DFS Cluster</h3><p>&nbsp;A typical config.php for a DFS Oracle cluster would look like this:</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
+<span class="line">define( 'CLUSTER_STORAGE_BACKEND', 'dfsoracle' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_HOST', '' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_PORT', '' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_USER', 'scott' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_PASS', 'tiger' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_DB', 'ORCL' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_CHARSET', 'utf8' );</span>
+<span class="line">define( 'CLUSTER_MOUNT_POINT_PATH', '/media/nfs' );</span>
+<span class="line">define( 'CLUSTER_STORAGE_GATEWAY_PATH', 'extension/ezoracle/clusterfilehandlers/gateways/dfs.php' );</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php \r\ndefine( \'CLUSTER_STORAGE_BACKEND\', \'dfsoracle\' ); \r\ndefine( \'CLUSTER_STORAGE_HOST\', \'\' ); \r\ndefine( \'CLUSTER_STORAGE_PORT\', \'\' ); \r\ndefine( \'CLUSTER_STORAGE_USER\', \'scott\' ); \r\ndefine( \'CLUSTER_STORAGE_PASS\', \'tiger\' ); \r\ndefine( \'CLUSTER_STORAGE_DB\', \'ORCL\' ); \r\ndefine( \'CLUSTER_STORAGE_CHARSET\', \'utf8\' ); \r\ndefine( \'CLUSTER_MOUNT_POINT_PATH\', \'/media/nfs\' ); \r\ndefine( \'CLUSTER_STORAGE_GATEWAY_PATH\', \'extension/ezoracle/clusterfilehandlers/gateways/dfs.php\' );' ); return false;" /></p>
+<![endif]--><p>Note: Make sure you specify the same database settings as indicated under the &quot;[eZDFSClusteringSettings]&quot; block in your &quot;file.ini.append.php&quot; configuration file.</p><a name="eztoc133260_4" id="eztoc133260_4"></a><h2>4. Creating new database structures</h2><p>You have to create some structures in the database manually. You'll find the needed definitions in the &quot;oracle.php&quot; file located in the &quot;extension/ezoracle/clusterfilehandlers/dbbackends&quot; or &quot;extension/ezoracle/clusterfilehandlers/dfsbackends subdirectories. The definitions are placed inside comment blocks in the beginning of the file.</p><p>When using the SQL*Plus command line tool, be sure not to miss the ending slash (&quot;/&quot;) in the last line of the PL/SQL code copied from the &quot;oracle.php&quot; file.</p><a name="eztoc133260_5" id="eztoc133260_5"></a><h2>5. Importing files to the database</h2><p>Refer to the &quot;<a href="../../../../../Exponential/Technical-manual/5.x/Features/Clustering/Setting-it-up-for-an-eZDBFileHandler.html#import_files" target="_self">Clustering - Setting it up for an eZDBFileHandler </a>&quot; and &quot;<a href="../../../../../Exponential/Technical-manual/5.x/Features/Clustering/Setting-it-up-for-an-eZDFSFileHandler.html#import_files" target="_self">Clustering - Setting it up for an Setting it up for an eZDFSFileHandler </a>&quot; documentation pages for details.</p><a name="eztoc133260_6" id="eztoc133260_6"></a><h2>6. Cronjobs</h2><p>The <i>cluster_maintenance</i> cronjob is:</p>
+<ul>
+<li><div>not needed when using the Oracle eZDB handler. All binary files are immediately deleted in the database</div></li><li><div>
+not effective when using the Oracle eZDFS handler. A separate script is provided to the same effect: <i>extension/ezoracle/bin/php/oracleclusterbinarypurge.php</i><br />Please note that it can take a long time to run, as it has to scan the complete dfs mount point for expired files. It can put a lot of strain on the NFS server, too. Run it once with the <i>--help</i> option to see all available options for it and take advantage of those options to tune its usage to your needs.</div></li>
+</ul>
+
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Andrea Melo&nbsp;(12/11/2012 4:00 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Andrea Melo&nbsp;(05/12/2012 3:10 pm)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Andrea Melo, Jérôme Vieilledent</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="28154" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Extensions/Exponential-extensions/Exponential-Extension-for-Oracle-R-database/5.0/Installation/Clustering" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Extensions/Exponential-extensions/Exponential-Extension-for-Oracle-R-database/5.0/Installation/Clustering by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 07:25:23 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

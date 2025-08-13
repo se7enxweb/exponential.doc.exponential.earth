@@ -714,7 +714,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
-<p>The eZ Platform REST API comes with a framework that makes it quite easy to extend the API for your own needs.</p><h2 id="ExtendingtheRESTAPI-Requirements">Requirements</h2><p>REST routes are required to use the eZ Platform REST API prefix, <code>/api/ezp/v2</code>. You can create new resources below this prefix.</p><p>To do so, you will/may need to create</p><ul><li>a Controller that will handle your route actions</li><li>a Route, in your bundle's routing file</li><li>a Controller action</li><li>Optionally, a <code>ValueObjectVisitor</code> (if your Controller returns an object that doesn't already have a converter)</li><li>Optionally, an <code>InputParser</code></li></ul><h3 id="ExtendingtheRESTAPI-Controller">Controller</h3><p>To create a REST controller, you need to extend the <code>ezpublish_rest.controller.base</code> service, as well as the <code>eZ\Publish\Core\REST\Server\Controller</code> class.</p><p>Let's create a very simple controller, that has a <code>sayHello()</code> method, that takes a name as an argument.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/Controller/DefaultController.php</b></div><div class="codeContent panelContent pdl">
+<p>The eZ Platform REST API comes with a framework that makes it quite easy to extend the API for your own needs.</p><h2 id="ExtendingtheRESTAPI-Requirements">Requirements</h2><p>REST routes are required to use the eZ Platform REST API prefix, <code>/api/ezp/v2</code>. You can create new resources below this prefix.</p><p>To do so, you will/may need to create</p><ul><li>a Controller that will handle your route actions</li><li>a Route, in your bundle's routing file</li><li>a Controller action</li><li>Optionally, a <code>ValueObjectVisitor</code> (if your Controller returns an object that doesn't already have a converter)</li><li>Optionally, an <code>InputParser</code></li></ul><h3 id="ExtendingtheRESTAPI-Controller">Controller</h3><p>To create a REST controller, you need to extend the <code>exponential_rest.controller.base</code> service, as well as the <code>eZ\Publish\Core\REST\Server\Controller</code> class.</p><p>Let's create a very simple controller, that has a <code>sayHello()</code> method, that takes a name as an argument.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/Controller/DefaultController.php</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[namespace My\Bundle\RestBundle\Rest\Controller;
  
 use eZ\Publish\Core\REST\Server\Controller as BaseController;
@@ -729,7 +729,7 @@ class DefaultController extends BaseController
 </div></div><h3 id="ExtendingtheRESTAPI-Route">Route</h3><p>As said earlier, your REST routes are required to use the REST URI prefix. To do so, the easiest way is to import your routing file using this prefix.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app/config/routing.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[myRestBundle_rest_routes:
     resource: &quot;@MyRestBundle/Resources/config/routing_rest.yml&quot;
-    prefix:   %ezpublish_rest.path_prefix%]]></script>
+    prefix:   %exponential_rest.path_prefix%]]></script>
 </div></div><p>Using a distinct file for REST routes allows you to use the prefix for all this file's routes without affecting other routes from your bundle.</p><p>Next, you need to create the REST route. We need to define the route's <a href="http://symfony.com/doc/current/cookbook/controller/service.html" class="external-link" rel="nofollow">controller as a service</a> since our controller was defined as such.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Resources/config/routing_rest.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[myRestBundle_hello_world:
     pattern: /my_rest_bundle/hello/{name}
@@ -744,7 +744,7 @@ class DefaultController extends BaseController
                 <!-- The new status lozengens support for JIRA 6.2 or later. Otherwise we use the icon.-->
                                             <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Closed</span>
             </span>
-, custom REST routes must be prefixed with <code>ezpublish_rest_</code>, or they won't be detected correctly.</p></div></div><h2 id="ExtendingtheRESTAPI-Controlleraction">Controller action</h2><p>Unlike standard Symfony 2 controllers, the REST ones don't return an <code>HttpFoundation\Response</code> object, but a <code>ValueObject</code>. This object will during the kernel run be converted, using a ValueObjectVisitor, to a proper Symfony 2 response. One benefit is that when multiple controllers return the same object, such as a Content item or a Location, the visitor will be re-used.</p><p>Let's say that our Controller will return a <code>My\Bundle\RestBundle\Rest\Values\Hello</code></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/Values/Hello.php</b></div><div class="codeContent panelContent pdl">
+, custom REST routes must be prefixed with <code>exponential_rest_</code>, or they won't be detected correctly.</p></div></div><h2 id="ExtendingtheRESTAPI-Controlleraction">Controller action</h2><p>Unlike standard Symfony 2 controllers, the REST ones don't return an <code>HttpFoundation\Response</code> object, but a <code>ValueObject</code>. This object will during the kernel run be converted, using a ValueObjectVisitor, to a proper Symfony 2 response. One benefit is that when multiple controllers return the same object, such as a Content item or a Location, the visitor will be re-used.</p><p>Let's say that our Controller will return a <code>My\Bundle\RestBundle\Rest\Values\Hello</code></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/Values/Hello.php</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[namespace My\Bundle\RestBundle\Rest\Values;
  
 class Hello
@@ -769,13 +769,13 @@ class DefaultController extends BaseController
         return new HelloValue( $name );
     }
 }]]></script>
-</div></div><p>And that's it. Outputting this object in the Response requires that we create a ValueObjectVisitor.</p><h2 id="ExtendingtheRESTAPI-ValueObjectVisitor">ValueObjectVisitor</h2><p>A ValueObjectVisitor will take a Value returned by a REST controller, whatever the class, and will transform it into data that can be converted, either to json or XML. Those visitors are registered as services, and tagged with <code>ezpublish_rest.output.value_object_visitor</code>. The tag attribute says which class this Visitor applies to.</p><p>Let's create the service for our ValueObjectVisitor first.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Resources/config/services.yml</b></div><div class="codeContent panelContent pdl">
+</div></div><p>And that's it. Outputting this object in the Response requires that we create a ValueObjectVisitor.</p><h2 id="ExtendingtheRESTAPI-ValueObjectVisitor">ValueObjectVisitor</h2><p>A ValueObjectVisitor will take a Value returned by a REST controller, whatever the class, and will transform it into data that can be converted, either to json or XML. Those visitors are registered as services, and tagged with <code>exponential_rest.output.value_object_visitor</code>. The tag attribute says which class this Visitor applies to.</p><p>Let's create the service for our ValueObjectVisitor first.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Resources/config/services.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[services:
     myRestBundle.value_object_visitor.hello:
-        parent: ezpublish_rest.output.value_object_visitor.base
+        parent: exponential_rest.output.value_object_visitor.base
         class: My\Bundle\RestBundle\Rest\ValueObjectVisitor\Hello
         tags:
-            - { name: ezpublish_rest.output.value_object_visitor, type: My\Bundle\RestBundle\Rest\Values\Hello }]]></script>
+            - { name: exponential_rest.output.value_object_visitor, type: My\Bundle\RestBundle\Rest\Values\Hello }]]></script>
 </div></div><p>Let's create our visitor next. It must extend the  <code>eZ\Publish\Core\REST\Common\Output\ValueObjectVisitor</code> abstract class, and implement the <code>visit()</code> method.<br />It will receive as arguments:</p><ul style="list-style-type: square;"><li><code>$visitor</code>: The output visitor. Can be used to set custom response headers ( <code>setHeader( $name, $value )</code>), HTTP status code ( <code>setStatus( $statusCode )</code> )...</li><li><code>$generator</code>: The actual Response generator. It provides you with a DOM like API.</li><li><code>$data</code>: the visited data, the exact object you returned from the controller </li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/Controller/Default.php</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[namespace My\Bundle\RestBundle\Rest\ValueObjectVisitor;
 
@@ -792,9 +792,9 @@ class Hello extends ValueObjectVisitor
     }
 }]]></script>
 </div></div><p>Do not hesitate to look into the built-in ValueObjectVisitors, in <code>
-          <a href="https://github.com/ezsystems/ezpublish-kernel/tree/master/eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor" class="external-link" rel="nofollow">eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor</a>
+          <a href="https://github.com/ezsystems/exponential-kernel/tree/master/eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor" class="external-link" rel="nofollow">eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor</a>
         </code>, for more examples.</p><h3 id="ExtendingtheRESTAPI-Cachehandling">Cache handling</h3><p>The easiest way to handle cache is to re-use the <code>
-          <a href="https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor/CachedValue.php" class="external-link" rel="nofollow">CachedValue</a>
+          <a href="https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Publish/Core/REST/Server/Output/ValueObjectVisitor/CachedValue.php" class="external-link" rel="nofollow">CachedValue</a>
         </code> Value Object. It acts as a proxy, and adds the cache headers, depending on the configuration, for a given object and set of options.</p><p>When you want the response to be cached, return an instance of CachedValue, with your Value Object as the argument. You can also pass a location id using the second argument, so that the Response is tagged with it:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[return new CachedValue($helloValue, [&#39;locationId&#39;, 42]);]]></script>
 </div></div><h2 id="ExtendingtheRESTAPI-Inputparser">Input parser</h2><p>What we have seen above covers requests that don't require an input payload, such as GET or DELETE. If you need to provide your controller with parameters, either in JSON or XML, the parameter struct requires an Input Parser so that the payload can be converted to an actual ValueObject.</p><p>Each payload is dispatched to its Input Parser based on the request's Content-Type header. For example, a request with a Content-Type of <code>application/vnd.ez.api.ContentCreate</code> will be parsed by <code>eZ\Publish\Core\REST\Server\Input\Parser\ContentCreate</code>. This parser will build and return a <code>ContentCreateStruct</code> that can then be used to create content with the Public API.</p><p>Those input parsers are provided with a pre-parsed version of the input payload, as an associative array, and don't have to care about the actual format (XML or JSON).</p><p>Let's see what it would look like with a Content-Type of application/vnd.my.Greetings, that would send this as XML:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>application/vnd.my.Greetings+xml</b></div><div class="codeContent panelContent pdl">
@@ -805,13 +805,13 @@ class Hello extends ValueObjectVisitor
 </div></div><p>First, we need to create a service with the appropriate tag in services.yml.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Resources/config/services.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[services:
     myRestBundle.input_parser.Greetings:
-        parent: ezpublish_rest.input.parser
+        parent: exponential_rest.input.parser
         class: My\Bundle\RestBundle\Rest\InputParser\Greetings
         tags:
-            - { name: ezpublish_rest.input.parser, mediaType: application/vnd.my.Greetings }
+            - { name: exponential_rest.input.parser, mediaType: application/vnd.my.Greetings }
 
 ]]></script>
-</div></div><p>The mediaType attribute of the ezpublish_rest.input.parser tag maps our Content Type to the input parser.</p><p>Let's implement our parser. It must extend eZ\Publish\Core\REST\Server\Input\Parser, and implement the <code>parse()</code> method. It accepts as an argument the input payload, <code>$data</code>, as an array, and an instance of <code>ParsingDispatcher</code> that can be used to forward parsing of embedded content.</p><p>For convenience, we will consider that our input parser returns an instance of our <code>Value\Hello</code> class.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/InputParser/Greetings.php</b></div><div class="codeContent panelContent pdl">
+</div></div><p>The mediaType attribute of the exponential_rest.input.parser tag maps our Content Type to the input parser.</p><p>Let's implement our parser. It must extend eZ\Publish\Core\REST\Server\Input\Parser, and implement the <code>parse()</code> method. It accepts as an argument the input payload, <code>$data</code>, as an array, and an instance of <code>ParsingDispatcher</code> that can be used to forward parsing of embedded content.</p><p>For convenience, we will consider that our input parser returns an instance of our <code>Value\Hello</code> class.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>My/Bundle/RestBundle/Rest/InputParser/Greetings.php</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[namespace My\Bundle\RestBundle\Rest\InputParser;
  
 use eZ\Publish\Core\REST\Common\Input\BaseParser;
@@ -839,7 +839,7 @@ class Greetings extends BaseParser
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[services:
     myRestBundle.controller.default:
         class: My\Bundle\RestBundle\Rest\Controller\Default
-        parent: ezpublish_rest.controller.base]]></script>
+        parent: exponential_rest.controller.base]]></script>
 </div></div><p>Do not hesitate to look into the built-in InputParsers, in <code>eZ/Publish/Core/REST/Server/Input/Parser</code>, for more examples.</p><p> </p><h2 id="ExtendingtheRESTAPI-RegisteringresourcesintheRESTroot">Registering resources in the REST root</h2><p>You can register newly added resources so that they show up in the REST root resource for automatic discovery.</p><p>New resources can be registered with code like this:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ez_publish_rest:
     system:
@@ -847,7 +847,7 @@ class Greetings extends BaseParser
             rest_root_resources:
                 someresource:
                     mediaType: &#39;Content&#39;
-                    href: &#39;router.generate(&quot;ezpublish_rest_loadContent&quot;, {&quot;contentId&quot;: 2})&#39;]]></script>
+                    href: &#39;router.generate(&quot;exponential_rest_loadContent&quot;, {&quot;contentId&quot;: 2})&#39;]]></script>
 </div></div><p>with <code>someresource</code> being a unique key.</p><p> </p><p>The <code>router.generate</code> call dynamically renders a URI based on the name of the route and the optional parameters that are passed as the other arguments (in the code above this is the <code>contentId</code>).</p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>This syntax is based on <a href="http://symfony.com/doc/current/components/expression_language/index.html" class="external-link" rel="nofollow">Symfony's expression language</a>, an extensible component that allows limited / readable scripting to be used outside code context.</p></div></div><p> </p><p>The above configuration will add the following entry to the root resource:</p><p><code>&lt;someresource media-type=&quot;application/vnd.ez.api.Content+xml&quot; href=&quot;/api/ezp/v2/content/objects/2&quot;/&gt;</code></p></div>
 </div>
 <div class="cell aside" data-type="aside">
@@ -960,7 +960,7 @@ class Greetings extends BaseParser
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

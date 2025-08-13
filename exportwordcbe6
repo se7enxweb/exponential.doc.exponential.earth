@@ -269,7 +269,7 @@ s the ID <code>2</code> by default.</p>
 <h2 id=3D"Step3-Customizingthegenerallayout-Contentrenderingconfiguration">=
 Content rendering configuration</h2>
 <p>To use a custom template when rendering the root content, let's create a=
- <code>content_view</code> configuration block for <code>ezpublish</code>.<=
+ <code>content_view</code> configuration block for <code>exponential</code>.<=
 /p>
 <p>We will use the <code>default</code> namespace, but we could have used a=
 ny siteaccess instead. Edit <code>app/config/ezplatform.yml</code>. At the =

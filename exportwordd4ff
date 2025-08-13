@@ -317,7 +317,7 @@ pan></span></p>
 <th class=3D"confluenceTh">Description</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">eZ Publish Docbook variant</td>
+<td class=3D"confluenceTd">Exponential Docbook variant</td>
 <td class=3D"confluenceTd">FieldType's internal format</td>
 </tr>
 <tr>
@@ -341,9 +341,9 @@ le of the Field Type's internal format</h3>
 12px;">&lt;?xml version=3D"1.0" encoding=3D"UTF-8"?&gt;
 &lt;section xmlns=3D"http://docbook.org/ns/docbook"
          xmlns:xlink=3D"http://www.w3.org/1999/xlink"
-         xmlns:ezxhtml=3D"http://ez.no/xmlns/ezpublish/docbook/xhtml"
-         xmlns:ezcustom=3D"http://ez.no/xmlns/ezpublish/docbook/custom"
-         version=3D"5.0-variant ezpublish-1.0"&gt;
+         xmlns:ezxhtml=3D"http://ez.no/xmlns/exponential/docbook/xhtml"
+         xmlns:ezcustom=3D"http://ez.no/xmlns/exponential/docbook/custom"
+         version=3D"5.0-variant exponential-1.0"&gt;
     &lt;title ezxhtml:level=3D"2"&gt;This is a title.&lt;/title&gt;
     &lt;para ezxhtml:class=3D"paraClass"&gt;This is a paragraph.&lt;/para&g=
 t;
@@ -366,7 +366,7 @@ ation-macro-icon"></span>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: xml; gutter: true; theme: Eclipse" style=3D"font-size:=
 12px;">&lt;?xml version=3D"1.0" encoding=3D"UTF-8"?&gt;
-&lt;section xmlns=3D"http://ez.no/namespaces/ezpublish5/xhtml5/edit"&gt;
+&lt;section xmlns=3D"http://ez.no/namespaces/exponential5/xhtml5/edit"&gt;
     &lt;h2&gt;This is a title.&lt;/h2&gt;
     &lt;p class=3D"paraClass"&gt;This is a paragraph.&lt;/p&gt;
 &lt;/section&gt;</pre>=20
@@ -378,7 +378,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>For more information about internal format and input formats, see <a hre=
-f=3D"https://github.com/ezsystems/ezpublish-kernel/tree/master/eZ/Publish/C=
+f=3D"https://github.com/ezsystems/exponential-kernel/tree/master/eZ/Publish/C=
 ore/FieldType/Tests/RichText/Converter/Xslt/_fixtures" class=3D"external-li=
 nk" rel=3D"nofollow">Field Type's conversion test fixtures on GitHub</a>.</=
 p>
@@ -403,9 +403,9 @@ $inputString =3D &lt;&lt;&lt;DOCBOOK
 &lt;?xml version=3D"1.0" encoding=3D"UTF-8"?&gt;
 &lt;section xmlns=3D"http://docbook.org/ns/docbook"
          xmlns:xlink=3D"http://www.w3.org/1999/xlink"
-         xmlns:ezxhtml=3D"http://ez.no/xmlns/ezpublish/docbook/xhtml"
-         xmlns:ezcustom=3D"http://ez.no/xmlns/ezpublish/docbook/custom"
-         version=3D"5.0-variant ezpublish-1.0"&gt;
+         xmlns:ezxhtml=3D"http://ez.no/xmlns/exponential/docbook/xhtml"
+         xmlns:ezcustom=3D"http://ez.no/xmlns/exponential/docbook/custom"
+         version=3D"5.0-variant exponential-1.0"&gt;
     &lt;title ezxhtml:level=3D"2"&gt;This is a title.&lt;/title&gt;
     &lt;para ezxhtml:class=3D"paraClass"&gt;This is a paragraph.&lt;/para&g=
 t;
@@ -451,9 +451,9 @@ ml</code>" fieldValue key:</span></p>
     &lt;value key=3D"xml"&gt;&amp;lt;?xml version=3D"1.0" encoding=3D"UTF-8=
 "?&amp;gt;
 &amp;lt;section xmlns=3D"http://docbook.org/ns/docbook" xmlns:xlink=3D"http=
-://www.w3.org/1999/xlink" xmlns:ezxhtml=3D"http://ez.no/xmlns/ezpublish/doc=
-book/xhtml" xmlns:ezcustom=3D"http://ez.no/xmlns/ezpublish/docbook/custom" =
-version=3D"5.0-variant ezpublish-1.0"&amp;gt;
+://www.w3.org/1999/xlink" xmlns:ezxhtml=3D"http://ez.no/xmlns/exponential/doc=
+book/xhtml" xmlns:ezcustom=3D"http://ez.no/xmlns/exponential/docbook/custom" =
+version=3D"5.0-variant exponential-1.0"&amp;gt;
 &amp;lt;title ezxhtml:level=3D"2"&amp;gt;This is a title.&amp;lt;/title&amp=
 ;gt;
 &amp;lt;/section&amp;gt;

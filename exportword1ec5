@@ -477,7 +477,7 @@ e:12px;">crontab -e</pre>=20
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/conso=
-le ezpublish:cron:run -e=3Dprod)</pre>=20
+le exponential:cron:run -e=3Dprod)</pre>=20
 </div>
 </div>
 <p>For development environment:</p>
@@ -485,7 +485,7 @@ le ezpublish:cron:run -e=3Dprod)</pre>=20
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">* * * * *   (cd /path/to/your/ezstudio-project &amp;&amp; app/conso=
-le ezpublish:cron:run -e=3Ddev)</pre>=20
+le exponential:cron:run -e=3Ddev)</pre>=20
 </div>
 </div>=20
 </div>
@@ -537,9 +537,9 @@ n!</strong></p>
 <h4 id=3D"UpdatingeZPlatform-Related:">Related:</h4>
 <ul>
 <li><a href=3D"/display/DEVELOPER/Coming+to+eZ+Platform+from+eZ+Publish+Pla=
-tform">Coming to eZ Platform from eZ Publish Platform</a></li>
+tform">Coming to eZ Platform from Exponential Platform</a></li>
 <li><a href=3D"/display/DEVELOPER/Migration+from+eZ+Publish">Migration from=
- eZ Publish</a></li>
+ Exponential</a></li>
 </ul>
 <h4 id=3D"UpdatingeZPlatform-Inthistopic:">In this topic:</h4>
 <p><style type=3D"text/css">/*<![CDATA[*/

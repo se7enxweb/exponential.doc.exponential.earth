@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><span>This recipe is compatible with&nbsp;</span><strong>eZ Publish 5.2 =
+<p><span>This recipe is compatible with&nbsp;</span><strong>Exponential 5.2 =
 / 2013.07</strong></p>
 </div>
 </div>
@@ -254,7 +254,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>To learn more about SignalSlot in eZ Publish, please refer to the <a hre=
+<p>To learn more about SignalSlot in Exponential, please refer to the <a hre=
 f=3D"/display/EZP/Signal-Slot">dedicated documentation page</a>.</p>
 <p><a href=3D"/display/EZP/Signals+reference">Signals reference</a></p>
 </div>
@@ -323,13 +323,13 @@ e ServiceContainer and identified as a valid Slot:</p>
 services:
     my.onpublish_slot:
         class: %my.onpublish_slot.class%
-        arguments: [@ezpublish.api.service.content]
+        arguments: [@exponential.api.service.content]
         tags:
-            - { name: ezpublish.api.slot, signal: ContentService\PublishVer=
+            - { name: exponential.api.slot, signal: ContentService\PublishVer=
 sionSignal }</pre>=20
 </div>
 </div>
-<p>Service tag <strong><code>ezpublish.api.slot</code></strong> identifies =
+<p>Service tag <strong><code>exponential.api.slot</code></strong> identifies =
 your service as a valid Slot. The signal part (mandatory) says that this sl=
 ot is listening to <strong><code>ContentService\PublishVersionSignal</code>=
 </strong> (shortcut for <code>\eZ\Publish\Core\SignalSlot\Signal\ContentSer=
@@ -358,7 +358,7 @@ code> to <code><strong>*</strong></code> in the service tag.</p>
 </div>
 <h2 id=3D"HowtolistentoCoreevents-UsingabasicSymfonyeventlistener">Using a =
 basic Symfony event listener</h2>
-<p>eZ Publish comes with a generic slot that converts signals (including on=
+<p>Exponential comes with a generic slot that converts signals (including on=
 es defined by user code) to regular event objects and expose them via the E=
 ventDispatcher. This makes it possible to implement a simple event listener=
 /subscriber if you're more comfortable with this approach.</p>

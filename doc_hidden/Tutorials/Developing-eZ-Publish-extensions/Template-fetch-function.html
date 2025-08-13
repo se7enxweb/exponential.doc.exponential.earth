@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-eZ-Publish-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-Exponential-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
 <style type="text/css">
     @import url(../../../extension/ezdoc/design/doc/stylesheets/core.css);
     @import url(../../../extension/ezdoc/design/doc/stylesheets/classes.css);
@@ -29,7 +29,7 @@
 <script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
 <script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
                                   
-    <title>Template fetch function / Developing eZ Publish extensions / Tutorials / Documentation - Doc</title>
+    <title>Template fetch function / Developing Exponential extensions / Tutorials / Documentation - Doc</title>
 
     
     
@@ -41,10 +41,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../doc_hidden.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -61,8 +61,8 @@
 	    <div id="logo" class="container_12">
 
     <div class="grid_3">
-        <a href="https://ezpublish.doc.ezpublish.one/eZ-Publish/" title="eZ Publish Platform, CXM &amp; CMS">
-            <img src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/images/ez-logo.png"
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
                  alt="" height="45px"/>
         </a>
     </div>
@@ -90,14 +90,14 @@
 <h2 class="hide">Path</h2>
 
 <!-- Path content: START -->
-<p> <a href="https://ezpublish.doc.ezpublish.one/">7x</a> /
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
                         <a href="../../../doc_hidden.html">documentation</a>
         
                         /
                             <a href="../../Tutorials.html">tutorials</a>
         
                         /
-                            <a href="../Developing-eZ-Publish-extensions.html">developing ez publish exten...</a>
+                            <a href="../Developing-Exponential-extensions.html">developing exponential exten...</a>
         
                         /
                             template fetch function
@@ -114,7 +114,7 @@
 
 <!-- Main area: START -->
                                     <div id="ezp5disclaimer">
-                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 6.x.<br/>
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
                 For 5.x documentation covering <em>Platform</em> see <a href="../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
             </div>
             
@@ -149,7 +149,7 @@
 <h1>Template fetch function</h1>
 </div>
 
-<p><b>Note: </b>For an extensive tutorial on how to make custom fetch functions, please read <a href="http://share.ez.no/learn/ez-publish/understanding-and-developing-fetch-functions" target="_blank">Understanding and developing fetch functions</a>.</p><p>We now know how to transmit parameters and GET / POST variables to a new view and show them. But if we want to show data (for example our database table) in an eZ Publish template, we cannot handle it just by opening the view.</p><p>To do this we use the fetch functions from the &quot;kernel&quot; eZ module, for example {fetch('content', 'node', hash( 'node_id', 2 )}. We want to define two fetch functions, list and count, which are opened by the following template syntax:</p><pre class="wordwrap"><span class="line">{fetch( 'modul1', 'list', hash( 'as_object' , true() ) )}</span>
+<p><b>Note: </b>For an extensive tutorial on how to make custom fetch functions, please read <a href="http://share.ez.no/learn/exponential/understanding-and-developing-fetch-functions" target="_blank">Understanding and developing fetch functions</a>.</p><p>We now know how to transmit parameters and GET / POST variables to a new view and show them. But if we want to show data (for example our database table) in an Exponential template, we cannot handle it just by opening the view.</p><p>To do this we use the fetch functions from the &quot;kernel&quot; eZ module, for example {fetch('content', 'node', hash( 'node_id', 2 )}. We want to define two fetch functions, list and count, which are opened by the following template syntax:</p><pre class="wordwrap"><span class="line">{fetch( 'modul1', 'list', hash( 'as_object' , true() ) )}</span>
 <span class="line">{fetch( 'modul1', 'count', hash() )}</span>
 </pre><p>The function list shows the data entries as arrays or objects (based on the setting of the parameter ‘as_object'). The count function doesn't have any parameters and uses an SQL command to determine the amount of data in our database table jacextension_data.</p><p>The definition of the fetch functions is done in the file jacextension/modules/modul1/function_definition.php. This also defines which parameters are transmitted to which PHP function within the specified PHP class.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">$FunctionList = array();</span>
@@ -208,7 +208,7 @@
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php\r\n\r\nclass eZModul1FunctionCollection\r\n{ \r\n    public function __construct() \r\n    {\r\n        // ...\r\n    }\r\n\r\n    /*\r\n     * Is opened by(\'modul1\', \'list\', hash(\'as_object\', $bool ) ) fetch\r\n     * @param bool $asObject\r\n     */ \r\n    public static function fetchJacExtensionDataList( $asObject ) \r\n    { \r\n        return array( \'result\' =&gt; JACExtensionData::fetchList( $asObject ) ); \r\n    }\r\n \r\n    /*\r\n     * Is opened by(\'modul1\', \'count\', hash() ) fetch\r\n     */\r\n    public static function fetchJacExtensionDataListCount()\r\n    { \r\n        return array( \'result\' =&gt; JACExtensionData::getListCount() ); \r\n    } \r\n} \r\n?&gt;' ); return false;" /></p>
 <![endif]--><p>
 <i>Listing 17. Help class with PHP functions that are used in the Template Fetch definition in function_defintion.php –</i><br /><i>extension/jacextension/modules/modul1/ezmodul1functioncollection.php</i></p><p>
-<b>Hint:</b> In each module, the file functioncollection.php lists the possible parameters for the hash() part of a fetch function. Investigate the file kernel/content/ezcontentfunctioncollection.php to determine which parameters are available for the fetch function {fetch('content', 'tree', hash( ... ) )} of the kernel content module of eZ Publish. This helps if the eZ documentation is incomplete.<br />And of course, as for every new PHP class, do not forget to regenerate autoloads.</p>
+<b>Hint:</b> In each module, the file functioncollection.php lists the possible parameters for the hash() part of a fetch function. Investigate the file kernel/content/ezcontentfunctioncollection.php to determine which parameters are available for the fetch function {fetch('content', 'tree', hash( ... ) )} of the kernel content module of Exponential. This helps if the eZ documentation is incomplete.<br />And of course, as for every new PHP class, do not forget to regenerate autoloads.</p>
 
 <div class="break"></div>
 <hr class="hide" />
@@ -230,7 +230,7 @@
         <div id="footer" class="container_12">
 
             <div class="grid_3">
-                <img src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/images/ez-logo.png" alt="ez-publish" />
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
                 <div id="footer-copyright" class="grid_3 alpha omega">
                                     </div>
             </div>
@@ -257,11 +257,11 @@
         <div id="footer-connect-copyright" class="grid_8 alpha omega">
             Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
             <br/><br/>
-            Powered by <a href="https://se7enx.com/ezpublish" title="eZ Publish Platform">the eZ Publish Platform</a>.<br />
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
         </div>
 
         <div id="footer-connect-social" class="grid_4 right">
-            <a href="https://www.youtube.com/@eZPublishInsights" class="youtube" target="_blank">youtube</a>
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
             
             <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
             <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
@@ -296,7 +296,7 @@
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-eZ-Publish-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-Exponential-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
 </html>
 
 <!-- th[eZ] 20050804 -->

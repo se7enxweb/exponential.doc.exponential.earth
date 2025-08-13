@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>REST API Tutorials</h1>
     <div class=3D"Section1">
-        <p>The REST API v2 introduced in eZ Publish 5 allows you to interac=
+        <p>The REST API v2 introduced in Exponential 5 allows you to interac=
 t with an eZ Platform installation using the HTTP protocol, following a <a =
 href=3D"http://en.wikipedia.org/wiki/Representational_state_transfer" class=
 =3D"external-link" rel=3D"nofollow">REST</a> interaction model.</p>

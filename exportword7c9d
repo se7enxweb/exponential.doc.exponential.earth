@@ -276,7 +276,7 @@ r\Content</code></p><p><code>eZ\Publish\Core\MVC\Legacy\View\Provider\Locat=
 ion</code></p></td>
 <td class=3D"confluenceTd"><p>Forwards view selection to the legacy kernel =
 by running the old content/view module.<br>Pagelayout used is the one confi=
-gured in <code>ezpublish_legacy.&lt;scope&gt;.view_default_layout</code>.<b=
+gured in <code>exponential_legacy.&lt;scope&gt;.view_default_layout</code>.<b=
 r>For more details about the <code>&lt;scope&gt;</code> please refer to the=
  <a href=3D"https://confluence.ez.no/display/EZP/Configuration#Configuratio=
 n-Scope" rel=3D"nofollow" class=3D"external-link">scope configuration</a> d=
@@ -309,8 +309,8 @@ your application</li>
 reason</li>
 </ul>
 <p><code>View\Provider</code> objects need to be properly registered in the=
- service container with the <code><strong>ezpublish.location_view_provider<=
-/strong></code> or&nbsp;<code><strong>ezpublish.content_view_provider</stro=
+ service container with the <code><strong>exponential.location_view_provider<=
+/strong></code> or&nbsp;<code><strong>exponential.content_view_provider</stro=
 ng></code>&nbsp;service tag.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -323,7 +323,7 @@ services:
     acme.location_view_provider:
         class: %ezdemo.location_view_provider.class%
         tags:
-            - {name: ezpublish.location_view_provider, priority: 30}
+            - {name: exponential.location_view_provider, priority: 30}
 
 </pre>=20
 </div>

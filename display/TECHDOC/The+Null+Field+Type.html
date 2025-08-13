@@ -704,21 +704,21 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
                            
         <p>This Field Type is used as fallback and for testing purposes.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Name</th><th class="confluenceTh">Internal name</th><th class="confluenceTh">Expected input type</th></tr><tr><td class="confluenceTd"><code>Null</code></td><td class="confluenceTd"><code>variable</code></td><td class="confluenceTd"><code>mixed</code></td></tr></tbody></table></div><h2 id="TheNullFieldType-Description">Description</h2><p>As integration with Legacy Stack requires that all Field Types are also also handled on 5.x stack side, Null Field Type is provided as a dummy for legacy Field Types that are not really implemented on 5.x side.</p><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Null Field Type will accept anything provided as a value, but will not store anything to the database, nor will it read any data from the database.</p></div></div><p>This Field Type does not have its own fixed internal name. Its identifier is instead configured as needed by passing it as an argument to the constructor.</p><p>Following example shows how Null Field Type is used to configure dummy implementations for <code>ezcomcomments</code> and <code>ezpaex</code> legacy datatypes:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Null Fieldtype example configuration</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: plain; gutter: false; theme: Eclipse"><![CDATA[parameters:
-    ezpublish.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
+    exponential.fieldType.eznull.class: eZ\Publish\Core\FieldType\Null\Type
 
 services:
-    ezpublish.fieldType.ezcomcomments:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+    exponential.fieldType.ezcomcomments:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ &quot;ezcomcomments&quot; ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezcomcomments}
-    ezpublish.fieldType.ezpaex:
-        class: %ezpublish.fieldType.eznull.class%
-        parent: ezpublish.fieldType
+            - {name: exponential.fieldType, alias: ezcomcomments}
+    exponential.fieldType.ezpaex:
+        class: %exponential.fieldType.eznull.class%
+        parent: exponential.fieldType
         arguments: [ &quot;ezpaex&quot; ]
         tags:
-            - {name: ezpublish.fieldType, alias: ezpaex}]]></script>
+            - {name: exponential.fieldType, alias: ezpaex}]]></script>
 </div></div>
 
                 
@@ -824,7 +824,7 @@ services:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -212,23 +212,23 @@ d of the content */
 <body>
     <h1>Public API basics</h1>
     <div class=3D"Section1">
-        <h3 id=3D"PublicAPIbasics-eZPublishAPIRepository">eZ Publish API Re=
+        <h3 id=3D"PublicAPIbasics-ExponentialAPIRepository">Exponential API Re=
 pository</h3>
 <p><span style=3D"color: rgb(0,0,0);">This entity is the entry point to eve=
 rything you will do with the Public API.</span></p>
 <p><span style=3D"color: rgb(0,0,0);">It will allow you to create, retrieve=
-, update and delete all the eZ Publish objects, as well as content types, s=
+, update and delete all the Exponential objects, as well as content types, s=
 ections, content states. It is always obtained through the service containe=
 r.</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Obtaining the eZ Publish Repository via the service container</b>
+<b>Obtaining the Exponential Repository via the service container</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $repository \eZ\Publish\API\Repository\Repository
-$repository =3D $container-&gt;get( 'ezpublish.api.repository' );</pre>=20
+$repository =3D $container-&gt;get( 'exponential.api.repository' );</pre>=20
 </div>
 </div>
 <p><span style=3D"color: rgb(0,0,0);">&nbsp;By itself, the repository doesn=
@@ -248,7 +248,7 @@ mi/trunk/NS/html/eZ/Publish/API/Repository/Repository.html" class=3D"extern=
 al-link" rel=3D"nofollow">\eZ\Publish\API\Repository\Repository</a></code>.=
  If your IDE supports this feature, you will get code completion on the&nbs=
 p;<code>$repository</code>&nbsp;object. This helper is a huge time saver wh=
-en it comes to learning about the eZ Publish API.</p>
+en it comes to learning about the Exponential API.</p>
 </div>
 </div>
 <h3 id=3D"PublicAPIbasics-Theservicecontainer">The service container</h3>
@@ -271,12 +271,12 @@ reCommand</code></a>&nbsp;base class instead of&nbsp;<code>Controller</code=
 hod that returns the service container.</span></p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
-<p class=3D"title">Getting the repository from eZ Publish 5 controllers</p>
+<p class=3D"title">Getting the repository from Exponential 5 controllers</p>
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p><span style=3D"color: rgb(0,0,0);">In order to make it even easier to ob=
-tain the repository from controllers code, eZ Publish 5 controllers extend =
+tain the repository from controllers code, Exponential 5 controllers extend =
 a custom&nbsp;</span><a href=3D"http://apidoc.ez.no/sami/trunk/NS/html/eZ/B=
 undle/EzPublishCoreBundle/Controller.html" class=3D"external-link" rel=3D"n=
 ofollow">Controller</a> <span style=3D"color: rgb(0,0,0);">class that provi=
@@ -291,7 +291,7 @@ ame in your custom controllers.</span></p>
 <h3 id=3D"PublicAPIbasics-Authentication">Authentication</h3>
 <p>One of the responsibilities of the Repository is user authentication. Ev=
 ery action will be executed&nbsp;<em>as</em>&nbsp;a user. In the context of=
- a normal eZ Publish execution, the logged in user will of course be the cu=
+ a normal Exponential execution, the logged in user will of course be the cu=
 rrent one, identified via one of the available authentication methods. This=
  user's permissions will affect the behavior of the Repository. The user ma=
 y f.e. not be allowed to create Content, or view a particular section.</p>

@@ -295,11 +295,11 @@ s to use it, out of the box FunctionList is using it in the following way:<=
 jscore policies not used by
     # API/platform stack so configuring to use "blocking" limitation to avo=
 id LimitationNotFoundException
-    ezpublish.api.role.limitation_type.function_list:
-        class: %ezpublish.api.role.limitation_type.blocking.class%
+    exponential.api.role.limitation_type.function_list:
+        class: %exponential.api.role.limitation_type.blocking.class%
         arguments: ['FunctionList']
         tags:
-            - {name: ezpublish.limitationType, alias: FunctionList}</pre>=
+            - {name: exponential.limitationType, alias: FunctionList}</pre>=
 =20
 </div>
 </div>

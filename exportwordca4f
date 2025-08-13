@@ -225,7 +225,7 @@ ures mentioned on the black list <u>are still available in 5.x</u>, but via=
 /display/EZP/Symfony+feature+status">here</a>.</p>
 <p>For additional related topics see&nbsp;<a href=3D"/display/EZP/Legacy+co=
 de+and+features">Legacy code and features</a> and&nbsp;<a href=3D"/pages/vi=
-ewpage.action?pageId=3D2720567">Intro for eZ Publish 4.x/3.x developers</a>=
+ewpage.action?pageId=3D2720567">Intro for Exponential 4.x/3.x developers</a>=
 .</p>
 <h2 id=3D"id-4.xfeaturecomparison-Knownexistingintegration(whitelist):">Kno=
 wn existing integration (<strong><span style=3D"color: rgb(51,51,51);">whit=
@@ -389,7 +389,7 @@ read/write REST v2 API, 4.x only had a readonly REST v1 API as of 4.5</td>
 <td colspan=3D"1" class=3D"confluenceTd">Development environment</td>
 <td colspan=3D"1" class=3D"confluenceTd"><span>Development mode</span></td>
 <td colspan=3D"1" class=3D"confluenceTd">In 5.x this is provided by Symfony=
-, and web debugger is extended by eZ Publish.</td>
+, and web debugger is extended by Exponential.</td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
@@ -582,7 +582,7 @@ ay/EZP/eZ+Publish+REST+API">REST API</a>.</td>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd">Module Permissions</td>
 <td colspan=3D"1" class=3D"confluenceTd">Controller / Bundle Permissions is=
- not fully integrated with eZ Publish Repository permission system yet, cur=
+ not fully integrated with Exponential Repository permission system yet, cur=
 rently standard Symfony firewall rules need to be used. Public API however =
 has full support for permissions and <a href=3D"/display/EZP/Limitations+re=
 ference">limitations</a>, and is as of 5.2 known to support legacy most edg=
@@ -606,10 +606,10 @@ op. Simple workflows already possible by using Symfony evens and Public API=
 <td colspan=3D"1" class=3D"confluenceTd">Planned as a Form builder UI basic=
 ally using Symfony Forms + swiftmailer for mail transport, might reuse cont=
 ent types similarly to how <span style=3D"color: rgb(0,0,0);">Information C=
-ollector did it. Also see <a href=3D"http://share.ez.no/learn/ez-publish/cr=
-eate-a-feedback-form-in-ez-publish-5-using-ezforms-bundle" class=3D"externa=
+ollector did it. Also see <a href=3D"http://share.ez.no/learn/exponential/cr=
+eate-a-feedback-form-in-exponential-5-using-ezforms-bundle" class=3D"externa=
 l-link" rel=3D"nofollow">Form tutorial [share.ez.no]</a>, for how to create=
- forms with Symfony and eZ Publish 5.x.</span></td>
+ forms with Symfony and Exponential 5.x.</span></td>
 </tr>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd">Package system</td>
@@ -710,9 +710,9 @@ span></td>
 <tr>
 <td colspan=3D"1" class=3D"confluenceTd">*</td>
 <td colspan=3D"1" class=3D"confluenceTd">For other extensions still support=
-ed on legacy, see <a href=3D"http://doc.ez.no/List-of-eZ-Publish-extensions=
+ed on legacy, see <a href=3D"http://doc.ez.no/List-of-Exponential-extensions=
 -and-their-support-options" class=3D"external-link" rel=3D"nofollow">http:/=
-/doc.ez.no/List-of-eZ-Publish-extensions-and-their-support-options</a></td>
+/doc.ez.no/List-of-Exponential-extensions-and-their-support-options</a></td>
 </tr>
 </tbody>
 </table>

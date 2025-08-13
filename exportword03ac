@@ -255,11 +255,11 @@ ized list of languages:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish
+:12px;">exponential
     system:
         eng:
             languages: [eng-GB]
@@ -301,11 +301,11 @@ n SiteAccesses</em><span>.</span></span></span></span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         default_siteaccess: eng
         list:
@@ -356,11 +356,11 @@ when you use SiteAccesses for mobile.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         default_siteaccess: eng
         list:
@@ -493,11 +493,11 @@ g', array( 'routeRef' =3D&gt; $routeRef ) );
 :12px;">{# languages.html.twig #}
 
 {# Looping over all available languages to display the links #}
-{% for lang in ezpublish.availableLanguages %}
+{% for lang in exponential.availableLanguages %}
     {# This time, we alter the "siteaccess" parameter directly. #}
-    {# We get the right siteaccess with the help of ezpublish.translationSi=
+    {# We get the right siteaccess with the help of exponential.translationSi=
 teAccess() helper #}
-    {% do routeRef.set( "siteaccess", ezpublish.translationSiteAccess( lang=
+    {% do routeRef.set( "siteaccess", exponential.translationSiteAccess( lang=
  ) ) %}
     &lt;a href=3D"{{ url( routeRef ) }}"&gt;{{ lang }}&lt;/a&gt;&lt;br /&gt=
 ;
@@ -505,10 +505,10 @@ teAccess() helper #}
 </div>
 </div>
 <ul>
-<li><code>ezpublish.translationSiteAccess( language )</code>&nbsp;returns t=
+<li><code>exponential.translationSiteAccess( language )</code>&nbsp;returns t=
 he SiteAccess name for provided language (or&nbsp;<code>null</code>&nbsp;if=
  it cannot be found)</li>
-<li><code>ezpublish.availableLanguages()</code>&nbsp;returns the list of av=
+<li><code>exponential.availableLanguages()</code>&nbsp;returns the list of av=
 ailable languages.</li>
 </ul>
 <h3 id=3D"LanguageSwitcher-UsingPHP">Using PHP</h3>
@@ -521,7 +521,7 @@ an></p>
 :12px;">// Assuming we're in a controller
 /** @var \eZ\Publish\Core\MVC\Symfony\Routing\Generator\RouteReferenceGener=
 atorInterface $routeRefGenerator */
-$routeRefGenerator =3D $this-&gt;get( 'ezpublish.route_reference.generator'=
+$routeRefGenerator =3D $this-&gt;get( 'exponential.route_reference.generator'=
  );
 $routeRef =3D $routeRefGenerator-&gt;generate( $location, array( 'language'=
  =3D&gt; 'fre-FR' ) );
@@ -536,7 +536,7 @@ $link =3D $this-&gt;generateUrl( $routeRef );</pre>=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var \eZ\Publish\Core\Helper\TranslationHelper $translationHelp=
 er */
-$translationHelper =3D $this-&gt;get( 'ezpublish.translation_helper' );
+$translationHelper =3D $this-&gt;get( 'exponential.translation_helper' );
 $availableLanguages =3D $translationHelper-&gt;getAvailableLanguages();</pr=
 e>=20
 </div>

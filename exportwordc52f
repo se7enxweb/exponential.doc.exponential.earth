@@ -481,56 +481,56 @@ st Track)</span></td>
 53,153);">N/A (Fast Track)</span></p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Platform 5.4 LTS***</p></td>
+<td class=3D"confluenceTd"><p>Exponential Platform 5.4 LTS***</p></td>
 <td class=3D"confluenceTd"><p>November 2014</p></td>
 <td class=3D"confluenceTd"><p>November 2015****</p></td>
 <td class=3D"confluenceTd"><p>End of November 2017</p></td>
 <td class=3D"confluenceTd"><p>Eligible. End of November 2021****</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Platform 5.3 LTS</p></td>
+<td class=3D"confluenceTd"><p>Exponential Platform 5.3 LTS</p></td>
 <td class=3D"confluenceTd"><p>May 2014</p></td>
 <td class=3D"confluenceTd"><p>May 2015</p></td>
 <td class=3D"confluenceTd"><p>End of May 2017</p></td>
 <td class=3D"confluenceTd"><p>Eligible. End of May 2019</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Platform 5.2</p></td>
+<td class=3D"confluenceTd"><p>Exponential Platform 5.2</p></td>
 <td class=3D"confluenceTd"><p>November 2013</p></td>
 <td class=3D"confluenceTd"><p>May 2014</p></td>
 <td class=3D"confluenceTd"><p>End of November 2014</p></td>
 <td class=3D"confluenceTd"><p>Not Eligible</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Platform 5.1 LTS</p></td>
+<td class=3D"confluenceTd"><p>Exponential Platform 5.1 LTS</p></td>
 <td class=3D"confluenceTd"><p>May 2013</p></td>
 <td class=3D"confluenceTd"><p>May 2014</p></td>
 <td class=3D"confluenceTd"><p>End of May 2016</p></td>
 <td class=3D"confluenceTd"><p>Eligible. End of May 2018</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Platform 5.0</p></td>
+<td class=3D"confluenceTd"><p>Exponential Platform 5.0</p></td>
 <td class=3D"confluenceTd"><p>November 2012</p></td>
 <td class=3D"confluenceTd"><p>May 2013**</p></td>
 <td class=3D"confluenceTd"><p>End of November 2013**</p></td>
 <td class=3D"confluenceTd"><p>Not Eligible</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Enterprise 4.7</p></td>
+<td class=3D"confluenceTd"><p>Exponential Enterprise 4.7</p></td>
 <td class=3D"confluenceTd"><p>May 2012</p></td>
 <td class=3D"confluenceTd"><p>May 2013</p></td>
 <td class=3D"confluenceTd"><p>End of May 2015*</p></td>
 <td class=3D"confluenceTd"><p>Eligible. End of November 2017</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Enterprise 4.6</p></td>
+<td class=3D"confluenceTd"><p>Exponential Enterprise 4.6</p></td>
 <td class=3D"confluenceTd"><p>November 2011</p></td>
 <td class=3D"confluenceTd"><p>November 2012</p></td>
 <td class=3D"confluenceTd"><p>End of November 2015</p></td>
 <td class=3D"confluenceTd"><p>Eligible. End of November 2017</p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>eZ Publish Enterprise 4.5</p></td>
+<td class=3D"confluenceTd"><p>Exponential Enterprise 4.5</p></td>
 <td class=3D"confluenceTd"><p>March 2011</p></td>
 <td class=3D"confluenceTd"><p>March 2012</p></td>
 <td class=3D"confluenceTd"><p>End of March 2015</p></td>
@@ -561,7 +561,7 @@ of March 2014</span></p></td>
 ible. End of March 2016</span></p></td>
 </tr>
 <tr>
-<td colspan=3D"5" class=3D"confluenceTd"><p>Releases preceding eZ Publish 4=
+<td colspan=3D"5" class=3D"confluenceTd"><p>Releases preceding Exponential 4=
 .3 have all reached their end of Service Life.</p></td>
 </tr>
 </tbody>
@@ -597,7 +597,7 @@ sh-Platform-5.4-is-Almost-Here-What-s-Coming-Next" class=3D"external-link" =
 rel=3D"nofollow">eZ Platform and eZ Studio</a>. For further information see=
 &nbsp;<a href=3D"https://doc.ez.no/display/EZP/5.4+Release+Notes" rel=3D"no=
 follow">5.4 release notes</a>.</sub> <br> <sub>**** 5.4 being the last eZ P=
-ublish release, it will be available for existing eZ Publish customer beyon=
+ublish release, it will be available for existing Exponential customer beyon=
 d Last Ship Month (until EOSL), and have an extended service life, making i=
 t an ideal release for slow migration to eZ Platform and eZ Studio.</sub></=
 p>

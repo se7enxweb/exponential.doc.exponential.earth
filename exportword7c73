@@ -231,7 +231,7 @@ ers:</a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#Imagealiashandling-Withliipfilter">With liip filter</a></li=
 >=20
-<li><a href=3D"#Imagealiashandling-Withezpublishfilter">With ezpublish filt=
+<li><a href=3D"#Imagealiashandling-Withexponentialfilter">With exponential filt=
 er</a></li>=20
 </ul> </li>=20
 </ul> </li>=20
@@ -261,7 +261,7 @@ stored using the the <code style=3D"line-height: 1.42857;">IOService,</code=
 >ezimage</code> Field Type. They are generated only once and cleared on dem=
 and (e.g. content removal).</p>
 <h2 id=3D"Imagealiashandling-Configuration"><a class=3D"external-link" href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/image/image_alias_imagine.md#configuration" name=3D"user-content-conf=
 iguration" rel=3D"nofollow"></a>Configuration</h2>
 <p>Image variation (aka "Image alias") definition follows the same format a=
@@ -272,7 +272,7 @@ can be configured per site access and all the other scopes.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># Example
-ezpublish:
+exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -314,7 +314,7 @@ Each variation name=20
 <li><p><code>reference</code>: Name of a reference variation to base the va=
 riation on. If <code>null</code> (or <code>~</code>, which means <code>null=
 </code> in YAML), the variation will take the original image for reference.=
- It can be any available variation configured in <code>ezpublish</code> nam=
+ It can be any available variation configured in <code>exponential</code> nam=
 espace, or a <code>filter_set</code> defined in <code>liip_imagine</code> n=
 amespace.</p></li>
 <li><p><code>filters</code>: array of filter definitions (hashes containing=
@@ -322,7 +322,7 @@ amespace.</p></li>
 .</p></li>
 </ul>
 <h3 id=3D"Imagealiashandling-Availablefilters"><a class=3D"external-link" h=
-ref=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specif=
+ref=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specif=
 ications/image/image_alias_imagine.md#available-filters" name=3D"user-conte=
 nt-available-filters" rel=3D"nofollow"></a>Available filters</h3>
 <p>In addition to <a href=3D"https://github.com/liip/LiipImagineBundle/blob=
@@ -448,7 +448,7 @@ quality</code> setting:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: css; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -463,14 +463,14 @@ liip_imagine:
 </div>
 </div>
 <p>&nbsp;</p>
-<h5 id=3D"Imagealiashandling-Withezpublishfilter">With ezpublish filter</h5=
+<h5 id=3D"Imagealiashandling-Withexponentialfilter">With exponential filter</h5=
 >
 <p>Using the geometry/scalewidth filter</p>
 <p>&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: css; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -494,7 +494,7 @@ liip_imagine:
 <li><code>colorspace</code></li>
 </ul>
 <h3 id=3D"Imagealiashandling-Customfilters"><a class=3D"external-link" href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/image/image_alias_imagine.md#custom-filters" name=3D"user-content-cus=
 tom-filters" rel=3D"nofollow"></a>Custom filters</h3>
 <p>Please refer to <a href=3D"https://github.com/liip/LiipImagineBundle/blo=
@@ -512,7 +512,7 @@ on:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -529,7 +529,7 @@ liip/LiipImagineBundle/blob/master/Resources/doc/filters.rst#post-processor=
 s" class=3D"external-link" rel=3D"nofollow">post-processors documentation i=
 n LiipImagineBundle</a> <span>&nbsp;for details.</span> </span></p>
 <h3 id=3D"Imagealiashandling-Drivers"><a class=3D"external-link" href=3D"ht=
-tps://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/=
+tps://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/=
 image/image_alias_imagine.md#drivers" name=3D"user-content-drivers" rel=3D"=
 nofollow"></a>Drivers</h3>
 <p>LiipImagineBundle supports GD (default), Imagick and GMagick PHP extensi=
@@ -538,7 +538,7 @@ ons and only works on image blobs (no command line tool is needed). See the=
 /doc/configuration.rst" class=3D"external-link" rel=3D"nofollow">bundle's d=
 ocumentation to learn more on that topic</a>.</p>
 <h2 id=3D"Imagealiashandling-Upgrade"><a class=3D"external-link" href=3D"ht=
-tps://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/=
+tps://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/=
 image/image_alias_imagine.md#upgrade" name=3D"user-content-upgrade" rel=3D"=
 nofollow"></a>Upgrade</h2>
 <ul class=3D"task-list">

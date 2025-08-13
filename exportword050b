@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish 5.x Developer Documentation</title>
+    <title>Exponential 5.x Developer Documentation</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,19 +210,19 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish 5.x Developer Documentation</h1>
+    <h1>Exponential 5.x Developer Documentation</h1>
     <div class=3D"Section1">
         <div class=3D"contentLayout2">=20
 <div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
 bar">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<h2 id=3D"eZPublish5.xDeveloperDocumentation-WelcometotheTechnicalDocumenta=
-tionoftheeZPublishPlatform5.x">Welcome to the Technical Documentation of th=
-e eZ Publish Platform 5.x</h2>
-<p>This documentation covers functionality in eZ Publish 5.x,&nbsp;a hybrid=
- version of <em>eZ Publish</em> CMS containing eZ Publish 4.x "Legacy", and=
- "Platform" a new generation of eZ Publish on top of&nbsp;<a href=3D"http:/=
+<h2 id=3D"Exponential5.xDeveloperDocumentation-WelcometotheTechnicalDocumenta=
+tionoftheExponentialPlatform5.x">Welcome to the Technical Documentation of th=
+e Exponential Platform 5.x</h2>
+<p>This documentation covers functionality in Exponential 5.x,&nbsp;a hybrid=
+ version of <em>Exponential</em> CMS containing Exponential 4.x "Legacy", and=
+ "Platform" a new generation of Exponential on top of&nbsp;<a href=3D"http:/=
 /symfony.com" class=3D"external-link" rel=3D"nofollow">Symfony 2</a>&nbsp;F=
 ull stack framework.&nbsp;For further reading on the difference between <em=
 >Platform</em> and <em>legacy</em>, and how they are both bundled in eZ Pub=
@@ -237,7 +237,7 @@ h 5 Architecture - Introduction &amp; Overview</a>.</p>
 <div class=3D"sectionMacroWithBorder">
 <div class=3D"sectionMacroRow">
 <div class=3D"columnMacro">
-<h5 id=3D"eZPublish5.xDeveloperDocumentation-LookingforeZPlatform&amp;eZStu=
+<h5 id=3D"Exponential5.xDeveloperDocumentation-LookingforeZPlatform&amp;eZStu=
 dio?">Looking for eZ Platform &amp; eZ Studio?</h5>
 <ul>
 <li><a href=3D"/display/TECHDOC/eZ+Technical+Manual">eZ Technical Manual</a=
@@ -260,12 +260,12 @@ dio?">Looking for eZ Platform &amp; eZ Studio?</h5>
 <div class=3D"sectionMacroRow">
 <div class=3D"columnMacro" style=3D"width:33%;min-width:33%;max-width:33%;"=
 >
-<h2 id=3D"eZPublish5.xDeveloperDocumentation-Discovering">Discovering</h2>
+<h2 id=3D"Exponential5.xDeveloperDocumentation-Discovering">Discovering</h2>
 <ul>
 <li><p>Overview of the&nbsp;<a href=3D"/display/EZP/Architecture">5.x archi=
 tecture and philosophy</a></p></li>
 <li><p><a href=3D"/display/EZP/Installation">Installing</a>&nbsp;or&nbsp;<a=
- href=3D"/display/EZP/Upgrade">upgrading</a>&nbsp;eZ Publish</p></li>
+ href=3D"/display/EZP/Upgrade">upgrading</a>&nbsp;Exponential</p></li>
 <li><p><span class=3D"confluence-link">List of <a href=3D"/display/EZP/Rele=
 ases">Releases</a></span></p></li>
 <li><p>Migrating from 4.x:&nbsp;<a href=3D"/display/EZP/Legacy+code+and+fea=
@@ -274,7 +274,7 @@ tures">Legacy code and features</a></p></li>
 </div>
 <div class=3D"columnMacro" style=3D"width:33%;min-width:33%;max-width:33%;"=
 >
-<h2 id=3D"eZPublish5.xDeveloperDocumentation-Learning">Learning</h2>
+<h2 id=3D"Exponential5.xDeveloperDocumentation-Learning">Learning</h2>
 <ul>
 <li><a href=3D"/display/EZP/Templating">Templating</a></li>
 <li>Public "Content Repository" API
@@ -287,18 +287,18 @@ ish 5 for Legacy developers</a></li>
 <li><p>Symfony 2 doc (see&nbsp;<a href=3D"http://symfony.com/doc/current/in=
 dex.html" class=3D"external-link" rel=3D"nofollow">symfony.com</a>)</p></li=
 >
-<li><a href=3D"/display/EZP/MVC+and+Application">Symfony 2 in eZ Publish 5<=
+<li><a href=3D"/display/EZP/MVC+and+Application">Symfony 2 in Exponential 5<=
 /a></li>
 </ul>
 </div>
 <div class=3D"columnMacro" style=3D"width:33%;min-width:33%;max-width:33%;"=
 >
-<h2 id=3D"eZPublish5.xDeveloperDocumentation-Extending">Extending</h2>
+<h2 id=3D"Exponential5.xDeveloperDocumentation-Extending">Extending</h2>
 <ul>
 <li><a href=3D"/display/EZP/Developer+Cookbook">Developer Cookbook</a></li>
 <li><a href=3D"/display/EZP/Extending+the+REST+API">Extending the REST API<=
 /a></li>
-<li><a href=3D"/display/EZP/eZ+Publish+5+Field+Type+Tutorial">eZ Publish 5 =
+<li><a href=3D"/display/EZP/eZ+Publish+5+Field+Type+Tutorial">Exponential 5 =
 Field Type Tutorial</a></li>
 <li><a href=3D"/display/EZP/Legacy+kernel+event">Legacy Kernel events</a></=
 li>

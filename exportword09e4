@@ -348,7 +348,7 @@ fony bundle.</p>
 <li>PHP 5.4.4<em> or higher PHP 5.x version</em></li>
 <li>Symfony 2.6<em>&nbsp;or higher Symfony<em>&nbsp;2.x version</em></em><e=
 m><br></em></li>
-<li>eZ Publish 5.4.1 or eZ Platform/Studio 2015.01 or above, with the REST =
+<li>Exponential 5.4.1 or eZ Platform/Studio 2015.01 or above, with the REST =
 API configured to use sessions and publicly open to the YOOCHOOSE servers</=
 li>
 <li>A YOOCHOOSE license</li>
@@ -381,7 +381,7 @@ or: #ffffff;">
 <b>To install eZ Recommendation Bundle:</b>
 </div>
 <div class=3D"panelContent" style=3D"background-color: #ffffff;">=20
-<p><strong>1.</strong> Run the following from your eZ Publish installation =
+<p><strong>1.</strong> Run the following from your Exponential installation =
 root <em>(here with most recent 1.0.x release)</em>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -390,7 +390,7 @@ root <em>(here with most recent 1.0.x release)</em>:</p>
 re>=20
 </div>
 </div>
-<p><strong>2.</strong> Enable the bundle in <code>ezpublish/EzPublishKernel=
+<p><strong>2.</strong> Enable the bundle in <code>exponential/EzPublishKernel=
 .php</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -409,7 +409,7 @@ to your <code>routing.yml</code> file:</p>
 :12px;">recommendationBundleRestRoutes:
     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest=
 .yml"
-    prefix:   %ezpublish_rest.path_prefix%</pre>=20
+    prefix:   %exponential_rest.path_prefix%</pre>=20
 </div>
 </div>=20
 </div>
@@ -601,7 +601,7 @@ s must be done in collaboration with YOOCHOOSE.</p>
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
 <p><strong>Public</strong> content is automatically indexed. When necessary=
-, eZ Publish will notify YOOCHOOSE of changes to content. Initial import is=
+, Exponential will notify YOOCHOOSE of changes to content. Initial import is=
  to be managed with your YOOCHOOSE sales representative. Note that your ser=
 ver's REST API will need to be open to the YOOCHOOSE servers for indexing t=
 o be possible.</p>

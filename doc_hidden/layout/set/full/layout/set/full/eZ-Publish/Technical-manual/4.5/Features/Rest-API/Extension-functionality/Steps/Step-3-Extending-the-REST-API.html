@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.5/Features/Rest-API/Extension-functionality/Steps/Step-3-Extending-the-REST-API by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:38:39 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/4.5/Features/Rest-API/Extension-functionality/Steps/Step-3-Extending-the-REST-API by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:38:39 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                                 
-    <title>Step 3: Extending the REST API / Steps / Extension functionality / Rest API / Features / 4.5 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Step 3: Extending the REST API / Steps / Extension functionality / Rest API / Features / 4.5 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,9 +40,9 @@
 <h1>Step 3: Extending the REST API</h1>
 </div>
 
-<p>As of now it is possible to extend the eZ Publish REST interface with custom functionality. One REST extension can support many different data providers as well as different versions. The following steps present how to create a new eZ Publish REST extension.</p>
+<p>As of now it is possible to extend the Exponential REST interface with custom functionality. One REST extension can support many different data providers as well as different versions. The following steps present how to create a new Exponential REST extension.</p>
 <ul>
-<li><div>Create an empty folder called “ezxrestapidemo” under the “ &lt;eZ Publish&gt;/extension” location.</div></li><li><div>Inside “ezxrestapidemo” create a setting with the “rest.ini.append.php” file with following content:</div></li>
+<li><div>Create an empty folder called “ezxrestapidemo” under the “ &lt;Exponential&gt;/extension” location.</div></li><li><div>Inside “ezxrestapidemo” create a setting with the “rest.ini.append.php” file with following content:</div></li>
 </ul>
 <pre class="wordwrap copytoclipboard"><span class="line">&lt;?php /*</span>
 <span class="line">[ApiProvider]</span>
@@ -52,7 +52,7 @@
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php /*\r\n[ApiProvider]\r\nProviderClass[ezx]=ezxRestApiProvider\r\n*/ ?&gt;' ); return false;" /></p>
 <![endif]--><p>ProviderClass is an array where the index is a provider token used in the resource URI. For example for URI: “/api/ezx/v1/foo” the registered provider with token “ezx” will be called. You can have many providers registered within one extension.</p>
 <ul>
-<li><div>Next create a folder called “classes” under the “&lt;eZ Publish&gt;/extension/ezxrestapidemo/” location with the “rest_provider.php file”. Edit the newly created PHP file and add the following code:</div></li>
+<li><div>Next create a folder called “classes” under the “&lt;Exponential&gt;/extension/ezxrestapidemo/” location with the “rest_provider.php file”. Edit the newly created PHP file and add the following code:</div></li>
 </ul>
 <pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">&nbsp;&amp;nbsp;</span>
@@ -85,7 +85,7 @@
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php\r\n &amp;nbsp;\r\n class ezxRestApiProvider implements ezpRestProviderInterface\r\n {\r\n    /**\r\n     * Returns registered versioned routes for provider\r\n     *\r\n     * @return array Associative array. Key is the route name (beware of name collision!). Value is the versioned route.\r\n     */\r\n     public function getRoutes()\r\n     {\r\n            return array( \'foo\'&amp;    =&gt; new ezpRestVersionedRoute( new  ezcMvcRailsRoute( \'/foo\', \'ezxRestController\', \'foo\' ), 1 ),\r\n                                 \'foobar\' =&gt; new ezpRestVersionedRoute( new  ezcMvcRailsRoute( \'/foo\', \'ezxRestController\', \'fooBar\' ), 2 ) );\r\n     }\r\n \r\n    /**\r\n     * Returns associated with provider view controller\r\n     *\r\n     * @return ezpRestViewController\r\n     */\r\n     public function getViewController()\r\n     {\r\n             return new ezxRestApiViewController();\r\n     }\r\n }\r\n \r\n ?&gt;' ); return false;" /></p>
 <![endif]--><p>Every REST API provider has to implement the “ezpRestProviderInterface” where “getRoutes()” methods returns registered versioned routes for provider and “getViewController()” returns view controller object which has to implement the “ezpRestViewControllerInterface”.</p>
 <ul>
-<li><div>In the next step create the file “view_controller.php” under the “&lt;eZ Publish&gt;/extension/ezxrestapidemo/classes” folder with following code:</div></li>
+<li><div>In the next step create the file “view_controller.php” under the “&lt;Exponential&gt;/extension/ezxrestapidemo/classes” folder with following code:</div></li>
 </ul>
 <pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">&nbsp;</span>
@@ -112,7 +112,7 @@
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php\r\n\r\nclass ezxRestApiViewController implements ezpRestViewControllerInterface\r\n\r\n{\r\n           /**\r\n           * Creates a view required by controller\'s result\r\n           *\r\n           * @param ezcMvcRoutingInformation $routeInfo\r\n           * @param ezcMvcRequest $request\r\n           * @param ezcMvcResult $result\r\n           * @return ezcMvcView\r\n           */\r\n           public function loadView( ezcMvcRoutingInformation $routeInfo, ezcMvcRequest $request, ezcMvcResult $result )\r\n           {\r\n                    return new ezpRestJsonView( $request, $result );\r\n           }\r\n\r\n}\r\n\r\n?&gt;' ); return false;" /></p>
 <![endif]--><p>Every view controller has to implement the “ezpRestViewControllerInterface” where the “loadView()” method returns an instance of the “ezcMvcView” object. In this example we re-use the “ezpRestJsonView” which is a part of &nbsp;the built-in API, if your provider need a custom view, you can return it here.</p>
 <ul>
-<li><div>Registered for REST provider URIs are associated with controllers. This example calls the methods foo() and fooBar() on “ezxRestController”. Create a file called “rest_controller.php” under “&lt;eZ Publish&gt;/extension/ezxrestapidemo/classes” folder and put the following code inside:</div></li>
+<li><div>Registered for REST provider URIs are associated with controllers. This example calls the methods foo() and fooBar() on “ezxRestController”. Create a file called “rest_controller.php” under “&lt;Exponential&gt;/extension/ezxrestapidemo/classes” folder and put the following code inside:</div></li>
 </ul>
 <pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">&nbsp;</span>
@@ -150,7 +150,7 @@
 <span class="line">ActiveExtensions[]=ezxrestapidemo</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\n[ExtensionSettings]\r\n    [...]\r\n    ActiveExtensions[]=oauth\r\nActiveExtensions[]=rest\r\nActiveExtensions[]=ezprestapiprovider\r\nActiveExtensions[]=ezxrestapidemo\r\n' ); return false;" /></p>
-<![endif]--><p>Update the autoload array with a following command from the eZ Publish root folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezpgenerateautoloads.php -e -p</span>
+<![endif]--><p>Update the autoload array with a following command from the Exponential root folder:</p><pre class="wordwrap"><span class="line">php bin/php/ezpgenerateautoloads.php -e -p</span>
 </pre>
 <ul>
 <li><div>If you have followed all steps carefully then you should be ready to test your new REST API provider by calling</div></li>
@@ -165,11 +165,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.5/Features/Rest-API/Extension-functionality/Steps/Step-3-Extending-the-REST-API by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:38:39 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/4.5/Features/Rest-API/Extension-functionality/Steps/Step-3-Extending-the-REST-API by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:38:39 GMT -->
 </html>

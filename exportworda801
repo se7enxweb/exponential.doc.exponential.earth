@@ -409,7 +409,7 @@ one, normally 10 - 20 minutes, on all session based interfaces.</p>
 and templates&gt;</p>
 <h2 id=3D"Developmentguidelines-PHP">PHP</h2>
 <p>For now see our comprehensive coding standard &amp; guidelines <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/wiki/codingstandards" cla=
+=3D"https://github.com/ezsystems/exponential-kernel/wiki/codingstandards" cla=
 ss=3D"external-link" rel=3D"nofollow">wiki page</a> on github.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">

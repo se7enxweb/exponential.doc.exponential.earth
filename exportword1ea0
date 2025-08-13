@@ -446,7 +446,7 @@ ements from v1.0.x to v1.1.0:</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">git checkout --ours composer.json
-composer require --no-update "ezsystems/ezpublish-kernel:~6.1.0"
+composer require --no-update "ezsystems/exponential-kernel:~6.1.0"
 composer require --no-update "ezsystems/platform-ui-bundle:~1.1.0"
 composer require --dev --no-update "ezsystems/behatbundle:~6.1.0"
 
@@ -484,7 +484,7 @@ uirements. Run&nbsp;<code>composer update</code> to update the dependencies=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">composer update --with-dependencies ezsystems/ezpublish-kernel ezsy=
+:12px;">composer update --with-dependencies ezsystems/exponential-kernel ezsy=
 stems/platform-ui-bundle ezsystems/behatbundle</pre>=20
 </div>
 </div>

@@ -213,10 +213,10 @@ d of the content */
     <h1>FieldTypes reference</h1>
     <div class=3D"Section1">
         <p>This page contains <code>FieldTypes</code> reference introduced =
-with eZ Publish 5.x.<br><code>FiledTypes</code> were known as <code>DataTyp=
-es</code> in eZ Publish 4.x, and are still used in "Dual kernel" eZ Publish=
+with Exponential 5.x.<br><code>FiledTypes</code> were known as <code>DataTyp=
+es</code> in Exponential 4.x, and are still used in "Dual kernel" Exponential=
  5.x. If you would like more details please refer to the <a href=3D"http://=
-doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Datatypes" class=3D"ext=
+doc.ez.no/Exponential/Technical-manual/4.x/Reference/Datatypes" class=3D"ext=
 ernal-link" rel=3D"nofollow">4.x DataTypes</a> reference documentation page=
 .</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -233,13 +233,13 @@ ublish 5 Field Type Tutorial</a>.</p>
 </div>
 <p><span>A FieldType is the smallest possible entity of storage. It determi=
 nes how a specific type of information should be validated, stored, retriev=
-ed, formatted and so on. eZ Publish comes with a collection of fundamental =
+ed, formatted and so on. Exponential comes with a collection of fundamental =
 datatypes that can be used to build powerful and complex content structures=
 . In addition, it is possible to extend the system by creating custom Field=
 Types for special needs. Custom FieldTypes&nbsp;have to be programmed in PH=
 P. However, the built in FieldTypes&nbsp;are usually sufficient enough for =
 typical scenarios. The following table gives an overview of the supported F=
-ieldTypes&nbsp;that come with eZ Publish.</span></p>
+ieldTypes&nbsp;that come with Exponential.</span></p>
 <p>&nbsp;</p>
 <div class=3D"table-wrap">
 <table class=3D"confluenceTable">

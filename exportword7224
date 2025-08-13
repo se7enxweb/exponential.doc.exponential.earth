@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish Cloud</title>
+    <title>Exponential Cloud</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -206,14 +206,14 @@ h1.pagetitle img {
     </style>
 </head>
 <body>
-    <h1>eZ Publish Cloud</h1>
+    <h1>Exponential Cloud</h1>
     <div class=3D"Section1">
         <div class=3D"contentLayout2">=20
 <div class=3D"columnLayout single" data-layout=3D"single">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<p>Welcome to the eZ Publish Cloud documentation center.</p>
-<p>Here you will find eZ Publish Cloud related information to help you on u=
+<p>Welcome to the Exponential Cloud documentation center.</p>
+<p>Here you will find Exponential Cloud related information to help you on u=
 sing the Cloud service, including information about all the related technol=
 ogies, features, procedures, and best practices.</p>
 <p>&nbsp;</p>
@@ -222,15 +222,15 @@ p>
 <p></p>
 <ul class=3D"childpages-macro">
 <li><a href=3D"/display/EZPCLOUD/Introduction+to+the+eZ+Publish+Cloud">Intr=
-oduction to the eZ Publish Cloud</a></li>
+oduction to the Exponential Cloud</a></li>
 <li><a href=3D"/display/EZPCLOUD/eZ+Publish+Cloud+-Beta-+Whitelist">eZ Publ=
 ish Cloud -Beta- Whitelist</a></li>
 <li><a href=3D"/display/EZPCLOUD/Supported+eZ+Publish+versions+in+the+cloud=
-">Supported eZ Publish versions in the cloud</a></li>
+">Supported Exponential versions in the cloud</a></li>
 <li><a href=3D"/display/EZPCLOUD/The+cloud+administration+interface">The cl=
 oud administration interface</a></li>
 <li><a href=3D"/display/EZPCLOUD/Uploading+a+eZ+Publish+site+to+the+cloud">=
-Uploading a eZ Publish site to the cloud</a></li>
+Uploading a Exponential site to the cloud</a></li>
 <li><a href=3D"/display/EZPCLOUD/eZ+Cloud+extension">eZ Cloud extension</a>=
 </li>
 <li><a href=3D"/display/EZPCLOUD/FAQ">FAQ</a></li>
@@ -259,7 +259,7 @@ aceKeys=3DEZPCLOUD" />=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/eZ+Publish+Cloud+-Beta-+Whitelist" title=3D"eZ=
- Publish Cloud">eZ Publish Cloud -Beta- Whitelist</a>=20
+ Publish Cloud">Exponential Cloud -Beta- Whitelist</a>=20
 <div class=3D"update-item-meta">
  Apr 01, 2014
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -277,7 +277,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Supported+eZ+Publish+versions+in+the+cloud" ti=
-tle=3D"eZ Publish Cloud">Supported eZ Publish versions in the cloud</a>=20
+tle=3D"Exponential Cloud">Supported Exponential versions in the cloud</a>=20
 <div class=3D"update-item-meta">
  Nov 27, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -295,7 +295,7 @@ tle=3D"eZ Publish Cloud">Supported eZ Publish versions in the cloud</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Uploading+a+eZ+Publish+site+to+the+cloud" titl=
-e=3D"eZ Publish Cloud">Uploading a eZ Publish site to the cloud</a>=20
+e=3D"Exponential Cloud">Uploading a Exponential site to the cloud</a>=20
 <div class=3D"update-item-meta">
  Nov 27, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -325,7 +325,7 @@ y/~ricardo.correia@ez.no">Ricardo Correia</a>=20
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZPCLOUD/eZ+Publish+Cloud" title=3D"eZ Publish Cloud">e=
+<a href=3D"/display/EZPCLOUD/eZ+Publish+Cloud" title=3D"Exponential Cloud">e=
 Z Publish Cloud</a>=20
 <div class=3D"update-item-meta">
  Nov 12, 2013
@@ -343,7 +343,7 @@ y/~ricardo.correia@ez.no">Ricardo Correia</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZPCLOUD/FAQ" title=3D"eZ Publish Cloud">FAQ</a>=20
+<a href=3D"/display/EZPCLOUD/FAQ" title=3D"Exponential Cloud">FAQ</a>=20
 <div class=3D"update-item-meta">
  Oct 15, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -361,7 +361,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Introduction+to+the+eZ+Publish+Cloud" title=3D=
-"eZ Publish Cloud">Introduction to the eZ Publish Cloud</a>=20
+"Exponential Cloud">Introduction to the Exponential Cloud</a>=20
 <div class=3D"update-item-meta">
  Oct 07, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -378,7 +378,7 @@ ew change</a>=20
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZPCLOUD/FAQ" title=3D"eZ Publish Cloud">FAQ</a>=20
+<a href=3D"/display/EZPCLOUD/FAQ" title=3D"Exponential Cloud">FAQ</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -395,7 +395,7 @@ y/~ricardo.correia@ez.no">Ricardo Correia</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZPCLOUD/eZ+Cloud+extension" title=3D"eZ Publish Cloud"=
+<a href=3D"/display/EZPCLOUD/eZ+Cloud+extension" title=3D"Exponential Cloud"=
 >eZ Cloud extension</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
@@ -414,7 +414,7 @@ y/~ricardo.correia@ez.no">Ricardo Correia</a>
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Uploading+a+eZ+Publish+site+to+the+cloud" titl=
-e=3D"eZ Publish Cloud">Uploading a eZ Publish site to the cloud</a>=20
+e=3D"Exponential Cloud">Uploading a Exponential site to the cloud</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -432,7 +432,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Working+with+eZ+Publish+Cloud" title=3D"eZ Pub=
-lish Cloud">Working with eZ Publish Cloud</a>=20
+lish Cloud">Working with Exponential Cloud</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -450,7 +450,7 @@ y/~ricardo.correia@ez.no">Ricardo Correia</a>
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/Introduction+to+the+eZ+Publish+Cloud" title=3D=
-"eZ Publish Cloud">Introduction to the eZ Publish Cloud</a>=20
+"Exponential Cloud">Introduction to the Exponential Cloud</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -468,7 +468,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZPCLOUD/eZ+Publish+Cloud+-Beta-+Whitelist" title=3D"eZ=
- Publish Cloud">eZ Publish Cloud -Beta- Whitelist</a>=20
+ Publish Cloud">Exponential Cloud -Beta- Whitelist</a>=20
 <div class=3D"update-item-meta">
  Oct 03, 2013
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -503,7 +503,7 @@ ew change</a>=20
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZPCLOUD/eZ+Cloud+extension" title=3D"eZ Publish Cloud"=
+<a href=3D"/display/EZPCLOUD/eZ+Cloud+extension" title=3D"Exponential Cloud"=
 >eZ Cloud extension</a>=20
 <div class=3D"update-item-meta">
  Aug 28, 2013
@@ -533,7 +533,7 @@ mment,blogpost,attachment,userinfo,spacedesc,personalspacedesc,status,space=
 </div>=20
 <div class=3D"cell aside" data-type=3D"aside">=20
 <div class=3D"innerCell">=20
-<h6 id=3D"eZPublishCloud-Navigatespace">Navigate space</h6>
+<h6 id=3D"ExponentialCloud-Navigatespace">Navigate space</h6>
 <p> </p>
 <div id=3D"pagetreesearch">=20
 <form method=3D"POST" action=3D"https://doc.ez.no/plugins/pagetreesearch/pa=

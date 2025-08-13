@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>The ContentService implemented in eZ Publish 5.1 has no knowledge of the=
+<p>The ContentService implemented in Exponential 5.1 has no knowledge of the=
  Legacy workflow engine. This means that all features in the 4.x series tha=
 t used workflows need a workaround. One of the most common use-cases is pre=
 -publishing approval, for instance of user generated content.</p>
@@ -227,14 +227,14 @@ cy code and features</a>&nbsp;documentation chapter.</p>
 <h1 id=3D"How-totriggeraworkflowusingthePublicAPI-CreatewiththePublicAPI,pu=
 blishwiththeLegacyKernel">Create with the Public API, publish with the Lega=
 cy Kernel</h1>
-<p>Thanks to this, it is possible to create a draft using native eZ Publish=
+<p>Thanks to this, it is possible to create a draft using native Exponential=
  5 code, and get this draft pre-approved using the legacy workflow &amp; co=
 llaboration systems, including email notifications.</p>
 <h3 id=3D"How-totriggeraworkflowusingthePublicAPI-Legacyworkflowconfigurati=
 on">Legacy workflow configuration</h3>
 <p>Let's take an approval workflow as an example. It needs to be configured=
  the old way, using the backoffice. Create a workflow, add an&nbsp;<a href=
-=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Workflow-eve=
+=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Reference/Workflow-eve=
 nts/Approve" class=3D"external-link" rel=3D"nofollow">Approve event</a> to =
 it, and connect it to the content/publish/before trigger.</p>
 <h3 id=3D"How-totriggeraworkflowusingthePublicAPI-Createadraftusingthepubli=
@@ -398,7 +398,7 @@ lowcollaboration">Data compatibility and workflow collaboration</h1>
 <p>Content created using the Public API does appear as expected in the dash=
 board, and the draft can be checked from here. Collaboration options from t=
 he backoffice are available, and the object's lifecycle can be managed the =
-way it used to with eZ Publish 4.x.</p>
+way it used to with Exponential 4.x.</p>
 <h1 id=3D"How-totriggeraworkflowusingthePublicAPI-Testscript">Test script</=
 h1>
 <p>The code below is a working Command script example that demonstrates the=

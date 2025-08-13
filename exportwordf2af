@@ -226,7 +226,7 @@ tup</h2>
 <p>Virtual hosts are usually defined at the bottom of "<code>httpd.conf</co=
 de>", which is the main configuration file for Apache, or in a separate con=
 figuration file included from <code>httpd.conf</code>.</p>
-<p>Adding a virtual host for eZ Publish can be done by copying the followin=
+<p>Adding a virtual host for Exponential can be done by copying the followin=
 g lines and replacing the text encapsulated by the square brackets with act=
 ual values. Please refer to the next section for a real life example of usi=
 ng virtual hosts.</p>
@@ -282,7 +282,7 @@ s|lib|javascripts?)/.* - [L]
         RewriteRule ^/var/storage/packages/.* - [L]
 =20
         # Makes it possible to place your favicon at the root of your
-        # eZ Publish instance. It will then be served directly.
+        # Exponential instance. It will then be served directly.
         RewriteRule ^/favicon\.ico - [L]
         # Uncomment the line below if you want you favicon be served
         # from the standard design. You can customize the path to
@@ -307,8 +307,8 @@ acy
 ish5 / Symfony bundles
         RewriteRule ^/bundles/ - [L]
 &nbsp;
-        # Additional Assetic rules for eZ Publish 5.1 / 2013.4 and higher.
-        # Don't forget to run php ezpublish/console assetic:dump --env=3Dpr=
+        # Additional Assetic rules for Exponential 5.1 / 2013.4 and higher.
+        # Don't forget to run php exponential/console assetic:dump --env=3Dpr=
 od
         # Comment when in dev environment
         RewriteRule ^/css/.*\.css - [L]
@@ -347,8 +347,8 @@ che allows the usage of a wildcards here ("*").</td>
 </tr>
 <tr>
 <td class=3D"confluenceTd">[PATH_TO_EZPUBLISH]</td>
-<td class=3D"confluenceTd">Path to the directory that contains eZ Publish. =
-This must be the full path, for example "<code>/var/www/ezpublish-3.6.0</co=
+<td class=3D"confluenceTd">Path to the directory that contains Exponential. =
+This must be the full path, for example "<code>/var/www/exponential-3.6.0</co=
 de>".</td>
 </tr>
 <tr>
@@ -414,7 +414,7 @@ ed to the virtualhost configuration to take advantage of it:</p>
     # to suite project needs.
     &lt;IfModule mod_expires.c&gt;
         &lt;LocationMatch "^/var/[^/]+/storage/images/.*"&gt;
-            # eZ Publish appends the version number to image URL (ezimage
+            # Exponential appends the version number to image URL (ezimage
             # datatype) so when an image is updated, its URL changes to
             ExpiresActive on
             ExpiresDefault "now plus 10 years"
@@ -435,7 +435,7 @@ es|javascripts?|flash)/.*"&gt;
 =20
         &lt;LocationMatch "^/design/[^/]+/(stylesheets|images|javascripts?|=
 lib|flash)/.*"&gt;
-            # Same as above for bundled eZ Publish designs
+            # Same as above for bundled Exponential designs
             ExpiresActive on
             ExpiresDefault "now plus 7 days"
         &lt;/LocationMatch&gt;

@@ -4,12 +4,12 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Template-operators/Miscellaneous/attribute by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:40:27 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Template-operators/Miscellaneous/attribute by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:40:27 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                           
-    <title>attribute / Miscellaneous / Template operators / Reference / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>attribute / Miscellaneous / Template operators / Reference / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -21,10 +21,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,10 +40,10 @@
 </div>
 <h3>Summary</h3>
 Makes it possible to inspect the contents of arrays, hashes and objects.<h3>Usage</h3>
-<pre>eZ Publish 4.5 and earlier releases:
+<pre>Exponential 4.5 and earlier releases:
 input|attribute( [show_values [, level [, table ] ] ] )
 
-eZ Publish 4.6 and later
+Exponential 4.6 and later
 input|attribute( [show_values [, level [, outputformat ] ] ] )
 </pre><h3>Parameters</h3><table class="list" cellspacing="0">
 <tr><th>Name</th><th>Type</th><th>Description</th><th>Required</th></tr><tr class="bglight">
@@ -68,7 +68,7 @@ input|attribute( [show_values [, level [, outputformat ] ] ] )
         <td>No.</td>
     </tr></table><h3>Returns</h3>
 A string revealing information about the target.<h3>Description</h3>
-<p>This operator extracts all available keys, attribute names and/or methods that belong to the input parameter (must be either an object, an array or a hash). By default, the array keys, object attribute names and their types will be revealed. By passing &quot;show&quot; as the first parameter, the operator will also return the values. The second parameter can be used to control the number of levels/children that should be expanded and included in the result (the default setting is 2). A large level value may cause the system to be trapped in a recursive/infinite loop. The returned result is an HTML table containing the retrieved information. If &quot;false()&quot; is passed as the third parameter, the output will be a plain string instead of an HTML table. Please refer to the <a href="../../../Templates/The-template-language/Array-and-object-inspection.html" target="_self">&quot;Array and object inspection&quot; </a>section of the &quot;Templates&quot; chapter for more information about the use of this operator.</p><p><b>*Note 1:</b> As of version 4.6 the parameter &quot;outputformat&quot; has become a string. The string specifies the output format. The default output format is 'html', but 'text' is also supported. Other custom output formats can be written. See in &quot;Description&quot; field below.</p><p><b>*Note 2:</b> As of the 4.6 version of eZ Publish you can create your own <a href="attribute/How-to-create-a-custom-output-formatter-for-the-te" target="_self">output format handlers</a>.</p><h3>Examples</h3>
+<p>This operator extracts all available keys, attribute names and/or methods that belong to the input parameter (must be either an object, an array or a hash). By default, the array keys, object attribute names and their types will be revealed. By passing &quot;show&quot; as the first parameter, the operator will also return the values. The second parameter can be used to control the number of levels/children that should be expanded and included in the result (the default setting is 2). A large level value may cause the system to be trapped in a recursive/infinite loop. The returned result is an HTML table containing the retrieved information. If &quot;false()&quot; is passed as the third parameter, the output will be a plain string instead of an HTML table. Please refer to the <a href="../../../Templates/The-template-language/Array-and-object-inspection.html" target="_self">&quot;Array and object inspection&quot; </a>section of the &quot;Templates&quot; chapter for more information about the use of this operator.</p><p><b>*Note 1:</b> As of version 4.6 the parameter &quot;outputformat&quot; has become a string. The string specifies the output format. The default output format is 'html', but 'text' is also supported. Other custom output formats can be written. See in &quot;Description&quot; field below.</p><p><b>*Note 2:</b> As of the 4.6 version of Exponential you can create your own <a href="attribute/How-to-create-a-custom-output-formatter-for-the-te" target="_self">output format handlers</a>.</p><h3>Examples</h3>
 <a name="eztoc92905_0_0_1" id="eztoc92905_0_0_1"></a><h4>Example 1</h4><pre class="wordwrap copytoclipboard"><span class="line">{def $example=hash( 'Name', &nbsp;'John Doe',</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Age', &nbsp;&nbsp;24,</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Phone', '555-3212' )}</span>
@@ -202,11 +202,11 @@ A string revealing information about the target.<h3>Description</h3>
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Template-operators/Miscellaneous/attribute by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:40:30 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Template-operators/Miscellaneous/attribute by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:40:30 GMT -->
 </html>

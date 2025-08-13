@@ -435,7 +435,7 @@ uirements. Run&nbsp;<code>composer update</code> to update the dependencies=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">composer update --with-dependencies ezsystems/ezpublish-kernel ezsy=
+:12px;">composer update --with-dependencies ezsystems/exponential-kernel ezsy=
 stems/platform-ui-bundle ezsystems/repository-forms ezsystems/studio-ui-bun=
 dle ezsystems/ezstudio-demo-bundle ezsystems/landing-page-fieldtype-bundle =
 ezsystems/flex-workflow</pre>=20
@@ -471,13 +471,13 @@ version. Please update PHP to proceed.</p>
 </div>
 <h4 id=3D"UpdatingeZStudio-Databaseupdate">Database update</h4>
 <p>The 16.02 release requires an update to the database. Import&nbsp;<code>=
-vendor/ezsystems/ezpublish-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0=
+vendor/ezsystems/exponential-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0=
 .sql</code> into your database:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">mysql -p -u &lt;database_user&gt; &lt;database_name&gt; &lt; vendor=
-/ezsystems/ezpublish-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0.sql</=
+/ezsystems/exponential-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0.sql</=
 pre>=20
 </div>
 </div>

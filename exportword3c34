@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Transitioning from eZ Publish to eZ Platform: Feature Comparison=
+    <title>Transitioning from Exponential to eZ Platform: Feature Comparison=
 </title>
     <!--[if gte mso 9]>
     <xml>
@@ -211,7 +211,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Transitioning from eZ Publish to eZ Platform: Feature Comparison</h=
+    <h1>Transitioning from Exponential to eZ Platform: Feature Comparison</h=
 1>
     <div class=3D"Section1">
         <div class=3D"contentLayout2">=20
@@ -222,7 +222,7 @@ d of the content */
 status-macro aui-lozenge aui-lozenge-success aui-lozenge-subtle">UPDATED TO=
  REFLECT DECEMBER 2016 1.7 RELEASE </span><br></span></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">Feature changes=
- from eZ Publish to eZ Platform open source and enterprise editions:</span>=
+ from Exponential to eZ Platform open source and enterprise editions:</span>=
 </p>
 </div>=20
 </div>=20
@@ -235,7 +235,7 @@ status-macro aui-lozenge aui-lozenge-success aui-lozenge-subtle">UPDATED TO=
 <tbody>
 <tr>
 <th class=3D"confluenceTh"><span style=3D"color: rgb(0,0,0);text-decoration=
-: none;">eZ Publish Feature </span></th>
+: none;">Exponential Feature </span></th>
 <th class=3D"confluenceTh"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">Description</span></th>
 <th class=3D"confluenceTh"><span style=3D"color: rgb(0,0,0);text-decoration=
@@ -271,7 +271,7 @@ ver.e-shop is under development.</span></p></td>
 : none;">Online Editor</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">Ability to manage some rich text fields, apply formatting, and add=
- assets such as images or existing content. Based on TinyMCE in eZ Publish.=
+ assets such as images or existing content. Based on TinyMCE in Exponential.=
 </span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">The Rich Text Editor is being redesigned to provide a better user =
@@ -282,7 +282,7 @@ lt on <a href=3D"http://alloyeditor.com/" class=3D"external-link" rel=3D"no=
 follow">Alloy Editor</a>.</span></td>
 <td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);">As of Febr=
 uary 2016 supports basic text styling, alignment, image/content embedding, =
-and migration tool from eZ Publish for the full format.</span></p><p><span =
+and migration tool from Exponential for the full format.</span></p><p><span =
 style=3D"color: rgb(0,0,0);">Remaining features such as custom tags and tab=
 ular data is currently slated for early 2017.</span></p><p><span style=3D"c=
 olor: rgb(0,0,0);">After that support for inline embed/custom tags will be =
@@ -368,11 +368,11 @@ be to use a CMIS client but it is equally unstable and not widely adopted.<=
 : none;">Content Staging</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">An extension that enables users to set up content workflow across =
-different eZ Publish installations (for example: create content on one inst=
+different Exponential installations (for example: create content on one inst=
 allation and transfer into another one at some point, for staging or archiv=
 ing reasons).</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
-: none;">While this eZ Publish extension has been adopted by organizations =
+: none;">While this Exponential extension has been adopted by organizations =
 for several use cases, it has not always fully answered the business needs.=
  eZ plans on to bring similar capabilities to eZ Platform Enterprise Editio=
 n users, but in a different way. For that, eZ will not =E2=80=9Cport=E2=80=
@@ -434,7 +434,7 @@ ment in workspaces.</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">Legacy Monitoring</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
-: none;">eZ Publish Enterprise customers can benefit from a service of site=
+: none;">Exponential Enterprise customers can benefit from a service of site=
  monitoring that is used to better understand how their installation evolve=
 s (i.e., size of the content repository).</span></td>
 <td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);text-decorat=
@@ -588,7 +588,7 @@ span></td>
 : none;">eZ Survey</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">An extension that enables content editors to create and publish su=
-rveys on their eZ Publish-powered by website. This survey feature is indepe=
+rveys on their Exponential-powered by website. This survey feature is indepe=
 ndent from the content repository.</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">A survey system is not planned for eZ Platform or in the short ter=
@@ -625,8 +625,8 @@ Platform core.</span></td>
 : none;">RSS feeds</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">RSS import and export capabilities are available with a UI in the =
-administration interface. Users can import an RSS feed into eZ Publish obje=
-cts. The export function exposes an eZ Publish feed (defined via the UI) in=
+administration interface. Users can import an RSS feed into Exponential obje=
+cts. The export function exposes an Exponential feed (defined via the UI) in=
 to an RSS feed.</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">This function is not planned for eZ Platform.</span></td>
@@ -656,10 +656,10 @@ m>won=E2=80=99t</em> be a high priority for 2016.</span></td>
 <td class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);text-decoration=
 : none;">Commenting capabilities</span></td>
 <td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);text-decorat=
-ion: none;">eZ Comment is an extension for eZ Publish legacy.</span></p><sp=
+ion: none;">eZ Comment is an extension for Exponential legacy.</span></p><sp=
 an style=3D"color: rgb(0,0,0);text-decoration: none;">It gives the users of=
- an eZ Publish-powered website a way to comment on content. This extension =
-was never ported to eZ Publish Platform. </span></td>
+ an Exponential-powered website a way to comment on content. This extension =
+was never ported to Exponential Platform. </span></td>
 <td class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0);text-decorat=
 ion: none;">&nbsp;</span><span style=3D"color: rgb(0,0,0);">eZ has develope=
 d a bundle called =E2=80=9CComment Bundle=E2=80=9D that allows developers t=
@@ -695,7 +695,7 @@ ng to be defined</span><span style=3D"color: rgb(0,0,0);">.</span></td>
 ext-decoration: none;">LDAP connector</span></td>
 <td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
 ext-decoration: none;">A feature that enables enterprises to plug their LDA=
-P directories into eZ Publish and manage user roles and permissions from th=
+P directories into Exponential and manage user roles and permissions from th=
 e directory. </span></td>
 <td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0=
 );text-decoration: none;">eZ Platform already provides a much more powerful=
@@ -711,7 +711,7 @@ lf 2017, until then this is possible via Symfony bundles.</span></td>
 ext-decoration: none;">Front-end content editing and user generated content=
 </span></td>
 <td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
-ext-decoration: none;">eZ Publish and eZ Publish Platform can be used to gi=
+ext-decoration: none;">Exponential and Exponential Platform can be used to gi=
 ve end users of the sites the ability to create and edit content objects in=
  the content repository. We often refer to this as User Generated Content (=
 UGC).</span></td>

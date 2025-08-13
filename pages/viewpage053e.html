@@ -728,8 +728,8 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         &lt;/form&gt;
     {% endblock %}
 {% endblock %}]]></script>
-</div></div><p><span><span>The layout used by default is </span><code>%ezpublish.content_view.viewbase_layout%</code><span> (empty layout) but can be configured easily together with the login template:</span></span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+</div></div><p><span><span>The layout used by default is </span><code>%exponential.content_view.viewbase_layout%</code><span> (empty layout) but can be configured easily together with the login template:</span></span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         my_siteaccess:
             user:
@@ -738,7 +738,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 </div></div><h4 id="Authentication-Redirectionafterlogin">Redirection after login</h4><p>By default, Symfony redirects to the <a href="http://symfony.com/doc/2.3/reference/configuration/security.html" class="external-link" rel="nofollow">URI configured in <code>security.yml</code> as <code>default_target_path</code></a>. If not set, it will default to <code>/</code>.</p><p>This setting can be set by siteaccess, via <a href="../display/TECHDOC/EzPublishCoreBundle%2bConfiguration.html#EzPublishCoreBundleConfiguration-EzPublishCoreBundleConfiguration-Defaultpage"><code>default_page</code> setting</a>.</p><h3 id="Authentication-Configuration">Configuration</h3><p><span>To use Symfony authentication with eZ Platform, the configuration goes as follows:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app/config/security.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             form_login:
@@ -747,12 +747,12 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 </div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app/config/routing.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[login:
     path:   /login
-    defaults:  { _controller: ezpublish.security.controller:loginAction }
+    defaults:  { _controller: exponential.security.controller:loginAction }
 login_check:
     path:   /login_check
 logout:
     path:   /logout]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>You can fully customize the routes and/or the controller used for login. However, remember to match <code>login_path</code>, <code>check_path</code> and <code>logout.path</code> from <code>security.yml</code>.</p><p>See <a href="http://symfony.com/doc/2.3/reference/configuration/security.html" class="external-link" rel="nofollow">security configuration reference</a> and <a href="http://symfony.com/doc/2.3/book/security.html#using-a-traditional-login-form" class="external-link" rel="nofollow">standard login form documentation</a>.</p></div></div><p> </p><h3 id="Authentication-Accesscontrol">Access control</h3><p>See the <a href="../eZ-Publish/Technical-manual/5.x/Concepts-and-basics/Access-control.html" class="external-link" rel="nofollow">documentation on access control.</a></p><h3 id="Authentication-Rememberme">Remember me</h3><p>It is possible to use the <code>remember_me</code> functionality. For this you can refer to the <a href="http://symfony.com/doc/2.3/cookbook/security/remember_me.html" class="external-link" rel="nofollow">Symfony cookbook on this topic</a>.</p><p>If you want to use this feature, you must at least extend the login template in order to add the required checkbox:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>You can fully customize the routes and/or the controller used for login. However, remember to match <code>login_path</code>, <code>check_path</code> and <code>logout.path</code> from <code>security.yml</code>.</p><p>See <a href="http://symfony.com/doc/2.3/reference/configuration/security.html" class="external-link" rel="nofollow">security configuration reference</a> and <a href="http://symfony.com/doc/2.3/book/security.html#using-a-traditional-login-form" class="external-link" rel="nofollow">standard login form documentation</a>.</p></div></div><p> </p><h3 id="Authentication-Accesscontrol">Access control</h3><p>See the <a href="../Exponential/Technical-manual/5.x/Concepts-and-basics/Access-control.html" class="external-link" rel="nofollow">documentation on access control.</a></p><h3 id="Authentication-Rememberme">Remember me</h3><p>It is possible to use the <code>remember_me</code> functionality. For this you can refer to the <a href="http://symfony.com/doc/2.3/cookbook/security/remember_me.html" class="external-link" rel="nofollow">Symfony cookbook on this topic</a>.</p><p>If you want to use this feature, you must at least extend the login template in order to add the required checkbox:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: xml; gutter: false; theme: Eclipse"><![CDATA[{# your_login_template.html.twig #}
 {% extends &quot;EzPublishCoreBundle:Security:login.html.twig&quot; %}
 
@@ -761,15 +761,15 @@ logout:
     &lt;input type=&quot;checkbox&quot; id=&quot;remember_me&quot; name=&quot;_remember_me&quot; checked /&gt;
     &lt;label for=&quot;remember_me&quot;&gt;Keep me logged in&lt;/label&gt;
 {% endblock %}]]></script>
-</div></div><h3 id="Authentication-Loginhandlers/SSO">Login handlers / SSO</h3><p>Symfony provides native support for <a href="http://symfony.com/doc/2.3/book/security.html#using-multiple-user-providers" class="external-link" rel="nofollow">multiple user providers</a>. This makes it easy to integrate any kind of login handlers, including SSO and existing third-party bundles (e.g. <a href="https://github.com/Maks3w/FR3DLdapBundle" class="external-link" rel="nofollow">FR3DLdapBundle</a>, <a href="https://github.com/hwi/HWIOAuthBundle" class="external-link" rel="nofollow">HWIOauthBundle</a>, <a href="https://github.com/FriendsOfSymfony/FOSUserBundle" class="external-link" rel="nofollow">FOSUserBundle</a>, <a href="http://github.com/BeSimple/BeSimpleSsoAuthBundle" class="external-link" rel="nofollow">BeSimpleSsoAuthBundle</a>, etc.).</p><p>Further explanation can be found in the <a href="../display/TECHDOC/How%2bto%2bauthenticate%2ba%2buser%2bwith%2bmultiple%2buser%2bproviders.html">multiple user providers cookbook entry</a>.</p><h3 id="Authentication-IntegrationwithLegacy">Integration with Legacy</h3><ul><li>When <strong>not</strong> in legacy mode, legacy <code>user/login</code> and <code>user/logout</code> views are deactivated.</li><li>Authenticated user is injected in legacy kernel.</li></ul><h2 id="Authentication-AuthenticationwithLegacySSOHandlers">Authentication with Legacy SSO Handlers</h2><p>To be able to use your legacy SSO (Single Sign-on) handlers, use the following config in your <code>ezpublish/config/security.yml</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Use your legacy SSO handlers</b></div><div class="codeContent panelContent pdl">
+</div></div><h3 id="Authentication-Loginhandlers/SSO">Login handlers / SSO</h3><p>Symfony provides native support for <a href="http://symfony.com/doc/2.3/book/security.html#using-multiple-user-providers" class="external-link" rel="nofollow">multiple user providers</a>. This makes it easy to integrate any kind of login handlers, including SSO and existing third-party bundles (e.g. <a href="https://github.com/Maks3w/FR3DLdapBundle" class="external-link" rel="nofollow">FR3DLdapBundle</a>, <a href="https://github.com/hwi/HWIOAuthBundle" class="external-link" rel="nofollow">HWIOauthBundle</a>, <a href="https://github.com/FriendsOfSymfony/FOSUserBundle" class="external-link" rel="nofollow">FOSUserBundle</a>, <a href="http://github.com/BeSimple/BeSimpleSsoAuthBundle" class="external-link" rel="nofollow">BeSimpleSsoAuthBundle</a>, etc.).</p><p>Further explanation can be found in the <a href="../display/TECHDOC/How%2bto%2bauthenticate%2ba%2buser%2bwith%2bmultiple%2buser%2bproviders.html">multiple user providers cookbook entry</a>.</p><h3 id="Authentication-IntegrationwithLegacy">Integration with Legacy</h3><ul><li>When <strong>not</strong> in legacy mode, legacy <code>user/login</code> and <code>user/logout</code> views are deactivated.</li><li>Authenticated user is injected in legacy kernel.</li></ul><h2 id="Authentication-AuthenticationwithLegacySSOHandlers">Authentication with Legacy SSO Handlers</h2><p>To be able to use your legacy SSO (Single Sign-on) handlers, use the following config in your <code>exponential/config/security.yml</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Use your legacy SSO handlers</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             # Adding the following entry will activate the use of old SSO handlers.
-            ezpublish_legacy_sso: ~ ]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body">If you need to<a href="http://share.ez.no/learn/ez-publish/using-a-sso-in-ez-publish" class="external-link" rel="nofollow"> create your legacy SSO Handler, please read this entry</a></div></div><p> </p><p> </p>
+            exponential_legacy_sso: ~ ]]></script>
+</div></div><div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body">If you need to<a href="http://share.ez.no/learn/exponential/using-a-sso-in-exponential" class="external-link" rel="nofollow"> create your legacy SSO Handler, please read this entry</a></div></div><p> </p><p> </p>
 
                 
         
@@ -874,7 +874,7 @@ logout:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

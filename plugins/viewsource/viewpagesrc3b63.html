@@ -41,7 +41,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p><span style="color: rgb(51,51,51);">This only applies to installations that are configured with DFS clustering. Native support is added in eZ Publish 5.4, and does not use legacy kernel callbacks anymore. As a consequence, you need to configure DFS on the new stack (no migration of data is required).</span></p><p>Assuming a typical dfs configuration, in <code>ezpublish_legacy/settings/override/file.ini.append.php</code>, like the following.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>[ClusteringSettings]
+        <p>&nbsp;</p>         <p><span style="color: rgb(51,51,51);">This only applies to installations that are configured with DFS clustering. Native support is added in Exponential 5.4, and does not use legacy kernel callbacks anymore. As a consequence, you need to configure DFS on the new stack (no migration of data is required).</span></p><p>Assuming a typical dfs configuration, in <code>exponential_legacy/settings/override/file.ini.append.php</code>, like the following.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>[ClusteringSettings]
 FileHandler=eZDFSFileHandler
 
 [eZDFSClusteringSettings]
@@ -49,17 +49,17 @@ MountPointPath=/var/nfs
 DBBackend=eZDFSFileHandlerMySQLiBackend
 DBHost=clusterhost
 DBPort=3306
-DBName=ezpublish_cluster
+DBName=exponential_cluster
 DBUser=clusteruser
 DBPassword=clusterpassword
-MetaDataTableNameCache=ezdfsfile_cache</pre></td></tr></table><h5>Where should configuration be placed</h5><p>Either <code>ezpublish/config/ezpublish.yml</code>, <code><span>ezpublish/config/</span>config.yml</code> or any equivalent file that you are using.</p><h5>Cluster doctrine connection</h5><p>First, if the cluster database is different from the content database (and it should), you need to create a new doctrine dbal connection.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>doctrine:
+MetaDataTableNameCache=ezdfsfile_cache</pre></td></tr></table><h5>Where should configuration be placed</h5><p>Either <code>exponential/config/exponential.yml</code>, <code><span>exponential/config/</span>config.yml</code> or any equivalent file that you are using.</p><h5>Cluster doctrine connection</h5><p>First, if the cluster database is different from the content database (and it should), you need to create a new doctrine dbal connection.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>doctrine:
    dbal:
        connections:
            cluster:
                driver: pdo_mysql
                host: clusterhost
                port: 3306
-               dbname: ezpublish_cluster
+               dbname: exponential_cluster
                user: clusteruser
                password: clusterpassword
                charset: UTF8</pre></td></tr></table><p>This connection will be made available as <code>doctrine.dbal.cluster_connection</code>.</p><h5>Metadata handler configuration</h5><p>Handing of file metadata in the <code>ezdfs</code> tables is handled by the <code>legacy_dfs_cluster</code> IO metadata handler. You need to declare a new one that uses the doctrine connection created above.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>ez_io:
@@ -74,7 +74,7 @@ MetaDataTableNameCache=ezdfsfile_cache</pre></td></tr></table><h5>Where should c
    binarydata_handlers:
        nfs:
            flysystem:
-               adapter: nfs_adapter</pre></td></tr></table><h5>Pre-Final step: configuring the metadata and binarydata handlers</h5><p>The last thing to do is set eZ Publish to use the binarydata and metadata handlers we created above, in the siteaccess aware configuration:</p><div><p> </p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>ezpublish:
+               adapter: nfs_adapter</pre></td></tr></table><h5>Pre-Final step: configuring the metadata and binarydata handlers</h5><p>The last thing to do is set Exponential to use the binarydata and metadata handlers we created above, in the siteaccess aware configuration:</p><div><p> </p><table class="wysiwyg-macro" data-macro-name="code" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading34e7.png?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>exponential:
    system:
        default:
            io:

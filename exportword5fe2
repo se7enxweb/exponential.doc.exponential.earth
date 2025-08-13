@@ -242,7 +242,7 @@ nd grows exponentially:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml (snippet, not a full example for stash config)</b>
+<b>exponential.yml (snippet, not a full example for stash config)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -257,7 +257,7 @@ red like this:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml (snippet, not a full example for stash config)</b>
+<b>exponential.yml (snippet, not a full example for stash config)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -274,14 +274,14 @@ ove performance of import scripts:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml (full example)</b>
+<b>exponential.yml (full example)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">stash:
     caches:
         default:
-            # Note: In eZ Publish 5.3 and earlier "drivers" is called "hand=
+            # Note: In Exponential 5.3 and earlier "drivers" is called "hand=
 lers"
             drivers: [ BlackHole ]
             inMemory: false</pre>=20

@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-eZ-Publish-extensions/Accessing-the-database by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-Exponential-extensions/Accessing-the-database by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
 <style type="text/css">
     @import url(../../../extension/ezdoc/design/doc/stylesheets/core.css);
     @import url(../../../extension/ezdoc/design/doc/stylesheets/classes.css);
@@ -29,7 +29,7 @@
 <script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
 <script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
                                   
-    <title>Accessing the database / Developing eZ Publish extensions / Tutorials / Documentation - Doc</title>
+    <title>Accessing the database / Developing Exponential extensions / Tutorials / Documentation - Doc</title>
 
     
     
@@ -41,10 +41,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../doc_hidden.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -61,8 +61,8 @@
 	    <div id="logo" class="container_12">
 
     <div class="grid_3">
-        <a href="https://ezpublish.doc.ezpublish.one/eZ-Publish/" title="eZ Publish Platform, CXM &amp; CMS">
-            <img src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/images/ez-logo.png"
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
                  alt="" height="45px"/>
         </a>
     </div>
@@ -90,14 +90,14 @@
 <h2 class="hide">Path</h2>
 
 <!-- Path content: START -->
-<p> <a href="https://ezpublish.doc.ezpublish.one/">7x</a> /
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
                         <a href="../../../doc_hidden.html">documentation</a>
         
                         /
                             <a href="../../Tutorials.html">tutorials</a>
         
                         /
-                            <a href="../Developing-eZ-Publish-extensions.html">developing ez publish exten...</a>
+                            <a href="../Developing-Exponential-extensions.html">developing exponential exten...</a>
         
                         /
                             accessing the database
@@ -114,7 +114,7 @@
 
 <!-- Main area: START -->
                                     <div id="ezp5disclaimer">
-                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 6.x.<br/>
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
                 For 5.x documentation covering <em>Platform</em> see <a href="../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
             </div>
             
@@ -149,7 +149,7 @@
 <h1>Accessing the database</h1>
 </div>
 
-<p>Now we return to the database. We want to save the value of the form in our new table jacextension_data. To do this, we use the eZ Publish class eZPersistentObject. It contains functions for creating, changing, deleting or extracting data.</p><p>To use these functions we create a new class JACExtensionData. We save it in the folder &lt;ezroot&gt;/extension/jacextension/classes with the name jacextensiondata.php (see Listing 14).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
+<p>Now we return to the database. We want to save the value of the form in our new table jacextension_data. To do this, we use the Exponential class eZPersistentObject. It contains functions for creating, changing, deleting or extracting data.</p><p>To use these functions we create a new class JACExtensionData. We save it in the folder &lt;ezroot&gt;/extension/jacextension/classes with the name jacextensiondata.php (see Listing 14).</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">class JACExtensionData extends eZPersistentObject</span>
 <span class="line">{</span>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;/**</span>
@@ -287,8 +287,8 @@
 Next we create the static functions create(), fetchByID(), fetchList(), getListCount(). There are three different types in which the data will be shown:<br />
 &nbsp;<i>eZPersistentObject::fetchObject()</i><br />
 <i>&nbsp;eZPersistentObject::fetchObjectList()</i><br /><i>&nbsp;direct SQL command</i></p><p>
-If possible, you should use the functions eZPersistentObject fetch. You should not use special SQL entries for the database, which ensures that the SQL commands will work with all the databases supported by eZ Publish. (See the related API documentation at http://pubsvn.ez.no/doxygen/4.4/html/classeZPersistentObject.html)<br />Before using this new class, we need to regenerate the autoloads array. This operation makes eZ Publish know where to find each PHP class present in the system:</p><p>
-<i>cd /path/to/ezpublish/root</i><br /><i>php bin/php/ezpgenerateautoloads.php -e -p</i></p><p>Now we use the new functions in the script &quot;create.php&quot;. To save new data we create a new object of the type JACExtensionData with the function JACExtensionData::create( $value ) . The function create() creates the transmitted value (value of the form), the current user ID and the current timestamp.</p><p>With the function store() we save the data in our database table jacextension_data. To see this happening we write these to the Debug view &quot;create.php&quot; is shown below.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
+If possible, you should use the functions eZPersistentObject fetch. You should not use special SQL entries for the database, which ensures that the SQL commands will work with all the databases supported by Exponential. (See the related API documentation at http://pubsvn.ez.no/doxygen/4.4/html/classeZPersistentObject.html)<br />Before using this new class, we need to regenerate the autoloads array. This operation makes Exponential know where to find each PHP class present in the system:</p><p>
+<i>cd /path/to/exponential/root</i><br /><i>php bin/php/ezpgenerateautoloads.php -e -p</i></p><p>Now we use the new functions in the script &quot;create.php&quot;. To save new data we create a new object of the type JACExtensionData with the function JACExtensionData::create( $value ) . The function create() creates the transmitted value (value of the form), the current user ID and the current timestamp.</p><p>With the function store() we save the data in our database table jacextension_data. To see this happening we write these to the Debug view &quot;create.php&quot; is shown below.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">// modul1/create.php – Function file of View create</span>
 <span class="line">// ...</span>
 <span class="line">$value = '';</span>
@@ -376,7 +376,7 @@ If possible, you should use the functions eZPersistentObject fetch. You should n
         <div id="footer" class="container_12">
 
             <div class="grid_3">
-                <img src="https://ezpublish.doc.ezpublish.one/extension/ezdoc/design/doc/images/ez-logo.png" alt="ez-publish" />
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
                 <div id="footer-copyright" class="grid_3 alpha omega">
                                     </div>
             </div>
@@ -403,11 +403,11 @@ If possible, you should use the functions eZPersistentObject fetch. You should n
         <div id="footer-connect-copyright" class="grid_8 alpha omega">
             Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
             <br/><br/>
-            Powered by <a href="https://se7enx.com/ezpublish" title="eZ Publish Platform">the eZ Publish Platform</a>.<br />
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
         </div>
 
         <div id="footer-connect-social" class="grid_4 right">
-            <a href="https://www.youtube.com/@eZPublishInsights" class="youtube" target="_blank">youtube</a>
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
             
             <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
             <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
@@ -442,7 +442,7 @@ If possible, you should use the functions eZPersistentObject fetch. You should n
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-eZ-Publish-extensions/Accessing-the-database by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/Tutorials/Developing-Exponential-extensions/Accessing-the-database by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:50:48 GMT -->
 </html>
 
 <!-- th[eZ] 20050804 -->

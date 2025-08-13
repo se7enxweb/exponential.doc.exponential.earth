@@ -220,7 +220,7 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This recipe is compatible with <strong>eZ Publish 5.2 / 2013.07</strong>=
+<p>This recipe is compatible with <strong>Exponential 5.2 / 2013.07</strong>=
 </p>
 </div>
 </div>
@@ -241,7 +241,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>To be able to edit a custom tag from admin interface, you'll still need =
-to <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Da=
+to <a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Reference/Da=
 tatypes/XML-block/Custom-tags" class=3D"external-link" rel=3D"nofollow">reg=
 ister your custom tag in the legacy kernel</a> (at least the configuration =
 part, template not being mandatory for edition).</p>
@@ -287,13 +287,13 @@ eet and to register it properly:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             fieldtypes:
                 ezxml:
                     custom_tags:
-                        # Adding ezpublish/Resources/my_custom.xsl (priorit=
+                        # Adding exponential/Resources/my_custom.xsl (priorit=
 y defaults to 0).
                         - { path: %kernel.root_dir%/Resources/my_custom.xsl=
  }
@@ -363,9 +363,9 @@ this is the case for all custom tags attributes in internal eZXML).</p>
 -size:12px;">&lt;xsl:stylesheet
         version=3D"1.0"
         xmlns:xsl=3D"http://www.w3.org/1999/XSL/Transform"
-        xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"
-        xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"
-        xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"
+        xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"
+        xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"
+        xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"
         exclude-result-prefixes=3D"xhtml custom image"&gt;
 
     &lt;xsl:output method=3D"html" indent=3D"yes" encoding=3D"UTF-8"/&gt;
@@ -427,7 +427,7 @@ rter">Registering a pre-converter</h3>
 <ul>
 <li>Implement&nbsp;<span> <a rel=3D"nofollow"> <code>eZ\Publish\Core\FieldT=
 ype\XmlText\Converter</code> </a> interface.</span></li>
-<li><span>Be registered as a service, with&nbsp;<code>ezpublish.ezxml.conve=
+<li><span>Be registered as a service, with&nbsp;<code>exponential.ezxml.conve=
 rter</code> tag.</span></li>
 </ul>
 <div>
@@ -447,7 +447,7 @@ services:
         class: %my.ezxml.pre_converter.class%
         arguments: [@someDependency, @someOtherDependency]
         tags:
-            - { name: ezpublish.ezxml.converter }</pre>=20
+            - { name: exponential.ezxml.converter }</pre>=20
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -515,9 +515,9 @@ code> to <code>&lt;strong&gt;</code>:</p>
 -size:12px;">&lt;xsl:stylesheet
         version=3D"1.0"
         xmlns:xsl=3D"http://www.w3.org/1999/XSL/Transform"
-        xmlns:xhtml=3D"http://ez.no/namespaces/ezpublish3/xhtml/"
-        xmlns:custom=3D"http://ez.no/namespaces/ezpublish3/custom/"
-        xmlns:image=3D"http://ez.no/namespaces/ezpublish3/image/"
+        xmlns:xhtml=3D"http://ez.no/namespaces/exponential3/xhtml/"
+        xmlns:custom=3D"http://ez.no/namespaces/exponential3/custom/"
+        xmlns:image=3D"http://ez.no/namespaces/exponential3/image/"
         exclude-result-prefixes=3D"xhtml custom image"&gt;
 &nbsp;
     &lt;!-- Original template transforms into &lt;b&gt; --&gt;
@@ -538,7 +538,7 @@ code> to <code>&lt;strong&gt;</code>:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             fieldtypes:

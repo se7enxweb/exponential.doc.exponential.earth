@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Upgrading-to-3.6/from-3.6.x-to-3.6.y by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:45 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Upgrading-to-3.6/from-3.6.x-to-3.6.y by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:45 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                         
-    <title>from 3.6.x to 3.6.y / Upgrading to 3.6 / Upgrading / eZ Publish / Documentation - Doc</title>
+    <title>from 3.6.x to 3.6.y / Upgrading to 3.6 / Upgrading / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -54,7 +54,7 @@
 </ol>
   <a name="eztoc31073_2_2" id="eztoc31073_2_2"></a><h3>MySQL</h3> <p>The database upgrade scripts are located in the &quot;update/database/mysql/3.6/&quot; directory of your eZ publish installation. Each of these scripts can be launched using the following shell command: </p><pre class="wordwrap"><span class="line">mysql -u &lt;username&gt; -p&lt;password&gt; &lt;database&gt; &lt; update/database/mysql/3.6/dbupdate-3.6.x-to-3.6.y.sql</span>
 </pre>   <a name="eztoc31073_2_3" id="eztoc31073_2_3"></a><h3>PostgreSQL</h3> <p>The database upgrade scripts are located in the &quot;update/database/postgresql/3.6/&quot; directory of your eZ publish installation. Each of these scripts can be launched using the following shell command: </p><pre class="wordwrap"><span class="line">psql -d &lt;database&gt; -U &lt;dbowner&gt; &lt; update/database/postgresql/3.6/dbupdate-3.6.x-to-3.6.y.sql</span>
-</pre>    <a name="eztoc31073_3" id="eztoc31073_3"></a><h2>Step 3: Running the system upgrade scripts</h2> <p>There are currently no upgrade scripts for upgrading from 3.6.x to 3.6.y.</p>   <a name="eztoc31073_4" id="eztoc31073_4"></a><h2>Step 4: Updating INI settings for &quot;html&quot; classification</h2> <p>In eZ publish versions from 3.6.5 to 3.6.10 it is possible to include HTML code in XML blocks by using the <a href="../../../Extensions/eZ-Publish-extensions/Online-Editor/4.x/Usage/The-toolbar/The-toolbar/The-Literal-text-button.html#html_classification" target="_self">&quot;html&quot; classification</a>. However, this feature can also be used to insert JavaScript code, making it possible for users with sufficient privileges to make an XSS exploit. This feature is therefore disabled by default in eZ publish 3.6.11 and later, and should only be enabled if you really trust your editors.</p> <p>To enable html classification, add the following lines to your &quot;content.ini.append.php&quot; file:</p> <pre class="wordwrap copytoclipboard"><span class="line">[literal]</span>
+</pre>    <a name="eztoc31073_3" id="eztoc31073_3"></a><h2>Step 3: Running the system upgrade scripts</h2> <p>There are currently no upgrade scripts for upgrading from 3.6.x to 3.6.y.</p>   <a name="eztoc31073_4" id="eztoc31073_4"></a><h2>Step 4: Updating INI settings for &quot;html&quot; classification</h2> <p>In eZ publish versions from 3.6.5 to 3.6.10 it is possible to include HTML code in XML blocks by using the <a href="../../../Extensions/Exponential-extensions/Online-Editor/4.x/Usage/The-toolbar/The-toolbar/The-Literal-text-button.html#html_classification" target="_self">&quot;html&quot; classification</a>. However, this feature can also be used to insert JavaScript code, making it possible for users with sufficient privileges to make an XSS exploit. This feature is therefore disabled by default in eZ publish 3.6.11 and later, and should only be enabled if you really trust your editors.</p> <p>To enable html classification, add the following lines to your &quot;content.ini.append.php&quot; file:</p> <pre class="wordwrap copytoclipboard"><span class="line">[literal]</span>
 <span class="line">&nbsp;# The class 'html' is disabled by default because it gives editors the</span>
 <span class="line">&nbsp;# possibility to insert html and javascript code in XML blocks.</span>
 <span class="line">&nbsp;# Don't enable the 'html' class unless you really trust all users who has</span>
@@ -74,11 +74,11 @@ Run the clear cache script:<br /> <pre class="wordwrap"><span class="line">bin/s
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Upgrading/Upgrading-to-3.6/from-3.6.x-to-3.6.y by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:45 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Exponential/Upgrading/Upgrading-to-3.6/from-3.6.x-to-3.6.y by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:05:45 GMT -->
 </html>

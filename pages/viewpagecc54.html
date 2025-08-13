@@ -725,7 +725,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 &lt;h2&gt;Content name in french (forced): {{ ez_content_name( content, &quot;fre-FR&quot; ) }}&lt;/h2&gt;]]></script>
 </div></div><h4 id="ez_content_name-EquivalentPHPcode">Equivalent PHP code</h4><h5 id="ez_content_name-GettingthetranslatednameforaContentitem">Getting the translated name for a Content item</h5><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[// Assuming we&#39;re in a controller action
-$translationHelper = $this-&gt;get( &#39;ezpublish.translation_helper&#39; );
+$translationHelper = $this-&gt;get( &#39;exponential.translation_helper&#39; );
  
 // From Content
 $translatedContentName = $translationHelper-&gt;getTranslatedContentName( $content );
@@ -733,7 +733,7 @@ $translatedContentName = $translationHelper-&gt;getTranslatedContentName( $conte
 $translatedContentName = $translationHelper-&gt;getTranslatedContentNameByContentInfo( $contentInfo );]]></script>
 </div></div><h5 id="ez_content_name-Forcingaspecificlanguage">Forcing a specific language</h5><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[// Assuming we&#39;re in a controller action
-$translatedContentName = $this-&gt;get( &#39;ezpublish.translation_helper&#39; )-&gt;getTranslatedName( $content, &#39;fre-FR&#39; );]]></script>
+$translatedContentName = $this-&gt;get( &#39;exponential.translation_helper&#39; )-&gt;getTranslatedName( $content, &#39;fre-FR&#39; );]]></script>
 </div></div></div>
 </div>
 <div class="cell aside" data-type="aside">
@@ -847,7 +847,7 @@ $translatedContentName = $this-&gt;get( &#39;ezpublish.translation_helper&#39; )
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

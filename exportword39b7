@@ -227,17 +227,17 @@ ony framework.</p>
 <p>Usually, you develop your website using one or several custom bundles as=
  this is a best practice. However, dealing with core bundles semantic confi=
 guration can be a bit tedious if you maintain it in the main <code>ezpublis=
-h/config/ezpublish.yml</code> configuration file.</p>
+h/config/exponential.yml</code> configuration file.</p>
 <p>This recipe will show you how to import configuration from a bundle the =
 manual way and the implicit way.</p>
 <h2 id=3D"Importsettingsfromabundle-Themanualway">The manual way</h2>
 <p>This is the simplest way of doing and it has the advantage to be explici=
 t. The idea is to use the <code>imports</code> statement in your main <code=
->ezpublish.yml</code>:</p>
+>exponential.yml</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -247,7 +247,7 @@ undle.
     # MyCustomBundle is the actual bundle name
     - {resource: "@AcmeTestBundle/Resources/config/templates_rules.yml"}
 &nbsp;
-ezpublish:
+exponential:
     # ...</pre>=20
 </div>
 </div>
@@ -261,7 +261,7 @@ dle</b>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;"># Here I need to reproduce the right configuration tree.
 # It will be merged with the main one
-ezpublish:
+exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -309,7 +309,7 @@ tries that are already defined in the main configuration file, <strong>they=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If you want to import configuration for development use only, you can do=
- so in your <code>ezpublish_dev.yml</code> <img class=3D"emoticon emoticon-=
+ so in your <code>exponential_dev.yml</code> <img class=3D"emoticon emoticon-=
 wink" src=3D"450b34994881dc04bd093e73c25eda70" data-emoticon-name=3D"wink" =
 alt=3D"(wink)" width=3D"16" height=3D"16"></p>
 </div>
@@ -320,7 +320,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><strong>Compatible with eZ Publish 5.1+ / Symfony 2.2+</strong> as it us=
+<p><strong>Compatible with Exponential 5.1+ / Symfony 2.2+</strong> as it us=
 es <span><code>Symfony\Component\DependencyInjection\Extension\PrependExten=
 sionInterface</code> which is available as of Symfony 2.2 (<a href=3D"http:=
 //symfony.com/doc/current/cookbook/bundles/prepend_extension.html" class=3D=
@@ -329,7 +329,7 @@ sionInterface</code> which is available as of Symfony 2.2 (<a href=3D"http:=
 </div>
 </div>
 <p><span>The following example will show you <strong>how to implicitly load=
- settings to be configure eZ Publish kernel</strong>. Note that this is als=
+ settings to be configure Exponential kernel</strong>. Note that this is als=
 o valid for any bundle&nbsp;!</span></p>
 <p><span>We assume here that you're aware of <a href=3D"http://symfony.com/=
 doc/current/book/service_container.html#importing-configuration-via-contain=
@@ -377,11 +377,11 @@ ace
         // Loading our YAML file containing our template rules
         $config =3D Yaml::parse( __DIR__ . '/../Resources/config/template_r=
 ules.yml' );
-        // We explicitly prepend loaded configuration for "ezpublish" names=
+        // We explicitly prepend loaded configuration for "exponential" names=
 pace.
-        // So it will be placed under the "ezpublish" configuration key, li=
-ke in ezpublish.yml.
-        $container-&gt;prependExtensionConfig( 'ezpublish', $config );
+        // So it will be placed under the "exponential" configuration key, li=
+ke in exponential.yml.
+        $container-&gt;prependExtensionConfig( 'exponential', $config );
     }
 }
 
@@ -395,7 +395,7 @@ ke in ezpublish.yml.
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;"># We explicitly prepend config for "ezpublish" namespace in service=
+:12px;"># We explicitly prepend config for "exponential" namespace in service=
  container extension,&nbsp;
 # so no need to repeat it here
 system:
@@ -454,7 +454,7 @@ odification time on them.</p>
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Loading configuration this way lets you override settings in your main <=
-code>ezpublish.yml</code> file.</p>
+code>exponential.yml</code> file.</p>
 </div>
 </div>
 <p>&nbsp;</p>

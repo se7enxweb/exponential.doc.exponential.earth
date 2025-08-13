@@ -213,46 +213,46 @@ d of the content */
     <h1>SPI and API repositories</h1>
     <div class=3D"Section1">
         <p style=3D"margin-left: 0.0px;">Those repositories are read-only s=
-plit of <code>ezsystems/ezpublish-kernel</code>, made available to make dep=
+plit of <code>ezsystems/exponential-kernel</code>, made available to make dep=
 endencies easier and more lightweight.</p>
 <h2 style=3D"margin-left: 0.0px;" id=3D"SPIandAPIrepositories-API">API</h2>
-<p style=3D"margin-left: 0.0px;">This package is a split of the eZ Publish =
+<p style=3D"margin-left: 0.0px;">This package is a split of the Exponential =
 5 public API. It includes the <strong>services interfaces</strong> and <str=
 ong>domain objects</strong> from the <code>eZ\Publish\API</code>&nbsp;names=
 pace.<br>It offers a lightweight way to make your project depend on the eZ =
-API and Domain objects, without depending on the whole ezpublish-kernel.<br=
+API and Domain objects, without depending on the whole exponential-kernel.<br=
 >The repository is read-only, automatically updated from <a href=3D"https:/=
-/github.com/ezsystems/ezpublish-kernel" style=3D"line-height: 1.4285715;" c=
+/github.com/ezsystems/exponential-kernel" style=3D"line-height: 1.4285715;" c=
 lass=3D"external-link" rel=3D"nofollow">https://github.com/ezsystems/ezpubl=
 ish-kernel</a>.</p>
-<p style=3D"margin-left: 0.0px;">Requiring ezpublish-api in your project:</=
+<p style=3D"margin-left: 0.0px;">Requiring exponential-api in your project:</=
 p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: js; gutter: false; theme: Eclipse" style=3D"font-size:=
 12px;">"require": {
-    "ezsystems/ezpublish-api": "~5.0"
+    "ezsystems/exponential-api": "~5.0"
 }</pre>=20
 </div>
 </div>
 <h2 style=3D"margin-left: 0.0px;" id=3D"SPIandAPIrepositories-SPI">SPI</h2>
-<p style=3D"margin-left: 0.0px;">This package is a split of the eZ Publish =
+<p style=3D"margin-left: 0.0px;">This package is a split of the Exponential =
 5 SPI (persistence interfaces).</p>
 <p style=3D"margin-left: 0.0px;">It can be used as a dependency, instead of=
- the whole ezpublish-kernel, by packages implementing <strong>custom eZ Pub=
+ the whole exponential-kernel, by packages implementing <strong>custom eZ Pub=
 lish storage engines</strong>, or by any package that requires <strong>clas=
 ses from the eZ\Publish\SPI namespace</strong>.</p>
 <p style=3D"margin-left: 0.0px;">The repository is read-only, automatically=
- updated from <a href=3D"https://github.com/ezsystems/ezpublish-kernel" cla=
+ updated from <a href=3D"https://github.com/ezsystems/exponential-kernel" cla=
 ss=3D"external-link" rel=3D"nofollow">https://github.com/ezsystems/ezpublis=
 h-kernel</a>.</p>
-<p style=3D"margin-left: 0.0px;">Requiring ezpublish-api in your project:</=
+<p style=3D"margin-left: 0.0px;">Requiring exponential-api in your project:</=
 p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: js; gutter: false; theme: Eclipse" style=3D"font-size:=
 12px;">"require": {
-    "ezsystems/ezpublish-spi": "~5.0"
+    "ezsystems/exponential-spi": "~5.0"
 }</pre>=20
 </div>
 </div>

@@ -712,10 +712,10 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[    myApp.myService:
         class: %myApp.myService.class%
         arguments:
-            - @ezpublish.cache_pool]]></script>
+            - @exponential.cache_pool]]></script>
 </div></div><p>The &quot;cache&quot; service is an instance of the following class: <code>Tedivm\StashBundle\Service\CacheService</code></p><h3 id="UsingCacheservice-ViaSymfonyContainer">Via Symfony Container</h3><p>Like any other service, it is also possible to get the &quot;cache&quot; service via container like so:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Getting the cache service in PHP</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[/** @var $cacheService \Tedivm\StashBundle\Service\CacheService */
-$cacheService = $container-&gt;get(&#39;ezpublish.cache_pool&#39;);]]></script>
+$cacheService = $container-&gt;get(&#39;exponential.cache_pool&#39;);]]></script>
 </div></div><h2 id="UsingCacheservice-Usingthecacheservice">Using the cache service</h2><p>Example usage of the cache service:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[    $cacheItem = $cacheService-&gt;getItem(&#39;myApp&#39;, &#39;object&#39;, $id);
     $myObject = $cacheItem-&gt;get();
@@ -726,7 +726,7 @@ $cacheService = $container-&gt;get(&#39;ezpublish.cache_pool&#39;);]]></script>
     return $myObject;]]></script>
 </div></div><p>For more info on usage, take a look at <a href="http://stash.tedivm.com/" class="external-link" rel="nofollow">Stash's documentation</a>.</p><h2 id="UsingCacheservice-ClearingPersistencecache">Clearing Persistence cache</h2><p>Persistence cache uses a separate Cache Pool decorator which by design prefixes cache keys with &quot;<span style="color: rgb(0,128,0);">ez_spi</span>&quot;. Clearing persistence cache can thus be done in the following way:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>getting the cache service in php</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[/** @var $cacheService \eZ\Publish\Core\Persistence\Cache\CacheServiceDecorator */
-$cacheService = $container-&gt;get(&#39;ezpublish.cache_pool.spi.cache.decorator&#39;);
+$cacheService = $container-&gt;get(&#39;exponential.cache_pool.spi.cache.decorator&#39;);
  
 // To clear all cache
 $cacheService-&gt;clear();
@@ -841,7 +841,7 @@ $cacheService-&gt;clear(&#39;content&#39;, &#39;info&#39;);]]></script>
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

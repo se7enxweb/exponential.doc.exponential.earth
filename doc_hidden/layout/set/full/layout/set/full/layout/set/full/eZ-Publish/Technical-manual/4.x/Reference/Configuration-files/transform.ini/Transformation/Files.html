@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Configuration-files/transform.ini/Transformation/Files by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:30:36 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Configuration-files/transform.ini/Transformation/Files by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:30:36 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                                 
-    <title>Files / [Transformation] / transform.ini / Configuration files / Reference / 4.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Files / [Transformation] / transform.ini / Configuration files / Reference / 4.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -58,7 +58,7 @@ This setting sets which default transformation files the system will use to take
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[Transformation]\r\n\r\nGroups[]\r\nGroups[]=groupname\r\n\r\nFiles[]\r\nFiles[]=latin.tr\r\nFiles[]=greek.tr\r\n\r\n[groupname]\r\n\r\nFiles[]=hebrew.tr' ); return false;" /></p>
 <![endif]--><p>&nbsp;</p> <p>The process of selecting the proper files, which are to be used by the system, is described here through the following example.</p> <p>
-Let's say that the current eZ Publish installation uses the &quot;utf-8&quot; charset.<br />
+Let's say that the current Exponential installation uses the &quot;utf-8&quot; charset.<br />
 On the first transformation step the system will go through the Charset setting located under the [Transformation] block which consists of two parts, charset and group, separated by a semicolon. If the first part matches the current charset, the second part is added to the list of blocks that will be used to look for transformation files.<br />For the &quot;utf-8&quot; charset there will by default be four matches in &quot;Charset&quot;:</p> <pre class="wordwrap copytoclipboard"><span class="line">Charsets[]=utf-8;latin</span>
 <span class="line">Charsets[]=utf-8;cyrillic</span>
 <span class="line">Charsets[]=utf-8;greek</span>
@@ -101,7 +101,7 @@ On the third step the system will look through the other relevant blocks in tran
 <span class="line">Files[]=search.tr</span>
 </pre><p>
 The system will also load the &quot;search.tr&quot; file in addition to the other five files that are described above.<br />
-So now, when the search engine is working on a request and the current charset of eZ Publish is set to &quot;utf-8&quot;, the system will now take the rules of character transformation from the following transformation files:<br />
+So now, when the search engine is working on a request and the current charset of Exponential is set to &quot;utf-8&quot;, the system will now take the rules of character transformation from the following transformation files:<br />
 latin.tr<br />
 cyrillic.tr<br />
 greek.tr<br />
@@ -133,11 +133,11 @@ This concludes our example.<br />The following files are located in the &quot;sh
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.x/Reference/Configuration-files/transform.ini/Transformation/Files by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:30:36 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.x/Reference/Configuration-files/transform.ini/Transformation/Files by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 02:30:36 GMT -->
 </html>

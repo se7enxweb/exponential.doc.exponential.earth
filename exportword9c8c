@@ -448,7 +448,7 @@ or =3D null )
 uses</h3>
 <p>Sometimes you will find that standard&nbsp;<span class=3D"confluence-lin=
 k"><span class=3D"confluence-link">Search Criteria</span></span> and <span =
-class=3D"confluence-link">Sort Clauses</span> provided with eZ Publish are =
+class=3D"confluence-link">Sort Clauses</span> provided with Exponential are =
 not sufficient for you needs. Most often this will be the case if you have =
 developed a custom <span class=3D"confluence-link">Field Type</span> using =
 external storage, which therefore can not be searched using standard Field =
@@ -520,17 +520,17 @@ gister it and handle your Criterion / Search Clause when it is given as a p=
 arameter to one of the Search Service methods.</p>
 <p>Available tags for Criterion handlers in Legacy Storage Engine are:</p>
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.co=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.co=
 ntent</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.lo=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.lo=
 cation</code></li>
 </ul>
 <p>Available tags for Sort Clause handlers in Legacy Storage Engine are:</p=
 >
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 content</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 location</code></li>
 </ul>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -555,15 +555,15 @@ er, common for both Content and Location Search</h4>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">services:
-  &nbsp; ezpublish.search.legacy.gateway.criterion_handler.common.content_i=
+  &nbsp; exponential.search.legacy.gateway.criterion_handler.common.content_i=
 d:
         class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\Criteri=
 onHandler\ContentId
-        arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+        arguments: [@exponential.api.storage_engine.legacy.dbhandler]
         tags:
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.conten=
+          - {name: exponential.search.legacy.gateway.criterion_handler.conten=
 t}
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.locati=
+          - {name: exponential.search.legacy.gateway.criterion_handler.locati=
 on}</pre>=20
 </div>
 </div>
@@ -577,13 +577,13 @@ h">Example of registering Depth Sort Clause handler for Location Search</h4=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish.search.legacy.gateway.sort_clause_handler.location.depth=
+e:12px;">exponential.search.legacy.gateway.sort_clause_handler.location.depth=
 :
     class: eZ\Publish\Core\Search\Legacy\Content\Location\Gateway\SortClaus=
 eHandler\Location\Depth
-    arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+    arguments: [@exponential.api.storage_engine.legacy.dbhandler]
     tags:
-        - {name: ezpublish.search.legacy.gateway.sort_clause_handler.locati=
+        - {name: exponential.search.legacy.gateway.sort_clause_handler.locati=
 on}</pre>=20
 </div>
 </div>
@@ -602,7 +602,7 @@ r.html#service-parameters" class=3D"external-link" rel=3D"nofollow">Symfony=
 <h3 class=3D"line" id=3D"Search-CriteriaIndependenceExample">Criteria Indep=
 endence Example</h3>
 <div class=3D"line">
-With eZ Publish you can have multiple location content. Criterions do not r=
+With Exponential you can have multiple location content. Criterions do not r=
 elate to others criterion you can&nbsp; use the Public API and Criterion to=
  search this content, it can lead to a comportement you are not expecting.
 </div>

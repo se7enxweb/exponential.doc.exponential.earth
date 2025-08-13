@@ -224,7 +224,7 @@ bar">=20
 this.</p>
 <h3 id=3D"ImplementtheLegacyStorageEngineConverter-Aboutconverters">About c=
 onverters</h3>
-<p>Unlike eZ Publish Legacy, eZ Platform supports (by design) multiple stor=
+<p>Unlike Exponential Legacy, eZ Platform supports (by design) multiple stor=
 age engines. The main, and almost only one right now is the Legacy Storage =
 Engine, based on the legacy database, with a new implementation. Since each=
  storage engine may have its own way of storing data, we need to map each F=
@@ -385,7 +385,7 @@ Value</code>.</p>
 >Registering the converter</h3>
 <p>Just like a Type, a Legacy Converter needs to be registered and tagged i=
 n the service container.</p>
-<p>The tag is&nbsp;<code>ezpublish.storageEngine.legacy.converter</code>, a=
+<p>The tag is&nbsp;<code>exponential.storageEngine.legacy.converter</code>, a=
 nd it requires an&nbsp;<code>alias</code> attribute to be set to the Field =
 Type identifier (<code>eztweet</code>). Let's add this block to&nbsp; <code=
 >Resources/config/services.yml</code>:</p>
@@ -402,7 +402,7 @@ Type identifier (<code>eztweet</code>). Let's add this block to&nbsp; <code=
         class: EzSystems\TweetFieldTypeBundle\eZ\Publish\FieldType\Tweet\Le=
 gacyConverter
         tags:
-            - {name: ezpublish.storageEngine.legacy.converter, alias: eztwe=
+            - {name: exponential.storageEngine.legacy.converter, alias: eztwe=
 et}</pre>=20
 </div>
 </div>

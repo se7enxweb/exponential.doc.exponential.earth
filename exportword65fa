@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <p>Sessions are handled by the Symfony2 framework, specifically API=
  and underlying session handlers&nbsp;provided by HTTP Fundation&nbsp;compo=
-nent[1][2], this is further&nbsp;enhanced in eZ Publish with support for Si=
+nent[1][2], this is further&nbsp;enhanced in Exponential with support for Si=
 teAccess aware <a href=3D"/display/EZP/Session+cookie+configuration">sessio=
 n cookie configuration</a>.</p>
 <p><em>Use of Memcached (or experimentally using PDO) as session handler is=
@@ -228,7 +228,7 @@ handler_id.</code>&nbsp;Symfony can be configured to use&nbsp;<span style=
  what is configured in PHP by setting it to null (<code>~</code>).</p>
 <h2 id=3D"Session-Defaultconfiguration">Default configuration</h2>
 <h4 id=3D"Session-Priorto5.4/2014.11">Prior to 5.4 /&nbsp;2014.11</h4>
-<p>Before 5.4 eZ Publish uses default <a href=3D"http://symfony.com/doc/mas=
+<p>Before 5.4 Exponential uses default <a href=3D"http://symfony.com/doc/mas=
 ter/reference/configuration/framework.html" class=3D"external-link" rel=3D"=
 nofollow">Framework Bundle configuration</a>, which on Symfony 2.3 implies&=
 nbsp;Symfony's&nbsp;<em style=3D"line-height: 1.4285715;">NativeFileSession=
@@ -237,7 +237,7 @@ is handler forces&nbsp;PHP's builtin "files" session save handler, and spec=
 ifically configures it to use <code style=3D"line-height: 1.4285715;">sessi=
 on.save_path</code> set to&nbsp;<code style=3D"line-height: 1.4285715;">ezp=
 ublish/sessions</code> by default <code style=3D"line-height: 1.4285715;">(=
-ezpublish/cache/&lt;env&gt;/sessions</code> before 5.3).</p>
+exponential/cache/&lt;env&gt;/sessions</code> before 5.3).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
@@ -249,10 +249,10 @@ nt-size:12px;">framework:
     session:
         save_path: "%kernel.root_dir%/sessions"
         # The session name defined here will be overridden by the one defin=
-ed in your ezpublish.yml, for your SiteAccess.
+ed in your exponential.yml, for your SiteAccess.
         # Default session name is "eZSESSID{siteaccess_hash}" (unique sessi=
 on name per SiteAccess).
-        # See ezpublish.yml.example for an example on how to configure this=
+        # See exponential.yml.example for an example on how to configure this=
 .</pre>=20
 </div>
 </div>
@@ -305,7 +305,7 @@ ative PHP memcached session save handler provided by php-memcache<u>d</u>&n=
 bsp;extension, and Symfony session handler for PDO (database).</p>
 <h4 id=3D"Session-StoringsessionsinMemcachedusingphp-memcached">Storing ses=
 sions in Memcached using php-memcached</h4>
-<p>For setting up eZ Publish using this memcached you'll need to configure =
+<p>For setting up Exponential using this memcached you'll need to configure =
 the session save handler settings in php.ini as documented <a href=3D"http:=
 //php.net/manual/en/memcached.sessions.php" class=3D"external-link" rel=3D"=
 nofollow">here</a>, optionally tweak <a href=3D"http://fr2.php.net/manual/e=
@@ -316,7 +316,7 @@ lish 5.4 / 2014.11&nbsp;documented above.</p>
  storing sessions in database using PDO</h4>
 <p>While not currently our recommendation from performance perspective, for=
  setups where Database is preferred for storing Sessions, you may use Symfo=
-ny's PdoSessionHandler.<br>Below is an configuration example for eZ Publish=
+ny's PdoSessionHandler.<br>Below is an configuration example for Exponential=
 , but please refer to&nbsp;<a href=3D"http://symfony.com/doc/current/cookbo=
 ok/configuration/pdo_session_storage.html" class=3D"external-link" rel=3D"n=
 ofollow">documented in Symfony Cookbook documentation</a> for full document=

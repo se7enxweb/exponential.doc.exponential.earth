@@ -1,0 +1,1025 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Exponential/Upgrading/Upgrading-to-4.6/Upgrading-from-4.5-to-4.6 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 04:54:25 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                        
+    <title>Upgrading from 4.5 to 4.6 / Upgrading to 4.6 / Upgrading / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../documentation.html">documentation</a>
+        
+                        /
+                            <a href="../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../Upgrading.html">upgrading</a>
+        
+                        /
+                            <a href="../Upgrading-to-6.html">upgrading to 4.6</a>
+        
+                        /
+                            upgrading from 4.5 to 4.6
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../Upgrading-to-6.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Releases.html" title="">
+	    	    		                    		    <span class="node-name-normal">Releases</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../How-to-proceed.html" title="">
+	    	    		                    		    <span class="node-name-normal">How to proceed</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Backup-and-consistency-checks.html" title="">
+	    	    		                    		    <span class="node-name-normal">Backup and consistency checks</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Direct-upgrading.html" title="">
+	    	    		                    		    <span class="node-name-normal">Direct upgrading</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-60.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 6.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+                                         
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Upgrading-to-60.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 6.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+                                         
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Upgrading-to-22.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 5.1</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-5.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 5.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-4.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.7</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-6.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.6</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    class="last currentnode"
+			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Upgrading-from-4.5-to-4.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading from 4.5 to 4.6</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-7.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.5</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-23.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.4</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-8.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.3</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-9.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.2</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-10.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.1</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-11.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 4.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-3.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.10</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-12.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.9</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-13.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.8</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-14.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.7</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-15.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.6</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-16.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.5</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-17.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.4</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-18.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.3</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-19.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.2</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-20.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.1</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-to-21.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading to 3.0</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Upgrading-from-3.a.b-to-3.x.html" title="">
+	    	    		                    		    <span class="node-name-normal">Upgrading from 3.a.b to 3.x.y</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../The-system-upgrade-scripts.html" title="">
+	    	    		                    		    <span class="node-name-normal">The system upgrade scripts</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Notes-about-database-changes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Notes about database changes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Upgrading from 4.5 to 4.6</h1>
+</div>
+
+<p>This section describes how to upgrade your existing Exponential 4.5 installation to version 4.6. Make sure that you have a working backup of the site before you do the actual upgrade, and make sure the installation you are performing the upgrade on is offline.</p><a name="eztoc124307_0_1" id="eztoc124307_0_1"></a><h3>Important upgrade notes:</h3><p>The procedure for upgrading directly from version 4.5 to 4.6 consists of the following steps:</p>
+<ul>
+<li><div>Upgrade the distribution files to 4.6</div></li><li><div>Upgrade custom extensions</div></li><li><div>Upgrade the database to 4.6</div></li><li><div>Regenerate the autoload array for extensions</div></li><li><div>Run the system upgrade scripts for 4.6</div></li><li><div>Additional upgrade step</div></li><li><div>Clear the caches</div></li><li><div>Upgrade extensions</div></li>
+</ul>
+<a name="eztoc124307_1" id="eztoc124307_1"></a><h2>Check for requirements</h2><a name="eztoc124307_1_2" id="eztoc124307_1_2"></a><h3>The eZ Components and PHP requirements</h3><p>The minimum version required of eZ Components with Exponential 4.6 is &quot;ezcomponents-ezp46&quot;, containing a fix to the package. Exponential 4.6 is compatible with PHP version 5.2 and above. For more information regarding system requirements check out <a href="../../Technical-manual/4.6/Installation/Requirements-4.html" target="_self">Exponential requirements</a>.</p><a name="eztoc124307_2" id="eztoc124307_2"></a><h2>Step 1: Upgrade the distribution files</h2><p>The easiest way to upgrade the distribution files is to unpack Exponential 4.6 to a separate directory and then copy the directories that contain site-specific files from the existing installation. Make sure that you copy the following directories:</p>
+<ul>
+<li><div>design/example</div></li><li><div>design/example_admin</div></li><li><div>var</div></li><li><div>settings/siteaccess</div></li><li><div>settings/override</div></li>
+</ul>
+<p>Replace &quot;example&quot; and &quot;example_admin&quot; with the actual names of your site accesses.</p><p><b>Important note: </b>Because the new directory has replaced the original directory, the directory permissions need to be fixed. Use the following commands to do this.</p><p>(You have the choice between Shell commands or Alternative shell commands):</p>
+<ul>
+<li><div><b>Shell commands</b></div></li>
+</ul>
+<p>These shell commands will give proper permission to the web server:</p><pre class="wordwrap"><span class="line">cd &lt;/path/to/your/eZ/Publish/directory&gt;</span>
+<span class="line">chmod -R a+rwx design extension settings var</span>
+</pre>
+<ul>
+<li><div><b>Alternative shell commands</b></div></li>
+</ul>
+<p>These commands will setup the permission more correctly, but require knowledge about the running web server.</p><pre class="wordwrap"><span class="line">chmod -R og+rwx design extension settings var</span>
+<span class="line">chown -R nouser:nouser design extension settings var</span>
+</pre><a name="eztoc124307_3" id="eztoc124307_3"></a><h2>Step 2: Upgrade custom extensions</h2><p>If you are using custom extensions, the sub-directories inside the &quot;extension&quot; directory will also have to be copied. However, make sure that you do not overwrite any extensions that are included in Exponential, which currently are eZ Flow (2.x)eZ Online Editor (5.x), eZ OpenOffice Document format (2.x), eZ JSCore (1.x), eZ Image Editor (1.x), eZ Comments (1.x), eZ Multiupload (1.x), eZ MB Password Expiry (1.x), eZ Network (1.x), eZ REST API Provider (1.x), eZ Script Monitor (1.x), eZ SI, ), eZ Find (1.x). Note that upgrading the distribution files will overwrite the autoload arrays for extensions. You will need to re-generate the autoload arrays for active extensions later.</p><p>See the dedicated upgrade instructions for eZ Flow and Website Interface below.</p><p>The updated versions of eZ Flow and Website Interface will also install the following extensions:</p>
+<ul>
+<li><div>eZ Website Toolbar</div></li><li><div>eZ Star Rating</div></li><li><div>eZ Google Maps Location</div></li>
+</ul>
+<p>For eZ OE 5.x and eZ JS Core you will need to replace the following rewrite rules when using Virtual Hosts:</p><pre class="wordwrap"><span class="line">RewriteRule ^/var/cache/texttoimage/.* - [L]</span>
+<span class="line">RewriteRule ^/var/[^/]+/cache/(texttoimage|public)/.* - [L]</span>
+</pre><p>with:</p><pre class="wordwrap"><span class="line">RewriteRule ^/var/([^/]+/)?cache/(texttoimage|public)/.* - [L]</span>
+</pre><p>﻿﻿Since index_ajax.php no longer exists in eZ JS Core you will need to remove the following rewrite rule when using Virtual Hosts:</p><pre class="wordwrap"><span class="line">RewriteRule ^/([^/]+/)?ezjscore/call.* /index_ajax\.php [L]</span>
+</pre><p>or the rules in .htaccess:</p><pre class="wordwrap"><span class="line">RewriteRule ezjscore/call.* index_ajax.php</span>
+</pre><pre class="wordwrap"><span class="line">RewriteRule ^index_ajax\.php - [L]</span>
+</pre><p>For more detailed instructions, see the dedicated <a href="http://ez.no/doc/extensions/online_editor/4.x/installation" target="_self">eZ OE</a> and <a href="../../../Extensions/Exponential-extensions/eZ-Teamroom/Setup-and-User-Guide/Requirements/eZ-JS-Core/Installation.html" target="_self">eZ JS Core</a> doc pages.</p><p><b>Note:</b> Both admin2 design and webin (ezwebin extension) requires ezjscore extension to be enabled, <a href="../../Technical-manual/4.4/Installation/Extensions/Activating-the-extension.html" target="_self">look here</a> for how to enabling extensions.</p><a name="eztoc124307_4" id="eztoc124307_4"></a><h2>Step 3: Upgrade the database</h2><p>The update script for the database is located in</p><pre class="wordwrap"><span class="line">&lt;Exponential root&gt;/update/database/&lt;mysqli|postgresql&gt;/4.6/dbupdate-4.5.0-to-4.6.0.sql</span>
+</pre><p>You can run this with the appropriate command line tool or application.</p><a name="eztoc124307_4_2_0_1" id="eztoc124307_4_2_0_1"></a><h5>MySQL</h5><p>The &quot;ezmysql&quot; database driver has been deprecated in 4.5 and it is recommended to use the &quot;ezmysqli&quot; driver instead. This requires that the &quot;mysqli&quot; extension in PHP is enabled and can be archived by changing the driver in your override or siteaccesses &quot;site.ini.append.php&quot; settings to:</p><pre class="wordwrap"><span class="line">[DatabaseSettings]</span>
+<span class="line">DatabaseImplementation=ezmysqli</span>
+</pre><a name="eztoc124307_4_2_0_1_1" id="eztoc124307_4_2_0_1_1"></a><h6>Cluster</h6><p>The &quot;Mysql DB/DFS Cluster&quot; database back-end has not yet been deprecated, but it is recommended to use the same driver as the main database driver, so change your &quot;file.ini.append.php&quot; settings in override or siteaccesses to use&quot; eZDFSFileHandlerMySQLiBackend&quot; for DFS Cluster or &quot;eZDBFileHandlerMysqliBackend&quot; for DB Cluster.</p><p>Note: The &quot;index_cluster.php&quot; file should be updated to</p><pre class="wordwrap"><span class="line">define( 'STORAGE_BACKEND', 'dfsmysqli' )</span>
+</pre><p>If you use DB cluster, remove &quot;dfs&quot; from the string.</p><a name="eztoc124307_5" id="eztoc124307_5"></a><h2>Step 4: Regenerate the autoload array for extensions</h2><p>The autoload system also has some changes, for example the autoload array for extensions is now placed in var/autoload of your Exponential installation (along the class changes in extensions itself).</p><p>To regenerate the autoload array, execute the following script from the root of your Exponential directory:</p><pre class="wordwrap"><span class="line">php bin/php/ezpgenerateautoloads.php --extension</span>
+</pre><a name="eztoc124307_6" id="eztoc124307_6"></a><h2>Step 5: Run the system upgrade scripts</h2><p>There are two system upgrade scripts that can be run for the Exponential 4.6 upgrade, &quot;<i>removetrashedimages.php</i>&quot; and &quot;<i>updateordernumber.php</i>&quot;.</p><p><b>Script 1:</b> If you want to ensure no trashed images remains on your setup because of image aliases not being restored when restoring object from trash (issue #017781), you do the following:</p>
+<ol>
+<li><div>make sure that no items remains in trash for any users (images from objects in trash would be impossible to restore not doing so)</div></li><li><div>run the following cleanup script by executing this command:</div></li>
+</ol>
+<pre class="wordwrap"><span class="line">$ php update/common/scripts/4.6/removetrashedimages.php</span>
+</pre><p><b>Note:</b> It is safe to skip this test, this is only to free extra space.</p><p><b>Script 2:</b> You need to run an upgrade script to update webshop order numbers issue (#018233) by running:</p><pre class="wordwrap"><span class="line">$ php update/common/scripts/4.6/updateordernumber.php</span>
+</pre><p><b>Note:</b> If you don’t have webshop or you don’t have orders (table &quot;<i>ezorder</i>&quot;) in your Exponential, you don’t have to run this script.</p><a name="eztoc124307_7" id="eztoc124307_7"></a><h2>Step 6: Additional upgrade step</h2><p><b>Update &quot;override.ini.append.php&quot;</b></p><p>Content panes are not visible on the &quot;User accounts&quot; tab in the back-end. To fix it on an already-installed Exponential, remove the following rules from your &quot;override.ini.append.php&quot; for your admin siteaccess:</p><pre class="wordwrap copytoclipboard"><span class="line">[window_controls]</span>
+<span class="line">Source=window_controls.tpl</span>
+<span class="line">MatchFile=window_controls_user.tpl</span>
+<span class="line">Subdir=templates</span>
+<span class="line">Match[navigation_part_identifier]=ezusernavigationpart</span>
+<span class="line">&nbsp;</span>
+<span class="line">[windows]</span>
+<span class="line">Source=windows.tpl</span>
+<span class="line">MatchFile=windows_user.tpl</span>
+<span class="line">Subdir=templates</span>
+<span class="line">Match[navigation_part_identifier]=ezusernavigationpart</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[window_controls]\r\nSource=window_controls.tpl\r\nMatchFile=window_controls_user.tpl\r\nSubdir=templates\r\nMatch[navigation_part_identifier]=ezusernavigationpart\r\n\r\n[windows]\r\nSource=windows.tpl\r\nMatchFile=windows_user.tpl\r\nSubdir=templates\r\nMatch[navigation_part_identifier]=ezusernavigationpart' ); return false;" /></p>
+<![endif]--><p>... and clear the cache after removing. See separate step below.</p><a name="eztoc124307_8" id="eztoc124307_8"></a><h2>Step 7: Clear the caches</h2><p>Whenever an Exponential solution is upgraded, all caches must be cleared in a proper way. This should be done from within a system shell:</p>
+<ol>
+<li><div>Navigate into the new Exponential directory.</div></li><li><div>Run the script using the following shell command:</div></li>
+</ol>
+<pre class="wordwrap"><span class="line">php bin/php/ezcache.php --clear-all --purge</span>
+</pre><p>Purging ensures that the caches are physically removed. When the &quot;--purge&quot; parameter is not specified, the caches will be expired but not removed.</p><p>Sometimes the script is unable to clear all cache files because of restrictive file/directory permission settings. Make sure that all cache files have been cleared by inspecting the contents of the various cache sub-directories within the &quot;var&quot; directory (typically the &quot;var/cache/&quot; and &quot;var/&lt;name_of_siteaccess&gt;/cache/&quot; directories). If there are any cache files left, you need to remove them manually.</p><a name="eztoc124307_9" id="eztoc124307_9"></a><h2>Step 8: Upgrade extensions</h2><p>When using eZ Webin and eZ Flow, these extension will also need to be updated.</p><p>The first thing to do is to change the extensions permissions. An example on how this is done:</p><pre class="wordwrap"><span class="line">$chmod -R a+rwx extension</span>
+</pre><p>Next, depending on your own extensions, follow the steps mentioned in the <a href="../../../Extensions/Exponential-extensions/Website-Interface/Website-interface-2.html" id="vmvc" title="eZ Webin Upgrade description" target="_self">eZ Webin</a> and <a href="../../../Extensions/Exponential-extensions/eZ-Flow/Upgrading-eZ-Flow/eZ-Flow-4.html" id="qorj" target="_self">eZ Flow</a> upgrade documentation.</p>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Geir Arne Waaler&nbsp;(18/08/2011 11:54 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Andrea Melo&nbsp;(29/08/2012 3:46 pm)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Geir Arne Waaler, André R., Andrea Melo</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="25611" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Upgrading/Upgrading-to-4.6/Upgrading-from-4.5-to-4.6" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Exponential/Upgrading/Upgrading-to-4.6/Upgrading-from-4.5-to-4.6 by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 04:54:27 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

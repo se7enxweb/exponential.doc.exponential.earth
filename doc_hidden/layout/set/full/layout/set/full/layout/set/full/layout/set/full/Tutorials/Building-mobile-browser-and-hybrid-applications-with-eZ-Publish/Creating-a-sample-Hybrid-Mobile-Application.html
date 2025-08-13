@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Building-mobile-browser-and-hybrid-applications-with-eZ-Publish/Creating-a-sample-Hybrid-Mobile-Application by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:04:49 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Building-mobile-browser-and-hybrid-applications-with-Exponential/Creating-a-sample-Hybrid-Mobile-Application by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:04:49 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                   
-    <title>Creating a sample Hybrid Mobile Application / Building mobile browser and hybrid applications with eZ Publish / Tutorials / Documentation - Doc</title>
+    <title>Creating a sample Hybrid Mobile Application / Building mobile browser and hybrid applications with Exponential / Tutorials / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Creating a sample Hybrid Mobile Application</h1>
 </div>
 
-<p>Now that we’ve configured the web server for a mobile-specific sub-domain, and configured eZ Publish to support a mobile siteaccess and mobile design, we can start to build the design, the mobile site as a whole, and subsequently the hybrid mobile application -- one for the iOS / iPhone and one for Android phones -- as a shell for the mobile site!</p><p>Here is a screenshot of the iOS application that will be the result of this tutorial:</p>
+<p>Now that we’ve configured the web server for a mobile-specific sub-domain, and configured Exponential to support a mobile siteaccess and mobile design, we can start to build the design, the mobile site as a whole, and subsequently the hybrid mobile application -- one for the iOS / iPhone and one for Android phones -- as a shell for the mobile site!</p><p>Here is a screenshot of the iOS application that will be the result of this tutorial:</p>
 <div class="">        <img src="../../../../../../../../../../../../../../../var/doc/storage/images/media/images/sample-of-application/126796-1-eng-GB/Sample-of-application_doc.png" alt="" />
 
 
@@ -50,7 +50,7 @@
 
 
 
-</div><a name="eztoc126792_0_1" id="eztoc126792_0_1"></a><h3>Preparation</h3><p>The first thing we will need is a working eZ Publish instance with the Website Interface enabled. We won’t cover the steps for how to install eZ Publish, as this process is well documented in the official documentation. Refer to the &quot;Normal installation&quot; section of the &quot;Installation&quot; chapter for more information. We also assume that you have already created a siteaccess and design extension dedicated to the mobile site, as covered earlier in this article.</p><a name="eztoc126792_0_2" id="eztoc126792_0_2"></a><h3>Adjusting INI settings</h3><p>We will be using the Website Interface design as the foundation for our mobile web channel, so we need to set the “ezwebin” design as a fallback site design in order to use its templates, styles, and so on. Verify that the configuration file settings/siteaccess/mobile/site.ini.append.php has the following settings:</p><pre class="wordwrap copytoclipboard"><span class="line">[DesignSettings]</span>
+</div><a name="eztoc126792_0_1" id="eztoc126792_0_1"></a><h3>Preparation</h3><p>The first thing we will need is a working Exponential instance with the Website Interface enabled. We won’t cover the steps for how to install Exponential, as this process is well documented in the official documentation. Refer to the &quot;Normal installation&quot; section of the &quot;Installation&quot; chapter for more information. We also assume that you have already created a siteaccess and design extension dedicated to the mobile site, as covered earlier in this article.</p><a name="eztoc126792_0_2" id="eztoc126792_0_2"></a><h3>Adjusting INI settings</h3><p>We will be using the Website Interface design as the foundation for our mobile web channel, so we need to set the “ezwebin” design as a fallback site design in order to use its templates, styles, and so on. Verify that the configuration file settings/siteaccess/mobile/site.ini.append.php has the following settings:</p><pre class="wordwrap copytoclipboard"><span class="line">[DesignSettings]</span>
 <span class="line">SiteDesign=mobile</span>
 <span class="line">AdditionalSiteDesignList[]</span>
 <span class="line">AdditionalSiteDesignList[]=ezwebin</span>
@@ -192,7 +192,7 @@ Make the following changes to extension/mobile/design/mobile/override/templates/
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '{set scope=global persistent_variable=hash(\'left_menu\', false(),\r\n\'extra_menu\', false(),\r\n\'show_path\', false(),\r\n\'top_menu\', false())}\r\n&lt;div class=&quot;grid&quot;&gt;\r\n&lt;div class=&quot;unit-1-2&quot;&gt;\r\n&lt;div class=&quot;category&quot;&gt;\r\n&lt;a href=&quot;{\'/Recipes\'|ezurl( \'no\' )}&quot;&gt;&lt;img src=&quot;{\'recipes.png\'|ezimage( \'no\'\r\n)}&quot; /&gt;&lt;/a&gt;\r\n&lt;h2&gt;{\'Recipes\'|i18n(\'design/mobile/frontpage\')}&lt;/h2&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=&quot;unit-1-2&quot;&gt;\r\n&lt;div class=&quot;category&quot;&gt;\r\n&lt;a href=&quot;{\'/Food-reviews\'|ezurl( \'no\' )}&quot;&gt;&lt;img src=&quot;{\'food-reviews.png\'|\r\nezimage( \'no\' )}&quot; /&gt;&lt;/a&gt;\r\n&lt;h2&gt;{\'Food reviews\'|i18n(\'design/mobile/frontpage\')}&lt;/h2&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=&quot;grid&quot;&gt;\r\n&lt;div class=&quot;unit-1-2&quot;&gt;\r\n&lt;div class=&quot;category&quot;&gt;\r\n&lt;a href=&quot;{\'/Menus\'|ezurl( \'no\' )}&quot;&gt;&lt;img src=&quot;{\'menus.png\'|ezimage( \'no\' )}&quot;\r\n/&gt;&lt;/a&gt;\r\n&lt;h2&gt;{\'Menus\'|i18n(\'design/mobile/frontpage\')}&lt;/h2&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=&quot;unit-1-2&quot;&gt;\r\n&lt;div class=&quot;category&quot;&gt;\r\n&lt;a href=&quot;{\'/content/search\'|ezurl( \'no\' )}&quot;&gt;&lt;img src=&quot;{\'search.png\'|\r\nezimage( \'no\' )}&quot; /&gt;&lt;/a&gt;\r\n&lt;h2&gt;{\'Search\'|i18n(\'design/mobile/frontpage\')}&lt;/h2&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;' ); return false;" /></p>
 <![endif]--><a name="eztoc126792_0_4" id="eztoc126792_0_4"></a><h3>Images</h3><p>
-We have already prepared images for our mobile website, which you can download here [https://github.com/ezsystems/ezmobile/tree/master/ezpublish/extension/mobile]. Copy the following files into the <i><b>extension/mobile/design/mobile/images</b></i> folder:<br />
+We have already prepared images for our mobile website, which you can download here [https://github.com/ezsystems/ezmobile/tree/master/exponential/extension/mobile]. Copy the following files into the <i><b>extension/mobile/design/mobile/images</b></i> folder:<br />
 1. back.png<br />
 2. bg.png<br />
 3. food-review.png<br />
@@ -451,7 +451,7 @@ mobile<br />
 
 
 
-</div><p>Click the “Next” button and select the location at which you want to save the project. Once the project is created, the project window will appear on your screen. Take a look at the contents of the “Project” table on the left side of the project window. In general, there are two types of files used to create an application: code and resources. Code is written in Objective-C, C, or C++. Resources are things like images and sounds that are used by the application at run-time. The groups in the project window are purely for organizing files. You can rename them to whatever you want. In the next step, we are going to create a new view controller that will be responsible for loading our web view with content served by eZ Publish. Select the “DemoApp” group on the left side and select “New -&gt; New File...” from the “File” menu.</p>
+</div><p>Click the “Next” button and select the location at which you want to save the project. Once the project is created, the project window will appear on your screen. Take a look at the contents of the “Project” table on the left side of the project window. In general, there are two types of files used to create an application: code and resources. Code is written in Objective-C, C, or C++. Resources are things like images and sounds that are used by the application at run-time. The groups in the project window are purely for organizing files. You can rename them to whatever you want. In the next step, we are going to create a new view controller that will be responsible for loading our web view with content served by Exponential. Select the “DemoApp” group on the left side and select “New -&gt; New File...” from the “File” menu.</p>
 <div class="">        <img src="../../../../../../../../../../../../../../../var/doc/storage/images/media/images/demoapp/126817-1-eng-GB/demoapp_doc.png" alt="" />
 
 
@@ -501,7 +501,7 @@ mobile<br />
 <span class="line">}</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:\r\n(NSDictionary *)launchOptions\r\n{\r\n\r\n// Create the mainController\r\nMainController *mainController = [[MainController alloc] init];\r\n\r\n// Set mainController as rootViewController of window\r\n[self.window setRootViewController:mainController];\r\n\r\n// The window retains mainController, we can release our reference\r\n[mainController release];\r\n\r\n// Show the window\r\n[self.window makeKeyAndVisible];\r\nreturn YES;\r\n}' ); return false;" /></p>
-<![endif]--><p>Build and run the application to verify that everything works fine. At this point, you should see only a blank white window. Next, we are going to add the web view responsible for loading the content served by eZ Publish. Because we will need to access that web subview during runtime, “MainController” needs an outlet for that subview. Add the following instance variable to “MainController.h”:</p><pre class="wordwrap"><span class="line">@interface MainController : UIViewController {</span>
+<![endif]--><p>Build and run the application to verify that everything works fine. At this point, you should see only a blank white window. Next, we are going to add the web view responsible for loading the content served by Exponential. Because we will need to access that web subview during runtime, “MainController” needs an outlet for that subview. Add the following instance variable to “MainController.h”:</p><pre class="wordwrap"><span class="line">@interface MainController : UIViewController {</span>
 <span class="line">IBOutlet UIWebView *webView;</span>
 <span class="line">}</span>
 </pre><p>The “IBOutlet” reference in front of the instance variable indicates that you are going to use the Interface Builder to lay out the interface for MainController’s view. When we created MainController, an XIB (XML Interface Builder) file of the same name was created and added to the project. Open MainController.xib now.</p><p>In the right pane, find the “UIWebView” control in the “Object” library and drag it into the view.</p>
@@ -591,7 +591,7 @@ mobile<br />
 
 
 
-</div><p>In this example, we want to present users with our eZ Publish mobile siteaccess. The preferred method for creating the UI for our Android app is to use a layout resource file. Open the “main.xml” layout file in the res/layout project folder. Modify the main layout to include a “WebView” with a “LinearLayout”. It is important to give the “WebView” an ID, so that we can reference it later in our code.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+</div><p>In this example, we want to present users with our Exponential mobile siteaccess. The preferred method for creating the UI for our Android app is to use a layout resource file. Open the “main.xml” layout file in the res/layout project folder. Modify the main layout to include a “WebView” with a “LinearLayout”. It is important to give the “WebView” an ID, so that we can reference it later in our code.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="line">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span>
 <span class="line">android:orientation=&quot;vertical&quot;</span>
 <span class="line">android:layout_width=&quot;fill_parent&quot;</span>
@@ -705,11 +705,11 @@ mobile<br />
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Building-mobile-browser-and-hybrid-applications-with-eZ-Publish/Creating-a-sample-Hybrid-Mobile-Application by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:04:49 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/layout/set/full/Tutorials/Building-mobile-browser-and-hybrid-applications-with-Exponential/Creating-a-sample-Hybrid-Mobile-Application by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 04:04:49 GMT -->
 </html>

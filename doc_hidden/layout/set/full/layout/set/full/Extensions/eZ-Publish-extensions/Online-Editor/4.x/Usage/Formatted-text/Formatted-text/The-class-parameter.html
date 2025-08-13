@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/Online-Editor/4.x/Usage/Formatted-text/Formatted-text/The-class-parameter by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:44 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/Online-Editor/4.x/Usage/Formatted-text/Formatted-text/The-class-parameter by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:44 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                                 
-    <title>The class parameter / Formatted text / Formatted text / Usage / 4.x / Online Editor / eZ Publish extensions / Extensions / Documentation - Doc</title>
+    <title>The class parameter / Formatted text / Formatted text / Usage / 4.x / Online Editor / Exponential extensions / Extensions / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -57,7 +57,7 @@ The following lines define &quot;pRed&quot;, &quot;pBlue&quot; and &quot;apple&q
 <![endif]--><p>&nbsp;</p>   <a name="custom_templates" /><a name="eztoc13349_2" id="eztoc13349_2"></a><h2>Using alternate/custom templates</h2> <p>The default templates in the directory &quot;design/standard/templates/content/datatype/view/ezxmltags/&quot; determine how the content of XML tags should be rendered.</p>   <a name="eztoc13349_2_0_1" id="eztoc13349_2_0_1"></a><h4>Example</h4> <p>When the XML code is rendered, the system will replace the XML code </p><pre class="wordwrap"><span class="line">&lt;emphasize&gt;Emphasized text.&lt;/emphasize&gt;</span>
 </pre> <p>by the following XHTML code: </p><pre class="wordwrap"><span class="line">&lt;i&gt;Emphasized text.&lt;/i&gt;</span>
 </pre> <p>so that it will be displayed on the site as follows:</p> <p> <i>Emphasized text.</i> </p> <p>This behavior is dictated by the following instruction: </p><pre class="wordwrap"><span class="line">&lt;i{section show=ne($classification|trim,'')} class=&quot;{$classification|wash}&quot;{/section}&gt;{$content}&lt;/i&gt;</span>
-</pre> <p>that is specified in the default template &quot;emphasize.tpl&quot; located in the &quot;design/standard/templates/content/datatype/view/ezxmltags/&quot; directory.</p> <p>The templates are written using the <a href="../../../../../../../eZ-Publish/Technical-manual/3.6/Templates/The-template-language.html" target="_self">eZ Publish template language</a>. In the template, the tag contents is available in the &quot;$content&quot; variable.</p> <p>All the XML tags can be fully customized by changing the templates.</p> <p>If you need to specify custom rendering for your tags, you can use custom templates in your design directory. For example, you can create a template called &quot;paragraph.tpl&quot; inside the &quot;templates/content/datatype/view/ezxmltags/&quot; subdirectory of your design. The system will then use this template whenever it is about to render the contents of a paragraph. The value of the &quot;class&quot; parameter will be available in the $classification variable.</p> <p>It is also possible to use the <a href="../../../../../../../eZ-Publish/Technical-manual/3.6/Templates/The-template-override-system.html" target="_self">template override system</a>. This approach allows you to trigger custom templates based on a set of conditions. For example, if some of your paragraphs are classified as &quot;apple&quot;, you can create a new template called &quot;apple_paragraph.tpl&quot; in the &quot;override/templates/&quot; directory of your design. In order to trigger the new template, you'll have to make sure that the &quot;override.ini.append.php&quot; file that belongs to the siteaccess contains the following lines:</p> <pre class="wordwrap copytoclipboard"><span class="line">[apple_paragraph]</span>
+</pre> <p>that is specified in the default template &quot;emphasize.tpl&quot; located in the &quot;design/standard/templates/content/datatype/view/ezxmltags/&quot; directory.</p> <p>The templates are written using the <a href="../../../../../../../Exponential/Technical-manual/3.6/Templates/The-template-language.html" target="_self">Exponential template language</a>. In the template, the tag contents is available in the &quot;$content&quot; variable.</p> <p>All the XML tags can be fully customized by changing the templates.</p> <p>If you need to specify custom rendering for your tags, you can use custom templates in your design directory. For example, you can create a template called &quot;paragraph.tpl&quot; inside the &quot;templates/content/datatype/view/ezxmltags/&quot; subdirectory of your design. The system will then use this template whenever it is about to render the contents of a paragraph. The value of the &quot;class&quot; parameter will be available in the $classification variable.</p> <p>It is also possible to use the <a href="../../../../../../../Exponential/Technical-manual/3.6/Templates/The-template-override-system.html" target="_self">template override system</a>. This approach allows you to trigger custom templates based on a set of conditions. For example, if some of your paragraphs are classified as &quot;apple&quot;, you can create a new template called &quot;apple_paragraph.tpl&quot; in the &quot;override/templates/&quot; directory of your design. In order to trigger the new template, you'll have to make sure that the &quot;override.ini.append.php&quot; file that belongs to the siteaccess contains the following lines:</p> <pre class="wordwrap copytoclipboard"><span class="line">[apple_paragraph]</span>
 <span class="line">Source=content/datatype/view/ezxmltags/paragraph.tpl</span>
 <span class="line">MatchFile=apple_paragraph.tpl</span>
 <span class="line">Subdir=templates</span>
@@ -74,7 +74,7 @@ Add some CSS code. The following example will set a blue background and center t
 <span class="line">}</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', 'p.apple\r\n{\r\n   background-color: blue;\r\n   text-align: center;\r\n}' ); return false;" /></p>
-<![endif]-->In this example, CSS settings are specified for XHTML tag &quot;p&quot;, not for <a href="../../../../../../../eZ-Publish/Technical-manual/3.6/Reference/XML-tags.html#paragraphs" target="_self">XML tag &quot;paragraph&quot;</a>. Please note that it is impossible to specify CSS settings directly for original <a href="../../../../../../../eZ-Publish/Technical-manual/3.6/Reference/XML-tags.html" target="_self">XML tags</a>. To learn which XHTML tag that corresponds to a particular element please refer to the section that describes it (this is usually defined by templates). </div></li> <li><div> 
+<![endif]-->In this example, CSS settings are specified for XHTML tag &quot;p&quot;, not for <a href="../../../../../../../Exponential/Technical-manual/3.6/Reference/XML-tags.html#paragraphs" target="_self">XML tag &quot;paragraph&quot;</a>. Please note that it is impossible to specify CSS settings directly for original <a href="../../../../../../../Exponential/Technical-manual/3.6/Reference/XML-tags.html" target="_self">XML tags</a>. To learn which XHTML tag that corresponds to a particular element please refer to the section that describes it (this is usually defined by templates). </div></li> <li><div> 
 Specify the custom CSS file using the &quot;CSSFileList[]&quot; array within an override for the &quot;design.ini&quot; configuration file:<br /> <pre class="wordwrap"><span class="line">CSSFileList[]=abc.css</span>
 </pre>  </div></li> 
 </ol>
@@ -90,7 +90,7 @@ The following example shows how you can set a red background and center the text
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', 'p.pRed\r\n{\r\n   background-color: red;\r\n   text-align: center;\r\n}' ); return false;" /></p>
 <![endif]--><p>&nbsp;</p> <p>The following screenshot shows the appearance of the &quot;pRed&quot; classified paragraph and another (non-classified one) in the OE text area.</p> 
-<div class="object-center linked">            <a href="../../../../../../../layout/set/full/Extensions/eZ-Publish-extensions/Online-Editor/4.x/Images/oe_classes_pRed.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/extensions/online_editor/4_x/images/oe_classes_pred/13290-1-eng-GB/oe_classes_pred_doc.png" alt="" /></a>
+<div class="object-center linked">            <a href="../../../../../../../layout/set/full/Extensions/Exponential-extensions/Online-Editor/4.x/Images/oe_classes_pRed.html" target="_self"><img src="../../../../../../../../../../../../../../var/doc/storage/images/extensions/online_editor/4_x/images/oe_classes_pred/13290-1-eng-GB/oe_classes_pred_doc.png" alt="" /></a>
  <p>The appearance of the &quot;pRed&quot; classified paragraph in the OE text area.</p>
 
 
@@ -105,11 +105,11 @@ The following example shows how you can set a red background and center the text
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/Online-Editor/4.x/Usage/Formatted-text/Formatted-text/The-class-parameter by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:45 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/Online-Editor/4.x/Usage/Formatted-text/Formatted-text/The-class-parameter by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:45 GMT -->
 </html>

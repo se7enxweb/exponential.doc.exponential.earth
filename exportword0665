@@ -212,8 +212,8 @@ d of the content */
 <body>
     <h1>Extensions</h1>
     <div class=3D"Section1">
-        <p>Extensions are plug-ins to eZ Publish, providing additional cust=
-om functionality. Various extensions are available for eZ Publish. All of t=
+        <p>Extensions are plug-ins to Exponential, providing additional cust=
+om functionality. Various extensions are available for Exponential. All of t=
 hem require the same basic steps for an installation. This chapter will sho=
 w how to perform the following:</p>
 <ol>

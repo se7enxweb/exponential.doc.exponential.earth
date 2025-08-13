@@ -712,7 +712,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <h1 id="Security-Introduction">Introduction</h1><p>eZ Platform offers security and access control for your website using a complex permission system which allows you to define very fine-grained rights for all your users.</p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">See <a href="../display/DEVELOPER/Repository.html#Repository-Permissions" rel="nofollow">Permissions</a> for more information.</div></div><h1 id="Security-Configuration">Configuration</h1><p><span>To use Symfony authentication with eZ Platform, the configuration goes as follows:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app/config/security.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             form_login:
@@ -721,7 +721,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 </div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>app/config/routing.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[login:
     path:   /login
-    defaults:  { _controller: ezpublish.security.controller:loginAction }
+    defaults:  { _controller: exponential.security.controller:loginAction }
 login_check:
     path:   /login_check
 logout:
@@ -756,8 +756,8 @@ logout:
         &lt;/form&gt;
     {% endblock %}
 {% endblock %}]]></script>
-</div></div><p><span> <span>The layout used by default is </span> <code>%ezpublish.content_view.viewbase_layout%</code> <span> (empty layout) but can be configured easily together with the login template:</span> </span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+</div></div><p><span> <span>The layout used by default is </span> <code>%exponential.content_view.viewbase_layout%</code> <span> (empty layout) but can be configured easily together with the login template:</span> </span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         my_siteaccess:
             user:
@@ -772,15 +772,15 @@ logout:
     &lt;input type=&quot;checkbox&quot; id=&quot;remember_me&quot; name=&quot;_remember_me&quot; checked /&gt;
     &lt;label for=&quot;remember_me&quot;&gt;Keep me logged in&lt;/label&gt;
 {% endblock %}]]></script>
-</div></div><h3 id="Security-Loginhandlers/SSO">Login handlers / SSO</h3><p>Symfony provides native support for <a href="http://symfony.com/doc/2.3/book/security.html#using-multiple-user-providers" class="external-link" rel="nofollow">multiple user providers</a>. This makes it easy to integrate any kind of login handlers, including SSO and existing third-party bundles (e.g. <a href="https://github.com/Maks3w/FR3DLdapBundle" class="external-link" rel="nofollow">FR3DLdapBundle</a>, <a href="https://github.com/hwi/HWIOAuthBundle" class="external-link" rel="nofollow">HWIOauthBundle</a>, <a href="https://github.com/FriendsOfSymfony/FOSUserBundle" class="external-link" rel="nofollow">FOSUserBundle</a>, <a href="http://github.com/BeSimple/BeSimpleSsoAuthBundle" class="external-link" rel="nofollow">BeSimpleSsoAuthBundle</a>, etc.).</p><p>Further explanation can be found in the <span class="confluence-link"><a href="../display/DEVELOPER/Authenticating%2ba%2buser%2bwith%2bmultiple%2buser%2bproviders.html">multiple user providers recipe</a></span>.</p><h3 id="Security-IntegrationwithLegacy">Integration with Legacy</h3><ul><li>When <strong>not</strong> in legacy mode, legacy <code>user/login</code> and <code>user/logout</code> views are deactivated.</li><li>Authenticated user is injected in legacy kernel.</li></ul><h2 id="Security-AuthenticationwithLegacySSOHandlers">Authentication with Legacy SSO Handlers</h2><p>To be able to use your legacy SSO (Single Sign-on) handlers, use the following config in your <code>ezpublish/config/security.yml</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Use your legacy SSO handlers</b></div><div class="codeContent panelContent pdl">
+</div></div><h3 id="Security-Loginhandlers/SSO">Login handlers / SSO</h3><p>Symfony provides native support for <a href="http://symfony.com/doc/2.3/book/security.html#using-multiple-user-providers" class="external-link" rel="nofollow">multiple user providers</a>. This makes it easy to integrate any kind of login handlers, including SSO and existing third-party bundles (e.g. <a href="https://github.com/Maks3w/FR3DLdapBundle" class="external-link" rel="nofollow">FR3DLdapBundle</a>, <a href="https://github.com/hwi/HWIOAuthBundle" class="external-link" rel="nofollow">HWIOauthBundle</a>, <a href="https://github.com/FriendsOfSymfony/FOSUserBundle" class="external-link" rel="nofollow">FOSUserBundle</a>, <a href="http://github.com/BeSimple/BeSimpleSsoAuthBundle" class="external-link" rel="nofollow">BeSimpleSsoAuthBundle</a>, etc.).</p><p>Further explanation can be found in the <span class="confluence-link"><a href="../display/DEVELOPER/Authenticating%2ba%2buser%2bwith%2bmultiple%2buser%2bproviders.html">multiple user providers recipe</a></span>.</p><h3 id="Security-IntegrationwithLegacy">Integration with Legacy</h3><ul><li>When <strong>not</strong> in legacy mode, legacy <code>user/login</code> and <code>user/logout</code> views are deactivated.</li><li>Authenticated user is injected in legacy kernel.</li></ul><h2 id="Security-AuthenticationwithLegacySSOHandlers">Authentication with Legacy SSO Handlers</h2><p>To be able to use your legacy SSO (Single Sign-on) handlers, use the following config in your <code>exponential/config/security.yml</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Use your legacy SSO handlers</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[security:
     firewalls:
-        ezpublish_front:
+        exponential_front:
             pattern: ^/
             anonymous: ~
             # Adding the following entry will activate the use of old SSO handlers.
-            ezpublish_legacy_sso: ~ ]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body">If you need to<a href="http://share.ez.no/learn/ez-publish/using-a-sso-in-ez-publish" class="external-link" rel="nofollow"> create your legacy SSO Handler, please read this entry</a></div></div></div>
+            exponential_legacy_sso: ~ ]]></script>
+</div></div><div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body">If you need to<a href="http://share.ez.no/learn/exponential/using-a-sso-in-exponential" class="external-link" rel="nofollow"> create your legacy SSO Handler, please read this entry</a></div></div></div>
 </div>
 <div class="cell aside" data-type="aside">
 <div class="innerCell">
@@ -893,7 +893,7 @@ logout:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

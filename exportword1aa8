@@ -275,7 +275,7 @@ p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: html/xml; gutter: false; theme: Eclipse" style=3D"font=
--size:12px;">&lt;a href=3D"{{ path( ezpublish.rootLocation ) }}" title=3D"L=
+-size:12px;">&lt;a href=3D"{{ path( exponential.rootLocation ) }}" title=3D"L=
 ink to homepage"&gt;Home page&lt;/a&gt;</pre>=20
 </div>
 </div>

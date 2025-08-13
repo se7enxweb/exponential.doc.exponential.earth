@@ -226,7 +226,7 @@ y_mode: true</code></p>
 plate for a given content, <strong>the system fallbacks to the legacy kerne=
 l and delegates the view selection to it</strong>.&nbsp;<span style=3D"font=
 -size: 10.0pt;line-height: 13.0pt;">This ensures that a content is always d=
-isplayed and hence eases project migration from eZ Publish v4.x to v5.x</sp=
+isplayed and hence eases project migration from Exponential v4.x to v5.x</sp=
 an></p>
 <p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;"><style type=3D"te=
 xt/css">/*<![CDATA[*/
@@ -272,20 +272,20 @@ li>
 </ol>
 <h3 id=3D"Legacytemplatefallback-Baselayoutforlegacyfallback">Base layout f=
 or legacy fallback</h3>
-<p>You can configure this by setting the&nbsp;<code><strong>ezpublish_legac=
+<p>You can configure this by setting the&nbsp;<code><strong>exponential_legac=
 y.&lt;siteaccess_or_siteaccess_group&gt;.view_default_layout</strong></code=
 > config key.</p>
 <p><strong>Example:</strong></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    # eZ Publish 5.1+ only
-    ezpublish_legacy.my_siteaccess.view_default_layout: AcmeDemoBundle::my_=
+    # Exponential 5.1+ only
+    exponential_legacy.my_siteaccess.view_default_layout: AcmeDemoBundle::my_=
 layout.html.twig</pre>=20
 </div>
 </div>
@@ -298,14 +298,14 @@ s configurable as well (default is <code><strong>content</strong></code>).<=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish_legacy.&lt;siteaccess_or_siteaccess_group&gt;.view_default_la=
+    exponential_legacy.&lt;siteaccess_or_siteaccess_group&gt;.view_default_la=
 yout: AcmeDemoBundle::my_layout.html.twig
-    ezpublish.content_view.content_block_name: content</pre>=20
+    exponential.content_view.content_block_name: content</pre>=20
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -334,7 +334,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>The module layout setting is available from eZ Publish 5.1.</p>
+<p>The module layout setting is available from Exponential 5.1.</p>
 </div>
 </div>
 <p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">The module layout=
@@ -389,14 +389,14 @@ ck %}
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">parameters:
-    ezpublish_legacy.my_siteaccess.module_default_layout: AcmeDemoBundle::l=
+    exponential_legacy.my_siteaccess.module_default_layout: AcmeDemoBundle::l=
 ayout_legacy.html.twig
-    ezpublish_legacy.my_siteaccess.view_default_layout: AcmeDemoBundle::lay=
+    exponential_legacy.my_siteaccess.view_default_layout: AcmeDemoBundle::lay=
 out.html.twig</pre>=20
 </div>
 </div>
@@ -406,9 +406,9 @@ out.html.twig</pre>=20
 <p>The persistent variable is a special variable in legacy templates that y=
 ou can set in order to pass values from the content template to the pagelay=
 out. This variable, among others, is accessible from the configured Twig pa=
-gelayout thanks to the helper <code><strong>ezpublish.legacy</strong></code=
+gelayout thanks to the helper <code><strong>exponential.legacy</strong></code=
 >.</p>
-<p>Actually, all data <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manu=
+<p>Actually, all data <a href=3D"http://doc.ez.no/Exponential/Technical-manu=
 al/4.x/Templates/The-pagelayout/Variables-in-pagelayout#module_result" clas=
 s=3D"external-link" rel=3D"nofollow">contained in <code>$module_result</cod=
 e> in the legacy kernel</a> is exposed.</p>
@@ -423,8 +423,8 @@ e> in the legacy kernel</a> is exposed.</p>
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- ... --&gt;
-    {% if ezpublish.legacy.has( 'content_info' ) %}
-        {% set persistent_variable =3D ezpublish.legacy.get( 'content_info'=
+    {% if exponential.legacy.has( 'content_info' ) %}
+        {% set persistent_variable =3D exponential.legacy.get( 'content_info'=
  )['persistent_variable'] %}
     {% endif %}
 &lt;/head&gt;
@@ -439,7 +439,7 @@ e> in the legacy kernel</a> is exposed.</p>
 cripts assets from a content template through the legacy <code>ezscript_req=
 uire()</code> and <code>ezcss_require()</code> template operators.</p>
 <p>You can easily retrieve those requested assets from the legacy template =
-in the Twig pagelayout with the <code><strong>ezpublish.legacy</strong></co=
+in the Twig pagelayout with the <code><strong>exponential.legacy</strong></co=
 de> helper.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -452,14 +452,14 @@ de> helper.</p>
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- ... --&gt;
-    {% set requested_css_files =3D ezpublish.legacy.get( 'css_files' ) %}
-    {% set requested_js_files =3D ezpublish.legacy.get( 'js_files' ) %}
+    {% set requested_css_files =3D exponential.legacy.get( 'css_files' ) %}
+    {% set requested_js_files =3D exponential.legacy.get( 'js_files' ) %}
 &nbsp;
     {# "configured" assets are the ones defined in design.ini (FrontendCSSF=
 ileList/FrontendJavaScriptList) #}
-    {% set configured_js_files =3D ezpublish.legacy.get( 'js_files_configur=
+    {% set configured_js_files =3D exponential.legacy.get( 'js_files_configur=
 ed' ) %}
-    {% set configured_css_files =3D ezpublish.legacy.get( 'css_files_config=
+    {% set configured_css_files =3D exponential.legacy.get( 'css_files_config=
 ured' ) %}
 &lt;/head&gt;
 &lt;body&gt;

@@ -39,7 +39,7 @@
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p>These rewrite rules can be used if you don't have direct access to alter the virtual host configuration, which is common in a shared hosting setup. The file &quot;<code>.htaccess_root</code>&quot; is included in the installation package of your eZ Publish installation. In order to activate these rewrite rules in your hosted environment, you must change the name of the file to &quot;<code>.htaccess</code>&quot; and keep in the same folder as the original &quot;<code>.htaccess_root</code>&quot; file.</p><p>Please find an example of the &quot;<code>.htaccess</code>&quot; rewrite rules below:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Copy this file to a new file called .htaccess in your eZ Publish root
+        <p>&nbsp;</p>         <p>These rewrite rules can be used if you don't have direct access to alter the virtual host configuration, which is common in a shared hosting setup. The file &quot;<code>.htaccess_root</code>&quot; is included in the installation package of your Exponential installation. In order to activate these rewrite rules in your hosted environment, you must change the name of the file to &quot;<code>.htaccess</code>&quot; and keep in the same folder as the original &quot;<code>.htaccess_root</code>&quot; file.</p><p>Please find an example of the &quot;<code>.htaccess</code>&quot; rewrite rules below:</p><table class="wysiwyg-macro" data-macro-name="noformat" style="background-image: url(../servlet/confluence/placeholder/macro-heading8813.png?definition=e25vZm9ybWF0fQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Copy this file to a new file called .htaccess in your Exponential root
 # to secure your installation by turning on .htaccess based virtual host mode.
  
 DirectoryIndex index.php
@@ -57,12 +57,12 @@ RewriteRule ^extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascri
 RewriteRule ^packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
 RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
-# Assetic rules for eZ Publish 5.1 and higher:
+# Assetic rules for Exponential 5.1 and higher:
 RewriteRule ^/css/.*\.css - [L]
 RewriteRule ^/js/.*\.js - [L]
  
 # Makes it possible to placed your favicon at the root of your
-# eZ Publish instance. It will then be served directly.
+# Exponential instance. It will then be served directly.
 RewriteRule ^favicon\.ico - [L]
 # Uncomment the line below if you want you favicon be served from the standard design.
 # You can customize the path to favicon.ico by replacing design/standard/images/favicon.ico

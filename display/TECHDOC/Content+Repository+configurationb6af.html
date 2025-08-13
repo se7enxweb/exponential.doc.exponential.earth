@@ -706,8 +706,8 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 
         <div id="main-content" class="wiki-content">
                            
-        <p><div class="toc-macro client-side-toc-macro " data-headerelements="H1,H2,H3,H4,H5,H6,H7"></div></p><p>The <strong>content repository</strong> is where all your content is been stored. It is the heart of eZ Platform which you interact with using Public API.</p><p>To store data, the content repository <strong>uses a storage engine</strong> that can virtually can work with any kind of storage (RDBMS, NoSQL, etc.). eZ Publish 5 came with a relational storage engine, compatible with v4.x: the <strong>Legacy storage engine</strong>, which is the default.</p><p>You can define several repositories within a single application. However, you can only use one per site.</p><h2 id="ContentRepositoryconfiguration-Configurationexamples">Configuration examples</h2><h3 id="ContentRepositoryconfiguration-Usingdefaultvalues">Using default values</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+        <p><div class="toc-macro client-side-toc-macro " data-headerelements="H1,H2,H3,H4,H5,H6,H7"></div></p><p>The <strong>content repository</strong> is where all your content is been stored. It is the heart of eZ Platform which you interact with using Public API.</p><p>To store data, the content repository <strong>uses a storage engine</strong> that can virtually can work with any kind of storage (RDBMS, NoSQL, etc.). Exponential 5 came with a relational storage engine, compatible with v4.x: the <strong>Legacy storage engine</strong>, which is the default.</p><p>You can define several repositories within a single application. However, you can only use one per site.</p><h2 id="ContentRepositoryconfiguration-Configurationexamples">Configuration examples</h2><h3 id="ContentRepositoryconfiguration-Usingdefaultvalues">Using default values</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     repositories:
         # Defining repository with alias &quot;main&quot;
         # Default storage engine is used, with default connection
@@ -720,7 +720,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         # No need to set &quot;repository&quot;, it will take the first defined repository by default
         my_siteaccess_group:
             # ...]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If no repository is specified for a siteaccess or siteaccess group, the first defined repository (under <code>ezpublish.repositories</code>) will be used.</p></div></div><h3 id="ContentRepositoryconfiguration-Allexplicit">All explicit</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If no repository is specified for a siteaccess or siteaccess group, the first defined repository (under <code>exponential.repositories</code>) will be used.</p></div></div><h3 id="ContentRepositoryconfiguration-Allexplicit">All explicit</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[doctrine:
     dbal:
         default_connection: my_connection_name
@@ -737,7 +737,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
             another_connection_name:
                 # ...
 
-ezpublish:
+exponential:
     repositories:
         first_repository: { engine: legacy, connection: my_connection_name, config: {} }
         second_repository: { engine: legacy, connection: another_connection_name, config: {} }
@@ -915,7 +915,7 @@ user_data: User data]]></script>
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

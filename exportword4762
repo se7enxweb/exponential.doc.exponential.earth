@@ -486,9 +486,9 @@ rces/config</code> under the <code>services</code> key:</p>
 :12px;">app.block.random:
     class: AppBundle\Block\RandomBlock
     arguments:
-        - '@ezpublish.api.service.location'
-        - '@ezpublish.api.service.content'
-        - '@ezpublish.api.service.search'
+        - '@exponential.api.service.location'
+        - '@exponential.api.service.content'
+        - '@exponential.api.service.search'
     tags:
         - { name: landing_page_field_type.block_type, alias: random }</pre>=
 =20

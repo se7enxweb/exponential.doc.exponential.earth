@@ -253,7 +253,7 @@ ng or array of strings.</p>
 </tr>
 <tr>
 <td class=3D"confluenceTd"><code>string</code></td>
-<td class=3D"confluenceTd"><p><code>"php, eZ Publish, html5"</code></p></td=
+<td class=3D"confluenceTd"><p><code>"php, Exponential, html5"</code></p></td=
 >
 </tr>
 <tr>
@@ -299,7 +299,7 @@ ngs.</td>
 $keywordValue =3D new Value();
 &nbsp;
 // Sets an array of keywords as a value
-$keyword-&gt;value =3D array( "php", "css3", "html5", "eZ Publish" );</pre>=
+$keyword-&gt;value =3D array( "php", "css3", "html5", "Exponential" );</pre>=
 =20
 </div>
 </div>

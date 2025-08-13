@@ -274,7 +274,7 @@ ed to store binary files on an NFS server.&nbsp;It will use a database to m=
 anipulate metadata, making up for the potential inconsistency of network ba=
 sed filesystems.</p>
 <h3 id=3D"Clustering-Configuration.1"><a class=3D"external-link" href=3D"ht=
-tps://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/=
+tps://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/=
 io/legacy_dfs_cluster.md#configuration" name=3D"user-content-configuration"=
  rel=3D"nofollow"></a>Configuration</h3>
 <p>You need to configure both metadata and binarydata handlers.</p>
@@ -294,7 +294,7 @@ n></p>
 </div>
 </div>
 <p>For production, we strongly recommend creating the DFS table in its own =
-database, using the <code>vendor/ezsystems/ezpublish-kernel/data/mysql/dfs_=
+database, using the <code>vendor/ezsystems/exponential-kernel/data/mysql/dfs_=
 schema.sql</code> file.<br> In our example, we will use one named&nbsp;<cod=
 e>dfs</code>.&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -333,7 +333,7 @@ ez_io:
                 connection: doctrine.dbal.dfs_connection
 
 # set the application handlers
-ezpublish:
+exponential:
     system:
         default:
             io:
@@ -343,7 +343,7 @@ ezpublish:
 </div>
 <h4 id=3D"Clustering-Customizingthestoragedirectory">Customizing the storag=
 e directory</h4>
-<p>eZ Publish 5.x required the NFS adapter directory to be set to <code>$va=
+<p>Exponential 5.x required the NFS adapter directory to be set to <code>$va=
 r_dir$/$storage_dir$</code> part for the NFS path. This is no longer requir=
 ed with eZ Platform, but the default prefix used to serve binary files will=
  still match this expectation.</p>
@@ -354,7 +354,7 @@ l_prefix</code> to a matching value. If you set the NFS adapter's directory=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
 =09system:
 =09=09default:
 =09=09=09io:
@@ -380,7 +380,7 @@ low">http://static.example.com</a>=20
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
 =09system:
 =09=09default:
 =09=09=09io:
@@ -399,7 +399,7 @@ b/app.php</code>.</p>
 <p>In any case, this specific rewrite rule must be placed without the ones =
 that "ignore" image files and just let the web server serve the files.</p>
 <h4 id=3D"Clustering-Apache"><a class=3D"external-link" href=3D"https://git=
-hub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legacy=
+hub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legacy=
 _dfs_cluster.md#apache" name=3D"user-content-apache" rel=3D"nofollow"></a>A=
 pache</h4>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -410,7 +410,7 @@ pache</h4>
 </div>
 </div>
 <h4 id=3D"Clustering-nginx"><a class=3D"external-link" href=3D"https://gith=
-ub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legacy_=
+ub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legacy_=
 dfs_cluster.md#nginx" name=3D"user-content-nginx" rel=3D"nofollow"></a>ngin=
 x</h4>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">

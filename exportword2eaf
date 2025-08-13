@@ -306,7 +306,7 @@ l</code> by default).</span></td>
 <td colspan=3D"1" class=3D"confluenceTd">The human readable file name, as e=
 xposed to the outside. Used when sending the file for download in order to =
 name the file.</td>
-<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_ezpublish5 lig=
+<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_exponential5 lig=
 ht.pdf</td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ oaded</td>
 <td colspan=3D"1" class=3D"confluenceTd"><code>path</code></td>
 <td colspan=3D"1" class=3D"confluenceTd">string</td>
 <td colspan=3D"1" class=3D"confluenceTd"><p><strong>*deprecated*<br></stron=
-g>&nbsp;Renamed to <code>id</code> starting from eZ Publish 5.2. Can still =
+g>&nbsp;Renamed to <code>id</code> starting from Exponential 5.2. Can still =
 be used, but it is recommended not to use it anymore as it will be removed.=
 </p></td>
 <td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>

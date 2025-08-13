@@ -219,7 +219,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If you are looking for 5.2/5.3 Context aware HTTP cache, see the page <a=
  href=3D"/display/EZP/Context+aware+HTTP+cache+in+eZ+Publish+5.2-5.3">Conte=
-xt aware HTTP cache in eZ Publish 5.2-5.3</a></p>
+xt aware HTTP cache in Exponential 5.2-5.3</a></p>
 </div>
 </div>
 <p><style type=3D"text/css">/*<![CDATA[*/
@@ -258,9 +258,9 @@ finedineZ">Default options for FOSHttpCacheBundle defined in eZ</a></li>=20
 </ul>=20
 </div>
 <p></p>
-<p>This feature is available as of&nbsp;<strong>eZ Publish 5.2</strong></p>
+<p>This feature is available as of&nbsp;<strong>Exponential 5.2</strong></p>
 <h2 id=3D"ContextawareHTTPcache-Usecase">Use case</h2>
-<p>Being based on Symfony 2, eZ Publish 5 uses HTTP cache from version 5.0 =
+<p>Being based on Symfony 2, Exponential 5 uses HTTP cache from version 5.0 =
 <a href=3D"/display/EZP/Context+aware+HTTP+cache">extended with content awa=
 reness</a>. However this cache management is only available for anonymous u=
 sers due to HTTP restrictions.</p>
@@ -438,7 +438,7 @@ FOSHttpCacheBundle documentation on how user hashes are being generated</a>=
 .
 </div>
 </div>
-<p>eZ Publish already interferes in the hash generation process, by adding =
+<p>Exponential already interferes in the hash generation process, by adding =
 current user permissions and limitations. One can also interfere in this pr=
 ocess by <a href=3D"http://foshttpcachebundle.readthedocs.org/en/latest/ref=
 erence/configuration/user-context.html#custom-context-providers" class=3D"e=
@@ -451,10 +451,10 @@ it's of course possible ot use Varnish to achieve the same.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;"># Varnish 3 style for eZ Publish 5.4 / 2014.11
-# Our Backend - We assume that eZ Publish Web server listen on port 80 on t=
+e:12px;"># Varnish 3 style for Exponential 5.4 / 2014.11
+# Our Backend - We assume that Exponential Web server listen on port 80 on t=
 he same machine.
-backend ezpublish {
+backend exponential {
     .host =3D "127.0.0.1";
     .port =3D "80";
 }
@@ -464,7 +464,7 @@ backend ezpublish {
 sub vcl_recv {
 
     # Set the backend
-    set req.backend =3D ezpublish;
+    set req.backend =3D exponential;
 
     # ...
 
@@ -613,7 +613,7 @@ vcl 4.0;
 
 // Our Backend - Assuming that web server is listening on port 80
 // Replace the host to fit your setup
-backend ezpublish {
+backend exponential {
     .host =3D "127.0.0.1";
     .port =3D "80";
 }
@@ -623,7 +623,7 @@ n received
 sub vcl_recv {
 
     // Set the backend
-    set req.backend_hint =3D ezpublish;
+    set req.backend_hint =3D exponential;
 
     // ...
 

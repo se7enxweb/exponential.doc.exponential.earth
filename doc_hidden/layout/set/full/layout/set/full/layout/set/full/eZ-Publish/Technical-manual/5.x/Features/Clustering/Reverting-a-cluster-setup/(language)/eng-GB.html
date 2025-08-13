@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/5.x/Features/Clustering/Reverting-a-cluster-setup/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:09:21 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/5.x/Features/Clustering/Reverting-a-cluster-setup/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:09:21 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Reverting a cluster setup / Clustering / Features / 5.x / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Reverting a cluster setup / Clustering / Features / 5.x / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Reverting a cluster setup</h1>
 </div>
 
-<p>You can always switch from using the <a href="../../../../../4.6/Features/Clustering.html" target="_self">clustering</a> functionality to the standard configuration where images, binary files and content-related caches are stored on a file system. The following instructions explain how this can be done, assuming that your eZ Publish site is currently configured to store images and other files in a MySQL database.</p><a name="eztoc132728_1" id="eztoc132728_1"></a><h2>Reverting to non cluster setup</h2><a name="eztoc132728_1_1" id="eztoc132728_1_1"></a><h3>1. Clear the caches (optional)</h3><p>It is recommended (but not required) to clear all eZ Publish caches before disabling the clustering functionality. This can be done by running the &quot;bin/php/ezcache.php&quot; script as shown below:</p><pre class="wordwrap"><span class="line">$php bin/php/ezcache.php --clear-all --purge</span>
+<p>You can always switch from using the <a href="../../../../../4.6/Features/Clustering.html" target="_self">clustering</a> functionality to the standard configuration where images, binary files and content-related caches are stored on a file system. The following instructions explain how this can be done, assuming that your Exponential site is currently configured to store images and other files in a MySQL database.</p><a name="eztoc132728_1" id="eztoc132728_1"></a><h2>Reverting to non cluster setup</h2><a name="eztoc132728_1_1" id="eztoc132728_1_1"></a><h3>1. Clear the caches (optional)</h3><p>It is recommended (but not required) to clear all Exponential caches before disabling the clustering functionality. This can be done by running the &quot;bin/php/ezcache.php&quot; script as shown below:</p><pre class="wordwrap"><span class="line">$php bin/php/ezcache.php --clear-all --purge</span>
 </pre><p>Note that &quot;$php&quot; should be replaced by the path to your php executable.</p><a name="eztoc132728_1_2" id="eztoc132728_1_2"></a><h3>2. Unclusterize images and other files</h3><p>You need to copy images, binary files and content-related caches from the database to the file system. This can be done by running the &quot;bin/php/clusterize.php&quot; script with the &quot;-u&quot; parameter. Make sure that you have enough disk space on the file system before starting this operation.</p><p>The following example shows how to run the script (replace &quot;ezwebin_site&quot; with the actual name of your siteaccess):</p><pre class="wordwrap"><span class="line">$php bin/php/clusterize.php -u -s ezwebin_site</span>
 </pre><p>Note that &quot;$php&quot; should be replaced by the path to your php executable.</p><p>The script will go through the files stored in the database and copy them into the appropriate subdirectories of the &quot;var&quot; directory.</p><a name="eztoc132728_1_3" id="eztoc132728_1_3"></a><h3>3. Modify the &quot;file.ini&quot; settings</h3><p>Open the &quot;settings/override/file.ini.append.php&quot; configuration file and edit it. Comment all lines located under the [ClusteringSettings] block by adding &quot;#&quot; as shown below:</p><pre class="wordwrap copytoclipboard"><span class="line">[ClusteringSettings]</span>
 <span class="line">#FileHandler=eZDBFileHandler</span>
@@ -73,11 +73,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/5.x/Features/Clustering/Reverting-a-cluster-setup/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:09:22 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/5.x/Features/Clustering/Reverting-a-cluster-setup/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 19:09:22 GMT -->
 </html>

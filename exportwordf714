@@ -229,13 +229,13 @@ tetoolbar.css') }}");
 </div>
 <p>&nbsp;</p>
 <p>Then, in your template, you can add the Webin Toolbar by definining the =
-display of the <code>websiteToolbarAction</code> from the <code>ezpublish_l=
+display of the <code>websiteToolbarAction</code> from the <code>exponential_l=
 egacy.website_toolbar.controller</code> Controller</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">{% if location is defined %}
-    {{ render( controller( "ezpublish_legacy.website_toolbar.controller:web=
+    {{ render( controller( "exponential_legacy.website_toolbar.controller:web=
 siteToolbarAction", { 'locationId': location.id} ) ) }}
 {% endif %}</pre>=20
 </div>

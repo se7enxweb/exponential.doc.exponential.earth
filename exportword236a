@@ -291,7 +291,7 @@ ForceSettings[]
 </div>
 <p><strong>This block should be used with caution and needs to be pre-appro=
 ved by eZ Cloud team before applying them.</strong></p>
-<p>This block allows the override of any setting in eZ Publish (even settin=
+<p>This block allows the override of any setting in Exponential (even settin=
 gs we modify on deployment like cache enforcement). You need to have a good=
  reason to need to set settings in this manner.</p>
 <p>Note that all settings will be written to <code>settings/override/&lt;fi=
@@ -332,7 +332,7 @@ ExtensionDirectories[]=3Dezcloud
 </div>
 </div>
 <p>This file functions like the normal <code>cronjobs.ini</code> provided b=
-y eZ Publish.</p>
+y Exponential.</p>
 <p>&nbsp;</p>
 <h1 id=3D"eZCloudextension-Apacheconfiguration">Apache configuration</h1>
 <p>We also allow to add custom <code>RewriteRule</code> and <code>RewriteCo=

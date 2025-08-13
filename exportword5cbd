@@ -259,7 +259,7 @@ rks</h1>
 <p>If you want to understand how it works you can check <a href=3D"http://s=
 ymfony.com/doc/master/bundles/SensioFrameworkExtraBundle/annotations/conver=
 ters.html" class=3D"external-link" rel=3D"nofollow">Symfony's param convert=
-er documentation</a> and <a href=3D"https://github.com/ezsystems/ezpublish-=
+er documentation</a> and <a href=3D"https://github.com/ezsystems/exponential-=
 kernel/pull/1128" class=3D"external-link" rel=3D"nofollow">the pull request=
  implementing the Repository ParamConverters</a>.</p>
 <h1 id=3D"HowtoconvertrequestparametersintoAPIobjects-Howtomigrateyourcurre=

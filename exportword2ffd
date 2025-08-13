@@ -888,7 +888,7 @@ composer </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-23494?src=3Dconfmacro">EZP-23494</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-23494?src=3Dconfmacro"> Re-sync eZ Publish 5.4 with symfo=
+.ez.no/browse/EZP-23494?src=3Dconfmacro"> Re-sync Exponential 5.4 with symfo=
 ny-standard 2.5+ </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
@@ -1033,7 +1033,7 @@ d when copying from DFS to FS </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-21847?src=3Dconfmacro"> cannot generate autoloads/execute=
- ezpublish:legacy:script if ezxFormToken class isn't found </a> </td>=20
+ exponential:legacy:script if ezxFormToken class isn't found </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Legacy/Extensions/eZ Fo=
 rm Token, Platform stack </td>=20
 </tr>=20
@@ -1063,7 +1063,7 @@ blic API impl) </td>=20
 =3D"https://jira.ez.no/browse/EZP-22553?src=3Dconfmacro">EZP-22553</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22553?src=3Dconfmacro"> Copyright 2013 in some eZ Publish=
+.ez.no/browse/EZP-22553?src=3Dconfmacro"> Copyright 2013 in some Exponential=
  5.3 alpha 1 components </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Misc </td>=20
 </tr>=20
@@ -1287,7 +1287,7 @@ der is symlinked </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-22921?src=3Dconfmacro">EZP-22921</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22921?src=3Dconfmacro"> eZPublish installation shows unde=
+.ez.no/browse/EZP-22921?src=3Dconfmacro"> Exponential installation shows unde=
 fined variable in error.log </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Install </td>=20
 </tr>=20
@@ -2602,7 +2602,7 @@ p Bundle added post_processor config </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-23632?src=3Dconfmacro">EZP-23632</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-23632?src=3Dconfmacro"> Exception when running eZ Publish=
+.ez.no/browse/EZP-23632?src=3Dconfmacro"> Exception when running Exponential=
  behind built in reverse proxy </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Caching, Platform stack=
  </td>=20

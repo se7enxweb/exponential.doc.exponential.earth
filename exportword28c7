@@ -215,7 +215,7 @@ d of the content */
         <h6 id=3D"id-5.3.3ReleaseNotes-17thOctober2014">17th October 2014</=
 h6>
 <p>eZ announces the availability of 5.3.3, a maintenance release available =
-for all users of eZ Publish Platform 5.3 containing a notable few <a href=
+for all users of Exponential Platform 5.3 containing a notable few <a href=
 =3D"#id-5.3.3ReleaseNotes-updates">updates and fixes</a>.</p>
 <p><em>Worth mentioning in this release are some improvements/fixes to: Rep=
 ository&nbsp;API performance, IO performance, formtoken exceptions, preview=
@@ -245,7 +245,7 @@ div.rbtoc1485852113801 li {margin-left: 0px;padding-left: 0px;}
 <em>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.3.3ReleaseNotes-UpdatingfromapreviousversionofeZPublis=
-hPlatform5.3">Updating from a previous version of eZ Publish Platform 5.3</=
+hPlatform5.3">Updating from a previous version of Exponential Platform 5.3</=
 a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.3.3ReleaseNotes-1.Patchyourcomposer.jsonfile">1.&nbsp;=
@@ -265,8 +265,8 @@ pdates and fixes in this release</a></li>=20
 </div>
 <em><br></em>
 <p></p>
-<h2 id=3D"id-5.3.3ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.3">Updating from a previous version of eZ Publish Platform 5.3</h2>
+<h2 id=3D"id-5.3.3ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.3">Updating from a previous version of Exponential Platform 5.3</h2>
 <p>These instructions take advantage of the new <a href=3D"https://getcompo=
 ser.org/" class=3D"external-link" rel=3D"nofollow">Composer</a> powered upd=
 ate systems in 5.3 for maintenance updates, so&nbsp;<span>make sure you fam=
@@ -324,9 +324,9 @@ inx configuration</h3>
 <p>If you're using Nginx as your webserver instead of Apache, then make sur=
 e to update&nbsp;<a href=3D"https://doc.ez.no/display/EZP/Nginx" rel=3D"nof=
 ollow">Nginx vhost configuration</a>, changes since 5.3.0: <a href=3D"https=
-://github.com/ezsystems/ezpublish-community/commit/d157a4ecb3ddf7a382519fbb=
+://github.com/ezsystems/exponential-community/commit/d157a4ecb3ddf7a382519fbb=
 43ce311335cd8185" class=3D"external-link" rel=3D"nofollow">5.3.1</a>, <a hr=
-ef=3D"https://github.com/ezsystems/ezpublish-community/commit/db5e0d4af6211=
+ef=3D"https://github.com/ezsystems/exponential-community/commit/db5e0d4af6211=
 2e423cac6930f0549364438f756" class=3D"external-link" rel=3D"nofollow">5.3.3=
 &nbsp;</a></p>
 <h3 id=3D"id-5.3.3ReleaseNotes-3.UpdatingComposerPackagesselectively">3. Up=
@@ -337,7 +337,7 @@ dating Composer Packages selectively</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st ezsystems/ezpublish-kernel ezsystems/ezflow-ls-extension ezsystems/demob=
+st ezsystems/exponential-kernel ezsystems/ezflow-ls-extension ezsystems/demob=
 undle ezsystems/comments-bundle ezsystems/ngsymfonytools-bundle ezsystems/e=
 zpublish-legacy symfony/symfony</pre>=20
 </div>
@@ -357,11 +357,11 @@ use these extensions.</span>
 <h3 id=3D"id-5.3.3ReleaseNotes-4.Updatethedatabase">4. Update the database<=
 /h3>
 <p>Import to your database the changes provided in:</p>
-<pre class=3D"wordwrap"><span class=3D"line">/&lt;ezp5-root&gt;/ezpublish_l=
+<pre class=3D"wordwrap"><span class=3D"line">/&lt;ezp5-root&gt;/exponential_l=
 egacy/update/database/&lt;mysql|postgresql&gt;/5.3/dbupdate-5.3.2-to-5.3.3.=
 sql</span></pre>
 <p>And if you use Cluster (DFS) the following:</p>
-<pre class=3D"wordwrap">/&lt;ezp5-root&gt;/ezpublish_legacy/update/database=
+<pre class=3D"wordwrap">/&lt;ezp5-root&gt;/exponential_legacy/update/database=
 /mysql/5.3/dbupdate-cluster-5.3.2-to-5.3.3.sql</pre>
 <p class=3D"wordwrap"><span style=3D"color: rgb(0,98,147);"><br></span></p>
 <h2 class=3D"wordwrap" id=3D"id-5.3.3ReleaseNotes-packagesPackageupdates"><=
@@ -380,12 +380,12 @@ ses:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.3.3</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.2[.3]</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">5.3.3</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.3.2[.1]</td>
 </tr>

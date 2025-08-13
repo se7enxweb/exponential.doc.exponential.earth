@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.6/Installation/Automated-installation/Automated-installation-of-eZ-Publish by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:28 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.6/Installation/Automated-installation/Automated-installation-of-Exponential by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:28 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Automated installation of eZ Publish / Automated installation / Installation / 4.6 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Automated installation of Exponential / Automated installation / Installation / 4.6 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -37,16 +37,16 @@
 
 
 <div class="attribute-heading">
-<h1>Automated installation of eZ Publish</h1>
+<h1>Automated installation of Exponential</h1>
 </div>
 
 <p>The requirements for doing an automated installation must be met. Please read the previous section if you're not sure about the requirements. This section will guide you through the following steps:</p>
 <ul>
-<li><div>Setting up a database (MySQL or PostgreSQL) </div></li><li><div>Downloading eZ Publish </div></li><li><div>Unpacking eZ Publish </div></li><li><div>Configuring the kickstart system </div></li><li><div>Starting the installation by initiating the web based setup wizard </div></li>
+<li><div>Setting up a database (MySQL or PostgreSQL) </div></li><li><div>Downloading Exponential </div></li><li><div>Unpacking Exponential </div></li><li><div>Configuring the kickstart system </div></li><li><div>Starting the installation by initiating the web based setup wizard </div></li>
 </ul>
-<p>Depending on the target system, please refer to either <a href="../../../4.x/Installation/Normal-installation/Installing-eZ-Publish-on-a-Linux-UNIX-based-system.html" target="_self">&quot;Installing eZ Publish on a Linux/UNIX based system&quot;</a> or <a href="../../../4.x/Installation/Normal-installation/Installing-eZ-Publish-on-Windows.html" target="_self">&quot;Installing eZ Publish on Windows&quot;</a> for information about the first three steps (database setup, download and unpacking). The rest of the steps are explained below.</p><a name="eztoc125094_1" id="eztoc125094_1"></a><h2>Configuring the kickstart system</h2><p>The behavior of the automated installation is controlled by the &quot;kickstart.ini&quot; configuration file. This file makes it possible to specify parameters for each installation step of the web based setup wizard. For example, by providing the database connection parameters, the corresponding setup wizard step will have the input forms pre-filled. It is also possible to instruct the wizard to skip certain steps.</p><a name="eztoc125094_1_1" id="eztoc125094_1_1"></a><h3>Initialization</h3><p>Create a copy of the &quot;kickstart.ini-dist&quot; file (located in the root of your eZ Publish installation) and make sure that the copy is named &quot;kickstart.ini&quot; (located in the root of eZ Publish).</p><p>The following example shows how this can be done on a Linux/UNIX based system:</p>
+<p>Depending on the target system, please refer to either <a href="../../../4.x/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system.html" target="_self">&quot;Installing Exponential on a Linux/UNIX based system&quot;</a> or <a href="../../../4.x/Installation/Normal-installation/Installing-Exponential-on-Windows.html" target="_self">&quot;Installing Exponential on Windows&quot;</a> for information about the first three steps (database setup, download and unpacking). The rest of the steps are explained below.</p><a name="eztoc125094_1" id="eztoc125094_1"></a><h2>Configuring the kickstart system</h2><p>The behavior of the automated installation is controlled by the &quot;kickstart.ini&quot; configuration file. This file makes it possible to specify parameters for each installation step of the web based setup wizard. For example, by providing the database connection parameters, the corresponding setup wizard step will have the input forms pre-filled. It is also possible to instruct the wizard to skip certain steps.</p><a name="eztoc125094_1_1" id="eztoc125094_1_1"></a><h3>Initialization</h3><p>Create a copy of the &quot;kickstart.ini-dist&quot; file (located in the root of your Exponential installation) and make sure that the copy is named &quot;kickstart.ini&quot; (located in the root of Exponential).</p><p>The following example shows how this can be done on a Linux/UNIX based system:</p>
 <ol>
-<li><div><p>Navigate into the eZ Publish directory:</p><pre class="wordwrap"><span class="line">$ cd /path/to/ezpublish/</span>
+<li><div><p>Navigate into the Exponential directory:</p><pre class="wordwrap"><span class="line">$ cd /path/to/exponential/</span>
 </pre></div></li><li><div><p>Copy and rename the configuration file:</p><pre class="wordwrap"><span class="line">$ cp kickstart.ini-dist kickstart.ini</span>
 </pre></div></li>
 </ol>
@@ -118,17 +118,17 @@
 </tr>
 
 </table>
-<a name="eztoc125094_2" id="eztoc125094_2"></a><h2>Starting the installation</h2><p>The installation can be started by initiating the web based setup wizard. Please refer to the <a href="../../../4.x/Installation/Normal-installation/Installing-eZ-Publish-on-a-Linux-UNIX-based-system.html#initiating_the_setup_wizard" target="_self">&quot;Initiating the setup wizard&quot;</a> part of the &quot;Normal installation&quot; section.</p>
+<a name="eztoc125094_2" id="eztoc125094_2"></a><h2>Starting the installation</h2><p>The installation can be started by initiating the web based setup wizard. Please refer to the <a href="../../../4.x/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system.html#initiating_the_setup_wizard" target="_self">&quot;Initiating the setup wizard&quot;</a> part of the &quot;Normal installation&quot; section.</p>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.6/Installation/Automated-installation/Automated-installation-of-eZ-Publish by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:28 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/4.6/Installation/Automated-installation/Automated-installation-of-Exponential by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:28 GMT -->
 </html>

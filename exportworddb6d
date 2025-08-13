@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <h6 id=3D"id-5.4.3ReleaseNotes-July27th2015">July 27th 2015</h6>
 <p>eZ announces the availability of 5.4.3, a maintenance release available =
-for all users of eZ Publish Platform 5.4 containing a notable few <a href=
+for all users of Exponential Platform 5.4 containing a notable few <a href=
 =3D"#id-5.4.3ReleaseNotes-updates">updates and fixes</a>.</p>
 <p>Follow the <a href=3D"/display/EZP/5.4.x+Update+Instructions">5.4.x Upda=
 te Instructions</a>&nbsp;to apply this update to your platforms.</p>
@@ -234,12 +234,12 @@ this releases:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.3</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.2</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">5.4.3</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.2</td>
 </tr>
@@ -674,7 +674,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-24234?src=3Dconfmacro">EZP-24234</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-24234?src=3Dconfmacro"> ezpublish_legacy - DebugByIP IPV4=
+.ez.no/browse/EZP-24234?src=3Dconfmacro"> exponential_legacy - DebugByIP IPV4=
  not working correctly </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-24234?src=3Dconfmacro"><img src=3D"https:=
@@ -819,7 +819,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-24334?src=3Dconfmacro"> Error exporting ezpackage with ez=
-pm.php through ezpublish:legacy:script </a> </td>=20
+pm.php through exponential:legacy:script </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-24334?src=3Dconfmacro"><img src=3D"https:=
 //jira.ez.no/images/icons/issuetypes/bug.png" alt=3D"Bug" class=3D"icon"></=

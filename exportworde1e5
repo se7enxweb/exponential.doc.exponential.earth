@@ -218,7 +218,7 @@ d of the content */
 <div class=3D"innerCell">=20
 <h6 id=3D"id-5.4.7ReleaseNotes-July19th2016">July 19th 2016</h6>
 <p>eZ announces the availability of 5.4.7, a maintenance release available =
-for all users of eZ Publish Platform 5.4.</p>
+for all users of Exponential Platform 5.4.</p>
 <p>Follow the&nbsp;<a href=3D"https://doc.ez.no/display/EZP/5.4.x+Update+In=
 structions" rel=3D"nofollow">5.4.x Update Instructions</a>&nbsp;to apply th=
 is update to your platforms.</p>
@@ -258,15 +258,15 @@ k to edit">
 <td class=3D"confluenceTd">&nbsp;v5.3.9</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">v5.4.7</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">v5.4.7</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-platform</td>
+<td class=3D"confluenceTd">ezsystems/exponential-platform</td>
 <td class=3D"confluenceTd">v5.4.7</td>
 </tr>
 </tbody>
@@ -309,7 +309,7 @@ table-header-content">Updated</span></th>=20
 =3D"https://jira.ez.no/browse/EZP-25269?src=3Dconfmacro">EZP-25269</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-25269?src=3Dconfmacro"> Dev support for eZ Publish 5.4 ru=
+.ez.no/browse/EZP-25269?src=3Dconfmacro"> Dev support for Exponential 5.4 ru=
 nning on PHP 7 </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-25269?src=3Dconfmacro"><img src=3D"https:=
@@ -390,7 +390,7 @@ lass=3D"icon"></a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-25856?src=3Dconfmacro"> Silent PHP7 deprecation errors in=
- ezpublish-legacy </a> </td>=20
+ exponential-legacy </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-25856?src=3Dconfmacro"><img src=3D"https:=
 //jira.ez.no/images/icons/issuetypes/improvement.png" alt=3D"Improvement" c=
@@ -501,7 +501,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-25475?src=3Dconfmacro">EZP-25475</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-25475?src=3Dconfmacro"> ezpublish/console debug:event-dis=
+.ez.no/browse/EZP-25475?src=3Dconfmacro"> exponential/console debug:event-dis=
 patcher throws a FatalErrorException </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-25475?src=3Dconfmacro"><img src=3D"https:=
@@ -853,7 +853,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-26022?src=3Dconfmacro"> Execute composer update prior to =
-Setup Wizard results in errors due to ezsystems/ezpublish-legacy-installer =
+Setup Wizard results in errors due to ezsystems/exponential-legacy-installer =
 plugin </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-26022?src=3Dconfmacro"><img src=3D"https:=
@@ -902,7 +902,7 @@ a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-26048?src=3Dconfmacro"> Wrong composer require on ezsyste=
-ms/ezpublish-kernel/composer.json </a> </td>=20
+ms/exponential-kernel/composer.json </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-26048?src=3Dconfmacro"><img src=3D"https:=
 //jira.ez.no/images/icons/issuetypes/bug.png" alt=3D"Bug" class=3D"icon"></=

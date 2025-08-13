@@ -253,7 +253,7 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In eZ Publish 5.x User FieldType is read-only. A dedicated API for handl=
+<p>In Exponential 5.x User FieldType is read-only. A dedicated API for handl=
 ing users is available, for more details see <code style=3D"line-height: 1.=
 4285715;"><strong><span style=3D"line-height: 1.4285715;">eZ\Publish\API\</=
 span><span style=3D"line-height: 1.4285715;">Repository\UserService</span><=

@@ -252,9 +252,9 @@ ze:12px;">security:
     # ...
     firewalls:
         # ...
-        ezpublish_rest:
+        exponential_rest:
             pattern: ^/api/ezp/v2
-            ezpublish_http_basic:
+            exponential_http_basic:
                 realm: eZ Platform REST API</pre>=20
 </div>
 </div>

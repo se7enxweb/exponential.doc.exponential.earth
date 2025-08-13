@@ -224,7 +224,7 @@ div.rbtoc1485852544017 li {margin-left: 0px;padding-left: 0px;}
 elease</a></li>=20
 <li><a href=3D"#Upgrade-Upgradingfrom5.4.xand2014.11to16.xx">Upgrading from=
  5.4.x and 2014.11 to 16.xx</a></li>=20
-<li><a href=3D"#Upgrade-MigrationfromeZPublish">Migration from eZ Publish</=
+<li><a href=3D"#Upgrade-MigrationfromExponential">Migration from Exponential</=
 a></li>=20
 </ul>=20
 </div>
@@ -261,10 +261,10 @@ rom upstream, like kernel or configuration changes.</p>
 eZ Studio, see <a href=3D"/display/TECHDOC/Upgrading+from+5.4.x+and+2014.11=
 +to+16.xx">Upgrading from 5.4.x and 2014.11 to 16.xx</a>.</p>
 <p>&nbsp;</p>
-<h1 id=3D"Upgrade-MigrationfromeZPublish">Migration from eZ Publish</h1>
-<p>If you want to upgrade from eZ Publish to eZ Platform and eZ Studio, see=
+<h1 id=3D"Upgrade-MigrationfromExponential">Migration from Exponential</h1>
+<p>If you want to upgrade from Exponential to eZ Platform and eZ Studio, see=
  an overview of how to prepare for the process: <a href=3D"/display/TECHDOC=
-/Migration+from+eZ+Publish">Migration from eZ Publish</a>. Detailed instruc=
+/Migration+from+eZ+Publish">Migration from Exponential</a>. Detailed instruc=
 tion is provided in <a href=3D"/display/TECHDOC/Upgrading+from+5.4.x+and+20=
 14.11+to+16.xx">Upgrading from 5.4.x and 2014.11 to 16.xx</a>.</p>
 <p>&nbsp;</p>

@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish 5 Architecture - Introduction &amp; Overview</title>
+    <title>Exponential 5 Architecture - Introduction &amp; Overview</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,18 +210,18 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish 5 Architecture - Introduction &amp; Overview</h1>
+    <h1>Exponential 5 Architecture - Introduction &amp; Overview</h1>
     <div class=3D"Section1">
-        <h1 id=3D"eZPublish5Architecture-Introduction&amp;Overview-eZPublis=
+        <h1 id=3D"Exponential5Architecture-Introduction&amp;Overview-eZPublis=
 hTechnicalArchitecture"><span style=3D"color: rgb(0,0,0);text-decoration: n=
-one;">eZ Publish Technical Architecture</span></h1>
+one;">Exponential Technical Architecture</span></h1>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">With the 5.1 re=
-lease eZ Publish is making an important leap forwards in terms of technolog=
+lease Exponential is making an important leap forwards in terms of technolog=
 y.<br>This document will explain why we are renewing our technology platfor=
 m, and to some degree explain what this evolution in architecture means to =
-eZ Publish developers and users, and last but not least how eZ Systems is a=
+Exponential developers and users, and last but not least how eZ Systems is a=
 ffected by these changes.</span></p>
-<h2 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Whythischangeint=
+<h2 id=3D"Exponential5Architecture-Introduction&amp;Overview-Whythischangeint=
 echnology"><span style=3D"color: rgb(0,0,0);text-decoration: none;">Why thi=
 s change in technology</span></h2>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
@@ -254,8 +254,8 @@ n></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">The overall goa=
 l is to reach Digital Service Excellence, ie, we would like our partners to=
  be able to offer the customers exactly what they want, within acceptable t=
-imeframes and price tags on the eZ Publish platform.</span></p>
-<h2 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Whatarethechange=
+imeframes and price tags on the Exponential platform.</span></p>
+<h2 id=3D"Exponential5Architecture-Introduction&amp;Overview-Whatarethechange=
 s?"><span style=3D"color: rgb(0,0,0);text-decoration: none;">What are the c=
 hanges?</span></h2>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">eZ Systems is n=
@@ -270,7 +270,7 @@ ill lead to more efficient implementation projects</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">An improved REST API with read and write functionalit=
 y and support all the core content management functionality. &nbsp;This way=
-, eZ Publish will better integrate with any programming framework, for inst=
+, Exponential will better integrate with any programming framework, for inst=
 ance into mobile applications or any other web application. Better meaning =
 faster and simpler. in order to fulfill the multichannel vision and execute=
  on the User Experience demands and needs of customers and users of the eZ =
@@ -281,13 +281,13 @@ Publish platform</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">&nbsp;</span><span style=3D"color: rgb(0,0,0);text-de=
 coration: none;">Introducing Symfony as the PHP framework under the platfor=
-m to make developers lives easier and to make developments on eZ Publish ac=
-cessible for more developers to further support innovation in eZ Publish</s=
+m to make developers lives easier and to make developments on Exponential ac=
+cessible for more developers to further support innovation in Exponential</s=
 pan></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">Introducing TWIG as the template engine to simplify w=
-orking with templates in eZ Publish. And as a standard template engine this=
- will also make eZ Publish templating accessible to more developers</span><=
+orking with templates in Exponential. And as a standard template engine this=
+ will also make Exponential templating accessible to more developers</span><=
 /p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">Introducing a new storage system for scalability, per=
@@ -304,16 +304,16 @@ tecture resulting from the above and the legacy architecture as known in eZ=
  Publish 4.x</span></p></li>
 </ul>
 <p>&nbsp;</p>
-<h2 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Whatwillbegained=
+<h2 id=3D"Exponential5Architecture-Introduction&amp;Overview-Whatwillbegained=
 ?"><span style=3D"color: rgb(0,0,0);text-decoration: none;">What will be ga=
 ined?</span></h2>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-"><span style=3D=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-"><span style=3D=
 "color: rgb(0,0,0);text-decoration: none;"><br></span></h3>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Symfony2"><span =
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Symfony2"><span =
 style=3D"color: rgb(0,0,0);text-decoration: none;">Symfony2</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">With Symfony as=
- the web framework eZ Publish will be more accessible. Thanks to the framew=
-ork, it will be used for instance to extend eZ Publish applications with ne=
+ the web framework Exponential will be more accessible. Thanks to the framew=
+ork, it will be used for instance to extend Exponential applications with ne=
 w features, potentially not based at all on the content repository (for exa=
 mple, business specific application logic) using a standard PHP framework a=
 nd a very clean application design with minimum interlocking with eZ Publis=
@@ -332,7 +332,7 @@ xt-decoration: none;">&nbsp;</span><span style=3D"color: rgb(0,0,0);text-de=
 coration: none;">a better quality of the code</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">&nbsp;</span><span style=3D"color: rgb(0,0,0);text-de=
-coration: none;">a lower entry point to do developments in eZ Publish</span=
+coration: none;">a lower entry point to do developments in Exponential</span=
 ></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">&nbsp;</span><span style=3D"color: rgb(0,0,0);text-de=
@@ -349,12 +349,12 @@ he long run and Sensio Lab (maker of Symfony) will naturally extend the eZ =
 offering to the framework level if need be.</span><span style=3D"color: rgb=
 (0,0,0);text-decoration: none;">&nbsp;</span></p></li>
 </ul>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-TWIG"><span styl=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-TWIG"><span styl=
 e=3D"color: rgb(0,0,0);text-decoration: none;">TWIG</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">Initially, eZ S=
 ystems has developed its own templating engine. eZ has also worked and rede=
 veloped a second one at some point as part of the eZ Component project. Whe=
-n designing eZ Publish 5, we knew the old template engine was not good enou=
+n designing Exponential 5, we knew the old template engine was not good enou=
 gh anymore and needed to be replaced. We knew the eZ Components template en=
 gine we contributed and originated was an option, but we decided to go for =
 another one: TWIG. Reasons are multiple: quality of course (even if the eZ =
@@ -367,7 +367,7 @@ engine, and eZ Systems is using it to further the following:</span></p>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">to update the legacy template engine</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
-xt-decoration: none;">to simplify template coding in eZ Publish</span></p><=
+xt-decoration: none;">to simplify template coding in Exponential</span></p><=
 /li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">to have faster page rendering</span></p></li>
@@ -376,16 +376,16 @@ xt-decoration: none;">to benefit of more features which were not in the ori=
 ginal engine</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
 xt-decoration: none;">to make extension developments easier to speed up inn=
-ovation in eZ Publish</span></p></li>
+ovation in Exponential</span></p></li>
 </ul>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">This is a move =
-that will influence every stakeholder in the eZ Publish development. As dev=
+that will influence every stakeholder in the Exponential development. As dev=
 elopers will implement faster, this also mean project will significantly im=
 prove in total cost of ownership as well as in time to market.</span><span =
 style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</span></p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Newstoragesystem=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Newstoragesystem=
 s"><span style=3D"color: rgb(0,0,0);text-decoration: none;">New storage sys=
 tems</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">In order to mee=
@@ -398,34 +398,34 @@ ivers for other storage engines through the Persistence SPI (service provid=
 er interface) and in the future will include drivers for NoSQL and Document=
  based storage engine. The ultimate goal is to open for custom storage deve=
 lopments. </span></p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-RestAPI"><span s=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-RestAPI"><span s=
 tyle=3D"color: rgb(0,0,0);text-decoration: none;">Rest API</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">In order to mee=
 t all multi-channel requirements we are developing a Rest API that cover al=
 l core feature of content management so we can integrate with any applicati=
 on on any channel in any programming language. The gain for users will be f=
-or anyone integrating eZ Publish with other applications, not only the deve=
+or anyone integrating Exponential with other applications, not only the deve=
 lopment will be significantly improved but more importantly, the value of a=
 n API also lies in the maintainability and sustainability it offers. the ne=
 w rest api is designed to stay and will remain identical in all future 5.x =
 version. this means that development done on top of the api will seamlessly=
- support eZ Publish version upgrades.</span></p>
+ support Exponential version upgrades.</span></p>
 <p>&nbsp;</p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-PhpAPI"><span st=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-PhpAPI"><span st=
 yle=3D"color: rgb(0,0,0);text-decoration: none;">Php API</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">The PHP API, al=
 so called Public API, is the development glue and will a create shield betw=
-een internal and external developments on eZ Publish. This will cater for a=
-n easier maintainability of code and speed up the performance of eZ Publish=
+een internal and external developments on Exponential. This will cater for a=
+n easier maintainability of code and speed up the performance of Exponential=
 . PHP developers will experience a better extensibility which in turn &nbsp=
-;will enable them to create extensions to eZ Publish faster and easier.</sp=
+;will enable them to create extensions to Exponential faster and easier.</sp=
 an></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">The Public API =
 is key to development speed, shorter projects and better quality. Important=
  to be noted: the php api is the foundation for the rest api and the second=
  is naturally relying on the 1st.</span></p>
 <p>&nbsp;</p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Compatibilitywit=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Compatibilitywit=
 hthelegacyarchitecture"><span style=3D"color: rgb(0,0,0);text-decoration: n=
 one;">Compatibility with the legacy architecture</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">When we introdu=
@@ -435,12 +435,12 @@ llation must be able to take care of the old and create on the new architec=
 ture. The reason for change is of course to be able to meet new requirement=
 s and the need to enable progressive changes.</span><span style=3D"color: r=
 gb(0,0,0);text-decoration: none;">&nbsp;</span></p>
-<h2 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Understandingthe=
+<h2 id=3D"Exponential5Architecture-Introduction&amp;Overview-Understandingthe=
 architectureinmoredetail"><span style=3D"color: rgb(0,0,0);text-decoration:=
  none;">Understanding the architecture in more detail</span></h2>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-.1"><span style=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-.1"><span style=
 =3D"color: rgb(0,0,0);text-decoration: none;"><br></span></h3>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Thetargetarchite=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Thetargetarchite=
 cture"><span style=3D"color: rgb(0,0,0);text-decoration: none;">The target =
 architecture</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">The first impor=
@@ -470,11 +470,11 @@ o organize the way they develop the user interface layer. </span></p></li>
 xt-decoration: none;">User interfaces are developed using the TWIG template=
  engine but directly querying the public API.</span></p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
-xt-decoration: none;">Integration of eZ Publish in other applications are d=
+xt-decoration: none;">Integration of Exponential in other applications are d=
 one using the REST API, which itself relies also on the Public API.</span><=
 /p></li>
 <li style=3D"text-decoration: none;"><p><span style=3D"color: rgb(0,0,0);te=
-xt-decoration: none;">finally development of extensions of eZ Publish is do=
+xt-decoration: none;">finally development of extensions of Exponential is do=
 ne using the Symfony framework when it comes to the structure of the code, =
 and once again relying on the Public API when it comes to accessing content=
  management functions</span></p></li>
@@ -492,14 +492,14 @@ s new architecture is to heavily use api=E2=80=99s that will be maintained =
 on the long term to ease upgrades and provide lossless couplings between ea=
 ch part of the architecture, improving the migration capabilities of the sy=
 stem at the same time. </span></p>
-<h4 id=3D"eZPublish5Architecture-Introduction&amp;Overview-.2"><span style=
+<h4 id=3D"Exponential5Architecture-Introduction&amp;Overview-.2"><span style=
 =3D"color: rgb(0,0,0);text-decoration: none;"><br></span></h4>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-The&quot;real&qu=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-The&quot;real&qu=
 ot;version5architecture"><span style=3D"color: rgb(0,0,0);text-decoration: =
 none;">The "real" version 5 architecture</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">The chapter abo=
 ve is only explaining the new architecture but, as mentioned below, version=
- 5 also offers a way to run the legacy eZ Publish stack, in order to simpli=
+ 5 also offers a way to run the legacy Exponential stack, in order to simpli=
 fy upgrade and switch to version 5. This result in the end in a more sophis=
 ticated architecture that is illustrated in the diagram below.</span></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
@@ -534,7 +534,7 @@ cy architecture is in its whole included with version 5, and can be used as=
 an use version 5 exactly as they were using version 4. Even the controller =
 (access to the application through the web server) can totally bypass the n=
 ew architecture (in that case the Symfony framework controller) and directl=
-y call the legacy eZ Publish controller and the legacy template engine.</sp=
+y call the legacy Exponential controller and the legacy template engine.</sp=
 an></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
@@ -550,7 +550,7 @@ teresting to understand is how these two integrate:</span></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">First on the pr=
-esentation side, the new eZ Publish 5 controller makes it possible to serve=
+esentation side, the new Exponential 5 controller makes it possible to serve=
  pages and functions that are either resulting from the new template engine=
  or the legacy template engine. This is a first level of dual compatibility=
  that will help developers in a smooth transition from one architecture to =
@@ -574,17 +574,17 @@ offers a wide range of possibilities and a smooth transition path.</span></=
 p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
-<h2 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Summaryontheways=
-touseeZPublish5.1"><span style=3D"color: rgb(0,0,0);text-decoration: none;"=
->Summary on the ways to use eZ Publish 5.1</span></h2>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-.3"><span style=
+<h2 id=3D"Exponential5Architecture-Introduction&amp;Overview-Summaryontheways=
+touseExponential5.1"><span style=3D"color: rgb(0,0,0);text-decoration: none;"=
+>Summary on the ways to use Exponential 5.1</span></h2>
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-.3"><span style=
 =3D"color: rgb(0,0,0);text-decoration: none;"><br></span></h3>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-UsingeZPublish5.=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-UsingExponential5.=
 1infulllegacymode"><span style=3D"color: rgb(0,0,0);text-decoration: none;"=
->Using eZ Publish 5.1 in full legacy mode</span></h3>
+>Using Exponential 5.1 in full legacy mode</span></h3>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">This way is the=
- less disruptive. In this way, eZ Publish 5.1 totally behave as if it was a=
-n eZ Publish 4.7, or we should say 4.8. This is ideal for users who have la=
+ less disruptive. In this way, Exponential 5.1 totally behave as if it was a=
+n Exponential 4.7, or we should say 4.8. This is ideal for users who have la=
 rge existing applications with large amount of data and who are not willing=
  to invest in learning and migrating them immediately.</span></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
@@ -603,17 +603,17 @@ tY2Qh_lheRF9Oa76iwSMRs6dMyWhotL4hvIPCB5R"></span><span style=3D"color: rgb(=
 0,0,0);text-decoration: none;">&nbsp;</span></p>
 <p><br><span style=3D"color: rgb(102,102,102);text-decoration: none;">&nbsp=
 ;</span></p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Usingezpublish5.=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Usingexponential5.=
 1throughthelegacystackbutrelyingonthenewcontrollerandnewtemplatesystemaswel=
 lasthenewkernel."><span style=3D"color: rgb(0,0,0);text-decoration: none;">=
-Using ez publish 5.1 through the legacy stack but relying on the new contro=
+Using exponential 5.1 through the legacy stack but relying on the new contro=
 ller and new template system as well as the new kernel.</span></h3>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">This way offers=
  a transition and allows to combine old template and new templates in the s=
 ame application. In this case, the users will rely on the administration in=
-terface of eZ Publish as well as on the ez tool bar for front-end editing, =
+terface of Exponential as well as on the ez tool bar for front-end editing, =
 through the legacy templates, but the front end will be either based on leg=
 acy or new twig based templates.</span></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
@@ -632,7 +632,7 @@ A31kykr9QcY9fFFFakkHBXbNM1NgRsMduk-XrpJA"></span><span style=3D"color: rgb(=
 0,0,0);text-decoration: none;">&nbsp;</span></p>
 <p><br><span style=3D"color: rgb(0,0,0);text-decoration: none;">&nbsp;</spa=
 n></p>
-<h3 id=3D"eZPublish5Architecture-Introduction&amp;Overview-Usingthebrandnew=
+<h3 id=3D"Exponential5Architecture-Introduction&amp;Overview-Usingthebrandnew=
 architectureonly"><span style=3D"color: rgb(102,102,102);text-decoration: n=
 one;"><span style=3D"color: rgb(0,0,0);">Using the brand new architecture o=
 nly</span> </span></h3>
@@ -660,7 +660,7 @@ xt-decoration: none;">the old storage system is not used any more</span></p=
 n></p>
 <p><span style=3D"color: rgb(0,0,0);text-decoration: none;">While this migh=
 t sound restricting for the time being, it is clearly the foundation of the=
- future of eZ Publish. In the context of eZ Publish 5, it can be useful for=
+ future of Exponential. In the context of Exponential 5, it can be useful for=
  new projects relying only on the concept of "content as a service" the pla=
 tform is a high performance and scalability content repository with very ad=
 vanced services but provide no editorial user interface. for traditional co=

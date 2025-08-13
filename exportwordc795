@@ -221,7 +221,7 @@ ed to store binary files on an NFS server.&nbsp;It will use a database to m=
 anipulate metadata, making up for the potential inconsistency of network ba=
 sed filesystems.</p>
 <h2 id=3D"DFSIOhandler-Configuration"><a class=3D"external-link" href=3D"ht=
-tps://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/=
+tps://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/=
 io/legacy_dfs_cluster.md#configuration" name=3D"user-content-configuration"=
  rel=3D"nofollow"></a>Configuration</h2>
 <p>You need to configure both metadata and binarydata handlers.</p>
@@ -259,7 +259,7 @@ ez_io:
                 connection: doctrine.dbal.dfs_connection
 # set the handlers
 
-ezpublish:
+exponential:
     system:
         default:
             io:
@@ -269,7 +269,7 @@ ezpublish:
 </div>
 <h3 id=3D"DFSIOhandler-Customizingthestoragedirectory">Customizing the stor=
 age directory</h3>
-<p>eZ Publish 5.x required the NFS adapter directory to be set to <code>$va=
+<p>Exponential 5.x required the NFS adapter directory to be set to <code>$va=
 r_dir$/$storage_dir$</code> part for the NFS path. This is no longer requir=
 ed with eZ Platform, but the default prefix used to serve binary files will=
  still match this expectation.</p>
@@ -280,7 +280,7 @@ l_prefix</code> to a matching value. If you set the NFS adapter's directory=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
 =09system:
 =09=09default:
 =09=09=09io:
@@ -306,7 +306,7 @@ low">http://static.example.com</a>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
 =09system:
 =09=09default:
 =09=09=09io:
@@ -325,7 +325,7 @@ b/app.php</code>.</p>
 <p>In any case, this specific rewrite rule must be placed without the ones =
 that "ignore" image files and just let the web server serve the files.</p>
 <h3 id=3D"DFSIOhandler-Apache"><a class=3D"external-link" href=3D"https://g=
-ithub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/lega=
+ithub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/lega=
 cy_dfs_cluster.md#apache" name=3D"user-content-apache" rel=3D"nofollow"></a=
 >Apache</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -336,7 +336,7 @@ cy_dfs_cluster.md#apache" name=3D"user-content-apache" rel=3D"nofollow"></a=
 </div>
 </div>
 <h3 id=3D"DFSIOhandler-nginx"><a class=3D"external-link" href=3D"https://gi=
-thub.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legac=
+thub.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legac=
 y_dfs_cluster.md#nginx" name=3D"user-content-nginx" rel=3D"nofollow"></a>ng=
 inx</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">

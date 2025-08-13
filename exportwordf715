@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>The bundle</h1>
     <div class=3D"Section1">
-        <p><span>FieldTypes, like any other eZ Publish 5 extensions, must b=
+        <p><span>FieldTypes, like any other Exponential 5 extensions, must b=
 e provided as Symfony 2 bundles. This chapter will cover the creation and o=
 rganization of this bundle.</span></p>
 <p>First, we will explain how to generate the skeleton for a standard Symfo=

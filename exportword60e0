@@ -215,7 +215,7 @@ d of the content */
         <p>These rewrite rules can be used if you don't have direct access =
 to alter the virtual host configuration, which is common in a shared hostin=
 g setup. The file "<code>.htaccess_root</code>" is included in the installa=
-tion package of your eZ Publish installation. In order to activate these re=
+tion package of your Exponential installation. In order to activate these re=
 write rules in your hosted environment, you must change the name of the fil=
 e to "<code>.htaccess</code>" and keep in the same folder as the original "=
 <code>.htaccess_root</code>" file.</p>
@@ -223,7 +223,7 @@ e to "<code>.htaccess</code>" and keep in the same folder as the original "=
 ow:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre># Copy this file to a new file called .htaccess in your eZ Publish roo=
+<pre># Copy this file to a new file called .htaccess in your Exponential roo=
 t
 # to secure your installation by turning on .htaccess based virtual host mo=
 de.
@@ -245,12 +245,12 @@ RewriteRule ^packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - =
 [L]
 RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
-# Assetic rules for eZ Publish 5.1 and higher:
+# Assetic rules for Exponential 5.1 and higher:
 RewriteRule ^/css/.*\.css - [L]
 RewriteRule ^/js/.*\.js - [L]
 =20
 # Makes it possible to placed your favicon at the root of your
-# eZ Publish instance. It will then be served directly.
+# Exponential instance. It will then be served directly.
 RewriteRule ^favicon\.ico - [L]
 # Uncomment the line below if you want you favicon be served from the stand=
 ard design.

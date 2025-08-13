@@ -244,7 +244,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Template blocks for built-in Field Types <a href=3D"https://github.com/e=
-zsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resourc=
+zsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resourc=
 es/views/content_fields.html.twig" class=3D"external-link" rel=3D"nofollow"=
 >reside in EzPublishCoreBundle</a>.</p>
 </div>
@@ -451,7 +451,7 @@ e by&nbsp;<code>ez_render_field()</code>.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             field_templates:

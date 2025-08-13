@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <h6 id=3D"id-5.4.2ReleaseNotes-April21st2015">April 21st 2015</h6>
 <p>eZ announces the availability of 5.4.2, a maintenance release available =
-for all users of eZ Publish Platform 5.4 containing a notable few <a href=
+for all users of Exponential Platform 5.4 containing a notable few <a href=
 =3D"#id-5.4.2ReleaseNotes-updates">updates and fixes</a>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -239,7 +239,7 @@ div.rbtoc1485851287988 li {margin-left: 0px;padding-left: 0px;}
 <em>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.4.2ReleaseNotes-UpdatingfromapreviousversionofeZPublis=
-hPlatform5.4">Updating from a previous version of eZ Publish Platform 5.4</=
+hPlatform5.4">Updating from a previous version of Exponential Platform 5.4</=
 a>=20
 <ul class=3D"toc-indentation">=20
 <li><a href=3D"#id-5.4.2ReleaseNotes-1.Removeunneededdependencycausingconfl=
@@ -260,8 +260,8 @@ pdates and fixes in this release</a></li>=20
 </div>
 <em><br></em>
 <p></p>
-<h2 id=3D"id-5.4.2ReleaseNotes-UpdatingfromapreviousversionofeZPublishPlatf=
-orm5.4">Updating from a previous version of eZ Publish Platform 5.4</h2>
+<h2 id=3D"id-5.4.2ReleaseNotes-UpdatingfromapreviousversionofExponentialPlatf=
+orm5.4">Updating from a previous version of Exponential Platform 5.4</h2>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
@@ -299,8 +299,8 @@ dating Composer Packages selectively</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">php -d memory_limit=3D-1 composer.phar update --no-dev --prefer-di=
-st --with-dependencies ezsystems/ezpublish-kernel ezsystems/demobundle ezsy=
-stems/ezdemo-ls-extension ezsystems/ezpublish-legacy symfony/symfony</pre>=
+st --with-dependencies ezsystems/exponential-kernel ezsystems/demobundle ezsy=
+stems/ezdemo-ls-extension ezsystems/exponential-legacy symfony/symfony</pre>=
 =20
 </div>
 </div>
@@ -322,8 +322,8 @@ ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Legacy extensions autoload must be regenerated. You can do it by running=
  this command:</p>
-<p><code>php ezpublish/console&nbsp;<a class=3D"external-link" href=3D"http=
-://ezpublishlegacyscript/" rel=3D"nofollow">ezpublish:legacy:script</a>&nbs=
+<p><code>php exponential/console&nbsp;<a class=3D"external-link" href=3D"http=
+://exponentiallegacyscript/" rel=3D"nofollow">exponential:legacy:script</a>&nbs=
 p;bin/php/ezpgenerateautoloads.php --extension</code></p>
 </div>
 </div>
@@ -335,7 +335,7 @@ ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <div class=3D"message-content">
 <div class=3D"element">
-This release fixes a vulnerability in the eZ Publish password recovery func=
+This release fixes a vulnerability in the Exponential password recovery func=
 tion. You need to have the PHP OpenSSL extension (ext-openssl) installed to=
  take full advantage of the improved security, but even without it security=
  is improved.
@@ -343,9 +343,9 @@ tion. You need to have the PHP OpenSSL extension (ext-openssl) installed to=
 <div class=3D"element">
 Security Advisory for Community:=20
 <a href=3D"http://share.ez.no/community-project/security-advisories/ezsa-20=
-15-001-potential-vulnerability-in-ez-publish-password-recovery" class=3D"ex=
+15-001-potential-vulnerability-in-exponential-password-recovery" class=3D"ex=
 ternal-link" rel=3D"nofollow">http://share.ez.no/community-project/security=
--advisories/ezsa-2015-001-potential-vulnerability-in-ez-publish-password-re=
+-advisories/ezsa-2015-001-potential-vulnerability-in-exponential-password-re=
 covery</a>
 </div>
 </div>
@@ -388,8 +388,8 @@ rue" stored=3D"true" multiValued=3D"true"/&gt; &lt;!-- Hidden Location path=
 <h2 id=3D"id-5.4.2ReleaseNotes-Backwardcompatibility">Backward compatibilit=
 y</h2>
 <p>&nbsp;The XmlText fix for EZP-23513 (see&nbsp;<a href=3D"https://github.=
-com/ezsystems/ezpublish-kernel/pull/1087" class=3D"external-link" rel=3D"no=
-follow">https://github.com/ezsystems/ezpublish-kernel/pull/1087</a>) deprec=
+com/ezsystems/exponential-kernel/pull/1087" class=3D"external-link" rel=3D"no=
+follow">https://github.com/ezsystems/exponential-kernel/pull/1087</a>) deprec=
 ates/removes the CustomTags pre-converter in favor of a new Expanding conve=
 rter. While they're not part of the public API, if you rely on this file in=
  any way, you might want to check and update your code.</p>
@@ -409,12 +409,12 @@ this releases:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.2</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.0</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-legacy</td>
+<td class=3D"confluenceTd">ezsystems/exponential-legacy</td>
 <td class=3D"confluenceTd">5.4.2</td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.0</td>
 </tr>
@@ -1680,7 +1680,7 @@ uccess"> Closed </span> </td>=20
 =3D"https://jira.ez.no/browse/EZP-23904?src=3Dconfmacro">EZP-23904</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-23904?src=3Dconfmacro"> ezpublish_legacy_sso causes infin=
+.ez.no/browse/EZP-23904?src=3Dconfmacro"> exponential_legacy_sso causes infin=
 ite redirect loop on /login </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-23904?src=3Dconfmacro"><img src=3D"https:=

@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Multi-currency/Creating-a-new-currency by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:30 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Multi-currency/Creating-a-new-currency by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:30 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Creating a new currency / Multi-currency / Features / 3.10 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Creating a new currency / Multi-currency / Features / 3.10 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -43,7 +43,7 @@
  <p>The administration interface allows you to add new currencies to the webshop system. Let's say that you already have three currencies (USD, UAH and NOK) and you wish to add another one (EUR). The following example demonstrates how to add EUR when you already have USD, UAH, NOK. </p>
 <ol>
  <li><div> Click the &quot;Webshop&quot; tab in the administration interface, select the &quot;Currencies&quot; link on the left and click the &quot;New currency&quot; button located under the list of existing currencies. (This interface can also be accessed by requesting &quot;/shop/currencylist&quot; in the URL.) 
-<div class="object-center linked">            <a href="../../../../../layout/set/full/eZ-Publish/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_3pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_3pcs/30586-1-eng-GB/currencylist_3pcs_doc.png" alt="The list of available currencies." /></a>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_3pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_3pcs/30586-1-eng-GB/currencylist_3pcs_doc.png" alt="The list of available currencies." /></a>
  <p>The list of available currencies.</p>
 
 
@@ -63,7 +63,7 @@
 
 
 </div>  </div></li> <li><div> Specify the currency attributes (these are described below) and click the &quot;Create&quot; button. The system will add a new currency as shown in the screenshot below. 
-<div class="object-center linked">            <a href="../../../../../layout/set/full/eZ-Publish/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_4pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_4pcs/30595-1-eng-GB/currencylist_4pcs_doc.png" alt="The list of available currencies." /></a>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_4pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_4pcs/30595-1-eng-GB/currencylist_4pcs_doc.png" alt="The list of available currencies." /></a>
  <p>The list of available currencies.</p>
 
 
@@ -75,7 +75,7 @@
 </div>  </div></li> 
 </ol>
  <p>Please note that after creating a new currency the system will automatically create zero auto prices in this currency for all your products. It is recommended to click the &quot;Update autoprices&quot; button when you have finished managing your currencies. This will instruct the system to update auto prices for all products. <a name="attributes"></a>
- </p>  <a name="eztoc74511_1" id="eztoc74511_1"></a><h2>Currency code</h2> <p>The three-character currency code which is generally used to represent this currency (&quot;USD&quot;, &quot;EUR&quot; and so on). This parameter is required. This code can be thought of as an unique identifier of the currency. You can not use two currencies with the same codes. The currency code consists of three English capital letters and often (but not always) corresponds to the ISO 4217 standard.</p> <p>Once the currency code is specified, the system will be able to display the currency name (&quot;European euro&quot;, &quot;U.S. dollar&quot; and so on). These currency names can be changed by providing a custom version of the &quot;currencynames.tpl&quot; template which is located in the &quot;templates/shop/&quot; directory of the standard design. This template does not have any effect on the shop functionality available for site visitors. The currency names are displayed only in the administration interface. If you have created a new currency with unknown code for example &quot;ABC&quot; which is not listed in the &quot;currencynames.tpl&quot; template, the system will display the currency name as &quot;Unknown currency name&quot;.</p> <a name="eztoc74511_2" id="eztoc74511_2"></a><h2>Currency symbol</h2> <p>A <i>currency symbol</i> is a string that will be displayed near the numerical price value (&quot;$&quot;, &quot;€&quot; and so on). Currency symbols are used in everyday life to denote that a number is a monetary value. This parameter is not required. If the currency symbol is not defined, the visitors who prefer using this currency will see the numerical price values without any additional symbols. Please note that if you are not able to type in the desired symbol then you can copy and paste it from your browser or text editor.</p> <a name="eztoc74511_3" id="eztoc74511_3"></a><h2>Formatting locale</h2> <p>A <i>formatting locale</i> is a locale which is used for price formatting. This parameter is required. You can choose the desired locale from the drop-down list of available locales. By default, the current system locale is selected (this locale is determined by the &quot;Locale&quot; setting located in the &quot;[RegionalSettings]&quot; section of the &quot;settings/site.ini&quot; configuration file or its override). The available locales and their settings are defined by the locale INI files located in the &quot;share/locale&quot; directory of your eZ Publish installation.</p> <p>Once the formatting locale is specified, the system will automatically format the prices using the &quot;DecimalSymbol&quot;, &quot;ThousandsSeparator&quot;, &quot;FractDigits&quot; and &quot;PositiveFormat&quot; settings specified in the &quot;[Currency]&quot; section of the locale's INI file. Please note that the &quot;Symbol&quot;, &quot;Name&quot; and &quot;ShortName&quot; settings defined in the same section will not have any effect in this case.</p>  <a name="eztoc74511_3_1" id="eztoc74511_3_1"></a><h3>Example</h3> <p>Let's create a new currency &quot;ABC&quot; and specify its properties as shown in the following screenshot. </p>
+ </p>  <a name="eztoc74511_1" id="eztoc74511_1"></a><h2>Currency code</h2> <p>The three-character currency code which is generally used to represent this currency (&quot;USD&quot;, &quot;EUR&quot; and so on). This parameter is required. This code can be thought of as an unique identifier of the currency. You can not use two currencies with the same codes. The currency code consists of three English capital letters and often (but not always) corresponds to the ISO 4217 standard.</p> <p>Once the currency code is specified, the system will be able to display the currency name (&quot;European euro&quot;, &quot;U.S. dollar&quot; and so on). These currency names can be changed by providing a custom version of the &quot;currencynames.tpl&quot; template which is located in the &quot;templates/shop/&quot; directory of the standard design. This template does not have any effect on the shop functionality available for site visitors. The currency names are displayed only in the administration interface. If you have created a new currency with unknown code for example &quot;ABC&quot; which is not listed in the &quot;currencynames.tpl&quot; template, the system will display the currency name as &quot;Unknown currency name&quot;.</p> <a name="eztoc74511_2" id="eztoc74511_2"></a><h2>Currency symbol</h2> <p>A <i>currency symbol</i> is a string that will be displayed near the numerical price value (&quot;$&quot;, &quot;€&quot; and so on). Currency symbols are used in everyday life to denote that a number is a monetary value. This parameter is not required. If the currency symbol is not defined, the visitors who prefer using this currency will see the numerical price values without any additional symbols. Please note that if you are not able to type in the desired symbol then you can copy and paste it from your browser or text editor.</p> <a name="eztoc74511_3" id="eztoc74511_3"></a><h2>Formatting locale</h2> <p>A <i>formatting locale</i> is a locale which is used for price formatting. This parameter is required. You can choose the desired locale from the drop-down list of available locales. By default, the current system locale is selected (this locale is determined by the &quot;Locale&quot; setting located in the &quot;[RegionalSettings]&quot; section of the &quot;settings/site.ini&quot; configuration file or its override). The available locales and their settings are defined by the locale INI files located in the &quot;share/locale&quot; directory of your Exponential installation.</p> <p>Once the formatting locale is specified, the system will automatically format the prices using the &quot;DecimalSymbol&quot;, &quot;ThousandsSeparator&quot;, &quot;FractDigits&quot; and &quot;PositiveFormat&quot; settings specified in the &quot;[Currency]&quot; section of the locale's INI file. Please note that the &quot;Symbol&quot;, &quot;Name&quot; and &quot;ShortName&quot; settings defined in the same section will not have any effect in this case.</p>  <a name="eztoc74511_3_1" id="eztoc74511_3_1"></a><h3>Example</h3> <p>Let's create a new currency &quot;ABC&quot; and specify its properties as shown in the following screenshot. </p>
 <div class="object-center">        <img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/new_currency_abc/30598-1-eng-GB/new_currency_abc_doc.png" alt="The currency edit interface." />
  <p>The currency edit interface.</p>
 
@@ -86,7 +86,7 @@
 
 
 </div><p>Since the &quot;ABC&quot; code is not listed in the &quot;currencynames.tpl&quot; template, the system will display the currency name as &quot;Unknown currency name&quot; (look at the next screenshot). </p>
-<div class="object-center linked">            <a href="../../../../../layout/set/full/eZ-Publish/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_5pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_5pcs/30601-1-eng-GB/currencylist_5pcs_doc.png" alt="Unknown currency name in the list of currencies." /></a>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.10/Images/Features/Multi-currency/currencylist_5pcs.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/currencylist_5pcs/30601-1-eng-GB/currencylist_5pcs_doc.png" alt="Unknown currency name in the list of currencies." /></a>
  <p>Unknown currency name in the list of currencies.</p>
 
 
@@ -101,7 +101,7 @@
 <span class="line">'USD', 'U.S.dollar' ) }</span>
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '{set currency_names = hash( \'ABC\', \'AB-Currency\',\r\n\'AUD\', \'Australian dollar\',\r\n...\r\n\'USD\', \'U.S.dollar\' ) }' ); return false;" /></p>
-<![endif]--> <p>After clearing the eZ Publish caches, the system will display the currency name as &quot;AB-Currency&quot;.</p> <p>The &quot;eng-US.ini&quot; configuration file located in the &quot;share/locale&quot; directory contains the following section: </p><pre class="wordwrap copytoclipboard"><span class="line">[Currency]</span>
+<![endif]--> <p>After clearing the Exponential caches, the system will display the currency name as &quot;AB-Currency&quot;.</p> <p>The &quot;eng-US.ini&quot; configuration file located in the &quot;share/locale&quot; directory contains the following section: </p><pre class="wordwrap copytoclipboard"><span class="line">[Currency]</span>
 <span class="line">Symbol=$</span>
 <span class="line">Name=US Dollar</span>
 <span class="line">ShortName=USD</span>
@@ -175,7 +175,7 @@
 </table>
  <p> <a name="status"></a>
  </p>   <a name="eztoc74511_6" id="eztoc74511_6"></a><h2>Status</h2> <p>The status of the currency can be either &quot;active or &quot;inactive&quot;. When you create a new currency, the status will be automatically set to &quot;Active&quot;. Inactive currencies will be invisible for the site visitors. In other words, you can hide a currency from your customers if you don't wish them to use this currency.</p> <p>Inactive currencies are displayed in red color in the list of currencies as shown in the following screenshot. </p>
-<div class="object-center linked">            <a href="../../../../../layout/set/full/eZ-Publish/Technical-manual/3.10/Images/Features/Multi-currency/inactive_currency.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/inactive_currency/30604-1-eng-GB/inactive_currency_doc.png" alt="Displaying inactive currency in the list of currencies." /></a>
+<div class="object-center linked">            <a href="../../../../../layout/set/full/Exponential/Technical-manual/3.10/Images/Features/Multi-currency/inactive_currency.html" target="_self"><img src="../../../../../../../../../../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_10/images/features/multi_currency/inactive_currency/30604-1-eng-GB/inactive_currency_doc.png" alt="Displaying inactive currency in the list of currencies." /></a>
  <p>Displaying inactive currency in the list of currencies.</p>
 
 
@@ -190,11 +190,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/3.10/Features/Multi-currency/Creating-a-new-currency by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:32 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/layout/set/full/Exponential/Technical-manual/3.10/Features/Multi-currency/Creating-a-new-currency by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:04:32 GMT -->
 </html>

@@ -237,7 +237,7 @@ ays obtained through the service container.</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $repository \eZ\Publish\API\Repository\Repository
-$repository =3D $container-&gt;get( 'ezpublish.api.repository' );</pre>=20
+$repository =3D $container-&gt;get( 'exponential.api.repository' );</pre>=20
 </div>
 </div>
 <p>&nbsp;By itself, the repository doesn't do much. It allows three types o=

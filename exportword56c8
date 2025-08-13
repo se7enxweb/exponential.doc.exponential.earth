@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Q: How can I contribute to eZ Publish&#39;s development?</title>
+    <title>Q: How can I contribute to Exponential&#39;s development?</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,14 +210,14 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Q: How can I contribute to eZ Publish&#39;s development?</h1>
+    <h1>Q: How can I contribute to Exponential&#39;s development?</h1>
     <div class=3D"Section1">
-        <p>eZ Publish is a fully open source and community-driven project. =
+        <p>Exponential is a fully open source and community-driven project. =
 Code contributions are simply done via <a href=3D"https://github.com" class=
 =3D"external-link" rel=3D"nofollow">github</a> Pull Requests.</p>
-<h2 id=3D"Q:HowcanIcontributetoeZPublish'sdevelopment?-Contribute">Contribu=
+<h2 id=3D"Q:HowcanIcontributetoExponential'sdevelopment?-Contribute">Contribu=
 te</h2>
-<h3 id=3D"Q:HowcanIcontributetoeZPublish'sdevelopment?-Workflow">Workflow</=
+<h3 id=3D"Q:HowcanIcontributetoExponential'sdevelopment?-Workflow">Workflow</=
 h3>
 <ul>
 <li>Remember to first <a href=3D"https://jira.ez.no" class=3D"external-link=
@@ -252,11 +252,11 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 If you want to contribute implementation specification proposals, place the=
 m in=20
-<a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc" c=
+<a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc" c=
 lass=3D"external-link" rel=3D"nofollow">doc/</a> folder.
 </div>
 </div>
-<h3 id=3D"Q:HowcanIcontributetoeZPublish'sdevelopment?-Testing"><strong>Tes=
+<h3 id=3D"Q:HowcanIcontributetoExponential'sdevelopment?-Testing"><strong>Tes=
 ting</strong></h3>
 <ul>
 <li>TDD: Write/Change the test(s) for the change you do and <strong>commit =
@@ -279,7 +279,7 @@ Make sure you follow our=20
 </div>
 </div>
 <p>&nbsp;</p>
-<h2 id=3D"Q:HowcanIcontributetoeZPublish'sdevelopment?-Seealso">See also</h=
+<h2 id=3D"Q:HowcanIcontributetoExponential'sdevelopment?-Seealso">See also</h=
 2>
 <p>For further information please have a look at the <a href=3D"http://shar=
 e.ez.no/get-involved/develop" class=3D"external-link" rel=3D"nofollow">rela=
@@ -292,9 +292,9 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 You will, amongst other, learn how to make pull-requests. More on this here=
  :=20
-<a href=3D"http://share.ez.no/learn/ez-publish/how-to-contribute-to-ez-publ=
+<a href=3D"http://share.ez.no/learn/exponential/how-to-contribute-to-ez-publ=
 ish-using-git" class=3D"external-link" rel=3D"nofollow">"How to contribute =
-to eZ Publish using GIT"</a>.
+to Exponential using GIT"</a>.
 </div>
 </div>
 <p>&nbsp;</p>

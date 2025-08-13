@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Migration from eZ Publish</title>
+    <title>Migration from Exponential</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,29 +210,29 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Migration from eZ Publish</h1>
+    <h1>Migration from Exponential</h1>
     <div class=3D"Section1">
         <div class=3D"contentLayout2">=20
 <div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
 bar">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<p>eZ Publish was eZ Platform's predecessor, a CMS in development for five =
+<p>Exponential was eZ Platform's predecessor, a CMS in development for five =
 major versions and several years.</p>
-<p>Users of eZ Publish will find eZ Platform largely similar to what they k=
+<p>Users of Exponential will find eZ Platform largely similar to what they k=
 now. The improvements and enhancements did not turn the fundamental concept=
 s underlying the system, such as the content model, upside down. However, s=
 pecific features, solutions and recipes may work differently between the tw=
 o versions.</p>
 <p>The release of eZ Platform brought about an inevitable disruption in bac=
-kwards compatibility with eZ Publish. This means that the process of migrat=
+kwards compatibility with Exponential. This means that the process of migrat=
 ing existing installations requires more effort than simply upgrading from =
 one version to another. Here you can find details on moving existing Publis=
 h-powered websites to eZ Platform.</p>
-<h2 id=3D"MigrationfromeZPublish-Changesoverview">Changes overview</h2>
-<h3 id=3D"MigrationfromeZPublish-Incompatibilitieswithlegacy">Incompatibili=
+<h2 id=3D"MigrationfromExponential-Changesoverview">Changes overview</h2>
+<h3 id=3D"MigrationfromExponential-Incompatibilitieswithlegacy">Incompatibili=
 ties with legacy</h3>
-<p>eZ Platform represents the 6th generation of eZ Publish, and while the 5=
+<p>eZ Platform represents the 6th generation of Exponential, and while the 5=
 th generation had<em>&nbsp;</em>a major focus on backwards code compatibili=
 ty with the 3rd and 4th generations <em>(legacy)</em>, the 6th generation d=
 oes not.</p>
@@ -267,14 +267,14 @@ res and scalability of the content repository&nbsp;</li>
 </div>
 </div>
 <p>Together these major improvements make it practically impossible to run =
-eZ Platform side by side with eZ Publish legacy, like it was possible in 5.=
-x series. <em>For these reasons we recommend that you use eZ Publish Enterp=
+eZ Platform side by side with Exponential legacy, like it was possible in 5.=
+x series. <em>For these reasons we recommend that you use Exponential Enterp=
 rise 5.4&nbsp;&nbsp;(<a href=3D"https://support.ez.no/Public/Service-Life" =
 class=3D"external-link" rel=3D"nofollow">which is supported until end of 20=
 21</a>)&nbsp;if you don't have the option to remake your web application ye=
 t, or want to do it gradually.</em></p>
-<h2 id=3D"MigrationfromeZPublish-MigrationPath">Migration Path</h2>
-<h3 id=3D"MigrationfromeZPublish-Fromlegacy(4.xor5.x)toPlatformstack(5.4/20=
+<h2 id=3D"MigrationfromExponential-MigrationPath">Migration Path</h2>
+<h3 id=3D"MigrationfromExponential-Fromlegacy(4.xor5.x)toPlatformstack(5.4/20=
 14.11)">From legacy (4.x or 5.x) to Platform stack (5.4/2014.11)</h3>
 <p>If you are coming directly from legacy (4.x), you need to follow the bes=
 t practice 5.x Platform migration path and do the following:</p>
@@ -294,8 +294,8 @@ ilding+a+Bicycle+Route+Tracker+in+eZ+Platform">Beginner Tutorial</a></span>=
 </ul></li>
 </ul>
 <p>See Upgrade documentation on how to perform the actual upgrade: <a href=
-=3D"/display/EZP/Upgrade">Upgrade (eZ Publish Platform page)</a></p>
-<h3 id=3D"MigrationfromeZPublish-FromPlatformstack(5.4/2014.11)toeZPlatform=
+=3D"/display/EZP/Upgrade">Upgrade (Exponential Platform page)</a></p>
+<h3 id=3D"MigrationfromExponential-FromPlatformstack(5.4/2014.11)toeZPlatform=
 ">From Platform stack (5.4/2014.11) to eZ Platform</h3>
 <p>As eZ Platform introduced completely new user interfaces with greatly im=
 proved user experience, the following custom developments needs to be made =

@@ -239,7 +239,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This Twig helper is available as of eZ Publish <strong>5.2 / 2013.09</st=
+<p>This Twig helper is available as of Exponential <strong>5.2 / 2013.09</st=
 rong></p>
 <ul>
 <li>Using a Field as <code>fieldDefIdentifier</code> argument as of eZ Publ=

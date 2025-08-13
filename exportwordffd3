@@ -300,7 +300,7 @@ c, Filesystem, ..) to be configured using Symfony configuration. For how to=
 <h4 id=3D"Persistencecache-Transparentcache">Transparent cache</h4>
 <p>The persistence cache, just like the HTTP cache, tries to follow princip=
 les of "Transparent caching", this can shortly be described as a cache whic=
-h is invisible to the end user and to the admin/editors of eZ Publish where=
+h is invisible to the end user and to the admin/editors of Exponential where=
  content is always returned "fresh". In other words there should not be a n=
 eed to manually clear the cache like was frequently the case with eZ Publis=
 h 4.x (aka "legacy"). This is possible thanks to an interface that follows =
@@ -346,13 +346,13 @@ rch result to clear (this is what is planned for future versions, but it is=
 </ul>
 <p>For more details on which calls are cached or not, and where to contribu=
 te additional caches, check out the <a href=3D"https://github.com/ezsystems=
-/ezpublish-kernel/tree/master/eZ/Publish/Core/Persistence/Cache" class=3D"e=
+/exponential-kernel/tree/master/eZ/Publish/Core/Persistence/Cache" class=3D"e=
 xternal-link" rel=3D"nofollow">source</a>.</p>
 <h4 id=3D"Persistencecache-Legacykernelcachepurging">Legacy kernel cache pu=
 rging</h4>
-<p>Currently with the Dual-kernel eZ Publish has in version 5.x, the "Trans=
+<p>Currently with the Dual-kernel Exponential has in version 5.x, the "Trans=
 parent&nbsp;caching principle"&nbsp;referred&nbsp;to above has one major ob=
-stacle. eZ Publish 4.x ("legacy") kernel was not made for such a thing and =
+stacle. Exponential 4.x ("legacy") kernel was not made for such a thing and =
 has a lot of API's that can make changes to the data in the database and&nb=
 sp;hence&nbsp;make the&nbsp;persistence&nbsp;cache "stale" (aka out of date=
 ).</p>
@@ -366,13 +366,13 @@ Symfony with legacy) has a PersistenceCachePurger</li>
 </ul>
 <h5 id=3D"Persistencecache-PersistenceCachePurger">PersistenceCachePurger</=
 h5>
-<p><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/=
+<p><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/=
 Bundle/EzPublishLegacyBundle/Cache/PersistenceCachePurger.php" class=3D"ext=
 ernal-link" rel=3D"nofollow">PersistenceCachePurger</a> is setup by LegacyB=
 undle to&nbsp;receive&nbsp;all relevant <a href=3D"https://github.com/ezsys=
-tems/ezpublish-legacy/blob/master/doc/features/5.0/event.txt" class=3D"exte=
+tems/exponential-legacy/blob/master/doc/features/5.0/event.txt" class=3D"exte=
 rnal-link" rel=3D"nofollow">cache</a> <a href=3D"https://github.com/ezsyste=
-ms/ezpublish-legacy/blob/master/doc/features/5.1/event.txt" class=3D"extern=
+ms/exponential-legacy/blob/master/doc/features/5.1/event.txt" class=3D"extern=
 al-link" rel=3D"nofollow">events</a> triggered by legacy kernel, and clear =
 relevant Persistence cache based on the&nbsp;incoming&nbsp;data.<br>This me=
 ans a "Clear all cache" operation done in legacy will also clear all persis=
@@ -386,9 +386,9 @@ bsp;</p>
 <h1 id=3D"Persistencecache-ReusingCacheservice">Reusing Cache service</h1>
 <p>Using the cache&nbsp;service allows you to use a interface&nbsp;&nbsp;an=
 d not have to care about if the system has been configured to place the cac=
-he in Memcached, Apc or on File system. And as eZ Publish requries that ins=
+he in Memcached, Apc or on File system. And as Exponential requries that ins=
 tances uses a cluster aware cache, you can safly assume your cache is share=
-d across all eZ Publish web servers.</p>
+d across all Exponential web servers.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
 ning">
 <p class=3D"title">Interface warning</p>
@@ -409,10 +409,10 @@ ning">
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>When reusing the cache service within your own code, it is very importan=
-t to not conflict with the cache keys used by eZ Publish, hence why example=
+t to not conflict with the cache keys used by Exponential, hence why example=
  of usage starts with a unique "myApp" key for the namespace of your own ca=
 che, you must do the same!</p>
-<p>Also, this means that when eZ Publish clears all cache, it will also wip=
+<p>Also, this means that when Exponential clears all cache, it will also wip=
 e out your custom cache as well!</p>
 </div>
 </div>
@@ -422,9 +422,9 @@ ning">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Be aware that in some edge cases as of eZ Publish 5.1, we recommend that=
+<p>Be aware that in some edge cases as of Exponential 5.1, we recommend that=
  the cache system is practically disabled using a <em>Blackhole</em> driver=
-. This is the case in multi repository (one eZ Publish install, several dat=
+. This is the case in multi repository (one Exponential install, several dat=
 abases) because the current configuration does not support setting cache ke=
 y prefixes pr database (the current configuration is global to installation=
  and not possible to set pr site / site group).</p>
@@ -435,7 +435,7 @@ est, if the recommended InMemory setting is enabled.</p>
 <h2 id=3D"Persistencecache-GetCacheservice">Get Cache service</h2>
 <h3 id=3D"Persistencecache-ViaDependencyinjection">Via Dependency injection=
 </h3>
-<p>In eZ Publish 5.x Symfony2 stack you can simply define that you require =
+<p>In Exponential 5.x Symfony2 stack you can simply define that you require =
 the "cache" service in your configuration like so:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -469,7 +469,7 @@ $cacheService =3D $container-&gt;get( 'stash.default_cache' );</pre>=20
 </div>
 <h3 id=3D"Persistencecache-InlegacyviaSymfony2Container">In legacy via Symf=
 ony2 Container</h3>
-<p>When eZ Publish legacy runs via eZ Publish 5.x Symfony2 stack, you will =
+<p>When Exponential legacy runs via Exponential 5.x Symfony2 stack, you will =
 be able to get the service container in the following way:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
@@ -491,7 +491,7 @@ $cacheService =3D $container-&gt;get( 'stash.default_cache' );</pre>=20
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Actuall example from cache use in ezpublish-kernel</b>
+<b>Actuall example from cache use in exponential-kernel</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=

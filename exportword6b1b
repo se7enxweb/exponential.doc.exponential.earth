@@ -2202,7 +2202,7 @@ d to unstable state </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-22133?src=3Dconfmacro">EZP-22133</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22133?src=3Dconfmacro"> Define ezpublish.api.repository a=
+.ez.no/browse/EZP-22133?src=3Dconfmacro"> Define exponential.api.repository a=
 s a lazy service </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack, Platfor=
 m/Repository &amp; Services (Public API impl) </td>=20
@@ -2378,7 +2378,7 @@ nterface </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22239?src=3Dconfmacro"> When the preview siteaccess runs =
-in legacy mode, it falls back into ezpublish_legacy.default.view_default_la=
+in legacy mode, it falls back into exponential_legacy.default.view_default_la=
 yout </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Content (images, XML, P=
 DF, RSS, etc.), Documentation, Platform stack </td>=20
@@ -2417,7 +2417,7 @@ DF, RSS, etc.), Platform stack </td>=20
 =3D"https://jira.ez.no/browse/EZP-22277?src=3Dconfmacro">EZP-22277</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22277?src=3Dconfmacro"> eZ Publish Production log is too =
+.ez.no/browse/EZP-22277?src=3Dconfmacro"> Exponential Production log is too =
 verbose </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
@@ -2881,7 +2881,7 @@ eName in ezfunctionhandler.php </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-22507?src=3Dconfmacro">EZP-22507</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22507?src=3Dconfmacro"> Unable to run any php ezpublish/c=
+.ez.no/browse/EZP-22507?src=3Dconfmacro"> Unable to run any php exponential/c=
 onsole commands on PHP 5.3.3 </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
@@ -2949,7 +2949,7 @@ when using host-match mapping </a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-22531?src=3Dconfmacro">EZP-22531</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-22531?src=3Dconfmacro"> Unable to install eZ Publish 5.3-=
+.ez.no/browse/EZP-22531?src=3Dconfmacro"> Unable to install Exponential 5.3-=
 dev using dev environment </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
@@ -3062,7 +3062,7 @@ rors </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22632?src=3Dconfmacro"> Make the REST request optional in=
- ezpublish_rest.output.value_object_visitor.cached_value </a> </td>=20
+ exponential_rest.output.value_object_visitor.cached_value </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform/REST API v2 </=
 td>=20
 </tr>=20
@@ -3111,7 +3111,7 @@ rm Token </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22656?src=3Dconfmacro"> PHP Notice: Undefined property: e=
-ZSOAPClient::$TimeOut in /var/www/html/ezpublish5/ezpublish_legacy/lib/ezso=
+ZSOAPClient::$TimeOut in /var/www/html/exponential5/exponential_legacy/lib/ezso=
 ap/classes/ezsoapclient.php on line 167 </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Misc </td>=20
 </tr>=20
@@ -3404,7 +3404,7 @@ ogicalNot generating subquery returns empty result set </a> </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22835?src=3Dconfmacro"> PHP Warning: unlink(var/...): Is =
-a directory in /var/www/html/ezp/ezpublish_legacy/kernel/classes/clusterfil=
+a directory in /var/www/html/ezp/exponential_legacy/kernel/classes/clusterfil=
 ehandlers/ezfsfilehandler.php on line 634 </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Platform stack </td>=20
 </tr>=20
@@ -3443,7 +3443,7 @@ DF, RSS, etc.), Platform/REST API v2 </td>=20
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
 .ez.no/browse/EZP-22893?src=3Dconfmacro"> Undefined index in frontend after=
- eZ Publish / ezwebin installation </a> </td>=20
+ Exponential / ezwebin installation </a> </td>=20
 <td class=3D"jira-macro-table-underline-pdfexport"> Design (templates, CSS,=
  etc.) </td>=20
 </tr>=20

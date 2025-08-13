@@ -211,7 +211,7 @@ h1.pagetitle img {
         <p><span>A FieldType is the smallest possible entity of storage. It=
  determines how a specific type of information should be validated, stored,=
  retrieved and formatted.<br /></span></p>
-<p><span>eZ Publish comes with a collection of fundamental datatypes that c=
+<p><span>Exponential comes with a collection of fundamental datatypes that c=
 an be used to build powerful and complex content structures. In addition, i=
 t is possible to extend the system by creating custom FieldTypes for specia=
 l needs. Custom FieldTypes&nbsp;have to be programmed in PHP.</span></p>=20

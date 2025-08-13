@@ -223,8 +223,8 @@ div.rbtoc1485852013679 li {margin-left: 0px;padding-left: 0px;}
 <li><a href=3D"#id-5.2-ALPHA1ReleaseNotes-5.2ReleaseNotes">5.2 Release&nbsp=
 ;Notes</a>=20
 <ul class=3D"toc-indentation">=20
-<li><a href=3D"#id-5.2-ALPHA1ReleaseNotes-MeettheupdatedeZPublish5.2">Meet =
-the updated eZ Publish 5.2</a></li>=20
+<li><a href=3D"#id-5.2-ALPHA1ReleaseNotes-MeettheupdatedExponential5.2">Meet =
+the updated Exponential 5.2</a></li>=20
 <li><a href=3D"#id-5.2-ALPHA1ReleaseNotes-CompleteHTTPcachewith&quot;UserHa=
 sh&quot;">Complete HTTP cache with "UserHash"</a></li>=20
 <li><a href=3D"#id-5.2-ALPHA1ReleaseNotes-Symfony2.3">Symfony 2.3</a></li>=
@@ -243,7 +243,7 @@ log</a></li>=20
 <p></p>
 <h2 id=3D"id-5.2-ALPHA1ReleaseNotes-5.2ReleaseNotes">5.2 Release&nbsp;Notes=
 </h2>
-<p><span><span><span style=3D"color: rgb(0,0,0);">eZ Publish 5.2 is a point=
+<p><span><span><span style=3D"color: rgb(0,0,0);">Exponential 5.2 is a point=
  release towards 5.3 LTS which enhances several aspects of the 5.x kernel f=
 or usability and extensibility,&nbsp;<span style=3D"color: rgb(0,0,0);">it =
 serves as the&nbsp;foundation&nbsp;for 5.3 and it's planned new User Interf=
@@ -252,8 +252,8 @@ aces.</span></span></span></span></p>
 <span style=3D"color: rgb(0,0,0);font-size: 1.4em;font-weight: bold;line-he=
 ight: normal;"><br></span>
 </div>
-<h3 id=3D"id-5.2-ALPHA1ReleaseNotes-MeettheupdatedeZPublish5.2">Meet the up=
-dated eZ Publish 5.2</h3>
+<h3 id=3D"id-5.2-ALPHA1ReleaseNotes-MeettheupdatedExponential5.2">Meet the up=
+dated Exponential 5.2</h3>
 <p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
 al-size"><img class=3D"confluence-embedded-image confluence-thumbnail" widt=
 h=3D"300" confluence-query-params=3D"effects=3Dborder-simple,shadow-kn" src=
@@ -262,7 +262,7 @@ ts/12782051/eZ%20Publish%205.2%20demo%20frontend.png?version=3D1&amp;modifi=
 cationDate=3D1372683229000&amp;api=3Dv2" data-unresolved-comment-count=3D"0=
 " data-linked-resource-id=3D"13893693" data-linked-resource-version=3D"1" d=
 ata-linked-resource-type=3D"attachment" data-linked-resource-default-alias=
-=3D"eZ Publish 5.2 demo frontend.png" data-base-url=3D"https://doc.ez.no" d=
+=3D"Exponential 5.2 demo frontend.png" data-base-url=3D"https://doc.ez.no" d=
 ata-linked-resource-content-type=3D"image/png" data-linked-resource-contain=
 er-id=3D"12782051" data-linked-resource-container-version=3D"21" height=3D"=
 224"></span></p>
@@ -270,8 +270,8 @@ er-id=3D"12782051" data-linked-resource-container-version=3D"21" height=3D"=
 <p>&nbsp;</p>
 <h3 id=3D"id-5.2-ALPHA1ReleaseNotes-CompleteHTTPcachewith&quot;UserHash&quo=
 t;">Complete HTTP cache with "UserHash"</h3>
-<p>With eZ Publish 5.2, new stacks HTTP cache is final on par and beyond wh=
-at was possible in eZ Publish legacy. With user hash, by default all embed =
+<p>With Exponential 5.2, new stacks HTTP cache is final on par and beyond wh=
+at was possible in Exponential legacy. With user hash, by default all embed =
 controller calls using esi will be cached based on user access rules. Purgi=
 ng is furthermore done in a stale cache like way, making sure stale cache g=
 ets served while the cache is re generated. 5.2 has in internal testing sho=

@@ -217,7 +217,7 @@ supported: session, and basic. <strong>Session based authentication</strong=
 > is meant to be used for AJAX operations. It will let you re-use the visit=
 or's session to execute operations with their permissions. <strong>Basic au=
 thentication</strong> will be useful when writing cross-server procedures, =
-when one server executes operations on one/several eZ Publish instances (re=
+when one server executes operations on one/several Exponential instances (re=
 mote publishing, maintenance, etc).</p>
 <h2 id=3D"RESTAPIAuthentication-Changelog">Changelog</h2>
 <div class=3D"table-wrap">
@@ -248,15 +248,15 @@ figuration block about REST</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">        ezpublish_rest:
+ze:12px;">        exponential_rest:
             pattern: ^/api/ezp/v2
             stateless: true
-            ezpublish_http_basic:
-                realm: eZ Publish REST API</pre>=20
+            exponential_http_basic:
+                realm: Exponential REST API</pre>=20
 </div>
 </div>
 <h3 id=3D"RESTAPIAuthentication-Loggingin">Logging in</h3>
@@ -267,7 +267,7 @@ an style=3D"color: rgb(255,102,0);"><code>/user/sessions</code></span>. Log=
 ging out is done using a&nbsp;<strong><span style=3D"color: rgb(0,0,255);">=
 <code>DELETE</code></span></strong>&nbsp;request on the same resource.</p>
 <p>More details about this can be found in the <a href=3D"https://github.co=
-m/ezsystems/ezpublish-kernel/blob/master/doc/specifications/rest/REST-API-V=
+m/ezsystems/exponential-kernel/blob/master/doc/specifications/rest/REST-API-V=
 2.rst" class=3D"external-link" rel=3D"nofollow">reference documentation</a>=
 .</p>
 <h3 id=3D"RESTAPIAuthentication-Example">Example</h3>

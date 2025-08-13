@@ -258,7 +258,7 @@ ed to <code>vendor</code> at some point. Again, this is the default, and we=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">Target directory [/home/bertrand/www/ezpublish5/src]:&lt;enter&gt;=
+e:12px;">Target directory [/home/bertrand/www/exponential5/src]:&lt;enter&gt;=
 </pre>=20
 </div>
 </div>
@@ -289,7 +289,7 @@ enter&gt;</pre>=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">You are going to generate a "EzSystems\TweetFieldTypeBundle\EzSyst=
 emsTweetFieldTypeBundle" bundle
-in "/home/bertrand/www/ezpublish5/src/" using the "yml" format.
+in "/home/bertrand/www/exponential5/src/" using the "yml" format.
 Do you confirm generation [yes]?&lt;enter&gt;</pre>=20
 </div>
 </div>

@@ -213,7 +213,7 @@ d of the content */
     <h1>Criterion Independance example</h1>
     <div class=3D"Section1">
         <div class=3D"line">
-With eZ Publish you can have multiple location content. Criterions do not r=
+With Exponential you can have multiple location content. Criterions do not r=
 elate to others criterion you can&nbsp; use the Public API and Criterion to=
  search this content, it can lead to a comportement you are not expecting.
 </div>

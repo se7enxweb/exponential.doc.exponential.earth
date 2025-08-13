@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.8/Templates/The-template-language/Variable-types by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 13:26:26 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Variable types / The template language / Templates / 3.8 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../3-3.html">3.8</a>
+        
+                        /
+                            <a href="../../Templates.html">templates</a>
+        
+                        /
+                            <a href="../The-template-language.html">the template language</a>
+        
+                        /
+                            variable types
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../3-3.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Variable types</h1>
+</div>
+
+ <p>The Exponential template language supports the following variable types:</p> 
+<ul>
+ <li><div> Numbers </div></li> <li><div> Strings </div></li> <li><div> Booleans </div></li> <li><div> Arrays </div></li> <li><div> Objects </div></li> 
+</ul>
+ <p>While some variable types can be created on the fly, others need to be created using an operator. Types that may be created directly are numbers and strings. Booleans and arrays must be created using operators, objects may be created using miscellaneous functions and operators. In addition to the types listed above, it is also possible to create and use custom variables. Custom variable types must be represented as objects.</p>  <a name="eztoc23911_1" id="eztoc23911_1"></a><h2>Numbers</h2> <p>Numbers are numerical values. A number can be a positive or a negative integer or a floating point value. The following example demonstrates how different numbers can be used directly within template code:</p> <pre class="wordwrap copytoclipboard"><span class="line">{13}</span>
+<span class="line">{1986}</span>
+<span class="line">{3.1415}</span>
+<span class="line">{102.5}</span>
+<span class="line">{-1024}</span>
+<span class="line">{-273.16}</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '{13}\r\n{1986}\r\n{3.1415}\r\n{102.5}\r\n{-1024}\r\n{-273.16}' ); return false;" /></p>
+<![endif]--> <p> <a name="strings"></a>
+ </p>   <a name="eztoc23911_2" id="eztoc23911_2"></a><h2>Strings</h2> <p>A string is an arbitrary sequence of characters (text) that is encapsulated by a matching pair of either single or double quotes, ' or &quot;. If the quotes are omitted, the string will most likely be interpreted as a function name. Strings are usually defined in the following way:</p> <pre class="wordwrap"><span class="line">{'This is a string.'}</span>
+<span class="line">{&quot;This is another string.&quot;}</span>
+</pre> <p>The output of the example above would be:</p><div class="output"> <p>
+This is a string.<br />This is another a string.</p> </div>  <a name="eztoc23911_2_1" id="eztoc23911_2_1"></a><h3>Using quotes</h3> <p>It is possible to use quotes inside strings. This can be done by either using a different kind of quote or by making use of the escape character (backslash). The following examples demonstrate the use of quotes inside strings:</p> <pre class="wordwrap copytoclipboard"><span class="line">{'The following text is double quoted: &quot;Rock and roll!&quot; &nbsp;'}</span>
+<span class="line">{&quot;The following text is single quoted: 'Rock and roll!' &nbsp;&quot;}</span>
+<span class="line">{'Using both single and double quotes: &quot;Rock\'n roll!&quot; &nbsp;&nbsp;'}</span>
+<span class="line">{'Using both single and double quotes: \'Rock\'n roll!\' '}</span>
+<span class="line">{&quot;Using both single and double quotes: 'Rock'n roll!' &nbsp;&nbsp;&nbsp;&quot;}</span>
+<span class="line">{&quot;Using both single and double quotes: \&quot;Rock'n roll\&quot; &nbsp;&nbsp;&quot;}</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '{\'The following text is double quoted: &quot;Rock and roll!&quot;  \'}\r\n{&quot;The following text is single quoted: \'Rock and roll!\'  &quot;}\r\n{\'Using both single and double quotes: &quot;Rock\\'n roll!&quot;   \'}\r\n{\'Using both single and double quotes: \\'Rock\\'n roll!\\' \'}\r\n{&quot;Using both single and double quotes: \'Rock\'n roll!\'    &quot;}\r\n{&quot;Using both single and double quotes: \&quot;Rock\'n roll\&quot;   &quot;}' ); return false;" /></p>
+<![endif]--> <p>The output of the example above will be:</p><div class="output"> <p>
+The following text is double quoted: &quot;Rock and roll!&quot;<br />
+The following text is single quoted: 'Rock and roll!'<br />
+Using both single and double quotes: &quot;Rock'n roll!&quot;<br />
+Using both single and double quotes: 'Rock'n roll!'<br />
+Using both single and double quotes: 'Rock'n roll!'<br />Using both single and double quotes: &quot;Rock'n roll!&quot;</p> </div> <p>Because of the way template code is defined (encapsulated in a matching pair of curly brackets), the right curly bracket, &quot;}&quot;, must also be prepended by the backslash escape character. The following example demonstrates this.</p> <pre class="wordwrap"><span class="line">{'{ This text is inside curly brackets.\}'}</span>
+</pre> <p>The output of the template code above will be:</p><div class="output"> <p>{This text is inside curly brackets.}</p> </div> <p>Template strings do not support inline expansion of variables (as in Perl and PHP). In other words, it is not possible to mix variables into strings. However, the <a href="../../Reference/Template-operators/Strings/concat.html" target="_self">concat</a> operator can be used to append the contents of some variable to a string; which means that this operator can be used to build strings consisting of other strings and/or miscellaneous variables.</p> <p> <a name="booleans"></a>
+ </p>    <a name="eztoc23911_3" id="eztoc23911_3"></a><h2>Booleans</h2> <p>Booleans are binary, they are either TRUE (1) or FALSE (0). A boolean must be created using either the <a href="../../Reference/Template-operators/Logical-operations/true.html" target="_self">&quot;true&quot;</a> or the <a href="../../Reference/Template-operators/Logical-operations/false.html" target="_self">&quot;false&quot;</a> template operator. Example:</p> <pre class="wordwrap"><span class="line">{true()}</span>
+<span class="line">{false()}</span>
+</pre> <p>For some operators and functions, it is possible to use integers as booleans. However, these are not &quot;real&quot; booleans. Zero means FALSE; all non-zero values mean TRUE. Some operators are able to treat an array as if it were a boolean value. While an empty array means FALSE, a non-empty array means TRUE.</p>   <a name="eztoc23911_4" id="eztoc23911_4"></a><h2>Arrays</h2> <p>Arrays are containers that are capable of holding a collection of any other variable type including other arrays. An array can be a simple vector or a hash map (associative array). An element of a vector can be accessed using an index number. The number denotes the position of the element inside the array (the first element is zero, the second element is one, and so on). An element of an associative array can be accessed using an identifier. Regular arrays can be created with the <a href="../../Reference/Template-operators/Arrays/array.html" target="_self">&quot;array&quot;</a> operator. Associative arrays can be created with the <a href="../../Reference/Template-operators/Arrays/hash.html" target="_self">hash</a> operator. The following examples demonstrate the creation of arrays and hashes.</p>  <a name="eztoc23911_4_2" id="eztoc23911_4_2"></a><h3>Example 1: Array of numbers</h3> <pre class="wordwrap"><span class="line">{array( 2, 4, 8, 16 )}</span>
+</pre> <p>This example creates an array containing four numbers. The array will consist of the following elements:</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <th >   <p>Index</p> 
+  </th> <th >   <p>Value of element</p> 
+  </th> 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>0</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>2</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>1</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>4</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>2</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>8</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>3</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>16</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+   <a name="eztoc23911_4_3" id="eztoc23911_4_3"></a><h3>Example 2: Array of strings</h3> <pre class="wordwrap"><span class="line">{array( 'This', 'is', 'a', 'test' )}</span>
+</pre> <p>This example creates an array containing four strings. The array will consist of the following elements:</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <th >   <p>Index</p> 
+  </th> <th >   <p>Value</p> 
+  </th> 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>0</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>'This'</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>1</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>'is'</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>2</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>'a'</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>3</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>'test'</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+   <a name="eztoc23911_4_4" id="eztoc23911_4_4"></a><h3>Example 3: Associative array</h3> <pre class="wordwrap"><span class="line">{hash( 'Red', 16, 'Green', 24, 'Blue', 32 )}</span>
+</pre> <p>This example creates an associative array containing three key-value pairs. The array will consist of the following elements:</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <th >   <p>Key</p> 
+  </th> <th >   <p>Value</p> 
+  </th> 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>Red</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>16</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>Green</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>24</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>Blue</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>32</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+<p> <a name="objects"></a>
+ </p>    <a name="eztoc23911_5" id="eztoc23911_5"></a><h2>Objects</h2> <p>Template objects are created by PHP code or by special template operators. The system uses objects to represent data structures of different kinds and sizes. For example, objects are used to represent information about content nodes, translations, webshop orders, user accounts, roles, policies and so on. Refer to the <a href="../../Reference/Objects.html" target="_self">&quot;Objects&quot;</a> section of the &quot;Reference&quot; chapter for a complete overview of the objects and their contents.</p> <p> <a name="attributes"></a>
+ </p>  <a name="eztoc23911_5_5" id="eztoc23911_5_5"></a><h3>Object attributes</h3> <p>Objects consist of named attributes where each attribute can be a different type. The attributes may represent any type of data (numbers, strings, arrays, etc.) and even other objects. Since the attributes are named (each one has an identifier associated to it), their contents can be easily accessed using the different identifiers. This is done in the same way as when accessing the values of associative arrays using identifiers. </p> <p>The following illustration shows the structure (with example values) of an object (<a href="../../Reference/Objects/ezdate.html" target="_self">&quot;ezdate&quot;</a>) that contains information about a date.</p> 
+<div class="object-center">        <img src="../../../../../../var/doc/storage/images/ez_publish/technical_manual/3_8/images/templates/date_object/30174-1-eng-GB/date_object_doc.png" alt="The structure of the &quot;ezdate&quot; object." />
+ <p>The structure of the &quot;ezdate&quot; object.</p>
+
+
+
+
+
+
+
+</div> <p>The illustration above reveals that the &quot;ezdate&quot; object consists of five attributes (&quot;timestamp&quot;, &quot;is_valid&quot;, &quot;year&quot;, &quot;month&quot; and &quot;day&quot;). All attributes are represented as <a href="#strings" target="_self">strings</a> except the &quot;is_valid&quot; attribute, which is a <a href="#booleans" target="_self">boolean</a>. The values are the actual data that the object contains.</p>  <a name="eztoc23911_5_5_1" id="eztoc23911_5_5_1"></a><h4>Attribute availability</h4> <p>It is worth noting that while some attributes are pre-fetched/calculated when an object itself is fetched, others are not. This means that accessing the contents of attributes may require additional processing (usually in the form of database queries). The &quot;static&quot; column in the reference documentation for objects indicates whether the different attributes provide pre-fetched values or if they need to be computed upon request. This information should be helpful when it comes to optimizing your templates.</p>   
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(16/02/2005 9:15 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(26/02/2008 1:28 pm)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Balazs Halasy, Svitlana Shatokhina, Julia Shymova</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="4571" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.8/Templates/The-template-language/Variable-types" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.8/Templates/The-template-language/Variable-types by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 13:26:26 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

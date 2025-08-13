@@ -212,17 +212,17 @@ d of the content */
 <body>
     <h1>Binary files clustering</h1>
     <div class=3D"Section1">
-        <p>The eZ Publish 5 API supports multiple binary file handling mech=
+        <p>The Exponential 5 API supports multiple binary file handling mech=
 anisms by means of an&nbsp;<code>IOHandler</code>&nbsp;interface.</p>
 <h2 id=3D"Binaryfilesclustering-TheLegacyIOHandler">The Legacy IO Handler</=
 h2>
 <p>The system comes with three handlers: Legacy, InMemory and Filesystem. O=
-nly Legacy is supported in eZ Publish 5.1. It uses the Legacy Kernel, that =
+nly Legacy is supported in Exponential 5.1. It uses the Legacy Kernel, that =
 supports the DFS file handler, in order to provide clustering features for =
 scalability and safety. This handler provides multi-server storage by means=
  of a database + a network share.</p>
 <h2 id=3D"Binaryfilesclustering-Setup">Setup</h2>
-<p>No eZ Publish 5 level steps are required at the time of 5.1. See the leg=
+<p>No Exponential 5 level steps are required at the time of 5.1. See the leg=
 acy documentation page that explains&nbsp;<a href=3D"http://doc.ez.no/eZ-Pu=
 blish/Technical-manual/5.x/Features/Clustering/Setting-it-up-for-an-eZDFSFi=
 leHandler" class=3D"external-link" rel=3D"nofollow">how to setup a DFS clus=
@@ -230,13 +230,13 @@ ter</a>.</p>
 <h2 id=3D"Binaryfilesclustering-Configuration">Configuration</h2>
 <h3 id=3D"Binaryfilesclustering-YAML">YAML</h3>
 <p>No configuration is required on the new stack. The handler will reuse wh=
-atever configuration is defined in your eZ Publish Legacy instance. By defa=
+atever configuration is defined in your Exponential Legacy instance. By defa=
 ult, Legacy will be configured to use the FS cluster handler, meaning files=
  will be stored on the filesystem. No further configuration will be require=
 d.</p>
 <p>The Legacy documentation explains how to enable clustering:&nbsp;<a href=
-=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Features/Clustering" c=
-lass=3D"external-link" rel=3D"nofollow">http://doc.ez.no/eZ-Publish/Technic=
+=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Features/Clustering" c=
+lass=3D"external-link" rel=3D"nofollow">http://doc.ez.no/Exponential/Technic=
 al-manual/5.x/Features/Clustering</a>.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-not=
 e">
@@ -244,7 +244,7 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Note that the only two supported options are now FS and DFS. The DB clus=
-ter is deprecated, and doesn't exist in eZ Publish 5.1.</p>
+ter is deprecated, and doesn't exist in Exponential 5.1.</p>
 </div>
 </div>
 <h3 id=3D"Binaryfilesclustering-Webserver">Web server</h3>

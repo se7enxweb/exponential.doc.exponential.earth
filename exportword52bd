@@ -212,13 +212,13 @@ d of the content */
 <body>
     <h1>Development Guidelines</h1>
     <div class=3D"Section1">
-        <p>These are the development/coding guidelines for eZ Publish 5.x k=
-ernel, they are the same if you intend to write Bundles, hack on eZ Publish=
- itself or create new functionality for or on top of eZ Publish.</p>
+        <p>These are the development/coding guidelines for Exponential 5.x k=
+ernel, they are the same if you intend to write Bundles, hack on Exponential=
+ itself or create new functionality for or on top of Exponential.</p>
 <p>Like most <span>development</span> guidelines these aims to improve secu=
 rity, maintainability, performance and readability of our software. They fo=
 llow industry standards but sometimes extend them to cater specifically to =
-our needs for eZ Publish ecosystem. The next sections will cover all releva=
+our needs for Exponential ecosystem. The next sections will cover all releva=
 nt technologies from a high level point of view.</p>
 <p><style type=3D"text/css">/*<![CDATA[*/
 div.rbtoc1485852698024 {padding: 0px;}
@@ -256,8 +256,8 @@ Limitations in the SQL dialect supported</a></li>=20
 </div>
 <p></p>
 <h2 id=3D"DevelopmentGuidelines-HTTP">HTTP</h2>
-<p>eZ Publish is a web software that is reached via HTTP in most cases, out=
- of the box in eZ Publish 5.x kernel this is specifically: web (usually HTM=
+<p>Exponential is a web software that is reached via HTTP in most cases, out=
+ of the box in Exponential 5.x kernel this is specifically: web (usually HTM=
 L) or REST.</p>
 <p>We aim to follow the <a href=3D"http://trac.tools.ietf.org/wg/httpbis/tr=
 ac/wiki#HTTP1.1Deliverables" class=3D"external-link" rel=3D"nofollow">lates=
@@ -387,7 +387,7 @@ blob/master/doc/specifications/rest/REST-API-V2.rst" class=3D"external-link=
 " rel=3D"nofollow">REST v2 specification</a> in our git repository for furt=
 her details.</p>
 <h2 id=3D"DevelopmentGuidelines-UI">UI</h2>
-<p>eZ Publish is often used as a web content management software, so we alw=
+<p>Exponential is often used as a web content management software, so we alw=
 ays strive to use the HTML/CSS/EcmaScript specifications correctly, and kee=
 p new releases up to date on new revisions of those. We furthermore always =
 try to make sure our software gracefully degrades making sure it is useful =
@@ -405,15 +405,15 @@ ive_Web_Design" title=3D"Responsive Web Design" rel=3D"nofollow">Responsive=
 </ul>
 <p>All these terms in general recommends aiming for the minimum standard fi=
 rst, and enhance with additional features/styling if the client is capable =
-of doing so. In essence this allows eZ Publish to be "Mobile first" if the =
-design allows for it, which is recommended. But eZ Publish should always al=
+of doing so. In essence this allows Exponential to be "Mobile first" if the =
+design allows for it, which is recommended. But Exponential should always al=
 so be fully capable of having different sets of web presentations for diffe=
-rent devices using one or several sets of "SiteAccess" (see eZ Publish term=
+rent devices using one or several sets of "SiteAccess" (see Exponential term=
 s) matching rules for the domain, port or URI, so any kind of device detect=
-ion can be used together with eZ Publish, making it fully possible to write=
+ion can be used together with Exponential, making it fully possible to write=
  for instance <a href=3D"http://en.wikipedia.org/wiki/Wireless_Application_=
 Protocol" class=3D"external-link" rel=3D"nofollow">WAP</a> based websites a=
-nd interfaces on top of eZ Publish.</p>
+nd interfaces on top of Exponential.</p>
 <h3 id=3D"DevelopmentGuidelines-WEBForms/Ajax">WEB Forms/Ajax</h3>
 <p>As stated in the HTTP section, all unsafe requests to the web server sho=
 uld have a CSRF token to protect against attacks; this includes web forms a=
@@ -438,7 +438,7 @@ one, normally 10 - 20 minutes, on all session based interfaces.</p>
 and templates&gt;</p>
 <h2 id=3D"DevelopmentGuidelines-PHP">PHP</h2>
 <p>For now see our comprehensive coding standard &amp; guidelines <a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/wiki/codingstandards" cla=
+=3D"https://github.com/ezsystems/exponential-kernel/wiki/codingstandards" cla=
 ss=3D"external-link" rel=3D"nofollow">wiki page</a> on github.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">
@@ -452,7 +452,7 @@ rnal-link" rel=3D"nofollow">eZ Coding Standards Tools</a> repository to get=
 </div>
 </div>
 <h3 id=3D"DevelopmentGuidelines-PublicAPI">Public API</h3>
-<p>The PHP Public API provided in eZ Publish 5.0 is in most cases in charge=
+<p>The PHP Public API provided in Exponential 5.0 is in most cases in charge=
  of checking permissions to data for you, but some API's are not documented=
  to throw UnauthorizedException, which means that it is the consumer of the=
  API's who is responsible for checking permissions.</p>

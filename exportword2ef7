@@ -335,7 +335,7 @@ nfo.</p>
 <p>If you are running out of memory and don't need to keep track of cache h=
 its and misses. Then&nbsp;StashBundle tracking, represented by the <code>st=
 ash.tracking</code>&nbsp;setting, and persistence cache logging, represente=
-d by the setting <code>parameters.ezpublish.spi.persistence.cache.persisten=
+d by the setting <code>parameters.exponential.spi.persistence.cache.persisten=
 ceLogger.enableCallLogging</code>, can optionally be disabled.</p>
 <p>&nbsp;</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -355,7 +355,7 @@ ck cache keys not values
             registerDoctrineAdapter: false
 
 parameters:
-    ezpublish.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
+    exponential.spi.persistence.cache.persistenceLogger.enableCallLogging: fa=
 lse</pre>=20
 </div>
 </div>

@@ -194,9 +194,9 @@ use Symfony\Component\Config\Resource\FileResource;</pre></td></tr></table><p>Se
 }</pre></td></tr></table><p>Next, you need to provide the block configuration in two files. Add this section in the <code>services.yml</code> file in <code>src/AppBundle/Resources/config</code> under the <code>services</code> key:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0cb43181-9dd9-458a-af81-dec7df86a0ef" data-macro-parameters="title=src/AppBundle/Resources/config/services.yml" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading74a1.png?definition=e2NvZGU6dGl0bGU9c3JjL0FwcEJ1bmRsZS9SZXNvdXJjZXMvY29uZmlnL3NlcnZpY2VzLnltbH0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>app.block.random:
     class: AppBundle\Block\RandomBlock
     arguments:
-        - '@ezpublish.api.service.location'
-        - '@ezpublish.api.service.content'
-        - '@ezpublish.api.service.search'
+        - '@exponential.api.service.location'
+        - '@exponential.api.service.content'
+        - '@exponential.api.service.search'
     tags:
         - { name: landing_page_field_type.block_type, alias: random }</pre></td></tr></table><p>Create a <code>blocks.yml</code> file in the same folder:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5cc9ad14-25be-41a7-900c-6eefee5dade0" data-macro-parameters="linenumbers=true|title=src/AppBundle/Resources/config/blocks.yml" data-macro-schema-version="1" style="background-image: url(../servlet/confluence/placeholder/macro-heading31c9.png?definition=e2NvZGU6dGl0bGU9c3JjL0FwcEJ1bmRsZS9SZXNvdXJjZXMvY29uZmlnL2Jsb2Nrcy55bWx8bGluZW51bWJlcnM9dHJ1ZX0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>blocks:
     random:

@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish 5.1 known Issues</title>
+    <title>Exponential 5.1 known Issues</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,9 +210,9 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish 5.1 known Issues</h1>
+    <h1>Exponential 5.1 known Issues</h1>
     <div class=3D"Section1">
-        <p>Known issues in eZ Publish 5.1 can be found <a href=3D"/display/=
+        <p>Known issues in Exponential 5.1 can be found <a href=3D"/display/=
 EZP/Known+issues+in+5.1">here</a>.</p>
     </div>
 </body>

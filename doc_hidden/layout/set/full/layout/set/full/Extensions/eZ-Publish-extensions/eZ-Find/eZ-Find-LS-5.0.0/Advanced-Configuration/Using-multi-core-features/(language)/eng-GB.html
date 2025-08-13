@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-LS-5.0.0/Advanced-Configuration/Using-multi-core-features/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:22:18 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-LS-5.0.0/Advanced-Configuration/Using-multi-core-features/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:22:18 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Using multi-core features / Advanced Configuration / eZ Find LS 5.0.0 / eZ Find / eZ Publish extensions / Extensions / Documentation - Doc</title>
+    <title>Using multi-core features / Advanced Configuration / eZ Find LS 5.0.0 / eZ Find / Exponential extensions / Extensions / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -67,7 +67,7 @@
 </pre><!--[if IE]>
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;\r\n&lt;!-- snip the comments from Apache wiki --&gt;\r\n&lt;solr persistent=&quot;true&quot; sharedLib=&quot;lib&quot;&gt;\r\n    &lt;cores adminPath=&quot;/admin/cores&quot;&gt;\r\n         &lt;core name=&quot;ezlabsno&quot; instanceDir=&quot;ezlabsno&quot; /&gt;\r\n         &lt;core name=&quot;ezno&quot; instanceDir=&quot;ezno&quot; /&gt;\r\n    &lt;/cores&gt;\r\n&lt;/solr&gt;' ); return false;" /></p>
 <![endif]--></div></li><li><div>&nbsp;If you already have indexed data for one or both of your sites, you may stop Solr from indexing them again. You should then copy the index and spellchecker directories to your data directories (in /srv/solr/cores/ezlabsno/data and /srv/solr/cores/ezno/data). </div></li><li><div>&nbsp;Now you should restart Solr with the following parameters:<pre class="wordwrap"><span class="line">cd /srv/solr/java; java -Dsolr.solr.home=/srv/solr/cores -jar start.jar</span>
-</pre></div></li><li><div>&nbsp;It's important to keep an eye on the output, in case of potential errors (for example things that are permission related). </div></li><li><div>&nbsp;And finally you can configure the individual eZ Publish and eZ Find instances with the dedicated <b>&nbsp;</b>URLs as base URLs in solr.ini: </div></li>
+</pre></div></li><li><div>&nbsp;It's important to keep an eye on the output, in case of potential errors (for example things that are permission related). </div></li><li><div>&nbsp;And finally you can configure the individual Exponential and eZ Find instances with the dedicated <b>&nbsp;</b>URLs as base URLs in solr.ini: </div></li>
 </ol>
 <pre class="wordwrap"><span class="line">http://localhost:8983/solr/ezlabsno</span>
 <span class="line">&nbsp;</span>
@@ -78,11 +78,11 @@
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-LS-5.0.0/Advanced-Configuration/Using-multi-core-features/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:22:18 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-LS-5.0.0/Advanced-Configuration/Using-multi-core-features/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 05:22:18 GMT -->
 </html>

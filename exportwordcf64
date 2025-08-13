@@ -214,7 +214,7 @@ d of the content */
     <div class=3D"Section1">
         <p>This installation method (also named kick-start) is designed for=
  system administrators who wish to roll out pre-configured installations of=
- eZ Publish that require a minimum of interaction with the web-based setup =
+ Exponential that require a minimum of interaction with the web-based setup =
 wizard.</p>
 <p>To perform such an installation follow&nbsp;"<a href=3D"/display/EZP51/N=
 ormal+installation">Normal installation method</a>" but before you execute =

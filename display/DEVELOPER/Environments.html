@@ -716,7 +716,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 SetEnvIf Request_URI &quot;.*&quot; SYMFONY_ENV=&quot;prod&quot;]]></script>
 </div></div><h1 id="Environments-Configuration">Configuration</h1><p>If you want to use a custom environment (something else then &quot;<code>prod</code>&quot; and &quot;<code>dev</code>&quot;) the next step is to create the dedicated configuration files for your environment:</p><ul><li><code>app/config/config_<strong> <em>&lt;env_name&gt;</em> </strong>.yml</code></li><li><code>app/config/ezplatform_<strong> <em>&lt;env_name&gt;</em> </strong>.yml</code></li></ul><p>The name used as <code>
           <strong> <em>&lt;env_name&gt;</em> </strong>
-        </code> will be the one that can be used as value of the <code>ENVIRONMENT</code> environment variable.</p><p>Those files must import the main configuration file, just like the default <a href="https://github.com/ezsystems/ezpublish-community/blob/master/ezpublish/config/config_dev.yml" class="external-link" rel="nofollow"> <code>config_dev.yml</code> </a> already does. Here's an example:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+        </code> will be the one that can be used as value of the <code>ENVIRONMENT</code> environment variable.</p><p>Those files must import the main configuration file, just like the default <a href="https://github.com/ezsystems/exponential-community/blob/master/exponential/config/config_dev.yml" class="external-link" rel="nofollow"> <code>config_dev.yml</code> </a> already does. Here's an example:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[imports:
     - { resource: config.yml }]]></script>
 </div></div><p> </p><p>This allows you to override settings defined in the main configuration file, depending on your environment (like the DB settings or any other setting you may want to override).</p></div>
@@ -831,7 +831,7 @@ SetEnvIf Request_URI &quot;.*&quot; SYMFONY_ENV=&quot;prod&quot;]]></script>
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -715,7 +715,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
             inMemory: true
             registerDoctrineAdapter: false]]></script>
 </div></div><div class="confluence-information-macro confluence-information-macro-note"><p class="title">Note for &quot;inMemory&quot; cache with long running scripts</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Use <code>inMemory</code> with caution, and avoid it completely for long running scripts for the following reasons:</p><ul><li>It does not have any limits, so can result in the application running out of PHP memory.</li><li><span>Its cache pool is by design a PHP variable and is not shared across requests/processes/servers, so data becomes stale if any other concurrent activity happens towards the repository.</span></li></ul></div></div><h3 id="Persistencecacheconfiguration-Multirepositorysetup">Multi repository setup</h3><p>In <code>ezplatform.yml</code> you can specify which cache pool you want to use on a siteaccess or sitegroup level. The following example shows use in a sitegroup:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml site group setting</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         # &quot;site_group&quot; refers to the group configured in site access
         site_group:
@@ -832,7 +832,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
-                <p>Hi everybody,<br />When using Memcache in multi fronts installation, if the cache mechanism doesn't work after checking your eZ Publish configuration .<br />Be sure to use the php5-memcache<strong>d</strong> (with &quot;d&quot;)<br /> It will save you probably 1 or 2 hours of debug ! <img class="emoticon emoticon-wink" src="../../s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/images/icons/emoticons/wink.png" data-emoticon-name="wink" alt="(wink)" /></p><p>++</p>
+                <p>Hi everybody,<br />When using Memcache in multi fronts installation, if the cache mechanism doesn't work after checking your Exponential configuration .<br />Be sure to use the php5-memcache<strong>d</strong> (with &quot;d&quot;)<br /> It will save you probably 1 or 2 hours of debug ! <img class="emoticon emoticon-wink" src="../../s/en_GB/5983/f3e491afc761ac0a6981cfa3dcbc04fc7e88c149.16/_/images/icons/emoticons/wink.png" data-emoticon-name="wink" alt="(wink)" /></p><p>++</p>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
@@ -949,7 +949,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

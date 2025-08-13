@@ -226,10 +226,10 @@ an></p>
 anaged using composer.</span></p>
 <h2 id=3D"HowtostructureaneZPlatformproject-Templates"><span>Templates</spa=
 n></h2>
-<p><span>Project templates should go into&nbsp;<code>ezpublish/Resources/vi=
+<p><span>Project templates should go into&nbsp;<code>exponential/Resources/vi=
 ews</code>.</span></p>
 <p><span>They can then be referenced in code without any prefix:&nbsp;<code=
->ezpublish/Resources/views/content/full.html.twig</code>&nbsp;can be refere=
+>exponential/Resources/views/content/full.html.twig</code>&nbsp;can be refere=
 nced in twig templates or PHP as&nbsp;<code>content/full.html.twig</code>.<=
 /span></p>
 <h2 id=3D"HowtostructureaneZPlatformproject-Assets"><span>Assets</span></h2=
@@ -240,7 +240,7 @@ js</code> can be referenced as&nbsp;<code>js/script.js</code> from template=
 s.</span></p>
 <h2 id=3D"HowtostructureaneZPlatformproject-Configuration">Configuration</h=
 2>
-<p>Configuration may go in&nbsp;<code>ezpublish/config</code>. However, ser=
+<p>Configuration may go in&nbsp;<code>exponential/config</code>. However, ser=
 vices definitions from&nbsp;<code>AppBundle</code> should go into&nbsp;<cod=
 e>src/AppBundle/Resources/config</code>.</p>
 <h2 id=3D"HowtostructureaneZPlatformproject-Versioningaproject">Versioning =

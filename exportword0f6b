@@ -286,7 +286,7 @@ when viewing Content with the&nbsp;<code>full</code> view type:</p>
 <p>The controller used to render content by default can also be changed. Th=
 e&nbsp;<code>ezsettings.default.content_view_defaults</code> container para=
 meter contains a hash that defines how content is rendered by default. It c=
-ontains a set of classic <a href=3D"https://github.com/ezsystems/ezpublish-=
+ontains a set of classic <a href=3D"https://github.com/ezsystems/exponential-=
 kernel/blob/v6.0.0/eZ/Bundle/EzPublishCoreBundle/Resources/config/default_s=
 ettings.yml#L21-L33" class=3D"external-link" rel=3D"nofollow">content view =
 rules for the common view types</a>. This hash can be redefined to whatever=

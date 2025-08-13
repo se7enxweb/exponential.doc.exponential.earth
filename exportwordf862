@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish Documentation</title>
+    <title>Exponential Documentation</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,21 +210,21 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish Documentation</h1>
+    <h1>Exponential Documentation</h1>
     <div class=3D"Section1">
-        <h1 id=3D"eZPublishDocumentation-WhatiseZPublish">What is eZ Publis=
+        <h1 id=3D"ExponentialDocumentation-WhatisExponential">What is eZ Publis=
 h</h1>
-<p>eZ Publish is an Enterprise Open-Source Content Management System/Framew=
+<p>Exponential is an Enterprise Open-Source Content Management System/Framew=
 ork (<a href=3D"http://en.wikipedia.org/wiki/CMS" class=3D"external-link" r=
 el=3D"nofollow">CMS</a>/F) at its core. It is highly extendable so with ext=
 ensions it provides "<a href=3D"http://en.wikipedia.org/wiki/Web_content_ma=
 nagement_system" class=3D"external-link" rel=3D"nofollow">WCMS</a>" capabil=
-ities. In its default Enterprise offering as of version 5, "eZ Publish Plat=
-form", eZ Publish is extended to provide full set of Customer Experience Ma=
+ities. In its default Enterprise offering as of version 5, "Exponential Plat=
+form", Exponential is extended to provide full set of Customer Experience Ma=
 nagement (CXM) capabilities.</p>
-<h2 id=3D"eZPublishDocumentation-WhatisnewineZPublish5.1">What is new in eZ=
+<h2 id=3D"ExponentialDocumentation-WhatisnewinExponential5.1">What is new in eZ=
  Publish 5.1</h2>
-<p>Version 5 represents a big step forward for eZ Publish, as it introdcuce=
+<p>Version 5 represents a big step forward for Exponential, as it introdcuce=
 s a whole new architecture. As is often the case with architecture, most of=
  it is under the hood in this release, and there is no new user interfaces =
 (UI) yet.</p>
@@ -252,7 +252,7 @@ atures you would expect</li>
 uld be considered ready for production as it is more Scalable, more Stable =
 and more Feature Rich.&nbsp;Specifically the 5.x kernel now support DFS clu=
 stering, Persistence data cache and front-end has received some* of the mos=
-t missing features the ecosystem expects from a front end eZ Publish web st=
+t missing features the ecosystem expects from a front end Exponential web st=
 ack.</p>
 <p class=3D"p1">* For further information on which features exists, are dep=
 recated, part of Symfony or planned for the future, see:&nbsp;<span class=
@@ -262,20 +262,20 @@ xTDZ2dkhUcVN2SWc#gid=3D0" class=3D"external-link" rel=3D"nofollow">https://=
 docs.google.com/a/ez.no/spreadsheet/ccc?key=3D0AgGKn8SQ_akMdFQ3VU0wMlR3cENx=
 TDZ2dkhUcVN2SWc#gid=3D0</a></span><span class=3D"s2" style=3D"font-size: 10=
 .0pt;line-height: 13.0pt;"> (Community maintained)</span></p>
-<h2 id=3D"eZPublishDocumentation-Quicklinks">Quick links</h2>
+<h2 id=3D"ExponentialDocumentation-Quicklinks">Quick links</h2>
 <ul>
-<li><a href=3D"/display/EZP51/Installation">Installing eZ Publish 5</a> (in=
+<li><a href=3D"/display/EZP51/Installation">Installing Exponential 5</a> (in=
 cludes detailed specification of requirements)</li>
-<li><a href=3D"http://doc.ez.no/eZ-Publish/Upgrading/Upgrading-to-5.0/Upgra=
+<li><a href=3D"http://doc.ez.no/Exponential/Upgrading/Upgrading-to-5.0/Upgra=
 ding-from-4.7-to-5.0" class=3D"external-link" rel=3D"nofollow">Upgrading to=
- eZ Publish 5</a></li>
+ Exponential 5</a></li>
 <li><a href=3D"/pages/viewpage.action?pageId=3D12125295">Architecture overv=
-iew of eZ Publish 5</a></li>
+iew of Exponential 5</a></li>
 <li><a href=3D"/display/EZP51/Known+issues+in+5.1">Known issues in 5.1</a><=
 /li>
 <li>Public API <a href=3D"/display/EZP51/Public+API+basics">basics</a> &amp=
 ; <a href=3D"/display/EZP51/Public+API+Cookbook">Cookbook</a></li>
-<li><a href=3D"/display/EZP51/eZ+Publish+REST+API">eZ Publish REST API</a><=
+<li><a href=3D"/display/EZP51/eZ+Publish+REST+API">Exponential REST API</a><=
 /li>
 </ul>
 <p>&nbsp;</p>
@@ -300,7 +300,7 @@ atus,space,draft,custom">=20
 <span class=3D"icon content-type-spacedesc"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51" title=3D"eZ Publish 5.1">eZ Publish 5.1</a>=20
+<a href=3D"/display/EZP51" title=3D"Exponential 5.1">Exponential 5.1</a>=20
 <div class=3D"update-item-meta">
  Jun 27, 2014
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -313,7 +313,7 @@ display/~sarah.haim-lubczanski@ez.no">Sarah Ha=C3=AFm-Lubczanski</a>=20
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/Requirements" title=3D"eZ Publish 5.1">Requiremen=
+<a href=3D"/display/EZP51/Requirements" title=3D"Exponential 5.1">Requiremen=
 ts</a>=20
 <div class=3D"update-item-meta">
  May 28, 2014
@@ -332,7 +332,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZP51/Known+issues+and+limitations+for+REST+API+in+5.1"=
- title=3D"eZ Publish 5.1">Known issues and limitations for REST API in 5.1<=
+ title=3D"Exponential 5.1">Known issues and limitations for REST API in 5.1<=
 /a>=20
 <div class=3D"update-item-meta">
  May 22, 2014
@@ -350,7 +350,7 @@ display/~sarah.haim-lubczanski@ez.no">Sarah Ha=C3=AFm-Lubczanski</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/eZ+Publish+REST+API" title=3D"eZ Publish 5.1">eZ =
+<a href=3D"/display/EZP51/eZ+Publish+REST+API" title=3D"Exponential 5.1">eZ =
 Publish REST API</a>=20
 <div class=3D"update-item-meta">
  Apr 10, 2014
@@ -368,7 +368,7 @@ display/~sarah.haim-lubczanski@ez.no">Sarah Ha=C3=AFm-Lubczanski</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/REST+API+Authentication" title=3D"eZ Publish 5.1"=
+<a href=3D"/display/EZP51/REST+API+Authentication" title=3D"Exponential 5.1"=
 >REST API Authentication</a>=20
 <div class=3D"update-item-meta">
  Mar 27, 2014
@@ -387,7 +387,7 @@ ew change</a>=20
 </div>=20
 <div class=3D"update-item-content">=20
 <a href=3D"/display/EZP51/Automated+installation+of+eZ+Publish" title=3D"eZ=
- Publish 5.1">Automated installation of eZ Publish</a>=20
+ Publish 5.1">Automated installation of Exponential</a>=20
 <div class=3D"update-item-meta">
  Mar 26, 2014
 <span class=3D"separator"> =E2=80=A2 </span>updated by=20
@@ -405,7 +405,7 @@ ent</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/Using+Varnish" title=3D"eZ Publish 5.1">Using Var=
+<a href=3D"/display/EZP51/Using+Varnish" title=3D"Exponential 5.1">Using Var=
 nish</a>=20
 <div class=3D"update-item-meta">
  Mar 24, 2014
@@ -442,7 +442,7 @@ andre.romcke@ez.no">Andr=C3=A9 R=C3=B8mcke</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/Content+view" title=3D"eZ Publish 5.1">Content vi=
+<a href=3D"/display/EZP51/Content+view" title=3D"Exponential 5.1">Content vi=
 ew</a>=20
 <div class=3D"update-item-meta">
  Feb 12, 2014
@@ -553,7 +553,7 @@ ent</a>
 <span class=3D"icon content-type-page"></span>=20
 </div>=20
 <div class=3D"update-item-content">=20
-<a href=3D"/display/EZP51/Normal+installation" title=3D"eZ Publish 5.1">Nor=
+<a href=3D"/display/EZP51/Normal+installation" title=3D"Exponential 5.1">Nor=
 mal installation</a>=20
 <div class=3D"update-item-meta">
  Nov 22, 2013
@@ -583,7 +583,7 @@ fo,spacedesc,personalspacedesc,status,space,draft,custom">Show More</a>=20
 </div>
 <div class=3D"columnMacro" style=3D"width:38%;min-width:38%;max-width:38%;"=
 >
-<h6 id=3D"eZPublishDocumentation-Navigatespace">Navigate space</h6>=20
+<h6 id=3D"ExponentialDocumentation-Navigatespace">Navigate space</h6>=20
 <div id=3D"pagetreesearch">=20
 <form method=3D"POST" action=3D"https://doc.ez.no/plugins/pagetreesearch/pa=
 getreesearch.action" class=3D"aui" name=3D"pagetreesearchform">=20

@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/5.x/Features/Packages/Creating-new-packages by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:44:06 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Creating new packages / Packages / Features / 5.x / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../5.html">5.x</a>
+        
+                        /
+                            <a href="../../Features.html">features</a>
+        
+                        /
+                            <a href="../Packages.html">packages</a>
+        
+                        /
+                            creating new packages
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../5.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Creating new packages</h1>
+</div>
+
+<p>The administration interface allows you to export your class definitions, content objects, settings, design styles etc. into packages of different types. This functionality is implemented using the built-in package creation handlers for the following types of packages:</p>
+<ul>
+<li><div>&nbsp;Content class packages </div></li><li><div>&nbsp;Content object packages </div></li><li><div>&nbsp;Extension packages </div></li><li><div>&nbsp;Site style packages (design packages) </div></li>
+</ul>
+<p>The built-in package creation handlers are stored in the &quot;kernel/classes/packagecreators&quot; directory. Please note that there is no package creation handler for site packages and thus it is not possible to create such packages using the administration interface. The packages created locally are stored under the &quot;Local&quot; system repository.</p><p>The next subsections explain how to create packages of different types.</p><a name="eztoc132617_1" id="eztoc132617_1"></a><h2>Content class packages</h2><p>The following example demonstrates how to create a content class package.</p>
+<ol>
+<li><div><p>Click the &quot;Setup&quot; tab in the administration interface and access the &quot;Packages&quot; link on the left. You will be taken to the list of packages located under the &quot;Local&quot; system repository. (This interface can also be accessed by requesting &quot;/package/list&quot; in the URL.)</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-interface/133285-1-eng-GB/Package-Interface_pdf.jpg" alt="Package Interface" />
+<p>Package Interface</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>
+Click the &quot;Create new package&quot; button located under the list of packages. The system will bring up the package creation dialog where you can choose between four available package creation wizards. (This interface can also be accessed by requesting &quot;/package/create&quot; in the URL.) <br />&nbsp;</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/creating-a-new-package/133288-1-eng-GB/Creating-a-New-Package_pdf.jpg" alt="Creating a New Package" />
+<p>Creating a New Package</p>
+
+
+
+
+
+
+
+</div><p>Choose the &quot;Content class export&quot; wizard as shown in the screenshot and click the &quot;Create package&quot; button.</p></div></li><li><div><p>The package wizard starts with asking what classes to include to the package being created (look at the next screenshot).</p><p>
+Select the desired class(es) from the list and click the &quot;Next&quot; button.<br />&nbsp;</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-wizard-content-class-export/133291-1-eng-GB/Package-Wizard-Content-Class-Export_pdf.jpg" alt="Package Wizard Content Class Export" />
+<p>Package Wizard Content Class Export</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>Now, it's time to enter some information about the content class package. Give it a name and enter some text to describe the package as shown below. Click the &quot;Next&quot; button.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-information2/133294-1-eng-GB/Package-Information_pdf.jpg" alt="Package Information" />
+<p>Package Information</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>The system also needs some information about the package maintainer. Enter this information and click the &quot;Next&quot; button.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-maintainer/133297-1-eng-GB/Package-Maintainer_pdf.jpg" alt="Package Maintainer" />
+<p>Package Maintainer</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>In the last step, you can optionally enter some information about the changes you applied to this version of the package (look at the next screenshot).</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-changes2/133300-1-eng-GB/Package-Changes_pdf.jpg" alt="Package Changes" />
+<p>Package Changes</p>
+
+
+
+
+
+
+
+</div><p>
+&nbsp;<br />&nbsp;After clicking the &quot;Continue&quot; button the wizard will create the package and display its summary.</p></div></li>
+</ol>
+<a name="eztoc132617_2" id="eztoc132617_2"></a><h2>Content object packages</h2><p>The following example demonstrates how to create a content object package.</p>
+<ol>
+<li><div><p>Click the &quot;Setup&quot; tab in the administration interface, select the &quot;Packages&quot; link on the left and access the &quot;Create new package&quot; button located under the list of packages. In the package creation dialog choose the &quot;Content object export&quot; wizard as shown in the screenshot below and click the &quot;Create package&quot; button.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/content-object-export2/133303-1-eng-GB/Content-Object-Export_pdf.jpg" alt="Content Object Export" />
+<p>Content Object Export</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>The package wizard starts from asking which objects to include to the package being created (look at the next screenshot).</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/content-to-include-in-package2/133306-1-eng-GB/Content-to-Include-in-Package_pdf.jpg" alt="Content to Include in Pack" />
+<p>Content to Include in Pack</p>
+
+
+
+
+
+
+
+</div><p>
+&nbsp;<br />&nbsp;The following text describes how you can use the &quot;Add node&quot;, &quot;Add subtree&quot; and &quot;Remove selected&quot; buttons for choosing the desired objects.</p>
+<ul>
+<li><div><p>The &quot;Add node&quot; button makes it possible to add individual objects to the package which is being created. When you click this button, you will see a dialog called &quot;Choose node for export&quot;. This dialog will display the nodes that are located inside the &quot;Content structure&quot; tree. Use the list to select the nodes (which encapsulate the objects) that you want to include in the package. The following screenshot shows this dialog where the node which encapsulates an article node called &quot;Global zone&quot; is selected.</p><p>&nbsp;</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/choosing-node-to-export/133309-1-eng-GB/Choosing-Node-to-Export_pdf.jpg" alt="Choosing Node to Export" />
+<p>Choosing Node to Export</p>
+
+
+
+
+
+
+
+</div><p>Please note that it is possible to select multiple nodes/objects at the same time. You can navigate the list by clicking on the names of the nodes. If the desired node is located outside the &quot;Content structure&quot; tree, click the up arrow icon/button until it brings you to the root of the tree. (This operation will allow you to for example switch to the &quot;Media library&quot; tree and select image objects that are located there.) It is possible to reconfigure how the list is displayed. For example, you can set the quantity of objects per page by clicking the &quot;10&quot; / &quot;25&quot; and &quot;50&quot; links. If you wish to browse image objects as thumbnails, simply click the &quot;Thumbnail&quot; button. After selecting the desired node(s) click the &quot;OK&quot; button to save your choice.</p></div></li><li><div><p>The &quot;Add subtree&quot; button makes it possible to add whole subtrees to the package which is being created. When you click this button, you will see a dialog called &quot;Choose subtree for export&quot;. This dialog is very similar to the node choosing dialog described above. The only difference is that selecting a node here means that the whole subtree located under it will be included in the package. Let's select for example a subtree located under one of the folders (look at the next screenshot).</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/choosing-subtree-to-export/133312-1-eng-GB/Choosing-Subtree-to-Export_pdf.jpg" alt="Choosing Subtree to Export" />
+<p>Choosing Subtree to Export</p>
+
+
+
+
+
+
+
+</div><p>
+&nbsp;<br />&nbsp;After selecting the desired subtree(s), click &quot;OK&quot;.</p></div></li><li><div><p>The wizard will display the selected objects/nodes and subtrees as shown in the following screenshot.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/content-objects-to-include/133315-1-eng-GB/Content-Objects-to-Include_pdf.jpg" alt="Content Objects to Include" />
+<p>Content Objects to Include</p>
+
+
+
+
+
+
+
+</div><p>
+&nbsp;<br />&nbsp;If you have mistakenly chosen item(s) that you don't want to be included to the package, use the check-boxes to select these items and click the &quot;Remove selected&quot; button. If everything is correct, click the &quot;Next&quot; button.</p></div></li>
+</ul>
+</div></li><li><div><p>In the next dialog you should specify the desired export properties for the objects being added to the package. It is possible to include not only the actual objects but also their class definitions and related templates (the templates can be taken from one or several siteaccesses). The selected objects can be included together with all their versions and languages or you can specify custom parameters. You may choose to keep all node assignments or only main nodes for the objects being imported and specify what to do with related objects. The following screenshot shows this dialog box.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/export-properties2/133318-1-eng-GB/Export-Properties_reference.jpg" alt="Export Properties" />
+<p>Export Properties</p>
+
+
+
+
+
+
+
+</div><p>Choose the desired properties and click the &quot;Next&quot; button.</p></div></li><li><div>&nbsp;The rest three steps of the &quot;Content object export&quot; wizard allow you to enter information about the package itself, its maintainer and changes made in the current version. These are already described above for &quot;Content class export&quot; wizard. </div></li>
+</ol>
+<a name="eztoc132617_3" id="eztoc132617_3"></a><h2>Extension packages</h2><p>The following example demonstrates how to create an extension package.</p>
+<ol>
+<li><div>Go to &quot;Setup - Packages&quot; in the administration interface and click the &quot;Create new package&quot; button located under the list of packages. In the package creation dialog choose the &quot;Extension export&quot; wizard and click the &quot;Create package&quot; button.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div></li><li><div>The wizard will display the list of existing extensions. Select the extension that you wish to export to the package (as shown in the following screenshot) and click the &quot;Next&quot; button.</div></li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/extensions-to-include/133324-1-eng-GB/Extensions-to-Include_reference.jpg" alt="Extensions to Include" />
+<p>Extensions to Include</p>
+
+
+
+
+
+
+
+</div><p>&nbsp;&nbsp;&nbsp; 3. The rest three steps of the &quot;Extension export&quot; wizard allow you to enter information about the package itself, its maintainer and changes made in the current version. These are already described above for &quot;Content class export&quot; wizard.</p><a name="eztoc132617_4" id="eztoc132617_4"></a><h2>Design / site style packages</h2><p>The following example demonstrates how to create a site style package.</p>
+<ol>
+<li><div>&nbsp;Go to &quot;Setup - Packages&quot; in the administration interface and click the &quot;Create new package&quot; button located under the list of packages. In the package creation dialog choose the &quot;Site style&quot; wizard and click the &quot;Create package&quot; button. </div></li><li><div><p>
+The wizard will ask you for a thumbnail image, which should be a screenshot or an icon that depicts the look and feel of your theme. The image should be 120px wide and 103px high. The following screenshot shows this dialog. <br />&nbsp;</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/package-wizard-site-style/133327-1-eng-GB/Package-Wizard-Site-Style_pdf.jpg" alt="Package Wizard Site Style" />
+<p>Package Wizard Site Style</p>
+
+
+
+
+
+
+
+</div><p>Choose the image file and click the &quot;Next&quot; button.</p></div></li><li><div><p>The next dialog requests that you provide two CSS files: the &quot;site-colors.css&quot; file containing styles like color codes and background image details for the <a href="../../Templates/The-pagelayout.html" target="_self">pagelayout</a> and &quot;classes-colors.css&quot; that determines styles for class templates. Choose these files as shown in the screenshot below (the actual file names do not matter) and click the &quot;Next&quot; button.</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/choosing-css-files2/133333-1-eng-GB/Choosing-CSS-Files_pdf.jpg" alt="Choosing CSS Files" />
+<p>Choosing CSS Files</p>
+
+
+
+
+
+
+
+</div></div></li><li><div><p>If you use images in your theme, you can upload them in the next screen (look at the screenshot).</p>
+<div class="">        <img src="../../../../../../var/doc/storage/images/media/images/choosing-image-files/133336-1-eng-GB/Choosing-Image-Files_pdf.jpg" alt="Choosing Image Files" />
+<p>Choosing Image Files</p>
+
+
+
+
+
+
+
+</div><p>
+&nbsp;<br />&nbsp;Click &quot;Next&quot; when you finish adding images.</p></div></li><li><div>&nbsp;The rest three steps of the &quot;Site style&quot; wizard allow you to enter information about the package itself, its maintainer and changes made in the current version. These are already described above for &quot;Content class export&quot; wizard. </div></li>
+</ol>
+<a name="eztoc132617_5" id="eztoc132617_5"></a><h2>Site packages</h2><p>It is impossible to create site packages using the administration interface (i.e. there is no package creation handler for these package types). They can only be created manually, which means that a package creator will have to edit the &quot;package.xml&quot; file.</p>
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Svitlana Shatokhina&nbsp;(14/09/2010 12:16 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Andrea Melo&nbsp;(13/11/2012 11:56 am)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Geir Arne Waaler, Andrea Melo</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment27942" class="attribute-heading">
+<h2>But where do they come from?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 11 January 2007 4:12:43 pm</p>
+    <p class="author">Jochim Lous</p>
+</div>
+
+<div class="attribute-short">
+importaing and exporting conent classeds is all well and good, but how do you create one in the first place?
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="27942" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/5.x/Features/Packages/Creating-new-packages" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment27943" class="attribute-heading">
+<h2>Re: But where do they come from?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Tuesday 16 January 2007 9:45:53 am</p>
+    <p class="author">Svitlana Shatokhina</p>
+</div>
+
+<div class="attribute-short">
+Content classes can be created, modified and removed using the administration interface (Setup -&gt; Classes). Please read the following page before working with classes: <a href="http://ez.no/doc/ez_publish/technical_manual/3_8/concepts_and_basics/content_management/the_content_class" title="http://ez.no/doc/ez_publish/technical_manual/3_8/concepts_and_basics/content_management/the_content_class">http://ez.no/doc/ez_publish/techn...content_management/the_content_class</a>
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="27943" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/5.x/Features/Packages/Creating-new-packages" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="27941" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/5.x/Features/Packages/Creating-new-packages" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/5.x/Features/Packages/Creating-new-packages by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 01:44:06 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

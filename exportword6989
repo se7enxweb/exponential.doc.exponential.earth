@@ -227,42 +227,42 @@ ly retrieve useful information.</p>
 <th class=3D"confluenceTh">Description</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.siteaccess</code></td>
+<td class=3D"confluenceTd"><code>exponential.siteaccess</code></td>
 <td class=3D"confluenceTd"><p>Returns the current siteaccess.</p></td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code><span>ezpublish.rootLocation=
+<td colspan=3D"1" class=3D"confluenceTd"><code><span>exponential.rootLocation=
 </span></code></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns the root Location object</=
 td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.requestedUriString=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.requestedUriString=
 </code></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns the requested URI string (=
 also known as semanticPathInfo).</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.systemUriString</c=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.systemUriString</c=
 ode></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns the "system" URI string. S=
 ystem URI is the URI for internal content controller. If current route is n=
 ot an URLAlias, then the current Pathinfo is returned.</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.viewParameters</co=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.viewParameters</co=
 de></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns the view parameters as a h=
 ash.</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.viewParametersStri=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.viewParametersStri=
 ng</code></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns the view parameters as a s=
 tring.</td>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.legacy</code></td>
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.legacy</code></td>
 <td colspan=3D"1" class=3D"confluenceTd">Returns legacy information.</td>
 </tr>
 </tbody>
@@ -275,12 +275,12 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><code>ezpublish.legacy</code> is only available <strong>when viewing con=
+<p><code>exponential.legacy</code> is only available <strong>when viewing con=
 tent in legacy fallback</strong> (e.g. no corresponding Twig templates)</p>
 </div>
 </div>
 <p>&nbsp;</p>
-<p>The <code>ezpublish.legacy</code> property returns an object of type&nbs=
+<p>The <code>exponential.legacy</code> property returns an object of type&nbs=
 p;<a href=3D"http://api.symfony.com/2.0/Symfony/Component/HttpFoundation/Pa=
 rameterBag.html" class=3D"external-link" rel=3D"nofollow">ParameterBag</a>,=
  which is a container for key/value pairs, and contains additional properti=
@@ -293,23 +293,23 @@ es to retrieve/handle legacy information.</p>
 <th class=3D"confluenceTh">Description</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code><span>ezpublish.legacy.all</span></code></=
+<td class=3D"confluenceTd"><code><span>exponential.legacy.all</span></code></=
 td>
 <td class=3D"confluenceTd">Returns all the parameters, with all the contain=
 ed information.</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code><span>ezpublish.legacy.keys</span></code><=
+<td class=3D"confluenceTd"><code><span>exponential.legacy.keys</span></code><=
 /td>
 <td class=3D"confluenceTd">Returns the parameter keys only.</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code><span>ezpublish.legacy.get</span></code></=
+<td class=3D"confluenceTd"><code><span>exponential.legacy.get</span></code></=
 td>
 <td class=3D"confluenceTd">Returns a parameter by name.</td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code><span>ezpublish.legacy.has</span></code></=
+<td class=3D"confluenceTd"><code><span>exponential.legacy.has</span></code></=
 td>
 <td class=3D"confluenceTd">Returns true if the parameter is defined.</td>
 </tr>
@@ -319,18 +319,18 @@ td>
 <p>&nbsp;</p>
 <h3 id=3D"TwigHelper-Listingtheavailableparameters">Listing the available p=
 arameters</h3>
-<p>You can list the available parameters in <code>ezpublish.legacy</code> b=
-y using the <code>ezpublish.legacy.keys</code> property, as shown in the fo=
+<p>You can list the available parameters in <code>exponential.legacy</code> b=
+y using the <code>exponential.legacy.keys</code> property, as shown in the fo=
 llowing example:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Example on retrieving the available parameters under ezpublish.legacy</b=
+<b>Example on retrieving the available parameters under exponential.legacy</b=
 >
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">{{ dump(ezpublish.legacy.keys()) }}</pre>=20
+:12px;">{{ dump(exponential.legacy.keys()) }}</pre>=20
 </div>
 </div>
 <p>which will give a result similar to:</p>
@@ -355,9 +355,9 @@ llowing example:</p>
 </div>
 <h3 id=3D"TwigHelper-Retrievinglegacyinformation">Retrieving legacy informa=
 tion</h3>
-<p>Legacy information is accessible by using the <code>ezpublish.legacy.get=
+<p>Legacy information is accessible by using the <code>exponential.legacy.get=
 </code> property, which will allow you to access all data contained in <a h=
-ref=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Templates/The-pagel=
+ref=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Templates/The-pagel=
 ayout/Variables-in-pagelayout#module_result" class=3D"external-link" rel=3D=
 "nofollow">$module_result</a>, from the legacy kernel.</p>
 <p>This allows you to import information directly into twig templates. For =
@@ -374,11 +374,11 @@ el=3D"nofollow">assets</a>.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Example on accessing 'content_info' under ezpublish.legacy</b>
+<b>Example on accessing 'content_info' under exponential.legacy</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">{{ ezpublish.legacy.get('content_info') }}</pre>=20
+:12px;">{{ exponential.legacy.get('content_info') }}</pre>=20
 </div>
 </div>
 <p>The previous call will return the contents on the 'content_info' as an <=
@@ -439,7 +439,7 @@ the following example:</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">{{ ezpublish.legacy.get('content_info')['current_language'] }}</pre=
+:12px;">{{ exponential.legacy.get('content_info')['current_language'] }}</pre=
 >=20
 </div>
 </div>

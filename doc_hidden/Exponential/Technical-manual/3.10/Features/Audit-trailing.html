@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.10/Features/Audit-trailing by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 11:44:21 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                              
+    <title>Audit trailing / Features / 3.10 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../3.html">3.10</a>
+        
+                        /
+                            <a href="../Features.html">features</a>
+        
+                        /
+                            audit trailing
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../3.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Audit trailing</h1>
+</div>
+
+ <p>It is possible to automatically generate audit logs based on what the users are doing with the system. This feature can be useful for big sites with many administrators and editors where information about various operations should be logged and stored. For example, auditing makes it possible to find out which user that removed content, from which IP address the request came from and so on.</p> <p>The system provides a set of built-in audit functions that make it possible to generate audit logs for different types of activities. At minimum, for every operation, the system logs the following information:</p> 
+<ul>
+ <li><div> When it happened (timestamp) </div></li> <li><div> Where the request came from (IP address) </div></li> <li><div> Which user that did it (username and ID number) </div></li> 
+</ul>
+ <p>Note that most audit functions provide additional information. The following example shows how a record in one of the log files look like after a node has been moved.</p> <pre class="wordwrap copytoclipboard"><span class="line">[ May 23 2007 14:47:58 ] [127.0.0.1] [editor:16]</span>
+<span class="line">Node ID: 124</span>
+<span class="line">Old parent node ID: 2</span>
+<span class="line">New parent node ID: 59</span>
+<span class="line">Object ID: 114</span>
+<span class="line">Content Name: Folder</span>
+<span class="line">Comment: Moved the node to the given node: eZContentObjectTreeNode::move()</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[ May 23 2007 14:47:58 ] [127.0.0.1] [editor:16]\r\nNode ID: 124\r\nOld parent node ID: 2\r\nNew parent node ID: 59\r\nObject ID: 114\r\nContent Name: Folder\r\nComment: Moved the node to the given node: eZContentObjectTreeNode::move()' ); return false;" /></p>
+<![endif]--> <p>The following table shows the available built-in audit functions along with when they are triggered, what kind of information that is actually logged and the default log file where the information is stored.</p> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <th >   <p>Audit function</p> 
+  </th> <th >   <p>Activity</p> 
+  </th> <th >   <p>Logged information</p> 
+  </th> <th >   <p>Default log file</p> 
+  </th> 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>user-login</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Successful login attempts</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>login.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>user-failed-login</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Failed login attempts</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>failed_login.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>content-move</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Location change of content</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Old parent node ID </div></li> <li><div> New parent node ID </div></li> <li><div> Object ID </div></li> <li><div> Object name </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>content_move.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>content-delete</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Removal of content</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Node ID </div></li> <li><div> Object ID </div></li> <li><div> Object name </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>content_delete.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>role-change</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Role and policy changes</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Role ID </div></li> <li><div> Role name </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>role_change.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>role-assign</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Role assignment to users and groups</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Role ID </div></li> <li><div> Role name </div></li> <li><div> Object name </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>role_assign.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>section-assign</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Section assignments</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Section ID </div></li> <li><div> Section name </div></li> <li><div> Node ID </div></li> <li><div> Object ID </div></li> <li><div> Object name </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>section_assign.log</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>order-delete</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Removal of webshop orders</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   
+<ul>
+ <li><div> Timestamp </div></li> <li><div> IP address </div></li> <li><div> User (name:ID) </div></li> <li><div> Order ID </div></li> <li><div> Comment </div></li> 
+</ul>
+ 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>order_delete.log</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+  <a name="eztoc74715_1" id="eztoc74715_1"></a><h2>Configuration</h2> <p>By default, the auditing feature is turned off. In order to use audit trailing on your site, enable the &quot;<a href="../Reference/Configuration-files/audit.ini/AuditSettings/Audit.html" target="_self">Audit</a>&quot; setting located in the &quot;[AuditSettings]&quot; section of an override for the &quot;audit.ini&quot; configuration file. Using the &quot;<a href="../Reference/Configuration-files/audit.ini/AuditSettings/AuditFileNames.html" target="_self">AuditFileNames</a>&quot; configuration array located in the same file, you can specify which types of activities that should be logged (which audit functions that should be used) and to which files they should be logged. The audit function names must be the array keys and the log file names should be the values. Note that the default configuration logs everything to a collection of files (refer to the table in the previous section for details).</p> <p>The &quot;<a href="../Reference/Configuration-files/audit.ini/AuditSettings/LogDir.html" target="_self">LogDir</a>&quot; setting can be used to specify where the audit log files should be stored. The default directory is &quot;var/log/audit&quot;.</p>  <a name="eztoc74715_1_1" id="eztoc74715_1_1"></a><h3>Example</h3> <p>
+Let's say that you wish to audit successful login attempts and changes to roles and policies while ignoring all other activities. Start by creating an override for &quot;audit.ini&quot; and making sure that it contains the following lines:<br /></p><pre class="wordwrap copytoclipboard"><span class="line">[AuditSettings]</span>
+<span class="line">Audit=enabled</span>
+<span class="line">LogDir=var/log/my_audit</span>
+<span class="line">AuditFileNames[]</span>
+<span class="line">AuditFileNames[user-login]=login.log</span>
+<span class="line">AuditFileNames[role-change]=role_change.log</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '[AuditSettings]\r\nAudit=enabled \r\nLogDir=var/log/my_audit\r\nAuditFileNames[]\r\nAuditFileNames[user-login]=login.log\r\nAuditFileNames[role-change]=role_change.log' ); return false;" /></p>
+<![endif]--><p>&nbsp;</p> <p>Information about successful login attempts will end up in the &quot;login.log&quot; file. Information about role and policy changes will be put in the &quot;role_change.log&quot; file. Both files will be located in the &quot;var/log/my_audit&quot; directory. Each record in these files will contain a timestamp pointing to the exact date and time when an operation was performed, which user that is associated with it (username and ID number) and which IP address the request came from. Records related to role and policy changes will have additional information.</p>    <a name="eztoc74715_2" id="eztoc74715_2"></a><h2>Creating new audit functions</h2> <p>This section provides tips for PHP developers who want to create their own audit functions.</p> <p>Sometimes you may need to create a new audit function, i.e. to make the system log information about a specific operation to a particular audit log file. For example, if you wish to create a new audit function called &quot;my-new-audit&quot; and store information about operations to a file called &quot;info.log&quot;, you can do the following:</p> 
+<ol>
+ <li><div> <p>Make sure that the &quot;<a href="../Reference/Configuration-files/audit.ini/AuditSettings/Audit.html" target="_self">Audit</a>&quot; setting located in the [AuditSettings] section of an override for &quot;audit.ini&quot; is enabled and add a new element to the &quot;<a href="../Reference/Configuration-files/audit.ini/AuditSettings/AuditFileNames.html" target="_self">AuditFileNames</a>&quot; configuration array by inserting the following line:</p> <pre class="wordwrap"><span class="line">AuditFileNames[my-new-audit]=info.log</span>
+</pre> </div></li> <li><div> <p>In the PHP code which defines the operation that should be logged, you can do something like this:</p> <pre class="wordwrap"><span class="line">include_once( &quot;kernel/classes/ezaudit.php&quot; );</span>
+<span class="line">eZAudit::writeAudit( 'my-new-audit', array( 'User id' =&gt; $userID,</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Comment' =&gt; 'The operation XYZ was performed.' ) );</span>
+</pre> <p>Elements like 'Name of something' =&gt; &lt;valueOfSomething&gt; define which information that should be written to the &quot;info.log&quot; file when the operation is performed.</p> </div></li> 
+</ol>
+ <p>
+For example, a record in the log file can look like this:<br /></p><pre class="wordwrap"><span class="line">[ May 23 2007 14:44:04 ] [127.0.0.1] [anonymous:10]</span>
+<span class="line">User id: 10</span>
+<span class="line">Comment: The operation XYZ was performed.</span>
+</pre><p>&nbsp;</p> 
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Julia Shymova&nbsp;(19/06/2007 2:20 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(25/06/2007 7:21 am)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Balazs Halasy, Julia Shymova, Svitlana Shatokhina</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="15217" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.10/Features/Audit-trailing" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.10/Features/Audit-trailing by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 11:44:22 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:21:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Installing Exponential on a Linux/UNIX based system / Normal installation / Installation / 3.6 / Technical manual / Exponential / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../../../../doc_hidden.html" title="Doc front page" />
+<link rel="Search" href="../../../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../../../../doc_hidden.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../../../Exponential.html">exponential</a>
+        
+                        /
+                            <a href="../../../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../../../3-5.html">3.6</a>
+        
+                        /
+                            <a href="../../../../Installation.html">installation</a>
+        
+                        /
+                            <a href="../../../Normal-installation.html">normal installation</a>
+        
+                        /
+                            installing exponential on a...
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../../../3-5.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+    
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Installing Exponential on a Linux/UNIX based system</h1>
+</div>
+
+ <p>The requirements for doing a normal installation must be met. Please read the previous section if you're not sure about the requirements. Proceed only if you have access to a UNIX based environment with Apache, PHP, MySQL or PostgreSQL already installed and running. (Please note that PHP 4.4, PHP 5 should not be used.) As mentioned earlier, the database server may run on a different computer than the web server. This section will guide you through the following steps:</p> 
+<ul>
+ <li><div> Setting up a database (MySQL or PostgreSQL) </div></li> <li><div> Downloading Exponential </div></li> <li><div> Unpacking Exponential </div></li> <li><div> Initiating the setup wizard </div></li> 
+</ul>
+  <a name="eztoc340_1" id="eztoc340_1"></a><h2>Setting up a database</h2> <p>A database must be created before the initiation of the setup wizard takes place. The following text explains how to set up a database using either MySQL or PostgreSQL.</p>  <a name="eztoc340_1_1" id="eztoc340_1_1"></a><h3>MySQL</h3> 
+<ol>
+ <li><div> <p>
+Login as root:<br /></p><pre class="wordwrap"><span class="line">$ mysql -u &lt;mysql_username&gt; -p&lt;mysql_password&gt;</span>
+</pre><p>&nbsp;</p> <p>The MySQL client should display a &quot;mysql&gt;&quot; prompt.</p> </div></li> <li><div> 
+Create a new database:<br /> <pre class="wordwrap"><span class="line">mysql&gt; create database &lt;database&gt; character set &lt;character_set&gt;;</span>
+</pre>  </div></li> <li><div> 
+Grant access permissions:<br /> <pre class="wordwrap"><span class="line">mysql&gt; grant all on &lt;database&gt;.* to &lt;username&gt;@&lt;host&gt; identified by '&lt;password&gt;';</span>
+</pre>  </div></li> 
+</ol>
+ <table class="renderedtable indented-table" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>mysql_username</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The MySQL user (if no user is set up, use &quot;root&quot;).</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>mysql_password</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The password that belongs to the mysql_username.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>username</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The username that will be used to access the database.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>password</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The password you wish to set in order to limit access to the database.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>database</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The name of the database, for example &quot;my_new_database&quot;.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>host</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The hostname of the server on which Exponential will be running. (may be &quot;localhost&quot; if MySQL is installed on the same server).</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>character_set</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The character encoding scheme to be used in the database.</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+<p> <a name="postgresql"></a>
+ </p>   <a name="eztoc340_1_2" id="eztoc340_1_2"></a><h3>PostgreSQL</h3> 
+<ol>
+ <li><div> 
+Become the PostgreSQL super user (normally called postgres):<br /> <pre class="wordwrap"><span class="line">$ su &lt;postgres_super_user&gt;</span>
+</pre>  </div></li> <li><div> 
+Create a PostgreSQL user:<br /> <pre class="wordwrap"><span class="line">$ createuser &lt;username&gt;</span>
+</pre>  </div></li> <li><div> 
+Create a database:<br /> <pre class="wordwrap"><span class="line">$ createdb -E &lt;encoding&gt; &lt;database&gt;</span>
+</pre>  </div></li> <li><div> 
+Import the &quot;<a href="http://www.postgresql.org/docs/8.3/static/pgcrypto.html" target="_blank">pgcrypto</a>&quot; module into the database:<br /> <pre class="wordwrap"><span class="line">$ psql &lt;database&gt; &lt; /usr/share/pgsql/contrib/pgcrypto.sql</span>
+</pre>  </div></li> 
+</ol>
+ <table class="renderedtable indented-table" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>username</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The username that will be used to access the database.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>database</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The name of the database, for example &quot;my_new_database&quot;.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>encoding</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The character encoding scheme to be used in the database.</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+    <a name="eztoc340_2" id="eztoc340_2"></a><h2>Downloading Exponential</h2> <p>The latest stable version of Exponential can be downloaded from <a href="http://share.ez.no/download-develop/downloads" target="_blank">http://ez.no/download/ez_publish</a>.</p>   <a name="eztoc340_3" id="eztoc340_3"></a><h2>Unpacking Exponential</h2> <p>Use your favorite tool to unpack the downloaded Exponential distribution to a web-served directory (a directory that is reachable using a web browser). The following example shows how to do this using the tar utility (to unpack a tar.gz file, assuming that the &quot;tar&quot; and the &quot;gzip&quot; utilities are installed on the system):</p> <pre class="wordwrap"><span class="line">$ tar zxvf exponential-&lt;version_number&gt;.tar.gz -C &lt;web_served_directory&gt;</span>
+</pre> <table class="renderedtable" cellpadding="2" cellspacing="0">
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>version_number</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>The version number of Exponential that was downloaded.</p> 
+  </td>
+ 
+</tr>
+ 
+<tr>
+ <td valign="top" style="vertical-align: top">   <p>web_served_directory</p> 
+  </td>
+ <td valign="top" style="vertical-align: top">   <p>Full path to a directory that is served by the web server. This can be the path to the document root of the web server, or a personal web-directory (usually called &quot;public_html&quot; or &quot;www&quot;, and located inside a user's home directory).</p> 
+  </td>
+ 
+</tr>
+ 
+</table>
+ <p>The extraction utility will unpack Exponential into a subdirectory called &quot;exponential-3.x.x&quot;. Feel free to rename this directory to something more meaningful, for example &quot;my_site&quot;.</p> <p> <a name="initiating_the_setup_wizard"></a>
+ </p>   <a name="eztoc340_4" id="eztoc340_4"></a><h2>Initiating the setup wizard</h2> <p>The setup wizard can be started using a web browser immediately after the previous steps (described in this section) are completed. It will be automatically run the first time someone tries to access/browse the index.php file located in the Exponential directory. Let's assume that we are using a server with the hostname &quot;www.example.com&quot; and that after unpacking, the Exponential directory was renamed to &quot;my_site&quot;.</p>  <a name="eztoc340_4_3" id="eztoc340_4_3"></a><h3>Document root example</h3> <p>If Exponential was unpacked into a directory called &quot;my_site&quot; under the document root, the setup wizard can be initiated by browsing the following URL: http://www.example.com/my_site/index.php.</p>   <a name="eztoc340_4_4" id="eztoc340_4_4"></a><h3>Home directory example</h3> <p>If Exponential was unpacked to a web-served directory located inside the home directory of a user with the username &quot;peter&quot;, (usually called &quot;public_html&quot;, &quot;www&quot;, &quot;http&quot;, &quot;html&quot; or &quot;web&quot;), the setup wizard can be initiated by browsing the following URL: http://www.example.com/~peter/my_site/index.php.</p> <p>Please refer to &quot;<a href="../../../The-setup-wizard.html" target="_self">The setup wizard</a>&quot; section for a detailed description of the web based setup wizard.</p>  
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Balazs Halasy&nbsp;(13/01/2005 10:25 am)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(10/01/2008 12:31 pm)</p>
+</div><div class="authors">
+<p><label>Maintainers:</label>Balazs Halasy, Svitlana Shatokhina, Julia Shymova</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment4435" class="attribute-heading">
+<h2>Site security?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Monday 03 October 2005 1:13:06 pm</p>
+    <p class="author">admin informazzurro.it</p>
+</div>
+
+<div class="attribute-short">
+<br />
+Your site is not running in a virtual host mode, this is insecure. It is recommended to run eZ publish in virtual host mode. If you do not have the possibility to use virtual host mode, you should follow the instructions below about how to install an .htaccess file. The .htaccess file tells the web server to restrict the access to certain files. <br />
+If you have shell access, you can run the following commmands...?<br />
+<br />
+cd /web/htdocs/www.informazzurro.it/home<br />
+<br />
+cp .htaccess_root .htaccess<br />
+<br />
+If you do not have shell access, you will have to copy the file using an FTP client or ask your hosting provider to do this for you. <br />
+<br />
+Can I have a correct file .htaccess_root to upload on my server?<br />
+Isn't there a config.php file for simply customize the application?<br />
+ 
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="4435" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li>    <li class="comment-bgdark"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment6583" class="attribute-heading">
+<h2>Installation does not work</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 09 November 2006 10:32:08 pm</p>
+    <p class="author">Christian</p>
+</div>
+
+<div class="attribute-short">
+Hello,<br />
+<br />
+if i start with <a href="http://ws-buero.my-home.de:8888/index.php" title="http://ws-buero.my-home.de:8888/index.php">http://ws-buero.my-home.de:8888/index.php</a> i got the error message:<br />
+<br />
+Warning: main(lib/ezutils/classes/ezsys.php): failed to open stream: No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezdebug.php on line 75<br />
+<br />
+Warning: main(): Failed opening 'lib/ezutils/classes/ezsys.php' for inclusion (include_path='/usr/share/php') in /srv/www/htdocs/lib/ezutils/classes/ezdebug.php on line 75<br />
+<br />
+Warning: main(lib/ezutils/classes/ezdebug.php): failed to open stream: No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezini.php on line 67<br />
+<br />
+Warning: main(): Failed opening 'lib/ezutils/classes/ezdebug.php' for inclusion (include_path='/usr/share/php') in /srv/www/htdocs/lib/ezutils/classes/ezini.php on line 67<br />
+<br />
+Warning: main(lib/ezfile/classes/ezdir.php): failed to open stream: No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezini.php on line 68<br />
+<br />
+Warning: main(): Failed opening 'lib/ezfile/classes/ezdir.php' for inclusion (include_path='/usr/share/php') in /srv/www/htdocs/lib/ezutils/classes/ezini.php on line 68<br />
+<br />
+Warning: main(lib/ezutils/classes/ezdebug.php): failed to open stream: No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezdebugsetting.php on line 63<br />
+<br />
+Warning: main(): Failed opening 'lib/ezutils/classes/ezdebug.php' for inclusion (include_path='/usr/share/php') in /srv/www/htdocs/lib/ezutils/classes/ezdebugsetting.php on line 63<br />
+<br />
+Warning: main(lib/ezutils/classes/ezini.php): failed to open stream: No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezdebugsetting.php on line 64<br />
+<br />
+Warning: main(): Failed opening 'lib/ezutils/classes/ezini.php' for inclusion (include_path='/usr/share/php') in /srv/www/htdocs/lib/ezutils/classes/ezdebugsetting.php on line 64<br />
+<br />
+Fatal error: Undefined class name 'ezdir' in /srv/www/htdocs/lib/ezutils/classes/ezini.php on line 285<br />
+<br />
+exponential is running on an linux virtual Server Apache 2 with php 4.4.0<br />
+<br />
+I set chmod -R 777<br />
+<br />
+What is wrong?<br />
+<br />
+Thankyou
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="6583" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+
+<div id="comment20338" class="attribute-heading">
+<h2>Re: Installation does not work</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Tuesday 02 September 2008 2:53:15 pm</p>
+    <p class="author">thomas</p>
+</div>
+
+<div class="attribute-short">
+I have the same mesage.<br />
+<br />
+Solution 1<br />
+extend your include-paht in the php.ini (add /srv/www/htdocs/ezutis/classes in your case)<br />
+<br />
+Solution 2<br />
+Go to the files an change the lines mentiond so they point to the file.<br />
+Example for the first errormessage:<br />
+- No such file or directory in /srv/www/htdocs/lib/ezutils/classes/ezdebug.php on line 75<br />
+=&gt; Goto ezdebut line 75 <br />
+     include_once( &quot;lib/ezutils/classes/ezsys.php&quot; );<br />
+and chage it to<br />
+     include_once( &quot;ezsys.php&quot; );<br />
+<br />
+Hope this helps<br />
+thomas<br />
+
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="20338" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="hidden/Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/doc_hidden/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="92" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/doc_hidden/Exponential/Technical-manual/3.6/Installation/Normal-installation/Installing-Exponential-on-a-Linux-UNIX-based-system/(language)/eng-GB by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 12:21:43 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->

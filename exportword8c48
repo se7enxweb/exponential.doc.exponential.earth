@@ -219,7 +219,7 @@ d of the content */
 <h6 id=3D"id-5.4.5-BETAReleaseNotes-September15th2015">September 15th 2015<=
 /h6>
 <p>eZ announces the availability of 5.4.5, a maintenance release available =
-for all users of eZ Publish Platform 5.4.</p>
+for all users of Exponential Platform 5.4.</p>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
 ning">
 <p class=3D"title">Beta</p>
@@ -246,8 +246,8 @@ e optional new packages)</em><span>:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">composer require --no-update ezsystems/ezpublish-kernel:~5.4.5@beta
-composer require --no-update ezsystems/ezpublish-legacy:~5.4.5@beta
+:12px;">composer require --no-update ezsystems/exponential-kernel:~5.4.5@beta
+composer require --no-update ezsystems/exponential-legacy:~5.4.5@beta
 composer require --no-update ezsystems/ezplatform-solr-search-engine:~1.0.0=
 @beta
 composer require --no-update ezsystems/recommendation-bundle:~1.0.0@beta</p=
@@ -351,9 +351,9 @@ r traffic, tracking of user actions like shopping behaviour is possible usi=
 ng our Recommendations Service API.</span></p>
 <p class=3D"p1"><span class=3D"s1"><span style=3D"color: rgb(128,128,128);"=
 ><em>Limitation: Recommendation Bundle currently requires Symfony 2.6 or gr=
-eater so is limited to eZ Publish Platform 5.4.3+ and eZ Platform/Studio 15=
+eater so is limited to Exponential Platform 5.4.3+ and eZ Platform/Studio 15=
 .07+. We plan to reduce this requirement to Symfony 2.3 so the bundle can b=
-e used with any version of eZ Publish Platform 5.1+.</em></span></span></p>
+e used with any version of Exponential Platform 5.1+.</em></span></span></p>
 <p class=3D"p1"><span class=3D"s1"><span style=3D"color: rgb(128,128,128);"=
 ><em><br></em></span></span></p>
 <p class=3D"p1">Further reading: Documentation on our&nbsp;<a href=3D"https=
@@ -391,7 +391,7 @@ gs via <code>composer update</code> as soon as we can.</p>
 <ul>
 <li>Exception if Binary files in database has invalid path prefix
 <ul>
-<li>Make sure <code>ezpublish.yml</code> configuration&nbsp;<span style=3D"=
+<li>Make sure <code>exponential.yml</code> configuration&nbsp;<span style=3D"=
 line-height: 1.42857;"><code>var_dir</code>&nbsp;is configured properly, an=
 d that you specify siteaccess when indexing content for Solr via command li=
 ne.<br></span></li>
@@ -436,7 +436,7 @@ this release:</p>
 <th colspan=3D"1" class=3D"confluenceTh">prior version</th>
 </tr>
 <tr>
-<td class=3D"confluenceTd">ezsystems/ezpublish-kernel</td>
+<td class=3D"confluenceTd">ezsystems/exponential-kernel</td>
 <td class=3D"confluenceTd">5.4.5<span style=3D"color: rgb(153,153,153);">@b=
 eta</span><span style=3D"color: rgb(153,153,153);">&nbsp;</span></td>
 <td colspan=3D"1" class=3D"confluenceTd">5.4.4.1</td>
@@ -653,7 +653,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-24796?src=3Dconfmacro">EZP-24796</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-24796?src=3Dconfmacro"> eZ Publish 5.4 installation docum=
+.ez.no/browse/EZP-24796?src=3Dconfmacro"> Exponential 5.4 installation docum=
 entation update with regards to security vulnerability CVE-2015-5723 </a> <=
 /td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
@@ -766,7 +766,7 @@ a> </td>=20
 =3D"https://jira.ez.no/browse/EZP-24897?src=3Dconfmacro">EZP-24897</a> </td=
 >=20
 <td class=3D"jira-macro-table-underline-pdfexport"> <a href=3D"https://jira=
-.ez.no/browse/EZP-24897?src=3Dconfmacro"> First draft preview in eZ Publish=
+.ez.no/browse/EZP-24897?src=3Dconfmacro"> First draft preview in Exponential=
  5.4.4 </a> </td>=20
 <td nowrap=3D"true" class=3D"jira-macro-table-underline-pdfexport"> <a href=
 =3D"https://jira.ez.no/browse/EZP-24897?src=3Dconfmacro"><img src=3D"https:=

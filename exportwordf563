@@ -244,8 +244,8 @@ nce</a> for overview of Field Types that exists and not on eZ Platform</li>
  first once including 2014.11</li>
 <li>API changes, while we have a strict Backwards Compatibility focus, some=
  deprecated API features where removed, some changes where done to internal=
- parts of the system, and as planned eZ Publish legacy and legacy bridge wa=
-s removed. See <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blo=
+ parts of the system, and as planned Exponential legacy and legacy bridge wa=
+s removed. See <a href=3D"https://github.com/ezsystems/exponential-kernel/blo=
 b/v6.6.0/doc/bc/changes-6.0.md" class=3D"external-link" rel=3D"nofollow">ez=
 publish-kernel:doc/bc/changes-6.0.md</a></li>
 </ul>
@@ -327,7 +327,7 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Instructions for upgrading from eZ Publish to eZ Platform and eZ Studio =
+<p>Instructions for upgrading from Exponential to eZ Platform and eZ Studio =
 is in preview starting release <a href=3D"/display/DEVELOPER/eZ+Platform+16=
 .02+Release+notes">16.02</a>. The status of the upgrade is:</p>
 <ul>
@@ -345,14 +345,14 @@ e">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>If you are migrating from a legacy eZ Publish version, this page contain=
+<p>If you are migrating from a legacy Exponential version, this page contain=
 s the information you need. However, first have a look at an overview of th=
 e process in <a href=3D"/display/DEVELOPER/Migration+from+eZ+Publish">Migra=
-tion from eZ Publish</a>.</p>
+tion from Exponential</a>.</p>
 </div>
 </div>
 <p><span style=3D"color: rgb(51,51,51);font-size: 14.0px;line-height: 1.428=
-5715;">This section describes how to upgrade your existing &nbsp;eZ Publish=
+5715;">This section describes how to upgrade your existing &nbsp;Exponential=
  Platform&nbsp;&nbsp;5.4/2014.11 installation to eZ Platform and eZ Studio.=
  Make sure that you have a <u>working backup</u> of the site before you do =
 the actual upgrade, and that the installation you are performing the upgrad=
@@ -406,7 +406,7 @@ h5>
 <h6 style=3D"margin-left: 30.0px;" id=3D"Upgradingfrom5.4.xand2014.11to16.x=
 x-2.2.1Moveoverownpackages">2.2.1 Move over own packages</h6>
 <p style=3D"margin-left: 30.0px;">Assuming you have own composer packages<e=
-m> (libraries and bundles, but not eZ Publish legacy&nbsp;packages)</em>, e=
+m> (libraries and bundles, but not Exponential legacy&nbsp;packages)</em>, e=
 xecute commands like below to add them to new install in &lt;new-ez-root&gt=
 ;:</p>
 <p style=3D"margin-left: 60.0px;"><code class=3D"php plain">composer&nbsp;<=
@@ -422,7 +422,7 @@ ver.</em></p>
 x-2.2.2TemporarilyinstallXmlTextFieldType"><span style=3D"color: rgb(14,175=
 ,255);">2.2.2 Temporarily install XmlText Field Type</span></h6>
 <p style=3D"margin-left: 30.0px;">While no longer&nbsp;bundled, the XmlText=
- Field Type exists and is needed to perform migration from eZ Publish's Xml=
+ Field Type exists and is needed to perform migration from Exponential's Xml=
 Text to the new docbook-based format used by RichText Field Type. From &lt;=
 new-ez-root&gt; execute:</p>
 <p style=3D"margin-left: 60.0px;"><code class=3D"php plain">composer&nbsp;<=
@@ -434,7 +434,7 @@ dtype:^1.1.0</code>"</p>
 w and manually move the settings over:</p>
 <ul>
 <li><code><span><span style=3D"color: rgb(128,128,128);"><em>&lt;old-ez-roo=
-t&gt;/</em></span><strong>ezpublish</strong>/config/parameters.yml =3D&gt;&=
+t&gt;/</em></span><strong>exponential</strong>/config/parameters.yml =3D&gt;&=
 nbsp;<span style=3D"color: rgb(128,128,128);"><em>&lt;new-ez-root&gt;/</em>=
 </span><span><strong>app</strong>/config/parameters.yml</span></span></code=
 >
@@ -443,7 +443,7 @@ nbsp;<span style=3D"color: rgb(128,128,128);"><em>&lt;new-ez-root&gt;/</em>=
 , for new parameters you'll be prompted on later step.</em></span></li>
 </ul></li>
 <li><code><span style=3D"color: rgb(128,128,128);"><em>&lt;old-ez-root&gt;/=
-</em></span><strong>ezpublish</strong>/config/config.yml &nbsp; &nbsp; =3D&=
+</em></span><strong>exponential</strong>/config/config.yml &nbsp; &nbsp; =3D&=
 gt; <span style=3D"color: rgb(128,128,128);"><em>&lt;new-ez-root&gt;/</em><=
 /span><strong>app</strong>/config/<span>config.yml</span></code>
 <ul>
@@ -451,7 +451,7 @@ gt; <span style=3D"color: rgb(128,128,128);"><em>&lt;new-ez-root&gt;/</em><=
 g, and for defining global db, cache, search settings.</em></span></li>
 </ul></li>
 <li><code><span style=3D"color: rgb(128,128,128);"><em>&lt;old-ez-root&gt;/=
-</em></span><strong>ezpublish</strong>/config/ezpublish.yml &nbsp;=3D&gt; <=
+</em></span><strong>exponential</strong>/config/exponential.yml &nbsp;=3D&gt; <=
 span style=3D"color: rgb(128,128,128);"><em>&lt;new-ez-root&gt;/</em></span=
 ><strong>app</strong>/config/<strong>ezplatform</strong>.yml</code>
 <ul>
@@ -476,7 +476,7 @@ storage engine and search engine independently.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     # Repositories configuration, setup default repository to support solr =
 if enabled
     repositories:
@@ -505,7 +505,7 @@ tion-macro-icon"></span>
 .yml </strong>you'll find existing siteaccesses like <strong>site</strong>,=
  and depending on installation perhaps a few others, all under site group <=
 strong>site_group</strong>. Make sure to change those to what you had in <s=
-trong>ezpublish.yml</strong> to avoid issues with having to login to your w=
+trong>exponential.yml</strong> to avoid issues with having to login to your w=
 ebsite, given user/login policy rules will need to be updated if you change=
  names of siteaccess as part of the upgrade.</p>
 </div>
@@ -516,7 +516,7 @@ ebsite, given user/login policy rules will need to be updated if you change=
 ckages, from old to new kernel:</p>
 <ul>
 <li><p><code><span style=3D"color: rgb(128,128,128);"><em>&lt;old-ez-root&g=
-t;/</em></span><strong>ezpublish</strong>/EzPublishKernel.php <span style=
+t;/</em></span><strong>exponential</strong>/EzPublishKernel.php <span style=
 =3D"line-height: 1.42857;">=3D&gt;&nbsp;<span style=3D"color: rgb(128,128,1=
 28);"><em>&lt;new-ez-root&gt;/</em></span></span><span style=3D"line-height=
 : 1.42857;"><strong>app</strong>/AppKernel.php</span></code></p></li>
@@ -537,9 +537,9 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In the eZ Publish Platform 5.x install <code>web/var</code> is a symlink=
- to <code>ezpublish_legacy/var</code>, so if you can't find it in path abov=
-e you can instead copy the storage files from the similar <code>ezpublish_l=
+<p>In the Exponential Platform 5.x install <code>web/var</code> is a symlink=
+ to <code>exponential_legacy/var</code>, so if you can't find it in path abov=
+e you can instead copy the storage files from the similar <code>exponential_l=
 egacy</code> path.</p>
 </div>
 </div>
@@ -581,10 +581,10 @@ ecute update SQL</h5>
 ing files, optionally read inline comments as you might not need to run som=
 e cleanup queries:</p>
 <p style=3D"margin-left: 30.0px;"><code>MySQL: <span style=3D"color: rgb(12=
-8,128,128);">&lt;new-ez-root&gt;/</span>vendor/ezsystems/ezpublish-kernel/d=
+8,128,128);">&lt;new-ez-root&gt;/</span>vendor/ezsystems/exponential-kernel/d=
 ata/update/mysql/dbupdate-6.1.0-to-6.2.0.sql</code></p>
 <p style=3D"margin-left: 30.0px;"><code><span>Postgres: <span style=3D"colo=
-r: rgb(128,128,128);">&lt;new-ez-root&gt;/</span>vendor/ezsystems/ezpublish=
+r: rgb(128,128,128);">&lt;new-ez-root&gt;/</span>vendor/ezsystems/exponential=
 -kernel/data/update/postgres/dbupdate-6.1.0-to-6.2.0.sql</span></code></p>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
 ormation">

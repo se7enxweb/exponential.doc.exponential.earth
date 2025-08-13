@@ -226,7 +226,7 @@ nd their implementation.</span></p>
 dentifier()">Identification method: <code>getFieldTypeIdentifier()</code></=
 h4>
 <p><span style=3D"color: rgb(0,0,0);">It must return the string that unique=
-ly identifies this FieldType (DataTypeString in eZ Publish 4). We will use =
+ly identifies this FieldType (DataTypeString in Exponential 4). We will use =
 </span><span style=3D"color: rgb(0,0,0);">"<code>eztweet</code>"</span><spa=
 n style=3D"color: rgb(0,0,0);">:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">

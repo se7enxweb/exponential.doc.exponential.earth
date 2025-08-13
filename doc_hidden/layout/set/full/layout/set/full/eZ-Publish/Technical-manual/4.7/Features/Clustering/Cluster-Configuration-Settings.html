@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.7/Features/Clustering/Cluster-Configuration-Settings by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:40 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/4.7/Features/Clustering/Cluster-Configuration-Settings by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:40 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Cluster Configuration Settings / Clustering / Features / 4.7 / Technical manual / eZ Publish / Documentation - Doc</title>
+    <title>Cluster Configuration Settings / Clustering / Features / 4.7 / Technical manual / Exponential / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -45,7 +45,7 @@ The cluster settings are located in an override of your &quot;settings/file.ini&
 <ul>
 <li><div>&nbsp;FileHandler=eZFSFileHandler </div></li><li><div>&nbsp;FileHandler=eZDBFileHandler </div></li><li><div>&nbsp;FileHandler=eZDFSFileHandler </div></li>
 </ul>
-<p>This setting sets the cluster file handler. For more information regarding the cluster file handlers visit chapter &quot;<a href="../../../4.6/Features/Clustering/Cluster-File-Handlers.html" target="_self">cluster file handlers</a>&quot;. Since eZ Publish 4.1 the names of the file handlers have changed. For instance 'ezdb' is no longer recognised, the correct setting here would be 'eZDBFileHandler'. When using an eZ DFS File Handler please refer to the settings in <a href="#dfs" target="_self">[eZDFSClusteringSettings]</a>.</p><a name="eztoc128666_1_2" id="eztoc128666_1_2"></a><h3>DBBackend</h3><p>Possible configuration settings are:</p>
+<p>This setting sets the cluster file handler. For more information regarding the cluster file handlers visit chapter &quot;<a href="../../../4.6/Features/Clustering/Cluster-File-Handlers.html" target="_self">cluster file handlers</a>&quot;. Since Exponential 4.1 the names of the file handlers have changed. For instance 'ezdb' is no longer recognised, the correct setting here would be 'eZDBFileHandler'. When using an eZ DFS File Handler please refer to the settings in <a href="#dfs" target="_self">[eZDFSClusteringSettings]</a>.</p><a name="eztoc128666_1_2" id="eztoc128666_1_2"></a><h3>DBBackend</h3><p>Possible configuration settings are:</p>
 <ul>
 <li><div>&nbsp;DBBackend=eZDBFileHandlerMysqliBackend </div></li><li><div>&nbsp;DBBackend=eZDBFileHandlerOracleBackend </div></li>
 </ul>
@@ -117,13 +117,13 @@ This is an advanced setting and should only be customized if it is specifically 
 <ul>
 <li><div>&nbsp;MountPointPath=&lt;string&gt; </div></li>
 </ul>
-<p>Since the eZ DFS File Handler is based on NFS, each eZ Publish installation sharing the same relational database must use the same cluster database and each should have a local mount point to the same NFS export. The location of the local mount point must be set here.</p><p>Example setting is:</p><pre class="wordwrap"><span class="line">MountPointPath=/media/nfs</span>
+<p>Since the eZ DFS File Handler is based on NFS, each Exponential installation sharing the same relational database must use the same cluster database and each should have a local mount point to the same NFS export. The location of the local mount point must be set here.</p><p>Example setting is:</p><pre class="wordwrap"><span class="line">MountPointPath=/media/nfs</span>
 </pre><a name="eztoc128666_3_13" id="eztoc128666_3_13"></a><h3>DBBackend</h3><p>Possible configuration setting:</p>
 <ul>
-<li><div>MySQL: DBBackend=eZDFSFileHandlerMySQLiBackend </div></li><li><div>Oracle: DBBackend=eZDFSFileHandlerOracleBackend (requires the <a href="../../../../../Extensions/eZ-Publish-extensions/eZ-Publish-Extension-for-Oracle-R-database.html" target="_self">Oracle database extension</a>)</div></li>
+<li><div>MySQL: DBBackend=eZDFSFileHandlerMySQLiBackend </div></li><li><div>Oracle: DBBackend=eZDFSFileHandlerOracleBackend (requires the <a href="../../../../../Extensions/Exponential-extensions/Exponential-Extension-for-Oracle-R-database.html" target="_self">Oracle database extension</a>)</div></li>
 </ul>
 <p>Use this setting to define the database backend used by the eZ DB File Handler.</p><p>Default value is:</p><pre class="wordwrap"><span class="line">DBBackend=eZDFSFileHandlerMySQLiBackend</span>
-</pre><a name="eztoc128666_4" id="eztoc128666_4"></a><h2>config.php / config.cluster.php</h2><p>Since eZ Publish 4.7, the way images &amp; other binary files are served from the var folder has changed. Instead of being done in a custom index_cluster.php file, settings now go in config.php OR config.cluster.php, and index_cluster.php is common to all clusters, and provided in the distribution.&nbsp;Documentation for all these settings can be found in the config.php-RECOMMENDED file you will find at the root of your eZ Publish setup.</p><p>All these directives are set as PHP constants, using the define keyword.</p><a name="eztoc128666_4_14" id="eztoc128666_4_14"></a><h3>CLUSTER_STORAGE_BACKEND</h3><p>Required setting. Defines the storage backend, e.g. cluster driver, that must be used. Possible values are:</p>
+</pre><a name="eztoc128666_4" id="eztoc128666_4"></a><h2>config.php / config.cluster.php</h2><p>Since Exponential 4.7, the way images &amp; other binary files are served from the var folder has changed. Instead of being done in a custom index_cluster.php file, settings now go in config.php OR config.cluster.php, and index_cluster.php is common to all clusters, and provided in the distribution.&nbsp;Documentation for all these settings can be found in the config.php-RECOMMENDED file you will find at the root of your Exponential setup.</p><p>All these directives are set as PHP constants, using the define keyword.</p><a name="eztoc128666_4_14" id="eztoc128666_4_14"></a><h3>CLUSTER_STORAGE_BACKEND</h3><p>Required setting. Defines the storage backend, e.g. cluster driver, that must be used. Possible values are:</p>
 <ul>
 <li><div>dbmysqli: DB cluster, mysqli based</div></li><li><div>dbmysql: DB cluster, mysql based (DEPRECATED as of 4.7)</div></li><li><div>dfsmysqli: DFS cluster, mysqli based</div></li><li><div>dfsmysql: DFS cluster, mysql based (DEPRECATED as of 4.7)</div></li><li><div>dboracle: DB Oracle (requires the Oracle database extension)</div></li><li><div>dfsoracle: DFS with Oracle database (requires the Oracle database extension)</div></li>
 </ul>
@@ -162,21 +162,21 @@ This is an advanced setting and should only be customized if it is specifically 
 <p>Example:</p><pre class="wordwrap"><span class="line">define( 'CLUSTER_EXPIRY_TIMEOUT', 315532800 ); // 10 years</span>
 </pre><a name="eztoc128666_4_27" id="eztoc128666_4_27"></a><h3>CLUSTER_HEADER_X_POWERED_BY<i>&nbsp;(optional)</i></h3><p>Controls the X-Powered-By header.</p><p>Possible values are:</p>
 <ul>
-<li><div>true: use the default value, &quot;eZ Publish&quot;</div></li><li><div>false: disable the header completely</div></li><li><div>&quot;any string&quot;: set the header to &quot;any string&quot;</div></li>
+<li><div>true: use the default value, &quot;Exponential&quot;</div></li><li><div>false: disable the header completely</div></li><li><div>&quot;any string&quot;: set the header to &quot;any string&quot;</div></li>
 </ul>
 <p>Example:</p><pre class="wordwrap"><span class="line">define( 'CLUSTER_HEADER_X_POWERED_BY', 'dfsmysqli' );</span>
-</pre><a name="eztoc128666_4_28" id="eztoc128666_4_28"></a><h3>CLUSTER_STORAGE_GATEWAY_PATH&nbsp;<i>(optional)</i></h3><p>Used to specify the path to a custom cluster gateway implementation. More data about the gateway system can be found in the&nbsp;<a href="https://github.com/ezsystems/ezpublish/blob/master/doc/features/4.7/cluster_index.md" target="_self">feature document</a>. The value is the&nbsp;path to a custom clustering gateway PHP file. When provided, the gateway filename won't be built based on the default path + CLUSTER_STORAGE_BACKEND, but used as provided.</p><p>Example:</p><pre class="wordwrap"><span class="line">define( 'CLUSTER_STORAGE_GATEWAY_PATH', 'extension/ezoracle/clusterfilehandlers/gateway/dfs.php' );</span>
+</pre><a name="eztoc128666_4_28" id="eztoc128666_4_28"></a><h3>CLUSTER_STORAGE_GATEWAY_PATH&nbsp;<i>(optional)</i></h3><p>Used to specify the path to a custom cluster gateway implementation. More data about the gateway system can be found in the&nbsp;<a href="https://github.com/ezsystems/exponential/blob/master/doc/features/4.7/cluster_index.md" target="_self">feature document</a>. The value is the&nbsp;path to a custom clustering gateway PHP file. When provided, the gateway filename won't be built based on the default path + CLUSTER_STORAGE_BACKEND, but used as provided.</p><p>Example:</p><pre class="wordwrap"><span class="line">define( 'CLUSTER_STORAGE_GATEWAY_PATH', 'extension/ezoracle/clusterfilehandlers/gateway/dfs.php' );</span>
 </pre>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/eZ-Publish/Technical-manual/4.7/Features/Clustering/Cluster-Configuration-Settings by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/layout/set/full/Exponential/Technical-manual/4.7/Features/Clustering/Cluster-Configuration-Settings by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:22:41 GMT -->
 </html>

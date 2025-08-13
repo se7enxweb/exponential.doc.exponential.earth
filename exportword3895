@@ -342,7 +342,7 @@ nk" rel=3D"nofollow">PagerFanta documentation</a>.</p>
 <td class=3D"confluenceTd"><pre>eZ\Publish\Core\Pagination\Pagerfanta\Conte=
 ntSearchAdapter</pre></td>
 <td class=3D"confluenceTd">Makes the search against passed Query and return=
-s <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/P=
+s <a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/eZ/P=
 ublish/API/Repository/Values/Content/Content.php" class=3D"external-link" r=
 el=3D"nofollow">Content</a> objects.</td>
 </tr>
@@ -350,7 +350,7 @@ el=3D"nofollow">Content</a> objects.</td>
 <td colspan=3D"1" class=3D"confluenceTd"><pre>eZ\Publish\Core\Pagination\Pa=
 gerfanta\ContentSearchHitAdapter</pre></td>
 <td colspan=3D"1" class=3D"confluenceTd">Same as ContentSearchAdapter but r=
-eturns instead <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blo=
+eturns instead <a href=3D"https://github.com/ezsystems/exponential-kernel/blo=
 b/master/eZ/Publish/API/Repository/Values/Content/Search/SearchHit.php" cla=
 ss=3D"external-link" rel=3D"nofollow">SearchHit</a> objects.</td>
 </tr>
@@ -364,7 +364,7 @@ ssed Query and returns Location objects.</td>
 <td colspan=3D"1" class=3D"confluenceTd"><pre>eZ\Publish\Core\Pagination\Pa=
 gerfanta\LocationSearchHitAdapter</pre></td>
 <td colspan=3D"1" class=3D"confluenceTd">Same as LocationSearchAdapter but =
-returns instead <a href=3D"https://github.com/ezsystems/ezpublish-kernel/bl=
+returns instead <a href=3D"https://github.com/ezsystems/exponential-kernel/bl=
 ob/master/eZ/Publish/API/Repository/Values/Content/Search/SearchHit.php" cl=
 ass=3D"external-link" rel=3D"nofollow">SearchHit</a> objects.</td>
 </tr>

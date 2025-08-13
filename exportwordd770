@@ -268,14 +268,14 @@ ice can be assigned one or several tags, with specific parameters. When the=
  dependency injection container is compiled into a PHP file, tags are read =
 by <code>CompilerPass</code> implementations that add extra handling for ta=
 gged services. </span><span style=3D"color: rgb(0,0,0);">Each service tagge=
-d as <code><span>ezpublish.fieldType</span></code>&nbsp;is added to a </spa=
+d as <code><span>exponential.fieldType</span></code>&nbsp;is added to a </spa=
 n><a href=3D"http://martinfowler.com/eaaCatalog/registry.html" style=3D"lin=
 e-height: 1.4285715;" class=3D"external-link" rel=3D"nofollow"><span style=
 =3D"color: rgb(17,85,204);text-decoration: underline;">registry</span></a><=
 span style=3D"color: rgb(0,0,0);"> using the alias argument as its unique i=
 dentifier (<code>ezstring</code>, <code>ezxmltext</code>=E2=80=A6).&nbsp;</=
 span><span style=3D"color: rgb(0,0,0);">Each FieldType must also inherit fr=
-om the abstract ezpublish.fieldType service. This ensures that the initiali=
+om the abstract exponential.fieldType service. This ensures that the initiali=
 zation steps shared by all fieldtypes are executed.</span></p>
 <p><span style=3D"color: rgb(0,0,0);">Here is the service definition for ou=
 r Tweet type:</span></p>
@@ -293,12 +293,12 @@ FieldTypeBundle\eZ\Publish\FieldType\Tweet\Type
 &nbsp;
 services:
 &nbsp;&nbsp;&nbsp; ezsystems.tweetfieldtypebundle.fieldType.eztweet:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parent: ezpublish.fieldType
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parent: exponential.fieldType
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class:&nbsp;%ezsystems.tweetfiel=
 dtypebundle.fieldType.eztweet.class%
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tags:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - {name:=
- ezpublish.fieldType, alias: eztweet}
+ exponential.fieldType, alias: eztweet}
 </pre>=20
 </div>
 </div>

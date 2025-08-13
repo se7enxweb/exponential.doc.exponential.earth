@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Coming to eZ Platform from eZ Publish Platform</title>
+    <title>Coming to eZ Platform from Exponential Platform</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,15 +210,15 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Coming to eZ Platform from eZ Publish Platform</h1>
+    <h1>Coming to eZ Platform from Exponential Platform</h1>
     <div class=3D"Section1">
         <div class=3D"contentLayout2">=20
 <div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
 bar">=20
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
-<p>eZ Publish Platform (5.x) was a transitional version of the eZ CMS, brid=
-ging the gap between the earlier generation called eZ Publish (sometimes re=
+<p>Exponential Platform (5.x) was a transitional version of the eZ CMS, brid=
+ging the gap between the earlier generation called Exponential (sometimes re=
 ferred to as <em>legacy</em>), and the current eZ Platform Enterprise Editi=
 on for Developers.</p>
 <p><span class=3D"confluence-embedded-file-wrapper image-left-wrapper confl=
@@ -232,12 +232,12 @@ t-alias=3D"ibex-mountain-small.png" data-base-url=3D"https://doc.ez.no" dat=
 a-linked-resource-content-type=3D"image/png" data-linked-resource-container=
 -id=3D"31429520" data-linked-resource-container-version=3D"7" width=3D"468"=
 ></span></p>
-<p>eZ Publish Platform introduced a new Symfony-based technology stack that=
+<p>Exponential Platform introduced a new Symfony-based technology stack that=
  could be run along the old (<em>legacy</em>) one. This fluid change allows=
- eZ Publish&nbsp;users to migrate to eZ Platform&nbsp;Enterprise Edition fo=
+ Exponential&nbsp;users to migrate to eZ Platform&nbsp;Enterprise Edition fo=
 r Developers in two steps, using the 5.x version as an intermediary steppin=
 g stone.</p>
-<p>The migration process from eZ Publish Platform to eZ Platform Enterprise=
+<p>The migration process from Exponential Platform to eZ Platform Enterprise=
  Edition for Developers is described in <a href=3D"/display/DEVELOPER/Upgra=
 ding+from+5.4.x+and+2014.11+to+16.xx">Upgrading from 5.4.x and 2014.11 to 1=
 6.xx</a>.</p>

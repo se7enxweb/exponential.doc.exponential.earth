@@ -749,7 +749,7 @@ $unhiddenLocation = $locationService-&gt;unhideLocation( $hiddenLocation );]]></
 </div></div><p><a href="http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/LocationService.html#method_deleteLocation" class="external-link" rel="nofollow"><code>LocationService::deleteLocation()</code></a> will permanently delete the Location, as well as all its descendants. Content that has only one Location will be permanently deleted as well. Those with more than one won't be, as they are still referenced by at least one Location.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[$trashService-&gt;trash( $locationInfo );]]></script>
 </div></div><p><code><a href="http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/TrashService.html#method_trash" class="external-link" rel="nofollow">TrashService::trash()</a></code> will send the Location as well as all its descendants to the Trash, where they can be found and restored until the Trash is emptied. Content isn't affected at all, since it is still referenced by the trash items.</p><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>The <code><a href="http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/TrashService.html" class="external-link" rel="nofollow">TrashService</a></code> can be used to list, restore and delete Locations that were previously sent to Trash using <a href="http://apidoc.ez.no/sami/trunk/NS/html/eZ/Publish/API/Repository/TrashService.html#method_trash" class="external-link" rel="nofollow"><code>TrashService::trash()</code></a>.</p></div></div><h2 id="id-4.WorkingwithLocations-Settingacontentitem&#39;smainLocation">Setting a content item's main Location</h2><p>This is done using the <code>ContentService</code>, by updating the <code>ContentInfo</code> with a <code>ContentUpdateStruct</code> that sets the new main location:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[$repository = $this-&gt;getContainer()-&gt;get( &#39;ezpublish.api.repository&#39; );
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[$repository = $this-&gt;getContainer()-&gt;get( &#39;exponential.api.repository&#39; );
 $contentService = $repository-&gt;getContentService();
 $contentInfo = $contentService-&gt;loadContentInfo( $contentId );
 
@@ -862,7 +862,7 @@ $contentService-&gt;updateContentMetadata( $contentInfo, $contentUpdateStruct );
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

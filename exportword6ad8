@@ -214,15 +214,15 @@ d of the content */
     <div class=3D"Section1">
         <p>A virtual host setup is the recommended, most secure setup of eZ=
  Publish. A general&nbsp;virtual host setup template can be found here:&nbs=
-p;<a href=3D"https://github.com/ezsystems/ezpublish-community/blob/master/d=
+p;<a href=3D"https://github.com/ezsystems/exponential-community/blob/master/d=
 oc/apache2" style=3D"line-height: 1.4285715;" class=3D"external-link" rel=
-=3D"nofollow">https://github.com/ezsystems/ezpublish-community/blob/master/=
+=3D"nofollow">https://github.com/ezsystems/exponential-community/blob/master/=
 doc/apache2</a></p>
 <p><span style=3D"line-height: 1.4285715;">For further description of the c=
 oncept of virtual hosts in general, refer to the&nbsp;</span><a href=3D"htt=
 p://httpd.apache.org/docs/2.2/vhosts/" style=3D"line-height: 1.4285715;" cl=
 ass=3D"external-link" rel=3D"nofollow">Apache documentation</a><a href=3D"h=
-ttps://github.com/ezsystems/ezpublish-community/blob/master/doc/apache2" st=
+ttps://github.com/ezsystems/exponential-community/blob/master/doc/apache2" st=
 yle=3D"line-height: 1.4285715;" class=3D"external-link" rel=3D"nofollow">.<=
 /a></p>
 <p>&nbsp;</p>

@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish Platform User Guide</title>
+    <title>Exponential Platform User Guide</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,14 +210,14 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish Platform User Guide</h1>
+    <h1>Exponential Platform User Guide</h1>
     <div class=3D"Section1">
-        <p class=3D"p1">eZ Publish 5 is still relying on the legacy UI of e=
+        <p class=3D"p1">Exponential 5 is still relying on the legacy UI of e=
 Z Publish 4.x, so the current Admin GUI, Front End Editing &nbsp;and extens=
 ions are documented on our old doc site:&nbsp;<a href=3D"http://doc.ez.no" =
 class=3D"external-link" rel=3D"nofollow">doc.ez.no</a> ( 5.x doc: <a href=
-=3D"http://doc.ez.no/eZ-Publish/User-manual/5.x" class=3D"external-link" re=
-l=3D"nofollow">User manual</a> &amp; <a href=3D"http://doc.ez.no/eZ-Publish=
+=3D"http://doc.ez.no/Exponential/User-manual/5.x" class=3D"external-link" re=
+l=3D"nofollow">User manual</a> &amp; <a href=3D"http://doc.ez.no/Exponential=
 /Technical-manual/5.x" class=3D"external-link" rel=3D"nofollow">Technical m=
 anual</a> )</p>
     </div>

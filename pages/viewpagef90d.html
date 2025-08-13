@@ -4,7 +4,7 @@
 <!-- Mirrored from doc.ez.no/pages/viewpage.action?pageId=17105537&navigatingVersions=true by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 21 Oct 2014 15:15:10 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <title>FAQ - eZ Publish Cloud - eZ Documentation</title>
+    <title>FAQ - Exponential Cloud - eZ Documentation</title>
 
         
 
@@ -128,7 +128,7 @@
             <meta name="ajs-page-title" content="FAQ">
             <meta name="ajs-parent-page-id" content="">
             <meta name="ajs-space-key" content="EZPCLOUD">
-            <meta name="ajs-space-name" content="eZ Publish Cloud">
+            <meta name="ajs-space-name" content="Exponential Cloud">
             <meta name="ajs-from-page-title" content="">
             <meta name="ajs-can-remove-page" content="false">
             <meta name="ajs-editor.loader.comment.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=_/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.12/9f01679814e63f4c0513d02c90477002/_/download/contextbatch/css/comment-editor/batch.html media=&quot;all&quot;&gt;
@@ -244,28 +244,28 @@
                                             <li>
     
             
-<a  id="space-pages-link" href="listpages-dirviewf3ae.html?key=EZPCLOUD" class="    "      title="Browse pages in the eZ Publish Cloud space" >
+<a  id="space-pages-link" href="listpages-dirviewf3ae.html?key=EZPCLOUD" class="    "      title="Browse pages in the Exponential Cloud space" >
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="viewrecentblogpostsf3ae.html?key=EZPCLOUD" class="    "      title="Browse blogs in the eZ Publish Cloud space" >
+<a  id="space-blogposts-link" href="viewrecentblogpostsf3ae.html?key=EZPCLOUD" class="    "      title="Browse blogs in the Exponential Cloud space" >
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="../labels/listlabels-heatmapf3ae.html?key=EZPCLOUD" class="    "      title="Browse labels in the eZ Publish Cloud space" >
+<a  id="space-labels-link" href="../labels/listlabels-heatmapf3ae.html?key=EZPCLOUD" class="    "      title="Browse labels in the Exponential Cloud space" >
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="../spaces/viewspacesummaryf3ae.html?key=EZPCLOUD" class="    "      title="Browse additional space functions in the eZ Publish Cloud space" >
+<a  id="space-advanced-link" href="../spaces/viewspacesummaryf3ae.html?key=EZPCLOUD" class="    "      title="Browse additional space functions in the Exponential Cloud space" >
         Space Operations
 </a>
 </li>
@@ -504,7 +504,7 @@
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
         
-                            <div class="space-logo " data-key="EZPCLOUD" data-name="eZ Publish Cloud" data-entity-type="confluence.space">
+                            <div class="space-logo " data-key="EZPCLOUD" data-name="Exponential Cloud" data-entity-type="confluence.space">
             <a><img class="logo space custom" src="../download/attachments/15761717/EZPCLOUD400f?version=1&amp;modificationDate=1384250370000&amp;api=v2" alt=""></a>
         </div>            
                             <div id="breadcrumb-section">
@@ -517,13 +517,13 @@
         <li class="first" >
                 
 
-                    <span class=""><a href="../display/EZPCLOUD/eZ%2bPublish%2bCloud.html">eZ Publish Cloud</a></span>
+                    <span class=""><a href="../display/EZPCLOUD/eZ%2bPublish%2bCloud.html">Exponential Cloud</a></span>
                             
                 
         <li>
                 
 
-                    <span class=""><a href="../display/EZPCLOUD/eZ%2bPublish%2bCloud.html">eZ Publish Cloud</a></span>
+                    <span class=""><a href="../display/EZPCLOUD/eZ%2bPublish%2bCloud.html">Exponential Cloud</a></span>
                 </ol>
 
 
@@ -679,7 +679,7 @@
 
         <div class="wiki-content">
                            
-        <h1 id="FAQ-FrequentlyAskedQuestions">Frequently Asked Questions</h1><p> </p><h2 id="FAQ-Varnishintegration">Varnish integration</h2><ol><li>Is there a http cache in front of eZ Publish when using eZ Publish Cloud<br />Yes, every site is behind a Varnish cache. Non-logged-in users are served via the Varnish cache.</li><li>How does the Varnish cache know if the user is logged in or not<br />Varnish checks if the cookie is_logged_in is set for the user making a request. If the cookie is set, the request is forwarded to the web servers directly.</li><li><p>What is the is_logged_in cookie<br />The is_logged_in cookie is a cookie which eZ Publish creates when the user logs in to the system. This cookie is used to flag to any http proxies in front of eZ Publish that the user is logged in. The cookie has nothing to do with authentication of the user in eZ Publish.</p></li><li><p>How can I make the shopping basket work, also for non-logged in users ?<br />Once a user places a product in the basked you must ensure that further requests made by that user is not served by Varnish cache. This can be done by setting the is_logged_in cookie.<br />On a ezwebin site this can be done by putting the following code at the end of the template extension/[myextension]/design/ezwebin/templates/shop/basket.tpl</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+        <h1 id="FAQ-FrequentlyAskedQuestions">Frequently Asked Questions</h1><p> </p><h2 id="FAQ-Varnishintegration">Varnish integration</h2><ol><li>Is there a http cache in front of Exponential when using Exponential Cloud<br />Yes, every site is behind a Varnish cache. Non-logged-in users are served via the Varnish cache.</li><li>How does the Varnish cache know if the user is logged in or not<br />Varnish checks if the cookie is_logged_in is set for the user making a request. If the cookie is set, the request is forwarded to the web servers directly.</li><li><p>What is the is_logged_in cookie<br />The is_logged_in cookie is a cookie which Exponential creates when the user logs in to the system. This cookie is used to flag to any http proxies in front of Exponential that the user is logged in. The cookie has nothing to do with authentication of the user in Exponential.</p></li><li><p>How can I make the shopping basket work, also for non-logged in users ?<br />Once a user places a product in the basked you must ensure that further requests made by that user is not served by Varnish cache. This can be done by setting the is_logged_in cookie.<br />On a ezwebin site this can be done by putting the following code at the end of the template extension/[myextension]/design/ezwebin/templates/shop/basket.tpl</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="theme: Eclipse; brush: php; gutter: false"><![CDATA[{if $basket.items|count|gt(0)}
     &lt;script type=&quot;text/javascript&quot;&gt;{literal}
         $(document).ready(function(){
@@ -793,7 +793,7 @@
     <section class="footer-body">
 
                                                 <p class="license license-opensource">
-                  Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                  Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                         
     

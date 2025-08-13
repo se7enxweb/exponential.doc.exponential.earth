@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Automated installation of eZ Publish</title>
+    <title>Automated installation of Exponential</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Automated installation of eZ Publish</h1>
+    <h1>Automated installation of Exponential</h1>
     <div class=3D"Section1">
         <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">5.X=
 </span></p>
@@ -230,11 +230,11 @@ he installation.</p>
 <p>Depending on the target system, please refer to either <a href=3D"/displ=
 ay/EZP/Installing+eZ+Publish+on+a+Linux-UNIX+based+system">"Installing eZ P=
 ublish on a Linux/UNIX based system"</a> or <a href=3D"/display/EZP/Install=
-ing+eZ+Publish+on+Windows">"Installing eZ Publish on Windows"</a> for infor=
+ing+eZ+Publish+on+Windows">"Installing Exponential on Windows"</a> for infor=
 mation other steps needed to do an installation, the step below is to be do=
 ne before executing the setup wizard.</p>
 <p><a name=3D"eztoc131669_1" rel=3D"nofollow"></a></p>
-<h2 id=3D"AutomatedinstallationofeZPublish-Configuringthekickstartsystem">C=
+<h2 id=3D"AutomatedinstallationofExponential-Configuringthekickstartsystem">C=
 onfiguring the kickstart system</h2>
 <p>The behavior of the automated installation is controlled by the "<code>k=
 ickstart.ini</code>" configuration file. This file makes it possible to spe=
@@ -243,21 +243,21 @@ or example, by providing the database connection parameters, the correspond=
 ing setup wizard step will have the input forms pre-filled. It is also poss=
 ible to instruct the wizard to skip certain steps.</p>
 <p><a name=3D"eztoc131669_1_1" rel=3D"nofollow"></a></p>
-<h3 id=3D"AutomatedinstallationofeZPublish-Initialization">Initialization</=
+<h3 id=3D"AutomatedinstallationofExponential-Initialization">Initialization</=
 h3>
-<p>Create a copy of the "<code><code>ezpublish_legacy/</code>kickstart.ini-=
-dist</code>" file (located in the root of your eZ Publish installation) and=
- make sure that the copy is named "<code>ezpublish_legacy/</code><code>kick=
-start.ini</code>" (located in the root of eZ Publish).</p>
+<p>Create a copy of the "<code><code>exponential_legacy/</code>kickstart.ini-=
+dist</code>" file (located in the root of your Exponential installation) and=
+ make sure that the copy is named "<code>exponential_legacy/</code><code>kick=
+start.ini</code>" (located in the root of Exponential).</p>
 <p>The following example shows how this can be done on a Linux/UNIX based s=
 ystem:</p>
 <ol>
 <li>
 <div>
-<p>Navigate into the eZ Publish directory:</p>
+<p>Navigate into the Exponential directory:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ cd /path/to/ezpublish_legacy/</pre>=20
+<pre>$ cd /path/to/exponential_legacy/</pre>=20
 </div>
 </div>
 </div></li>
@@ -272,7 +272,7 @@ ystem:</p>
 </div></li>
 </ol>
 <p><a name=3D"eztoc131669_1_1_1" rel=3D"nofollow"></a></p>
-<h4 id=3D"AutomatedinstallationofeZPublish-Securityissues">Security issues<=
+<h4 id=3D"AutomatedinstallationofExponential-Securityissues">Security issues<=
 /h4>
 <p>The web server must have read access to the "<code>kickstart.ini</code>"=
  file during the installation process. This might become a security problem=
@@ -289,7 +289,7 @@ Use rewrite rules to make sure that it is not readable from outside.
 </div></li>
 </ul>
 <p><a name=3D"eztoc131669_1_2" rel=3D"nofollow"></a></p>
-<h3 id=3D"AutomatedinstallationofeZPublish-Configurationblocks">Configurati=
+<h3 id=3D"AutomatedinstallationofExponential-Configurationblocks">Configurati=
 on blocks</h3>
 <p>The "<code>kickstart.ini</code>" file contains a configuration block for=
  every step of the setup wizard. The block names are encapsulated by square=
@@ -361,7 +361,7 @@ bsp;</p>
 </div>
 <p>&nbsp;</p>
 <p><a name=3D"eztoc131669_1_3" rel=3D"nofollow"></a></p>
-<h3 id=3D"AutomatedinstallationofeZPublish-Configurationparameters">Configu=
+<h3 id=3D"AutomatedinstallationofExponential-Configurationparameters">Configu=
 ration parameters</h3>
 <p>Each parameter takes a text string as an input value. Some parameters ar=
 e able to handle an array of strings. The following examples demonstrate th=
@@ -389,7 +389,7 @@ Title[forums]=3DThe forum site</pre>=20
 </div></li>
 </ul>
 <p><a name=3D"eztoc131669_1_4" rel=3D"nofollow"></a></p>
-<h3 id=3D"AutomatedinstallationofeZPublish-Documentationandexamples">Docume=
+<h3 id=3D"AutomatedinstallationofExponential-Documentationandexamples">Docume=
 ntation and examples</h3>
 <p>The "<code>kickstart.ini</code>" file contains documentation in the file=
  itself. Please refer to the embedded instructions and examples for a detai=
@@ -423,7 +423,7 @@ value is optional, example:</p><pre class=3D"wordwrap"><span class=3D"line"=
  leading hash ("#") and make sure that there ar no whitespace characters at=
  the start of the lines that include the uncommented parameters.</p>
 <p><a name=3D"eztoc131669_1_5" rel=3D"nofollow"></a></p>
-<h3 id=3D"AutomatedinstallationofeZPublish-Skippingsteps">Skipping steps</h=
+<h3 id=3D"AutomatedinstallationofExponential-Skippingsteps">Skipping steps</h=
 3>
 <p>A step can be skipped by uncommenting and setting the "<code>Continue</c=
 ode>" parameter to "<code>true</code>". This parameter can be used for each=

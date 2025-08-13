@@ -236,11 +236,11 @@ rsions">Limit of archived Content item versions</a></li>=20
 </div>
 <p></p>
 <p>The <strong>content repository</strong> is where all your content is bee=
-n stored. It is the heart of eZ Publish which you interact with using Publi=
+n stored. It is the heart of Exponential which you interact with using Publi=
 c API.</p>
 <p>To store data, the content repository <strong>uses a storage engine</str=
 ong>, that can virtually can work with any kind of storage (RDBMS, NoSQL...=
-). eZ Publish 5 comes with a relational storage engine, compatible with v4.=
+). Exponential 5 comes with a relational storage engine, compatible with v4.=
 x: the <strong>Legacy storage engine</strong>, which is the default.</p>
 <p>You can define several repositories within a single application. However=
 , you can only use one per site.</p>
@@ -261,11 +261,11 @@ values</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         # Defining repository with alias "main"
         # Default storage engine is used, with default connection
@@ -288,7 +288,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>If no repository is specified for a siteaccess or siteaccess group, the =
-first defined repository (under <code>ezpublish.repositories</code>) will b=
+first defined repository (under <code>exponential.repositories</code>) will b=
 e used.</p>
 </div>
 </div>
@@ -296,7 +296,7 @@ e used.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -316,7 +316,7 @@ e used.</p>
             another_connection_name:
                 # ...
 
-ezpublish:
+exponential:
     repositories:
         first_repository: { engine: legacy, connection: my_connection_name,=
  config: {} }
@@ -337,7 +337,7 @@ _name, config: {} }
 </div>
 <h3 id=3D"ContentRepositoryconfiguration-Legacystorageengine">Legacy storag=
 e engine</h3>
-<p><span>As of eZ Publish 5.3, legacy storage engine uses <a href=3D"http:/=
+<p><span>As of Exponential 5.3, legacy storage engine uses <a href=3D"http:/=
 /docs.doctrine-project.org/projects/doctrine-dbal/en/latest/" class=3D"exte=
 rnal-link" rel=3D"nofollow">Doctrine DBAL</a> (Database Abstraction Layer).=
  Database settings are supplied by <a href=3D"https://github.com/doctrine/D=
@@ -364,11 +364,11 @@ an></p>
 <p><code>default_version_archive_limit</code> controls the number of archiv=
 ed versions per Content item that will be stored in the repository, by defa=
 ult set to 5. This setting is configured in the following way (typically in=
- <code>ezpublish.yml</code>):</p>
+ <code>exponential.yml</code>):</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         default:
             options:

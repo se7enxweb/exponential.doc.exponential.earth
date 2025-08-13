@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:05:15 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:05:15 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                   
-    <title>Template fetch function / Developing eZ Publish extensions / Tutorials / Documentation - Doc</title>
+    <title>Template fetch function / Developing Exponential extensions / Tutorials / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
 <h1>Template fetch function</h1>
 </div>
 
-<p><b>Note: </b>For an extensive tutorial on how to make custom fetch functions, please read <a href="http://share.ez.no/learn/ez-publish/understanding-and-developing-fetch-functions" target="_blank">Understanding and developing fetch functions</a>.</p><p>We now know how to transmit parameters and GET / POST variables to a new view and show them. But if we want to show data (for example our database table) in an eZ Publish template, we cannot handle it just by opening the view.</p><p>To do this we use the fetch functions from the &quot;kernel&quot; eZ module, for example {fetch('content', 'node', hash( 'node_id', 2 )}. We want to define two fetch functions, list and count, which are opened by the following template syntax:</p><pre class="wordwrap"><span class="line">{fetch( 'modul1', 'list', hash( 'as_object' , true() ) )}</span>
+<p><b>Note: </b>For an extensive tutorial on how to make custom fetch functions, please read <a href="http://share.ez.no/learn/exponential/understanding-and-developing-fetch-functions" target="_blank">Understanding and developing fetch functions</a>.</p><p>We now know how to transmit parameters and GET / POST variables to a new view and show them. But if we want to show data (for example our database table) in an Exponential template, we cannot handle it just by opening the view.</p><p>To do this we use the fetch functions from the &quot;kernel&quot; eZ module, for example {fetch('content', 'node', hash( 'node_id', 2 )}. We want to define two fetch functions, list and count, which are opened by the following template syntax:</p><pre class="wordwrap"><span class="line">{fetch( 'modul1', 'list', hash( 'as_object' , true() ) )}</span>
 <span class="line">{fetch( 'modul1', 'count', hash() )}</span>
 </pre><p>The function list shows the data entries as arrays or objects (based on the setting of the parameter ‘as_object'). The count function doesn't have any parameters and uses an SQL command to determine the amount of data in our database table jacextension_data.</p><p>The definition of the fetch functions is done in the file jacextension/modules/modul1/function_definition.php. This also defines which parameters are transmitted to which PHP function within the specified PHP class.</p><pre class="wordwrap copytoclipboard"><span class="line">&lt;?php</span>
 <span class="line">$FunctionList = array();</span>
@@ -99,17 +99,17 @@
 <p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;?php\r\n\r\nclass eZModul1FunctionCollection\r\n{ \r\n    public function __construct() \r\n    {\r\n        // ...\r\n    }\r\n\r\n    /*\r\n     * Is opened by(\'modul1\', \'list\', hash(\'as_object\', $bool ) ) fetch\r\n     * @param bool $asObject\r\n     */ \r\n    public static function fetchJacExtensionDataList( $asObject ) \r\n    { \r\n        return array( \'result\' =&gt; JACExtensionData::fetchList( $asObject ) ); \r\n    }\r\n \r\n    /*\r\n     * Is opened by(\'modul1\', \'count\', hash() ) fetch\r\n     */\r\n    public static function fetchJacExtensionDataListCount()\r\n    { \r\n        return array( \'result\' =&gt; JACExtensionData::getListCount() ); \r\n    } \r\n} \r\n?&gt;' ); return false;" /></p>
 <![endif]--><p>
 <i>Listing 17. Help class with PHP functions that are used in the Template Fetch definition in function_defintion.php –</i><br /><i>extension/jacextension/modules/modul1/ezmodul1functioncollection.php</i></p><p>
-<b>Hint:</b> In each module, the file functioncollection.php lists the possible parameters for the hash() part of a fetch function. Investigate the file kernel/content/ezcontentfunctioncollection.php to determine which parameters are available for the fetch function {fetch('content', 'tree', hash( ... ) )} of the kernel content module of eZ Publish. This helps if the eZ documentation is incomplete.<br />And of course, as for every new PHP class, do not forget to regenerate autoloads.</p>
+<b>Hint:</b> In each module, the file functioncollection.php lists the possible parameters for the hash() part of a fetch function. Investigate the file kernel/content/ezcontentfunctioncollection.php to determine which parameters are available for the fetch function {fetch('content', 'tree', hash( ... ) )} of the kernel content module of Exponential. This helps if the eZ documentation is incomplete.<br />And of course, as for every new PHP class, do not forget to regenerate autoloads.</p>
 
 
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Tutorials/Developing-eZ-Publish-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:05:15 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Tutorials/Developing-Exponential-extensions/Template-fetch-function by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 22:05:15 GMT -->
 </html>

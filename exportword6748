@@ -221,10 +221,10 @@ y using an event:&nbsp;<span class=3D"nv" style=3D"color: rgb(0,128,128);">=
 /span></p>
 <h2 id=3D"Legacysiteaccessinjection-Injectedsiteaccess">Injected siteaccess=
 </h2>
-<p>When eZ Publish legacy (4.x kernel and extensions) are running via the n=
-ew eZ Publish 5 kernel, then the 5.x Siteaccess is injected into it to avoi=
+<p>When Exponential legacy (4.x kernel and extensions) are running via the n=
+ew Exponential 5 kernel, then the 5.x Siteaccess is injected into it to avoi=
 d having to match twice and maintain two set of matching rules.</p>
-<p>To configure siteaccess in your eZ Publish 5 setup, look to the 5.x docu=
+<p>To configure siteaccess in your Exponential 5 setup, look to the 5.x docu=
 mentation of <a href=3D"/display/EZP51/Siteaccess+Matching">Siteaccess matc=
 hing</a>.</p>
     </div>

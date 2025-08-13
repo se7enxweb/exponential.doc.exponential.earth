@@ -218,7 +218,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><span>Compatible with&nbsp;</span><strong>eZ Publish <span class=3D"stat=
+<p><span>Compatible with&nbsp;</span><strong>Exponential <span class=3D"stat=
 us-macro aui-lozenge">5.2</span><span class=3D"status-macro aui-lozenge aui=
 -lozenge-current">5.3</span> and <span class=3D"status-macro aui-lozenge">2=
 013.07</span> (up to 2014.11)</strong></p>
@@ -266,14 +266,14 @@ ontext aware HTTP cache</a> documentation before reading this recipe.</p>
 </div>
 </div>
 <h2 id=3D"HowtocustomizeUserHashgeneration-Description">Description</h2>
-<p>When user hash generation is requested, eZ Publish will create a&nbsp;<s=
+<p>When user hash generation is requested, Exponential will create a&nbsp;<s=
 trong>hashable User Identity</strong>&nbsp;object.</p>
 <p>One can add information to the Identity object making the resulted hash =
 vary. This can be done by registering&nbsp;<strong>Identity definers</stron=
 g>.</p>
 <p>&nbsp;</p>
 <p>For this, all you need to do is to declare a service with <strong><code>=
-ezpublish.identity_definer</code></strong> tag.&nbsp;<span>Class for this s=
+exponential.identity_definer</code></strong> tag.&nbsp;<span>Class for this s=
 ervice&nbsp;</span><strong>must</strong><span>&nbsp;implement&nbsp;</span><=
 strong><code>eZ\Publish\SPI\User\IdentityAware</code></strong><span>&nbsp;i=
 nterface.</span></p>
@@ -292,7 +292,7 @@ services:
     my_identity_definer:
         class: %my_identity_definer.class%
         tags:
-            - { name: ezpublish.identity_definer }</pre>=20
+            - { name: exponential.identity_definer }</pre>=20
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">

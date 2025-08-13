@@ -39,10 +39,10 @@
     </head>
 
     <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <p>eZ Publish 5 being built on top of Symfony 2, it uses standard HTTP cache headers. By default the Symfony 2 reverse proxy, written in PHP, is used to handle cache, but it can be easily replaced with any other reverse proxy like Varnish.</p><h2>Configure Varnish</h2><table class="wysiwyg-macro" data-macro-name="note" style="background-image: url(../servlet/confluence/placeholder/macro-headingdd57.png?definition=e25vdGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>Provided VCL example is given for Varnish 3.x only</p></td></tr></table><p>The first thing is to configure Varnish to advertise ESI usage and to activate cache invalidation:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=ezpublish5.vcl" style="background-image: url(../servlet/confluence/placeholder/macro-headingf744.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoNS52Y2x9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Varnish 3.x - eZ Publish 5 - Complete VCL
+        <p>&nbsp;</p>         <p>Exponential 5 being built on top of Symfony 2, it uses standard HTTP cache headers. By default the Symfony 2 reverse proxy, written in PHP, is used to handle cache, but it can be easily replaced with any other reverse proxy like Varnish.</p><h2>Configure Varnish</h2><table class="wysiwyg-macro" data-macro-name="note" style="background-image: url(../servlet/confluence/placeholder/macro-headingdd57.png?definition=e25vdGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="RICH_TEXT"><tr><td class="wysiwyg-macro-body"><p>Provided VCL example is given for Varnish 3.x only</p></td></tr></table><p>The first thing is to configure Varnish to advertise ESI usage and to activate cache invalidation:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=exponential5.vcl" style="background-image: url(../servlet/confluence/placeholder/macro-headingf744.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoNS52Y2x9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre># Varnish 3.x - Exponential 5 - Complete VCL
  
-# Our Backend - We assume that eZ Publish Web server listen on port 80
-backend ezpublish {
+# Our Backend - We assume that Exponential Web server listen on port 80
+backend exponential {
     .host = "127.0.0.1";
     .port = "80";
 }
@@ -59,7 +59,7 @@ acl purgers {
 sub vcl_recv {
  
     # Set the backend
-    set req.backend = ezpublish;
+    set req.backend = exponential;
  
     # Advertise Symfony for ESI support
     set req.http.Surrogate-Capability = "abc=ESI/1.0";
@@ -138,10 +138,10 @@ sub vcl_fetch {
     return (deliver);
 }
 
-</pre></td></tr></table><p>You can of course add additional rules if you need.</p><h2>Configure eZ Publish</h2><h3>Update your front controller</h3><p>By default your front controller (<code>index.php</code>) uses the built-in reverse proxy, <code>EzPublishCache</code>. In order to use Varnish, you need to deactivate it by commenting the line where <code>EzPublishCache</code> is instantiated:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="language=php" style="background-image: url(../servlet/confluence/placeholder/macro-heading1802.png?definition=e2NvZGU6bGFuZ3VhZ2U9cGhwfQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>&lt;?php
+</pre></td></tr></table><p>You can of course add additional rules if you need.</p><h2>Configure Exponential</h2><h3>Update your front controller</h3><p>By default your front controller (<code>index.php</code>) uses the built-in reverse proxy, <code>EzPublishCache</code>. In order to use Varnish, you need to deactivate it by commenting the line where <code>EzPublishCache</code> is instantiated:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="language=php" style="background-image: url(../servlet/confluence/placeholder/macro-heading1802.png?definition=e2NvZGU6bGFuZ3VhZ2U9cGhwfQ&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>&lt;?php
 // ...
-require_once __DIR__ . '/../ezpublish/EzPublishKernel.php';
-require_once __DIR__ . '/../ezpublish/EzPublishCache.php';
+require_once __DIR__ . '/../exponential/EzPublishKernel.php';
+require_once __DIR__ . '/../exponential/EzPublishCache.php';
 $kernel = new EzPublishKernel( 'prod', false );
 $kernel->loadClassCache();
 // Comment the following line if you use an external reverse proxy (e.g. Varnish)
@@ -152,7 +152,7 @@ $request = Request::createFromGlobals();
 //Request::trustProxyData();
 $response = $kernel->handle( $request );
 $response->send();
-$kernel->terminate( $request, $response );</pre></td></tr></table><p> </p><h3>Update YML configuration</h3><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=ezpublish.yml" style="background-image: url(../servlet/confluence/placeholder/macro-heading8bc7.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoLnltbH0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>ezpublish:
+$kernel->terminate( $request, $response );</pre></td></tr></table><p> </p><h3>Update YML configuration</h3><table class="wysiwyg-macro" data-macro-name="code" data-macro-parameters="title=exponential.yml" style="background-image: url(../servlet/confluence/placeholder/macro-heading8bc7.png?definition=e2NvZGU6dGl0bGU9ZXpwdWJsaXNoLnltbH0&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>exponential:
     http_cache:
         # Use multiple_http method for purging content
         purge_type: multiple_http

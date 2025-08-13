@@ -213,9 +213,9 @@ d of the content */
     <h1>REST API reference</h1>
     <div class=3D"Section1">
         <p>The complete reference of the REST API resources can be found in=
- the specifications:&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish=
+ the specifications:&nbsp;<a href=3D"https://github.com/ezsystems/exponential=
 -kernel/blob/master/doc/specifications/rest/REST-API-V2.rst" class=3D"exter=
-nal-link" rel=3D"nofollow">https://github.com/ezsystems/ezpublish-kernel/bl=
+nal-link" rel=3D"nofollow">https://github.com/ezsystems/exponential-kernel/bl=
 ob/master/doc/specifications/rest/REST-API-V2.rst</a>.&nbsp;That file is ac=
 tually more up-to-date than this documentation, as it is used as a developm=
 ent spec / reference. One problem is that it references the whole API, whic=
@@ -229,21 +229,21 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc=
+<p><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc=
 /specifications/rest/REST-API-V2.rst" class=3D"external-link" rel=3D"nofoll=
-ow">https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+ow">https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/rest/REST-API-V2.rst</a></p>
 </div>
 </div>
 <h2 id=3D"RESTAPIreference-Documentationstructure">Documentation structure<=
 /h2>
 <p>Resources are grouped by chapters: <a href=3D"https://github.com/ezsyste=
-ms/ezpublish-kernel/blob/master/doc/specifications/rest/REST-API-V2.rst#13%=
+ms/exponential-kernel/blob/master/doc/specifications/rest/REST-API-V2.rst#13%=
 C2%A0%C2%A0%C2%A0content" class=3D"external-link" rel=3D"nofollow">Content<=
-/a>, <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/d=
+/a>, <a href=3D"https://github.com/ezsystems/exponential-kernel/blob/master/d=
 oc/specifications/rest/REST-API-V2.rst#14%C2%A0%C2%A0%C2%A0content-types" c=
 lass=3D"external-link" rel=3D"nofollow">Content Types</a> and&nbsp;<a href=
-=3D"https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifica=
+=3D"https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifica=
 tions/rest/REST-API-V2.rst#15%C2%A0%C2%A0%C2%A0user-management" class=3D"ex=
 ternal-link" rel=3D"nofollow">User</a>. In each of those chapters, you will=
  first get an overview, with a table crossing every resource with every app=

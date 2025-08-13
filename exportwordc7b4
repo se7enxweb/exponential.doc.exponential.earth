@@ -263,16 +263,16 @@ ep 2: Configuring Bundle</a></li>=20
 bling Bundle</h3>
 <p>First, activate the&nbsp;Elasticsearch Search Engine Bundle (eZ\Bundle\E=
 zPublishElasticsearchSearchEngineBundle\EzPublishElasticsearchSearchEngineB=
-undle) in your&nbsp;<code>ezpublish/EzPublishKernel.php</code>&nbsp;class f=
+undle) in your&nbsp;<code>exponential/EzPublishKernel.php</code>&nbsp;class f=
 ile.</p>
 <h3 id=3D"ElasticSearchSearchEngineBundle-Step2:ConfiguringBundle">Step 2: =
 Configuring Bundle</h3>
-<p>Then configure your search engine in ezpublish.yml</p>
+<p>Then configure your search engine in exponential.yml</p>
 <p>Example:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -281,17 +281,17 @@ Configuring Bundle</h3>
     connections:
         es_connection_name:
             server: http://localhost:9200
-            index_name: ezpublish
+            index_name: exponential
             document_type_name:
                 content: content
                 location: location</pre>=20
 </div>
 </div>
 <p>For further information on the ElasticSearch integration in eZ Platform,=
- find the default&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-ke=
+ find the default&nbsp;<a href=3D"https://github.com/ezsystems/exponential-ke=
 rnel/blob/master/eZ/Publish/Core/Search/Elasticsearch/Content/Resources/ela=
 sticsearch.yml" class=3D"external-link" rel=3D"nofollow">configuration</a>&=
-nbsp;and&nbsp;<a href=3D"https://github.com/ezsystems/ezpublish-kernel/tree=
+nbsp;and&nbsp;<a href=3D"https://github.com/ezsystems/exponential-kernel/tree=
 /master/eZ/Publish/Core/Search/Elasticsearch/Content/Resources/mappings" cl=
 ass=3D"external-link" rel=3D"nofollow">mappings</a>&nbsp;for Content and Lo=
 cation type documents <em>(Note: Content/Location modeling will most likely=
@@ -309,11 +309,11 @@ ticsearch</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         main:
             storage:
@@ -331,7 +331,7 @@ ticsearch</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console ezplatform:elasticsearch_create_index</pre>=
+e:12px;">php exponential/console ezplatform:elasticsearch_create_index</pre>=
 =20
 </div>
 </div>

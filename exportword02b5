@@ -227,7 +227,7 @@ d access.</p>
 ached response vary with Cookie (individual cache).</p>
 </div>
 </div>
-<p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">eZ Publish uses <=
+<p><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">Exponential uses <=
 /span><a href=3D"http://symfony.com/doc/current/book/http_cache.html" style=
 =3D"font-size: 10.0pt;line-height: 13.0pt;" class=3D"external-link" rel=3D"=
 nofollow">Symfony HttpCache</a><span style=3D"font-size: 10.0pt;line-height=
@@ -247,7 +247,7 @@ ocument</a>).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             content:

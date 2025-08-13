@@ -282,7 +282,7 @@ s the file <code>path</code>, relative to the binary file storage root dir =
 <td colspan=3D"1" class=3D"confluenceTd">The human readable file name, as e=
 xposed to the outside. Used when sending the file for download in order to =
 name the file.</td>
-<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_ezpublish5 lig=
+<td colspan=3D"1" class=3D"confluenceTd">20130116_whitepaper_exponential5 lig=
 ht.pdf</td>
 </tr>
 <tr>

@@ -219,7 +219,7 @@ acro-note">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>This recipe is compatible with <strong>eZ Publish 5.4 / 2014.07</strong>=
+<p>This recipe is compatible with <strong>Exponential 5.4 / 2014.07</strong>=
 </p>
 </div>
 </div>
@@ -267,7 +267,7 @@ dated by rules you define, e.g. validating type (string, array, integer, bo=
 olean...). Usually, once validated and processed this semantic configuratio=
 n is then mapped to internal&nbsp;<em>key/value</em>&nbsp;parameters stored=
  in the&nbsp;<code>ServiceContainer</code>.</p>
-<p>eZ Publish uses this for its core configuration, but adds another config=
+<p>Exponential uses this for its core configuration, but adds another config=
 uration level, the&nbsp;<strong>SiteAccess</strong>. For each defined SiteA=
 ccess, we need to be able to use the same configuration tree in order to de=
 fine SiteAccess specific config. These settings then need to be mapped to S=
@@ -285,7 +285,7 @@ tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p><span style=3D"color: rgb(0,0,0);">For more information on ConfigResolve=
 r, namespaces and scopes, see&nbsp;</span><a href=3D"/display/EZP/Configura=
-tion">eZ Publish configuration basics</a><span style=3D"color: rgb(119,119,=
+tion">Exponential configuration basics</a><span style=3D"color: rgb(119,119,=
 119);">.</span></p>
 </div>
 </div>
@@ -302,7 +302,7 @@ ee like the following:</span></span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml or config.yml</b>
+<b>exponential.yml or config.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
@@ -525,7 +525,7 @@ e:12px;">parameters:
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml or config.yml</b>
+<b>exponential.yml or config.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
@@ -595,7 +595,7 @@ e:12px;">parameters:
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>Semantic config (ezpublish.yml / config.yml)</b>
+<b>Semantic config (exponential.yml / config.yml)</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=

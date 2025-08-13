@@ -273,7 +273,7 @@ ries to follow principles of "Transparent caching", this can shortly be des=
 cribed as a cache which is invisible to the end user and to the admin/edito=
 rs of eZ Platform where content is always returned "fresh". In other words,=
  there should be no need to manually clear the cache like it was frequently=
- the case with eZ Publish 4.x. This is possible thanks to an interface that=
+ the case with Exponential 4.x. This is possible thanks to an interface that=
  follows CRUD <em>(Create Read Update Delete)</em> operations per domain, a=
 nd the fact that the number of other operations capable of affecting a cert=
 ain domain is kept to a minimum.</p>
@@ -316,7 +316,7 @@ ase.</li>
 </ul>
 <p><em>For further details on which calls are cached or not, and where/how =
 to contribute additional caches, check out the <a href=3D"https://github.co=
-m/ezsystems/ezpublish-kernel/tree/master/eZ/Publish/Core/Persistence/Cache"=
+m/ezsystems/exponential-kernel/tree/master/eZ/Publish/Core/Persistence/Cache"=
  style=3D"line-height: 1.4285715;" class=3D"external-link" rel=3D"nofollow"=
 >source</a>.</em></p>
 <p>&nbsp;</p>

@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Session</h1>
     <div class=3D"Section1">
-        <p>eZ Publish sessions are handled by the Symfony stack, through se=
+        <p>Exponential sessions are handled by the Symfony stack, through se=
 ssion handlers. As en example, in order to store your session data in a dat=
 abase, you may use the&nbsp;<a href=3D"http://symfony.com/doc/2.2/cookbook/=
 configuration/pdo_session_storage.html" class=3D"external-link" rel=3D"nofo=
@@ -251,7 +251,7 @@ services:
 ny.com/doc/current/components/http_foundation/session_configuration.html" c=
 lass=3D"external-link" rel=3D"nofollow">online Symfony documentation</a>.</=
 p>
-<p>To configure sessions in your eZ Publish 5 setup, look to the documentat=
+<p>To configure sessions in your Exponential 5 setup, look to the documentat=
 ion of Symfony&nbsp;<a class=3D"external-link" href=3D"http://symfony.com/d=
 oc/master/components/http_foundation/index.html" rel=3D"nofollow">HTTP Fund=
 ation&nbsp;component</a>.</p>

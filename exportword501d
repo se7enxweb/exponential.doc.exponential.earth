@@ -253,13 +253,13 @@ tp://symfony.com/doc/current/book/service_container.html#service-parameters=
 " class=3D"external-link" rel=3D"nofollow">its configuration</a>.</p>
 </div>
 </div>
-<p>Basic configuration handling in eZ Publish is similar to what is commonl=
+<p>Basic configuration handling in Exponential is similar to what is commonl=
 y possible with Symfony. Regarding this, you can define key/value pairs in =
 <a href=3D"http://symfony.com/doc/current/book/service_container.html#impor=
 ting-other-container-configuration-resources" class=3D"external-link" rel=
 =3D"nofollow">your configuration files</a>, under the main <strong>paramete=
 rs</strong> key (like in&nbsp;<strong><a href=3D"https://github.com/ezsyste=
-ms/ezpublish5/blob/master/app/config/parameters.yml.dist" class=3D"external=
+ms/exponential5/blob/master/app/config/parameters.yml.dist" class=3D"external=
 -link" rel=3D"nofollow">parameters.yml</a></strong>).</p>
 <p>Internally and by convention, keys follow a <strong>dot syntax</strong>&=
 nbsp;where the different segments follow your configuration hierarchy. Keys=
@@ -271,10 +271,10 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-eZ Publish core configuration is prefixed by=20
+Exponential core configuration is prefixed by=20
 <strong>ezsettings</strong> namespace, while=20
 <em>internal</em> configuration (not to be used directly) is prefixed by=20
-<strong>ezpublish</strong> namespace.
+<strong>exponential</strong> namespace.
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-tip=
@@ -322,7 +322,7 @@ e' );</pre>=20
 </div>
 <h2 id=3D"Configuration-DynamicconfigurationwiththeConfigResolver">Dynamic =
 configuration with the ConfigResolver</h2>
-<p>In eZ Publish, it is fairly common to have different settings depending =
+<p>In Exponential, it is fairly common to have different settings depending =
 on the current siteaccess (e.g. languages, <a href=3D"/display/EZP/View+pro=
 vider+configuration">view provider</a> configuration).</p>
 <h3 id=3D"Configuration-Scope">Scope</h3>
@@ -336,10 +336,10 @@ g>can be resolved depending on a <em>scope</em>.</p>
 <li><em>default</em></li>
 </ol>
 <p>It gives the opportunity to define settings for a given siteaccess, for =
-instance, like in the <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manu=
+instance, like in the <a href=3D"http://doc.ez.no/Exponential/Technical-manu=
 al/4.x/Concepts-and-basics/Configuration" class=3D"external-link" rel=3D"no=
 follow">legacy INI override system</a>.</p>
-<p>This mechanism is not limited to eZ Publish internal settings (aka&nbsp;=
+<p>This mechanism is not limited to Exponential internal settings (aka&nbsp;=
 <strong><em>ezsettings</em>&nbsp;namespace</strong>) and is applicable for =
 specific needs (bundle related, project related, etc).</p>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -367,7 +367,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 The following configuration is=20
-<strong>an example of internal usage</strong> inside the code of eZ Publish=
+<strong>an example of internal usage</strong> inside the code of Exponential=
  Platform.
 </div>
 </div>
@@ -449,7 +449,7 @@ o your own services</a>.</p>
 </div>
 <p>&nbsp;</p>
 <p>You can use the <strong>ConfigResolver</strong> in your own services whe=
-never needed. To do this, just inject the <code><strong>ezpublish.config.re=
+never needed. To do this, just inject the <code><strong>exponential.config.re=
 solver </strong>service</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -460,7 +460,7 @@ solver </strong>service</code>:</p>
 services:
     my_service:
         class: %my_service.class%
-        arguments: [@ezpublish.config.resolver]</pre>=20
+        arguments: [@exponential.config.resolver]</pre>=20
 </div>
 </div>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -492,20 +492,20 @@ pp' );
 <h2 id=3D"Configuration-Customlocaleconfiguration(5.1+)">Custom locale conf=
 iguration (5.1+)</h2>
 <p>If you need to use a custom locale they can also be configurable in <cod=
-e>ezpublish.yml</code>, adding them to the <em>conversion map</em>:</p>
+e>exponential.yml</code>, adding them to the <em>conversion map</em>:</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>ezpublish:
-    # Locale conversion map between eZ Publish format (i.e. fre-FR) to POSI=
+<pre>exponential:
+    # Locale conversion map between Exponential format (i.e. fre-FR) to POSI=
 X (i.e. fr_FR).&nbsp;
-    # The key is the eZ Publish locale. Check locale.yml in EzPublishCoreBu=
+    # The key is the Exponential locale. Check locale.yml in EzPublishCoreBu=
 ndle to see natively supported locales.
     locale_conversion:
         eng-DE: en_DE</pre>=20
 </div>
 </div>
 <p>A locale <em>conversion map</em> example <a href=3D"https://github.com/e=
-zsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resourc=
+zsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resourc=
 es/config/locale.yml" class=3D"external-link" rel=3D"nofollow">can be found=
  in the <code>core</code> bundle, on <code>locale.yml</code></a>.</p>
 <p>&nbsp;</p>

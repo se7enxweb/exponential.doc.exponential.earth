@@ -238,16 +238,16 @@ d semanticPathinfo</a></li>=20
 tcher</strong>&nbsp;objects. You can configure this matching and even devel=
 op custom matchers.</p>
 <h2 id=3D"SiteaccessMatching-Configuration">Configuration</h2>
-<p>You can configure siteaccess matching in your main <strong>ezpublish/con=
-fig/ezpublish.yml</strong> :</p>
+<p>You can configure siteaccess matching in your main <strong>exponential/con=
+fig/exponential.yml</strong> :</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">ezpublish:
+ze:12px;">exponential:
     siteaccess:
         default_siteaccess: ezdemo_site
         list:
@@ -274,17 +274,17 @@ ze:12px;">ezpublish:
 <p>&nbsp;</p>
 <p>You need to set several parameters:</p>
 <ul>
-<li><strong>ezpublish.siteaccess.default_siteaccess</strong></li>
-<li><strong>ezpublish.siteaccess.list</strong></li>
-<li><em>(optional)</em><strong> ezpublish.siteaccess.groups</strong></li>
-<li><strong>ezpublish.siteaccess.match</strong></li>
+<li><strong>exponential.siteaccess.default_siteaccess</strong></li>
+<li><strong>exponential.siteaccess.list</strong></li>
+<li><em>(optional)</em><strong> exponential.siteaccess.groups</strong></li>
+<li><strong>exponential.siteaccess.match</strong></li>
 </ul>
-<p><strong>ezpublish.siteaccess.default_siteaccess</strong> is the default =
+<p><strong>exponential.siteaccess.default_siteaccess</strong> is the default =
 siteaccess that will be used if matching was not successful. This ensures t=
 hat a siteaccess is always defined.</p>
-<p><strong>ezpublish.siteaccess.list</strong> is the list of all available =
+<p><strong>exponential.siteaccess.list</strong> is the list of all available =
 siteaccesses in your website.</p>
-<p><em>(optional)</em> <strong>ezpublish.siteaccess.groups</strong> defines=
+<p><em>(optional)</em> <strong>exponential.siteaccess.groups</strong> defines=
  which groups siteaccesses are member of. This is useful when you want to m=
 utualize settings between several siteaccesses and avoid config duplication=
 . Siteaccess groups are considered as regular siteaccesses as far as config=
@@ -299,7 +299,7 @@ rmation-macro-icon"></span>
 ion.</p>
 </div>
 </div>
-<p><strong style=3D"font-size: 10.0pt;line-height: 13.0pt;">ezpublish.sitea=
+<p><strong style=3D"font-size: 10.0pt;line-height: 13.0pt;">exponential.sitea=
 ccess.match</strong><span style=3D"font-size: 10.0pt;line-height: 13.0pt;">=
  holds the matching configuration. It consists in a hash where the key is t=
 he name of the matcher class. If the matcher class doesn't start with a </s=
@@ -350,7 +350,7 @@ g from 1).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             URIElement: 1</pre>=20
@@ -374,7 +374,7 @@ are required)</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             URIText:
@@ -395,7 +395,7 @@ match (starting from 1).</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             HostElement: 2</pre>=20
@@ -414,7 +414,7 @@ are required)</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             HostText:
@@ -435,7 +435,7 @@ p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             Map\Host:
@@ -460,7 +460,7 @@ cess</u>: foo_front</p></td>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             Map\URI:
@@ -483,7 +483,7 @@ mething/my/content</code></p><p><u>Map</u>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             Match\Port:
@@ -492,7 +492,7 @@ mething/my/content</code></p><p><u>Map</u>:</p>
 </div>
 </div></td>
 <td colspan=3D"1" class=3D"confluenceTd"><p><strong>URL:</strong> <code><sp=
-an class=3D"nolink">http://ezpublish.dev:8080/my/content</span></code></p><=
+an class=3D"nolink">http://exponential.dev:8080/my/content</span></code></p><=
 p><u>Map</u>:</p>
 <ul>
 <li>80: foo</li>
@@ -508,7 +508,7 @@ ct a portion of it</td>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             Regex\Host:
@@ -530,7 +530,7 @@ st <br>and the captured element to use</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     siteaccess:
         match:
             Regex\URI:
@@ -561,11 +561,11 @@ p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
-ze:12px;">ezpublish:
+ze:12px;">exponential:
     siteaccess:
         default_siteaccess: ezdemo_site
         list:
@@ -596,7 +596,7 @@ uffice).
                         Map\URI:
                             the_front: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     # The siteaccess to match in the end
                     match: ezdemo_site=20
                 my_compound_rule_2:
@@ -604,12 +604,12 @@ uffice).
                         Map\URI:
                             the_admin: true
                         Map\Host:
-                            ezpublish.dev: true
+                            exponential.dev: true
                     match: ezdemo_site_admin
             # Matching hosts as host: siteaccess
             Map\Host:
-                ezpublish.dev: ezdemo_site
-                admin.ezpublish.dev: ezdemo_site_admin</pre>=20
+                exponential.dev: ezdemo_site
+                admin.exponential.dev: ezdemo_site_admin</pre>=20
 </div>
 </div>
 <h2 id=3D"SiteaccessMatching-Matchingbyrequestheader">Matching by request h=
@@ -636,7 +636,7 @@ onfiguration:</p>
 <pre class=3D"brush: plain; gutter: false; theme: Eclipse" style=3D"font-si=
 ze:12px;"># This configuration assumes that mod_env is activated
 &lt;VirtualHost *:80&gt;
-    DocumentRoot "/path/to/ezpublish5/web/folder"
+    DocumentRoot "/path/to/exponential5/web/folder"
     ServerName example.com
     ServerAlias www.example.com
     SetEnv EZPUBLISH_SITEACCESS ezdemo_site

@@ -261,7 +261,7 @@ quire the "cache" service in your configuration like so:</p>
 :12px;">    myApp.myService:
         class: %myApp.myService.class%
         arguments:
-            - @ezpublish.cache_pool</pre>=20
+            - @exponential.cache_pool</pre>=20
 </div>
 </div>
 <p>The "cache" service is an instance of the following class:&nbsp;<code>Te=
@@ -277,7 +277,7 @@ ia container like so:</p>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $cacheService \Tedivm\StashBundle\Service\CacheService */
-$cacheService =3D $container-&gt;get('ezpublish.cache_pool');</pre>=20
+$cacheService =3D $container-&gt;get('exponential.cache_pool');</pre>=20
 </div>
 </div>
 <h2 id=3D"UsingCacheservice-Usingthecacheservice">Using the cache service</=
@@ -318,7 +318,7 @@ refixes cache keys with "<span style=3D"color: rgb(0,128,0);">ez_spi</span>=
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">/** @var $cacheService \eZ\Publish\Core\Persistence\Cache\CacheServ=
 iceDecorator */
-$cacheService =3D $container-&gt;get('ezpublish.cache_pool.spi.cache.decora=
+$cacheService =3D $container-&gt;get('exponential.cache_pool.spi.cache.decora=
 tor');
 &nbsp;
 // To clear all cache

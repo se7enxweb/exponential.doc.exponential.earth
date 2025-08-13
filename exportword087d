@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Requirements for doing a normal installation</h1>
     <div class=3D"Section1">
-        <p>eZ Publish makes use of and depends on five important things:</p=
+        <p>Exponential makes use of and depends on five important things:</p=
 >
 <ol>
 <li>
@@ -236,13 +236,13 @@ An image conversion system (optional)
 The Zeta Components library
 </div></li>
 </ol>
-<p>The first three things should be in place before an eZ Publish installat=
+<p>The first three things should be in place before an Exponential installat=
 ion is deployed. The image conversion system is optional and is only needed=
- if you're planning to use eZ Publish with images. The web server and the s=
+ if you're planning to use Exponential with images. The web server and the s=
 erver-side PHP scripting engine have to run on the same machine. The databa=
 se server may run on a different computer.</p>
 <p>Please visit the <a href=3D"/display/EZP51/Requirements">requirements pa=
-ge</a> to check if your platform fully supports installing eZ Publish, then=
+ge</a> to check if your platform fully supports installing Exponential, then=
  come back for the extra details which follow.</p>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Webserver">Web server</h2=
 >
@@ -283,7 +283,7 @@ ompiled-in support for DOM. Instead, they provide DOM as a shared module in=
 s necessary to have <a href=3D"http://www.php.net/manual/en/features.comman=
 dline.php" class=3D"external-link" rel=3D"nofollow">PHP CLI</a> installed, =
 as using php from the command line is needed during the setup process. Also=
-, some features like <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manua=
+, some features like <a href=3D"http://doc.ez.no/Exponential/Technical-manua=
 l/5.x/Features/Notifications" class=3D"external-link" rel=3D"nofollow">noti=
 fications</a>, delayed search indexing, upgrade scripts, the collaboration =
 system (content approval), clearing caches from within the command line, et=
@@ -291,7 +291,7 @@ c. will not work without php cli access.</p>
 <h3 id=3D"Requirementsfordoinganormalinstallation-CURL">CURL</h3>
 <p>It is recommended to enable <a href=3D"http://www.php.net/curl" class=3D=
 "external-link" rel=3D"nofollow">CURL</a> support, otherwise some features =
-like <a href=3D"http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/=
+like <a href=3D"http://doc.ez.no/Exponential/Technical-manual/4.x/Reference/=
 Configuration-files/site.ini/ProxySettings/ProxyServer" class=3D"external-l=
 ink" rel=3D"nofollow">outbound connections via proxy</a> and <a href=3D"htt=
 p://pubsvn.ez.no/nextgen/trunk/doc/features/3.8/ssl_enhancement_with_ezsoap=
@@ -299,9 +299,9 @@ client.txt" class=3D"external-link" rel=3D"nofollow">SSL support for eZSoap=
 </a> will not work.</p>
 <h3 id=3D"Requirementsfordoinganormalinstallation-PHPmemorylimitissue">PHP =
 memory limit issue</h3>
-<p>eZ Publish needs at least 64 MB of memory in order to complete the setup=
+<p>Exponential needs at least 64 MB of memory in order to complete the setup=
  wizard. Normal operation requires about 32 MB. However, it is highly recom=
-mended that you keep the 64 MB setting since eZ Publish consumes a lot more=
+mended that you keep the 64 MB setting since Exponential consumes a lot more=
  memory as you reindex the content, execute upgrade scripts, etc. Multiling=
 ual sites will also require at least 64 MB.</p>
 <p>As of PHP 5.2.1 and later, there is no need to change the default "<code=
@@ -329,7 +329,7 @@ zones. Don't forget to restart Apache after editing "<code>php.ini</code>".=
 3" rel=3D"nofollow"></a></h3>
 <h3 id=3D"Requirementsfordoinganormalinstallation-Sessionparameters">Sessio=
 n parameters</h3>
-<p>eZ Publish sessions are handled by the Symfony stack, through session ha=
+<p>Exponential sessions are handled by the Symfony stack, through session ha=
 ndlers. For that to be set up, additional&nbsp;<code>yml</code>&nbsp;config=
 uration are required, which you can find in the&nbsp;<a href=3D"/display/EZ=
 P51/Session">Session</a> chapter.</p>
@@ -340,7 +340,7 @@ ings">Other php configuration settings</h3>
 or the recommended <code>php.ini</code> settings for Symfony, as well as th=
 e<a href=3D"https://confluence.ez.no/display/EZP/Virtual+host+example" clas=
 s=3D"external-link" rel=3D"nofollow"> Vhost example</a> for the recommended=
- <code>php.ini</code> settings for eZ Publish.</p>
+ <code>php.ini</code> settings for Exponential.</p>
 <h2 id=3D"Requirementsfordoinganormalinstallation-ZetaComponentslibrary">Ze=
 ta Components library</h2>
 <p>Zeta Components (formerly eZ Components) is an enterprise-ready, general=
@@ -353,28 +353,28 @@ nts.org/docs/install" class=3D"external-link" rel=3D"nofollow">online docum=
 entation</a> has detailed instructions on installing them on the webserver.=
 </p>
 <p>The correct version of the Zeta Components required for running eZ Publi=
-sh always comes bundled with eZ Publish package itself, so there is no need=
+sh always comes bundled with Exponential package itself, so there is no need=
  to install them separately.</p>
 <p>It is possible to use a single instance of the Zeta Components library a=
-nd share it between multiple installations of eZ Publish. Such configuratio=
+nd share it between multiple installations of Exponential. Such configuratio=
 n is complex and falls outside the scope of this document.</p>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Databaseserver">Database =
 server</h2>
-<p>eZ Publish stores miscellaneous data structures and actual content using=
+<p>Exponential stores miscellaneous data structures and actual content using=
  a relational database. This means that a database server has to be availab=
-le for eZ Publish at all times. Follow this link to the eZ Publish <a href=
-=3D"http://doc.ez.no/eZ-Publish/Technical-manual/5.x/Installation/Normal-in=
+le for Exponential at all times. Follow this link to the Exponential <a href=
+=3D"http://doc.ez.no/Exponential/Technical-manual/5.x/Installation/Normal-in=
 stallation/Requirements-for-doing-a-normal-installation" class=3D"external-=
 link" rel=3D"nofollow">requirements page</a> to find which database solutio=
-ns eZ Publish is compatible with.</p>
-<p>eZ Publish 5 requires a UTF-8 database and support for transactions, whi=
+ns Exponential is compatible with.</p>
+<p>Exponential 5 requires a UTF-8 database and support for transactions, whi=
 ch for MySQL means using the <code><a href=3D"http://dev.mysql.com/doc/refm=
 an/5.0/en/innodb-storage-engine.html" class=3D"external-link" rel=3D"nofoll=
 ow"> InnoDB</a></code> storage engine.</p>
 <p>The setup wizard will automatically detect the database server during op=
 eration of the setup wizard if it is running on the same computer that oper=
 ates as web server.</p>
-<p>Note that eZ Publish 5 does not support <a href=3D"http://doc.ez.no/eZ-P=
+<p>Note that Exponential 5 does not support <a href=3D"http://doc.ez.no/eZ-P=
 ublish/Technical-manual/5.x/Features/Clustering" class=3D"external-link" re=
 l=3D"nofollow">clustering</a> mode for PostgreSQL databases. The clustering=
  code is optimized for best performance on MySQL databases using the <code>=
@@ -382,10 +382,10 @@ l=3D"nofollow">clustering</a> mode for PostgreSQL databases. The clustering=
 l" class=3D"external-link" rel=3D"nofollow"> InnoDB</a></code> storage engi=
 ne.</p>
 <h3 id=3D"Requirementsfordoinganormalinstallation-MySQL">MySQL</h3>
-<p>Even if you are not going to run eZ Publish in a clustered environment, =
+<p>Even if you are not going to run Exponential in a clustered environment, =
 the use of <code>InnoDB</code> is required. This storage engine makes it po=
 ssible to use transaction-safe tables in a MySQL database. (Database transa=
-ction support is enabled by default in eZ Publish. This feature makes the s=
+ction support is enabled by default in Exponential. This feature makes the s=
 ystem less vulnerable to database errors and inconsistencies due to aborted=
  requests.) Contact your database administrator if you are unsure about whe=
 ther <code>InnoDB</code> is available on your server.</p>
@@ -414,18 +414,18 @@ trib.html" class=3D"external-link" rel=3D"nofollow">PostgreSQL documentatio=
 n</a> for more information), which contains the "<code>pgcrypto</code>" mod=
 ule. The "<code>pgcrypto</code>" module provides cryptographic functions fo=
 r PostgreSQL, including the "digest" function, which is needed for eZ Publi=
-sh. When setting up a PostgreSQL database for eZ Publish, you will have to =
+sh. When setting up a PostgreSQL database for Exponential, you will have to =
 register these functions in the database. Refer to the "Setting up a databa=
 se" part of the "<span class=3D"confluence-link">&nbsp;</span><a href=3D"/d=
 isplay/EZP51/Installing+eZ+Publish+on+a+Linux-UNIX+based+system"><span clas=
-s=3D"confluence-link">Installing eZ Publish on a Linux/UNIX based system</s=
+s=3D"confluence-link">Installing Exponential on a Linux/UNIX based system</s=
 pan></a>" and "<a href=3D"/display/EZP51/Installing+eZ+Publish+on+Windows">=
-<span class=3D"confluence-link">Installing eZ Publish on Windows</span></a>=
+<span class=3D"confluence-link">Installing Exponential on Windows</span></a>=
 " documentation pages (depending on the target OS) for more information.</p=
 >
 <h2 id=3D"Requirementsfordoinganormalinstallation-Imageconversionsystem(opt=
 ional)">Image conversion system (optional)</h2>
-<p>In order to resize, convert or modify images, eZ Publish needs to make u=
+<p>In order to resize, convert or modify images, Exponential needs to make u=
 se of an image conversion system. One of the following software packages (b=
 oth are free) can be used:</p>
 <ul>
@@ -449,7 +449,7 @@ nd documentation of the different software solutions.</p>
 <h2 id=3D"Requirementsfordoinganormalinstallation-Limitationonsomefilesyste=
 mswhenstoringlargenumberofcontentfiles">Limitation on some file systems whe=
 n storing large number of content files</h2>
-<p>eZ Publish stores all binary content (e.g. images, PDFs etc) on disc in =
+<p>Exponential stores all binary content (e.g. images, PDFs etc) on disc in =
 <code>var/storage</code> using a similar folder structure to the content tr=
 ee, creating one folder for each object. In most file systems used under Li=
 nux (especially ext2 + ext3) there is a hard limit of 32.000 to the maximum=
@@ -465,15 +465,15 @@ split your content tree so that you don't have more than 32k content files =
 <li>ReiserFS: roughly 1.2 million</li>
 <li>ZFS: 2^48 (a really big number: 281474976710656)!</li>
 </ul>
-<p>Note that those filesystems might not be fully supported by eZ Publish, =
+<p>Note that those filesystems might not be fully supported by Exponential, =
 please check out the <a href=3D"/display/EZP51/Requirements">requirements p=
 age</a> for details.</p>
-<h2 id=3D"Requirementsfordoinganormalinstallation-eZPublishonNFSfilesystems=
-">eZ Publish on NFS file systems</h2>
-<p>Please be aware that it's not advisable to run eZ Publish on NFS file sy=
+<h2 id=3D"Requirementsfordoinganormalinstallation-ExponentialonNFSfilesystems=
+">Exponential on NFS file systems</h2>
+<p>Please be aware that it's not advisable to run Exponential on NFS file sy=
 stems as you may experience issues. The cause of the issues may be performa=
 nce, as NFS will slow down on heavy network traffic, slow access to files, =
-or file access concurrency regarding file lock. Also, eZ Publish currently =
+or file access concurrency regarding file lock. Also, Exponential currently =
 uses the&nbsp;<a href=3D"http://php.net/manual/en/function.flock.php" title=
 =3D"flock() PHP function" class=3D"external-link" rel=3D"nofollow">flock()<=
 /a>&nbsp;PHP function, which is not considered stable for NFS shares.</p>

@@ -215,7 +215,7 @@ d of the content */
         <p>In order to use eZ Marketing Automation you need the following:<=
 /p>
 <ul>
-<li>eZ Publish 5.0 or later version.</li>
+<li>Exponential 5.0 or later version.</li>
 <li>PECL HTTP extension ( <a href=3D"http://pecl.php.net/package/pecl_http"=
  class=3D"external-link" rel=3D"nofollow">http://pecl.php.net/package/pecl_=
 http</a> )</li>

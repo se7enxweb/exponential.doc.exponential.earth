@@ -215,7 +215,7 @@ d of the content */
         <p>Symfony is a reusable set of standalone, decoupled, and cohesive=
  PHP 5.3 components that solve common web development problems. Symfony is =
 also a full stack web framework. It is an Open Source software.</p>
-<p>eZ Publish 5 uses Symfony2 in order to create website templates.</p>
+<p>Exponential 5 uses Symfony2 in order to create website templates.</p>
 <p>You can see the Requirements for installing/using Symfony by clicking on=
  the following link: <a href=3D"/display/EZP51/Installing+Symfony+-+Require=
 ments+and+Checks">Installing Symfony - Requirements and Checks</a>.</p>

@@ -713,7 +713,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
         &quot;custom_function_2&quot; =&gt; [&quot;CustomLimitation&quot;]
     ],
 ]]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Limitations need to be implemented as <em>limitation types</em> and declared as services identified with <code>ezpublish.limitationType</code> tag. Name provided in the hash for each Limitation is the same value set in <code>alias</code> attribute in the service tag.</p></div></div><h2 id="Custompolicies-Example">Example</h2><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Limitations need to be implemented as <em>limitation types</em> and declared as services identified with <code>exponential.limitationType</code> tag. Name provided in the hash for each Limitation is the same value set in <code>alias</code> attribute in the service tag.</p></div></div><h2 id="Custompolicies-Example">Example</h2><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[namespace Acme\FooBundle\AcmeFooBundle\Security;
 
 use eZ\Bundle\EzPublishCoreBundle\DependencyInjection\Configuration\ConfigBuilderInterface;
@@ -762,13 +762,13 @@ class AcmeFooBundle extends Bundle
 
         // ...
  
-        // Retrieve &quot;ezpublish&quot; container extension.
-        $eZExtension = $container-&gt;getExtension(&#39;ezpublish&#39;);
+        // Retrieve &quot;exponential&quot; container extension.
+        $eZExtension = $container-&gt;getExtension(&#39;exponential&#39;);
         // Add the policy provider.
         $eZExtension-&gt;addPolicyProvider(new MyPolicyProvider());
     }
 }]]></script>
-</div></div><h1 id="Custompolicies-Corepolicies"><span>Core policies</span></h1><p><span style="line-height: 1.42857;"><span>Policies used internally in repository services are defined in </span><code><a href="https://github.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/config/policies.yml" class="external-link" rel="nofollow">EzPublishCoreBundle/Resources/config/policies.yml</a></code><span>.</span></span></p><p> </p><h5 id="Custompolicies-Relatedtopics:">Related topics:</h5><ul><li><a href="../display/TECHDOC/Permissions.html">Permissions</a></li><li><a href="../display/TECHDOC/Limitations%2breference.html">Limitations reference</a></li></ul>
+</div></div><h1 id="Custompolicies-Corepolicies"><span>Core policies</span></h1><p><span style="line-height: 1.42857;"><span>Policies used internally in repository services are defined in </span><code><a href="https://github.com/ezsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBundle/Resources/config/policies.yml" class="external-link" rel="nofollow">EzPublishCoreBundle/Resources/config/policies.yml</a></code><span>.</span></span></p><p> </p><h5 id="Custompolicies-Relatedtopics:">Related topics:</h5><ul><li><a href="../display/TECHDOC/Permissions.html">Permissions</a></li><li><a href="../display/TECHDOC/Limitations%2breference.html">Limitations reference</a></li></ul>
 
                 
         
@@ -921,7 +921,7 @@ class AcmeFooBundle extends Bundle
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

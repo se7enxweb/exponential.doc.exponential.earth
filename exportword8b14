@@ -253,7 +253,7 @@ dler for Location Search</a>=20
 <p>Search <a href=3D"/display/TECHDOC/Criteria+reference">Criteria</a> and =
 <a href=3D"/display/TECHDOC/Sort+Clauses+reference">Sort Clauses</a> are <c=
 ode>value</code> object classes used for building Search Query, to define f=
-ilter criteria and ordering of the result set. eZ Platform (and eZ Publish =
+ilter criteria and ordering of the result set. eZ Platform (and Exponential =
 Platform 5.x) &nbsp;provides a number of standard Criteria and Sort Clauses=
  that you can use out of the box and that should cover the majority of use =
 cases.</p>
@@ -455,7 +455,7 @@ or =3D null )
  Criteria and Sort Clauses</h2>
 <p>Sometimes you will find that standard <a href=3D"/display/TECHDOC/Criter=
 ia+reference">Criteria</a> and <a href=3D"/display/TECHDOC/Sort+Clauses+ref=
-erence">Sort Clauses</a> provided with eZ Publish are not sufficient for yo=
+erence">Sort Clauses</a> provided with Exponential are not sufficient for yo=
 u needs. Most often this will be the case if you have developed a custom <a=
  href=3D"/pages/viewpage.action?pageId=3D23528556">FieldType</a> using exte=
 rnal storage, which therefore can not be searched using standard Field Crit=
@@ -528,17 +528,17 @@ gister it and handle your Criterion / Search Clause when it is given as a p=
 arameter to one of the Search Service methods.</p>
 <p>Available tags for Criterion handlers in Legacy Storage Engine are:</p>
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.co=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.co=
 ntent</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.criterion_handler.lo=
+<li><code>exponential.<span>search</span>.legacy.gateway.criterion_handler.lo=
 cation</code></li>
 </ul>
 <p>Available tags for Sort Clause handlers in Legacy Storage Engine are:</p=
 >
 <ul>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 content</code></li>
-<li><code>ezpublish.<span>search</span>.legacy.gateway.sort_clause_handler.=
+<li><code>exponential.<span>search</span>.legacy.gateway.sort_clause_handler.=
 location</code></li>
 </ul>
 <div class=3D"confluence-information-macro confluence-information-macro-inf=
@@ -563,15 +563,15 @@ tentId Criterion handler, common for both Content and Location Search</h3>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
 e:12px;">services:
-  &nbsp; ezpublish.search.legacy.gateway.criterion_handler.common.content_i=
+  &nbsp; exponential.search.legacy.gateway.criterion_handler.common.content_i=
 d:
         class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\Criteri=
 onHandler\ContentId
-        arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+        arguments: [@exponential.api.storage_engine.legacy.dbhandler]
         tags:
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.conten=
+          - {name: exponential.search.legacy.gateway.criterion_handler.conten=
 t}
-          - {name: ezpublish.search.legacy.gateway.criterion_handler.locati=
+          - {name: exponential.search.legacy.gateway.criterion_handler.locati=
 on}</pre>=20
 </div>
 </div>
@@ -585,13 +585,13 @@ or Location Search</h3>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish.search.legacy.gateway.sort_clause_handler.location.depth=
+e:12px;">exponential.search.legacy.gateway.sort_clause_handler.location.depth=
 :
     class: eZ\Publish\Core\Search\Legacy\Content\Location\Gateway\SortClaus=
 eHandler\Location\Depth
-    arguments: [@ezpublish.api.storage_engine.legacy.dbhandler]
+    arguments: [@exponential.api.storage_engine.legacy.dbhandler]
     tags:
-        - {name: ezpublish.search.legacy.gateway.sort_clause_handler.locati=
+        - {name: exponential.search.legacy.gateway.sort_clause_handler.locati=
 on}</pre>=20
 </div>
 </div>

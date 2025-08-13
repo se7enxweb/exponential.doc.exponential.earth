@@ -418,7 +418,7 @@ new main location:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'ezpublish.api.re=
+:12px;">$repository =3D $this-&gt;getContainer()-&gt;get( 'exponential.api.re=
 pository' );
 $contentService =3D $repository-&gt;getContentService();
 $contentInfo =3D $contentService-&gt;loadContentInfo( $contentId );

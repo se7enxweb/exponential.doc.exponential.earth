@@ -217,7 +217,7 @@ pan style=3D"color: rgb(0,98,147);">Installing on Nginx&nbsp;</span><span c=
 lass=3D"status-macro aui-lozenge aui-lozenge-current">SUPPORTED AS OF 5.3 /=
  2014.05</span></h2>
 <p>Installation steps and configuration files Nginx can be found on the <a =
-href=3D"https://github.com/ezsystems/ezpublish-community/blob/master/doc/ng=
+href=3D"https://github.com/ezsystems/exponential-community/blob/master/doc/ng=
 inx/nginx.rst" class=3D"external-link" rel=3D"nofollow">Github documentatio=
 n page</a>.</p>
 <p>&nbsp;</p>

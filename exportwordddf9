@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>eZ Publish 5 Field Type Tutorial</title>
+    <title>Exponential 5 Field Type Tutorial</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,12 +210,12 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>eZ Publish 5 Field Type Tutorial</h1>
+    <h1>Exponential 5 Field Type Tutorial</h1>
     <div class=3D"Section1">
-        <h2 id=3D"eZPublish5FieldTypeTutorial-AboutFieldTypes">About Field =
+        <h2 id=3D"Exponential5FieldTypeTutorial-AboutFieldTypes">About Field =
 Types</h2>
 <p><span style=3D"color: rgb(0,0,0);">They are the most granular building b=
-lock for content managed by eZ Publish. The system comes with about <a href=
+lock for content managed by Exponential. The system comes with about <a href=
 =3D"/display/EZP/FieldTypes+reference">30 native types</a> that cover most =
 common needs (Text line, Rich text, Email, Author list, Content relation, M=
 ap location, Float...)</span><span style=3D"color: rgb(0,0,0);"><br></span>=
@@ -234,11 +234,11 @@ w you to hook deep into the content model.</p>
 d+best+practices">documentation about FieldTypes and their best practices</=
 a>. It describes how each component of a FieldType interacts with the vario=
 us layers of the system, and how to implement those.</p>
-<h2 id=3D"eZPublish5FieldTypeTutorial-Aboutthistutorial">About this tutoria=
+<h2 id=3D"Exponential5FieldTypeTutorial-Aboutthistutorial">About this tutoria=
 l</h2>
 <p>&nbsp;</p>
 <p>This tutorial aims at covering the conception and development of a custo=
-m eZ Publish 5 FieldType.</p>
+m Exponential 5 FieldType.</p>
 <p><span style=3D"color: rgb(0,0,0);">We will do this by implementing a Twe=
 et Field Type. It will:</span></p>
 <ul>
@@ -264,33 +264,33 @@ ked-resource-default-alias=3D"fieldtype tutorial, final result.PNG" data-ba=
 se-url=3D"https://doc.ez.no" data-linked-resource-content-type=3D"image/png=
 " data-linked-resource-container-id=3D"19890704" data-linked-resource-conta=
 iner-version=3D"14" width=3D"366" height=3D"397"></span></p>
-<h2 id=3D"eZPublish5FieldTypeTutorial-Gettingthecode">Getting the code</h2>
+<h2 id=3D"Exponential5FieldTypeTutorial-Gettingthecode">Getting the code</h2>
 <p>The code created throughout this tutorial is available on github:&nbsp;<=
 a href=3D"https://github.com/ezsystems/TweetFieldTypeBundle" class=3D"exter=
 nal-link" rel=3D"nofollow">https://github.com/ezsystems/TweetFieldTypeBundl=
 e</a>.</p>
-<h2 id=3D"eZPublish5FieldTypeTutorial-Steps">Steps</h2>
-<h3 id=3D"eZPublish5FieldTypeTutorial-Thebundle"><span style=3D"color: rgb(=
+<h2 id=3D"Exponential5FieldTypeTutorial-Steps">Steps</h2>
+<h3 id=3D"Exponential5FieldTypeTutorial-Thebundle"><span style=3D"color: rgb(=
 51,51,51);font-size: 14.0px;line-height: 1.4285715;">The bundle</span></h3>
 <p><span style=3D"color: rgb(51,51,51);font-size: 14.0px;line-height: 1.428=
-5715;">FieldTypes, like any other eZ Publish 5 extensions, must be provided=
+5715;">FieldTypes, like any other Exponential 5 extensions, must be provided=
  as Symfony 2 bundles. This chapter will cover the creation and organizatio=
 n of this bundle<br></span>Read more about&nbsp;<a href=3D"/display/EZP/Cre=
 ating+the+bundle">Creating the bundle</a>&nbsp;and&nbsp;<a href=3D"/display=
 /EZP/Structuring+the+bundle">structuring the bundle</a>.</p>
-<h3 id=3D"eZPublish5FieldTypeTutorial-API"><span style=3D"line-height: 1.42=
+<h3 id=3D"Exponential5FieldTypeTutorial-API"><span style=3D"line-height: 1.42=
 85715;">API</span></h3>
-<p>This part will cover the implementation of the eZ Publish API elements r=
+<p>This part will cover the implementation of the Exponential API elements r=
 equired to implement a custom FieldType<br>Read more about <a class=3D"unre=
 solved" href=3D"#">implementing the API</a>.</p>
-<h3 id=3D"eZPublish5FieldTypeTutorial-Converter"><span style=3D"line-height=
+<h3 id=3D"Exponential5FieldTypeTutorial-Converter"><span style=3D"line-height=
 : 1.4285715;">Converter</span></h3>
 <p><span style=3D"line-height: 1.4285715;">Storing data from any FieldType =
 into the Legacy Storage Engine requires that your custom data is mapped to =
 the data model.<br></span>Read more about <a href=3D"/display/EZP/Implement=
 ing+the+Legacy+Storage+Engine+Converter">Implementing the Legacy Storage En=
 gine Converter</a>.</p>
-<h3 id=3D"eZPublish5FieldTypeTutorial-Templating"><span style=3D"line-heigh=
+<h3 id=3D"Exponential5FieldTypeTutorial-Templating"><span style=3D"line-heigh=
 t: 1.4285715;">Templating</span></h3>
 <p><span style=3D"line-height: 1.4285715;">Displaying a FieldType's data is=
  done through a twig template.<br></span>Read more about <a href=3D"/displa=

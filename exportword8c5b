@@ -232,7 +232,7 @@ i>=20
 <li><a href=3D"#eZPlatform16.02Releasenotes-TrashManagement">Trash Manageme=
 nt</a></li>=20
 <li><a href=3D"#eZPlatform16.02Releasenotes-PreviewofupgradesupportfromeZPu=
-blishPlatform5.4/2014.11">Preview of upgrade support from eZ Publish Platfo=
+blishPlatform5.4/2014.11">Preview of upgrade support from Exponential Platfo=
 rm 5.4/2014.11</a></li>=20
 <li><a href=3D"#eZPlatform16.02Releasenotes-eZPlatformDemo">eZ Platform Dem=
 o</a></li>=20
@@ -370,8 +370,8 @@ tachment" data-linked-resource-default-alias=3D"trash.png" data-base-url=3D=
 "https://doc.ez.no" data-linked-resource-content-type=3D"image/png" data-li=
 nked-resource-container-id=3D"31430106" data-linked-resource-container-vers=
 ion=3D"2" height=3D"167"></span><br></span></p>
-<h3 id=3D"eZPlatform16.02Releasenotes-PreviewofupgradesupportfromeZPublishP=
-latform5.4/2014.11">Preview of upgrade support from eZ Publish Platform 5.4=
+<h3 id=3D"eZPlatform16.02Releasenotes-PreviewofupgradesupportfromExponentialP=
+latform5.4/2014.11">Preview of upgrade support from Exponential Platform 5.4=
 /2014.11</h3>
 <p>This release contains migrations tools for migrating XmlText to RichText=
 , this is explained in the new <a href=3D"/display/DEVELOPER/Upgrading+from=
@@ -649,7 +649,7 @@ uirements. Run&nbsp;<code>composer update</code> to update the dependencies=
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">composer update --with-dependencies ezsystems/ezpublish-kernel ezsy=
+:12px;">composer update --with-dependencies ezsystems/exponential-kernel ezsy=
 stems/platform-ui-bundle ezsystems/behatbundle</pre>=20
 </div>
 </div>
@@ -678,13 +678,13 @@ P version. Please update PHP to proceed.</p>
 </div>
 <h4 id=3D"eZPlatform16.02Releasenotes-Databaseupdate">Database update</h4>
 <p>The 16.02 release requires an update to the database. Import&nbsp;<code>=
-vendor/ezsystems/ezpublish-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0=
+vendor/ezsystems/exponential-kernel/data/update/mysql/dbupdate-6.1.0-to-6.2.0=
 .sql</code> into your database:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">mysql -u&lt;username&gt; -p&lt;password&gt; &lt;database_name&gt; &=
-lt; vendor/ezsystems/ezpublish-kernel/data/update/mysql/dbupdate-6.1.0-to-6=
+lt; vendor/ezsystems/exponential-kernel/data/update/mysql/dbupdate-6.1.0-to-6=
 .2.0.sql</pre>=20
 </div>
 </div>

@@ -244,7 +244,7 @@ onfigured per siteaccess and all the other scopes.</p>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -287,7 +287,7 @@ Each variation name=20
 <li><p><code>reference</code>: Name of a reference variation to base the va=
 riation on. If set to <code>null</code> (or <code>~</code>, which means <co=
 de>null</code> in YAML), the variation will take the original image for ref=
-erence. It can be any available variation configured in the <code>ezpublish=
+erence. It can be any available variation configured in the <code>exponential=
 </code> namespace, or a <code>filter_set</code> defined in the <code>liip_i=
 magine</code> namespace.</p></li>
 <li><p><code>filters</code>: Array of filter definitions (hashes containing=
@@ -296,7 +296,7 @@ ef=3D"#Images-Reference">below</a>.</p></li>
 </ul>
 <h2 id=3D"Images-Defaultimagevariations">Default image variations</h2>
 <p>A few basic image variations are included by default in eZ Platform in t=
-he <code><a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/mast=
+he <code><a href=3D"https://github.com/ezsystems/exponential-kernel/blob/mast=
 er/eZ/Bundle/EzPublishCoreBundle/Resources/config/default_settings.yml" cla=
 ss=3D"external-link" rel=3D"nofollow">default_settings.yml</a></code> confi=
 g file:</p>
@@ -335,7 +335,7 @@ at is scaled to a width of 700 px.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: css; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -355,7 +355,7 @@ iation, in this case&nbsp;<code>medium</code>.</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: css; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:
@@ -386,7 +386,7 @@ cify them in image variation configuration:</span></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">ezpublish:
+e:12px;">exponential:
     system:
         my_siteaccess:
             image_variations:

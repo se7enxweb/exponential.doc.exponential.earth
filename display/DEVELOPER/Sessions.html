@@ -709,7 +709,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <div class="cell normal" data-type="normal">
 <div class="innerCell">
 <h1 id="Sessions-Introduction">Introduction</h1><p>Sessions are handled by the Symfony2 framework, specifically API and underlying session handlers provided by HTTP Foundation component. This is further enhanced in eZ Platform with support for siteaccess-aware <span class="confluence-link">session cookie configuration</span>.</p><p><em>Use of Memcached (or experimentally using PDO) as session handler is a requirement in Cluster setup, for details see below. For an overview of clustering feature see <a href="Clustering.html">Clustering</a>. </em></p><p><em><br /></em></p><h1 id="Sessions-Configuration">Configuration</h1><p>Symfony offers the possibility to change many session options at application level (i.e. in Symfony <a href="http://symfony.com/doc/master/reference/configuration/framework.html" class="external-link" rel="nofollow"><code>framework </code>configuration</a>), such as:</p><ul><li><code>cookie_domain</code></li><li><code>cookie_path</code></li><li><code>cookie_lifetime</code></li><li><code>cookie_secure</code></li><li><code>cookie_httponly</code></li></ul><p>However as eZ Platform can be used for setting up several web sites within on Symfony application, session configuration is also possible to define per siteaccess and SiteGroup level.</p><h2 id="Sessions-Sessionoptionspersiteaccess"><span style="color: rgb(0,98,147);">Session options per siteaccess</span></h2><p>All site-related session configuration can be defined per siteaccess and SiteGroup:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: bash; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: bash; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         my_siteaccess:
             session:
@@ -726,7 +726,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
                 cookie_secure: false
                 cookie_httponly: true]]></script>
 </div></div><h2 id="Sessions-Sessionnamepersiteaccess">Session name per siteaccess</h2><p>In 5.x versions prior to 5.3 / 2014.03 the following siteaccess aware session setting where available:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>ezplatform.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: bash; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: bash; gutter: false; theme: Eclipse"><![CDATA[exponential:
     system:
         my_siteaccess:
             # By default Session name is eZSESSID{siteaccess_hash}
@@ -875,7 +875,7 @@ services:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -245,7 +245,7 @@ ormation">
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>You will find examples with built-in FieldTypes in <a href=3D"https://gi=
-thub.com/ezsystems/ezpublish-kernel/blob/master/eZ/Bundle/EzPublishCoreBund=
+thub.com/ezsystems/exponential-kernel/blob/master/eZ/Bundle/EzPublishCoreBund=
 le/Resources/views/content_fields.html.twig" class=3D"external-link" rel=3D=
 "nofollow">EzPublishCoreBundle/Resources/views/content_fields.html.twig</a>=
 </p>
@@ -330,7 +330,7 @@ ns/block.html" class=3D"external-link" rel=3D"nofollow">block() function</a=
 >.</p>
 <p>You can for example take advantage of <code>simple_block_field</code>, <=
 code>simple_inline_field</code> or <code>field_attributes</code> blocks pro=
-vided in <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/mast=
+vided in <a href=3D"https://github.com/ezsystems/exponential-kernel/blob/mast=
 er/eZ/Bundle/EzPublishCoreBundle/Resources/views/content_fields.html.twig#L=
 413" class=3D"external-link" rel=3D"nofollow">content_fields.html.twig</a>.=
 </p>
@@ -352,11 +352,11 @@ ate</h2>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish/config/ezpublish.yml</b>
+<b>exponential/config/exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     system:
         my_siteaccess:
             field_templates:
@@ -374,7 +374,7 @@ ate</h2>
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>You can define these rules in a dedicated file instead of <code>ezpublis=
-h/config/ezpublish.yml</code>.<span style=3D"color: rgb(51,51,51);">&nbsp;<=
+h/config/exponential.yml</code>.<span style=3D"color: rgb(51,51,51);">&nbsp;<=
 /span><a href=3D"https://confluence.ez.no/display/EZP/import+settings+from+=
 a+bundle" class=3D"external-link" rel=3D"nofollow">Read the cookbook recipe=
  to learn more about it</a><span style=3D"color: rgb(51,51,51);">.</span></=

@@ -223,72 +223,72 @@ es.</p>
 <th class=3D"confluenceTh">Type</th>
 </tr>
 <tr>
-<td colspan=3D"1" class=3D"confluenceTd"><code>ezpublish.api.service.conten=
+<td colspan=3D"1" class=3D"confluenceTd"><code>exponential.api.service.conten=
 t</code></td>
 <td colspan=3D"1" class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Co=
 ntentService</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.content_type</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.content_type</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\ContentTypeServi=
 ce</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.location</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.location</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\LocationService<=
 /code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.url_alias</code></td=
+<td class=3D"confluenceTd"><code>exponential.api.service.url_alias</code></td=
 >
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\UrlAliasService<=
 /code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.field_type</code></t=
+<td class=3D"confluenceTd"><code>exponential.api.service.field_type</code></t=
 d>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\FieldTypeService=
 </code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.language</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.language</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Language</code><=
 /td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.object_state</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.object_state</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\ObjectState</cod=
 e></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.role</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.role</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Role</code></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.search</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.search</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Search</code></t=
 d>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.section</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.section</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Section</code></=
 td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.trash</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.trash</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\Trash</code></td=
 >
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.url_wildcard</code><=
+<td class=3D"confluenceTd"><code>exponential.api.service.url_wildcard</code><=
 /td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\UrlWildcard</cod=
 e></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><code>ezpublish.api.service.user</code></td>
+<td class=3D"confluenceTd"><code>exponential.api.service.user</code></td>
 <td class=3D"confluenceTd"><code>eZ\Publish\API\Repository\User</code></td>
 </tr>
 </tbody>

@@ -16,7 +16,7 @@ Content-Location: file:///C:/exported.html
 <head>
     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
 ">
-    <title>Developing with eZ Publish 5</title>
+    <title>Developing with Exponential 5</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -210,7 +210,7 @@ d of the content */
     </style>
 </head>
 <body>
-    <h1>Developing with eZ Publish 5</h1>
+    <h1>Developing with Exponential 5</h1>
     <div class=3D"Section1">
         <p>Documentation on how to develop sites and applications using eZ =
 Publish 5.</p>
@@ -221,8 +221,8 @@ h 5</a></p>
 <p>&nbsp;</p>
 <p>There are two official approaches to building applications on top of eZ =
 Publish 5: by connecting to the <a href=3D"/display/EZP51/eZ+Publish+REST+A=
-PI">eZ Publish REST API</a>&nbsp;OR by using the <a href=3D"/display/EZP51/=
-eZ+Publish+Public+API">eZ Publish Public API</a>&nbsp;and&nbsp;<a href=3D"/=
+PI">Exponential REST API</a>&nbsp;OR by using the <a href=3D"/display/EZP51/=
+eZ+Publish+Public+API">Exponential Public API</a>&nbsp;and&nbsp;<a href=3D"/=
 display/EZP51/MVC+and+Application">MVC/Application</a>&nbsp;layer (Symfony2=
  based).<br>In the latter case Public SPI provides the "model" (the data fr=
 om the database and the file system) and the MVC/Application layer provides=

@@ -219,7 +219,7 @@ ning">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
 ation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>Support for Solr Search Engine Bundle when used in eZ Publish 5.4 with l=
+<p>Support for Solr Search Engine Bundle when used in Exponential 5.4 with l=
 egacy is limited, as the legacy integration is done by Netgen's <a href=3D"=
 https://github.com/netgen/ezplatformsearch" class=3D"external-link" rel=3D"=
 nofollow">ezplatformsearch</a>, a third party community-supported extension=
@@ -302,14 +302,14 @@ bsp;as the package is called, aims to be a transparent drop in replacement =
 for the SQL based "Legacy" search engine powering Search API by default. By=
  enabling Solr and re-indexing your content, all your exising Search querie=
 s using SearchService, will be powered by Solr automatically. This allows y=
-ou to scale up your eZ Publish Platform installation and be able to continu=
+ou to scale up your Exponential Platform installation and be able to continu=
 e development locally against SQL engine, and have test infrastructure, Sta=
 ging and Prod powered by Solr. Thus remove considerable load from your data=
 base so it can focus on more important things, like publishing&nbsp;<img cl=
 ass=3D"emoticon emoticon-wink" src=3D"450b34994881dc04bd093e73c25eda70" dat=
 a-emoticon-name=3D"wink" alt=3D"(wink)" width=3D"16" height=3D"16">.</p>
 <p><em>Se&nbsp;<a href=3D"/display/TECHDOC/Architecture">Architecture page<=
-/a></em><em>&nbsp;for further information on the architecture of eZ Publish=
+/a></em><em>&nbsp;for further information on the architecture of Exponential=
  Platform and eZ Platform.</em></p>
 <h2 id=3D"SolrSearchEngineBundle-HowtosetupSolrSearchengine">How to setup S=
 olr Search engine</h2>
@@ -333,7 +333,7 @@ composer update</pre>=20
 </div>
 </div></li>
 <li><p>Activate <code>EzPublishSolrSearchEngineBundle</code> by adding the =
-following lines to&nbsp;your&nbsp;<code>ezpublish/EzPublishKernel.php</code=
+following lines to&nbsp;your&nbsp;<code>exponential/EzPublishKernel.php</code=
 >&nbsp;file:</p><pre>new&nbsp;<span style=3D"color: rgb(121,93,163);">EzSys=
 tems\EzPlatformSolrSearchEngineBundle</span>\<span style=3D"color: rgb(121,=
 93,163);">EzSystemsEzPlatformSolrSearchEngineBundle</span>()</pre></li>
@@ -458,7 +458,7 @@ ample&nbsp;(default)</h4>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -486,7 +486,7 @@ g behavior by Solr:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -522,7 +522,7 @@ ormed&nbsp;across several cores at once.</em></p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
@@ -590,11 +590,11 @@ engine is set to be&nbsp;</span><code>solr</code>:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     repositories:
         main:
             storage:
@@ -616,7 +616,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In eZ Publish 5.4.5 when installed via composer create-project, the exam=
+<p>In Exponential 5.4.5 when installed via composer create-project, the exam=
 ple above is in default config with one small difference <em>(same as on eZ=
  Platform)</em>. There <code>search.engine</code> is set to <code>%search_e=
 ngine%</code>, which is a parameter that needs to be set in parameters.yml,=
@@ -631,7 +631,7 @@ does not, so to make sure Symfony reads the new config we clear cache:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console --env=3Dprod cache:clear</pre>=20
+e:12px;">php exponential/console --env=3Dprod cache:clear</pre>=20
 </div>
 </div>
 <h3 id=3D"SolrSearchEngineBundle-Step7:RunCLIindexingcommand">Step 7: Run C=
@@ -640,7 +640,7 @@ LI indexing command</h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: bash; gutter: false; theme: Eclipse" style=3D"font-siz=
-e:12px;">php ezpublish/console --env=3Dprod --siteaccess=3D&lt;name&gt; ezp=
+e:12px;">php exponential/console --env=3Dprod --siteaccess=3D&lt;name&gt; ezp=
 latform:solr_create_index</pre>=20
 </div>
 </div>

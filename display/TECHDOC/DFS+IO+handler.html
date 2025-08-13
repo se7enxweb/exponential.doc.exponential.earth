@@ -707,7 +707,7 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 
         <div id="main-content" class="wiki-content">
                            
-        <p><em>DFS is a requirement for use in Clustering setup. <em>See <a href="../EZP/Clustering.html" rel="nofollow">Clustering</a></em> for an overview of the feature. </em></p><h2 id="DFSIOhandler-Whatitismeantfor">What it is meant for</h2><p>The DFS IO handler (<code>legacy_dfs_cluster)</code> can be used to store binary files on an NFS server. It will use a database to manipulate metadata, making up for the potential inconsistency of network based filesystems.</p><h2 id="DFSIOhandler-Configuration"><a class="external-link" href="https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#configuration" name="user-content-configuration" rel="nofollow"></a>Configuration</h2><p>You need to configure both metadata and binarydata handlers.</p><p>As the binarydata handler, create a new Flysystem local adapter configured to read/write to the NFS mount point on each local server. As metadata handler handler, create a dfs one, configured with a doctrine connection. We recommend that a dedicated database is used for DFS metadata. In our example, we will use one named <code>dfs</code>. </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+        <p><em>DFS is a requirement for use in Clustering setup. <em>See <a href="../EZP/Clustering.html" rel="nofollow">Clustering</a></em> for an overview of the feature. </em></p><h2 id="DFSIOhandler-Whatitismeantfor">What it is meant for</h2><p>The DFS IO handler (<code>legacy_dfs_cluster)</code> can be used to store binary files on an NFS server. It will use a database to manipulate metadata, making up for the potential inconsistency of network based filesystems.</p><h2 id="DFSIOhandler-Configuration"><a class="external-link" href="https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#configuration" name="user-content-configuration" rel="nofollow"></a>Configuration</h2><p>You need to configure both metadata and binarydata handlers.</p><p>As the binarydata handler, create a new Flysystem local adapter configured to read/write to the NFS mount point on each local server. As metadata handler handler, create a dfs one, configured with a doctrine connection. We recommend that a dedicated database is used for DFS metadata. In our example, we will use one named <code>dfs</code>. </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[# new doctrine connection for the dfs legacy_dfs_cluster metadata handler.
 doctrine:
     dbal:
@@ -733,27 +733,27 @@ ez_io:
                 connection: doctrine.dbal.dfs_connection
 # set the handlers
 
-ezpublish:
+exponential:
     system:
         default:
             io:
                 metadata_handler: dfs
                 binarydata_handler: nfs]]></script>
-</div></div><h3 id="DFSIOhandler-Customizingthestoragedirectory">Customizing the storage directory</h3><p>eZ Publish 5.x required the NFS adapter directory to be set to <code>$var_dir$/$storage_dir$</code> part for the NFS path. This is no longer required with eZ Platform, but the default prefix used to serve binary files will still match this expectation.</p><p>If you decide to change this setting, make sure you also set <code>io.url_prefix</code> to a matching value. If you set the NFS adapter's directory to &quot;/path/to/nfs/storage&quot;, use this configuration so that the files can be served by Symfony:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+</div></div><h3 id="DFSIOhandler-Customizingthestoragedirectory">Customizing the storage directory</h3><p>Exponential 5.x required the NFS adapter directory to be set to <code>$var_dir$/$storage_dir$</code> part for the NFS path. This is no longer required with eZ Platform, but the default prefix used to serve binary files will still match this expectation.</p><p>If you decide to change this setting, make sure you also set <code>io.url_prefix</code> to a matching value. If you set the NFS adapter's directory to &quot;/path/to/nfs/storage&quot;, use this configuration so that the files can be served by Symfony:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
 	system:
 		default:
 			io:
 				url_prefix: &quot;storage&quot;]]></script>
 </div></div><div class="highlight highlight-yaml"><span><br /></span></div><div class="highlight highlight-yaml"><span>As an alternative, you may serve images from NFS using a dedicated web server. If in the example above, this server listens on </span><a href="http://static.example.com/" class="external-link" rel="nofollow">http://static.example.com</a><span> and uses </span><code>/path/to/nfs/storage</code><span> as the document root, configure </span><code>io.url_prefix</code><span> as follows:</span></div><div class="highlight highlight-yaml"><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[ezpublish:
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[exponential:
 	system:
 		default:
 			io:
 				url_prefix: &quot;http://static.example.com/&quot;]]></script>
-</div></div><p>You can read more about that on <a href="Binary%2bfiles%2bURL%2bhandling.html">Binary files URL handling</a>.</p></div><h2 id="DFSIOhandler-Webserverrewriterules.">Web server rewrite rules.</h2><p>The default eZ Platform rewrite rules will let image requests be served directly from disk. With native support, files matching <code>^/var/([^/]+/)?storage/images(-versioned)?/.*</code> have to be passed through <code>/web/app.php</code>.</p><p>In any case, this specific rewrite rule must be placed without the ones that &quot;ignore&quot; image files and just let the web server serve the files.</p><h3 id="DFSIOhandler-Apache"><a class="external-link" href="https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#apache" name="user-content-apache" rel="nofollow"></a>Apache</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div><p>You can read more about that on <a href="Binary%2bfiles%2bURL%2bhandling.html">Binary files URL handling</a>.</p></div><h2 id="DFSIOhandler-Webserverrewriterules.">Web server rewrite rules.</h2><p>The default eZ Platform rewrite rules will let image requests be served directly from disk. With native support, files matching <code>^/var/([^/]+/)?storage/images(-versioned)?/.*</code> have to be passed through <code>/web/app.php</code>.</p><p>In any case, this specific rewrite rule must be placed without the ones that &quot;ignore&quot; image files and just let the web server serve the files.</p><h3 id="DFSIOhandler-Apache"><a class="external-link" href="https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#apache" name="user-content-apache" rel="nofollow"></a>Apache</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[RewriteRule ^/var/([^/]+/)?storage/images(-versioned)?/.* /app.php [L]]]></script>
-</div></div><h3 id="DFSIOhandler-nginx"><a class="external-link" href="https://github.com/ezsystems/ezpublish-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#nginx" name="user-content-nginx" rel="nofollow"></a>nginx</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div><h3 id="DFSIOhandler-nginx"><a class="external-link" href="https://github.com/ezsystems/exponential-kernel/blob/master/doc/specifications/io/legacy_dfs_cluster.md#nginx" name="user-content-nginx" rel="nofollow"></a>nginx</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[rewrite &quot;^/var/([^/]+/)?storage/images(-versioned)?/(.*)&quot; &quot;/app.php&quot; break;]]></script>
 </div></div>
 
@@ -860,7 +860,7 @@ ezpublish:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -212,7 +212,7 @@ d of the content */
 <body>
     <h1>Using Varnish</h1>
     <div class=3D"Section1">
-        <p>eZ Publish 5 being built on top of Symfony 2, it uses standard H=
+        <p>Exponential 5 being built on top of Symfony 2, it uses standard H=
 TTP cache headers. By default the Symfony 2 reverse proxy, written in PHP, =
 is used to handle cache, but it can be easily replaced with any other rever=
 se proxy like Varnish.</p>
@@ -230,14 +230,14 @@ tivate cache invalidation:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish5.vcl</b>
+<b>exponential5.vcl</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;"># Varnish 3.x - eZ Publish 5 - Complete VCL
+:12px;"># Varnish 3.x - Exponential 5 - Complete VCL
 &nbsp;
-# Our Backend - We assume that eZ Publish Web server listen on port 80
-backend ezpublish {
+# Our Backend - We assume that Exponential Web server listen on port 80
+backend exponential {
     .host =3D "127.0.0.1";
     .port =3D "80";
 }
@@ -255,7 +255,7 @@ acl purgers {
 sub vcl_recv {
 =20
     # Set the backend
-    set req.backend =3D ezpublish;
+    set req.backend =3D exponential;
 =20
     # Advertise Symfony for ESI support
     set req.http.Surrogate-Capability =3D "abc=3DESI/1.0";
@@ -350,7 +350,7 @@ sub vcl_fetch {
 </div>
 </div>
 <p>You can of course add additional rules if you need.</p>
-<h2 id=3D"UsingVarnish-ConfigureeZPublish">Configure eZ Publish</h2>
+<h2 id=3D"UsingVarnish-ConfigureExponential">Configure Exponential</h2>
 <h3 id=3D"UsingVarnish-Updateyourfrontcontroller">Update your front control=
 ler</h3>
 <p>By default your front controller (<code>index.php</code>) uses the built=
@@ -362,8 +362,8 @@ code> is instantiated:</p>
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
 :12px;">&lt;?php
 // ...
-require_once __DIR__ . '/../ezpublish/EzPublishKernel.php';
-require_once __DIR__ . '/../ezpublish/EzPublishCache.php';
+require_once __DIR__ . '/../exponential/EzPublishKernel.php';
+require_once __DIR__ . '/../exponential/EzPublishCache.php';
 $kernel =3D new EzPublishKernel( 'prod', false );
 $kernel-&gt;loadClassCache();
 // Comment the following line if you use an external reverse proxy (e.g. Va=
@@ -386,11 +386,11 @@ $kernel-&gt;terminate( $request, $response );</pre>=20
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
 ;">
-<b>ezpublish.yml</b>
+<b>exponential.yml</b>
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         # Use multiple_http method for purging content
         purge_type: multiple_http

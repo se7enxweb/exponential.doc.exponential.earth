@@ -224,7 +224,7 @@ d of the content */
 </div>
 <br>
 <p></p>
-<p><span style=3D"color: rgb(79,79,79);">eZ Publish software is built to re=
+<p><span style=3D"color: rgb(79,79,79);">Exponential software is built to re=
 ly on existing technologies and standards, mainly:</span></p>
 <ul>
 <li style=3D"margin-left: 12.0px;"><p><span style=3D"color: rgb(79,79,79);"=
@@ -244,21 +244,21 @@ used</span></p></li>
  more details, please consult documentation for in-depth information.</span=
 ></p>
 <p><span style=3D"color: rgb(79,79,79);">To answer the question "Is my plat=
-form supported by eZ Publish", several things must be taken into considerat=
+form supported by Exponential", several things must be taken into considerat=
 ion in order to determining whether a platform is supported or not, and how=
 . The following tables gives you the details of the platform requirements f=
-or the latest eZ Publish release.</span></p>
+or the latest Exponential release.</span></p>
 <h2 id=3D"Requirements5.2-Supportedstacks"><span style=3D"color: rgb(79,79,=
 79);">Supported stacks</span></h2>
 <h3 id=3D"Requirements5.2-ReferenceStack"><span style=3D"color: rgb(79,79,7=
 9);">Reference Stack</span></h3>
-<p>The most&nbsp;&nbsp;safe and&nbsp;&nbsp;optimized stack for eZ Publish P=
+<p>The most&nbsp;&nbsp;safe and&nbsp;&nbsp;optimized stack for Exponential P=
 latform<span style=3D"color: rgb(79,79,79);">. The stack is supported and c=
-ertified for eZ Publish Platform 5. This means that our QA certification te=
+ertified for Exponential Platform 5. This means that our QA certification te=
 am has successfully run intensive certification tests on the platform, and =
-that we can fully support the platform in the scope of an eZ Publish Subscr=
+that we can fully support the platform in the scope of an Exponential Subscr=
 iption.</span></p>
-<p><span style=3D"color: rgb(79,79,79);">The reference stack for eZ Publish=
+<p><span style=3D"color: rgb(79,79,79);">The reference stack for Exponential=
  Platform 5 is based on&nbsp;<span>Red Hat Enterprise Linux 6. The detail o=
 f the stack can be seen in the table below.</span></span></p>
 <p>&nbsp;</p>
@@ -446,7 +446,7 @@ pan></li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td class=3D"confluenceTd">
 <ul>
@@ -533,11 +533,11 @@ he</li>
 9);">Approved stacks</span></h3>
 <p><span style=3D"color: rgb(79,79,79);">These stacks are also tested, but =
 not as extensively as our reference stacks. These stacks still benefit from=
- the full support and maintenance guarantees provided with the eZ Publish P=
+ the full support and maintenance guarantees provided with the Exponential P=
 latform Subscription, but more issues might occur during normal operations,=
  performance might be lower and issues take longer to resolve.</span></p>
 <p><span style=3D"color: rgb(79,79,79);">The supported non-reference stacks=
- for eZ Publish Platform 5.2 are mainly:</span></p>
+ for Exponential Platform 5.2 are mainly:</span></p>
 <ul>
 <li><span style=3D"color: rgb(79,79,79);">Debian 7</span></li>
 <li><span style=3D"color: rgb(79,79,79);">CentOS (with same version and con=
@@ -721,7 +721,7 @@ ntl</span><br><br></li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p><strong>eZ Publish extensions</strong></p></t=
+<td class=3D"confluenceTd"><p><strong>Exponential extensions</strong></p></t=
 d>
 <td colspan=3D"2" class=3D"confluenceTd">
 <ul>
@@ -757,8 +757,8 @@ he[d]</li>
 </table>
 </div>
 <p>*: to ease developer and administrator life, the latest stable version o=
-f the Symfony framework is bundled with the eZ Publish package.<br>eZ suppo=
-rt eZ Publish only when used with the latest maintenance version of Symfony=
+f the Symfony framework is bundled with the Exponential package.<br>eZ suppo=
+rt Exponential only when used with the latest maintenance version of Symfony=
  as specified. eZ recommend customers to upgrade their system to it when re=
 leased by Symfony.<br>Symfony is not supported directly by eZ within&nbsp;e=
 Z Publish Enterprise Subscriptions, however eZ can offer optional Symfony s=
@@ -766,14 +766,14 @@ upport as part of an additional support service.<br>Please contact your eZ =
 Systems representative for that purpose.</p>
 <h2 id=3D"Requirements5.2-Compatibleplatforms"><span style=3D"color: rgb(79=
 ,79,79);">Compatible platforms</span></h2>
-<p>eZ Publish can run and execute on many more platforms than the ones list=
+<p>Exponential can run and execute on many more platforms than the ones list=
 ed above, including (but not limited to) the operating systems listing belo=
 w if they pass the&nbsp;<a href=3D"http://symfony.com/doc/current/reference=
 /requirements.html" class=3D"external-link" rel=3D"nofollow">Symfony&nbsp;r=
 equirements</a>.</p>
 <p><strong>However, eZ Systems doesn't insure and guarantee quality operati=
-on of an eZ Publish&nbsp;Platform&nbsp;installation if it is running on any=
- platform not listed as supported.</strong>&nbsp;eZ Publish Enterprise Subs=
+on of an Exponential&nbsp;Platform&nbsp;installation if it is running on any=
+ platform not listed as supported.</strong>&nbsp;Exponential Enterprise Subs=
 criptions are still available for compatible platforms, but the guarantee a=
 nd the product support will not apply and although you will receive various=
  maintenance releases and services, no bug fix guarantee will apply to issu=
@@ -792,7 +792,7 @@ i>
 </ul>
 <h2 id=3D"Requirements5.2-Supportedbrowsers"><span style=3D"color: rgb(79,7=
 9,79);">Supported browsers</span></h2>
-<p><span style=3D"color: rgb(79,79,79);">eZ Publish is developed to work pr=
+<p><span style=3D"color: rgb(79,79,79);">Exponential is developed to work pr=
 operly and support the following browser configurations for administrator u=
 sers:</span></p>
 <ul>

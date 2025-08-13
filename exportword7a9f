@@ -415,7 +415,7 @@ om repository policies support</h2>
 <div class=3D"cell normal" data-type=3D"normal">=20
 <div class=3D"innerCell">=20
 <p>Bundles can now declare custom modules, policies and limitations.</p>
-<p>Links: <a href=3D"https://github.com/ezsystems/ezpublish-kernel/blob/mas=
+<p>Links: <a href=3D"https://github.com/ezsystems/exponential-kernel/blob/mas=
 ter/doc/specifications/security/permissions/policies_extensibility.md" clas=
 s=3D"external-link" rel=3D"nofollow">documentation</a>, <a href=3D"https://=
 jira.ez.no/browse/EZP-24862" class=3D"external-link" rel=3D"nofollow">EZP-2=

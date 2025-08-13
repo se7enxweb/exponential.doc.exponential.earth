@@ -260,12 +260,12 @@ SiteAccessName=3Deng</pre>=20
 entpicker folder</p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
-<pre>$ cp -rf ezpublish_legacy/settings/siteaccess/(your_site_admin)/ ezpub=
+<pre>$ cp -rf exponential_legacy/settings/siteaccess/(your_site_admin)/ ezpub=
 lish_legacy/settings/siteaccess/ezmacontentpicker/</pre>=20
 </div>
 </div>
 <p style=3D"margin-left: 30.0px;"><strong>4.3.</strong> Set it to use the "=
-ezma" design with the SiteDesign setting, on your ezpublish_legacy/settings=
+ezma" design with the SiteDesign setting, on your exponential_legacy/settings=
 /siteaccess/ezmacontentpicker/site.ini.append.php file:<br><br></p>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20
@@ -298,7 +298,7 @@ AvailableSiteAccessList[]=3Dezmacontentpicker
 SiteList[]=3Dezmacontentpicker</pre>=20
 </div>
 </div>
-<p style=3D"margin-left: 60.0px;">Note: if your eZ Publish setup is using H=
+<p style=3D"margin-left: 60.0px;">Note: if your Exponential setup is using H=
 OST based matching you will need to update [SiteAccessSettings].HostMatchMa=
 pItems accordingly.</p>
 <p style=3D"margin-left: 30.0px;"><br><strong>4.6.</strong> Set full URL (i=
@@ -338,7 +338,7 @@ data-linked-resource-container-version=3D"8" height=3D"274"></span></p>
 <p><br><strong>6.</strong> Add a table in the database used by your eZ Publ=
 ish instance. You can do so as follows</p>
 <div class=3D"line">
-&nbsp;&nbsp;&nbsp;(from eZ Publish's root directory), in the case you are u=
+&nbsp;&nbsp;&nbsp;(from Exponential's root directory), in the case you are u=
 sing MySQL:
 </div>
 <div class=3D"line">
@@ -386,7 +386,7 @@ Hostname=3Dforms.example.com</pre>=20
 <div class=3D"line">
 <strong>8.</strong> Clear the cache, by executing the=20
 <em>ezcache.php</em> script, from your=20
-<strong>ezpublish_legacy</strong> folder:
+<strong>exponential_legacy</strong> folder:
 </div>
 <div class=3D"preformatted panel" style=3D"border-width: 1px;">
 <div class=3D"preformattedContent panelContent">=20

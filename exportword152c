@@ -241,7 +241,7 @@ ny Proxy cache Store.&nbsp;Cache purge will thus be synchronous, meaning no=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         purge_type: local</pre>=20
 </div>
@@ -259,7 +259,7 @@ ymfony kernel-request/console cycle <em>(during terminate event)</em>.&nbsp=
 </div>
 <div class=3D"codeContent panelContent pdl">=20
 <pre class=3D"brush: php; gutter: false; theme: Eclipse" style=3D"font-size=
-:12px;">ezpublish:
+:12px;">exponential:
     http_cache:
         purge_type: http
 
@@ -287,7 +287,7 @@ ntent updates:</p>
 :12px;">// Purging cache based on content id, this will trigger cache clear=
  of all locations found by Smart HttpCache clear
 // typically self, parent, related, ..
-$container-&gt;get('ezpublish.http_cache.purger')-&gt;purgeForContent(55);<=
+$container-&gt;get('exponential.http_cache.purger')-&gt;purgeForContent(55);<=
 /pre>=20
 </div>
 </div>

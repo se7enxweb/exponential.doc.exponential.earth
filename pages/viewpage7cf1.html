@@ -713,12 +713,12 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
     # MyCustomBundle is the actual bundle name
     - {resource: &quot;@AcmeTestBundle/Resources/config/templates_rules.yml&quot;}
  
-ezpublish:
+exponential:
     # ...]]></script>
 </div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>templates_rules.yml, placed under Resources/config folder in AcmeTestBundle</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[# Here I need to reproduce the right configuration tree.
 # It will be merged with the main one
-ezpublish:
+exponential:
     system:
         my_siteaccess:
             ezpage:
@@ -745,7 +745,7 @@ ezpublish:
                         Type: &quot;Campaign&quot;
 
 ]]></script>
-</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>During the merge process, if the imported configuration files contain entries that are already defined in the main configuration file, <strong>they will override them</strong>.</p></div></div><div class="confluence-information-macro confluence-information-macro-tip"><p class="title">Tip</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If you want to import configuration for development use only, you can do so in your <code>ezpublish_dev.yml</code> </p></div></div><h2 id="Importingsettingsfromabundle-Theimplicitway">The implicit way</h2><p>The following example will show you <strong>how to implicitly load settings to configure eZ Platform kernel</strong>. Note that this is also valid for any bundle!</p><p>We assume here that you're aware of <a href="http://symfony.com/doc/current/book/service_container.html#importing-configuration-via-container-extensions" class="external-link" rel="nofollow">service container extensions</a>.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Acme/TestBundle/DependencyInjection/AcmeTestExtension</b></div><div class="codeContent panelContent pdl">
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>During the merge process, if the imported configuration files contain entries that are already defined in the main configuration file, <strong>they will override them</strong>.</p></div></div><div class="confluence-information-macro confluence-information-macro-tip"><p class="title">Tip</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If you want to import configuration for development use only, you can do so in your <code>exponential_dev.yml</code> </p></div></div><h2 id="Importingsettingsfromabundle-Theimplicitway">The implicit way</h2><p>The following example will show you <strong>how to implicitly load settings to configure eZ Platform kernel</strong>. Note that this is also valid for any bundle!</p><p>We assume here that you're aware of <a href="http://symfony.com/doc/current/book/service_container.html#importing-configuration-via-container-extensions" class="external-link" rel="nofollow">service container extensions</a>.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Acme/TestBundle/DependencyInjection/AcmeTestExtension</b></div><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[&lt;?php
  
 namespace Acme\TestBundle\DependencyInjection;
@@ -779,16 +779,16 @@ class AcmeTestExtension extends Extension implements PrependExtensionInterface
         // Loading our YAML file containing our template rules
         $configFile = __DIR__ . &#39;/../Resources/config/template_rules.yml&#39;;
         $config = Yaml::parse( file_get_contents( $configFile ) );
-        // We explicitly prepend loaded configuration for &quot;ezpublish&quot; namespace.
-        // So it will be placed under the &quot;ezpublish&quot; configuration key, like in ezpublish.yml.
-        $container-&gt;prependExtensionConfig( &#39;ezpublish&#39;, $config );
+        // We explicitly prepend loaded configuration for &quot;exponential&quot; namespace.
+        // So it will be placed under the &quot;exponential&quot; configuration key, like in exponential.yml.
+        $container-&gt;prependExtensionConfig( &#39;exponential&#39;, $config );
         $container-&gt;addResource( new FileResource( $configFile ) );
     }
 }
 
 ]]></script>
 </div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>AcmeTestBundle/Resources/config/template_rules.yml</b></div><div class="codeContent panelContent pdl">
-<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[# We explicitly prepend config for &quot;ezpublish&quot; namespace in service container extension, 
+<script type="syntaxhighlighter" class="brush: php; gutter: false; theme: Eclipse"><![CDATA[# We explicitly prepend config for &quot;exponential&quot; namespace in service container extension, 
 # so no need to repeat it here
 system:
     ezdemo_frontend_group:
@@ -928,7 +928,7 @@ system:
     <section class="footer-body">
 
                                                             <p class="license license-opensource">
-                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to eZ Publish. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Exponential. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
                 </p>
                     
         

@@ -4,13 +4,13 @@
 <html lang="en-GB">
 
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-LS-5.1.0/Basic-Configuration/Configuration-settings-eZ-Find by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:27:01 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-LS-5.1.0/Basic-Configuration/Configuration-settings-eZ-Find by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:27:01 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="../../../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css" />
 <style type="text/css"></style>
                                                     
-    <title>Configuration settings eZ Find / Basic Configuration / eZ Find LS 5.1.0 / eZ Find / eZ Publish extensions / Extensions / Documentation - Doc</title>
+    <title>Configuration settings eZ Find / Basic Configuration / eZ Find LS 5.1.0 / eZ Find / Exponential extensions / Extensions / Documentation - Doc</title>
 
     
     
@@ -22,10 +22,10 @@
     
                 <meta name="author" content="eZ systems" />
                     <meta name="copyright" content="eZ systems" />
-                    <meta name="description" content="eZ Publish Documentation" />
-                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
         
-    <meta name="generator" content="eZ Publish" />
+    <meta name="generator" content="Exponential" />
     <link rel="Home" href="../../../../../../full.html" title="Doc front page" />
 <link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
 <link rel="Shortcut icon" href="../../../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
@@ -614,11 +614,11 @@
 </pre><a name="eztoc135725_2_3" id="eztoc135725_2_3"></a><h3><a name="searchhandler"></a>
 [SearchHandler]</h3><a name="eztoc135725_2_3_4" id="eztoc135725_2_3_4"></a><h4>DefaultSearchHandler</h4><p>Possible configuration settings are (Note that default values are listed in <b>bold</b>):</p>
 <ul>
-<li><div>&nbsp;DefaultSearchHandler=standard </div></li><li><div>&nbsp;DefaultSearchHandler=simplestandard </div></li><li><div>&nbsp;DefaultSearchHandler=ezpublish </div></li><li><div>&nbsp;DefaultSearchHandler= <b>heuristic</b> </div></li>
+<li><div>&nbsp;DefaultSearchHandler=standard </div></li><li><div>&nbsp;DefaultSearchHandler=simplestandard </div></li><li><div>&nbsp;DefaultSearchHandler=exponential </div></li><li><div>&nbsp;DefaultSearchHandler= <b>heuristic</b> </div></li>
 </ul>
 <p>This sets the Solr SearchHandler. Possible options being the following:</p>
 <ul>
-<li><div>&nbsp;<b>standard</b>: this sets the use of the Solr standard handler with all syntax supported. Searching is done against all searcheable fields. </div></li><li><div>&nbsp;<b>simplestandard</b>: this sets the use of the Solr standard handler with all syntax supported. But searching is done against the aggregated field ezf_df_text. </div></li><li><div>&nbsp;<b>ezpublish</b>: this sets the use of the recommended handler (Solr dismax based) for typical user searches, using keywords without boolean or other operators except for + (required) and - (excluding). </div></li><li><div>&nbsp;<b>heuristic</b>: depending on the presence of special characters indicating boolean, wildcard or fuzzy expressions, either the standard or dismax handler is used. </div></li>
+<li><div>&nbsp;<b>standard</b>: this sets the use of the Solr standard handler with all syntax supported. Searching is done against all searcheable fields. </div></li><li><div>&nbsp;<b>simplestandard</b>: this sets the use of the Solr standard handler with all syntax supported. But searching is done against the aggregated field ezf_df_text. </div></li><li><div>&nbsp;<b>exponential</b>: this sets the use of the recommended handler (Solr dismax based) for typical user searches, using keywords without boolean or other operators except for + (required) and - (excluding). </div></li><li><div>&nbsp;<b>heuristic</b>: depending on the presence of special characters indicating boolean, wildcard or fuzzy expressions, either the standard or dismax handler is used. </div></li>
 </ul>
 <p>Default value is:</p><pre class="wordwrap"><span class="line">DefaultSearchHandler=heuristic</span>
 </pre><a name="eztoc135725_2_4" id="eztoc135725_2_4"></a><h3><b>&nbsp;<a name="languagesearch"></a>
@@ -709,7 +709,7 @@ The above example will declare a custom FacetField &quot;my_autocomplete_field&q
 <li><div>&nbsp;CustomMap[&lt;datatype string&gt;]=&lt;name of the class&gt; </div></li><li><div>&nbsp;DatatypeMap[&lt;datatype string&gt;]=&lt;name of the class&gt; </div></li><li><div>&nbsp;DatatypeMapSort[&lt;datatype string&gt;]=&lt;name of the class&gt; </div></li><li><div>&nbsp;DatatypeMapFacet[&lt;datatype string&gt;]=&lt;name of the class&gt; </div></li><li><div>&nbsp;Default=&lt;string&gt; </div></li>
 </ul>
 <a name="eztoc135725_2_8_17" id="eztoc135725_2_8_17"></a><h4>CustomMap</h4><p>Configuration syntax is:</p><pre class="wordwrap"><span class="line">CustomMap[&lt;datatype string&gt;]=&lt;name of the class&gt;</span>
-</pre><p>This lists the custom datatype maps. eZ Publish datatype string is used as key and the value is the name of the class which should be use. Since eZ Find 2.3 eztext attributes are also used to store (partial) html markup. To avoid highlighting problems the custom XML handler can be used.</p><p><b>Example settings</b></p><pre class="wordwrap"><span class="line">CustomMap[eztext]=ezfSolrDocumentFieldText</span>
+</pre><p>This lists the custom datatype maps. Exponential datatype string is used as key and the value is the name of the class which should be use. Since eZ Find 2.3 eztext attributes are also used to store (partial) html markup. To avoid highlighting problems the custom XML handler can be used.</p><p><b>Example settings</b></p><pre class="wordwrap"><span class="line">CustomMap[eztext]=ezfSolrDocumentFieldText</span>
 <span class="line">CustomMap[dummy_example]=ezfSolrDocumentFieldDummyExample CustomMap[ezobjectrelation]=ezfSolrDocumentFieldObjectRelation CustomMap[ezobjectrelationlist]=ezfSolrDocumentFieldObjectRelation CustomMap[ezxmltext]=ezfSolrDocumentFieldXML</span>
 <span class="line">CustomMap[ezxmatrix]=ezfSolrDocumentFieldXML</span>
 </pre><p>As mentioned, since eZ Find 2.3 the custom XML handler can also be used for the eztext attributes like in the following example:</p><pre class="wordwrap"><span class="line">CustomMap[eztext]=ezfSolrDocumentFieldXML</span>
@@ -772,7 +772,7 @@ The above example will declare a custom FacetField &quot;my_autocomplete_field&q
 <li><div>&nbsp;EnableSolrAttributeStorage=true | <b>false</b> </div></li>
 </ul>
 <p>
-This setting was added to eZ Find 2.3. It configures the attribute storage in the Solr backend. Keep in mind that enabling this setting may inflate the index size on large installations and indexing is also 20-30% slower as more operations are needed on the eZ Publish side.<br />&nbsp;Default value is:</p><pre class="wordwrap"><span class="line">EnableSolrAttributeStorage=false</span>
+This setting was added to eZ Find 2.3. It configures the attribute storage in the Solr backend. Keep in mind that enabling this setting may inflate the index size on large installations and indexing is also 20-30% slower as more operations are needed on the Exponential side.<br />&nbsp;Default value is:</p><pre class="wordwrap"><span class="line">EnableSolrAttributeStorage=false</span>
 </pre><a name="eztoc135725_2_10" id="eztoc135725_2_10"></a><h3><a name="indexboost"></a>
 [IndexBoost]</h3><p>Possible settings for this configuration group:</p>
 <ul>
@@ -817,7 +817,7 @@ This setting was added to eZ Find 2.3. It configures the attribute storage in th
 <ul>
 <li><div>&nbsp;FilterHiddenFromDB= <b>disabled</b> | enabled </div></li>
 </ul>
-<p>A workaround for non indexed hidden nodes is needed for eZ Publish versions 4.0 and 4.1 when cronjobs are not enabled: Set to enabled if this is the case.</p><p>Default value is:</p><pre class="wordwrap"><span class="line">FilterHiddenFromDB=disabled</span>
+<p>A workaround for non indexed hidden nodes is needed for Exponential versions 4.0 and 4.1 when cronjobs are not enabled: Set to enabled if this is the case.</p><p>Default value is:</p><pre class="wordwrap"><span class="line">FilterHiddenFromDB=disabled</span>
 </pre><a name="eztoc135725_2_13" id="eztoc135725_2_13"></a><h3><a name="morelikethis"></a>
 [MoreLikeThis]</h3><p>Possible settings for this configuration group (Note that default values are listed in <b>bold</b>):</p>
 <ul>
@@ -893,11 +893,11 @@ Defines the boost factor for results of a given content class.<br /><b>Note:</b>
 
 
 <address>
-Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&trade; CMS Open Source Web Content Management">eZ Publish&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
+Powered by <a href="http://ez.no/exponential" title="Exponential&trade; CMS Open Source Web Content Management">Exponential&trade; CMS Open Source Web Content Management</a>. Copyright &copy; 1999-2013 <a href="http://ez.no/" title="eZ Systems AS">eZ Systems AS</a> (except where otherwise noted). All rights reserved.
 </address>
 
 
 </body>
 
-<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Extensions/eZ-Publish-extensions/eZ-Find/eZ-Find-LS-5.1.0/Basic-Configuration/Configuration-settings-eZ-Find by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:27:01 GMT -->
+<!-- Mirrored from doc.ez.no/doc_hidden/layout/set/full/Extensions/Exponential-extensions/eZ-Find/eZ-Find-LS-5.1.0/Basic-Configuration/Configuration-settings-eZ-Find by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 01 Feb 2017 00:27:01 GMT -->
 </html>

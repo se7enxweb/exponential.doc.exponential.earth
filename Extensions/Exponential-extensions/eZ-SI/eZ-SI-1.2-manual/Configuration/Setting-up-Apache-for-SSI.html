@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from doc.ez.no/Extensions/Exponential-extensions/eZ-SI/eZ-SI-1.2-manual/Configuration/Setting-up-Apache-for-SSI by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 09:11:53 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/core.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/header-footer-lookfeel.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/pagelayout.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/buttons.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/960.css" /><link rel="stylesheet" type="text/css" href="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/stylesheets/superfish.css" /><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery-1.6.3.min.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/superfish.js" charset="utf-8"></script><script type="text/javascript" src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/javascript/jquery.popmenu.min.js" charset="utf-8"></script>
+<style type="text/css">
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                    
+    <title>Setting up Apache for SSI / Configuration / eZ SI 1.2 manual / eZ SI / Exponential extensions / Extensions / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="Exponential Documentation" />
+                    <meta name="keywords" content="Exponential, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="Exponential" />
+    <link rel="Home" href="../../../../../index.html" title="Doc front page" />
+<link rel="Search" href="../../../../../content/advancedsearch.html" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+    <div class="topmenu-anchor"></div>
+    <div id="topmenu-bg">
+	    <div id="logo" class="container_12">
+
+    <div class="grid_3">
+        <a href="https://exponential.doc.exponential.earth/Exponential/" title="Exponential Platform, CXM &amp; CMS">
+            <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png"
+                 alt="" height="45px"/>
+        </a>
+    </div>
+
+    <div class="grid_9">
+                <div class="topmenu-design">
+	<!-- Top menu content: START -->
+	<div id="topmenu-firstlevel-position">
+	<ul id="topmenu-firstlevel" class="sf-menu sf-js-enabled sf-shadow">
+		
+		
+		        </ul>
+    </div>
+        <!-- Top menu content: END -->
+</div>        </div>
+</div>    </div>
+
+
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="https://exponential.doc.exponential.earth/">7x</a> /
+                        <a href="../../../../../index.html">documentation</a>
+        
+                        /
+                            <a href="../../../../../Extensions.html">extensions</a>
+        
+                        /
+                            <a href="../../../../Exponential-extensions.html">exponential extensions</a>
+        
+                        /
+                            <a href="../../../eZ-SI.html">ez si</a>
+        
+                        /
+                            <a href="../../eZ-SI-1.html">ez si 1.2 manual</a>
+        
+                        /
+                            <a href="../Configuration.html">configuration</a>
+        
+                        /
+                            setting up apache for ssi
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>Exponential</strong>, from version 3.x to 6.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="../../../../../display/MAIN/eZ%2bDocumentation%2bCenter.html">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="../../../../../pages/viewpage0139.html?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../eZ-SI.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../eZ-SI-1.html" title="">
+	    	    		                    		    <span class="node-name-normal">eZ SI 1.2 manual</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation/System-requirements.html" title="">
+	    	    		                    		    <span class="node-name-normal">System requirements</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation/Installation-procedure.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation procedure</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Installation/Remove-procedure.html" title="">
+	    	    		                    		    <span class="node-name-normal">Remove procedure</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../Configuration.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			class="currentnode"
+		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Setting-up-Apache-for-SSI.html" title="">
+	    	    		                    		    <span class="node-name-normal">Setting up Apache for SSI</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="Template-function.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template function</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>Setting up Apache for SSI</h1>
+</div>
+
+ <p>This extension is able to generate SSI markup, however Apache must be configure as described here. In order to be able to use SSIs with Exponential, you'll need Apache 2.2.</p>  <a name="eztoc108696_1" id="eztoc108696_1"></a><h2>Enable mod_filter</h2> <p>
+Apache needs a specific module, mod_filter, to be able to parse SSI markup on the fly once the HTML content is generated. This module is generally available with the default Apache 2 setup. To enable it on Debian, execute the following command:<br /></p><pre class="wordwrap"><span class="line">a2enmod filter</span>
+</pre><p>More information is available here http://httpd.apache.org/docs/2.2/mod/mod_filter.html</p>   <a name="eztoc108696_2" id="eztoc108696_2"></a><h2>Enable mod_include <a name="mod_include"></a>
+ </h2> <p>This module, mod_filter, makes it possible to parse SSI markup. This module is generally available with the default Apache 2 setup. To enable it on Debian, execute the following command:</p> <pre class="wordwrap"><span class="line">a2enmod include</span>
+</pre> <p>More information is available at <a href="http://httpd.apache.org/docs/current/fr/mod/mod_include.html" target="_blank">http://httpd.apache.org/docs/2.0/mod/mod_include.htm</a>l</p>   <a name="eztoc108696_3" id="eztoc108696_3"></a><h2>Add mod_filter rules </h2> <p>Simply copy/paste the following configuration directives in your site's VirtualHost to add the mod_filter rules:</p> <pre class="wordwrap"><span class="line">FilterDeclare SSI</span>
+<span class="line">FilterProvider SSI INCLUDES resp=Content-Type $text/html</span>
+<span class="line">FilterChain &nbsp;SSI</span>
+</pre>   <a name="eztoc108696_4" id="eztoc108696_4"></a><h2>Specific Rewrite Rule</h2> <p>When using rewrite rules to secure your Exponential installation, you must add the following RewriteRules to you site's VirtualHost in order to be able to find and execute SSI calls. Note that this directive must be at the top of other directives.</p> <pre class="wordwrap"><span class="line">Rewriterule ^/var/si-blocks/.* - [L]</span>
+</pre> <p>Do not forget to reload the Apache configuration once you are done.</p>   <a name="eztoc108696_5" id="eztoc108696_5"></a><h2>VirtualHost example</h2> <p>Here is a complete example of a working VirtualHost that contains all the needed mod_filter configuration directives. </p> <pre class="wordwrap copytoclipboard"><span class="line">&lt;VirtualHost *&gt;</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;ServerName site.com</span>
+<span class="line">&nbsp;&nbsp;DocumentRoot /var/www/site.com</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&lt;Directory /var/www/site.com&gt;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;# The +Includes options is needed to accept SSI markup parsing</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Options Indexes FollowSymLinks +Includes</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;AllowOverride None</span>
+<span class="line">&nbsp;&nbsp;&lt;/Directory&gt;</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;DirectoryIndex index.php</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&lt;IfModule mod_rewrite.c&gt;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteEngine On</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/var/si-blocks/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/var/storage/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/var/[^/]+/storage/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule ^/var/cache/texttoimage/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule ^/var/[^/]+/cache/texttoimage/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/design/[^/]+/(stylesheets|images|javascript)/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/share/icons/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/extension/[^/]+/design/[^/]/(stylesheets|images|javascripts?)/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;Rewriterule ^/packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule ^/favicon\.ico - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule ^/robots\.txt - [L]</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;# Uncomment the following lines when using popup style debug.</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;# RewriteRule ^/var/cache/debug\.html.* - [L]</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;# RewriteRule ^/var/[^/]+/cache/debug\.html.* - [L]</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;RewriteRule .* /index.php</span>
+<span class="line">&nbsp;&nbsp;&lt;/IfModule&gt;</span>
+<span class="line">&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;FilterDeclare SSI</span>
+<span class="line">&nbsp;&nbsp;&nbsp;FilterProvider SSI INCLUDES resp=Content-Type $text/html</span>
+<span class="line">&nbsp;&nbsp;&nbsp;FilterChain SSI</span>
+<span class="line">&lt;/VirtualHost&gt;</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '&lt;VirtualHost *&gt;\r\n\r\n  ServerName site.com\r\n  DocumentRoot /var/www/site.com\r\n\r\n  &lt;Directory /var/www/site.com&gt;\r\n    # The +Includes options is needed to accept SSI markup parsing\r\n    Options Indexes FollowSymLinks +Includes\r\n    AllowOverride None\r\n  &lt;/Directory&gt;\r\n\r\n  DirectoryIndex index.php\r\n\r\n  &lt;IfModule mod_rewrite.c&gt;\r\n    RewriteEngine On\r\n    Rewriterule ^/var/si-blocks/.* - [L]\r\n    Rewriterule ^/var/storage/.* - [L]\r\n    Rewriterule ^/var/[^/]+/storage/.* - [L]\r\n    RewriteRule ^/var/cache/texttoimage/.* - [L]\r\n    RewriteRule ^/var/[^/]+/cache/texttoimage/.* - [L]\r\n    Rewriterule ^/design/[^/]+/(stylesheets|images|javascript)/.* - [L]\r\n    Rewriterule ^/share/icons/.* - [L]\r\n    Rewriterule ^/extension/[^/]+/design/[^/]/(stylesheets|images|javascripts?)/.* - [L]\r\n    Rewriterule ^/packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]\r\n    RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]\r\n    RewriteRule ^/favicon\.ico - [L]\r\n    RewriteRule ^/robots\.txt - [L]\r\n\r\n    # Uncomment the following lines when using popup style debug.\r\n    # RewriteRule ^/var/cache/debug\.html.* - [L]\r\n    # RewriteRule ^/var/[^/]+/cache/debug\.html.* - [L]\r\n\r\n    RewriteRule .* /index.php\r\n  &lt;/IfModule&gt;\r\n\r\n   FilterDeclare SSI\r\n   FilterProvider SSI INCLUDES resp=Content-Type $text/html\r\n   FilterChain SSI\r\n&lt;/VirtualHost&gt;' ); return false;" /></p>
+<![endif]--> 
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Ester Heylen&nbsp;(23/03/2010 1:22 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Ester Heylen&nbsp;(23/03/2010 1:57 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://exponential.doc.exponential.earth/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="21706" />
+<input type="hidden" name="RedirectURIAfterPublish" value="Extensions/Exponential-extensions/eZ-SI/eZ-SI-1.2-manual/Configuration/Setting-up-Apache-for-SSI" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+        <div id="footer-bg">
+        <div id="footer" class="container_12">
+
+            <div class="grid_3">
+                <img src="https://exponential.doc.exponential.earth/extension/ezdoc/design/doc/images/ez-logo.png" alt="exponential" />
+                <div id="footer-copyright" class="grid_3 alpha omega">
+                                    </div>
+            </div>
+
+            <div class="grid_6 middle">
+                <div class="grid_6 alpha omega">
+                    <div class="grid_3 alpha"><div></div></div>
+                    <div class="grid_3 omega"><div></div></div>
+                </div>
+            </div>
+
+            <div class="grid_3 right">
+                <div class="contact-ez">
+                        <a id="cta-contact" href="https://se7enx.com" title="Contact 7x!" class="btn-green btn--small">Contact 7x!</a>
+                </div>
+
+                <div class="adress"></div>
+            </div>
+
+        </div>
+    </div>
+<div id="footer-connect-bg">
+    <div id="footer" class="container_12">
+        <div id="footer-connect-copyright" class="grid_8 alpha omega">
+            Copyright © 1998 - 2024 7x (except where otherwise noted). All rights reserved.
+            <br/><br/>
+            Powered by <a href="https://se7enx.com/exponential" title="Exponential Platform">the Exponential Platform</a>.<br />
+        </div>
+
+        <div id="footer-connect-social" class="grid_4 right">
+            <a href="https://www.youtube.com/@ExponentialInsights" class="youtube" target="_blank">youtube</a>
+            
+            <a href="http://www.linkedin.com/groups?gid=2759&amp;trk=myg_ugrp_ovr" class="linkedin" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/se7enxweb" class="instagram" target="_blank">instagram</a>
+            <a href="https://twitter.com/se7enxweb" class="X" target="_blank">X</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VMV65H63V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VMV65H63V');
+</script>
+
+
+
+
+
+
+</body>
+
+<!-- Mirrored from doc.ez.no/Extensions/Exponential-extensions/eZ-SI/eZ-SI-1.2-manual/Configuration/Setting-up-Apache-for-SSI by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 31 Jan 2017 09:11:53 GMT -->
+</html>
+
+<!-- th[eZ] 20050804 -->
