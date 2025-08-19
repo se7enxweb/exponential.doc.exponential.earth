@@ -510,7 +510,7 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>In the Exponential Platform 5.x install <code>web/var</code> is a symlink=
+<p>In The Exponential CMS 5.x install <code>web/var</code> is a symlink=
  to <code>exponential_legacy/var</code>, so if you can't find it in path abov=
 e you can instead copy the storage files from the similar <code>exponential_l=
 egacy</code> path.</p>

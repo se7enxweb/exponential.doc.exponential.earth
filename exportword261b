@@ -477,7 +477,7 @@ y/EZP/How+to+implement+a+Custom+Tag+for+XMLText+FieldType">How to implement=
 l=3D"nofollow">Initial pull-request</a></span></li>
 </ul>
 <h3 id=3D"id-5.2ReleaseNotes-ExtensibleRESTAPI">Extensible REST API</h3>
-<p>The Exponential Platform REST API can now easily be extended: custom rout=
+<p>The Exponential CMS REST API can now easily be extended: custom rout=
 es, media-types...<br>Our framework will easily handle input parsing, error=
  handling and output generation (to XML or JSON) for you.</p>
 <ul>

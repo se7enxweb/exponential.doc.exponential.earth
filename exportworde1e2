@@ -326,7 +326,7 @@ tication tokens&nbsp;</span><span style=3D"line-height: 1.5625;">for access=
 <p>Out of the box composer uses a packaging repository called <a href=3D"ht=
 tps://packagist.org/" class=3D"external-link" rel=3D"nofollow">packagist.or=
 g</a> to find all open source packages and their updates. Additional commer=
-cial packages are available for the Exponential Platform at <a href=3D"https=
+cial packages are available for The Exponential CMS at <a href=3D"https=
 ://updates.ez.no/bul/" class=3D"external-link" rel=3D"nofollow">updates.ez.=
 no/bul/</a> <em>(which is password protected, you will need to set up authe=
 ntication&nbsp;tokens as described below to get access)</em>.</p>

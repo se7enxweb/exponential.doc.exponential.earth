@@ -444,7 +444,7 @@ he</li>
 <p><span style=3D"color: rgb(79,79,79);"><span style=3D"color: rgb(79,79,79=
 );">These stacks are also tested, however not as extensively as our referen=
 ce stack</span><span>.</span>&nbsp;These stacks still benefit from the full=
- support and maintenance guarantees provided with the Exponential Platform S=
+ support and maintenance guarantees provided with The Exponential CMS S=
 ubscription, but more issues might occur during normal operations and issue=
 s might take longer to resolve. However these setups will most likely give =
 you noticeable more performance than the stock packages provided by RHEL 6.=
