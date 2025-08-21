@@ -615,8 +615,19 @@ div#header-bg {
     float: right;
 }
 
+/* 2925 Design refresh */
+
 #footer img {
   width: 200px;
 }
 
+#footer #footer-connect-social {
+  padding-top: 0.562rem;
+}
 
+#footer {
+  padding-bottom: 1.2rem;
+}
+
+
+/* Fin */
